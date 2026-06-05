@@ -1,0 +1,1737 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Vĩ mô Mỹ — Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"></script>
+<style>
+  :root {
+    --bg: #0f1419;
+    --panel: #1a2028;
+    --border: #2a3441;
+    --text: #e5e9ed;
+    --muted: #8b96a3;
+    --green: #4ade80;
+    --red: #f87171;
+    --amber: #fbbf24;
+    --blue: #60a5fa;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 14px/1.5 -apple-system, BlinkMacSystemFont, "SF Pro", "Inter", sans-serif;
+  }
+  header {
+    padding: 20px 28px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  h1 { margin: 0; font-size: 20px; font-weight: 600; }
+  .meta { color: var(--muted); font-size: 12px; }
+  .container { padding: 24px 28px; max-width: 1400px; margin: 0 auto; }
+  section { margin-bottom: 32px; }
+  h2 { font-size: 15px; font-weight: 600; margin: 0 0 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .grid { display: grid; gap: 16px; }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid-4 { grid-template-columns: repeat(4, 1fr); }
+  @media (max-width: 1000px) { .grid-3, .grid-4 { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 640px) { .grid-3, .grid-4 { grid-template-columns: 1fr; } }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .kpi-label { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .kpi-value { font-size: 22px; font-weight: 600; margin-top: 4px; font-feature-settings: "tnum"; }
+  .kpi-delta { font-size: 12px; margin-top: 4px; font-feature-settings: "tnum"; }
+  .up { color: var(--green); }
+  .down { color: var(--red); }
+  .flat { color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-weight: 500; font-size: 11px; text-transform: uppercase; }
+  td.num { text-align: right; font-feature-settings: "tnum"; }
+  .surprise-beat { color: var(--green); }
+  .surprise-miss { color: var(--red); }
+  .surprise-inline { color: var(--muted); }
+  .chart-box { position: relative; height: 180px; margin-top: 8px; }
+  .empty { color: var(--muted); padding: 20px; text-align: center; font-style: italic; }
+  .report-link { color: var(--blue); text-decoration: none; }
+  .report-link:hover { text-decoration: underline; }
+  .pill {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    background: var(--border);
+    color: var(--text);
+  }
+  .pill.hawkish { background: #7f1d1d; color: #fecaca; }
+  .pill.dovish { background: #14532d; color: #bbf7d0; }
+  .pill.neutral { background: var(--border); }
+
+  /* Clickable elements */
+  .clickable { cursor: pointer; transition: border-color 0.15s, background 0.15s; }
+  .clickable:hover { border-color: var(--blue); background: #1e2632; }
+  tr.clickable:hover { background: #1e2632; }
+  .info-icon {
+    display: inline-block;
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--border);
+    color: var(--muted);
+    text-align: center;
+    font-size: 10px;
+    line-height: 14px;
+    margin-left: 6px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .info-icon:hover { background: var(--blue); color: white; }
+
+  /* Chart card header with toggle */
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  .clickable-label { cursor: pointer; }
+  .clickable-label:hover { color: var(--blue); }
+  .view-toggle {
+    display: flex;
+    gap: 2px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2px;
+  }
+  .view-btn {
+    background: transparent;
+    border: none;
+    color: var(--muted);
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    transition: background 0.15s, color 0.15s;
+  }
+  .view-btn:hover { color: var(--text); }
+  .view-btn.active {
+    background: var(--blue);
+    color: white;
+  }
+
+  /* Sector heatmap */
+  .sector-grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 900px) { .sector-grid { grid-template-columns: 1fr; } }
+  .sector-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    font-feature-settings: "tnum";
+  }
+  .sector-table th {
+    color: var(--muted);
+    text-align: right;
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--border);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+  }
+  .sector-table th:first-child, .sector-table td:first-child { text-align: left; }
+  .sector-table td {
+    padding: 7px 8px;
+    border-bottom: 1px solid var(--border);
+    text-align: right;
+    white-space: nowrap;
+  }
+  .sector-table tr.clickable:hover td { background: #1e2632; }
+  .sector-table .ticker {
+    display: inline-block;
+    background: var(--border);
+    color: var(--text);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-right: 6px;
+    min-width: 32px;
+    text-align: center;
+  }
+  .ret-cell {
+    border-radius: 4px;
+    padding: 3px 6px;
+    display: inline-block;
+    min-width: 56px;
+  }
+  /* Heat colors — green for positive, red for negative, scaled by magnitude */
+  .heat-pos-3 { background: rgba(74, 222, 128, 0.40); color: #d1fae5; }
+  .heat-pos-2 { background: rgba(74, 222, 128, 0.25); color: #d1fae5; }
+  .heat-pos-1 { background: rgba(74, 222, 128, 0.12); color: #bbf7d0; }
+  .heat-neg-1 { background: rgba(248, 113, 113, 0.12); color: #fecaca; }
+  .heat-neg-2 { background: rgba(248, 113, 113, 0.25); color: #fecaca; }
+  .heat-neg-3 { background: rgba(248, 113, 113, 0.40); color: #fee2e2; }
+  .heat-zero { color: var(--muted); }
+
+  .sector-rs-chart-wrap {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .rs-chart-box { position: relative; height: 280px; margin-top: 8px; }
+  .legend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 4px;
+    margin-top: 10px;
+    font-size: 11px;
+  }
+  .legend-item { display: flex; align-items: center; gap: 6px; cursor: pointer; user-select: none; }
+  .legend-swatch { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+  .legend-item.hidden { opacity: 0.35; }
+
+  /* Calendar */
+  .cal-day {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+  }
+  .cal-day-header {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .cal-date {
+    font-weight: 600;
+    color: var(--text);
+    font-size: 13px;
+  }
+  .cal-weekday { color: var(--muted); font-size: 11px; }
+  .cal-events { display: flex; flex-direction: column; gap: 4px; }
+  .cal-event {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+    font-size: 13px;
+  }
+  .cal-event.earnings .cal-tag { background: rgba(96, 165, 250, 0.18); color: #93c5fd; }
+  .cal-event.macro .cal-tag { background: rgba(251, 191, 36, 0.18); color: #fcd34d; }
+  .cal-tag {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    min-width: 70px;
+    text-align: center;
+  }
+  .cal-sector { color: var(--muted); font-size: 11px; }
+  .cal-est { color: var(--muted); font-size: 10px; font-style: italic; margin-left: 4px; }
+
+  /* End-of-month reminder banner */
+  .reminder-banner {
+    background: linear-gradient(90deg, rgba(251,191,36,0.15), rgba(251,191,36,0.05));
+    border: 1px solid rgba(251,191,36,0.4);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    font-size: 13.5px;
+    color: #fcd34d;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .reminder-banner code {
+    background: rgba(0,0,0,0.5);
+    padding: 3px 8px;
+    border-radius: 4px;
+    color: #fde68a;
+    font-size: 12px;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  }
+  .reminder-banner strong { color: #fef3c7; }
+
+  /* Monthly full charts section (only visible in Tháng tab) */
+  .monthly-full-charts {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  .monthly-full-charts h4 {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 16px 0 10px;
+    font-weight: 600;
+  }
+
+  /* Insights section */
+  .insights-card {
+    background: linear-gradient(180deg, #1a2028 0%, #161c25 100%);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--blue);
+    border-radius: 8px;
+    padding: 20px 24px;
+  }
+  .insights-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+  }
+  .insights-badge {
+    padding: 4px 12px;
+    border-radius: 14px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .badge-risk-on { background: rgba(74, 222, 128, 0.18); color: #86efac; }
+  .badge-risk-off { background: rgba(248, 113, 113, 0.20); color: #fecaca; }
+  .badge-neutral { background: var(--border); color: var(--muted); }
+  .badge-hawkish { background: rgba(248, 113, 113, 0.20); color: #fecaca; }
+  .badge-dovish { background: rgba(74, 222, 128, 0.18); color: #86efac; }
+  .badge-stagflation { background: rgba(251, 191, 36, 0.22); color: #fcd34d; }
+  .badge-expansion { background: rgba(74, 222, 128, 0.18); color: #86efac; }
+  .badge-slowdown { background: rgba(251, 191, 36, 0.22); color: #fcd34d; }
+  .badge-recession { background: rgba(248, 113, 113, 0.25); color: #fecaca; }
+  .badge-recovery { background: rgba(96, 165, 250, 0.20); color: #93c5fd; }
+  .key-takeaway {
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.6;
+    padding: 10px 14px;
+    background: rgba(96, 165, 250, 0.08);
+    border-left: 2px solid var(--blue);
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+  .tabs {
+    display: flex;
+    gap: 4px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 16px;
+  }
+  .tab {
+    background: transparent;
+    border: none;
+    color: var(--muted);
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: inherit;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+  }
+  .tab:hover { color: var(--text); }
+  .tab.active { color: var(--blue); border-bottom-color: var(--blue); }
+  .markdown-body {
+    color: var(--text);
+    font-size: 13.5px;
+    line-height: 1.65;
+  }
+  .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+    color: var(--text);
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .markdown-body h1 { font-size: 20px; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+  .markdown-body h2 { font-size: 16px; color: var(--blue); }
+  .markdown-body h3 { font-size: 14px; color: var(--text); }
+  .markdown-body p { margin: 8px 0; }
+  .markdown-body strong { color: var(--text); }
+  .markdown-body em { color: var(--amber); font-style: normal; }
+  .markdown-body ul, .markdown-body ol { margin: 8px 0; padding-left: 22px; }
+  .markdown-body li { margin: 4px 0; }
+  .markdown-body code {
+    background: var(--bg);
+    color: var(--blue);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+  .markdown-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 12.5px;
+  }
+  .markdown-body th, .markdown-body td {
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    text-align: left;
+  }
+  .markdown-body th { background: var(--bg); color: var(--muted); font-weight: 600; }
+  .markdown-body hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+  .markdown-body blockquote {
+    border-left: 3px solid var(--amber);
+    padding: 4px 12px;
+    margin: 10px 0;
+    color: var(--muted);
+    background: rgba(251, 191, 36, 0.06);
+  }
+  .report-meta {
+    color: var(--muted);
+    font-size: 11px;
+    margin-top: 4px;
+  }
+
+  /* Modal */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    max-width: 720px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 24px 28px;
+    position: relative;
+  }
+  .modal-close {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    background: transparent;
+    border: none;
+    color: var(--muted);
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px 8px;
+  }
+  .modal-close:hover { color: var(--text); }
+  .modal h3 {
+    margin: 0 0 6px;
+    font-size: 18px;
+    color: var(--text);
+    padding-right: 30px;
+  }
+  .modal .modal-meta {
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+  .modal-section {
+    margin-bottom: 14px;
+  }
+  .modal-section .label {
+    color: var(--blue);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .modal-section .body { font-size: 13px; line-height: 1.6; color: var(--text); }
+  .modal-section.up .label { color: var(--green); }
+  .modal-section.down .label { color: var(--red); }
+  .modal-empty {
+    color: var(--muted);
+    padding: 20px 0;
+    font-style: italic;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Vĩ mô Mỹ — Dashboard</h1>
+  <div class="meta" id="last-updated">—</div>
+</header>
+
+<div class="container">
+
+<div id="monthly-reminder"></div>
+
+<section>
+  <h2>Insights & Kết luận</h2>
+  <div id="insights-section">
+    <div class="insights-card"><div class="empty">Chưa có báo cáo. Chạy <code>/daily-macro</code> để sinh báo cáo phân tích.</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Chỉ số công bố trong ngày</h2>
+  <div id="today-releases" class="card">
+    <div class="empty">Đang tải...</div>
+  </div>
+</section>
+
+<section>
+  <h2>Tóm tắt nhanh (snapshot mới nhất)</h2>
+  <div id="kpi-grid" class="grid grid-4"></div>
+</section>
+
+<section>
+  <h2>Xu hướng các chỉ số công bố hôm nay</h2>
+  <div id="release-trends" class="grid grid-3">
+    <div class="empty">Đang tải...</div>
+  </div>
+</section>
+
+<section>
+  <h2>Market Context — Cross-Asset</h2>
+  <div id="cross-asset-section">
+    <div class="empty">Đang tải cross-asset data...</div>
+  </div>
+</section>
+
+<section>
+  <h2>Sector Rotation — 11 GICS Sectors (SPDR ETFs)</h2>
+  <div id="sectors-section">
+    <div class="empty">Đang tải sector data...</div>
+  </div>
+</section>
+
+<section>
+  <h2>Catalysts tới — 21 ngày</h2>
+  <div id="calendar-section">
+    <div class="empty">Đang tải calendar...</div>
+  </div>
+</section>
+
+<section>
+  <h2>Báo cáo gần đây</h2>
+  <div id="reports-list" class="card"></div>
+</section>
+
+</div>
+
+<div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal" id="modal-content">
+    <button class="modal-close" id="modal-close" aria-label="Đóng">×</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="./indicators.js"></script>
+<script src="./data.js"></script>
+<script>
+const D = window.MACRO_DATA || {};
+const INDICATORS = window.INDICATORS || { byFredId: {}, byNamePattern: [] };
+const fmt = (n, d = 2) => (n == null || isNaN(n)) ? "—" : Number(n).toLocaleString("en-US", { maximumFractionDigits: d, minimumFractionDigits: d });
+const fmtPct = (n, d = 2) => n == null ? "—" : (n >= 0 ? "+" : "") + fmt(n, d) + "%";
+
+// === Modal logic ===
+function lookupIndicator({ fredId, name }) {
+  if (fredId && INDICATORS.byFredId[fredId]) {
+    return { ...INDICATORS.byFredId[fredId], _fredId: fredId };
+  }
+  if (name) {
+    for (const p of INDICATORS.byNamePattern) {
+      if (p.match.test(name)) {
+        if (p.useFredId && INDICATORS.byFredId[p.useFredId]) {
+          const base = INDICATORS.byFredId[p.useFredId];
+          const merged = p.info_override ? { ...base, ...p.info_override } : base;
+          return { ...merged, _fredId: p.useFredId };
+        }
+        if (p.info) return { ...p.info };
+      }
+    }
+  }
+  return null;
+}
+
+function openModal({ fredId, name, latest, change, releaseData }) {
+  const info = lookupIndicator({ fredId, name });
+  const body = document.getElementById("modal-body");
+  if (!info) {
+    // Still try to show release data + investing.com link if available
+    const url = releaseData && releaseData.event_url;
+    body.innerHTML = `
+      <h3>${name || fredId || "Chỉ số"}</h3>
+      ${releaseData ? renderReleaseInfo(releaseData) : ""}
+      ${url ? `<div class="modal-section"><a class="report-link" href="${url}" target="_blank" rel="noopener">Xem trên investing.com →</a></div>` : ""}
+      <div class="modal-empty">Chưa có mô tả tiếng Việt cho chỉ số này. Bạn có thể bổ sung trong file <code>dashboard/indicators.js</code>.</div>`;
+    document.getElementById("modal-overlay").classList.add("open");
+    return;
+  }
+
+  const metaParts = [];
+  if (info.unit) metaParts.push(info.unit);
+  if (info.freq) metaParts.push(info.freq);
+  if (info.source) metaParts.push("Nguồn: " + info.source);
+  if (info._fredId) metaParts.push("FRED: " + info._fredId);
+
+  let valueLine = "";
+  if (latest && latest.value != null) {
+    const deltaTxt = change != null ? ` (${change >= 0 ? "+" : ""}${fmt(change, 2)}%)` : "";
+    valueLine = `<div class="modal-section"><div class="label">Giá trị mới nhất</div>
+      <div class="body"><strong>${fmt(latest.value, 2)}</strong>${deltaTxt} · <span style="color: var(--muted)">${latest.date}</span></div></div>`;
+  }
+
+  // Release-specific info (when coming from daily releases table)
+  const releaseInfoHtml = releaseData ? renderReleaseInfo(releaseData) : "";
+  const investingLinkHtml = releaseData && releaseData.event_url
+    ? `<div class="modal-section"><a class="report-link" href="${releaseData.event_url}" target="_blank" rel="noopener">Xem chi tiết trên investing.com →</a></div>`
+    : "";
+
+  // Trend chart section if FRED ID matched and we have history
+  const hasHistory = info._fredId && D.history && D.history[info._fredId] && (D.history[info._fredId].history || []).length > 0;
+  const trendHtml = hasHistory ? `
+    <div class="modal-section">
+      <div class="label">Xu hướng</div>
+      <div class="view-toggle" data-modal-fred="${info._fredId}" style="margin: 6px 0 8px; display: inline-flex;">
+        <button class="view-btn active" data-view="level">Level</button>
+        <button class="view-btn" data-view="mom">MoM%</button>
+        <button class="view-btn" data-view="yoy">YoY%</button>
+      </div>
+      <div class="chart-box" style="height: 180px;"><canvas id="modal-trend-chart"></canvas></div>
+    </div>` : "";
+
+  body.innerHTML = `
+    <h3>${info.name}</h3>
+    <div class="modal-meta">${metaParts.join(" · ")}</div>
+    ${releaseInfoHtml}
+    ${investingLinkHtml}
+    ${valueLine}
+    ${trendHtml}
+    ${info.what ? `<div class="modal-section"><div class="label">Đo cái gì?</div><div class="body">${info.what}</div></div>` : ""}
+    ${info.why ? `<div class="modal-section"><div class="label">Tại sao quan trọng?</div><div class="body">${info.why}</div></div>` : ""}
+    ${info.high_means ? `<div class="modal-section up"><div class="label">↑ Cao hơn / Beat nghĩa là</div><div class="body">${info.high_means}</div></div>` : ""}
+    ${info.low_means ? `<div class="modal-section down"><div class="label">↓ Thấp hơn / Miss nghĩa là</div><div class="body">${info.low_means}</div></div>` : ""}
+    ${info.watch ? `<div class="modal-section"><div class="label">Cần theo dõi</div><div class="body">${info.watch}</div></div>` : ""}
+  `;
+  document.getElementById("modal-overlay").classList.add("open");
+
+  // Render trend chart + bind toggle
+  if (hasHistory) {
+    renderModalTrendChart(info._fredId, "level");
+    body.querySelectorAll(".view-toggle[data-modal-fred] .view-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        body.querySelectorAll(".view-toggle[data-modal-fred] .view-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        renderModalTrendChart(info._fredId, btn.dataset.view);
+      });
+    });
+  }
+}
+
+function renderReleaseInfo(rd) {
+  // Pretty render actual / forecast / previous as a small comparison
+  const surprise = (() => {
+    const a = parseFloat(String(rd.actual ?? "").replace(/[%,KMB$]/g, ""));
+    const f = parseFloat(String(rd.forecast ?? "").replace(/[%,KMB$]/g, ""));
+    if (isNaN(a) || isNaN(f)) return null;
+    if (Math.abs(a - f) < Math.max(0.05, Math.abs(f) * 0.02)) return { lbl: "in-line", cls: "" };
+    return a > f ? { lbl: "beat", cls: "up" } : { lbl: "miss", cls: "down" };
+  })();
+  return `<div class="modal-section">
+    <div class="label">Công bố hôm nay</div>
+    <div class="body" style="font-feature-settings: 'tnum';">
+      <strong>Actual: ${rd.actual ?? "—"}</strong> · Forecast: ${rd.forecast ?? "—"} · Previous: ${rd.previous ?? "—"}
+      ${surprise ? ` · <span class="${surprise.cls === 'up' ? 'surprise-beat' : (surprise.cls === 'down' ? 'surprise-miss' : 'surprise-inline')}">${surprise.lbl}</span>` : ""}
+    </div>
+  </div>`;
+}
+
+let modalChart = null;
+function renderModalTrendChart(fredId, view) {
+  const s = (D.history || {})[fredId];
+  if (!s || !s.history) return;
+  const t = transformSeries(s.history, view);
+  const { labels, values } = tailWindow(t.labels, t.values);
+
+  const datasets = [{
+    data: values,
+    borderColor: "#60a5fa",
+    backgroundColor: "rgba(96,165,250,0.1)",
+    fill: true,
+    tension: 0.25,
+    pointRadius: 0,
+    borderWidth: 1.5,
+    spanGaps: true,
+  }];
+  getReferenceLines(fredId, view).forEach(ref => {
+    datasets.push({
+      data: labels.map(() => ref.value),
+      borderColor: ref.color,
+      borderDash: [4, 4],
+      borderWidth: 1,
+      pointRadius: 0,
+      fill: false,
+      label: ref.label,
+    });
+  });
+
+  const ctx = document.getElementById("modal-trend-chart");
+  if (!ctx) return;
+  if (modalChart) modalChart.destroy();
+  modalChart = new Chart(ctx, {
+    type: "line",
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          mode: "index", intersect: false,
+          callbacks: {
+            label: (ctx) => {
+              if (ctx.datasetIndex === 0) {
+                const v = ctx.parsed.y;
+                if (v == null) return "—";
+                return fmt(v, 2) + " " + t.unitSuffix;
+              }
+              return ctx.dataset.label;
+            },
+          },
+        },
+      },
+      scales: {
+        x: { ticks: { color: "#8b96a3", maxTicksLimit: 6, font: { size: 10 } }, grid: { display: false } },
+        y: { ticks: { color: "#8b96a3", font: { size: 10 } }, grid: { color: "rgba(255,255,255,0.05)" } },
+      },
+    },
+  });
+}
+
+function closeModal() {
+  document.getElementById("modal-overlay").classList.remove("open");
+}
+
+document.getElementById("modal-close").addEventListener("click", closeModal);
+document.getElementById("modal-overlay").addEventListener("click", (e) => {
+  if (e.target.id === "modal-overlay") closeModal();
+});
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
+
+document.getElementById("last-updated").textContent =
+  D.last_updated ? "Cập nhật: " + new Date(D.last_updated).toLocaleString("vi-VN") : "Chưa có dữ liệu";
+
+// === End-of-month reminder banner ===
+(function renderMonthlyReminder() {
+  const el = document.getElementById("monthly-reminder");
+  if (!el) return;
+  const today = new Date();
+  const day = today.getDate();
+  const lastDayOfMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0).getDate();
+  // Show in last 3 days of month OR first 3 days of new month
+  const inWindow = day >= (lastDayOfMonth - 2) || day <= 3;
+  if (!inWindow) return;
+
+  // Target month: if early days, target = previous month; else = current month
+  let year = today.getFullYear();
+  let month = today.getMonth() + 1;
+  if (day <= 3) {
+    month -= 1;
+    if (month === 0) { month = 12; year -= 1; }
+  }
+  const targetMonth = `${year}-${String(month).padStart(2, "0")}`;
+
+  // Check if monthly report already exists
+  const existing = (D.monthly_reports || []).find(r =>
+    r.month === targetMonth || (r.file && r.file.startsWith(targetMonth))
+  );
+  if (existing) return;
+
+  const inEarlyDays = day <= 3;
+  const msg = inEarlyDays
+    ? `Bạn vừa bước sang tháng mới. Chưa có báo cáo tổng hợp cho tháng <strong>${targetMonth}</strong>.`
+    : `Đã cuối tháng. Tháng <strong>${targetMonth}</strong> chưa có báo cáo tổng hợp.`;
+
+  el.innerHTML = `
+    <div class="reminder-banner">
+      📅 ${msg}
+      Chạy <code>/monthly-macro ${targetMonth}</code> để tổng hợp đầy đủ chỉ số + sector calls 11 GICS + bảng xu hướng.
+    </div>
+  `;
+})();
+
+// === Insights & Kết luận ===
+(function renderInsights() {
+  const el = document.getElementById("insights-section");
+  const daily = D.latest_daily;
+  const monthly = D.latest_monthly;
+
+  if (!daily && !monthly) return; // keep placeholder
+
+  // Build badges from front-matter
+  function badgesFor(report) {
+    if (!report) return "";
+    const badges = [];
+    if (report.regime_signal) {
+      const cls = "badge-" + report.regime_signal.replace(/[^a-z-]/gi, "").toLowerCase();
+      badges.push(`<span class="insights-badge ${cls}">${report.regime_signal}</span>`);
+    }
+    if (report.regime) {
+      const cls = "badge-" + report.regime.replace(/[^a-z-]/gi, "").toLowerCase();
+      badges.push(`<span class="insights-badge ${cls}">Regime: ${report.regime}</span>`);
+    }
+    if (report.fed_stance) {
+      const cls = "badge-" + report.fed_stance.replace(/[^a-z-]/gi, "").toLowerCase();
+      badges.push(`<span class="insights-badge ${cls}">Fed: ${report.fed_stance}</span>`);
+    }
+    if (report.surprise_count != null && Number(report.surprise_count) > 0) {
+      badges.push(`<span class="insights-badge badge-neutral">${report.surprise_count} surprises</span>`);
+    }
+    return badges.join(" ");
+  }
+
+  const hasDaily = !!daily;
+  const hasMonthly = !!monthly;
+
+  // Tab buttons (only show if both exist)
+  let tabsHtml = "";
+  if (hasDaily && hasMonthly) {
+    tabsHtml = `
+      <div class="tabs">
+        <button class="tab active" data-tab="daily">Daily — ${daily.date}</button>
+        <button class="tab" data-tab="monthly">Tháng — ${monthly.month || monthly.date}</button>
+      </div>`;
+  }
+
+  // Default panel: daily if exists, else monthly
+  const initial = hasDaily ? daily : monthly;
+  const initialKind = hasDaily ? "daily" : "monthly";
+
+  el.innerHTML = `
+    <div class="insights-card">
+      <div class="insights-header" id="insights-header">
+        ${badgesFor(initial)}
+      </div>
+      ${initial.key_takeaway ? `<div class="key-takeaway" id="insights-takeaway">${initial.key_takeaway}</div>` : `<div id="insights-takeaway"></div>`}
+      ${tabsHtml}
+      <div class="markdown-body" id="insights-body"></div>
+      <div class="monthly-full-charts" id="monthly-full-charts" style="display:none;"></div>
+      <div class="report-meta" id="insights-meta"></div>
+    </div>
+  `;
+
+  let monthlyChartsRendered = false;
+
+  function showReport(report, kind) {
+    const headerEl = document.getElementById("insights-header");
+    const takeawayEl = document.getElementById("insights-takeaway");
+    const bodyEl = document.getElementById("insights-body");
+    const metaEl = document.getElementById("insights-meta");
+    const fullChartsEl = document.getElementById("monthly-full-charts");
+
+    headerEl.innerHTML = badgesFor(report);
+    takeawayEl.innerHTML = report.key_takeaway ? `<div class="key-takeaway">${report.key_takeaway}</div>` : "";
+
+    // Render markdown body
+    if (report.body && window.marked) {
+      try {
+        bodyEl.innerHTML = marked.parse(report.body);
+      } catch (e) {
+        bodyEl.textContent = report.body;
+      }
+    } else if (report.body) {
+      bodyEl.innerText = report.body;
+    } else {
+      bodyEl.innerHTML = `<div class="empty">Báo cáo này chưa có nội dung.</div>`;
+    }
+
+    metaEl.textContent = `Nguồn: data/${kind === "daily" ? "daily" : "monthly"}/${report.file}`;
+
+    // Show/hide full FRED charts for monthly tab
+    if (kind === "monthly") {
+      fullChartsEl.style.display = "";
+      if (!monthlyChartsRendered) {
+        renderMonthlyFullCharts(fullChartsEl);
+        monthlyChartsRendered = true;
+      }
+    } else {
+      fullChartsEl.style.display = "none";
+    }
+  }
+
+  showReport(initial, initialKind);
+
+  // Tab handlers
+  if (hasDaily && hasMonthly) {
+    el.querySelectorAll(".tab").forEach(btn => {
+      btn.addEventListener("click", () => {
+        el.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        const kind = btn.dataset.tab;
+        showReport(kind === "daily" ? daily : monthly, kind);
+      });
+    });
+  }
+})();
+
+// === Today's releases ===
+(function renderReleases() {
+  const el = document.getElementById("today-releases");
+  const r = D.daily_releases || {};
+  const list = r.releases || [];
+  if (!list.length) {
+    el.innerHTML = `<div class="empty">Không có chỉ số US nào công bố ngày ${r.date || "—"}.</div>`;
+    return;
+  }
+  const rows = list.map((ev, i) => {
+    const surprise = classifySurprise(ev);
+    return `<tr class="clickable" data-release-idx="${i}">
+      <td>${ev.name || "—"} <span class="info-icon" title="Click để xem chi tiết">i</span></td>
+      <td>${ev.time ? ev.time.slice(11, 16) : "—"}</td>
+      <td class="num">${ev.actual ?? "—"}</td>
+      <td class="num">${ev.forecast ?? "—"}</td>
+      <td class="num">${ev.previous ?? "—"}</td>
+      <td class="${surprise.cls}">${surprise.label}</td>
+    </tr>`;
+  }).join("");
+  el.innerHTML = `
+    <div style="margin-bottom:8px; color: var(--muted); font-size: 12px;">Ngày: ${r.date}</div>
+    <table>
+      <thead><tr><th>Chỉ số</th><th>Giờ (NY)</th><th>Actual</th><th>Forecast</th><th>Previous</th><th>Surprise</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+  el.querySelectorAll("tr.clickable").forEach(tr => {
+    tr.addEventListener("click", () => {
+      const idx = +tr.dataset.releaseIdx;
+      const ev = list[idx];
+      openModal({ name: ev.name, releaseData: ev });
+    });
+  });
+})();
+
+function classifySurprise(ev) {
+  const a = parseFloat(String(ev.actual ?? "").replace(/[%,KMB]/g, ""));
+  const f = parseFloat(String(ev.forecast ?? "").replace(/[%,KMB]/g, ""));
+  if (isNaN(a) || isNaN(f)) return { label: "—", cls: "surprise-inline" };
+  if (Math.abs(a - f) < Math.max(0.05, Math.abs(f) * 0.02)) return { label: "in-line", cls: "surprise-inline" };
+  return a > f ? { label: "beat", cls: "surprise-beat" } : { label: "miss", cls: "surprise-miss" };
+}
+
+// === KPI grid ===
+const KPI_KEYS = ["DFF", "DGS10", "DGS2", "T10Y2Y", "UNRATE", "CPIAUCSL", "CPILFESL", "PCEPILFE"];
+(function renderKPIs() {
+  const wrap = document.getElementById("kpi-grid");
+  const h = D.history || {};
+  wrap.innerHTML = KPI_KEYS.map(k => {
+    const s = h[k];
+    if (!s || !s.latest) return `<div class="card clickable" data-fred-id="${k}"><div class="kpi-label">${k}</div><div class="kpi-value">—</div></div>`;
+    const delta = s.change_pct;
+    const deltaCls = delta > 0 ? "up" : delta < 0 ? "down" : "flat";
+    return `<div class="card clickable" data-fred-id="${k}">
+      <div class="kpi-label">${s.label || k} <span class="info-icon" title="Xem giải thích">i</span></div>
+      <div class="kpi-value">${fmt(s.latest.value, 2)}</div>
+      <div class="kpi-delta ${deltaCls}">${delta != null ? fmtPct(delta, 2) : ""} <span style="color: var(--muted)">· ${s.latest.date}</span></div>
+    </div>`;
+  }).join("");
+  wrap.querySelectorAll(".clickable").forEach(card => {
+    card.addEventListener("click", () => {
+      const fredId = card.dataset.fredId;
+      const s = h[fredId] || {};
+      openModal({ fredId, latest: s.latest, change: s.change_pct });
+    });
+  });
+})();
+
+// === Charts ===
+// Groups used ONLY for "full monthly view" (when user clicks Tháng tab).
+// Daily dashboard shows dynamic trends for today's releases instead.
+const GROUPS = {
+  "Lạm phát": ["CPIAUCSL", "CPILFESL", "PCEPI", "PCEPILFE", "PPIACO"],
+  "Lao động": ["PAYEMS", "UNRATE", "ICSA", "CES0500000003", "JTSJOL"],
+  "Tăng trưởng & PMI": ["GDPC1", "RSAFS", "INDPRO", "MANEMP", "UMCSENT", "TTLCONS", "DGORDER", "GDPNOW"],
+  "Lãi suất & Yield Curve": ["DFF", "DGS10", "DGS2", "DGS3MO", "DGS6MO", "T10Y2Y"],
+  "Cross-asset (FRED)": ["DTWEXBGS", "VIXCLS", "DCOILWTICO", "BAMLH0A0HYM2", "BAMLC0A0CM", "T10YIE"],
+};
+
+// Smart default view per FRED series.
+// "level" = raw value | "yoy" = % vs 12 periods ago | "mom" = % vs prior period
+// "mom_delta" = absolute change vs prior period (for count series like NFP)
+// "level_ma4" = level smoothed with 4-period moving average
+const DEFAULT_VIEW = {
+  // Inflation → YoY (Fed compares vs 2% target)
+  CPIAUCSL: "yoy", CPILFESL: "yoy", PCEPI: "yoy", PCEPILFE: "yoy", PPIACO: "yoy",
+  // Labor
+  PAYEMS: "mom_delta",      // change in jobs (k people)
+  UNRATE: "level",          // already %
+  ICSA: "level_ma4",        // 4-week MA reduces noise
+  CES0500000003: "yoy",     // wage growth
+  JTSJOL: "level",          // openings count
+  // Growth
+  GDPC1: "yoy", RSAFS: "yoy", INDPRO: "yoy", MANEMP: "yoy", UMCSENT: "level",
+  // Housing
+  HOUST: "yoy", EXHOSLUSM495S: "yoy", CSUSHPINSA: "yoy",
+  // Rates → already %, just level
+  DFF: "level", DGS10: "level", DGS2: "level", DGS3MO: "level", T10Y2Y: "level",
+};
+
+// Reference lines per series + view combo
+function getReferenceLines(fredId, view) {
+  const lines = [];
+  // Fed 2% target on inflation series, only in YoY view
+  if (view === "yoy" && ["CPIAUCSL", "CPILFESL", "PCEPI", "PCEPILFE", "PPIACO"].includes(fredId)) {
+    lines.push({ value: 2, label: "Fed target 2%", color: "#fbbf24" });
+  }
+  // Recession line 0 on T10Y2Y spread
+  if (fredId === "T10Y2Y") {
+    lines.push({ value: 0, label: "Yield curve inversion", color: "#f87171" });
+  }
+  return lines;
+}
+
+// Transform raw history → {labels, values, unit} per view mode
+function transformSeries(history, view) {
+  if (!history || !history.length) return { labels: [], values: [], unitSuffix: "" };
+  const values = history.map(p => p.value);
+  const labels = history.map(p => p.date);
+  switch (view) {
+    case "yoy": {
+      // Compare value vs value 12 periods ago. If series is daily, use 252 trading days. We assume monthly here for FRED macros.
+      // Detect frequency: if avg gap between labels < 10 days, assume daily and use 252; else 12.
+      const lag = guessLag(labels, 12);
+      const out = values.map((v, i) => {
+        if (i < lag || values[i - lag] === 0 || values[i - lag] == null) return null;
+        return ((v - values[i - lag]) / values[i - lag]) * 100;
+      });
+      return { labels, values: out, unitSuffix: "% YoY" };
+    }
+    case "mom": {
+      const out = values.map((v, i) => {
+        if (i < 1 || values[i - 1] === 0 || values[i - 1] == null) return null;
+        return ((v - values[i - 1]) / values[i - 1]) * 100;
+      });
+      return { labels, values: out, unitSuffix: "% MoM" };
+    }
+    case "mom_delta": {
+      const out = values.map((v, i) => i < 1 ? null : (v - values[i - 1]));
+      return { labels, values: out, unitSuffix: "Δ" };
+    }
+    case "level_ma4": {
+      const out = values.map((v, i) => {
+        if (i < 3) return null;
+        return (values[i] + values[i-1] + values[i-2] + values[i-3]) / 4;
+      });
+      return { labels, values: out, unitSuffix: " (4-wk MA)" };
+    }
+    case "level":
+    default:
+      return { labels, values, unitSuffix: "" };
+  }
+}
+
+function guessLag(labels, monthlyLag) {
+  if (labels.length < 2) return monthlyLag;
+  const t1 = new Date(labels[labels.length - 1]).getTime();
+  const t0 = new Date(labels[labels.length - 2]).getTime();
+  const gapDays = (t1 - t0) / 86400000;
+  if (gapDays < 10) return 252;          // daily series → 252 trading days
+  if (gapDays < 80) return 12;           // monthly
+  return 4;                              // quarterly
+}
+
+// Slice last N points (after trimming nulls from transform), with sensible windows per frequency.
+function tailWindow(labels, values) {
+  // find last non-null then cap to 60 points (e.g., 60 months = 5y, 60 days = ~3 mo for daily)
+  const startIdx = Math.max(0, values.length - 60);
+  // For daily series, want longer window
+  if (labels.length >= 2) {
+    const gap = (new Date(labels[labels.length-1]) - new Date(labels[labels.length-2])) / 86400000;
+    if (gap < 10) {
+      // daily → take last 504 points (~2 years)
+      return { labels: labels.slice(-504), values: values.slice(-504) };
+    }
+  }
+  return { labels: labels.slice(startIdx), values: values.slice(startIdx) };
+}
+
+const chartInstances = {};
+
+function renderChart(fredId, view) {
+  const s = (D.history || {})[fredId];
+  if (!s || !s.history) return;
+  const t = transformSeries(s.history, view);
+  const { labels, values } = tailWindow(t.labels, t.values);
+
+  const datasets = [{
+    data: values,
+    borderColor: "#60a5fa",
+    backgroundColor: "rgba(96,165,250,0.1)",
+    fill: true,
+    tension: 0.25,
+    pointRadius: 0,
+    borderWidth: 1.5,
+    spanGaps: true,
+  }];
+
+  // Reference lines as horizontal datasets
+  getReferenceLines(fredId, view).forEach(ref => {
+    datasets.push({
+      data: labels.map(() => ref.value),
+      borderColor: ref.color,
+      borderDash: [4, 4],
+      borderWidth: 1,
+      pointRadius: 0,
+      fill: false,
+      label: ref.label,
+    });
+  });
+
+  const ctx = document.getElementById("chart-" + fredId);
+  if (chartInstances[fredId]) chartInstances[fredId].destroy();
+  chartInstances[fredId] = new Chart(ctx, {
+    type: "line",
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          mode: "index",
+          intersect: false,
+          callbacks: {
+            label: (ctx) => {
+              if (ctx.datasetIndex === 0) {
+                const v = ctx.parsed.y;
+                if (v == null) return "—";
+                return fmt(v, 2) + " " + t.unitSuffix;
+              }
+              return ctx.dataset.label;
+            },
+          },
+        },
+      },
+      scales: {
+        x: { ticks: { color: "#8b96a3", maxTicksLimit: 6, font: { size: 10 } }, grid: { display: false } },
+        y: { ticks: { color: "#8b96a3", font: { size: 10 } }, grid: { color: "rgba(255,255,255,0.05)" } },
+      },
+    },
+  });
+}
+
+const VIEW_LABELS = {
+  level: "Level",
+  yoy: "YoY%",
+  mom: "MoM%",
+  mom_delta: "Δ MoM",
+  level_ma4: "MA",
+};
+
+function buildToggleButtons(fredId, currentView) {
+  // Show 3 sensible options based on default view
+  const options = ["level", "mom", "yoy"];
+  // If default is mom_delta (NFP), include it instead of mom
+  if (DEFAULT_VIEW[fredId] === "mom_delta") {
+    options.splice(1, 1, "mom_delta");
+  }
+  // If default is level_ma4 (jobless claims), include it instead of mom
+  if (DEFAULT_VIEW[fredId] === "level_ma4") {
+    options.splice(1, 1, "level_ma4");
+  }
+  return options.map(v => `<button class="view-btn${v === currentView ? " active" : ""}" data-view="${v}">${VIEW_LABELS[v]}</button>`).join("");
+}
+
+// Helper: build a chart card with label + toggle. Shared by Daily releases section and Monthly full view.
+function buildChartCard(fredId, h) {
+  const defaultView = DEFAULT_VIEW[fredId] || "level";
+  return `
+    <div class="card" data-fred-id="${fredId}">
+      <div class="card-header">
+        <div class="kpi-label clickable-label" data-fred-id="${fredId}">${(h[fredId] && h[fredId].label) || fredId} <span class="info-icon" title="Xem giải thích">i</span></div>
+        <div class="view-toggle" data-fred-id="${fredId}">${buildToggleButtons(fredId, defaultView)}</div>
+      </div>
+      <div class="chart-box"><canvas id="chart-${fredId}"></canvas></div>
+    </div>`;
+}
+
+function bindChartCardEvents(wrap, h) {
+  wrap.querySelectorAll(".clickable-label").forEach(el => {
+    el.addEventListener("click", () => {
+      const fredId = el.dataset.fredId;
+      const s = h[fredId] || {};
+      openModal({ fredId, latest: s.latest, change: s.change_pct });
+    });
+  });
+  wrap.querySelectorAll(".view-toggle").forEach(toggleGroup => {
+    const fredId = toggleGroup.dataset.fredId;
+    toggleGroup.querySelectorAll("button").forEach(btn => {
+      btn.addEventListener("click", () => {
+        toggleGroup.querySelectorAll("button").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        renderChart(fredId, btn.dataset.view);
+      });
+    });
+  });
+}
+
+// === Daily release trends — dynamic, based on today's releases ===
+(function renderReleaseTrends() {
+  const el = document.getElementById("release-trends");
+  if (!el) return;
+  const releases = (D.daily_releases && D.daily_releases.releases) || [];
+  const h = D.history || {};
+
+  // Map each release → FRED ID via byNamePattern; dedupe
+  const fredMap = new Map();  // fredId -> { name, releaseNames[] }
+  releases.forEach(rel => {
+    const info = lookupIndicator({ name: rel.name });
+    if (info && info._fredId && h[info._fredId] && (h[info._fredId].history || []).length > 0) {
+      const fid = info._fredId;
+      if (!fredMap.has(fid)) {
+        fredMap.set(fid, { fredId: fid, displayName: info.name || rel.name, releaseNames: [] });
+      }
+      fredMap.get(fid).releaseNames.push(rel.name);
+    }
+  });
+
+  if (!fredMap.size) {
+    if (!releases.length) {
+      el.innerHTML = `<div class="empty">Không có chỉ số nào công bố hôm nay. Xem chart xu hướng đầy đủ trong tab "Tháng" của Insights, hoặc click trên KPI cards trên đầu trang.</div>`;
+    } else {
+      el.innerHTML = `<div class="empty">${releases.length} releases hôm nay nhưng không có chart xu hướng FRED tương ứng (chủ yếu là Fed speakers, auctions, CFTC positioning). Xem trong tab "Tháng" cho chart đầy đủ.</div>`;
+    }
+    return;
+  }
+
+  // Render cards
+  const cards = Array.from(fredMap.values()).map(item => buildChartCard(item.fredId, h)).join("");
+  el.innerHTML = cards;
+  bindChartCardEvents(el, h);
+
+  // Initial render
+  fredMap.forEach((item, fredId) => {
+    renderChart(fredId, DEFAULT_VIEW[fredId] || "level");
+  });
+})();
+
+// === Monthly full view — lazy renders when Tháng tab clicked ===
+function renderMonthlyFullCharts(container) {
+  const h = D.history || {};
+  container.innerHTML = `<h4>Xu hướng đầy đủ 35 chỉ số FRED</h4>` +
+    Object.entries(GROUPS).map(([groupName, keys]) => `
+      <div style="margin-top: 16px;">
+        <h4 style="color: var(--blue);">${groupName}</h4>
+        <div class="grid grid-3">${keys.map(k => buildChartCard(k, h)).join("")}</div>
+      </div>
+    `).join("");
+  bindChartCardEvents(container, h);
+  // Initial render for all
+  Object.values(GROUPS).flat().forEach(k => renderChart(k, DEFAULT_VIEW[k] || "level"));
+}
+
+// === Market Context (Cross-asset) ===
+// Combines 6 FRED cross-asset series + 3 yfinance commodities/BTC.
+// FRED data lives in D.history, commodities in D.cross_asset.assets.
+const CROSS_ASSET_LAYOUT = [
+  // [key, type ('fred' or 'asset'), unit display, color]
+  { key: "DTWEXBGS", type: "fred", label: "USD Index (DXY)", color: "#fbbf24" },
+  { key: "VIXCLS", type: "fred", label: "VIX", color: "#f87171" },
+  { key: "DCOILWTICO", type: "fred", label: "WTI Crude", color: "#fb923c" },
+  { key: "GC=F", type: "asset", label: "Gold", color: "#facc15" },
+  { key: "HG=F", type: "asset", label: "Copper (Dr. Copper)", color: "#fb7185" },
+  { key: "BTC-USD", type: "asset", label: "Bitcoin", color: "#f59e0b" },
+  { key: "BAMLH0A0HYM2", type: "fred", label: "HY Credit Spread", color: "#a78bfa" },
+  { key: "BAMLC0A0CM", type: "fred", label: "IG Credit Spread", color: "#94a3b8" },
+  { key: "T10YIE", type: "fred", label: "10Y Inflation Breakeven", color: "#22d3ee" },
+];
+
+function buildAssetSparkline(history, color) {
+  return {
+    type: "line",
+    data: {
+      labels: history.map(p => p.date),
+      datasets: [{
+        data: history.map(p => p.value),
+        borderColor: color,
+        backgroundColor: color + "22",
+        borderWidth: 1.5,
+        pointRadius: 0,
+        fill: true,
+        tension: 0.25,
+      }],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: { mode: "index", intersect: false } },
+      scales: {
+        x: { ticks: { color: "#8b96a3", maxTicksLimit: 4, font: { size: 9 } }, grid: { display: false } },
+        y: { ticks: { color: "#8b96a3", font: { size: 9 } }, grid: { color: "rgba(255,255,255,0.05)" } },
+      },
+    },
+  };
+}
+
+(function renderCrossAsset() {
+  const el = document.getElementById("cross-asset-section");
+  const hist = D.history || {};
+  const assets = (D.cross_asset && D.cross_asset.assets) || {};
+
+  // Compute summary signal: risk-on or risk-off
+  const dxy = hist["DTWEXBGS"];
+  const vix = hist["VIXCLS"];
+  const hy = hist["BAMLH0A0HYM2"];
+  const wti = hist["DCOILWTICO"];
+  let signal = "neutral";
+  let signalReason = "";
+  const vixVal = vix && vix.latest ? vix.latest.value : null;
+  const hyVal = hy && hy.latest ? hy.latest.value : null;
+  if (vixVal != null && hyVal != null) {
+    if (vixVal < 16 && hyVal < 3.5) {
+      signal = "risk-on"; signalReason = `VIX ${fmt(vixVal,1)} thấp + HY spread ${fmt(hyVal,2)}% hẹp → complacency/risk-on`;
+    } else if (vixVal > 22 || hyVal > 5) {
+      signal = "risk-off"; signalReason = `VIX ${fmt(vixVal,1)} cao hoặc HY spread ${fmt(hyVal,2)}% rộng → stress`;
+    } else {
+      signalReason = `VIX ${fmt(vixVal,1)}, HY ${fmt(hyVal,2)}% — vùng trung tính`;
+    }
+  }
+
+  const signalColor = signal === "risk-on" ? "#4ade80" : signal === "risk-off" ? "#f87171" : "#8b96a3";
+
+  const cards = CROSS_ASSET_LAYOUT.map(item => {
+    let value, change, history, latestDate, unit, clickKey, clickType;
+    if (item.type === "fred") {
+      const s = hist[item.key];
+      if (!s || !s.latest) return `<div class="card"><div class="kpi-label">${item.label}</div><div class="empty">—</div></div>`;
+      value = s.latest.value;
+      change = s.change_pct;
+      latestDate = s.latest.date;
+      history = (s.history || []).slice(-126); // last ~6 months daily
+      clickKey = item.key; clickType = "fred";
+    } else {
+      const a = assets[item.key];
+      if (!a) return `<div class="card"><div class="kpi-label">${item.label}</div><div class="empty">—</div></div>`;
+      value = a.latest;
+      change = a.ret_1d;
+      latestDate = a.latest_date;
+      history = (a.history || []).slice(-126);
+      clickKey = item.key; clickType = "asset";
+    }
+    const deltaCls = change > 0 ? "up" : change < 0 ? "down" : "flat";
+    const ret1m = item.type === "asset" ? assets[item.key]?.ret_1m : null;
+    const ret1mTxt = ret1m != null ? `<span style="color: var(--muted); font-size: 11px;"> · 1M ${fmtRet(ret1m)}</span>` : "";
+
+    return `<div class="card clickable" data-cross-key="${clickKey}" data-cross-type="${clickType}">
+      <div class="kpi-label">${item.label} <span class="info-icon" title="Xem giải thích">i</span></div>
+      <div class="kpi-value">${fmt(value, 2)}</div>
+      <div class="kpi-delta ${deltaCls}">${change != null ? fmtPct(change, 2) : ""}${ret1mTxt} <span style="color: var(--muted)">· ${latestDate || ""}</span></div>
+      <div class="chart-box" style="height: 90px; margin-top: 6px;"><canvas id="ca-spark-${item.key.replace(/[^a-zA-Z0-9]/g, '_')}"></canvas></div>
+    </div>`;
+  }).join("");
+
+  el.innerHTML = `
+    <div style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+      <span class="pill" style="background: ${signalColor}22; color: ${signalColor}; font-weight: 600;">Signal: ${signal.toUpperCase()}</span>
+      <span style="color: var(--muted); font-size: 12px;">${signalReason}</span>
+    </div>
+    <div class="grid grid-3">${cards}</div>
+  `;
+
+  // Render sparklines
+  CROSS_ASSET_LAYOUT.forEach(item => {
+    let history;
+    if (item.type === "fred") {
+      const s = hist[item.key];
+      history = s && s.history ? s.history.slice(-126) : null;
+    } else {
+      const a = assets[item.key];
+      history = a && a.history ? a.history.slice(-126) : null;
+    }
+    if (!history || !history.length) return;
+    const canvasId = "ca-spark-" + item.key.replace(/[^a-zA-Z0-9]/g, '_');
+    const ctx = document.getElementById(canvasId);
+    if (!ctx) return;
+    new Chart(ctx, buildAssetSparkline(history, item.color));
+  });
+
+  // Click handler → modal
+  el.querySelectorAll(".clickable").forEach(card => {
+    card.addEventListener("click", () => {
+      const key = card.dataset.crossKey;
+      const type = card.dataset.crossType;
+      if (type === "fred") {
+        const s = hist[key] || {};
+        openModal({ fredId: key, latest: s.latest, change: s.change_pct });
+      } else {
+        openCrossAssetModal(key);
+      }
+    });
+  });
+})();
+
+function openCrossAssetModal(ticker) {
+  const meta = INDICATORS.byCrossAssetTicker && INDICATORS.byCrossAssetTicker[ticker];
+  const data = ((D.cross_asset || {}).assets || {})[ticker];
+  const body = document.getElementById("modal-body");
+  if (!meta) {
+    body.innerHTML = `<h3>${ticker}</h3><div class="modal-empty">Chưa có metadata.</div>`;
+  } else {
+    const metaParts = [];
+    if (meta.unit) metaParts.push(meta.unit);
+    if (meta.ticker) metaParts.push("Yahoo: " + meta.ticker);
+    let valueLine = "";
+    if (data) {
+      valueLine = `<div class="modal-section"><div class="label">Giá trị mới nhất</div>
+        <div class="body"><strong>${fmt(data.latest, 2)}</strong> · 1D ${fmtRet(data.ret_1d)} · 1W ${fmtRet(data.ret_1w)} · 1M ${fmtRet(data.ret_1m)} · 3M ${fmtRet(data.ret_3m)} · YTD ${fmtRet(data.ret_ytd)} · 1Y ${fmtRet(data.ret_1y)}
+          <span style="color: var(--muted)"> · ${data.latest_date}</span></div></div>`;
+    }
+    body.innerHTML = `
+      <h3>${meta.name}</h3>
+      <div class="modal-meta">${metaParts.join(" · ")}</div>
+      ${valueLine}
+      <div class="modal-section"><div class="label">Asset gì?</div><div class="body">${meta.what}</div></div>
+      <div class="modal-section"><div class="label">Macro drivers</div><div class="body">${meta.drivers}</div></div>
+      <div class="modal-section up"><div class="label">Hưởng lợi khi</div><div class="body">${meta.thrives_when}</div></div>
+      <div class="modal-section down"><div class="label">Chịu áp lực khi</div><div class="body">${meta.struggles_when}</div></div>
+      <div class="modal-section"><div class="label">Sector signal</div><div class="body">${meta.sector_signal}</div></div>
+    `;
+  }
+  document.getElementById("modal-overlay").classList.add("open");
+}
+
+// === Sector rotation ===
+// Color palette for 11 sectors (distinct, accessible on dark bg)
+const SECTOR_COLORS = {
+  XLK: "#60a5fa",  // blue — tech
+  XLF: "#fbbf24",  // amber — financials
+  XLE: "#f59e0b",  // dark amber — energy
+  XLV: "#a78bfa",  // purple — healthcare
+  XLY: "#f472b6",  // pink — discretionary
+  XLP: "#34d399",  // green — staples
+  XLI: "#fb923c",  // orange — industrials
+  XLB: "#facc15",  // yellow — materials
+  XLU: "#22d3ee",  // cyan — utilities
+  XLRE: "#94a3b8", // slate — REITs
+  XLC: "#c084fc",  // violet — communications
+};
+
+function heatClass(pct) {
+  if (pct == null || isNaN(pct)) return "heat-zero";
+  if (pct >= 5) return "heat-pos-3";
+  if (pct >= 2) return "heat-pos-2";
+  if (pct > 0) return "heat-pos-1";
+  if (pct <= -5) return "heat-neg-3";
+  if (pct <= -2) return "heat-neg-2";
+  if (pct < 0) return "heat-neg-1";
+  return "heat-zero";
+}
+
+function fmtRet(v) {
+  if (v == null || isNaN(v)) return "—";
+  return (v >= 0 ? "+" : "") + fmt(v, 2) + "%";
+}
+
+(function renderSectors() {
+  const el = document.getElementById("sectors-section");
+  const sectorsData = (D.sectors && D.sectors.sectors) || {};
+  const benchmark = (D.sectors && D.sectors.benchmark) || {};
+  const sectorList = Object.values(sectorsData);
+  if (!sectorList.length) {
+    el.innerHTML = `<div class="empty">Chưa có sector data. Chạy <code>python scripts/fetch_sectors.py</code> rồi rebuild dashboard.</div>`;
+    return;
+  }
+
+  // ---- Absolute return heatmap (left) ----
+  const sortedAbs = [...sectorList].sort((a, b) => (b.ret_1m ?? -999) - (a.ret_1m ?? -999));
+  const absRows = sortedAbs.map(s => `
+    <tr class="clickable" data-ticker="${s.ticker}">
+      <td><span class="ticker">${s.ticker}</span>${s.name}</td>
+      <td><span class="ret-cell ${heatClass(s.ret_1w)}">${fmtRet(s.ret_1w)}</span></td>
+      <td><span class="ret-cell ${heatClass(s.ret_1m)}">${fmtRet(s.ret_1m)}</span></td>
+      <td><span class="ret-cell ${heatClass(s.ret_3m)}">${fmtRet(s.ret_3m)}</span></td>
+      <td><span class="ret-cell ${heatClass(s.ret_ytd)}">${fmtRet(s.ret_ytd)}</span></td>
+      <td><span class="ret-cell ${heatClass(s.ret_1y)}">${fmtRet(s.ret_1y)}</span></td>
+    </tr>`).join("");
+
+  // ---- Relative Strength vs SPY (right) ----
+  const sortedRS = [...sectorList].sort((a, b) => (b.rs_1m ?? -999) - (a.rs_1m ?? -999));
+  const rsRows = sortedRS.map(s => `
+    <tr class="clickable" data-ticker="${s.ticker}">
+      <td><span class="ticker">${s.ticker}</span>${s.name}</td>
+      <td><span class="ret-cell ${heatClass(s.rs_1w)}">${fmtRet(s.rs_1w)}</span></td>
+      <td><span class="ret-cell ${heatClass(s.rs_1m)}">${fmtRet(s.rs_1m)}</span></td>
+      <td><span class="ret-cell ${heatClass(s.rs_3m)}">${fmtRet(s.rs_3m)}</span></td>
+      <td><span class="ret-cell ${heatClass(s.rs_ytd)}">${fmtRet(s.rs_ytd)}</span></td>
+      <td><span class="ret-cell ${heatClass(s.rs_1y)}">${fmtRet(s.rs_1y)}</span></td>
+    </tr>`).join("");
+
+  el.innerHTML = `
+    <div style="color: var(--muted); font-size: 12px; margin-bottom: 12px;">
+      Latest: ${sortedAbs[0] && sortedAbs[0].latest_date ? sortedAbs[0].latest_date : "—"} ·
+      Benchmark SPY: ${benchmark.latest ? "$" + fmt(benchmark.latest, 2) : "—"}
+      ${benchmark.ret_1m != null ? `(${fmtRet(benchmark.ret_1m)} 1M)` : ""}
+      · Click vào sector để xem giải thích
+    </div>
+    <div class="sector-grid">
+      <div class="card">
+        <div class="kpi-label" style="margin-bottom: 10px;">Absolute returns</div>
+        <table class="sector-table">
+          <thead><tr><th>Sector</th><th>1W</th><th>1M</th><th>3M</th><th>YTD</th><th>1Y</th></tr></thead>
+          <tbody>${absRows}</tbody>
+        </table>
+      </div>
+      <div class="card">
+        <div class="kpi-label" style="margin-bottom: 10px;">Relative Strength vs SPY</div>
+        <table class="sector-table">
+          <thead><tr><th>Sector</th><th>1W</th><th>1M</th><th>3M</th><th>YTD</th><th>1Y</th></tr></thead>
+          <tbody>${rsRows}</tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="sector-rs-chart-wrap" style="margin-top: 16px;">
+      <div class="kpi-label" style="margin-bottom: 8px;">RS vs SPY — 1 năm gần đây (100 = không thay đổi)</div>
+      <div class="rs-chart-box"><canvas id="rs-chart"></canvas></div>
+      <div class="legend-grid" id="rs-legend"></div>
+    </div>
+  `;
+
+  // ---- Click handlers on rows → sector modal ----
+  el.querySelectorAll("tr.clickable").forEach(tr => {
+    tr.addEventListener("click", () => openSectorModal(tr.dataset.ticker));
+  });
+
+  // ---- RS chart with all 11 sectors ----
+  // Get union of dates
+  const allDates = new Set();
+  sectorList.forEach(s => (s.rs_history || []).forEach(p => allDates.add(p.date)));
+  const labels = Array.from(allDates).sort();
+
+  const datasets = sectorList.map(s => {
+    const map = {};
+    (s.rs_history || []).forEach(p => { map[p.date] = p.value; });
+    return {
+      label: s.ticker,
+      data: labels.map(d => map[d] ?? null),
+      borderColor: SECTOR_COLORS[s.ticker] || "#999",
+      backgroundColor: "transparent",
+      borderWidth: 1.3,
+      pointRadius: 0,
+      tension: 0.2,
+      spanGaps: true,
+      hidden: false,
+    };
+  });
+
+  // 100 baseline (no-change reference)
+  datasets.push({
+    label: "Baseline (no change)",
+    data: labels.map(() => 100),
+    borderColor: "rgba(255,255,255,0.25)",
+    borderDash: [4, 4],
+    borderWidth: 1,
+    pointRadius: 0,
+    fill: false,
+    _baseline: true,
+  });
+
+  const rsChart = new Chart(document.getElementById("rs-chart"), {
+    type: "line",
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: "index", intersect: false },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: (ctx) => `${ctx.dataset.label}: ${fmt(ctx.parsed.y, 1)}`,
+          },
+        },
+      },
+      scales: {
+        x: { ticks: { color: "#8b96a3", maxTicksLimit: 8, font: { size: 10 } }, grid: { display: false } },
+        y: { ticks: { color: "#8b96a3", font: { size: 10 } }, grid: { color: "rgba(255,255,255,0.05)" } },
+      },
+    },
+  });
+
+  // Custom legend with click-to-toggle
+  const legendEl = document.getElementById("rs-legend");
+  legendEl.innerHTML = sectorList.map(s => `
+    <div class="legend-item" data-ticker="${s.ticker}">
+      <div class="legend-swatch" style="background: ${SECTOR_COLORS[s.ticker]}"></div>
+      <span><strong>${s.ticker}</strong> ${s.name}</span>
+    </div>`).join("");
+  legendEl.querySelectorAll(".legend-item").forEach(item => {
+    item.addEventListener("click", () => {
+      const ticker = item.dataset.ticker;
+      const ds = rsChart.data.datasets.find(d => d.label === ticker);
+      if (!ds) return;
+      ds.hidden = !ds.hidden;
+      item.classList.toggle("hidden", ds.hidden);
+      rsChart.update();
+    });
+  });
+})();
+
+function openSectorModal(ticker) {
+  const sectorMeta = INDICATORS.bySectorTicker && INDICATORS.bySectorTicker[ticker];
+  const sectorData = ((D.sectors || {}).sectors || {})[ticker];
+  const body = document.getElementById("modal-body");
+  if (!sectorMeta) {
+    body.innerHTML = `<h3>${ticker}</h3><div class="modal-empty">Chưa có metadata cho sector này.</div>`;
+    document.getElementById("modal-overlay").classList.add("open");
+    return;
+  }
+
+  // Performance block
+  let perfBlock = "";
+  if (sectorData) {
+    const rows = [
+      ["1 tuần", sectorData.ret_1w, sectorData.rs_1w],
+      ["1 tháng", sectorData.ret_1m, sectorData.rs_1m],
+      ["3 tháng", sectorData.ret_3m, sectorData.rs_3m],
+      ["YTD", sectorData.ret_ytd, sectorData.rs_ytd],
+      ["1 năm", sectorData.ret_1y, sectorData.rs_1y],
+    ];
+    perfBlock = `
+      <div class="modal-section">
+        <div class="label">Hiệu suất hiện tại</div>
+        <table class="sector-table" style="margin-top:6px;">
+          <thead><tr><th>Khung TG</th><th>Absolute</th><th>vs SPY (RS)</th></tr></thead>
+          <tbody>
+            ${rows.map(r => `<tr>
+              <td>${r[0]}</td>
+              <td><span class="ret-cell ${heatClass(r[1])}">${fmtRet(r[1])}</span></td>
+              <td><span class="ret-cell ${heatClass(r[2])}">${fmtRet(r[2])}</span></td>
+            </tr>`).join("")}
+          </tbody>
+        </table>
+      </div>`;
+  }
+
+  body.innerHTML = `
+    <h3>${sectorMeta.name}</h3>
+    <div class="modal-meta">ETF: ${sectorMeta.etf} · Trọng số S&P 500: ${sectorMeta.weight_sp500}</div>
+    ${perfBlock}
+    <div class="modal-section"><div class="label">Holdings chính</div><div class="body">${sectorMeta.top_holdings}</div></div>
+    <div class="modal-section"><div class="label">Sector bao gồm gì?</div><div class="body">${sectorMeta.what}</div></div>
+    <div class="modal-section"><div class="label">Macro drivers</div><div class="body">${sectorMeta.macro_drivers}</div></div>
+    <div class="modal-section up"><div class="label">Hưởng lợi khi</div><div class="body">${sectorMeta.thrives_when}</div></div>
+    <div class="modal-section down"><div class="label">Chịu áp lực khi</div><div class="body">${sectorMeta.struggles_when}</div></div>
+    <div class="modal-section"><div class="label">Tín hiệu cần theo dõi</div><div class="body">${sectorMeta.key_signals}</div></div>
+  `;
+  document.getElementById("modal-overlay").classList.add("open");
+}
+
+// === Calendar (Catalysts) ===
+(function renderCalendar() {
+  const el = document.getElementById("calendar-section");
+  const cal = D.calendar || {};
+  const macro = cal.macro || [];
+  const earnings = cal.earnings || [];
+  if (!macro.length && !earnings.length) {
+    el.innerHTML = `<div class="empty">Chưa có calendar. Chạy <code>python scripts/fetch_calendar.py</code>.</div>`;
+    return;
+  }
+
+  // Group by date
+  const byDate = {};
+  for (const e of macro) {
+    (byDate[e.date] = byDate[e.date] || []).push({ ...e, kind: "macro" });
+  }
+  for (const e of earnings) {
+    (byDate[e.date] = byDate[e.date] || []).push({ ...e, kind: "earnings" });
+  }
+  const sortedDates = Object.keys(byDate).sort();
+
+  const today = new Date().toISOString().slice(0, 10);
+
+  const weekdayNames = ["CN", "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy"];
+
+  el.innerHTML = `
+    <div style="color: var(--muted); font-size: 12px; margin-bottom: 12px;">
+      ${earnings.length} earnings + ${macro.length} macro releases · Cửa sổ: ${cal.window_start || "—"} → ${cal.window_end || "—"}
+      · <span style="color: var(--amber, #fbbf24);">Macro dates là ước tính dựa trên cadence lịch sử.</span>
+    </div>
+    ${sortedDates.map(date => {
+      const dt = new Date(date);
+      const wd = weekdayNames[dt.getDay()];
+      const isToday = date === today;
+      const events = byDate[date];
+      return `
+      <div class="cal-day" ${isToday ? 'style="border-color: var(--blue);"' : ""}>
+        <div class="cal-day-header">
+          <span class="cal-date">${date}${isToday ? ' <span style="color: var(--blue); font-size: 11px;">— hôm nay</span>' : ""}</span>
+          <span class="cal-weekday">Thứ ${wd}</span>
+        </div>
+        <div class="cal-events">
+          ${events.map(e => {
+            if (e.kind === "earnings") {
+              return `<div class="cal-event earnings">
+                <span class="cal-tag">Earnings</span>
+                <strong>${e.ticker}</strong>
+                <span style="color: var(--muted);">${e.name}</span>
+                <span class="cal-sector">[${e.sector_etf}]</span>
+              </div>`;
+            }
+            return `<div class="cal-event macro">
+              <span class="cal-tag">Macro</span>
+              <span>${e.name}</span>
+              ${e.estimated ? '<span class="cal-est">(est)</span>' : ""}
+            </div>`;
+          }).join("")}
+        </div>
+      </div>`;
+    }).join("")}
+  `;
+})();
+
+// === Reports list ===
+(function renderReports() {
+  const el = document.getElementById("reports-list");
+  const daily = (D.daily_reports || []).slice(-14).reverse();
+  const monthly = (D.monthly_reports || []).slice().reverse();
+  if (!daily.length && !monthly.length) {
+    el.innerHTML = `<div class="empty">Chưa có báo cáo nào.</div>`;
+    return;
+  }
+  let html = "";
+  if (monthly.length) {
+    html += `<div style="color: var(--muted); font-size: 12px; margin-bottom: 8px;">Báo cáo tháng</div>`;
+    html += monthly.map(r => `<div style="padding: 6px 0;">
+      <a class="report-link" href="../data/monthly/${r.file}">${r.file}</a>
+      ${r.regime ? `<span class="pill ${(r.fed_stance||"neutral")}">${r.regime}</span>` : ""}
+      <div style="color: var(--muted); font-size: 12px;">${r.body_preview || ""}</div>
+    </div>`).join("");
+  }
+  html += `<div style="color: var(--muted); font-size: 12px; margin: 16px 0 8px;">Báo cáo ngày (14 gần nhất)</div>`;
+  html += daily.map(r => `<div style="padding: 6px 0;">
+    <a class="report-link" href="../data/daily/${r.file}">${r.date}</a>
+    ${r.regime_signal ? `<span class="pill ${r.regime_signal}">${r.regime_signal}</span>` : ""}
+    <span style="color: var(--muted)"> · ${r.key_takeaway || ""}</span>
+  </div>`).join("");
+  el.innerHTML = html;
+})();
+</script>
+</body>
+</html>

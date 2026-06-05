@@ -1,0 +1,339 @@
+#!/usr/bin/env python3
+"""Collect US macro data for a given date.
+
+Sources:
+- investing.com economic calendar (scraped via their public AJAX endpoint)
+- FRED API (St. Louis Fed) for historical series
+
+Output: data/raw/<date>.json
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import sys
+import time
+from datetime import date, datetime, timedelta, timezone
+from pathlib import Path
+from typing import Any
+
+import requests
+from dotenv import load_dotenv
+
+ROOT = Path(__file__).resolve().parent.parent
+load_dotenv(ROOT / ".env")
+
+FRED_API_KEY = os.getenv("FRED_API_KEY", "").strip()
+
+# Core FRED series we always snapshot
+FRED_SERIES = {
+    # Inflation
+    "CPIAUCSL": "CPI All Items",
+    "CPILFESL": "Core CPI",
+    "PCEPI": "PCE Price Index",
+    "PCEPILFE": "Core PCE",
+    "PPIACO": "PPI All Commodities",
+    # Labor
+    "PAYEMS": "Nonfarm Payrolls",
+    "UNRATE": "Unemployment Rate",
+    "ICSA": "Initial Jobless Claims",
+    "CES0500000003": "Avg Hourly Earnings",
+    "JTSJOL": "Job Openings (JOLTS)",
+    # Growth
+    "GDPC1": "Real GDP",
+    "RSAFS": "Retail Sales",
+    "INDPRO": "Industrial Production",
+    "MANEMP": "Manufacturing Employment",
+    "BSCICP03USM665S": "Business Confidence",
+    "TTLCONS": "Total Construction Spending",
+    "GDPNOW": "Atlanta Fed GDPNow",
+    "DGORDER": "Durable Goods Orders",
+    # Sentiment
+    "UMCSENT": "Michigan Consumer Sentiment",
+    "CSCICP03USM665S": "Consumer Confidence",
+    # Housing
+    "HOUST": "Housing Starts",
+    "EXHOSLUSM495S": "Existing Home Sales",
+    "CSUSHPINSA": "Case-Shiller Home Price",
+    # Fed / rates
+    "DFF": "Fed Funds Rate",
+    "DGS10": "10Y Treasury Yield",
+    "DGS2": "2Y Treasury Yield",
+    "DGS3MO": "3M Treasury Yield",
+    "DGS6MO": "6M Treasury Yield",
+    "T10Y2Y": "10Y-2Y Spread",
+    # Cross-asset context
+    "DTWEXBGS": "USD Index (Broad)",
+    "VIXCLS": "VIX (Volatility Index)",
+    "DCOILWTICO": "WTI Crude Oil",
+    "BAMLH0A0HYM2": "High-Yield Credit Spread (HY OAS)",
+    "BAMLC0A0CM": "Investment-Grade Credit Spread (IG OAS)",
+    "T10YIE": "10Y Inflation Breakeven",
+}
+
+INVESTING_AJAX = "https://www.investing.com/economic-calendar/Service/getCalendarFilteredData"
+INVESTING_PAGE = "https://www.investing.com/economic-calendar/"
+USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+)
+
+
+def fetch_fred_series(series_id: str, observations: int = 120) -> list[dict[str, Any]]:
+    """Fetch recent observations for a FRED series. Returns list of {date, value}.
+
+    Throttle + exponential backoff on 429. FRED limit is 120 req/min — we sleep
+    0.6s between successful calls and back off if rate-limited.
+    """
+    if not FRED_API_KEY:
+        return []
+    url = "https://api.stlouisfed.org/fred/series/observations"
+    params = {
+        "series_id": series_id,
+        "api_key": FRED_API_KEY,
+        "file_type": "json",
+        "sort_order": "desc",
+        "limit": observations,
+    }
+    delays = [0.6, 2.0, 5.0]  # retry waits
+    for attempt, wait in enumerate([0] + delays):
+        if wait:
+            time.sleep(wait)
+        try:
+            r = requests.get(url, params=params, timeout=15)
+            if r.status_code == 429:
+                if attempt < len(delays):
+                    continue  # retry with longer backoff
+                print(f"  FRED 429 for {series_id} (all retries exhausted)", file=sys.stderr)
+                return []
+            r.raise_for_status()
+            obs = r.json().get("observations", [])
+            out = []
+            for o in obs:
+                val = o.get("value")
+                if val in (".", None, ""):
+                    continue
+                try:
+                    out.append({"date": o["date"], "value": float(val)})
+                except (ValueError, TypeError):
+                    continue
+            out.reverse()  # chronological
+            time.sleep(0.6)  # throttle to stay well under 120 req/min
+            return out
+        except Exception as exc:
+            if attempt < len(delays):
+                continue
+            print(f"  FRED error for {series_id}: {exc}", file=sys.stderr)
+            return []
+    return []
+
+
+def fetch_fred_snapshot() -> dict[str, Any]:
+    """Fetch latest values + recent history for all core series."""
+    snapshot: dict[str, Any] = {}
+    for series_id, label in FRED_SERIES.items():
+        history = fetch_fred_series(series_id)
+        if not history:
+            snapshot[series_id] = {"label": label, "latest": None, "history": []}
+            continue
+        latest = history[-1]
+        prev = history[-2] if len(history) > 1 else None
+        snapshot[series_id] = {
+            "label": label,
+            "latest": latest,
+            "previous": prev,
+            "change_pct": (
+                round((latest["value"] - prev["value"]) / prev["value"] * 100, 3)
+                if prev and prev["value"] not in (0, None)
+                else None
+            ),
+            "history": history,
+        }
+    return snapshot
+
+
+def scrape_investing_calendar(target: date) -> list[dict[str, Any]]:
+    """Scrape investing.com economic calendar via Playwright (headless Chromium).
+
+    Plain HTTP clients can't get past Cloudflare's `cf_clearance` cookie (requires
+    JavaScript challenge). Playwright runs real Chromium → executes JS → gets
+    clearance → can POST the AJAX endpoint.
+
+    Flow:
+      1. Launch headless Chromium with realistic UA.
+      2. Navigate to /economic-calendar/ — JS runs, cf_clearance set.
+      3. Use page.request (carries cookies) to POST getCalendarFilteredData.
+      4. Parse HTML fragment with BeautifulSoup.
+
+    NOTE: investing.com geo-blocks some countries (e.g. Vietnam) at network layer
+    — Playwright won't help there. From US/EU/Canada it works.
+    """
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        print("  playwright not installed — run `pip install playwright && python -m playwright install chromium`", file=sys.stderr)
+        return []
+
+    body_form = {
+        "country[]": "5",
+        "importance[]": ["1", "2", "3"],
+        "timeZone": "8",
+        "timeFilter": "timeRemain",
+        "currentTab": "custom",
+        "dateFrom": target.isoformat(),
+        "dateTo": target.isoformat(),
+        "limit_from": "0",
+    }
+    # Build form-urlencoded body (Playwright APIRequest expects string for form posts)
+    from urllib.parse import urlencode
+    form_string = urlencode(body_form, doseq=True)
+
+    html_fragment = ""
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(
+                user_agent=USER_AGENT,
+                viewport={"width": 1366, "height": 800},
+                locale="en-US",
+            )
+            page = context.new_page()
+            # Navigate to calendar page — Cloudflare JS challenge runs here
+            page.goto(INVESTING_PAGE, wait_until="domcontentloaded", timeout=30000)
+            # Wait a moment for Cloudflare to finish (cf_clearance set)
+            page.wait_for_timeout(2500)
+            # Now POST AJAX using page.request — it carries context cookies
+            resp = context.request.post(
+                INVESTING_AJAX,
+                headers={
+                    "Accept": "*/*",
+                    "Accept-Language": "en-US,en;q=0.9",
+                    "Content-Type": "application/x-www-form-urlencoded",
+                    "Referer": INVESTING_PAGE,
+                    "X-Requested-With": "XMLHttpRequest",
+                    "Origin": "https://www.investing.com",
+                },
+                data=form_string,
+                timeout=25000,
+            )
+            if resp.status != 200:
+                print(f"  investing.com POST returned HTTP {resp.status}", file=sys.stderr)
+                browser.close()
+                return []
+            try:
+                payload = resp.json()
+                html_fragment = payload.get("data", "")
+            except Exception:
+                html_fragment = resp.text()
+            browser.close()
+    except Exception as exc:
+        print(f"  Playwright scrape failed: {exc}", file=sys.stderr)
+        return []
+
+    return _parse_calendar_rows(html_fragment, target)
+
+
+def _parse_calendar_rows(html_fragment: str, target: date) -> list[dict[str, Any]]:
+    """Parse the HTML fragment returned by getCalendarFilteredData."""
+    try:
+        from bs4 import BeautifulSoup
+    except ImportError:
+        print("  bs4 not installed", file=sys.stderr)
+        return []
+
+    soup = BeautifulSoup(html_fragment, "html.parser")
+    rows = soup.select("tr.js-event-item")
+    out = []
+    target_iso = target.isoformat()
+    for row in rows:
+        dt = row.get("data-event-datetime", "")
+        dt_iso = dt.replace("/", "-").split(" ")[0]
+        if dt_iso and dt_iso != target_iso:
+            continue
+        name_a_el = row.select_one(".event a")
+        name_el = name_a_el or row.select_one(".event")
+        actual_el = row.select_one(".act")
+        forecast_el = row.select_one(".fore")
+        prev_el = row.select_one(".prev")
+        importance_el = row.select_one(".sentiment")
+
+        def _txt(el: Any) -> str | None:
+            if not el:
+                return None
+            t = el.get_text(strip=True)
+            return t if t and t != "\xa0" else None
+
+        # Build investing.com event URL if anchor exists
+        event_url = None
+        if name_a_el and name_a_el.get("href"):
+            href = name_a_el["href"]
+            event_url = href if href.startswith("http") else f"https://www.investing.com{href}"
+
+        out.append(
+            {
+                "name": _txt(name_el),
+                "time": dt,
+                "importance": importance_el.get("data-img_key") if importance_el else None,
+                "actual": _txt(actual_el),
+                "forecast": _txt(forecast_el),
+                "previous": _txt(prev_el),
+                "event_url": event_url,
+                "source": "investing.com",
+            }
+        )
+    return out
+
+
+def collect(target: date, force: bool = False) -> Path:
+    out_path = ROOT / "data" / "raw" / f"{target.isoformat()}.json"
+    if out_path.exists() and not force:
+        print(f"Already exists: {out_path} (use --force to overwrite)")
+        return out_path
+
+    print(f"Collecting US macro data for {target.isoformat()}...")
+    print("  Scraping investing.com economic calendar...")
+    releases = scrape_investing_calendar(target)
+    print(f"  Found {len(releases)} US releases")
+
+    print("  Fetching FRED snapshot...")
+    fred = fetch_fred_snapshot() if FRED_API_KEY else {}
+    if not FRED_API_KEY:
+        print("  WARNING: FRED_API_KEY not set in .env — skipping FRED data")
+
+    payload = {
+        "date": target.isoformat(),
+        "collected_at": datetime.now(timezone.utc).isoformat(),
+        "releases": releases,
+        "fred_snapshot": fred,
+        "sources": {
+            "investing.com": True,
+            "fred": bool(fred),
+        },
+    }
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False))
+    print(f"  Wrote {out_path}")
+    return out_path
+
+
+def main() -> int:
+    p = argparse.ArgumentParser()
+    p.add_argument("--date", help="YYYY-MM-DD (default: today NY time)")
+    p.add_argument("--force", action="store_true")
+    args = p.parse_args()
+
+    if args.date:
+        target = date.fromisoformat(args.date)
+    else:
+        # Use New York date (UTC-5 in winter, UTC-4 in summer — close enough with UTC-5)
+        ny_now = datetime.now(timezone.utc) - timedelta(hours=5)
+        target = ny_now.date()
+
+    collect(target, force=args.force)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

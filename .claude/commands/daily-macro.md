@@ -1,0 +1,54 @@
+---
+description: Thu thập, phân tích, và cập nhật dashboard cho dữ liệu vĩ mô Mỹ trong ngày
+argument-hint: "[YYYY-MM-DD] (optional, mặc định hôm nay theo giờ NY)"
+---
+
+Chạy daily macro workflow. Ngày target: $ARGUMENTS (nếu rỗng thì dùng hôm nay).
+
+Quy trình (chạy TUẦN TỰ, không parallel — mỗi bước phụ thuộc bước trước):
+
+## Bước 1: Thu thập dữ liệu
+Dùng Agent tool với `subagent_type: macro-collector` và yêu cầu thu thập cho ngày target.
+Sau khi xong: xác nhận file `data/raw/<date>.json` tồn tại và hợp lệ.
+
+## Bước 1b: Thu thập sector ETF + cross-asset + calendar
+Chạy 3 script tuần tự:
+```
+cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && source .venv/bin/activate && \
+  python scripts/fetch_sectors.py && \
+  python scripts/fetch_cross_asset.py && \
+  python scripts/fetch_calendar.py
+```
+- `fetch_sectors.py`: 11 SPDR sectors + SPY benchmark
+- `fetch_cross_asset.py`: Gold, Copper, BTC (DXY/VIX/WTI/spreads/breakeven đã trong FRED)
+- `fetch_calendar.py`: earnings 55 stocks + macro release projections 21 ngày tới
+
+Nếu Yahoo fail → cảnh báo nhưng tiếp tục flow.
+
+## Bước 2: Phân tích
+Dùng Agent tool với `subagent_type: macro-analyst`. Truyền vào prompt: "Phân tích raw data cho ngày <date>, viết báo cáo vào data/daily/<date>.md".
+Đợi agent hoàn thành.
+
+## Bước 3: Cập nhật trend signals
+Dùng Agent tool với `subagent_type: macro-trend`. Prompt: "Đọc 30 daily reports gần nhất, bổ sung phần 'Bối cảnh xu hướng' vào báo cáo data/daily/<date>.md nếu chưa đủ chi tiết. Không tạo monthly report."
+
+## Bước 4: Build dashboard
+Dùng Agent tool với `subagent_type: macro-dashboard`. Prompt: "Rebuild dashboard với dữ liệu mới nhất."
+
+## Bước 5: Mở dashboard trên trình duyệt
+Chạy lệnh Bash:
+```
+open "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking/dashboard/index.html"
+```
+Lệnh này sẽ mở dashboard bằng browser mặc định trên macOS.
+
+## Bước 6: Báo cáo tóm tắt
+Sau khi 5 bước xong, in cho user:
+- Số chỉ số US công bố hôm nay
+- 1-2 câu key takeaway (đọc từ front-matter của daily report)
+- Xác nhận dashboard đã mở
+
+## Lưu ý quan trọng
+- Nếu BẤT KỲ bước nào thất bại → DỪNG và báo lỗi đầy đủ. KHÔNG bỏ qua bước.
+- Nếu không có FRED API key → vẫn chạy được nhưng cảnh báo user rằng dashboard sẽ thiếu chart lịch sử.
+- KHÔNG chạy 4 agent đồng thời. Mỗi agent phải đợi agent trước hoàn thành.

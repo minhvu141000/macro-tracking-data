@@ -1,0 +1,135 @@
+#!/usr/bin/env python3
+"""Build dashboard/data.js from collected raw data + daily reports.
+
+Reads data/raw/*.json and data/daily/*.md, emits a single JS file
+that the static dashboard HTML loads.
+"""
+from __future__ import annotations
+
+import json
+import re
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+ROOT = Path(__file__).resolve().parent.parent
+RAW_DIR = ROOT / "data" / "raw"
+DAILY_DIR = ROOT / "data" / "daily"
+MONTHLY_DIR = ROOT / "data" / "monthly"
+SECTORS_FILE = ROOT / "data" / "sectors_latest.json"
+CROSS_ASSET_FILE = ROOT / "data" / "cross_asset_latest.json"
+CALENDAR_FILE = ROOT / "data" / "calendar_latest.json"
+OUT = ROOT / "dashboard" / "data.js"
+
+
+def load_raw_files() -> list[dict[str, Any]]:
+    files = sorted(RAW_DIR.glob("*.json"))
+    out = []
+    for f in files:
+        try:
+            out.append(json.loads(f.read_text()))
+        except Exception as exc:
+            print(f"  Skipping {f}: {exc}")
+    return out
+
+
+def parse_daily_front_matter(path: Path, include_full_body: bool = False) -> dict[str, Any]:
+    text = path.read_text()
+    fm: dict[str, Any] = {"file": path.name, "date": path.stem}
+    m = re.match(r"^---\n(.*?)\n---\n(.*)$", text, re.DOTALL)
+    if not m:
+        fm["body_preview"] = text[:500]
+        if include_full_body:
+            fm["body"] = text
+        return fm
+    block, body = m.group(1), m.group(2)
+    for line in block.splitlines():
+        if ":" in line:
+            k, _, v = line.partition(":")
+            fm[k.strip()] = v.strip().strip("\"'")
+    body = body.strip()
+    fm["body_preview"] = body.split("\n\n", 1)[0][:500]
+    if include_full_body:
+        fm["body"] = body
+    return fm
+
+
+def build_history(raw_files: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    """For each FRED series, build a flat time series merged across all raw snapshots."""
+    history: dict[str, dict[str, Any]] = {}
+    if not raw_files:
+        return history
+
+    # Use latest snapshot as source of truth (FRED history is the same series each day,
+    # latest snapshot has freshest data).
+    latest = raw_files[-1].get("fred_snapshot", {}) or {}
+    for sid, info in latest.items():
+        if not isinstance(info, dict):
+            continue
+        history[sid] = {
+            "label": info.get("label", sid),
+            "latest": info.get("latest"),
+            "previous": info.get("previous"),
+            "change_pct": info.get("change_pct"),
+            "history": info.get("history", []),
+        }
+    return history
+
+
+def build_today_releases(raw_files: list[dict[str, Any]]) -> dict[str, Any]:
+    if not raw_files:
+        return {"date": None, "releases": []}
+    latest = raw_files[-1]
+    return {"date": latest.get("date"), "releases": latest.get("releases", [])}
+
+
+def build() -> None:
+    raw_files = load_raw_files()
+    daily_files = sorted(DAILY_DIR.glob("*.md"))
+    monthly_files = sorted(MONTHLY_DIR.glob("*.md"))
+
+    daily_reports = [parse_daily_front_matter(f) for f in daily_files]
+    monthly_reports = [parse_daily_front_matter(f) for f in monthly_files]
+
+    # Latest daily + monthly with FULL body for inline rendering
+    latest_daily = parse_daily_front_matter(daily_files[-1], include_full_body=True) if daily_files else None
+    latest_monthly = parse_daily_front_matter(monthly_files[-1], include_full_body=True) if monthly_files else None
+
+    def _load(p, label):
+        if not p.exists():
+            return {}
+        try:
+            return json.loads(p.read_text())
+        except Exception as exc:
+            print(f"  Skipping {label}: {exc}")
+            return {}
+
+    sectors_payload = _load(SECTORS_FILE, "sectors")
+    cross_asset_payload = _load(CROSS_ASSET_FILE, "cross_asset")
+    calendar_payload = _load(CALENDAR_FILE, "calendar")
+
+    payload = {
+        "last_updated": datetime.now(timezone.utc).isoformat(),
+        "daily_releases": build_today_releases(raw_files),
+        "history": build_history(raw_files),
+        "daily_reports": daily_reports,
+        "monthly_reports": monthly_reports,
+        "raw_dates": [r.get("date") for r in raw_files],
+        "sectors": sectors_payload,
+        "cross_asset": cross_asset_payload,
+        "calendar": calendar_payload,
+        "latest_daily": latest_daily,
+        "latest_monthly": latest_monthly,
+    }
+
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    js = "window.MACRO_DATA = " + json.dumps(payload, indent=2, ensure_ascii=False) + ";\n"
+    OUT.write_text(js)
+    print(f"Wrote {OUT}")
+    print(f"  {len(raw_files)} raw days, {len(daily_reports)} daily reports, "
+          f"{len(monthly_reports)} monthly reports")
+    print(f"  {len(payload['history'])} FRED series in history")
+
+
+if __name__ == "__main__":
+    build()

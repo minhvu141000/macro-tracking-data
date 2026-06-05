@@ -1,0 +1,106 @@
+{
+  "fetched_at": "2026-06-05T00:14:48.946241+00:00",
+  "window_start": "2026-06-04",
+  "window_end": "2026-06-25",
+  "macro": [
+    {
+      "date": "2026-06-05",
+      "name": "Employment Situation (NFP, Unemployment)",
+      "release_id": 50,
+      "type": "macro",
+      "estimated": true
+    },
+    {
+      "date": "2026-06-07",
+      "name": "Retail Sales",
+      "release_id": 25,
+      "type": "macro",
+      "estimated": true
+    },
+    {
+      "date": "2026-06-08",
+      "name": "Producer Price Index (PPI)",
+      "release_id": 17,
+      "type": "macro",
+      "estimated": true
+    },
+    {
+      "date": "2026-06-11",
+      "name": "Consumer Price Index (CPI)",
+      "release_id": 10,
+      "type": "macro",
+      "estimated": true
+    },
+    {
+      "date": "2026-06-11",
+      "name": "Initial Jobless Claims",
+      "release_id": 100,
+      "type": "macro",
+      "estimated": true
+    },
+    {
+      "date": "2026-06-15",
+      "name": "Producer Price Index (PPI)",
+      "release_id": 17,
+      "type": "macro",
+      "estimated": true
+    },
+    {
+      "date": "2026-06-17",
+      "name": "FOMC Meeting (Fed rate decision)",
+      "release_id": 8,
+      "type": "macro"
+    },
+    {
+      "date": "2026-06-17",
+      "name": "Durable Goods Orders",
+      "release_id": 326,
+      "type": "macro",
+      "estimated": true
+    },
+    {
+      "date": "2026-06-19",
+      "name": "Consumer Confidence (Conference Board)",
+      "release_id": 91,
+      "type": "macro",
+      "estimated": true
+    },
+    {
+      "date": "2026-06-22",
+      "name": "Producer Price Index (PPI)",
+      "release_id": 17,
+      "type": "macro",
+      "estimated": true
+    },
+    {
+      "date": "2026-06-23",
+      "name": "Personal Income & Outlays (PCE)",
+      "release_id": 21,
+      "type": "macro",
+      "estimated": true
+    },
+    {
+      "date": "2026-06-24",
+      "name": "Job Openings & Labor Turnover (JOLTS)",
+      "release_id": 53,
+      "type": "macro",
+      "estimated": true
+    },
+    {
+      "date": "2026-06-25",
+      "name": "Initial Jobless Claims",
+      "release_id": 100,
+      "type": "macro",
+      "estimated": true
+    }
+  ],
+  "earnings": [
+    {
+      "date": "2026-06-10",
+      "ticker": "ORCL",
+      "name": "Oracle",
+      "sector_etf": "XLK",
+      "type": "earnings"
+    }
+  ]
+}
