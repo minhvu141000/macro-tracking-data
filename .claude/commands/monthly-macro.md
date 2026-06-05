@@ -16,7 +16,18 @@ Dùng Agent tool với `subagent_type: macro-trend`. Prompt:
 ## Bước 3: Rebuild dashboard
 Dùng Agent tool với `subagent_type: macro-dashboard`. Prompt: "Rebuild dashboard để hiển thị monthly report mới."
 
+## Bước 3b: Auto-backup lên GitHub
+Chạy Bash:
+```
+cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && \
+  git add data/ dashboard/data.js && \
+  git diff --cached --quiet || \
+  (git -c user.email="minhvu141000@gmail.com" -c user.name="minhvu141000" \
+    commit -m "Monthly macro <YYYY-MM>" && git push origin main)
+```
+
 ## Bước 4: Báo cáo cho user
 - In key_takeaway, regime, fed_stance từ front-matter báo cáo tháng
 - In top 3 conviction calls từ section "Sector winners/losers"
 - Đường dẫn tới báo cáo `data/monthly/<YYYY-MM>.md`
+- Xác nhận đã push GitHub

@@ -42,11 +42,26 @@ open "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking/dashboard/index.html"
 ```
 Lệnh này sẽ mở dashboard bằng browser mặc định trên macOS.
 
+## Bước 5b: Auto-backup lên GitHub
+Chạy lệnh Bash (gói tất cả vào 1 lệnh để skip nếu nothing to commit):
+```
+cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && \
+  git add data/ dashboard/data.js && \
+  git diff --cached --quiet || \
+  (git -c user.email="minhvu141000@gmail.com" -c user.name="minhvu141000" \
+    commit -m "Daily macro <date>" && git push origin main)
+```
+
+Nếu không có thay đổi → `git diff --cached --quiet` trả về 0 → skip commit (an toàn).
+Nếu có thay đổi → commit với message `Daily macro YYYY-MM-DD` rồi push.
+Nếu push fail (network, conflict) → cảnh báo user nhưng KHÔNG dừng flow (data đã saved local).
+
 ## Bước 6: Báo cáo tóm tắt
 Sau khi 5 bước xong, in cho user:
 - Số chỉ số US công bố hôm nay
 - 1-2 câu key takeaway (đọc từ front-matter của daily report)
 - Xác nhận dashboard đã mở
+- Xác nhận đã push GitHub (hoặc note nếu fail)
 
 ## Lưu ý quan trọng
 - Nếu BẤT KỲ bước nào thất bại → DỪNG và báo lỗi đầy đủ. KHÔNG bỏ qua bước.
