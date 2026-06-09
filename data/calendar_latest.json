@@ -1,29 +1,8 @@
 {
-  "fetched_at": "2026-06-05T00:14:48.946241+00:00",
-  "window_start": "2026-06-04",
-  "window_end": "2026-06-25",
+  "fetched_at": "2026-06-09T03:19:14.013045+00:00",
+  "window_start": "2026-06-08",
+  "window_end": "2026-06-29",
   "macro": [
-    {
-      "date": "2026-06-05",
-      "name": "Employment Situation (NFP, Unemployment)",
-      "release_id": 50,
-      "type": "macro",
-      "estimated": true
-    },
-    {
-      "date": "2026-06-07",
-      "name": "Retail Sales",
-      "release_id": 25,
-      "type": "macro",
-      "estimated": true
-    },
-    {
-      "date": "2026-06-08",
-      "name": "Producer Price Index (PPI)",
-      "release_id": 17,
-      "type": "macro",
-      "estimated": true
-    },
     {
       "date": "2026-06-11",
       "name": "Consumer Price Index (CPI)",
@@ -90,6 +69,13 @@
       "date": "2026-06-25",
       "name": "Initial Jobless Claims",
       "release_id": 100,
+      "type": "macro",
+      "estimated": true
+    },
+    {
+      "date": "2026-06-29",
+      "name": "Producer Price Index (PPI)",
+      "release_id": 17,
       "type": "macro",
       "estimated": true
     }
