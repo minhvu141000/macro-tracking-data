@@ -14,7 +14,7 @@ Sau khi xong: xác nhận file `data/raw/<date>.json` tồn tại và hợp lệ
 ## Bước 1b: Thu thập sector ETF + cross-asset + calendar
 Chạy 3 script tuần tự:
 ```
-cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && source .venv/bin/activate && \
+source .venv/bin/activate && \
   python scripts/fetch_sectors.py && \
   python scripts/fetch_cross_asset.py && \
   python scripts/fetch_calendar.py
@@ -30,23 +30,29 @@ Dùng Agent tool với `subagent_type: macro-analyst`. Truyền vào prompt: "Ph
 Đợi agent hoàn thành.
 
 ## Bước 3: Cập nhật trend signals
-Dùng Agent tool với `subagent_type: macro-trend`. Prompt: "Đọc 30 daily reports gần nhất, bổ sung phần 'Bối cảnh xu hướng' vào báo cáo data/daily/<date>.md nếu chưa đủ chi tiết. Không tạo monthly report."
+Trước khi gọi agent, **regenerate file tóm tắt 30 ngày** (compact ~600 tokens/report) để agent không phải đọc full 30 reports:
+```
+cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && source .venv/bin/activate && \
+  python scripts/summarize_reports.py
+```
+Sau đó dùng Agent tool với `subagent_type: macro-trend`. Prompt:
+"Đọc **data/daily_summaries.md** trước (compact view của 30 ngày gần nhất). Sau đó nếu cần context sâu hơn cho 2-3 ngày turning point, đọc full markdown tại data/daily/<date>.md. Bổ sung phần 'Bối cảnh xu hướng' vào báo cáo data/daily/<date>.md nếu chưa đủ chi tiết. KHÔNG đọc tất cả 30 reports đầy đủ. KHÔNG tạo monthly report."
 
 ## Bước 4: Build dashboard
 Dùng Agent tool với `subagent_type: macro-dashboard`. Prompt: "Rebuild dashboard với dữ liệu mới nhất."
 
 ## Bước 5: Mở dashboard trên trình duyệt
-Chạy lệnh Bash:
+Chạy lệnh Bash để mở cả 2 dashboard trên Google Chrome:
 ```
-open "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking/dashboard/index.html"
+open -a "Google Chrome" dashboard/index.html
+open -a "Google Chrome" dashboard/edu.html
 ```
-Lệnh này sẽ mở dashboard bằng browser mặc định trên macOS.
+Lệnh này sẽ mở cả Dashboard Tracking và Dashboard Học Tập trên trình duyệt Google Chrome.
 
 ## Bước 5b: Auto-backup lên GitHub
 Chạy lệnh Bash (gói tất cả vào 1 lệnh để skip nếu nothing to commit):
 ```
-cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && \
-  git add data/ dashboard/data.js && \
+git add data/ dashboard/data.js && \
   git diff --cached --quiet || \
   (git -c user.email="minhvu141000@gmail.com" -c user.name="minhvu141000" \
     commit -m "Daily macro <date>" && git push origin main)

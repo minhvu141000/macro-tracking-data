@@ -19,6 +19,7 @@ MONTHLY_DIR = ROOT / "data" / "monthly"
 SECTORS_FILE = ROOT / "data" / "sectors_latest.json"
 CROSS_ASSET_FILE = ROOT / "data" / "cross_asset_latest.json"
 CALENDAR_FILE = ROOT / "data" / "calendar_latest.json"
+THEORY_FILE = ROOT / "data" / "macro_theory.json"
 OUT = ROOT / "dashboard" / "data.js"
 
 
@@ -55,13 +56,40 @@ def parse_daily_front_matter(path: Path, include_full_body: bool = False) -> dic
 
 
 def build_history(raw_files: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
-    """For each FRED series, build a flat time series merged across all raw snapshots."""
+    """For each FRED series, build a flat time series.
+
+    Source of truth (in priority order):
+    1. data/fred_history.json (full 10y history, updated daily by collect.py)
+    2. Latest raw file's fred_snapshot.history (fallback if history file missing).
+
+    The dedicated history file lets daily raw JSON files stay small (~20 obs each)
+    for LLM token efficiency, while dashboard charts still show full history.
+    """
     history: dict[str, dict[str, Any]] = {}
+
+    # Preferred source: dedicated history file
+    hist_path = ROOT / "data" / "fred_history.json"
+    if hist_path.exists():
+        try:
+            hist_data = json.loads(hist_path.read_text())
+            snapshot = hist_data.get("fred_snapshot", {})
+            for sid, info in snapshot.items():
+                if not isinstance(info, dict):
+                    continue
+                history[sid] = {
+                    "label": info.get("label", sid),
+                    "latest": info.get("latest"),
+                    "previous": info.get("previous"),
+                    "change_pct": info.get("change_pct"),
+                    "history": info.get("history", []),
+                }
+            return history
+        except Exception as exc:
+            print(f"  fred_history.json failed: {exc} — falling back to raw files")
+
+    # Fallback: use latest raw file
     if not raw_files:
         return history
-
-    # Use latest snapshot as source of truth (FRED history is the same series each day,
-    # latest snapshot has freshest data).
     latest = raw_files[-1].get("fred_snapshot", {}) or {}
     for sid, info in latest.items():
         if not isinstance(info, dict):
@@ -88,8 +116,8 @@ def build() -> None:
     daily_files = sorted(DAILY_DIR.glob("*.md"))
     monthly_files = sorted(MONTHLY_DIR.glob("*.md"))
 
-    daily_reports = [parse_daily_front_matter(f) for f in daily_files]
-    monthly_reports = [parse_daily_front_matter(f) for f in monthly_files]
+    daily_reports = [parse_daily_front_matter(f, include_full_body=True) for f in daily_files]
+    monthly_reports = [parse_daily_front_matter(f, include_full_body=True) for f in monthly_files]
 
     # Latest daily + monthly with FULL body for inline rendering
     latest_daily = parse_daily_front_matter(daily_files[-1], include_full_body=True) if daily_files else None
@@ -107,6 +135,7 @@ def build() -> None:
     sectors_payload = _load(SECTORS_FILE, "sectors")
     cross_asset_payload = _load(CROSS_ASSET_FILE, "cross_asset")
     calendar_payload = _load(CALENDAR_FILE, "calendar")
+    theory_payload = _load(THEORY_FILE, "theory")
 
     payload = {
         "last_updated": datetime.now(timezone.utc).isoformat(),
@@ -118,6 +147,7 @@ def build() -> None:
         "sectors": sectors_payload,
         "cross_asset": cross_asset_payload,
         "calendar": calendar_payload,
+        "theory": theory_payload,
         "latest_daily": latest_daily,
         "latest_monthly": latest_monthly,
     }

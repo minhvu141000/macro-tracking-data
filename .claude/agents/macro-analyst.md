@@ -8,9 +8,23 @@ Bạn là chuyên gia kinh tế vĩ mô Mỹ. Viết báo cáo phân tích bằn
 
 ## Quy trình
 
-1. Đọc `data/raw/YYYY-MM-DD.json`.
-2. Đọc 5-10 file `data/daily/` gần nhất để có ngữ cảnh xu hướng.
+1. Đọc `data/raw/YYYY-MM-DD.json` (~9k tokens, có sẵn `yoy_pct`, `mom_pct`, `mo3_annualized_pct` cho mỗi FRED series — KHÔNG cần tự compute).
+2. Đọc `data/daily_summaries.md` (compact view của báo cáo gần đây, ~600 tokens/ngày) thay vì đọc full markdown trừ khi cần context sâu cho 1-2 ngày cụ thể.
 3. Viết `data/daily/YYYY-MM-DD.md` theo template dưới.
+
+## Pre-computed metrics trong raw JSON
+
+Mỗi FRED series trong `fred_snapshot` đã có:
+- `latest` (value + date)
+- `previous` (value + date)
+- `change_pct` (Δ% từ previous obs)
+- `mom_pct` (= change_pct, dễ đọc)
+- `yoy_pct` (so cùng kỳ năm trước — đã tính cho monthly/daily/quarterly tự động)
+- `mo3_annualized_pct` (3-month annualized rate — chỉ cho monthly series)
+- `frequency` (monthly/daily/quarterly)
+- `history` (last 20 observations để check trend ngắn)
+
+**Dùng các metric đã có thay vì tự compute**: vd CPI YoY = `fred.CPIAUCSL.yoy_pct`, không cần đọc 12 obs lịch sử.
 
 ## Template báo cáo
 

@@ -9,9 +9,25 @@ Tổng hợp tháng vĩ mô Mỹ. Tháng target: $ARGUMENTS (nếu rỗng → th
 - Liệt kê `data/daily/<YYYY-MM>-*.md` để đảm bảo có ≥15 daily reports cho tháng đó.
 - Nếu thiếu → cảnh báo user nhưng vẫn tiếp tục với data có sẵn.
 
+## Bước 1b: Generate compact summary index
+Tạo file tóm tắt cho tháng target (loại bỏ noise, giữ regime + conviction):
+```
+cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && source .venv/bin/activate && \
+  python scripts/summarize_reports.py --month <YYYY-MM> --out data/monthly_input_<YYYY-MM>.md
+```
+File này ~600 tokens/ngày × N ngày = ~15-20k tokens cho cả tháng, **thay vì ~110k tokens** nếu agent đọc full reports.
+
 ## Bước 2: Tổng hợp tháng
 Dùng Agent tool với `subagent_type: macro-trend`. Prompt:
-"Viết báo cáo tháng cho <YYYY-MM>. Đọc TẤT CẢ daily reports trong tháng, đọc FRED snapshot từ data/raw/. Output vào data/monthly/<YYYY-MM>.md theo template trong agent definition. Đặc biệt chú ý phần 11 GICS sector stance — phải có lý do định lượng."
+"Viết báo cáo tháng cho <YYYY-MM>. 
+
+**WORKFLOW TỐI ƯU TOKEN:**
+1. Đọc **data/monthly_input_<YYYY-MM>.md** trước (compact summary của all reports tháng đó với front-matter + Tóm tắt + Conviction calls)
+2. Đọc latest FRED snapshot tại data/raw/<latest>.json (chỉ 1 file, ~9k tokens với derived metrics đã pre-compute)
+3. Nếu cần context sâu hơn cho 3-5 ngày 'turning point' (regime shift, big surprise, conviction change), đọc full markdown của những ngày đó tại data/daily/<date>.md
+4. **KHÔNG đọc đầy đủ tất cả daily reports** — sẽ tốn 100k+ tokens không cần thiết
+
+Output vào data/monthly/<YYYY-MM>.md theo template trong agent definition. Đặc biệt chú ý phần 11 GICS sector stance — phải có lý do định lượng (RS, MA cross, sector reaction tới các catalyst trong tháng)."
 
 ## Bước 3: Rebuild dashboard
 Dùng Agent tool với `subagent_type: macro-dashboard`. Prompt: "Rebuild dashboard để hiển thị monthly report mới."
@@ -19,8 +35,7 @@ Dùng Agent tool với `subagent_type: macro-dashboard`. Prompt: "Rebuild dashbo
 ## Bước 3b: Auto-backup lên GitHub
 Chạy Bash:
 ```
-cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && \
-  git add data/ dashboard/data.js && \
+git add data/ dashboard/data.js && \
   git diff --cached --quiet || \
   (git -c user.email="minhvu141000@gmail.com" -c user.name="minhvu141000" \
     commit -m "Monthly macro <YYYY-MM>" && git push origin main)

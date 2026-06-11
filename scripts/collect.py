@@ -129,28 +129,101 @@ def fetch_fred_series(series_id: str, observations: int = 120) -> list[dict[str,
     return []
 
 
-def fetch_fred_snapshot() -> dict[str, Any]:
-    """Fetch latest values + recent history for all core series."""
-    snapshot: dict[str, Any] = {}
+def _compute_derived_metrics(history: list[dict]) -> dict[str, Any]:
+    """Pre-compute YoY, MoM, 3-mo annualized so analyst doesn't need full history.
+
+    Frequency detection from gap between last 2 observations:
+    - < 10 days → daily series → use 252 trading days for YoY
+    - 10-80 days → monthly → use 12 obs for YoY
+    - > 80 days → quarterly → use 4 obs for YoY
+    """
+    if len(history) < 2:
+        return {}
+    out = {}
+    latest = history[-1]
+    prev = history[-2]
+
+    # Detect frequency
+    from datetime import date as _date
+    try:
+        t1 = _date.fromisoformat(latest["date"])
+        t0 = _date.fromisoformat(prev["date"])
+        gap_days = (t1 - t0).days
+    except Exception:
+        gap_days = 30
+
+    if gap_days < 10:
+        yoy_lag = 252
+        freq = "daily"
+    elif gap_days < 80:
+        yoy_lag = 12
+        freq = "monthly"
+    else:
+        yoy_lag = 4
+        freq = "quarterly"
+
+    out["frequency"] = freq
+
+    # MoM (or daily-on-daily) change %
+    if prev["value"] not in (0, None):
+        out["mom_pct"] = round((latest["value"] - prev["value"]) / prev["value"] * 100, 3)
+
+    # YoY
+    if len(history) > yoy_lag:
+        year_ago = history[-yoy_lag - 1]
+        if year_ago["value"] not in (0, None):
+            out["yoy_pct"] = round((latest["value"] - year_ago["value"]) / year_ago["value"] * 100, 2)
+
+    # 3-period annualized (monthly only — meaningful concept)
+    if freq == "monthly" and len(history) > 3:
+        three_ago = history[-4]
+        if three_ago["value"] not in (0, None):
+            three_mo_change = (latest["value"] / three_ago["value"]) ** 4 - 1
+            out["mo3_annualized_pct"] = round(three_mo_change * 100, 2)
+
+    return out
+
+
+def fetch_fred_snapshot() -> tuple[dict[str, Any], dict[str, Any]]:
+    """Fetch latest values + history for all core series.
+
+    Returns (trimmed, full):
+    - trimmed: small snapshot for daily raw JSON (last 20 obs + pre-computed YoY/MoM/3mo)
+    - full: full history for separate fred_history.json (overwrite daily)
+
+    This dual output lets LLM analyst read a compact ~7K token raw JSON while the
+    dashboard still has 10y history for charts (via separate file).
+    """
+    trimmed: dict[str, Any] = {}
+    full: dict[str, Any] = {}
     for series_id, label in FRED_SERIES.items():
         history = fetch_fred_series(series_id)
         if not history:
-            snapshot[series_id] = {"label": label, "latest": None, "history": []}
+            empty = {"label": label, "latest": None, "history": []}
+            trimmed[series_id] = empty
+            full[series_id] = empty
             continue
         latest = history[-1]
         prev = history[-2] if len(history) > 1 else None
-        snapshot[series_id] = {
+        change_pct = (
+            round((latest["value"] - prev["value"]) / prev["value"] * 100, 3)
+            if prev and prev["value"] not in (0, None)
+            else None
+        )
+        derived = _compute_derived_metrics(history)
+
+        common = {
             "label": label,
             "latest": latest,
             "previous": prev,
-            "change_pct": (
-                round((latest["value"] - prev["value"]) / prev["value"] * 100, 3)
-                if prev and prev["value"] not in (0, None)
-                else None
-            ),
-            "history": history,
+            "change_pct": change_pct,
+            **derived,
         }
-    return snapshot
+        # Trimmed: last 20 observations (sufficient for analyst short-term context)
+        trimmed[series_id] = {**common, "history": history[-20:]}
+        # Full: complete history for dashboard charting
+        full[series_id] = {**common, "history": history}
+    return trimmed, full
 
 
 def scrape_investing_calendar(target: date) -> list[dict[str, Any]]:
@@ -287,6 +360,7 @@ def _parse_calendar_rows(html_fragment: str, target: date) -> list[dict[str, Any
 
 def collect(target: date, force: bool = False) -> Path:
     out_path = ROOT / "data" / "raw" / f"{target.isoformat()}.json"
+    history_path = ROOT / "data" / "fred_history.json"
     if out_path.exists() and not force:
         print(f"Already exists: {out_path} (use --force to overwrite)")
         return out_path
@@ -297,24 +371,38 @@ def collect(target: date, force: bool = False) -> Path:
     print(f"  Found {len(releases)} US releases")
 
     print("  Fetching FRED snapshot...")
-    fred = fetch_fred_snapshot() if FRED_API_KEY else {}
-    if not FRED_API_KEY:
+    if FRED_API_KEY:
+        fred_trimmed, fred_full = fetch_fred_snapshot()
+    else:
+        fred_trimmed, fred_full = {}, {}
         print("  WARNING: FRED_API_KEY not set in .env — skipping FRED data")
 
+    # Raw daily JSON: trimmed (latest + last 20 obs + pre-computed YoY/MoM/3mo).
+    # ~7K tokens for LLM analyst vs ~42K for full version.
     payload = {
         "date": target.isoformat(),
         "collected_at": datetime.now(timezone.utc).isoformat(),
         "releases": releases,
-        "fred_snapshot": fred,
+        "fred_snapshot": fred_trimmed,
         "sources": {
             "investing.com": True,
-            "fred": bool(fred),
+            "fred": bool(fred_trimmed),
         },
     }
-
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False))
     print(f"  Wrote {out_path}")
+
+    # Separate full-history file — overwritten daily, used ONLY by dashboard charts,
+    # NEVER read by LLM agents.
+    if fred_full:
+        history_payload = {
+            "updated_at": datetime.now(timezone.utc).isoformat(),
+            "fred_snapshot": fred_full,
+        }
+        history_path.write_text(json.dumps(history_payload, indent=2, ensure_ascii=False))
+        print(f"  Wrote {history_path}")
+
     return out_path
 
 
