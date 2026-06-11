@@ -1,15 +1,8 @@
 {
-  "fetched_at": "2026-06-09T03:19:14.013045+00:00",
-  "window_start": "2026-06-08",
-  "window_end": "2026-06-29",
+  "fetched_at": "2026-06-11T17:33:54.958926+00:00",
+  "window_start": "2026-06-11",
+  "window_end": "2026-07-02",
   "macro": [
-    {
-      "date": "2026-06-11",
-      "name": "Consumer Price Index (CPI)",
-      "release_id": 10,
-      "type": "macro",
-      "estimated": true
-    },
     {
       "date": "2026-06-11",
       "name": "Initial Jobless Claims",
@@ -78,15 +71,21 @@
       "release_id": 17,
       "type": "macro",
       "estimated": true
+    },
+    {
+      "date": "2026-07-01",
+      "name": "Retail Sales",
+      "release_id": 25,
+      "type": "macro",
+      "estimated": true
+    },
+    {
+      "date": "2026-07-01",
+      "name": "Michigan Consumer Sentiment",
+      "release_id": 192,
+      "type": "macro",
+      "estimated": true
     }
   ],
-  "earnings": [
-    {
-      "date": "2026-06-10",
-      "ticker": "ORCL",
-      "name": "Oracle",
-      "sector_etf": "XLK",
-      "type": "earnings"
-    }
-  ]
+  "earnings": []
 }
