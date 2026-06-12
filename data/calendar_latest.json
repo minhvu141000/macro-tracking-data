@@ -1,15 +1,8 @@
 {
-  "fetched_at": "2026-06-11T17:33:54.958926+00:00",
-  "window_start": "2026-06-11",
-  "window_end": "2026-07-02",
+  "fetched_at": "2026-06-12T07:23:46.910879+00:00",
+  "window_start": "2026-06-12",
+  "window_end": "2026-07-03",
   "macro": [
-    {
-      "date": "2026-06-11",
-      "name": "Initial Jobless Claims",
-      "release_id": 100,
-      "type": "macro",
-      "estimated": true
-    },
     {
       "date": "2026-06-15",
       "name": "Producer Price Index (PPI)",
@@ -83,6 +76,13 @@
       "date": "2026-07-01",
       "name": "Michigan Consumer Sentiment",
       "release_id": 192,
+      "type": "macro",
+      "estimated": true
+    },
+    {
+      "date": "2026-07-03",
+      "name": "Employment Situation (NFP, Unemployment)",
+      "release_id": 50,
       "type": "macro",
       "estimated": true
     }

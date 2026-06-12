@@ -1,0 +1,271 @@
+{
+  "categories": [
+    {
+      "id": "inflation",
+      "name": "Lạm Phát (Inflation)",
+      "indicators": [
+        {
+          "id": "CPIAUCSL",
+          "short_name": "CPI",
+          "full_name": "Consumer Price Index",
+          "description": "Chỉ số đo lường sự thay đổi giá cả của một rổ hàng hóa và dịch vụ tiêu dùng tiêu biểu. Đây là thước đo lạm phát phổ biến nhất.",
+          "frequency": "Hàng tháng (thường vào giữa tháng)",
+          "link": "https://fred.stlouisfed.org/series/CPIAUCSL",
+          "expectation_meaning": "Thị trường theo dõi sát sao CPI để dự đoán hành động của Fed. Nếu lạm phát cao, Fed phải giữ lãi suất cao.",
+          "good_vs_bad": "NÓNG (Thực tế > Dự báo): Xấu cho chứng khoán & trái phiếu (lợi suất tăng), tốt cho USD.\nNGUỘI (Thực tế < Dự báo): Tốt cho chứng khoán & trái phiếu, xấu cho USD.",
+          "market_reaction": "🔥 Lạm phát nóng: Dòng tiền trú ẩn vào nhóm Phòng thủ (XLP, XLV) và Năng lượng (XLE). Áp lực bán mạnh ở nhóm nhạy cảm lãi suất (Bất động sản XLRE, Tiện ích XLU).\n❄️ Lạm phát nguội: Kích hoạt đà tăng mạnh cho nhóm Công nghệ (XLK), Tiêu dùng tùy ý (XLY) và Bất động sản (XLRE)."
+        },
+        {
+          "id": "CPILFESL",
+          "short_name": "Core CPI",
+          "full_name": "Core Consumer Price Index",
+          "description": "Tương tự CPI nhưng loại trừ giá năng lượng và thực phẩm (do biến động mạnh), giúp phản ánh xu hướng lạm phát cốt lõi chính xác hơn.",
+          "frequency": "Hàng tháng (cùng ngày với CPI)",
+          "link": "https://fred.stlouisfed.org/series/CPILFESL",
+          "expectation_meaning": "Fed thường quan tâm đến Core CPI hơn CPI tổng thể vì nó loại bỏ nhiễu.",
+          "good_vs_bad": "NÓNG (Thực tế > Dự báo): Xấu cho chứng khoán, tốt cho USD.\nNGUỘI (Thực tế < Dự báo): Tốt cho chứng khoán, tạo kỳ vọng Fed hạ lãi suất.",
+          "market_reaction": "🔥 Lạm phát cốt lõi cứng đầu: Gây áp lực cực lớn lên các cổ phiếu Growth/Tech (XLK, XLC) vì định giá phụ thuộc vào lãi suất thấp.\n❄️ Hạ nhiệt nhanh: Tín hiệu mua mạnh (Risk-On) cho toàn bộ thị trường, đặc biệt là các công ty công nghệ vừa và nhỏ (Russell 2000) và Công nghệ (XLK)."
+        },
+        {
+          "id": "PCEPI",
+          "short_name": "PCE",
+          "full_name": "Personal Consumption Expenditures",
+          "description": "Thước đo chi tiêu tiêu dùng cá nhân. Khác với CPI, PCE phản ánh sự thay đổi hành vi mua sắm của người tiêu dùng (vd: đổi từ thịt bò sang thịt gà khi bò đắt).",
+          "frequency": "Hàng tháng (thường vào cuối tháng)",
+          "link": "https://fred.stlouisfed.org/series/PCEPI",
+          "expectation_meaning": "Đây là thước đo lạm phát ƯU THÍCH NHẤT của Fed để ra quyết định chính sách.",
+          "good_vs_bad": "Tương tự CPI: Nóng là xấu cho tài sản rủi ro (Cổ phiếu), Nguội là tốt.",
+          "market_reaction": "Tương tự CPI. PCE nóng kéo dòng tiền về các ngành truyền thống phòng thủ (XLV, XLP) do kỳ vọng lãi suất cao hơn lâu hơn (Higher for longer)."
+        },
+        {
+          "id": "PCEPILFE",
+          "short_name": "Core PCE",
+          "full_name": "Core PCE",
+          "description": "Chỉ số PCE loại trừ năng lượng và thực phẩm. Đây là con số quan trọng nhất (Holy Grail) mà Fed nhắm tới (mục tiêu 2%).",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/PCEPILFE",
+          "expectation_meaning": "Con số quyết định trực tiếp lộ trình lãi suất của Fed.",
+          "good_vs_bad": "NÓNG: Rất xấu cho thị trường rủi ro, đẩy lợi suất Trái phiếu lên cao.\nNGUỘI: Xúc tác cực mạnh cho đà tăng của thị trường chứng khoán.",
+          "market_reaction": "📈 Nếu giảm đúng lộ trình: Thị trường duy trì xu hướng tăng bền vững, nhóm chu kỳ (XLI, XLB) và tài chính (XLF) hưởng lợi vì kỳ vọng \"Hạ cánh mềm\" (Soft-landing)."
+        },
+        {
+          "id": "PPIACO",
+          "short_name": "PPI",
+          "full_name": "Producer Price Index",
+          "description": "Chỉ số giá sản xuất, đo lường chi phí sản xuất của các nhà máy. Thường được coi là chỉ báo sớm cho CPI (vì chi phí sản xuất tăng sẽ đẩy giá bán lẻ tăng).",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/PPIACO",
+          "expectation_meaning": "Cung cấp góc nhìn về lạm phát từ phía nguồn cung.",
+          "good_vs_bad": "NÓNG: Cảnh báo lạm phát tiêu dùng có thể tăng, xấu cho Cổ phiếu.\nNGUỘI: Tốt cho cổ phiếu, báo hiệu áp lực giá cả hạ nhiệt.",
+          "market_reaction": "🏭 PPI tăng mạnh báo hiệu biên lợi nhuận (Margin) của các công ty bán lẻ/sản xuất (XLY, XLP) có thể bị thu hẹp do chi phí đầu vào tăng. Cổ phiếu Vật liệu (XLB) có thể tăng nhờ giá nguyên liệu cao."
+        }
+      ]
+    },
+    {
+      "id": "labor",
+      "name": "Lao Động (Labor)",
+      "indicators": [
+        {
+          "id": "PAYEMS",
+          "short_name": "NFP",
+          "full_name": "Nonfarm Payrolls (Bảng lương phi nông nghiệp)",
+          "description": "Số lượng việc làm mới được tạo ra trong tháng (trừ ngành nông nghiệp). Là dữ liệu việc làm quan trọng nhất.",
+          "frequency": "Hàng tháng (thường Thứ Sáu đầu tiên của tháng)",
+          "link": "https://fred.stlouisfed.org/series/PAYEMS",
+          "expectation_meaning": "Đo lường sức khỏe nền kinh tế. Nền kinh tế khỏe cần nhiều việc làm, nhưng quá nhiều việc làm có thể gây lạm phát lương.",
+          "good_vs_bad": "Tùy bối cảnh: Nếu sợ lạm phát, NFP CAO là XẤU (Fed sẽ hawkish). Nếu sợ suy thoái, NFP CAO là TỐT (Kinh tế vững). Hiện tại thị trường thích Goldilocks (không quá nóng, không quá lạnh).",
+          "market_reaction": "💪 NFP mạnh mẽ (nhưng lạm phát ổn định): Tuyệt vời cho nhóm Chu kỳ như Công nghiệp (XLI), Vật liệu (XLB) và Tiêu dùng (XLY).\n⚠️ NFP quá yếu: Thị trường sợ suy thoái, dòng tiền hoảng loạn chui vào Trái phiếu chính phủ, Vàng và Cổ phiếu Phòng thủ (XLV Y tế, XLU Tiện ích)."
+        },
+        {
+          "id": "UNRATE",
+          "short_name": "Unemployment",
+          "full_name": "Unemployment Rate (Tỷ lệ thất nghiệp)",
+          "description": "Phần trăm lực lượng lao động đang không có việc làm và đang tích cực tìm việc.",
+          "frequency": "Hàng tháng (cùng lúc với NFP)",
+          "link": "https://fred.stlouisfed.org/series/UNRATE",
+          "expectation_meaning": "Tỷ lệ thất nghiệp tăng báo hiệu suy thoái (Sahm Rule), giảm cho thấy kinh tế khỏe.",
+          "good_vs_bad": "THẤP: Tốt cho kinh tế, nhưng nếu quá thấp (<4%) có thể gây lạm phát.\nCAO/TĂNG MẠNH: Xấu cho cổ phiếu, có nguy cơ suy thoái.",
+          "market_reaction": "📉 Thất nghiệp tăng mạnh: Nguy cơ suy thoái. Cổ phiếu ngân hàng (XLF) và Tiêu dùng không thiết yếu (XLY) thường bị bán tháo do rủi ro nợ xấu và sức mua giảm. Tiền chảy vào Y tế (XLV)."
+        },
+        {
+          "id": "ICSA",
+          "short_name": "Jobless Claims",
+          "full_name": "Initial Jobless Claims (Đơn xin trợ cấp thất nghiệp)",
+          "description": "Số lượng người lần đầu nộp đơn xin trợ cấp thất nghiệp trong tuần.",
+          "frequency": "Hàng tuần (Thứ Năm)",
+          "link": "https://fred.stlouisfed.org/series/ICSA",
+          "expectation_meaning": "Chỉ báo rất nhạy (real-time) về thị trường lao động. Tăng vọt là dấu hiệu sa thải diện rộng.",
+          "good_vs_bad": "TĂNG MẠNH: Dấu hiệu sa thải, xấu cho kinh tế, nhưng có thể tốt cho Cổ phiếu ngắn hạn nếu kỳ vọng Fed bơm tiền.\nGIẢM: Thị trường lao động mạnh.",
+          "market_reaction": "Tác động tức thời trong ngày. Claims tăng vọt thường kéo Lợi suất trái phiếu giảm, vô tình hỗ trợ nhẹ cho nhóm Công nghệ (XLK) nhưng lại làm nhóm chu kỳ (XLI, XLF) giảm điểm."
+        },
+        {
+          "id": "CES0500000003",
+          "short_name": "AHE",
+          "full_name": "Average Hourly Earnings",
+          "description": "Thu nhập bình quân hàng giờ. Tốc độ tăng lương ảnh hưởng trực tiếp đến lạm phát dịch vụ.",
+          "frequency": "Hàng tháng (Cùng lúc với NFP)",
+          "link": "https://fred.stlouisfed.org/series/CES0500000003",
+          "expectation_meaning": "Fed không muốn thấy lương tăng quá nhanh (vòng xoáy giá - lương).",
+          "good_vs_bad": "TĂNG MẠNH: Xấu cho thị trường (Lạm phát dai dẳng).\nTĂNG CHẬM: Tốt, hỗ trợ lạm phát hạ nhiệt.",
+          "market_reaction": "Lương tăng quá nóng làm giảm tỷ suất lợi nhuận của các công ty thâm dụng lao động như Bán lẻ, Nhà hàng, Dịch vụ (nhóm XLY). Tiền tệ (USD) có xu hướng tăng giá do kỳ vọng Fed giữ lãi suất cao."
+        },
+        {
+          "id": "JTSJOL",
+          "short_name": "JOLTS",
+          "full_name": "JOLTS Job Openings",
+          "description": "Số lượng vị trí việc làm đang mở (đang tuyển dụng).",
+          "frequency": "Hàng tháng (thường trễ 1 tháng)",
+          "link": "https://fred.stlouisfed.org/series/JTSJOL",
+          "expectation_meaning": "Cho thấy mức độ khát nhân sự của doanh nghiệp. Job openings cao = nhu cầu lao động lớn.",
+          "good_vs_bad": "GIẢM DẦN: Tốt, thị trường lao động tái cân bằng.\nCAO BẤT THƯỜNG: Xấu, áp lực tăng lương mạnh.",
+          "market_reaction": "Nhìn chung giống AHE. Job Openings giảm (thị trường bớt khát nhân lực) là tín hiệu đáng mừng cho chứng khoán, đặc biệt là các nhóm định giá cao như XLK, XLC."
+        }
+      ]
+    },
+    {
+      "id": "growth",
+      "name": "Tăng Trưởng & Kinh Tế (Growth)",
+      "indicators": [
+        {
+          "id": "GDPC1",
+          "short_name": "GDP",
+          "full_name": "Real Gross Domestic Product",
+          "description": "Tổng sản phẩm quốc nội thực (đã điều chỉnh lạm phát). Thước đo rộng nhất về hoạt động kinh tế.",
+          "frequency": "Hàng quý (có nhiều bản estimate: Advance, Second, Final)",
+          "link": "https://fred.stlouisfed.org/series/GDPC1",
+          "expectation_meaning": "Khẳng định nền kinh tế đang mở rộng hay thu hẹp (Suy thoái = 2 quý GDP âm liên tiếp).",
+          "good_vs_bad": "CAO HƠN DỰ BÁO: Tốt cho Chứng khoán (kinh tế khỏe), lợi suất tăng.\nTHẤP HƠN DỰ BÁO: Xấu, nguy cơ hạ cánh cứng (Hard Landing).",
+          "market_reaction": "📈 GDP mạnh: Sự bùng nổ của nhóm chu kỳ — Công nghiệp (XLI), Ngân hàng (XLF), Vật liệu (XLB) và Năng lượng (XLE). Dòng tiền rút khỏi Trái phiếu và cổ phiếu phòng thủ.\n📉 GDP suy thoái: Dòng tiền trú ẩn vào XLU (Tiện ích), XLV (Y tế) và Trái phiếu chính phủ."
+        },
+        {
+          "id": "RSAFS",
+          "short_name": "Retail Sales",
+          "full_name": "Retail Sales (Doanh số bán lẻ)",
+          "description": "Đo lường chi tiêu tiêu dùng tại các cửa hàng bán lẻ. Chi tiêu tiêu dùng chiếm 70% GDP Mỹ.",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/RSAFS",
+          "expectation_meaning": "Bức tranh trực tiếp về sức mua của người dân.",
+          "good_vs_bad": "MẠNH: Kinh tế tốt, nguy cơ lạm phát (Xấu cho Bond, Tùy thời điểm với Stock).\nYẾU: Người tiêu dùng cạn tiền, nguy cơ suy thoái.",
+          "market_reaction": "🛍️ Tác động trực tiếp lên nhóm Tiêu dùng tùy ý (XLY - Amazon, Tesla...). Nếu bán lẻ cực kỳ khỏe, cổ phiếu bán lẻ sẽ bay cao, kéo theo nhóm Thanh toán thẻ (Visa, Mastercard thuộc XLF)."
+        },
+        {
+          "id": "NAPM",
+          "short_name": "ISM Mfg",
+          "full_name": "ISM Manufacturing PMI",
+          "description": "Chỉ số nhà quản trị mua hàng ngành sản xuất. > 50 là mở rộng, < 50 là thu hẹp.",
+          "frequency": "Hàng tháng (Ngày đầu tiên của tháng)",
+          "link": "https://fred.stlouisfed.org/series/NAPM",
+          "expectation_meaning": "Chỉ báo dẫn dắt (Leading indicator) về sức khỏe mảng sản xuất.",
+          "good_vs_bad": "> 50: Tích cực. < 50: Tiêu cực.",
+          "market_reaction": "⚙️ ISM Sản xuất > 50: Dấu hiệu phục hồi của chu kỳ sản xuất. Rất tốt cho nhóm Công nghiệp (XLI), Vận tải logistics và Vật liệu cơ bản (XLB). Giá đồng (Copper) và dầu (WTI) thường tăng theo."
+        },
+        {
+          "id": "NAPMNMI",
+          "short_name": "ISM Svc",
+          "full_name": "ISM Services PMI",
+          "description": "Chỉ số nhà quản trị mua hàng ngành dịch vụ. Kinh tế Mỹ chủ yếu dựa vào dịch vụ.",
+          "frequency": "Hàng tháng (Ngày thứ 3 của tháng)",
+          "link": "https://fred.stlouisfed.org/series/NAPMNMI",
+          "expectation_meaning": "Quan trọng hơn Manufacturing PMI vì dịch vụ chiếm tỷ trọng lớn nhất.",
+          "good_vs_bad": "MẠNH (> 50): Kinh tế vững chắc.\nYẾU (< 50): Dấu hiệu báo động về tăng trưởng.",
+          "market_reaction": "✈️ ISM Dịch vụ giảm dưới 50 báo hiệu một cuộc suy thoái thực sự (vì dịch vụ rất hiếm khi thu hẹp). Điều này kích hoạt đợt bán tháo toàn thị trường. Nếu ISM quá mạnh, thị trường lại sợ lạm phát dịch vụ dai dẳng (Xấu cho Tech/Growth)."
+        }
+      ]
+    },
+    {
+      "id": "confidence",
+      "name": "Niềm Tin Tiêu Dùng (Confidence)",
+      "indicators": [
+        {
+          "id": "CSCICP03USM665S",
+          "short_name": "Consumer Conf",
+          "full_name": "CB Consumer Confidence",
+          "description": "Chỉ số đo lường mức độ lạc quan của người tiêu dùng về tình trạng kinh tế.",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/CSCICP03USM665S",
+          "expectation_meaning": "Người lạc quan sẽ tiêu nhiều tiền hơn, hỗ trợ tăng trưởng.",
+          "good_vs_bad": "CAO: Tốt cho tăng trưởng.\nTHẤP: Xấu, người dân có xu hướng thắt lưng buộc bụng.",
+          "market_reaction": "Tương quan mật thiết với nhóm Hàng tiêu dùng (XLY). Khi niềm tin sụp đổ, người dân chuyển sang mua hàng hóa thiết yếu (hỗ trợ nhóm XLP - Staples như Walmart, P&G)."
+        },
+        {
+          "id": "UMCSENT",
+          "short_name": "Michigan",
+          "full_name": "UoM Consumer Sentiment",
+          "description": "Tương tự Consumer Confidence nhưng được Đại học Michigan khảo sát. Trong đó có phần dự báo lạm phát kỳ vọng.",
+          "frequency": "Hàng tháng (Có Prelim và Final)",
+          "link": "https://fred.stlouisfed.org/series/UMCSENT",
+          "expectation_meaning": "Fed chú ý nhiều tới \"Lạm phát kỳ vọng 1 năm / 5 năm\" trong khảo sát này.",
+          "good_vs_bad": "Lạm phát kỳ vọng TĂNG: Rất xấu (Fed sẽ diều hâu).",
+          "market_reaction": "Thị trường chủ yếu nhìn vào cấu phần 'Inflation Expectations'. Nếu lạm phát kỳ vọng vọt lên, lợi suất Trái phiếu sẽ bật tăng mạnh, đè bẹp nhóm Công nghệ (XLK) và Bất động sản (XLRE)."
+        }
+      ]
+    },
+    {
+      "id": "housing",
+      "name": "Thị Trường Nhà Ở (Housing)",
+      "indicators": [
+        {
+          "id": "HOUST",
+          "short_name": "Housing Starts",
+          "full_name": "Housing Starts (Nhà khởi công)",
+          "description": "Số lượng nhà ở mới bắt đầu được xây dựng.",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/HOUST",
+          "expectation_meaning": "Nhà ở ảnh hưởng tới nhiều ngành khác (nội thất, xây dựng, ngân hàng).",
+          "good_vs_bad": "TĂNG: Tốt, phản ánh nhu cầu cao và nền kinh tế mở rộng.",
+          "market_reaction": "🏘️ Nhà khởi công tăng là bệ phóng cho các cổ phiếu Xây dựng (Homebuilders - ITB, XHB), Gỗ, Vật liệu xây dựng và chuỗi bán lẻ nội thất (Home Depot)."
+        },
+        {
+          "id": "EXHOSLUSM495S",
+          "short_name": "Existing Home Sales",
+          "full_name": "Doanh số bán nhà hiện có",
+          "description": "Số lượng nhà đã qua sử dụng được bán.",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/EXHOSLUSM495S",
+          "expectation_meaning": "Chiếm phần lớn thị trường bất động sản.",
+          "good_vs_bad": "Chịu tác động mạnh từ Lãi suất thế chấp (Mortgage rates). Nếu lãi suất giảm, sales sẽ tăng.",
+          "market_reaction": "Ảnh hưởng đến cổ phiếu môi giới bất động sản, ngân hàng cho vay thế chấp (Mortgage lenders). Khi doanh số thấp do lãi suất cao, tiền sẽ đứng ngoài ngành BĐS."
+        }
+      ]
+    },
+    {
+      "id": "fed",
+      "name": "Lãi Suất & Fed (Fed & Rates)",
+      "indicators": [
+        {
+          "id": "DFF",
+          "short_name": "Fed Funds Rate",
+          "full_name": "Lãi suất điều hành Fed",
+          "description": "Lãi suất qua đêm mà các ngân hàng vay mượn lẫn nhau. Lãi suất tham chiếu cho toàn bộ nền kinh tế.",
+          "frequency": "Họp FOMC (8 lần/năm)",
+          "link": "https://fred.stlouisfed.org/series/DFF",
+          "expectation_meaning": "Quyết định chi phí vốn của dòng tiền toàn cầu.",
+          "good_vs_bad": "TĂNG (Hike): Xấu cho Cổ phiếu/Crypto, Tốt cho USD.\nGIẢM (Cut): Tốt cho Cổ phiếu (dòng tiền rẻ chảy vào).",
+          "market_reaction": "💸 Fed nới lỏng (Giảm lãi suất): Siêu chu kỳ tăng giá (Bull market) cho Cổ phiếu, Crypto, Vàng. Nhóm vốn hóa nhỏ (Russell 2000) và Công nghệ hưởng lợi lớn nhất.\n💸 Fed thắt chặt (Tăng lãi suất): Tiền bị hút về hệ thống ngân hàng. Nhóm Tài chính (XLF) hưởng lợi nhờ NIM cao, nhưng toàn bộ thị trường chịu sức ép."
+        },
+        {
+          "id": "DGS10",
+          "short_name": "10Y Yield",
+          "full_name": "Lợi suất Trái phiếu kho bạc 10 năm",
+          "description": "Đại diện cho lãi suất phi rủi ro dài hạn, dùng để định giá chứng khoán (DCF) và lãi suất thế chấp.",
+          "frequency": "Hàng ngày",
+          "link": "https://fred.stlouisfed.org/series/DGS10",
+          "expectation_meaning": "Phản ánh kỳ vọng tăng trưởng và lạm phát dài hạn.",
+          "good_vs_bad": "TĂNG MẠNH: Gây áp lực cực lớn lên Cổ phiếu Công nghệ (Growth) và Bất động sản.\nGIẢM: Tốt cho Cổ phiếu rủi ro.",
+          "market_reaction": "Trọng lực của thị trường. Lợi suất 10 năm vọt lên > 4.5% sẽ dìm chết định giá cổ phiếu Tech (XLK) và BĐS (XLRE). Lợi suất giảm (nhưng không do suy thoái) là bữa tiệc của cổ phiếu tăng trưởng."
+        },
+        {
+          "id": "DGS2",
+          "short_name": "2Y Yield",
+          "full_name": "Lợi suất Trái phiếu kho bạc 2 năm",
+          "description": "Rất nhạy cảm với chính sách tiền tệ gần của Fed.",
+          "frequency": "Hàng ngày",
+          "link": "https://fred.stlouisfed.org/series/DGS2",
+          "expectation_meaning": "Dùng cùng DGS10 để đo đường cong lợi suất (Yield Curve).",
+          "good_vs_bad": "Nếu 2Y > 10Y (Đảo ngược): Cảnh báo Suy thoái mạnh (Recession).",
+          "market_reaction": "Lợi suất 2 năm đi sát với kỳ vọng tăng/giảm lãi suất của Fed. Khi 2Y sụt giảm nhanh, thị trường đang cược Fed sẽ xoay trục (Pivot) cứu nền kinh tế."
+        }
+      ]
+    }
+  ]
+}
