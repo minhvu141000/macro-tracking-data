@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>US Macro Education Dashboard</title>
+  <link rel="stylesheet" href="edu.css">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1><i class="fa-solid fa-graduation-cap"></i> Macro Education</h1>
+    <div class="nav-links">
+      <a href="index.html"><i class="fa-solid fa-chart-line"></i> Về Dashboard Chính</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar" id="sidebar">
+      <div class="date-selector-container">
+        <label for="date-selector"><i class="fa-regular fa-calendar"></i> Xem dữ liệu ngày:</label>
+        <select id="date-selector"></select>
+      </div>
+      <div id="sidebar-content">
+        <!-- Categories and indicators will be injected here by JS -->
+      </div>
+    </aside>
+
+    <main class="main-content" id="main-content">
+      <div class="empty-state" id="empty-state">
+        <i class="fa-solid fa-book-open-reader"></i>
+        <h2>Chọn một chỉ số bên trái để học</h2>
+        <p>Hệ thống tự động làm nổi bật các chỉ số vừa được công bố trong ngày bạn chọn.</p>
+      </div>
+
+      <div class="content-card" id="content-card" style="display: none;">
+        <div class="card-header">
+          <div class="card-title">
+            <h2 id="ind-short-name">CPI</h2>
+            <p id="ind-full-name">Consumer Price Index</p>
+          </div>
+          <div class="card-actions">
+            <a id="ind-link" href="#" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Xem Dữ liệu FRED</a>
+          </div>
+        </div>
+
+        <div id="release-info-alert" class="release-info-alert" style="display: none;">
+          <h4><i class="fa-solid fa-bolt"></i> Số liệu công bố ngày <span id="rel-date"></span></h4>
+          <div class="release-stats">
+            <div class="stat"><span class="stat-lbl">Thực tế (Actual):</span> <strong id="rel-actual" class="actual-val"></strong></div>
+            <div class="stat"><span class="stat-lbl">Dự báo (Forecast):</span> <strong id="rel-forecast"></strong></div>
+            <div class="stat"><span class="stat-lbl">Kỳ trước (Previous):</span> <strong id="rel-previous"></strong></div>
+            <div class="stat"><span class="stat-lbl">Surprise:</span> <strong id="rel-surprise"></strong></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><i class="fa-solid fa-circle-info"></i> Định Nghĩa</h3>
+          <p id="ind-desc"></p>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-box">
+            <h4><i class="fa-regular fa-calendar-days"></i> Chu kỳ công bố</h4>
+            <p id="ind-freq"></p>
+            <p id="ind-latest-release" style="margin-top: 0.75rem; color: var(--highlight-color); font-size: 0.9rem; font-weight: 500;"></p>
+          </div>
+          <div class="info-box">
+            <h4><i class="fa-solid fa-bullseye"></i> Kỳ Vọng Của Thị Trường</h4>
+            <p id="ind-expect"></p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><i class="fa-solid fa-scale-balanced"></i> Như thế nào là Tốt / Xấu?</h3>
+          <div class="good-bad-box">
+            <p id="ind-good-bad"></p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3 style="color: var(--accent-color);"><i class="fa-solid fa-chart-pie"></i> Góc Nhìn Thực Chiến & Nhóm Ngành</h3>
+          <div class="good-bad-box" style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2);">
+            <p id="ind-market-reaction"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Load Macro Data -->
+  <script src="data.js"></script>
+  <!-- Main logic -->
+  <script src="edu.js"></script>
+</body>
+</html>

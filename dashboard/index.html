@@ -779,34 +779,79 @@ document.getElementById("last-updated").textContent =
 })();
 
 // === Insights & Kết luận ===
-(function renderInsights() {
+window.badgesForReport = function(report) {
+  if (!report) return "";
+  const badges = [];
+  if (report.regime_signal) {
+    const cls = "badge-" + report.regime_signal.replace(/[^a-z-]/gi, "").toLowerCase();
+    badges.push(`<span class="insights-badge ${cls}">${report.regime_signal}</span>`);
+  }
+  if (report.regime) {
+    const cls = "badge-" + report.regime.replace(/[^a-z-]/gi, "").toLowerCase();
+    badges.push(`<span class="insights-badge ${cls}">Regime: ${report.regime}</span>`);
+  }
+  if (report.fed_stance) {
+    const cls = "badge-" + report.fed_stance.replace(/[^a-z-]/gi, "").toLowerCase();
+    badges.push(`<span class="insights-badge ${cls}">Fed: ${report.fed_stance}</span>`);
+  }
+  if (report.surprise_count != null && Number(report.surprise_count) > 0) {
+    badges.push(`<span class="insights-badge badge-neutral">${report.surprise_count} surprises</span>`);
+  }
+  return badges.join(" ");
+};
+
+window.currentDailyReport = D.latest_daily;
+window.currentMonthlyReport = D.latest_monthly;
+let monthlyChartsRendered = false;
+
+window.showReportInDashboard = function(report, kind) {
+  if (!report) return;
+  const headerEl = document.getElementById("insights-header");
+  const takeawayEl = document.getElementById("insights-takeaway");
+  const bodyEl = document.getElementById("insights-body");
+  const metaEl = document.getElementById("insights-meta");
+  const fullChartsEl = document.getElementById("monthly-full-charts");
+
+  if (headerEl) headerEl.innerHTML = window.badgesForReport(report);
+  if (takeawayEl) takeawayEl.innerHTML = report.key_takeaway ? `<div class="key-takeaway">${report.key_takeaway}</div>` : "";
+
+  // Render markdown body
+  if (bodyEl) {
+    if (report.body && window.marked) {
+      try {
+        bodyEl.innerHTML = marked.parse(report.body);
+      } catch (e) {
+        bodyEl.textContent = report.body;
+      }
+    } else if (report.body) {
+      bodyEl.innerText = report.body;
+    } else {
+      bodyEl.innerHTML = `<div class="empty">Báo cáo này chưa có nội dung.</div>`;
+    }
+  }
+
+  if (metaEl) metaEl.textContent = `Nguồn: data/${kind === "daily" ? "daily" : "monthly"}/${report.file}`;
+
+  // Show/hide full FRED charts for monthly tab
+  if (fullChartsEl) {
+    if (kind === "monthly") {
+      fullChartsEl.style.display = "";
+      if (!monthlyChartsRendered) {
+        renderMonthlyFullCharts(fullChartsEl);
+        monthlyChartsRendered = true;
+      }
+    } else {
+      fullChartsEl.style.display = "none";
+    }
+  }
+};
+
+window.initInsights = function() {
   const el = document.getElementById("insights-section");
-  const daily = D.latest_daily;
-  const monthly = D.latest_monthly;
+  const daily = window.currentDailyReport;
+  const monthly = window.currentMonthlyReport;
 
   if (!daily && !monthly) return; // keep placeholder
-
-  // Build badges from front-matter
-  function badgesFor(report) {
-    if (!report) return "";
-    const badges = [];
-    if (report.regime_signal) {
-      const cls = "badge-" + report.regime_signal.replace(/[^a-z-]/gi, "").toLowerCase();
-      badges.push(`<span class="insights-badge ${cls}">${report.regime_signal}</span>`);
-    }
-    if (report.regime) {
-      const cls = "badge-" + report.regime.replace(/[^a-z-]/gi, "").toLowerCase();
-      badges.push(`<span class="insights-badge ${cls}">Regime: ${report.regime}</span>`);
-    }
-    if (report.fed_stance) {
-      const cls = "badge-" + report.fed_stance.replace(/[^a-z-]/gi, "").toLowerCase();
-      badges.push(`<span class="insights-badge ${cls}">Fed: ${report.fed_stance}</span>`);
-    }
-    if (report.surprise_count != null && Number(report.surprise_count) > 0) {
-      badges.push(`<span class="insights-badge badge-neutral">${report.surprise_count} surprises</span>`);
-    }
-    return badges.join(" ");
-  }
 
   const hasDaily = !!daily;
   const hasMonthly = !!monthly;
@@ -821,14 +866,13 @@ document.getElementById("last-updated").textContent =
       </div>`;
   }
 
-  // Default panel: daily if exists, else monthly
   const initial = hasDaily ? daily : monthly;
   const initialKind = hasDaily ? "daily" : "monthly";
 
   el.innerHTML = `
     <div class="insights-card">
       <div class="insights-header" id="insights-header">
-        ${badgesFor(initial)}
+        ${window.badgesForReport(initial)}
       </div>
       ${initial.key_takeaway ? `<div class="key-takeaway" id="insights-takeaway">${initial.key_takeaway}</div>` : `<div id="insights-takeaway"></div>`}
       ${tabsHtml}
@@ -838,46 +882,7 @@ document.getElementById("last-updated").textContent =
     </div>
   `;
 
-  let monthlyChartsRendered = false;
-
-  function showReport(report, kind) {
-    const headerEl = document.getElementById("insights-header");
-    const takeawayEl = document.getElementById("insights-takeaway");
-    const bodyEl = document.getElementById("insights-body");
-    const metaEl = document.getElementById("insights-meta");
-    const fullChartsEl = document.getElementById("monthly-full-charts");
-
-    headerEl.innerHTML = badgesFor(report);
-    takeawayEl.innerHTML = report.key_takeaway ? `<div class="key-takeaway">${report.key_takeaway}</div>` : "";
-
-    // Render markdown body
-    if (report.body && window.marked) {
-      try {
-        bodyEl.innerHTML = marked.parse(report.body);
-      } catch (e) {
-        bodyEl.textContent = report.body;
-      }
-    } else if (report.body) {
-      bodyEl.innerText = report.body;
-    } else {
-      bodyEl.innerHTML = `<div class="empty">Báo cáo này chưa có nội dung.</div>`;
-    }
-
-    metaEl.textContent = `Nguồn: data/${kind === "daily" ? "daily" : "monthly"}/${report.file}`;
-
-    // Show/hide full FRED charts for monthly tab
-    if (kind === "monthly") {
-      fullChartsEl.style.display = "";
-      if (!monthlyChartsRendered) {
-        renderMonthlyFullCharts(fullChartsEl);
-        monthlyChartsRendered = true;
-      }
-    } else {
-      fullChartsEl.style.display = "none";
-    }
-  }
-
-  showReport(initial, initialKind);
+  window.showReportInDashboard(initial, initialKind);
 
   // Tab handlers
   if (hasDaily && hasMonthly) {
@@ -886,19 +891,30 @@ document.getElementById("last-updated").textContent =
         el.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
         const kind = btn.dataset.tab;
-        showReport(kind === "daily" ? daily : monthly, kind);
+        window.showReportInDashboard(kind === "daily" ? window.currentDailyReport : window.currentMonthlyReport, kind);
       });
     });
   }
-})();
+};
+
+window.initInsights();
 
 // === Today's releases ===
-(function renderReleases() {
+window.renderReleases = function(dateStr) {
   const el = document.getElementById("today-releases");
-  const r = D.daily_releases || {};
-  const list = r.releases || [];
+  let list = [];
+  let displayDate = dateStr;
+
+  if (!dateStr) {
+    const r = D.daily_releases || {};
+    list = r.releases || [];
+    displayDate = r.date || "—";
+  } else {
+    list = (D.releases_history || {})[dateStr] || [];
+  }
+
   if (!list.length) {
-    el.innerHTML = `<div class="empty">Không có chỉ số US nào công bố ngày ${r.date || "—"}.</div>`;
+    el.innerHTML = `<div class="empty">Không có chỉ số US nào công bố ngày ${displayDate}.</div>`;
     return;
   }
   const rows = list.map((ev, i) => {
@@ -913,7 +929,7 @@ document.getElementById("last-updated").textContent =
     </tr>`;
   }).join("");
   el.innerHTML = `
-    <div style="margin-bottom:8px; color: var(--muted); font-size: 12px;">Ngày: ${r.date}</div>
+    <div style="margin-bottom:8px; color: var(--muted); font-size: 12px;">Ngày: ${displayDate}</div>
     <table>
       <thead><tr><th>Chỉ số</th><th>Giờ (NY)</th><th>Actual</th><th>Forecast</th><th>Previous</th><th>Surprise</th></tr></thead>
       <tbody>${rows}</tbody>
@@ -925,7 +941,9 @@ document.getElementById("last-updated").textContent =
       openModal({ name: ev.name, releaseData: ev });
     });
   });
-})();
+};
+
+window.renderReleases();
 
 function classifySurprise(ev) {
   const a = parseFloat(String(ev.actual ?? "").replace(/[%,KMB]/g, ""));
@@ -1706,7 +1724,54 @@ function openSectorModal(ticker) {
   `;
 })();
 
-// === Reports list ===
+// === Reports list & Dashboard Switching ===
+window.selectDashboardReport = function(kind, file) {
+  const list = kind === 'daily' ? D.daily_reports : D.monthly_reports;
+  const report = (list || []).find(r => r.file === file);
+  if (!report) return;
+
+  if (kind === 'daily') {
+    window.currentDailyReport = report;
+    // Update daily tab button label if it exists
+    const dailyBtn = document.querySelector("#insights-section .tab[data-tab='daily']");
+    if (dailyBtn) {
+      dailyBtn.textContent = `Daily — ${report.date}`;
+    }
+    // Switch active tab to daily
+    const tabs = document.querySelectorAll("#insights-section .tab");
+    tabs.forEach(t => {
+      if (t.dataset.tab === 'daily') t.classList.add("active");
+      else t.classList.remove("active");
+    });
+    window.showReportInDashboard(report, 'daily');
+
+    // Also update "Chỉ số công bố trong ngày"
+    if (window.renderReleases) {
+      window.renderReleases(report.date);
+    }
+  } else {
+    window.currentMonthlyReport = report;
+    // Update monthly tab button label if it exists
+    const monthlyBtn = document.querySelector("#insights-section .tab[data-tab='monthly']");
+    if (monthlyBtn) {
+      monthlyBtn.textContent = `Tháng — ${report.month || report.date}`;
+    }
+    // Switch active tab to monthly
+    const tabs = document.querySelectorAll("#insights-section .tab");
+    tabs.forEach(t => {
+      if (t.dataset.tab === 'monthly') t.classList.add("active");
+      else t.classList.remove("active");
+    });
+    window.showReportInDashboard(report, 'monthly');
+  }
+
+  // Smooth scroll to the insights section
+  const insightsSection = document.getElementById("insights-section");
+  if (insightsSection) {
+    insightsSection.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 (function renderReports() {
   const el = document.getElementById("reports-list");
   const daily = (D.daily_reports || []).slice(-14).reverse();
@@ -1719,14 +1784,14 @@ function openSectorModal(ticker) {
   if (monthly.length) {
     html += `<div style="color: var(--muted); font-size: 12px; margin-bottom: 8px;">Báo cáo tháng</div>`;
     html += monthly.map(r => `<div style="padding: 6px 0;">
-      <a class="report-link" href="../data/monthly/${r.file}">${r.file}</a>
+      <a class="report-link" href="#" onclick="selectDashboardReport('monthly', '${r.file}'); return false;">${r.file}</a>
       ${r.regime ? `<span class="pill ${(r.fed_stance||"neutral")}">${r.regime}</span>` : ""}
       <div style="color: var(--muted); font-size: 12px;">${r.body_preview || ""}</div>
     </div>`).join("");
   }
   html += `<div style="color: var(--muted); font-size: 12px; margin: 16px 0 8px;">Báo cáo ngày (14 gần nhất)</div>`;
   html += daily.map(r => `<div style="padding: 6px 0;">
-    <a class="report-link" href="../data/daily/${r.file}">${r.date}</a>
+    <a class="report-link" href="#" onclick="selectDashboardReport('daily', '${r.file}'); return false;">${r.date}</a>
     ${r.regime_signal ? `<span class="pill ${r.regime_signal}">${r.regime_signal}</span>` : ""}
     <span style="color: var(--muted)"> · ${r.key_takeaway || ""}</span>
   </div>`).join("");
