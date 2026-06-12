@@ -58,6 +58,52 @@
           "expectation_meaning": "Cung cấp góc nhìn về lạm phát từ phía nguồn cung.",
           "good_vs_bad": "NÓNG: Cảnh báo lạm phát tiêu dùng có thể tăng, xấu cho Cổ phiếu.\nNGUỘI: Tốt cho cổ phiếu, báo hiệu áp lực giá cả hạ nhiệt.",
           "market_reaction": "🏭 PPI tăng mạnh báo hiệu biên lợi nhuận (Margin) của các công ty bán lẻ/sản xuất (XLY, XLP) có thể bị thu hẹp do chi phí đầu vào tăng. Cổ phiếu Vật liệu (XLB) có thể tăng nhờ giá nguyên liệu cao."
+        },
+        {
+          "id": "PPILFE",
+          "short_name": "Core PPI",
+          "full_name": "Core Producer Price Index",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/PPILFE",
+          "description": "PPI loại trừ thực phẩm và năng lượng — đo áp lực giá đầu vào của nhà sản xuất ở phần 'sticky' (ít biến động).",
+          "expectation_meaning": "Forecast MoM thường 0.1-0.3%, YoY 2-3%. Vượt trên = áp lực giá lan toả; dưới = disinflation pipeline.",
+          "good_vs_bad": "Cao = áp lực giá đầu vào → có thể truyền vào CPI tháng sau → Fed hawkish. Thấp = tốt cho margin doanh nghiệp + tốt cho equities.",
+          "market_reaction": "Core PPI tăng → bond yields jump, USD mạnh, Tech/Growth (DCF nhạy lãi suất) bị hit; Energy/Materials hưởng lợi từ pricing power. Core PPI giảm → ngược lại, tốt cho XLK, XLY, XLRE.",
+          "release_aliases": [
+            "core ppi",
+            "core ppi (mom)",
+            "core ppi (yoy)",
+            "ppi ex. food/energy/transport"
+          ]
+        },
+        {
+          "id": "MEDCPIM158SFRBCLE",
+          "short_name": "Cleveland CPI",
+          "full_name": "Cleveland Fed Median CPI",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/MEDCPIM158SFRBCLE",
+          "description": "Median CPI từ Cleveland Fed — đo 'sticky inflation' bằng cách lấy giá tăng giữa của rổ hàng hoá, loại trừ outliers.",
+          "expectation_meaning": "Fed dùng để đánh giá lạm phát 'core' đáng tin cậy hơn Core CPI (không bỏ trọn nhóm).",
+          "good_vs_bad": "Cao = sticky inflation chưa hạ → Fed phải giữ rate cao lâu. Thấp = thật sự disinflation.",
+          "market_reaction": "Median CPI cao và giữ trên 3% → Fed buộc phải hawkish dù headline cool. XLK/XLRE chịu áp lực. Median giảm rõ rệt → dovish pivot khả thi → tốt cho duration assets.",
+          "release_aliases": [
+            "cleveland cpi"
+          ]
+        },
+        {
+          "id": "REALEARN",
+          "short_name": "Real Earnings",
+          "full_name": "Real Earnings (Inflation-Adjusted Wages)",
+          "frequency": "Hàng tháng (kèm CPI)",
+          "link": "https://www.bls.gov/news.release/realer.htm",
+          "description": "Lương danh nghĩa trừ CPI = sức mua thực tế của người lao động.",
+          "expectation_meaning": "Real Earnings tăng = consumer khoẻ hơn; giảm = wage growth không theo kịp lạm phát → consumer demand yếu.",
+          "good_vs_bad": "Tăng = tốt cho XLY (Consumer Discretionary), Retail. Giảm = warning cho consumer cyclicals; XLP (Staples) defensive bid.",
+          "market_reaction": "Real Earnings âm 3+ tháng = recession risk (consumer rút). Theo dõi cùng Retail Sales real để cross-check sức mua.",
+          "release_aliases": [
+            "real earnings",
+            "real earnings (mom)"
+          ]
         }
       ]
     },
@@ -119,6 +165,203 @@
           "expectation_meaning": "Cho thấy mức độ khát nhân sự của doanh nghiệp. Job openings cao = nhu cầu lao động lớn.",
           "good_vs_bad": "GIẢM DẦN: Tốt, thị trường lao động tái cân bằng.\nCAO BẤT THƯỜNG: Xấu, áp lực tăng lương mạnh.",
           "market_reaction": "Nhìn chung giống AHE. Job Openings giảm (thị trường bớt khát nhân lực) là tín hiệu đáng mừng cho chứng khoán, đặc biệt là các nhóm định giá cao như XLK, XLC."
+        },
+        {
+          "id": "CCSA",
+          "short_name": "Continuing Claims",
+          "full_name": "Continuing Jobless Claims",
+          "frequency": "Hàng tuần (Thứ Năm)",
+          "link": "https://fred.stlouisfed.org/series/CCSA",
+          "description": "Số người ĐANG nhận trợ cấp thất nghiệp (chưa tìm được việc). Phản ánh tốc độ re-hire của thị trường lao động.",
+          "expectation_meaning": "Mức bình thường 1.5-1.8M. > 2M = labor stress; < 1.4M = full employment cực chặt.",
+          "good_vs_bad": "Tăng kéo dài = layoff không re-hire kịp → recession signal. Giảm = market tightening.",
+          "market_reaction": "Continuing Claims tăng vọt = market price-in Fed cuts → XLU/XLRE/Bonds bid; XLK rally (duration). Khi cùng Initial Claims tăng = dovish double signal.",
+          "release_aliases": [
+            "continuing jobless claims"
+          ]
+        },
+        {
+          "id": "IC4WSA",
+          "short_name": "Jobless 4-Week Avg",
+          "full_name": "Jobless Claims 4-Week Moving Average",
+          "frequency": "Hàng tuần (Thứ Năm)",
+          "link": "https://fred.stlouisfed.org/series/IC4WSA",
+          "description": "Trung bình động 4 tuần của Initial Jobless Claims — loại noise tuần đơn lẻ.",
+          "expectation_meaning": "Mức bình thường 200-230K. Tăng đều = trend negative.",
+          "good_vs_bad": "Đỉnh cao mới (>250K) = labor cooling rõ → Fed dovish setup. Thấp ổn định = labor strong.",
+          "market_reaction": "Break > 260K bền vững = soft landing scenario yếu đi, recession lo. Defensive bid (XLV/XLP/XLU).",
+          "release_aliases": [
+            "jobless claims 4-week avg"
+          ]
+        },
+        {
+          "id": "ADPMNUSNERNSA",
+          "short_name": "ADP NFP",
+          "full_name": "ADP Nonfarm Employment Change",
+          "frequency": "Hàng tháng (Thứ Tư trước NFP)",
+          "link": "https://www.adpresearch.com/",
+          "description": "Báo cáo việc làm tư nhân từ ADP, thường ra 2 ngày trước NFP chính thức. Là preview NFP.",
+          "expectation_meaning": "Forecast thường 150-200K. ADP correlate với NFP nhưng KHÔNG hoàn hảo (lệch 30-50K thường).",
+          "good_vs_bad": "ADP mạnh + NFP yếu = ADP false positive. ADP yếu + NFP mạnh = bộ phận đo của ADP miss government jobs.",
+          "market_reaction": "ADP > forecast lớn → yields jump, USD mạnh, XLF/XLY rally trong vài phút. NHƯNG market discount sau khi NFP ra. Trader thường dùng ADP để 'pre-position' cho NFP.",
+          "release_aliases": [
+            "adp nonfarm employment change",
+            "adp employment change weekly"
+          ]
+        },
+        {
+          "id": "CHALLENGER",
+          "short_name": "Challenger Cuts",
+          "full_name": "Challenger Job Cuts",
+          "frequency": "Hàng tháng (Thứ Năm đầu tháng)",
+          "link": "https://www.challengergray.com/blog/",
+          "description": "Số layoff announcements (kế hoạch cắt giảm việc làm) trong tháng từ doanh nghiệp.",
+          "expectation_meaning": "< 60K/tháng = bình thường. > 80K = layoff cycle bắt đầu. > 100K = corporate stress.",
+          "good_vs_bad": "Tăng vọt = sớm hơn Initial Claims 1-2 tháng (leading indicator). Đáng sợ khi cluster ở Tech/Financials.",
+          "market_reaction": "Challenger spike 2 tháng liên tiếp = market price-in NFP miss 4-6 tuần sau. Defensive sectors (XLV/XLP) bid sớm. Specific sectors hit nếu cuts concentrate (vd: Tech cuts → XLK đau).",
+          "release_aliases": [
+            "challenger job cuts"
+          ]
+        },
+        {
+          "id": "OPHNFB",
+          "short_name": "Productivity",
+          "full_name": "Nonfarm Productivity",
+          "frequency": "Hàng quý",
+          "link": "https://fred.stlouisfed.org/series/OPHNFB",
+          "description": "Output per worker hour. Productivity tăng = doanh nghiệp sản xuất nhiều hơn với cùng labor → margins tốt + ít cần wage hike.",
+          "expectation_meaning": "Trend long-term ~1.5-2%/năm. > 3% = boom (AI?), < 1% = stagflation risk.",
+          "good_vs_bad": "Cao = tốt cho corporate margins + dovish lạm phát. Thấp + ULC cao = stagflation classic.",
+          "market_reaction": "Productivity surprise mạnh → SPY rally (margin expansion thesis), XLK đặc biệt nếu narrative AI productivity boom. Yếu + ULC cao → margin compress lo → equities sell.",
+          "release_aliases": [
+            "nonfarm productivity"
+          ]
+        },
+        {
+          "id": "ULCNFB",
+          "short_name": "Unit Labor Costs",
+          "full_name": "Unit Labor Costs",
+          "frequency": "Hàng quý",
+          "link": "https://fred.stlouisfed.org/series/ULCNFB",
+          "description": "Chi phí lao động per unit output — đo áp lực lương vs năng suất.",
+          "expectation_meaning": "ULC > Productivity = wage-price spiral risk. Fed theo dõi sát.",
+          "good_vs_bad": "Thấp = tốt cho margin + ít áp lực CPI. Cao = corporate margin squeeze + Fed hawkish.",
+          "market_reaction": "ULC vọt > 4% YoY = Fed lo wage spiral → hawkish bias → yields up, growth equities pressure.",
+          "release_aliases": [
+            "unit labor costs"
+          ]
+        },
+        {
+          "id": "CIVPART",
+          "short_name": "Participation Rate",
+          "full_name": "Labor Force Participation Rate",
+          "frequency": "Hàng tháng (kèm NFP)",
+          "link": "https://fred.stlouisfed.org/series/CIVPART",
+          "description": "% người trong tuổi lao động (16+) đang làm việc hoặc tích cực tìm việc.",
+          "expectation_meaning": "Trước Covid ~63.5%. Sau Covid về 62-62.5%. Tăng = lao động quay lại; giảm = dropouts.",
+          "good_vs_bad": "Tăng = labor pool mở rộng, giảm áp lực lương → dovish lạm phát. Giảm = labor shortage tiếp diễn → wage hike → hawkish.",
+          "market_reaction": "Cross-check với Unemployment Rate: UNRATE thấp + Participation cao = labor healthy. UNRATE thấp + Participation thấp = 'fake' tight (mọi người out of workforce).",
+          "release_aliases": [
+            "participation rate"
+          ]
+        },
+        {
+          "id": "U6RATE",
+          "short_name": "U6 Unemployment",
+          "full_name": "U6 Underemployment Rate",
+          "frequency": "Hàng tháng (kèm NFP)",
+          "link": "https://fred.stlouisfed.org/series/U6RATE",
+          "description": "Tỷ lệ thất nghiệp 'mở rộng' — gồm cả người làm part-time muốn full-time + người 'marginally attached' (đã nản tìm việc).",
+          "expectation_meaning": "U6 ~ 1.7x của UNRATE chính thức. Spread U6-UNRATE > 4pp = underemployment cao.",
+          "good_vs_bad": "U6 vọt nhanh hơn UNRATE = labor stress thực sự (full-time chuyển part-time). Spread thu hẹp = recovery.",
+          "market_reaction": "Khi U6 spike trong khi UNRATE flat → market lo recession ẩn → defensive rotation. Khi cùng giảm → goldilocks confirm.",
+          "release_aliases": [
+            "u6 unemployment rate"
+          ]
+        },
+        {
+          "id": "AWHAETP",
+          "short_name": "Avg Weekly Hours",
+          "full_name": "Average Weekly Hours (Production Workers)",
+          "frequency": "Hàng tháng (kèm NFP)",
+          "link": "https://fred.stlouisfed.org/series/AWHAETP",
+          "description": "Số giờ làm trung bình mỗi tuần của lao động sản xuất.",
+          "expectation_meaning": "Bình thường ~34.4h. Tăng = doanh nghiệp cần nhiều labor hơn (sắp tuyển); Giảm = họ cắt hours trước layoff.",
+          "good_vs_bad": "Giảm liên tục 3-6 tháng = leading indicator cho NFP miss + Industrial Production yếu.",
+          "market_reaction": "Subtle indicator nhưng đáng tin: hours xuống → manuf demand yếu → XLI/XLB chịu áp lực. Cross-check với ISM Mfg Employment.",
+          "release_aliases": [
+            "average weekly hours"
+          ]
+        },
+        {
+          "id": "CES9091000001",
+          "short_name": "Gov Payrolls",
+          "full_name": "Government Payrolls",
+          "frequency": "Hàng tháng (kèm NFP)",
+          "link": "https://fred.stlouisfed.org/series/USGOVT",
+          "description": "Việc làm khu vực công (federal + state + local).",
+          "expectation_meaning": "Thường +10-30K/tháng. Spike thường là federal hire (vd: census, tax season).",
+          "good_vs_bad": "Khi NFP headline mạnh chủ yếu do gov hire → quality of jobs yếu (private mạnh hơn = healthy economy).",
+          "market_reaction": "Market ít react trực tiếp; nhưng nhà phân tích để check 'quality' của NFP. Private NFP > Gov NFP = bull case thực sự.",
+          "release_aliases": [
+            "government payrolls"
+          ]
+        },
+        {
+          "id": "MANEMP",
+          "short_name": "Mfg Payrolls",
+          "full_name": "Manufacturing Payrolls",
+          "frequency": "Hàng tháng (kèm NFP)",
+          "link": "https://fred.stlouisfed.org/series/MANEMP",
+          "description": "Việc làm ngành sản xuất. Là sub-component của NFP.",
+          "expectation_meaning": "Trend giảm dài hạn (-5 đến +5K/tháng). Tăng mạnh = manufacturing renaissance signal.",
+          "good_vs_bad": "Tăng = good cho XLI (Industrials), XLB (Materials). Giảm liên tục = manuf recession.",
+          "market_reaction": "Cùng ISM Mfg PMI để cross-check. Mfg payrolls bounce + ISM > 50 = cyclical bull case → XLI/XLB rally.",
+          "release_aliases": [
+            "manufacturing payrolls"
+          ]
+        },
+        {
+          "id": "CES0500000008",
+          "short_name": "Private NFP",
+          "full_name": "Private Nonfarm Payrolls",
+          "frequency": "Hàng tháng (kèm NFP)",
+          "link": "https://fred.stlouisfed.org/series/CES0500000001",
+          "description": "NFP chỉ tính khu vực tư nhân (loại trừ government). Là phần 'thực' của job market.",
+          "expectation_meaning": "Khi NFP +200K nhưng Private +50K + Gov +150K = quality yếu. Private > Gov consistently = economy healthy.",
+          "good_vs_bad": "Private strong = sustainable growth. Private yếu + Gov mạnh = artificial support.",
+          "market_reaction": "Phân tích deeper hơn headline NFP. Trader pro thường focus Private NFP để judge regime.",
+          "release_aliases": [
+            "private nonfarm payrolls"
+          ]
+        },
+        {
+          "id": "CETI",
+          "short_name": "CB Employment Trends",
+          "full_name": "CB Employment Trends Index",
+          "frequency": "Hàng tháng",
+          "link": "https://www.conference-board.org/",
+          "description": "Composite của 8 leading employment indicators do Conference Board tính. Leading indicator cho NFP.",
+          "expectation_meaning": "Tăng = NFP có thể vẫn tốt 2-3 tháng tới. Giảm = NFP suy yếu sắp đến.",
+          "good_vs_bad": "Drop 3 tháng liên tiếp = recession warning sớm.",
+          "market_reaction": "Niche indicator, ít market mover trực tiếp. Nhà phân tích chuyên dùng để fade NFP surprise (nếu CB ETI đã xấu rồi).",
+          "release_aliases": [
+            "cb employment trends index"
+          ]
+        },
+        {
+          "id": "NYFED1YINFL",
+          "short_name": "NY Fed 1Y Inflation Exp",
+          "full_name": "NY Fed Survey of Consumer Inflation Expectations (1-Year)",
+          "frequency": "Hàng tháng",
+          "link": "https://www.newyorkfed.org/microeconomics/sce",
+          "description": "Khảo sát kỳ vọng lạm phát 1 năm tới của hộ gia đình Mỹ.",
+          "expectation_meaning": "Fed theo dõi để xem expectations có 'anchored' ở 2-3% không. > 4% = unanchored risk.",
+          "good_vs_bad": "Giảm = consumer tin Fed kiểm soát được lạm phát → dovish narrative. Tăng = Fed phải hawkish.",
+          "market_reaction": "Subtle nhưng quan trọng. Cross-check với Michigan inflation exp. Khi cả 2 cùng giảm → strong dovish signal cho FOMC.",
+          "release_aliases": [
+            "ny fed 1-year consumer inflation expectations"
+          ]
         }
       ]
     },
@@ -169,6 +412,346 @@
           "expectation_meaning": "Quan trọng hơn Manufacturing PMI vì dịch vụ chiếm tỷ trọng lớn nhất.",
           "good_vs_bad": "MẠNH (> 50): Kinh tế vững chắc.\nYẾU (< 50): Dấu hiệu báo động về tăng trưởng.",
           "market_reaction": "✈️ ISM Dịch vụ giảm dưới 50 báo hiệu một cuộc suy thoái thực sự (vì dịch vụ rất hiếm khi thu hẹp). Điều này kích hoạt đợt bán tháo toàn thị trường. Nếu ISM quá mạnh, thị trường lại sợ lạm phát dịch vụ dai dẳng (Xấu cho Tech/Growth)."
+        },
+        {
+          "id": "GDPNOW",
+          "short_name": "Atlanta GDPNow",
+          "full_name": "Atlanta Fed GDPNow",
+          "frequency": "Cập nhật real-time (sau mỗi data point)",
+          "link": "https://www.atlantafed.org/cqer/research/gdpnow",
+          "description": "Mô hình nowcast GDP quý hiện tại của Atlanta Fed — cập nhật ngay sau mỗi data release.",
+          "expectation_meaning": "Đầu quý: confidence interval rộng. Cuối quý: hội tụ về GDP actual.",
+          "good_vs_bad": "Vọt cao = Q hiện tại sẽ surprise upside. Giảm sâu = Q yếu hơn dự báo.",
+          "market_reaction": "Khi GDPNow cut > 0.5pp trong 1 ngày → market re-rate growth narrative → yields giảm, cyclicals (XLI/XLB/XLY) chịu áp lực, defensives (XLV/XLP) bid.",
+          "release_aliases": [
+            "atlanta fed gdpnow"
+          ]
+        },
+        {
+          "id": "SPGLOBALMFG",
+          "short_name": "S&P Global Mfg PMI",
+          "full_name": "S&P Global Manufacturing PMI",
+          "frequency": "Hàng tháng (Flash giữa tháng, Final đầu tháng sau)",
+          "link": "https://www.spglobal.com/marketintelligence/",
+          "description": "PMI sản xuất do S&P Global khảo sát doanh nghiệp Mỹ. Đối thủ của ISM Mfg PMI.",
+          "expectation_meaning": "> 50 = expansion, < 50 = contraction. Thường correlate ~0.7 với ISM Mfg PMI.",
+          "good_vs_bad": "Flash là leading signal cho ISM Mfg PMI cuối tháng → trader dùng Flash để position.",
+          "market_reaction": "Flash PMI miss/beat 2-3 điểm so với forecast → immediate yields + USD move. XLI/XLB nhạy nhất.",
+          "release_aliases": [
+            "s&p global manufacturing pmi"
+          ]
+        },
+        {
+          "id": "SPGLOBALSVC",
+          "short_name": "S&P Global Svc PMI",
+          "full_name": "S&P Global Services PMI",
+          "frequency": "Hàng tháng (Flash giữa tháng, Final đầu tháng sau)",
+          "link": "https://www.spglobal.com/marketintelligence/",
+          "description": "PMI dịch vụ do S&P Global. Phục vụ chiếm ~80% GDP Mỹ → quan trọng hơn Mfg PMI về macro.",
+          "expectation_meaning": "Thường ổn định ở 50-55. Dưới 50 hiếm gặp = signal recession services.",
+          "good_vs_bad": "Service PMI giảm rõ rệt = recession risk thực sự (services thường resilient).",
+          "market_reaction": "Svc PMI miss → defensive sectors (XLV, XLP) bid, XLC (Consumer Disc) chịu áp lực vì services là tiêu dùng.",
+          "release_aliases": [
+            "s&p global services pmi"
+          ]
+        },
+        {
+          "id": "SPGLOBALCOMP",
+          "short_name": "S&P Global Composite",
+          "full_name": "S&P Global Composite PMI",
+          "frequency": "Hàng tháng",
+          "link": "https://www.spglobal.com/marketintelligence/",
+          "description": "Trọng số trung bình giữa Mfg + Services PMI. Là leading indicator best cho GDP.",
+          "expectation_meaning": "Composite > 52 = GDP healthy. < 50 + giảm 2 tháng = recession imminent.",
+          "good_vs_bad": "Best single indicator cho GDP trend quý sau.",
+          "market_reaction": "Move SPY 0.5-1% trong các surprise lớn (>2 điểm diff vs forecast).",
+          "release_aliases": [
+            "s&p global composite pmi"
+          ]
+        },
+        {
+          "id": "CHICAGOPMI",
+          "short_name": "Chicago PMI",
+          "full_name": "Chicago Business Barometer",
+          "frequency": "Hàng tháng (gần cuối tháng)",
+          "link": "https://www.ism-chicago.org/",
+          "description": "PMI khu vực Chicago — leading indicator cho ISM Mfg PMI ngày kế tiếp.",
+          "expectation_meaning": "Volatile hơn ISM (range 40-60). Hay outlier nhưng tốt cho intraday positioning.",
+          "good_vs_bad": "Chicago > 55 → ISM Mfg PMI ngày sau cũng strong. Chicago < 45 → ISM weak.",
+          "market_reaction": "Spike/miss 5+ điểm = bond yields move 5-10bps, USD react. Trader thường front-run ISM bằng Chicago PMI.",
+          "release_aliases": [
+            "chicago pmi"
+          ]
+        },
+        {
+          "id": "ISMMFGNEW",
+          "short_name": "ISM Mfg New Orders",
+          "full_name": "ISM Manufacturing New Orders Index",
+          "frequency": "Hàng tháng (ngày 1 mỗi tháng)",
+          "link": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/",
+          "description": "Sub-component của ISM Mfg PMI — đo đơn hàng mới của nhà sản xuất.",
+          "expectation_meaning": "> 55 = strong demand. Đây là leading indicator best trong các components.",
+          "good_vs_bad": "New Orders > 55 + < headline PMI → headline sẽ catch up upward.",
+          "market_reaction": "Trader xem New Orders kỹ hơn cả headline PMI. Surprise lớn → XLI/XLB react ngay.",
+          "release_aliases": [
+            "ism manufacturing new orders index",
+            "ism non-manufacturing new orders"
+          ]
+        },
+        {
+          "id": "ISMMFGPRICES",
+          "short_name": "ISM Mfg Prices Paid",
+          "full_name": "ISM Manufacturing Prices Paid",
+          "frequency": "Hàng tháng",
+          "link": "https://www.ismworld.org/",
+          "description": "Sub-component PMI — giá đầu vào doanh nghiệp sản xuất trả.",
+          "expectation_meaning": "> 70 = inflation pressure cao. > 80 = extreme (rare).",
+          "good_vs_bad": "Cao + sticky = áp lực truyền vào PPI/CPI tháng sau. Giảm = disinflation pipeline confirm.",
+          "market_reaction": "ISM Prices Paid drop 3+ điểm = strong dovish signal → yields giảm, XLK rally. Cluster theo dõi cùng PPI.",
+          "release_aliases": [
+            "ism manufacturing prices",
+            "ism non-manufacturing prices"
+          ]
+        },
+        {
+          "id": "ISMMFGEMP",
+          "short_name": "ISM Mfg Employment",
+          "full_name": "ISM Manufacturing Employment",
+          "frequency": "Hàng tháng",
+          "link": "https://www.ismworld.org/",
+          "description": "Sub-component PMI — kỳ vọng tuyển/cắt giảm labor của nhà sản xuất.",
+          "expectation_meaning": "Thường < 50 trong giai đoạn manuf contract. > 50 = manuf hiring.",
+          "good_vs_bad": "ISM Mfg Employment leading 2-3 tháng cho Manufacturing Payrolls NFP.",
+          "market_reaction": "Surprise đáng kể chỉ khi divergence với headline PMI (vd: headline 54 nhưng emp 45 = headline có thể mềm sau).",
+          "release_aliases": [
+            "ism manufacturing employment",
+            "ism non-manufacturing employment"
+          ]
+        },
+        {
+          "id": "NEWORDER",
+          "short_name": "Factory Orders",
+          "full_name": "Factory Orders (Manufacturers' New Orders)",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/NEWORDER",
+          "description": "Tổng giá trị đơn hàng mới của nhà sản xuất Mỹ. Bao gồm cả durable + non-durable.",
+          "expectation_meaning": "Thường ±1-2% MoM. Volatile vì máy bay (Boeing) lớn. Ex-transport là phần stable hơn.",
+          "good_vs_bad": "Trend 3-tháng quan trọng hơn tháng đơn lẻ. Tăng đều = manuf recovery.",
+          "market_reaction": "Surprise lớn (vd: +5% MoM) → XLI/XLB rally; data weak liên tiếp = manuf recession lo.",
+          "release_aliases": [
+            "factory orders",
+            "factory orders ex transportation"
+          ]
+        },
+        {
+          "id": "DGORDER",
+          "short_name": "Durable Goods",
+          "full_name": "Durable Goods Orders",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/DGORDER",
+          "description": "Đơn hàng hàng bền (tuổi thọ > 3 năm). Bao gồm máy bay, ô tô, máy móc.",
+          "expectation_meaning": "Volatile vì máy bay. Core (ex-defense, ex-aircraft) là leading indicator capex.",
+          "good_vs_bad": "Core Durable Goods Orders = best proxy cho corporate capex → growth signal.",
+          "market_reaction": "Core surprise mạnh = capex recovery confirm → XLI rally, XLK (capex AI) hưởng lợi.",
+          "release_aliases": [
+            "durable goods orders",
+            "core durable goods orders",
+            "durables excluding defense",
+            "durables excluding transport",
+            "goods orders non defense ex air"
+          ]
+        },
+        {
+          "id": "TTLCONS",
+          "short_name": "Construction Spending",
+          "full_name": "Total Construction Spending",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/TTLCONS",
+          "description": "Tổng chi cho xây dựng (residential + non-residential + public).",
+          "expectation_meaning": "Thường ±0.3-0.5% MoM. Trend dài hạn theo housing cycle + infrastructure spending.",
+          "good_vs_bad": "Tăng = good cho XLB (Materials), Homebuilders, XLI. Giảm = housing slowdown signal.",
+          "market_reaction": "Cross-check với Housing Starts + Permits. Combo strong → XLRE (REITs) bid + XLB rally.",
+          "release_aliases": [
+            "construction spending"
+          ]
+        },
+        {
+          "id": "INDPRO",
+          "short_name": "Industrial Production",
+          "full_name": "Industrial Production Index",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/INDPRO",
+          "description": "Sản lượng manufacturing + mining + utilities. Là 'real-side' của economy.",
+          "expectation_meaning": "Trend ~0.2% MoM. Spike/drop > 0.5% = signal.",
+          "good_vs_bad": "Tăng + ISM Mfg > 50 = manuf expansion confirm. Giảm + ISM < 50 = manuf recession.",
+          "market_reaction": "IP yếu liên tục → XLI/XLB chịu áp lực. Manuf recovery confirm bull case cho cyclicals.",
+          "release_aliases": [
+            "industrial production"
+          ]
+        },
+        {
+          "id": "PI",
+          "short_name": "Personal Income",
+          "full_name": "Personal Income",
+          "frequency": "Hàng tháng (kèm PCE)",
+          "link": "https://fred.stlouisfed.org/series/PI",
+          "description": "Tổng thu nhập của hộ gia đình (lương + dividends + transfers).",
+          "expectation_meaning": "Tăng đều ~0.3-0.5% MoM. Spike thường do tax refunds hoặc stimulus.",
+          "good_vs_bad": "Tăng nhanh hơn Personal Spending = saving rate tăng (consumer thận trọng). Spending > Income = consumer rút saving.",
+          "market_reaction": "PI surprise lớn → market revise consumer narrative. XLY/Retail react ngay.",
+          "release_aliases": [
+            "personal income"
+          ]
+        },
+        {
+          "id": "PCE",
+          "short_name": "Personal Spending",
+          "full_name": "Personal Consumption Expenditures (Spending)",
+          "frequency": "Hàng tháng (kèm Core PCE)",
+          "link": "https://fred.stlouisfed.org/series/PCE",
+          "description": "Tổng chi tiêu của hộ gia đình. Là 70% GDP.",
+          "expectation_meaning": "Tăng đều 0.2-0.5% MoM. Real PCE (đã trừ inflation) là metric chính.",
+          "good_vs_bad": "Real PCE âm 2 tháng = consumer recession risk. Nominal mạnh nhưng real yếu = lạm phát nuốt sức mua.",
+          "market_reaction": "Real PCE > 0.3% MoM = consumer khoẻ → XLY/Retail rally. Real PCE âm = defensive rotation.",
+          "release_aliases": [
+            "personal spending",
+            "real personal consumption",
+            "real consumer spending"
+          ]
+        },
+        {
+          "id": "TOTALSA",
+          "short_name": "Vehicle Sales",
+          "full_name": "Total Vehicle Sales (Annualized)",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/TOTALSA",
+          "description": "Doanh số xe ô tô + xe tải (annualized in millions).",
+          "expectation_meaning": "Bình thường 15-16M. > 17M = boom; < 14M = recession-like.",
+          "good_vs_bad": "Xe là big-ticket discretionary purchase → sensitive cycle + interest rates.",
+          "market_reaction": "Auto sales spike = consumer confidence tốt → XLY (Ford, GM) rally. Drop = signal credit conditions tightening.",
+          "release_aliases": [
+            "total vehicle sales",
+            "all car sales",
+            "all truck sales"
+          ]
+        },
+        {
+          "id": "WHLSLRIMSA",
+          "short_name": "Wholesale Inventories",
+          "full_name": "Wholesale Inventories",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/WHLSLRIMSA",
+          "description": "Tồn kho ở khâu bán buôn. Inventory-to-Sales ratio là metric chính.",
+          "expectation_meaning": "Tăng + Sales tăng = healthy demand. Tăng + Sales yếu = inventory build-up unwanted.",
+          "good_vs_bad": "I/S ratio > 1.4 = inventory glut → destocking coming → manuf weak.",
+          "market_reaction": "Destocking phase = manuf orders giảm → XLI/XLB chịu áp lực. Restocking = positive for cyclicals.",
+          "release_aliases": [
+            "wholesale inventories",
+            "wholesale trade sales"
+          ]
+        },
+        {
+          "id": "RETAILINV",
+          "short_name": "Retail Inventories",
+          "full_name": "Retail Inventories Ex Auto",
+          "frequency": "Hàng tháng",
+          "link": "https://www.census.gov/",
+          "description": "Tồn kho retail (loại trừ auto vốn volatile).",
+          "expectation_meaning": "Tăng = retailers stock up cho mùa shopping. Drop = họ cẩn trọng về demand.",
+          "good_vs_bad": "Cross-check với Retail Sales: high inv + slow sales = markdown risk (margin pressure).",
+          "market_reaction": "Markdown risk = XRT (retail ETF) chịu áp lực. WMT/COST defensive (volume play).",
+          "release_aliases": [
+            "retail inventories ex auto"
+          ]
+        },
+        {
+          "id": "GOODSTRADE",
+          "short_name": "Goods Trade Balance",
+          "full_name": "Advance Goods Trade Balance",
+          "frequency": "Hàng tháng (advance ~10 ngày trước trade balance đầy đủ)",
+          "link": "https://www.census.gov/foreign-trade/",
+          "description": "Cán cân thương mại hàng hoá (loại trừ services). Là advance reading.",
+          "expectation_meaning": "Mỹ thường deficit ~$80-100B/tháng. Deficit thu hẹp → positive cho GDP nowcast.",
+          "good_vs_bad": "Deficit hẹp lại = export mạnh hoặc import yếu (consumer slowdown?). Both bullish narrative khác nhau.",
+          "market_reaction": "GDPNow update ngay sau Goods Trade Balance → indirect market impact.",
+          "release_aliases": [
+            "goods trade balance"
+          ]
+        },
+        {
+          "id": "CFNAI",
+          "short_name": "Chicago Fed Activity",
+          "full_name": "Chicago Fed National Activity Index",
+          "frequency": "Hàng tháng",
+          "link": "https://www.chicagofed.org/research/data/cfnai/current-data",
+          "description": "Composite 85 indicators tổng hợp bởi Chicago Fed → đo growth vs trend.",
+          "expectation_meaning": "0 = growth at trend. Trên 0 = above trend. Dưới -0.7 (3-month average) = recession started.",
+          "good_vs_bad": "CFNAI 3-month MA < -0.7 historically = NBER recession trigger.",
+          "market_reaction": "Niche but powerful — academic/macro pro dùng. Khi cross -0.7 threshold → defensive rotation immediate.",
+          "release_aliases": [
+            "chicago fed national activity"
+          ]
+        },
+        {
+          "id": "RICHMONDMFG",
+          "short_name": "Richmond Fed Mfg",
+          "full_name": "Richmond Fed Manufacturing Index",
+          "frequency": "Hàng tháng",
+          "link": "https://www.richmondfed.org/",
+          "description": "PMI khu vực Richmond Fed (5th district).",
+          "expectation_meaning": "Regional Fed PMIs (Empire State, Philly, Richmond, Dallas, Kansas) collectively forecast ISM Mfg.",
+          "good_vs_bad": "Combined regional Fed PMIs negative → ISM Mfg yếu hầu như chắc.",
+          "market_reaction": "Less market mover than ISM, but useful for setting position.",
+          "release_aliases": [
+            "richmond manufacturing index",
+            "richmond manufacturing shipments",
+            "richmond services index"
+          ]
+        },
+        {
+          "id": "DALLASMFG",
+          "short_name": "Dallas Fed Mfg",
+          "full_name": "Dallas Fed Manufacturing Business Index",
+          "frequency": "Hàng tháng",
+          "link": "https://www.dallasfed.org/",
+          "description": "PMI Texas + oil-related regions.",
+          "expectation_meaning": "Đặc biệt nhạy với oil price → Texas heavy energy/manuf.",
+          "good_vs_bad": "Oil up → Dallas mạnh; oil down → Dallas yếu (oil-related capex cut).",
+          "market_reaction": "Cross-check with XLE Energy sector + WTI.",
+          "release_aliases": [
+            "dallas fed mfg business index",
+            "dallas fed services revenues",
+            "texas services sector outlook",
+            "dallas fed pce"
+          ]
+        },
+        {
+          "id": "CORPPROFITS",
+          "short_name": "Corporate Profits",
+          "full_name": "Corporate Profits (QoQ)",
+          "frequency": "Hàng quý (kèm GDP revision)",
+          "link": "https://www.bea.gov/data/income-saving/corporate-profits",
+          "description": "Lợi nhuận sau thuế của doanh nghiệp Mỹ. Là bottom-line cho S&P 500 EPS.",
+          "expectation_meaning": "Profit margins giảm = cảnh báo EPS forward S&P 500. Margin expansion = bull thesis.",
+          "good_vs_bad": "Profit margins ổn định high (~12%) = bull market sustainable. Drop = earnings cycle xấu.",
+          "market_reaction": "Major macro driver cho equity valuations. Trend > level quan trọng.",
+          "release_aliases": [
+            "corporate profits"
+          ]
+        },
+        {
+          "id": "ISMSVCBA",
+          "short_name": "ISM Svc Activity",
+          "full_name": "ISM Non-Manufacturing Business Activity Index",
+          "frequency": "Hàng tháng",
+          "link": "https://www.ismworld.org/",
+          "description": "Sub-component ISM Services PMI — đo hoạt động kinh doanh services 'right now'.",
+          "expectation_meaning": "> 55 = services khoẻ. < 50 hiếm gặp = services contraction.",
+          "good_vs_bad": "Services chiếm ~80% GDP. Component này yếu = headline ISM Svc PMI cũng yếu.",
+          "market_reaction": "Track cùng ISM Svc PMI headline. Spread giữa Business Activity vs New Orders cho insight về momentum.",
+          "release_aliases": [
+            "ism non-manufacturing business activity"
+          ]
         }
       ]
     },
@@ -197,6 +780,104 @@
           "expectation_meaning": "Fed chú ý nhiều tới \"Lạm phát kỳ vọng 1 năm / 5 năm\" trong khảo sát này.",
           "good_vs_bad": "Lạm phát kỳ vọng TĂNG: Rất xấu (Fed sẽ diều hâu).",
           "market_reaction": "Thị trường chủ yếu nhìn vào cấu phần 'Inflation Expectations'. Nếu lạm phát kỳ vọng vọt lên, lợi suất Trái phiếu sẽ bật tăng mạnh, đè bẹp nhóm Công nghệ (XLK) và Bất động sản (XLRE)."
+        },
+        {
+          "id": "MICHCURR",
+          "short_name": "Michigan Current",
+          "full_name": "Michigan Current Conditions",
+          "frequency": "Hàng tháng (Preliminary + Final)",
+          "link": "https://data.sca.isr.umich.edu/",
+          "description": "Sub-component của Michigan Consumer Sentiment — đo cảm nhận về tình hình hiện tại.",
+          "expectation_meaning": "Bình thường 80-100. Crash < 60 = recession-like sentiment.",
+          "good_vs_bad": "Cao = consumer chi tiêu mạnh ngay. Thấp = trade-down + save.",
+          "market_reaction": "Current Conditions track consumer NOW; Expectations forward 6-12 tháng. Cả 2 cùng giảm = serious warning.",
+          "release_aliases": [
+            "michigan current conditions"
+          ]
+        },
+        {
+          "id": "MICHEXP",
+          "short_name": "Michigan Expectations",
+          "full_name": "Michigan Consumer Expectations",
+          "frequency": "Hàng tháng",
+          "link": "https://data.sca.isr.umich.edu/",
+          "description": "Sub-component Michigan — kỳ vọng 6-12 tháng tới về kinh tế, tài chính cá nhân.",
+          "expectation_meaning": "Leading indicator cho consumer spending 1-2 quý sau.",
+          "good_vs_bad": "Drop trước recession 2-4 tháng (lịch sử). Bounce = early signal recovery.",
+          "market_reaction": "Khi Expectations < 60 và stay → defensive rotation, XLP/XLV bid.",
+          "release_aliases": [
+            "michigan consumer expectations"
+          ]
+        },
+        {
+          "id": "MICH1Y",
+          "short_name": "Michigan 1Y Inflation",
+          "full_name": "Michigan 1-Year Inflation Expectations",
+          "frequency": "Hàng tháng",
+          "link": "https://data.sca.isr.umich.edu/",
+          "description": "Kỳ vọng lạm phát 1 năm tới theo khảo sát hộ gia đình Michigan.",
+          "expectation_meaning": "Fed track sát. > 4% = unanchored risk → hawkish Fed bias.",
+          "good_vs_bad": "Giảm về 3-3.5% = anchored. Tăng vọt = unanchored → Fed phải giữ rate cao.",
+          "market_reaction": "Michigan 1Y Inflation Exp surprise upside → yields jump 5-10bps, XLK pressure.",
+          "release_aliases": [
+            "michigan 1-year inflation expectations"
+          ]
+        },
+        {
+          "id": "MICH5Y",
+          "short_name": "Michigan 5Y Inflation",
+          "full_name": "Michigan 5-Year Inflation Expectations",
+          "frequency": "Hàng tháng",
+          "link": "https://data.sca.isr.umich.edu/",
+          "description": "Kỳ vọng lạm phát 5-10 năm tới. Critical Fed metric.",
+          "expectation_meaning": "Lịch sử 2.5-3%. Vượt 3.5% = Fed PHẢI act (psychology shift).",
+          "good_vs_bad": "Stable ở 2.5-3% = anchored. Vọt > 3.5% sustained = Fed credibility risk.",
+          "market_reaction": "Long-term inflation exp move = market thinks Fed losing control → mass selloff XLK + XLU/XLRE, Gold bid.",
+          "release_aliases": [
+            "michigan 5-year inflation expectations"
+          ]
+        },
+        {
+          "id": "NFIB",
+          "short_name": "NFIB Small Biz",
+          "full_name": "NFIB Small Business Optimism",
+          "frequency": "Hàng tháng",
+          "link": "https://www.nfib.com/",
+          "description": "Khảo sát small business owners về outlook + hiring + capex plans.",
+          "expectation_meaning": "Trung bình ~100. > 105 = boom; < 90 = recession-like.",
+          "good_vs_bad": "Small biz = ~50% employment Mỹ. NFIB drop = NFP miss ahead.",
+          "market_reaction": "Sub-component 'Hiring Plans' leads NFP 2-3 tháng. Sub-component 'Capex Plans' leads Industrial Production.",
+          "release_aliases": [
+            "nfib small business optimism"
+          ]
+        },
+        {
+          "id": "IBDTIPP",
+          "short_name": "IBD/TIPP Optimism",
+          "full_name": "IBD/TIPP Economic Optimism Index",
+          "frequency": "Hàng tháng",
+          "link": "https://www.tipponline.com/",
+          "description": "Tổng hợp 3 sub-indices về economic outlook, personal finances, federal policies.",
+          "expectation_meaning": "Bình thường 45-55. Thấp = bi quan extreme.",
+          "good_vs_bad": "Less Fed-watched, nhưng leading indicator cho retail spending mood.",
+          "market_reaction": "Niche, ít market mover. Pros dùng để diversify confidence reads.",
+          "release_aliases": [
+            "ibd/tipp economic optimism"
+          ]
+        },
+        {
+          "id": "IPSOSPCSI",
+          "short_name": "IPSOS PCSI",
+          "full_name": "Thomson Reuters IPSOS Primary Consumer Sentiment Index",
+          "frequency": "Hàng tháng",
+          "link": "https://www.ipsos.com/en/economy/PCSI",
+          "description": "Khảo sát consumer sentiment global do IPSOS thực hiện cho Reuters. Đo perception về kinh tế cá nhân + quốc gia.",
+          "expectation_meaning": "Less Fed-watched than Michigan/CB. Cross-check international consumer mood.",
+          "good_vs_bad": "Niche. Useful when Michigan/CB divergent.",
+          "market_reaction": "Minor mover. Pros dùng để diversify consumer reads.",
+          "release_aliases": [
+            "thomson reuters ipsos pcsi"
+          ]
         }
       ]
     },
@@ -225,6 +906,94 @@
           "expectation_meaning": "Chiếm phần lớn thị trường bất động sản.",
           "good_vs_bad": "Chịu tác động mạnh từ Lãi suất thế chấp (Mortgage rates). Nếu lãi suất giảm, sales sẽ tăng.",
           "market_reaction": "Ảnh hưởng đến cổ phiếu môi giới bất động sản, ngân hàng cho vay thế chấp (Mortgage lenders). Khi doanh số thấp do lãi suất cao, tiền sẽ đứng ngoài ngành BĐS."
+        },
+        {
+          "id": "PERMIT",
+          "short_name": "Building Permits",
+          "full_name": "Building Permits Issued",
+          "frequency": "Hàng tháng (kèm Housing Starts)",
+          "link": "https://fred.stlouisfed.org/series/PERMIT",
+          "description": "Số giấy phép xây dựng mới — leading indicator cho Housing Starts (permit → start trong 1-3 tháng).",
+          "expectation_meaning": "Bình thường ~1.4-1.5M annualized. < 1.2M = slowdown rõ. > 1.7M = boom.",
+          "good_vs_bad": "Permits leads Starts. Permits xuống = housing pipeline đang co.",
+          "market_reaction": "Drop nhiều → XHB (homebuilders ETF) sell, XLB (vật liệu) chịu áp lực, REIT residential watch.",
+          "release_aliases": [
+            "building permits"
+          ]
+        },
+        {
+          "id": "HSN1F",
+          "short_name": "New Home Sales",
+          "full_name": "New Home Sales",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/HSN1F",
+          "description": "Doanh số nhà mới (~10% giao dịch nhà; Existing Home Sales chiếm 90%).",
+          "expectation_meaning": "Bình thường 600-700K annualized. Nhạy với mortgage rates.",
+          "good_vs_bad": "Mortgage rates giảm → New Home Sales nhảy 5-10% trong 1-2 tháng. Builders incentivize (rate buydowns) giúp pickup demand sớm hơn Existing.",
+          "market_reaction": "Spike → XHB rally; weak → XHB sell. Cross-check với Existing Home Sales.",
+          "release_aliases": [
+            "new home sales"
+          ]
+        },
+        {
+          "id": "USSTHPI",
+          "short_name": "FHFA HPI",
+          "full_name": "FHFA House Price Index",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/USSTHPI",
+          "description": "Giá nhà do Federal Housing Finance Agency tính (chỉ conforming loans). Stable hơn Case-Shiller.",
+          "expectation_meaning": "YoY ~3-5% normal. > 10% = boom; < 0% = correction.",
+          "good_vs_bad": "Tăng = wealth effect → consumer spending. Giảm = household balance sheet pressure.",
+          "market_reaction": "Combined với Case-Shiller làm consensus housing. Drop YoY → recession concern, defensive bid.",
+          "release_aliases": [
+            "house price index"
+          ]
+        },
+        {
+          "id": "CSCH20",
+          "short_name": "Case-Shiller 20",
+          "full_name": "S&P/Case-Shiller 20-City Home Price Index",
+          "frequency": "Hàng tháng (lag 2 tháng)",
+          "link": "https://www.spglobal.com/spdji/en/indices/indicators/sp-corelogic-case-shiller-20-city-composite-home-price-index/",
+          "description": "Giá nhà 20 metro lớn nhất Mỹ (NY, LA, Chicago, Dallas...). Repeat-sale methodology.",
+          "expectation_meaning": "YoY là metric chính. > 5% = strong; < 0% = bust phase.",
+          "good_vs_bad": "Most-cited home price benchmark. Components của Core CPI 'Shelter' track loosely.",
+          "market_reaction": "Major print → XHB + REITs + XLF (mortgage exposure) react.",
+          "release_aliases": [
+            "s&p/cs hpi composite - 20 s.a.",
+            "s&p/cs hpi composite - 20 n.s.a."
+          ]
+        },
+        {
+          "id": "MBA30Y",
+          "short_name": "MBA 30Y Rate",
+          "full_name": "MBA 30-Year Mortgage Rate",
+          "frequency": "Hàng tuần (Thứ Tư)",
+          "link": "https://www.mba.org/news-and-research/research-and-economics/single-family-research/mortgage-bankers-weekly-applications-survey",
+          "description": "Lãi suất mortgage 30 năm trung bình. Track sát 10Y Treasury yield + spread.",
+          "expectation_meaning": "Mortgage rate = 10Y + ~2-2.5% spread. > 7% = housing demand cooling rõ.",
+          "good_vs_bad": "Giảm = home affordability tốt hơn → applications spike → housing recovery.",
+          "market_reaction": "Mortgage rates < 6% → housing demand surge, XHB rally. > 7% = housing freeze.",
+          "release_aliases": [
+            "mba 30-year mortgage rate"
+          ]
+        },
+        {
+          "id": "MBAAPPS",
+          "short_name": "MBA Mortgage Apps",
+          "full_name": "MBA Mortgage Applications",
+          "frequency": "Hàng tuần (Thứ Tư)",
+          "link": "https://www.mba.org/",
+          "description": "Số đơn vay mua/refinance mortgage. Leading indicator cho Existing Home Sales 1-2 tháng.",
+          "expectation_meaning": "Tăng mạnh khi rates giảm. Volatile theo holiday.",
+          "good_vs_bad": "Purchase index quan trọng hơn refi (refi spike chỉ khi rates rớt mạnh).",
+          "market_reaction": "Purchase Index breakout = bull cho XHB. Stagnant = housing demand chết.",
+          "release_aliases": [
+            "mba mortgage applications",
+            "mba purchase index",
+            "mortgage market index",
+            "mortgage refinance index"
+          ]
         }
       ]
     },
@@ -264,6 +1033,295 @@
           "expectation_meaning": "Dùng cùng DGS10 để đo đường cong lợi suất (Yield Curve).",
           "good_vs_bad": "Nếu 2Y > 10Y (Đảo ngược): Cảnh báo Suy thoái mạnh (Recession).",
           "market_reaction": "Lợi suất 2 năm đi sát với kỳ vọng tăng/giảm lãi suất của Fed. Khi 2Y sụt giảm nhanh, thị trường đang cược Fed sẽ xoay trục (Pivot) cứu nền kinh tế."
+        }
+      ]
+    },
+    {
+      "id": "trade",
+      "name": "Thương Mại & Đối Ngoại (Trade & External)",
+      "indicators": [
+        {
+          "id": "BOPGSTB",
+          "short_name": "Trade Balance",
+          "full_name": "Trade Balance (Goods + Services)",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/BOPGSTB",
+          "description": "Cán cân thương mại đầy đủ (goods + services). Mỹ thường deficit ~$60-80B/tháng.",
+          "expectation_meaning": "Deficit thu hẹp = export mạnh (USD yếu?) hoặc import giảm (consumer cool).",
+          "good_vs_bad": "Net export contribute trực tiếp vào GDP. Deficit hẹp → GDP boost.",
+          "market_reaction": "Trade deficit narrow → GDPNow revise up → cyclicals rally. Wide deficit + tariffs news → USD react.",
+          "release_aliases": [
+            "trade balance"
+          ]
+        },
+        {
+          "id": "EXPGS",
+          "short_name": "Exports",
+          "full_name": "Exports of Goods and Services",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/EXPGS",
+          "description": "Tổng xuất khẩu Mỹ.",
+          "expectation_meaning": "Tăng = global demand cho US goods strong (Boeing, Caterpillar, agri).",
+          "good_vs_bad": "Exports mạnh = XLI (Industrials), XLB (Materials), XLE (Energy exports) hưởng lợi.",
+          "market_reaction": "Strong exports + weak USD = perfect cho US multinationals → Tech (Apple, MSFT) rally.",
+          "release_aliases": [
+            "exports"
+          ]
+        },
+        {
+          "id": "IMPGS",
+          "short_name": "Imports",
+          "full_name": "Imports of Goods and Services",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/IMPGS",
+          "description": "Tổng nhập khẩu. Reflects consumer demand + manuf input needs.",
+          "expectation_meaning": "Tăng = consumer chi tiêu mạnh + manuf hoạt động. Giảm = consumer cool or destocking.",
+          "good_vs_bad": "Imports giảm sharp = consumer slowdown signal.",
+          "market_reaction": "Imports drop liên tiếp = XLY (retail) pressure, recession concern.",
+          "release_aliases": [
+            "imports"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "money",
+      "name": "Tiền Tệ & Ngân Hàng (Money & Banking)",
+      "indicators": [
+        {
+          "id": "M2SL",
+          "short_name": "M2 Money Supply",
+          "full_name": "M2 Money Stock",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/M2SL",
+          "description": "Cash + checkable deposits + savings + money market. Đo liquidity trong economy.",
+          "expectation_meaning": "Tăng nhanh = QE/stimulus → asset inflation. Giảm = QT/tightening.",
+          "good_vs_bad": "M2 YoY tăng = bullish equities. M2 YoY âm (rare) = recession risk (lần cuối 1949).",
+          "market_reaction": "Niche but watched by macro pros. M2 growth slow + Fed hawkish = liquidity squeeze → risk-off.",
+          "release_aliases": [
+            "m2 money supply"
+          ]
+        },
+        {
+          "id": "WALCL",
+          "short_name": "Fed Balance Sheet",
+          "full_name": "Federal Reserve Balance Sheet",
+          "frequency": "Hàng tuần (Thứ Năm)",
+          "link": "https://fred.stlouisfed.org/series/WALCL",
+          "description": "Tổng tài sản Fed nắm (Treasury + MBS). Đo độ quy mô QE/QT.",
+          "expectation_meaning": "Đỉnh 2022 ~$9T. Đang QT giảm ~$95B/tháng. Cuối QT khi reserves chạm 'ample' level.",
+          "good_vs_bad": "Tăng (QE) = bullish risk assets. Giảm (QT) = liquidity headwind.",
+          "market_reaction": "Khi Fed announce slow QT pace → bullish equities (less liquidity drain). Acceleration → risk-off.",
+          "release_aliases": [
+            "fed's balance sheet"
+          ]
+        },
+        {
+          "id": "WRESBAL",
+          "short_name": "Reserve Balances",
+          "full_name": "Reserve Balances at Federal Reserve",
+          "frequency": "Hàng tuần",
+          "link": "https://fred.stlouisfed.org/series/WRESBAL",
+          "description": "Reserves mà commercial banks giữ tại Fed. Critical cho QT timing.",
+          "expectation_meaning": "Fed muốn reserves ở 'ample' level (~10-12% GDP, hiện ~$3T+). Khi reserves drop sharp = QT phải dừng.",
+          "good_vs_bad": "Reserves > $3T = QT có thể tiếp tục. < $2.5T = stress risk (lặp lại 2019 repo crisis).",
+          "market_reaction": "Watched by repo market, banks. Drop sharp + repo rates spike = Fed phải intervene → emergency bullish for assets.",
+          "release_aliases": [
+            "reserve balances with federal reserve banks"
+          ]
+        },
+        {
+          "id": "TOTALSL",
+          "short_name": "Consumer Credit",
+          "full_name": "Total Consumer Credit Outstanding",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/TOTALSL",
+          "description": "Tổng dư nợ consumer (credit card + auto + student loan, không tính mortgage).",
+          "expectation_meaning": "Tăng mạnh = consumer dùng credit (spend ngay) hoặc stress (vay để cover). Giảm = consumer cẩn thận.",
+          "good_vs_bad": "Tăng kèm income tăng = healthy spending. Tăng kèm income flat = warning (credit-fueled spending unsustainable).",
+          "market_reaction": "Credit card delinquency rates lên kèm consumer credit tăng = imminent consumer slowdown.",
+          "release_aliases": [
+            "consumer credit"
+          ]
+        },
+        {
+          "id": "MTSDS",
+          "short_name": "Federal Budget",
+          "full_name": "Federal Budget Balance",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/MTSDS133FMS",
+          "description": "Surplus/deficit Fed government mỗi tháng.",
+          "expectation_meaning": "Mỹ thường deficit. Spike deficit = stimulus or tax shortfall.",
+          "good_vs_bad": "Deficit cao = Treasury issuance nhiều hơn → yield pressure up. Deficit thu hẹp = bullish bonds.",
+          "market_reaction": "Khi deficit blow out > expectations → 10Y yield jump. Bond auctions với deficit cao có thể tail (yield premium).",
+          "release_aliases": [
+            "federal budget balance"
+          ]
+        },
+        {
+          "id": "REDBOOK",
+          "short_name": "Redbook",
+          "full_name": "Johnson Redbook Retail Sales (Weekly)",
+          "frequency": "Hàng tuần (Thứ Ba)",
+          "link": "https://www.redbookresearch.com/",
+          "description": "Khảo sát retail sales tuần (chain stores) → leading indicator cho Retail Sales monthly.",
+          "expectation_meaning": "YoY ~3-5% normal. Surge = consumer khoẻ; drop = warning.",
+          "good_vs_bad": "Real-time consumer pulse — proxy strong cho retail sales monthly.",
+          "market_reaction": "Niche. Pros theo dõi để adjust position pre-Retail Sales monthly.",
+          "release_aliases": [
+            "redbook"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "energy",
+      "name": "Năng Lượng & Hàng Hoá (Energy & Commodities)",
+      "indicators": [
+        {
+          "id": "WCESTUS1",
+          "short_name": "Crude Inventories",
+          "full_name": "EIA Crude Oil Inventories",
+          "frequency": "Hàng tuần (Thứ Tư 10:30 ET)",
+          "link": "https://www.eia.gov/petroleum/weekly/",
+          "description": "Thay đổi tồn kho dầu thô thương mại Mỹ (excluding SPR).",
+          "expectation_meaning": "Draw (giảm) = bullish oil. Build (tăng) = bearish oil. Forecast pre-release thường chính xác ±2M barrels.",
+          "good_vs_bad": "Bigger-than-expected draw 3 tuần liên tiếp = WTI rally setup. Build kéo dài = WTI pressure.",
+          "market_reaction": "WTI move 1-3% trong 30 phút sau release. XLE (Energy ETF) move 0.5-1.5%.",
+          "release_aliases": [
+            "crude oil inventories",
+            "cushing crude oil inventories",
+            "crude oil imports"
+          ]
+        },
+        {
+          "id": "APICRUDE",
+          "short_name": "API Crude Stock",
+          "full_name": "API Weekly Crude Oil Stock",
+          "frequency": "Hàng tuần (Thứ Ba 16:30 ET, 1 ngày trước EIA)",
+          "link": "https://www.api.org/",
+          "description": "Báo cáo private từ American Petroleum Institute, ra trước EIA. Preview cho EIA Wednesday.",
+          "expectation_meaning": "API thường gần đúng EIA (±0.5M barrels). API draw + EIA expected build = surprise.",
+          "good_vs_bad": "Trader dùng API để position pre-EIA. Sometimes API/EIA divergence trades.",
+          "market_reaction": "WTI react immediate. Pros dùng API surprise để fade nếu EIA tomorrow expected opposite.",
+          "release_aliases": [
+            "api weekly crude oil stock"
+          ]
+        },
+        {
+          "id": "NATGAS",
+          "short_name": "Nat Gas Storage",
+          "full_name": "EIA Natural Gas Storage",
+          "frequency": "Hàng tuần (Thứ Năm 10:30 ET)",
+          "link": "https://www.eia.gov/naturalgas/weekly/",
+          "description": "Thay đổi tồn kho khí thiên nhiên hàng tuần.",
+          "expectation_meaning": "Builds vào mùa hè/thu, draws vào đông. Surprise vs seasonal = price mover.",
+          "good_vs_bad": "Bigger-than-expected draw winter = nat gas rally. Bigger build summer = nat gas pressure.",
+          "market_reaction": "Henry Hub natural gas futures move 2-5% sau release. Utilities (XLU) sometimes indirect impact.",
+          "release_aliases": [
+            "natural gas storage"
+          ]
+        },
+        {
+          "id": "BAKERHUGHES",
+          "short_name": "Baker Hughes Rigs",
+          "full_name": "Baker Hughes Rig Count",
+          "frequency": "Hàng tuần (Thứ Sáu 13:00 ET)",
+          "link": "https://rigcount.bakerhughes.com/",
+          "description": "Số giàn khoan đang hoạt động ở Mỹ (oil + gas). Leading indicator cho US production.",
+          "expectation_meaning": "Khi rig count tăng → production tăng 4-6 tháng sau. Drop = oil supply cut.",
+          "good_vs_bad": "Rig count tăng mạnh + WTI giảm = oversupply lo. Drop bền vững = bullish WTI.",
+          "market_reaction": "Niche but valuable. XLE traders watch rig count để gauge supply discipline (OPEC+ vs US shale).",
+          "release_aliases": [
+            "u.s. baker hughes oil rig count",
+            "u.s. baker hughes total rig count"
+          ]
+        },
+        {
+          "id": "EIA_REFINERY_RUNS",
+          "short_name": "EIA Refinery Runs",
+          "full_name": "EIA Weekly Refinery Crude Runs",
+          "frequency": "Hàng tuần (Thứ Tư)",
+          "link": "https://www.eia.gov/petroleum/weekly/",
+          "description": "Sản lượng dầu thô được refineries chạy qua mỗi tuần (mb/d).",
+          "expectation_meaning": "Tăng = refineries chạy hết công suất → demand cho sản phẩm xăng/diesel mạnh. Giảm = maintenance season hoặc demand cool.",
+          "good_vs_bad": "Mạnh = supportive cho XLE (refiners: VLO, MPC, PSX). Weak = refining margins (crack spread) co.",
+          "market_reaction": "Niche. Combined với Refinery Utilization để gauge sức khoẻ refining sector.",
+          "release_aliases": [
+            "eia refinery crude runs"
+          ]
+        },
+        {
+          "id": "EIA_DISTILLATES_STOCKS",
+          "short_name": "Distillates Stocks",
+          "full_name": "EIA Weekly Distillates Stocks (Diesel + Heating Oil)",
+          "frequency": "Hàng tuần (Thứ Tư)",
+          "link": "https://www.eia.gov/petroleum/weekly/",
+          "description": "Tồn kho diesel + heating oil. Phản ánh demand transport (diesel) và mùa đông (heating).",
+          "expectation_meaning": "Builds vào mùa hè + draws vào đông. Surprise vs season = price signal.",
+          "good_vs_bad": "Low stocks + mùa đông sắp tới = diesel/heating oil price spike.",
+          "market_reaction": "Ảnh hưởng cracking spreads → refiners (VLO, MPC) react.",
+          "release_aliases": [
+            "eia weekly distillates stocks",
+            "distillate fuel production",
+            "heating oil stockpiles"
+          ]
+        },
+        {
+          "id": "EIA_GASOLINE_PROD",
+          "short_name": "Gasoline Production",
+          "full_name": "EIA Weekly Gasoline Production",
+          "frequency": "Hàng tuần (Thứ Tư)",
+          "link": "https://www.eia.gov/petroleum/weekly/",
+          "description": "Sản lượng xăng tuần từ refineries Mỹ.",
+          "expectation_meaning": "Cao mùa hè (driving season). Drop = refinery issues.",
+          "good_vs_bad": "Combined với Gasoline Inventories → gauge xăng supply/demand.",
+          "market_reaction": "Niche. Energy traders dùng.",
+          "release_aliases": [
+            "gasoline production"
+          ]
+        },
+        {
+          "id": "EIA_GASOLINE_INV",
+          "short_name": "Gasoline Inventories",
+          "full_name": "EIA Weekly Gasoline Inventories",
+          "frequency": "Hàng tuần (Thứ Tư)",
+          "link": "https://www.eia.gov/petroleum/weekly/",
+          "description": "Tồn kho xăng thương mại tuần.",
+          "expectation_meaning": "Draws đặc biệt mùa hè (driving season) = bullish gasoline + WTI. Builds = bearish.",
+          "good_vs_bad": "Big draw + mùa hè = retail gasoline prices up → headline CPI Energy spike.",
+          "market_reaction": "WTI react. CPI Energy component reflects retail gasoline 2-4 tuần sau.",
+          "release_aliases": [
+            "gasoline inventories"
+          ]
+        },
+        {
+          "id": "EIA_REFINERY_UTIL",
+          "short_name": "Refinery Utilization",
+          "full_name": "EIA Weekly Refinery Utilization Rates",
+          "frequency": "Hàng tuần (Thứ Tư)",
+          "link": "https://www.eia.gov/petroleum/weekly/",
+          "description": "% công suất refineries Mỹ đang chạy.",
+          "expectation_meaning": "Bình thường 88-95%. < 85% = maintenance hoặc demand yếu. > 95% = max capacity (rare).",
+          "good_vs_bad": "Cao + crack spread tốt = refiners ăn nên làm. Thấp = margin pressure.",
+          "market_reaction": "VLO, MPC, PSX react. Indirect WTI impact (refineries demand crude).",
+          "release_aliases": [
+            "eia weekly refinery utilization rates"
+          ]
+        },
+        {
+          "id": "EIA_STEO",
+          "short_name": "EIA STEO",
+          "full_name": "EIA Short-Term Energy Outlook",
+          "frequency": "Hàng tháng",
+          "link": "https://www.eia.gov/outlooks/steo/",
+          "description": "Báo cáo dự báo cung-cầu năng lượng Mỹ + global 12-24 tháng tới.",
+          "expectation_meaning": "EIA revise WTI/Brent/natural gas forecasts. Bullish/bearish revisions move XLE.",
+          "good_vs_bad": "EIA forecast tighter oil market (lower inventories) = bullish XLE.",
+          "market_reaction": "Big monthly mover for energy thesis. Combined với OPEC Monthly + IEA Monthly để xây global oil view.",
+          "release_aliases": [
+            "eia short-term energy outlook"
+          ]
         }
       ]
     }

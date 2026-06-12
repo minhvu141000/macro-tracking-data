@@ -38,6 +38,18 @@ cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && source .venv/bin/activate &
 Sau đó dùng Agent tool với `subagent_type: macro-trend`. Prompt:
 "Đọc **data/daily_summaries.md** trước (compact view của 30 ngày gần nhất). Sau đó nếu cần context sâu hơn cho 2-3 ngày turning point, đọc full markdown tại data/daily/<date>.md. Bổ sung phần 'Bối cảnh xu hướng' vào báo cáo data/daily/<date>.md nếu chưa đủ chi tiết. KHÔNG đọc tất cả 30 reports đầy đủ. KHÔNG tạo monthly report."
 
+## Bước 3b: Auto-update edu theory với indicators mới
+Chạy Bash để detect chỉ số mới chưa có trong edu file + auto-add stub:
+```
+cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && source .venv/bin/activate && \
+  python scripts/update_theory.py --auto-stub
+```
+- Script extract release names từ tất cả data/raw/*.json
+- So sánh với data/macro_theory.json
+- Stub mới sẽ vào category "Cần Bổ Sung (Auto-detected)" trong edu dashboard
+- User có thể tự bổ sung nội dung hoặc nhờ Claude viết cho từng stub
+- Nếu không có chỉ số mới → script silent skip
+
 ## Bước 4: Build dashboard
 Dùng Agent tool với `subagent_type: macro-dashboard`. Prompt: "Rebuild dashboard với dữ liệu mới nhất."
 

@@ -111,6 +111,16 @@ def build_today_releases(raw_files: list[dict[str, Any]]) -> dict[str, Any]:
     return {"date": latest.get("date"), "releases": latest.get("releases", [])}
 
 
+def build_releases_history(raw_files: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
+    history = {}
+    for r in raw_files:
+        date = r.get("date")
+        if date:
+            history[date] = r.get("releases", [])
+    return history
+
+
+
 def build() -> None:
     raw_files = load_raw_files()
     daily_files = sorted(DAILY_DIR.glob("*.md"))
@@ -136,18 +146,21 @@ def build() -> None:
     cross_asset_payload = _load(CROSS_ASSET_FILE, "cross_asset")
     calendar_payload = _load(CALENDAR_FILE, "calendar")
     theory_payload = _load(THEORY_FILE, "theory")
+    fred_history_payload = _load(ROOT / "data" / "fred_history.json", "fred_history")
 
     payload = {
         "last_updated": datetime.now(timezone.utc).isoformat(),
         "daily_releases": build_today_releases(raw_files),
+        "releases_history": build_releases_history(raw_files),
         "history": build_history(raw_files),
         "daily_reports": daily_reports,
         "monthly_reports": monthly_reports,
-        "raw_dates": [r.get("date") for r in raw_files],
+        "raw_dates": [r.get("date") for r in raw_files if r.get("date")],
         "sectors": sectors_payload,
         "cross_asset": cross_asset_payload,
         "calendar": calendar_payload,
         "theory": theory_payload,
+        "fred_history": fred_history_payload,
         "latest_daily": latest_daily,
         "latest_monthly": latest_monthly,
     }
