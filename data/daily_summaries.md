@@ -286,23 +286,24 @@ Tin tức này ngay lập tức kích hoạt phản ứng **Risk-On**: **10Y Yie
 
 ---
 
-## 2026-06-12 — regime: `bounce-relief` · surprises: 0
+## 2026-06-12 — regime: `risk-on` · surprises: 5
 
-**Key takeaway:** TGIF relief rally sau khi CPI Core hạ nhiệt (YoY 2.96%, 3mo annualized 3.17%) nhưng PPI nóng (+13.08% YoY, 3mo +38.66%) và CFTC short S&P kỷ lục -220.8K cho thấy đây mới chỉ là pha bounce kỹ thuật, RS 1M vẫn nghiêng về defensive (XLV, XLP).
+**Key takeaway:** Hôm nay 12/06 chứng kiến bộ số liệu "Goldilocks" hoàn hảo từ Đại học Michigan. Kỳ vọng lạm phát 1 năm và 5 năm hạ nhiệt mạnh mẽ (lần lượt xuống 4.6% và 3.4%), trong khi Niềm tin Người tiêu dùng và Điều kiện Hiện tại vượt xa dự báo. Điều này củng cố kịch bản hạ cánh mềm (soft-landing) với sự hỗ trợ đắc lực từ xu hướng giảm áp lực giá cả. Thị trường duy trì tâm lý tích cực, lợi suất trái phiếu 10 năm ổn định quanh mức 4.49%.
 
 **Tóm tắt:**
-Phiên cuối tuần là một ngày bounce kỹ thuật mạnh: SPY +1.7%, XLK +3.73% dẫn dắt, XLI +3.24%, XLB +3.27% sau khi CPI Core 06-11 hạ nhiệt rõ rệt (YoY 2.96%, 3mo annualized 3.17% — dưới 2-handle trên trend). Tuy nhiên, đây mới chỉ là pha "relief" với 4 yếu tố cảnh báo: (1) Headline CPI sticky 4.27% YoY do food/energy, (2) PPI nổ ở pipeline (+13.08% YoY, 3mo +38.66% — báo trước CPI ngược chiều trong 2-3 tháng tới), (3) VIX 22.22 vẫn cao, (4) Risk-asset crash 1M (Gold -10.58%, Copper -3.87%, BTC -16.67%) chưa đảo chiều. Quan trọng nhất, CFTC S&P 500 net short -220.8K là mức cực đoan có tính chất contrarian-bullish ngắn hạn, nhưng cũng phản ánh sự thiếu niềm tin của institutional money. Sector leadership 1M vẫn nghiêng về defensive: XLV +5.71% > XLK +4.63% > XLF +2.07% > XLP +1.04%.
+Hôm nay ngày 12/06, thị trường đón nhận tin vui lớn từ khảo sát tâm lý người tiêu dùng của Đại học Michigan (UoM). Kết quả công bố cho thấy một kịch bản **Goldilocks hoàn hảo**:
+1. **Kỳ vọng lạm phát trung và dài hạn giảm mạnh**: Kỳ vọng lạm phát 1 năm hạ nhiệt xuống 4.6% (dự báo 4.9%) và kỳ vọng 5 năm giảm mạnh về 3.4% (dự báo 3.8%). Đây là tín hiệu cực kỳ quan trọng giúp củng cố niềm tin của Fed rằng lạm phát đang quay trở lại tầm kiểm soát mà không cần thắt chặt thêm.
+2. **Niềm tin người tiêu dùng bật tăng mạnh mẽ**: Chỉ số Michigan Consumer Sentiment tăng lên 48.9 (vượt xa dự báo 46.1), cùng với Consumer Expectations đạt 49.3 (dự báo 44.3).
+
+Sự kết hợp giữa lạm phát kỳ vọng hạ nhiệt và niềm tin tiêu dùng cải thiện là minh chứng rõ nét cho kịch bản **Soft Landing** (Hạ cánh mềm). Phản ứng thị trường duy trì trạng thái **Risk-On**: Lợi suất trái phiếu 10 năm dao động ổn định quanh 4.49%, Dollar Index (DXY) duy trì mốc 99.8, và các nhóm ngành cổ phiếu tăng trưởng tiếp tục thu hút dòng vốn khi rủi ro tăng lãi suất biến mất.
 
 **Conviction:**
-| Sector | Stance | Rationale |
-|---|---|---|
-| **XLV** | **Overweight** | RS 1M +5.71% leader, defensive earnings, ít exposure tariff/PPI |
-| **XLF** | Light OW | Curve flatten nhưng credit OK, 1M +2.07%, hưởng lợi nếu FOMC dovish-hold |
-| **XLP** | Light OW | 1W +3.94% best, sentiment-low hedge, dividend yield tốt |
-| **XLE** | Neutral (downgrade từ OW) | 1D -1.94%, 1W -2.77%, crude long-positioning có thể unwind tiếp |
-| **XLK** | Neutral | 1D +3.73% bounce mạnh nhưng do squeeze; rate-sensitive nếu yields stay cao |
-| **XLU / XLRE** | Underweight | Rate-sensitive với DGS10 4.55%, dividend yield không cạnh tranh được Treasuries |
-| **XLY / XLC** | Underweight | Consumer-sentiment 49.8 báo recession risk; tariff feedthrough |
-| **XLB / XLI** | Underweight | Copper unwind, PPI hot squeeze margins, China demand yếu |
+| Sector | Stance 06-11 | NOW (06-12) | Reasoning |
+|---|---|---|---|
+| **XLK Technology** | Neutral → Stalking | **Stalking / Light OW** | Kỳ vọng lạm phát hạ nhiệt là động lực lớn nhất giải tỏa áp lực định giá cho Tech. Sẵn sàng giải ngân từng phần. |
+| **XLV Healthcare** | Overweight CONFIRMED | **Overweight CONFIRMED** | Tiếp tục duy trì hiệu suất dẫn đầu tuyệt đối (+4.84% 1M). Core defensive của danh mục. |
+| **XLE Energy** | Light OW → Neutral | **Neutral** | Giá dầu WTI giữ quanh $84.3, áp lực chốt lời ngắn hạn vẫn còn khi dòng tiền xoay vòng về các nhóm tăng trưởng và tài chính. |
+| **XLF Financials** | Neutral GIỮ | **Neutral → Light OW** | Niềm tin tiêu dùng tốt và rủi ro recession biến mất giúp củng cố danh mục cho vay của khối ngân hàng. |
+| **XLI Industrials** | Neutral → Light OW | **Light OW** | Khớp với kịch bản soft-landing, sản xuất phục hồi trong khi chi phí vốn không bị tăng thêm áp lực. |
 
 ---

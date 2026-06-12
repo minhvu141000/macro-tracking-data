@@ -1,13 +1,13 @@
 {
   "date": "2026-06-12",
-  "collected_at": "2026-06-12T07:23:10.271966+00:00",
+  "collected_at": "2026-06-12T21:01:48.015374+00:00",
   "releases": [
     {
       "name": "Michigan 1-Year Inflation Expectations  (Jun)",
       "time": "2026/06/12 10:00:00",
       "importance": "bull2",
-      "actual": null,
-      "forecast": null,
+      "actual": "4.6%",
+      "forecast": "4.9%",
       "previous": "4.8%",
       "event_url": "https://www.investing.com/economic-calendar/michigan-1-year-inflation-expectations-389",
       "source": "investing.com"
@@ -16,8 +16,8 @@
       "name": "Michigan 5-Year Inflation Expectations  (Jun)",
       "time": "2026/06/12 10:00:00",
       "importance": "bull2",
-      "actual": null,
-      "forecast": null,
+      "actual": "3.4%",
+      "forecast": "3.8%",
       "previous": "3.9%",
       "event_url": "https://www.investing.com/economic-calendar/michigan-5-year-inflation-expectations-1568",
       "source": "investing.com"
@@ -26,7 +26,7 @@
       "name": "Michigan Consumer Expectations  (Jun)",
       "time": "2026/06/12 10:00:00",
       "importance": "bull2",
-      "actual": null,
+      "actual": "49.3",
       "forecast": "44.3",
       "previous": "44.1",
       "event_url": "https://www.investing.com/economic-calendar/michigan-consumer-expectations-900",
@@ -36,7 +36,7 @@
       "name": "Michigan Consumer Sentiment  (Jun)",
       "time": "2026/06/12 10:00:00",
       "importance": "bull2",
-      "actual": null,
+      "actual": "48.9",
       "forecast": "46.1",
       "previous": "44.8",
       "event_url": "https://www.investing.com/economic-calendar/michigan-consumer-sentiment-320",
@@ -46,7 +46,7 @@
       "name": "Michigan Current Conditions  (Jun)",
       "time": "2026/06/12 10:00:00",
       "importance": "bull1",
-      "actual": null,
+      "actual": "48.4",
       "forecast": "46.2",
       "previous": "45.8",
       "event_url": "https://www.investing.com/economic-calendar/michigan-current-conditions-901",
@@ -56,7 +56,7 @@
       "name": "U.S. Baker Hughes Oil Rig Count",
       "time": "2026/06/12 13:00:00",
       "importance": "bull2",
-      "actual": null,
+      "actual": "433",
       "forecast": null,
       "previous": "431",
       "event_url": "https://www.investing.com/economic-calendar/baker-hughes-u.s.-rig-count-1652",
@@ -66,7 +66,7 @@
       "name": "U.S. Baker Hughes Total Rig Count",
       "time": "2026/06/12 13:00:00",
       "importance": "bull2",
-      "actual": null,
+      "actual": "562",
       "forecast": null,
       "previous": "563",
       "event_url": "https://www.investing.com/economic-calendar/u.s.-baker-hughes-total-rig-count-1810",
@@ -76,7 +76,7 @@
       "name": "CFTC Aluminium speculative net positions",
       "time": "2026/06/12 15:30:00",
       "importance": "bull1",
-      "actual": null,
+      "actual": "0.4K",
       "forecast": null,
       "previous": "0.8K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-aluminium-speculative-net-positions-1821",
@@ -86,7 +86,7 @@
       "name": "CFTC Copper speculative net positions",
       "time": "2026/06/12 15:30:00",
       "importance": "bull1",
-      "actual": null,
+      "actual": "74.5K",
       "forecast": null,
       "previous": "78.8K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-copper-speculative-positions-1620",
@@ -96,7 +96,7 @@
       "name": "CFTC Corn speculative net positions",
       "time": "2026/06/12 15:30:00",
       "importance": "bull1",
-      "actual": null,
+      "actual": "103.6K",
       "forecast": null,
       "previous": "199.9K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-corn-speculative-positions-1813",
@@ -106,7 +106,7 @@
       "name": "CFTC Crude Oil speculative net positions",
       "time": "2026/06/12 15:30:00",
       "importance": "bull2",
-      "actual": null,
+      "actual": "130.3K",
       "forecast": null,
       "previous": "155.9K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-crude-oil-speculative-positions-1653",
@@ -116,7 +116,7 @@
       "name": "CFTC Gold speculative net positions",
       "time": "2026/06/12 15:30:00",
       "importance": "bull2",
-      "actual": null,
+      "actual": "173.8K",
       "forecast": null,
       "previous": "176.0K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-gold-speculative-positions-1618",
@@ -126,7 +126,7 @@
       "name": "CFTC Nasdaq 100 speculative net positions",
       "time": "2026/06/12 15:30:00",
       "importance": "bull2",
-      "actual": null,
+      "actual": "-1.3K",
       "forecast": null,
       "previous": "-14.9K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-nasdaq-100-speculative-positions-1959",
@@ -136,7 +136,7 @@
       "name": "CFTC Natural Gas speculative net positions",
       "time": "2026/06/12 15:30:00",
       "importance": "bull1",
-      "actual": null,
+      "actual": "-194.0K",
       "forecast": null,
       "previous": "-186.1K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-natural-gas-speculative-positions-1820",
@@ -146,7 +146,7 @@
       "name": "CFTC S&P 500 speculative net positions",
       "time": "2026/06/12 15:30:00",
       "importance": "bull2",
-      "actual": null,
+      "actual": "-205.6K",
       "forecast": null,
       "previous": "-220.8K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-s-p-500-speculative-positions-1619",
@@ -156,7 +156,7 @@
       "name": "CFTC Silver speculative net positions",
       "time": "2026/06/12 15:30:00",
       "importance": "bull1",
-      "actual": null,
+      "actual": "22.2K",
       "forecast": null,
       "previous": "23.9K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-silver-speculative-positions-1621",
@@ -166,7 +166,7 @@
       "name": "CFTC Soybeans speculative net positions",
       "time": "2026/06/12 15:30:00",
       "importance": "bull1",
-      "actual": null,
+      "actual": "150.5K",
       "forecast": null,
       "previous": "187.8K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-soybeans-speculative-positions-1811",
@@ -176,7 +176,7 @@
       "name": "CFTC Wheat speculative net positions",
       "time": "2026/06/12 15:30:00",
       "importance": "bull1",
-      "actual": null,
+      "actual": "-57.9K",
       "forecast": null,
       "previous": "-40.8K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-wheat-speculative-positions-1812",
@@ -2409,21 +2409,17 @@
     "DFF": {
       "label": "Fed Funds Rate",
       "latest": {
-        "date": "2026-06-10",
+        "date": "2026-06-11",
         "value": 3.62
       },
       "previous": {
-        "date": "2026-06-09",
+        "date": "2026-06-10",
         "value": 3.62
       },
       "change_pct": 0.0,
       "frequency": "daily",
       "mom_pct": 0.0,
       "history": [
-        {
-          "date": "2026-05-22",
-          "value": 3.62
-        },
         {
           "date": "2026-05-23",
           "value": 3.62
@@ -2499,27 +2495,27 @@
         {
           "date": "2026-06-10",
           "value": 3.62
+        },
+        {
+          "date": "2026-06-11",
+          "value": 3.62
         }
       ]
     },
     "DGS10": {
       "label": "10Y Treasury Yield",
       "latest": {
+        "date": "2026-06-11",
+        "value": 4.45
+      },
+      "previous": {
         "date": "2026-06-10",
         "value": 4.55
       },
-      "previous": {
-        "date": "2026-06-09",
-        "value": 4.53
-      },
-      "change_pct": 0.442,
+      "change_pct": -2.198,
       "frequency": "daily",
-      "mom_pct": 0.442,
+      "mom_pct": -2.198,
       "history": [
-        {
-          "date": "2026-05-13",
-          "value": 4.46
-        },
         {
           "date": "2026-05-14",
           "value": 4.47
@@ -2595,27 +2591,27 @@
         {
           "date": "2026-06-10",
           "value": 4.55
+        },
+        {
+          "date": "2026-06-11",
+          "value": 4.45
         }
       ]
     },
     "DGS2": {
       "label": "2Y Treasury Yield",
       "latest": {
+        "date": "2026-06-11",
+        "value": 4.05
+      },
+      "previous": {
         "date": "2026-06-10",
         "value": 4.13
       },
-      "previous": {
-        "date": "2026-06-09",
-        "value": 4.13
-      },
-      "change_pct": 0.0,
+      "change_pct": -1.937,
       "frequency": "daily",
-      "mom_pct": 0.0,
+      "mom_pct": -1.937,
       "history": [
-        {
-          "date": "2026-05-13",
-          "value": 3.98
-        },
         {
           "date": "2026-05-14",
           "value": 4.0
@@ -2691,27 +2687,27 @@
         {
           "date": "2026-06-10",
           "value": 4.13
+        },
+        {
+          "date": "2026-06-11",
+          "value": 4.05
         }
       ]
     },
     "DGS3MO": {
       "label": "3M Treasury Yield",
       "latest": {
+        "date": "2026-06-11",
+        "value": 3.78
+      },
+      "previous": {
         "date": "2026-06-10",
         "value": 3.79
       },
-      "previous": {
-        "date": "2026-06-09",
-        "value": 3.79
-      },
-      "change_pct": 0.0,
+      "change_pct": -0.264,
       "frequency": "daily",
-      "mom_pct": 0.0,
+      "mom_pct": -0.264,
       "history": [
-        {
-          "date": "2026-05-13",
-          "value": 3.69
-        },
         {
           "date": "2026-05-14",
           "value": 3.69
@@ -2787,27 +2783,27 @@
         {
           "date": "2026-06-10",
           "value": 3.79
+        },
+        {
+          "date": "2026-06-11",
+          "value": 3.78
         }
       ]
     },
     "DGS6MO": {
       "label": "6M Treasury Yield",
       "latest": {
+        "date": "2026-06-11",
+        "value": 3.81
+      },
+      "previous": {
         "date": "2026-06-10",
         "value": 3.82
       },
-      "previous": {
-        "date": "2026-06-09",
-        "value": 3.82
-      },
-      "change_pct": 0.0,
+      "change_pct": -0.262,
       "frequency": "daily",
-      "mom_pct": 0.0,
+      "mom_pct": -0.262,
       "history": [
-        {
-          "date": "2026-05-13",
-          "value": 3.77
-        },
         {
           "date": "2026-05-14",
           "value": 3.76
@@ -2883,6 +2879,10 @@
         {
           "date": "2026-06-10",
           "value": 3.82
+        },
+        {
+          "date": "2026-06-11",
+          "value": 3.81
         }
       ]
     },
@@ -3081,21 +3081,17 @@
     "VIXCLS": {
       "label": "VIX (Volatility Index)",
       "latest": {
+        "date": "2026-06-11",
+        "value": 19.44
+      },
+      "previous": {
         "date": "2026-06-10",
         "value": 22.22
       },
-      "previous": {
-        "date": "2026-06-09",
-        "value": 19.87
-      },
-      "change_pct": 11.827,
+      "change_pct": -12.511,
       "frequency": "daily",
-      "mom_pct": 11.827,
+      "mom_pct": -12.511,
       "history": [
-        {
-          "date": "2026-05-14",
-          "value": 17.26
-        },
         {
           "date": "2026-05-15",
           "value": 18.43
@@ -3171,6 +3167,10 @@
         {
           "date": "2026-06-10",
           "value": 22.22
+        },
+        {
+          "date": "2026-06-11",
+          "value": 19.44
         }
       ]
     },
@@ -3273,21 +3273,17 @@
     "BAMLH0A0HYM2": {
       "label": "High-Yield Credit Spread (HY OAS)",
       "latest": {
+        "date": "2026-06-11",
+        "value": 2.78
+      },
+      "previous": {
         "date": "2026-06-10",
         "value": 2.8
       },
-      "previous": {
-        "date": "2026-06-09",
-        "value": 2.78
-      },
-      "change_pct": 0.719,
+      "change_pct": -0.714,
       "frequency": "daily",
-      "mom_pct": 0.719,
+      "mom_pct": -0.714,
       "history": [
-        {
-          "date": "2026-05-15",
-          "value": 2.8
-        },
         {
           "date": "2026-05-18",
           "value": 2.83
@@ -3363,27 +3359,27 @@
         {
           "date": "2026-06-10",
           "value": 2.8
+        },
+        {
+          "date": "2026-06-11",
+          "value": 2.78
         }
       ]
     },
     "BAMLC0A0CM": {
       "label": "Investment-Grade Credit Spread (IG OAS)",
       "latest": {
-        "date": "2026-06-10",
+        "date": "2026-06-11",
         "value": 0.75
       },
       "previous": {
-        "date": "2026-06-09",
+        "date": "2026-06-10",
         "value": 0.75
       },
       "change_pct": 0.0,
       "frequency": "daily",
       "mom_pct": 0.0,
       "history": [
-        {
-          "date": "2026-05-15",
-          "value": 0.75
-        },
         {
           "date": "2026-05-18",
           "value": 0.75
@@ -3458,6 +3454,10 @@
         },
         {
           "date": "2026-06-10",
+          "value": 0.75
+        },
+        {
+          "date": "2026-06-11",
           "value": 0.75
         }
       ]
