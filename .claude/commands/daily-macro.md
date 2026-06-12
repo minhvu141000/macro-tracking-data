@@ -38,17 +38,33 @@ cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && source .venv/bin/activate &
 Sau đó dùng Agent tool với `subagent_type: macro-trend`. Prompt:
 "Đọc **data/daily_summaries.md** trước (compact view của 30 ngày gần nhất). Sau đó nếu cần context sâu hơn cho 2-3 ngày turning point, đọc full markdown tại data/daily/<date>.md. Bổ sung phần 'Bối cảnh xu hướng' vào báo cáo data/daily/<date>.md nếu chưa đủ chi tiết. KHÔNG đọc tất cả 30 reports đầy đủ. KHÔNG tạo monthly report."
 
-## Bước 3b: Auto-update edu theory với indicators mới
-Chạy Bash để detect chỉ số mới chưa có trong edu file + auto-add stub:
+## Bước 3b: Auto-detect + add indicators mới vào edu theory với content đầy đủ
+
+**Bước 3b.1:** Chạy detect, list-only mode:
 ```
 cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && source .venv/bin/activate && \
-  python scripts/update_theory.py --auto-stub
+  python scripts/update_theory.py --list-only > /tmp/new_indicators.txt && \
+  wc -l /tmp/new_indicators.txt
 ```
-- Script extract release names từ tất cả data/raw/*.json
-- So sánh với data/macro_theory.json
-- Stub mới sẽ vào category "Cần Bổ Sung (Auto-detected)" trong edu dashboard
-- User có thể tự bổ sung nội dung hoặc nhờ Claude viết cho từng stub
-- Nếu không có chỉ số mới → script silent skip
+
+**Bước 3b.2:** Nếu file `/tmp/new_indicators.txt` KHÔNG rỗng (có line):
+
+Dùng Agent tool với `subagent_type: macro-analyst` và prompt:
+"Đọc danh sách release names mới tại /tmp/new_indicators.txt (mỗi dòng 1 release chưa có trong data/macro_theory.json). Cho mỗi name, viết nội dung educational ĐẦY ĐỦ 7 fields tiếng Việt theo CHÍNH XÁC format trong scripts/seed_theory.py:
+- id (uppercase, snake_case, hoặc FRED series ID nếu biết)
+- short_name, full_name (Việt-Anh OK)
+- frequency, link (FRED URL hoặc nguồn chính)
+- description (đo gì)
+- expectation_meaning (ngưỡng kỳ vọng)
+- good_vs_bad (cao/thấp nghĩa là gì)
+- market_reaction (góc nhìn thực chiến + sector hưởng lợi/chịu áp lực)
+- release_aliases (list để match release names từ investing.com)
+
+Sau đó: tạo script tạm `scripts/seed_auto_<YYYY-MM-DD>.py` clone theo cấu trúc seed_theory_supplement.py với REPLACEMENTS list = các indicators mới. Chạy script. Verify bằng `python scripts/update_theory.py` xem missing = 0. Xoá file seed tạm nếu thành công.
+
+Chọn category phù hợp (inflation/labor/growth/confidence/housing/fed/trade/money/energy) cho mỗi indicator. Nếu không khớp → category 'growth' (default cho catch-all)."
+
+**Bước 3b.3:** Nếu file rỗng → skip silent, KHÔNG spawn agent (đỡ tốn token).
 
 ## Bước 4: Build dashboard
 Dùng Agent tool với `subagent_type: macro-dashboard`. Prompt: "Rebuild dashboard với dữ liệu mới nhất."
