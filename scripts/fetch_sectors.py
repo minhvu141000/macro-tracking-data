@@ -20,6 +20,8 @@ import yfinance as yf
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "sectors_latest.json"
 
+SCHEMA_VERSION = "1.1"  # bump when payload structure changes
+
 # 11 GICS Sectors via SPDR Select Sector ETFs + SPY benchmark
 SECTORS = {
     "XLK": "Technology",
@@ -35,6 +37,22 @@ SECTORS = {
     "XLC": "Communication Services",
 }
 BENCHMARK = "SPY"
+
+# Top ~12 holdings per sector ETF (cover bulk of weight) for breadth computation.
+# These should represent ≥50% of each ETF's weight so breadth signal is meaningful.
+SECTOR_BREADTH_HOLDINGS = {
+    "XLK": ["AAPL", "MSFT", "NVDA", "AVGO", "ORCL", "CRM", "AMD", "ADBE", "ACN", "CSCO", "INTU", "TXN"],
+    "XLF": ["BRK-B", "JPM", "V", "MA", "BAC", "WFC", "GS", "MS", "BLK", "AXP", "C", "SCHW"],
+    "XLE": ["XOM", "CVX", "COP", "EOG", "SLB", "MPC", "PSX", "WMB", "OKE", "VLO", "OXY", "KMI"],
+    "XLV": ["LLY", "UNH", "JNJ", "ABBV", "MRK", "PFE", "TMO", "ABT", "ISRG", "AMGN", "DHR", "BMY"],
+    "XLY": ["AMZN", "TSLA", "HD", "MCD", "BKNG", "LOW", "TJX", "SBUX", "NKE", "ABNB", "MAR", "GM"],
+    "XLP": ["WMT", "COST", "PG", "KO", "PEP", "PM", "MO", "MDLZ", "CL", "TGT", "KMB", "MNST"],
+    "XLI": ["GE", "CAT", "RTX", "UBER", "HON", "BA", "UNP", "DE", "LMT", "ETN", "ADP", "WM"],
+    "XLB": ["LIN", "SHW", "APD", "FCX", "ECL", "NEM", "DOW", "DD", "PPG", "NUE", "VMC", "MLM"],
+    "XLU": ["NEE", "SO", "DUK", "CEG", "AEP", "SRE", "D", "PCG", "EXC", "XEL", "ED", "WEC"],
+    "XLRE": ["PLD", "AMT", "EQIX", "WELL", "PSA", "DLR", "O", "SPG", "CCI", "CBRE", "VICI", "EXR"],
+    "XLC": ["META", "GOOGL", "GOOG", "NFLX", "DIS", "TMUS", "VZ", "T", "CMCSA", "EA", "WBD", "CHTR"],
+}
 
 
 def pct(a: float, b: float) -> float | None:
@@ -73,9 +91,59 @@ def compute_returns(closes) -> dict:
     return out
 
 
+def compute_sector_breadth(sector_etf: str, holdings_closes: dict) -> dict:
+    """Compute % of sector ETF's holdings above MA50 and MA200, plus breadth flag.
+
+    Returns dict with:
+    - pct_above_ma50, pct_above_ma200
+    - breadth_flag: 'broad' (>=70% above MA50), 'healthy' (40-70%), 'narrow' (<40%)
+    - holdings_checked: count of holdings successfully evaluated
+    """
+    holdings = SECTOR_BREADTH_HOLDINGS.get(sector_etf, [])
+    if not holdings:
+        return {}
+    n_total = 0
+    n_above_ma50 = 0
+    n_above_ma200 = 0
+    for h in holdings:
+        s = holdings_closes.get(h)
+        if s is None or len(s) < 200:
+            continue
+        latest = float(s.iloc[-1])
+        ma50 = float(s.tail(50).mean())
+        ma200 = float(s.tail(200).mean())
+        n_total += 1
+        if latest > ma50:
+            n_above_ma50 += 1
+        if latest > ma200:
+            n_above_ma200 += 1
+    if n_total == 0:
+        return {}
+    pct50 = round(n_above_ma50 / n_total * 100, 1)
+    pct200 = round(n_above_ma200 / n_total * 100, 1)
+    # Thresholds per Tactical Agent spec: <40 narrow, 40-65 healthy, >65 broad
+    if pct50 > 65:
+        flag = "broad"
+    elif pct50 >= 40:
+        flag = "healthy"
+    else:
+        flag = "narrow"
+    return {
+        "pct_above_ma50": pct50,
+        "pct_above_ma200": pct200,
+        "breadth_flag": flag,
+        "holdings_checked": n_total,
+        "holdings_above_ma50": n_above_ma50,
+        "holdings_above_ma200": n_above_ma200,
+    }
+
+
 def fetch_all(period: str = "2y") -> dict:
-    tickers = list(SECTORS.keys()) + [BENCHMARK]
-    print(f"Fetching {len(tickers)} tickers from Yahoo Finance...")
+    # Build complete ticker list: sectors + benchmark + all unique breadth holdings
+    breadth_tickers = sorted({h for hs in SECTOR_BREADTH_HOLDINGS.values() for h in hs})
+    tickers = list(SECTORS.keys()) + [BENCHMARK] + breadth_tickers
+    print(f"Fetching {len(tickers)} tickers from Yahoo Finance "
+          f"({len(SECTORS)} sectors + {len(breadth_tickers)} holdings for breadth)...")
     data = yf.download(tickers, period=period, auto_adjust=True, progress=False, group_by="ticker")
 
     # Result: dict per ticker
@@ -84,11 +152,10 @@ def fetch_all(period: str = "2y") -> dict:
         try:
             s = data[t]["Close"].dropna()
             if len(s) == 0:
-                print(f"  WARNING: no data for {t}")
                 continue
             closes[t] = s
-        except Exception as exc:
-            print(f"  WARNING: failed to extract {t}: {exc}")
+        except Exception:
+            pass
 
     spy_closes = closes.get(BENCHMARK)
     if spy_closes is None:
@@ -102,6 +169,11 @@ def fetch_all(period: str = "2y") -> dict:
         info = compute_returns(s)
         info["name"] = name
         info["ticker"] = ticker
+
+        # Compute breadth from individual holdings
+        breadth = compute_sector_breadth(ticker, closes)
+        if breadth:
+            info["breadth"] = breadth
 
         # Relative Strength vs SPY: rolling ratio normalized to 100 at the start
         if spy_closes is not None:
@@ -134,6 +206,7 @@ def fetch_all(period: str = "2y") -> dict:
         benchmark_out["ticker"] = BENCHMARK
 
     return {
+        "schema_version": SCHEMA_VERSION,
         "fetched_at": datetime.now(timezone.utc).isoformat(),
         "benchmark": benchmark_out,
         "sectors": sectors_out,

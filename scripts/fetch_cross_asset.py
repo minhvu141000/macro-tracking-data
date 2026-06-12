@@ -18,8 +18,17 @@ import yfinance as yf
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "cross_asset_latest.json"
 
-# Yahoo ticker → display label
+SCHEMA_VERSION = "1.1"  # bump when payload structure changes
+
+# Yahoo ticker → display label.
+# Real-time risk gauges (VIX, TNX, DXY, WTI) added v2 — FRED versions lag 1-2 days.
 ASSETS = {
+    # Primary risk gauges
+    "^VIX": "VIX Volatility Index",
+    "^TNX": "10Y Treasury Yield (^TNX)",
+    "DX-Y.NYB": "DXY US Dollar Index",
+    "CL=F": "WTI Crude Oil Futures",
+    # Existing commodities + crypto
     "GC=F": "Gold Futures",
     "HG=F": "Copper Futures",
     "BTC-USD": "Bitcoin (BTC-USD)",
@@ -58,6 +67,7 @@ def compute_returns(closes):
 def main() -> int:
     print(f"Fetching {len(ASSETS)} cross-asset tickers from Yahoo...")
     payload = {
+        "schema_version": SCHEMA_VERSION,
         "fetched_at": datetime.now(timezone.utc).isoformat(),
         "assets": {},
     }

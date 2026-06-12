@@ -30,9 +30,10 @@ Mỗi FRED series trong `fred_snapshot` đã có:
 
 ```markdown
 ---
+schema_version: "1.1"
 date: YYYY-MM-DD
 surprise_count: <số chỉ số lệch >0.5σ so với forecast>
-regime_signal: <neutral | dovish | hawkish | risk-on | risk-off>
+regime_signal: <neutral | dovish | hawkish | risk-on | risk-off | rotation-confirmed | bounce-relief | rotation-broadening>
 key_takeaway: <1 câu tóm tắt>
 ---
 

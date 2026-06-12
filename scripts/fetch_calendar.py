@@ -27,20 +27,41 @@ load_dotenv(ROOT / ".env")
 OUT = ROOT / "data" / "calendar_latest.json"
 FRED_API_KEY = os.getenv("FRED_API_KEY", "").strip()
 
-# Top holdings per SPDR sector ETF (approximate, updated periodically).
-# We track these for earnings — they move their sector ETF the most.
+SCHEMA_VERSION = "1.1"  # bump when payload structure changes
+
+# Expanded to top ~10 holdings per sector — total ~110 tickers for earnings coverage.
 SECTOR_TOP_HOLDINGS = {
-    "XLK": [("AAPL", "Apple"), ("MSFT", "Microsoft"), ("NVDA", "Nvidia"), ("AVGO", "Broadcom"), ("ORCL", "Oracle")],
-    "XLF": [("BRK-B", "Berkshire B"), ("JPM", "JPMorgan"), ("V", "Visa"), ("MA", "Mastercard"), ("BAC", "Bank of America")],
-    "XLE": [("XOM", "Exxon Mobil"), ("CVX", "Chevron"), ("COP", "ConocoPhillips"), ("EOG", "EOG Resources"), ("SLB", "Schlumberger")],
-    "XLV": [("LLY", "Eli Lilly"), ("UNH", "UnitedHealth"), ("JNJ", "Johnson & Johnson"), ("ABBV", "AbbVie"), ("MRK", "Merck")],
-    "XLY": [("AMZN", "Amazon"), ("TSLA", "Tesla"), ("HD", "Home Depot"), ("MCD", "McDonald's"), ("BKNG", "Booking")],
-    "XLP": [("WMT", "Walmart"), ("COST", "Costco"), ("PG", "P&G"), ("KO", "Coca-Cola"), ("PEP", "PepsiCo")],
-    "XLI": [("GE", "GE Aerospace"), ("CAT", "Caterpillar"), ("RTX", "RTX"), ("UBER", "Uber"), ("HON", "Honeywell")],
-    "XLB": [("LIN", "Linde"), ("SHW", "Sherwin-Williams"), ("APD", "Air Products"), ("FCX", "Freeport-McMoRan"), ("ECL", "Ecolab")],
-    "XLU": [("NEE", "NextEra"), ("SO", "Southern"), ("DUK", "Duke Energy"), ("CEG", "Constellation"), ("AEP", "American Electric")],
-    "XLRE": [("PLD", "Prologis"), ("AMT", "American Tower"), ("EQIX", "Equinix"), ("WELL", "Welltower"), ("PSA", "Public Storage")],
-    "XLC": [("META", "Meta"), ("GOOGL", "Alphabet A"), ("GOOG", "Alphabet C"), ("NFLX", "Netflix"), ("TMUS", "T-Mobile")],
+    "XLK": [("AAPL","Apple"),("MSFT","Microsoft"),("NVDA","Nvidia"),("AVGO","Broadcom"),("ORCL","Oracle"),
+            ("CRM","Salesforce"),("AMD","AMD"),("ADBE","Adobe"),("ACN","Accenture"),("CSCO","Cisco"),
+            ("INTU","Intuit"),("TXN","Texas Instruments")],
+    "XLF": [("BRK-B","Berkshire B"),("JPM","JPMorgan"),("V","Visa"),("MA","Mastercard"),("BAC","Bank of America"),
+            ("WFC","Wells Fargo"),("GS","Goldman Sachs"),("MS","Morgan Stanley"),("BLK","BlackRock"),("AXP","American Express"),
+            ("C","Citigroup"),("SCHW","Charles Schwab")],
+    "XLE": [("XOM","Exxon Mobil"),("CVX","Chevron"),("COP","ConocoPhillips"),("EOG","EOG Resources"),("SLB","Schlumberger"),
+            ("MPC","Marathon Petroleum"),("PSX","Phillips 66"),("WMB","Williams Cos"),("OKE","ONEOK"),("VLO","Valero")],
+    "XLV": [("LLY","Eli Lilly"),("UNH","UnitedHealth"),("JNJ","Johnson & Johnson"),("ABBV","AbbVie"),("MRK","Merck"),
+            ("PFE","Pfizer"),("TMO","Thermo Fisher"),("ABT","Abbott"),("ISRG","Intuitive Surgical"),("AMGN","Amgen")],
+    "XLY": [("AMZN","Amazon"),("TSLA","Tesla"),("HD","Home Depot"),("MCD","McDonald's"),("BKNG","Booking"),
+            ("LOW","Lowe's"),("TJX","TJX"),("SBUX","Starbucks"),("NKE","Nike"),("ABNB","Airbnb")],
+    "XLP": [("WMT","Walmart"),("COST","Costco"),("PG","P&G"),("KO","Coca-Cola"),("PEP","PepsiCo"),
+            ("PM","Philip Morris"),("MO","Altria"),("MDLZ","Mondelez"),("CL","Colgate"),("TGT","Target")],
+    "XLI": [("GE","GE Aerospace"),("CAT","Caterpillar"),("RTX","RTX"),("UBER","Uber"),("HON","Honeywell"),
+            ("BA","Boeing"),("UNP","Union Pacific"),("DE","Deere"),("LMT","Lockheed Martin"),("ETN","Eaton")],
+    "XLB": [("LIN","Linde"),("SHW","Sherwin-Williams"),("APD","Air Products"),("FCX","Freeport-McMoRan"),("ECL","Ecolab"),
+            ("NEM","Newmont"),("DOW","Dow"),("DD","DuPont"),("PPG","PPG Industries"),("NUE","Nucor")],
+    "XLU": [("NEE","NextEra"),("SO","Southern"),("DUK","Duke Energy"),("CEG","Constellation"),("AEP","American Electric"),
+            ("SRE","Sempra"),("D","Dominion"),("PCG","PG&E"),("EXC","Exelon"),("XEL","Xcel Energy")],
+    "XLRE": [("PLD","Prologis"),("AMT","American Tower"),("EQIX","Equinix"),("WELL","Welltower"),("PSA","Public Storage"),
+             ("DLR","Digital Realty"),("O","Realty Income"),("SPG","Simon Property"),("CCI","Crown Castle"),("VICI","VICI Properties")],
+    "XLC": [("META","Meta"),("GOOGL","Alphabet A"),("GOOG","Alphabet C"),("NFLX","Netflix"),("DIS","Disney"),
+            ("TMUS","T-Mobile"),("VZ","Verizon"),("T","AT&T"),("CMCSA","Comcast"),("EA","Electronic Arts")],
+}
+
+# Tickers considered HIGH importance (S&P 500 weight > 1.5% OR market-moving)
+HIGH_IMPORTANCE_TICKERS = {
+    "AAPL", "MSFT", "NVDA", "AVGO", "GOOGL", "GOOG", "META", "AMZN", "TSLA",
+    "BRK-B", "JPM", "LLY", "UNH", "XOM", "ORCL", "WMT", "COST", "V", "MA",
+    "NFLX", "HD", "CRM", "AMD", "ABBV", "PG", "JNJ", "WFC", "BAC", "DIS", "BA",
 }
 
 # FRED Release IDs for the most market-moving series.
@@ -64,6 +85,22 @@ FRED_RELEASES = {
     8: "Federal Open Market Committee (FOMC)",
 }
 
+
+# Fed speaker impact mapping. Powell = highest market mover; vice chairs + governors = high;
+# regional Fed presidents = medium; non-voting regional = low.
+FED_SPEAKER_IMPACT = {
+    # Chair + Vice chair
+    "powell": "high", "jefferson": "high", "barr": "high",
+    # Governors (voting members)
+    "waller": "high", "bowman": "high", "kugler": "high", "cook": "high",
+    # NY Fed president (permanent voter)
+    "williams": "high",
+    # Regional Fed presidents (rotating voters)
+    "daly": "medium", "barkin": "medium", "kashkari": "medium",
+    "logan": "medium", "goolsbee": "medium", "harker": "medium",
+    "schmid": "medium", "musalem": "medium", "hammack": "medium",
+    "collins": "medium", "bostic": "medium", "mester": "medium",
+}
 
 # FOMC 2026 schedule (hardcoded — Fed publishes 1 year ahead)
 FOMC_DATES_2026 = [
@@ -143,25 +180,57 @@ def fetch_fred_release_dates(start: date, end: date) -> list[dict[str, Any]]:
     return out
 
 
+def _classify_time(ts) -> str:
+    """Return 'BMO' (before market open), 'AMC' (after market close), or 'TBD'.
+
+    Convention: yfinance earnings date is set to scheduled timestamp. We classify
+    by hour in ET:
+    - hour < 9 → BMO
+    - hour >= 16 → AMC
+    - else TBD (intraday rare; typically yfinance gives midnight when unknown)
+    """
+    try:
+        if not hasattr(ts, "hour"):
+            return "TBD"
+        h = ts.hour
+        if h == 0:
+            return "TBD"
+        if h < 9:
+            return "BMO"
+        if h >= 16:
+            return "AMC"
+        return "TBD"
+    except Exception:
+        return "TBD"
+
+
 def fetch_earnings_dates(start: date, end: date) -> list[dict[str, Any]]:
-    """For each tracked stock, get next earnings date (via yfinance) and filter."""
+    """For each tracked stock, get next earnings date + EPS/revenue estimates.
+
+    Pulls per-ticker:
+    - eps_estimate (analyst consensus)
+    - revenue_estimate_b (in $B)
+    - time: BMO / AMC / TBD
+    - importance: high / medium (based on HIGH_IMPORTANCE_TICKERS)
+    """
     out = []
     all_tickers = []
     for etf, holdings in SECTOR_TOP_HOLDINGS.items():
         for ticker, name in holdings:
             all_tickers.append((ticker, name, etf))
 
-    print(f"  Fetching earnings dates for {len(all_tickers)} stocks...")
+    print(f"  Fetching earnings + estimates for {len(all_tickers)} stocks...")
     for ticker, name, etf in all_tickers:
         try:
             t = yf.Ticker(ticker)
-            # get_earnings_dates returns past + upcoming; we want future only
+            ed = None
             try:
                 ed = t.get_earnings_dates(limit=8)
             except Exception:
                 ed = None
+
             if ed is None or len(ed) == 0:
-                # Fallback: try calendar attribute
+                # Fallback to calendar attr
                 try:
                     cal = t.calendar
                     if cal and "Earnings Date" in cal:
@@ -169,18 +238,154 @@ def fetch_earnings_dates(start: date, end: date) -> list[dict[str, Any]]:
                         if isinstance(eds, list) and len(eds) > 0:
                             edate = eds[0]
                             if hasattr(edate, "strftime"):
-                                _add_earnings(out, edate, ticker, name, etf, start, end)
+                                _add_earnings(out, edate, ticker, name, etf, start, end, None, None, None)
                 except Exception:
                     pass
                 continue
+
+            # Extract EPS estimate + revenue estimate from earnings DataFrame
             for ts in ed.index:
-                _add_earnings(out, ts, ticker, name, etf, start, end)
+                eps_est = None
+                rev_est_b = None
+                try:
+                    row = ed.loc[ts]
+                    # Column names vary; try common ones
+                    for c in ["EPS Estimate", "epsEstimate", "estimate"]:
+                        if c in row and row[c] is not None and not _is_nan(row[c]):
+                            eps_est = round(float(row[c]), 3)
+                            break
+                except Exception:
+                    pass
+
+                # Get revenue estimate from analyst expectations
+                if rev_est_b is None:
+                    try:
+                        info = t.info
+                        re_avg = info.get("revenueAverage") or info.get("revenueEstimate")
+                        if re_avg:
+                            rev_est_b = round(float(re_avg) / 1e9, 2)
+                    except Exception:
+                        pass
+
+                _add_earnings(out, ts, ticker, name, etf, start, end, eps_est, rev_est_b, _classify_time(ts))
         except Exception as exc:
             print(f"    {ticker} failed: {exc}", file=sys.stderr)
     return out
 
 
-def _add_earnings(out: list, ts, ticker, name, etf, start, end):
+def scrape_upcoming_fed_speakers(start: date, end: date) -> list[dict[str, Any]]:
+    """Scrape federalreserve.gov calendar for upcoming speaker events.
+
+    Source: https://www.federalreserve.gov/newsevents/calendar.htm
+    Renders client-side from JSON; use the underlying feed if available, else fallback.
+    """
+    out = []
+    import re
+    try:
+        import requests
+        url = "https://www.federalreserve.gov/json/ne-speech.json"
+        r = requests.get(url, timeout=15,
+                         headers={"User-Agent": "Mozilla/5.0 (Macintosh) Chrome/120 Safari/537.36"})
+        if r.status_code != 200:
+            return out
+        data = r.json()
+        for item in data if isinstance(data, list) else []:
+            # Example fields: d (date), t (title), l (location), s (speaker), time
+            d_str = item.get("d") or item.get("date") or ""
+            try:
+                # Date format: "MM/DD/YYYY" or "YYYY-MM-DD"
+                if "/" in d_str:
+                    parts = d_str.split("/")
+                    rel_date = date(int(parts[2]), int(parts[0]), int(parts[1]))
+                else:
+                    rel_date = date.fromisoformat(d_str[:10])
+            except Exception:
+                continue
+            if rel_date < start or rel_date > end:
+                continue
+            speaker_full = (item.get("s") or item.get("speaker") or "").strip()
+            # Extract last name (lowercased) for impact lookup
+            speaker_last = (speaker_full.split()[-1] if speaker_full else "").lower()
+            impact = FED_SPEAKER_IMPACT.get(speaker_last, "low")
+            out.append({
+                "date": rel_date.isoformat(),
+                "time": item.get("time") or "—",
+                "speaker": speaker_full or speaker_last.title(),
+                "topic": item.get("t") or item.get("title") or "Speech",
+                "venue": item.get("l") or item.get("location") or "",
+                "impact": impact,
+                "source": "federalreserve.gov",
+            })
+    except Exception as exc:
+        print(f"  Fed scrape failed: {exc}", file=sys.stderr)
+    return out
+
+
+def extract_fed_speakers(start: date, end: date) -> list[dict[str, Any]]:
+    """Build fed_speakers list combining:
+    1. Upcoming events scraped from federalreserve.gov (forward-looking)
+    2. Past events extracted from raw release files (backward-looking, contextual)
+    Both restricted to [start, end] window.
+    """
+    out = scrape_upcoming_fed_speakers(start, end)
+    seen_keys = {(s["date"], s["speaker"].lower()) for s in out}
+
+    raw_dir = ROOT / "data" / "raw"
+    if not raw_dir.exists():
+        out.sort(key=lambda x: (x["date"], x.get("time", "")))
+        return out
+
+    import re
+    for f in sorted(raw_dir.glob("*.json")):
+        try:
+            d = json.loads(f.read_text())
+        except Exception:
+            continue
+        rel_date_str = d.get("date") or f.stem
+        try:
+            rel_date = date.fromisoformat(rel_date_str)
+        except Exception:
+            continue
+        if rel_date < start or rel_date > end:
+            continue
+        for r in d.get("releases", []):
+            name = (r.get("name") or "").strip()
+            if "speaks" not in name.lower():
+                continue
+            m = re.search(
+                r"(?:fomc member|fed (?:chair|governor|vice chair[^ ]*)|fed)\s+([A-Z][a-z]+)\s+speaks",
+                name, re.IGNORECASE)
+            speaker = (m.group(1) if m else "Unknown").lower()
+            key = (rel_date.isoformat(), speaker)
+            if key in seen_keys:
+                continue
+            impact = FED_SPEAKER_IMPACT.get(speaker, "low")
+            time_str = (r.get("time") or "")
+            tm = re.search(r"(\d{2}:\d{2})", time_str)
+            out.append({
+                "date": rel_date.isoformat(),
+                "time": tm.group(1) if tm else "—",
+                "speaker": speaker.title(),
+                "topic": name,
+                "venue": "",
+                "impact": impact,
+                "source": "investing.com (historical)",
+                "event_url": r.get("event_url"),
+            })
+            seen_keys.add(key)
+    out.sort(key=lambda x: (x["date"], x.get("time", "")))
+    return out
+
+
+def _is_nan(x) -> bool:
+    try:
+        return x != x  # NaN test
+    except Exception:
+        return False
+
+
+def _add_earnings(out: list, ts, ticker, name, etf, start, end,
+                  eps_est=None, rev_est_b=None, time_class="TBD"):
     """Add earnings entry if date is in window [start, end]."""
     try:
         d = ts.date() if hasattr(ts, "date") else ts
@@ -188,11 +393,16 @@ def _add_earnings(out: list, ts, ticker, name, etf, start, end):
             d = d.date()
         if d < start or d > end:
             return
+        importance = "high" if ticker in HIGH_IMPORTANCE_TICKERS else "medium"
         out.append({
             "date": d.isoformat(),
             "ticker": ticker,
             "name": name,
             "sector_etf": etf,
+            "time": time_class,
+            "eps_estimate": eps_est,
+            "revenue_estimate_b": rev_est_b,
+            "importance": importance,
             "type": "earnings",
         })
     except Exception:
@@ -220,14 +430,19 @@ def main() -> int:
     earnings_unique.sort(key=lambda x: x["date"])
     print(f"  {len(earnings_unique)} earnings dates")
 
+    fed_speakers = extract_fed_speakers(today, end)
+    print(f"  {len(fed_speakers)} Fed speaker events (in raw history)")
+
     macro.sort(key=lambda x: x["date"])
 
     payload = {
+        "schema_version": SCHEMA_VERSION,
         "fetched_at": datetime.now(timezone.utc).isoformat(),
         "window_start": today.isoformat(),
         "window_end": end.isoformat(),
         "macro": macro,
         "earnings": earnings_unique,
+        "fed_speakers": fed_speakers,
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False))

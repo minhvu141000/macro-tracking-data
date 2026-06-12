@@ -1,5 +1,6 @@
 {
-  "fetched_at": "2026-06-12T07:23:46.910879+00:00",
+  "schema_version": "1.1",
+  "fetched_at": "2026-06-12T17:19:50.488612+00:00",
   "window_start": "2026-06-12",
   "window_end": "2026-07-03",
   "macro": [
@@ -87,5 +88,29 @@
       "estimated": true
     }
   ],
-  "earnings": []
+  "earnings": [
+    {
+      "date": "2026-06-18",
+      "ticker": "ACN",
+      "name": "Accenture",
+      "sector_etf": "XLK",
+      "time": "BMO",
+      "eps_estimate": 3.71,
+      "revenue_estimate_b": null,
+      "importance": "medium",
+      "type": "earnings"
+    },
+    {
+      "date": "2026-06-30",
+      "ticker": "NKE",
+      "name": "Nike",
+      "sector_etf": "XLY",
+      "time": "AMC",
+      "eps_estimate": 0.12,
+      "revenue_estimate_b": null,
+      "importance": "medium",
+      "type": "earnings"
+    }
+  ],
+  "fed_speakers": []
 }
