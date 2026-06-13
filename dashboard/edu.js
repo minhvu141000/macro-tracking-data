@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     elExpect.textContent = indicator.expectation_meaning;
     elGoodBad.textContent = indicator.good_vs_bad;
-    
+
     if (indicator.market_reaction) {
       elMarketReaction.textContent = indicator.market_reaction;
       elMarketReaction.parentElement.parentElement.style.display = 'block';
@@ -248,7 +248,73 @@ document.addEventListener('DOMContentLoaded', () => {
       elMarketReaction.parentElement.parentElement.style.display = 'none';
     }
 
+    // ====== NEW FIELDS: read_format / watch_thresholds / release_pattern / related_indicators ======
+    const readFmtSection = document.getElementById('section-read-format');
+    const readFmtEl = document.getElementById('ind-read-format');
+    if (indicator.read_format) {
+      readFmtEl.innerHTML = markdownLite(indicator.read_format);
+      readFmtSection.style.display = '';
+    } else {
+      readFmtSection.style.display = 'none';
+    }
+
+    const thresholdsSection = document.getElementById('section-thresholds-pattern');
+    const watchEl = document.getElementById('ind-watch-thresholds');
+    const patternEl = document.getElementById('ind-release-pattern');
+    const hasWatch = !!indicator.watch_thresholds;
+    const hasPattern = !!indicator.release_pattern;
+    if (hasWatch || hasPattern) {
+      watchEl.innerHTML = hasWatch ? markdownLite(indicator.watch_thresholds) : '<em style="color: var(--text-secondary);">—</em>';
+      patternEl.innerHTML = hasPattern ? markdownLite(indicator.release_pattern) : '<em style="color: var(--text-secondary);">—</em>';
+      thresholdsSection.style.display = '';
+    } else {
+      thresholdsSection.style.display = 'none';
+    }
+
+    const relatedSection = document.getElementById('section-related');
+    const relatedEl = document.getElementById('ind-related');
+    const related = (indicator.related_indicators || []).filter(Boolean);
+    if (related.length) {
+      relatedEl.innerHTML = related.map(id => {
+        const other = findIndicatorById(id);
+        const label = other ? other.short_name : id;
+        return `<button class="related-chip" data-related-id="${id}">${label} <i class="fa-solid fa-arrow-right" style="font-size:0.7rem;"></i></button>`;
+      }).join('');
+      relatedSection.style.display = '';
+      // Wire clicks
+      relatedEl.querySelectorAll('.related-chip').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const id = btn.dataset.relatedId;
+          const target = findIndicatorById(id);
+          if (target) {
+            // Update active state in sidebar
+            const sidebarItem = document.querySelector(`.indicator-item[data-id="${id}"]`);
+            if (sidebarItem) {
+              if (activeItem) activeItem.classList.remove('active');
+              sidebarItem.classList.add('active');
+              activeItem = sidebarItem;
+              sidebarItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+            showIndicatorContent(target);
+          }
+        });
+      });
+    } else {
+      relatedSection.style.display = 'none';
+    }
+
     updateReleaseInfo(indicator);
+  }
+
+  // Minimal markdown: bold **text** + line breaks
+  function markdownLite(s) {
+    if (!s) return '';
+    return s
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\n/g, '<br>');
   }
 
   // Initial render

@@ -1,5 +1,5 @@
 window.MACRO_DATA = {
-  "last_updated": "2026-06-12T21:02:13.700532+00:00",
+  "last_updated": "2026-06-13T00:09:11.622299+00:00",
   "daily_releases": {
     "date": "2026-06-12",
     "releases": [
@@ -38340,7 +38340,17 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/CPIAUCSL",
             "expectation_meaning": "Thị trường theo dõi sát sao CPI để dự đoán hành động của Fed. Nếu lạm phát cao, Fed phải giữ lãi suất cao.",
             "good_vs_bad": "NÓNG (Thực tế > Dự báo): Xấu cho chứng khoán & trái phiếu (lợi suất tăng), tốt cho USD.\nNGUỘI (Thực tế < Dự báo): Tốt cho chứng khoán & trái phiếu, xấu cho USD.",
-            "market_reaction": "🔥 Lạm phát nóng: Dòng tiền trú ẩn vào nhóm Phòng thủ (XLP, XLV) và Năng lượng (XLE). Áp lực bán mạnh ở nhóm nhạy cảm lãi suất (Bất động sản XLRE, Tiện ích XLU).\n❄️ Lạm phát nguội: Kích hoạt đà tăng mạnh cho nhóm Công nghệ (XLK), Tiêu dùng tùy ý (XLY) và Bất động sản (XLRE)."
+            "market_reaction": "🔥 Lạm phát nóng: Dòng tiền trú ẩn vào nhóm Phòng thủ (XLP, XLV) và Năng lượng (XLE). Áp lực bán mạnh ở nhóm nhạy cảm lãi suất (Bất động sản XLRE, Tiện ích XLU).\n❄️ Lạm phát nguội: Kích hoạt đà tăng mạnh cho nhóm Công nghệ (XLK), Tiêu dùng tùy ý (XLY) và Bất động sản (XLRE).",
+            "read_format": "**YoY%** (primary, Fed target 2%) · **MoM%** (momentum, > 0.3% nóng) · **3-mo annualized** (Fed view ngắn hạn)",
+            "watch_thresholds": "YoY <2% = anchored / 2-3% = neutral / 3-4% = sticky → Fed lo / >4% = problem",
+            "release_pattern": "Hàng tháng, khoảng ngày 10-15 của tháng sau, 8:30 ET (BLS)",
+            "related_indicators": [
+              "CPILFESL",
+              "PCEPI",
+              "PCEPILFE",
+              "PPIACO",
+              "MICH1Y"
+            ]
           },
           {
             "id": "CPILFESL",
@@ -38351,7 +38361,15 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/CPILFESL",
             "expectation_meaning": "Fed thường quan tâm đến Core CPI hơn CPI tổng thể vì nó loại bỏ nhiễu.",
             "good_vs_bad": "NÓNG (Thực tế > Dự báo): Xấu cho chứng khoán, tốt cho USD.\nNGUỘI (Thực tế < Dự báo): Tốt cho chứng khoán, tạo kỳ vọng Fed hạ lãi suất.",
-            "market_reaction": "🔥 Lạm phát cốt lõi cứng đầu: Gây áp lực cực lớn lên các cổ phiếu Growth/Tech (XLK, XLC) vì định giá phụ thuộc vào lãi suất thấp.\n❄️ Hạ nhiệt nhanh: Tín hiệu mua mạnh (Risk-On) cho toàn bộ thị trường, đặc biệt là các công ty công nghệ vừa và nhỏ (Russell 2000) và Công nghệ (XLK)."
+            "market_reaction": "🔥 Lạm phát cốt lõi cứng đầu: Gây áp lực cực lớn lên các cổ phiếu Growth/Tech (XLK, XLC) vì định giá phụ thuộc vào lãi suất thấp.\n❄️ Hạ nhiệt nhanh: Tín hiệu mua mạnh (Risk-On) cho toàn bộ thị trường, đặc biệt là các công ty công nghệ vừa và nhỏ (Russell 2000) và Công nghệ (XLK).",
+            "read_format": "**YoY%** (primary, Fed lo nhất) · **3-mo annualized** (sticky inflation gauge) · MoM% (noise nhiều)",
+            "watch_thresholds": "YoY <2.5% = good / 2.5-3.5% = sticky / >3.5% = Fed buộc hawkish",
+            "release_pattern": "Cùng CPI headline, 8:30 ET",
+            "related_indicators": [
+              "CPIAUCSL",
+              "PCEPILFE",
+              "MEDCPIM158SFRBCLE"
+            ]
           },
           {
             "id": "PCEPI",
@@ -38362,7 +38380,16 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/PCEPI",
             "expectation_meaning": "Đây là thước đo lạm phát ƯU THÍCH NHẤT của Fed để ra quyết định chính sách.",
             "good_vs_bad": "Tương tự CPI: Nóng là xấu cho tài sản rủi ro (Cổ phiếu), Nguội là tốt.",
-            "market_reaction": "Tương tự CPI. PCE nóng kéo dòng tiền về các ngành truyền thống phòng thủ (XLV, XLP) do kỳ vọng lãi suất cao hơn lâu hơn (Higher for longer)."
+            "market_reaction": "Tương tự CPI. PCE nóng kéo dòng tiền về các ngành truyền thống phòng thủ (XLV, XLP) do kỳ vọng lãi suất cao hơn lâu hơn (Higher for longer).",
+            "read_format": "**YoY%** · **MoM%** — Fed's chosen target (vs CPI), 2% là target chính thức",
+            "watch_thresholds": "YoY = Fed target 2.0% chính thức. <2% disinflation / 2-2.5% on-track / >3% sticky",
+            "release_pattern": "Cuối tháng, ~25-30, 8:30 ET (BEA)",
+            "related_indicators": [
+              "PCEPILFE",
+              "CPIAUCSL",
+              "PI",
+              "PCE"
+            ]
           },
           {
             "id": "PCEPILFE",
@@ -38373,7 +38400,16 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/PCEPILFE",
             "expectation_meaning": "Con số quyết định trực tiếp lộ trình lãi suất của Fed.",
             "good_vs_bad": "NÓNG: Rất xấu cho thị trường rủi ro, đẩy lợi suất Trái phiếu lên cao.\nNGUỘI: Xúc tác cực mạnh cho đà tăng của thị trường chứng khoán.",
-            "market_reaction": "📈 Nếu giảm đúng lộ trình: Thị trường duy trì xu hướng tăng bền vững, nhóm chu kỳ (XLI, XLB) và tài chính (XLF) hưởng lợi vì kỳ vọng \"Hạ cánh mềm\" (Soft-landing)."
+            "market_reaction": "📈 Nếu giảm đúng lộ trình: Thị trường duy trì xu hướng tăng bền vững, nhóm chu kỳ (XLI, XLB) và tài chính (XLF) hưởng lợi vì kỳ vọng \"Hạ cánh mềm\" (Soft-landing).",
+            "read_format": "**YoY%** (Fed's #1 metric) · **3-mo annualized** (favored by Powell) · MoM% (noise)",
+            "watch_thresholds": "YoY: <2.5% = Fed có thể cut / 2.5-3% = pause / >3% = no cuts. 3-mo > 4% = hawkish urgency.",
+            "release_pattern": "Cuối tháng, ~25-30, 8:30 ET. **Sau CPI 2 tuần** → market đã price phần lớn.",
+            "related_indicators": [
+              "CPILFESL",
+              "PCEPI",
+              "ULCNFB",
+              "AHE"
+            ]
           },
           {
             "id": "PPIACO",
@@ -38384,7 +38420,15 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/PPIACO",
             "expectation_meaning": "Cung cấp góc nhìn về lạm phát từ phía nguồn cung.",
             "good_vs_bad": "NÓNG: Cảnh báo lạm phát tiêu dùng có thể tăng, xấu cho Cổ phiếu.\nNGUỘI: Tốt cho cổ phiếu, báo hiệu áp lực giá cả hạ nhiệt.",
-            "market_reaction": "🏭 PPI tăng mạnh báo hiệu biên lợi nhuận (Margin) của các công ty bán lẻ/sản xuất (XLY, XLP) có thể bị thu hẹp do chi phí đầu vào tăng. Cổ phiếu Vật liệu (XLB) có thể tăng nhờ giá nguyên liệu cao."
+            "market_reaction": "🏭 PPI tăng mạnh báo hiệu biên lợi nhuận (Margin) của các công ty bán lẻ/sản xuất (XLY, XLP) có thể bị thu hẹp do chi phí đầu vào tăng. Cổ phiếu Vật liệu (XLB) có thể tăng nhờ giá nguyên liệu cao.",
+            "read_format": "**YoY%** (pipeline pressure) · **MoM%** (recent shock) · 3-mo annualized (truyền dẫn vào CPI)",
+            "watch_thresholds": "YoY <3% = clean / 5-8% = warning / >10% = sẽ truyền vào CPI 2-3 tháng",
+            "release_pattern": "Hàng tháng, ~ngày 11-15 (1 ngày trước CPI), 8:30 ET",
+            "related_indicators": [
+              "PPILFE",
+              "CPIAUCSL",
+              "ISMMFGPRICES"
+            ]
           },
           {
             "id": "PPILFE",
@@ -38401,6 +38445,13 @@ window.MACRO_DATA = {
               "core ppi (mom)",
               "core ppi (yoy)",
               "ppi ex. food/energy/transport"
+            ],
+            "read_format": "**YoY%** + **MoM%** — sticky pipeline; Fed dùng cross-check Core CPI/PCE",
+            "watch_thresholds": "YoY <2.5% = anchored / >3.5% = sticky pipeline",
+            "release_pattern": "Cùng PPI headline",
+            "related_indicators": [
+              "PPIACO",
+              "CPILFESL"
             ]
           },
           {
@@ -38415,6 +38466,13 @@ window.MACRO_DATA = {
             "market_reaction": "Median CPI cao và giữ trên 3% → Fed buộc phải hawkish dù headline cool. XLK/XLRE chịu áp lực. Median giảm rõ rệt → dovish pivot khả thi → tốt cho duration assets.",
             "release_aliases": [
               "cleveland cpi"
+            ],
+            "read_format": "**YoY%** chính · MoM% noisy. Median = strip outliers tốt hơn Core CPI",
+            "watch_thresholds": "YoY <3% = anchored / >4% = sticky / >5% = unanchored (lần cuối 2022)",
+            "release_pattern": "Cùng CPI, vài giờ sau",
+            "related_indicators": [
+              "CPILFESL",
+              "CPIAUCSL"
             ]
           },
           {
@@ -38430,6 +38488,13 @@ window.MACRO_DATA = {
             "release_aliases": [
               "real earnings",
               "real earnings (mom)"
+            ],
+            "read_format": "**YoY%** primary (trend) · **MoM%** momentum · 3-mo annualized cho Fed view",
+            "watch_thresholds": "Phụ thuộc indicator; xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "CPIAUCSL",
+              "PCEPILFE"
             ]
           }
         ]
@@ -38447,7 +38512,17 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/PAYEMS",
             "expectation_meaning": "Đo lường sức khỏe nền kinh tế. Nền kinh tế khỏe cần nhiều việc làm, nhưng quá nhiều việc làm có thể gây lạm phát lương.",
             "good_vs_bad": "Tùy bối cảnh: Nếu sợ lạm phát, NFP CAO là XẤU (Fed sẽ hawkish). Nếu sợ suy thoái, NFP CAO là TỐT (Kinh tế vững). Hiện tại thị trường thích Goldilocks (không quá nóng, không quá lạnh).",
-            "market_reaction": "💪 NFP mạnh mẽ (nhưng lạm phát ổn định): Tuyệt vời cho nhóm Chu kỳ như Công nghiệp (XLI), Vật liệu (XLB) và Tiêu dùng (XLY).\n⚠️ NFP quá yếu: Thị trường sợ suy thoái, dòng tiền hoảng loạn chui vào Trái phiếu chính phủ, Vàng và Cổ phiếu Phòng thủ (XLV Y tế, XLU Tiện ích)."
+            "market_reaction": "💪 NFP mạnh mẽ (nhưng lạm phát ổn định): Tuyệt vời cho nhóm Chu kỳ như Công nghiệp (XLI), Vật liệu (XLB) và Tiêu dùng (XLY).\n⚠️ NFP quá yếu: Thị trường sợ suy thoái, dòng tiền hoảng loạn chui vào Trái phiếu chính phủ, Vàng và Cổ phiếu Phòng thủ (XLV Y tế, XLU Tiện ích).",
+            "read_format": "**Δ MoM (Net jobs added, K)** primary — KHÔNG xem level. YoY% = trend dài hạn",
+            "watch_thresholds": "<+100K weak / 100-150K cooling / 150-200K healthy / >200K hot. <0 = recession",
+            "release_pattern": "**First Friday** của tháng sau, 8:30 ET. Lớn nhất tháng.",
+            "related_indicators": [
+              "UNRATE",
+              "AHE",
+              "ICSA",
+              "JTSJOL",
+              "ADPMNUSNERNSA"
+            ]
           },
           {
             "id": "UNRATE",
@@ -38458,7 +38533,16 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/UNRATE",
             "expectation_meaning": "Tỷ lệ thất nghiệp tăng báo hiệu suy thoái (Sahm Rule), giảm cho thấy kinh tế khỏe.",
             "good_vs_bad": "THẤP: Tốt cho kinh tế, nhưng nếu quá thấp (<4%) có thể gây lạm phát.\nCAO/TĂNG MẠNH: Xấu cho cổ phiếu, có nguy cơ suy thoái.",
-            "market_reaction": "📉 Thất nghiệp tăng mạnh: Nguy cơ suy thoái. Cổ phiếu ngân hàng (XLF) và Tiêu dùng không thiết yếu (XLY) thường bị bán tháo do rủi ro nợ xấu và sức mua giảm. Tiền chảy vào Y tế (XLV)."
+            "market_reaction": "📉 Thất nghiệp tăng mạnh: Nguy cơ suy thoái. Cổ phiếu ngân hàng (XLF) và Tiêu dùng không thiết yếu (XLY) thường bị bán tháo do rủi ro nợ xấu và sức mua giảm. Tiền chảy vào Y tế (XLV).",
+            "read_format": "**Level** (đã là %, không transform). Theo dõi **3-month MA** để smooth + Sahm rule",
+            "watch_thresholds": "<4% = tight / 4-5% = normal / >5% = cooling / Sahm trigger: 3M MA cao hơn 0.5pp so 12M low",
+            "release_pattern": "Cùng NFP, First Friday 8:30 ET",
+            "related_indicators": [
+              "PAYEMS",
+              "U6RATE",
+              "CIVPART",
+              "ICSA"
+            ]
           },
           {
             "id": "ICSA",
@@ -38469,7 +38553,16 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/ICSA",
             "expectation_meaning": "Chỉ báo rất nhạy (real-time) về thị trường lao động. Tăng vọt là dấu hiệu sa thải diện rộng.",
             "good_vs_bad": "TĂNG MẠNH: Dấu hiệu sa thải, xấu cho kinh tế, nhưng có thể tốt cho Cổ phiếu ngắn hạn nếu kỳ vọng Fed bơm tiền.\nGIẢM: Thị trường lao động mạnh.",
-            "market_reaction": "Tác động tức thời trong ngày. Claims tăng vọt thường kéo Lợi suất trái phiếu giảm, vô tình hỗ trợ nhẹ cho nhóm Công nghệ (XLK) nhưng lại làm nhóm chu kỳ (XLI, XLF) giảm điểm."
+            "market_reaction": "Tác động tức thời trong ngày. Claims tăng vọt thường kéo Lợi suất trái phiếu giảm, vô tình hỗ trợ nhẹ cho nhóm Công nghệ (XLK) nhưng lại làm nhóm chu kỳ (XLI, XLF) giảm điểm.",
+            "read_format": "**Level (K, weekly)** primary · **4-week MA** giảm nhiễu · KHÔNG xem YoY",
+            "watch_thresholds": "<220K = strong / 220-250K = normal / >280K = warning / >320K = recession-like",
+            "release_pattern": "**Mọi Thứ Năm 8:30 ET**, data tuần kết thúc Thứ Bảy trước",
+            "related_indicators": [
+              "CCSA",
+              "IC4WSA",
+              "CHALLENGER",
+              "PAYEMS"
+            ]
           },
           {
             "id": "CES0500000003",
@@ -38480,7 +38573,15 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/CES0500000003",
             "expectation_meaning": "Fed không muốn thấy lương tăng quá nhanh (vòng xoáy giá - lương).",
             "good_vs_bad": "TĂNG MẠNH: Xấu cho thị trường (Lạm phát dai dẳng).\nTĂNG CHẬM: Tốt, hỗ trợ lạm phát hạ nhiệt.",
-            "market_reaction": "Lương tăng quá nóng làm giảm tỷ suất lợi nhuận của các công ty thâm dụng lao động như Bán lẻ, Nhà hàng, Dịch vụ (nhóm XLY). Tiền tệ (USD) có xu hướng tăng giá do kỳ vọng Fed giữ lãi suất cao."
+            "market_reaction": "Lương tăng quá nóng làm giảm tỷ suất lợi nhuận của các công ty thâm dụng lao động như Bán lẻ, Nhà hàng, Dịch vụ (nhóm XLY). Tiền tệ (USD) có xu hướng tăng giá do kỳ vọng Fed giữ lãi suất cao.",
+            "read_format": "**YoY%** primary (wage growth) · MoM% momentum · KHÔNG xem level USD",
+            "watch_thresholds": "YoY <3% = labor cool / 3-4% = healthy / >4.5% = wage-price spiral risk",
+            "release_pattern": "Cùng NFP, First Friday",
+            "related_indicators": [
+              "PAYEMS",
+              "ULCNFB",
+              "PCEPILFE"
+            ]
           },
           {
             "id": "JTSJOL",
@@ -38491,7 +38592,15 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/JTSJOL",
             "expectation_meaning": "Cho thấy mức độ khát nhân sự của doanh nghiệp. Job openings cao = nhu cầu lao động lớn.",
             "good_vs_bad": "GIẢM DẦN: Tốt, thị trường lao động tái cân bằng.\nCAO BẤT THƯỜNG: Xấu, áp lực tăng lương mạnh.",
-            "market_reaction": "Nhìn chung giống AHE. Job Openings giảm (thị trường bớt khát nhân lực) là tín hiệu đáng mừng cho chứng khoán, đặc biệt là các nhóm định giá cao như XLK, XLC."
+            "market_reaction": "Nhìn chung giống AHE. Job Openings giảm (thị trường bớt khát nhân lực) là tín hiệu đáng mừng cho chứng khoán, đặc biệt là các nhóm định giá cao như XLK, XLC.",
+            "read_format": "**Level (M openings)** + **ratio openings/unemployed** quan trọng hơn",
+            "watch_thresholds": "Ratio >1.5x = labor cực chặt / 1.0-1.3x = balanced / <1.0x = lỏng",
+            "release_pattern": "Khoảng ngày 5-7 của 2 tháng sau (lag 1 tháng), 10:00 ET",
+            "related_indicators": [
+              "UNRATE",
+              "PAYEMS",
+              "CHALLENGER"
+            ]
           },
           {
             "id": "CCSA",
@@ -38505,6 +38614,14 @@ window.MACRO_DATA = {
             "market_reaction": "Continuing Claims tăng vọt = market price-in Fed cuts → XLU/XLRE/Bonds bid; XLK rally (duration). Khi cùng Initial Claims tăng = dovish double signal.",
             "release_aliases": [
               "continuing jobless claims"
+            ],
+            "read_format": "**Level (M, weekly)** + **trend (4-week MA)**. KHÔNG xem YoY/MoM",
+            "watch_thresholds": "<1.5M = strong / 1.5-1.8M = normal / >2.0M = labor stress",
+            "release_pattern": "Cùng Initial Claims, Thứ Năm 8:30 ET",
+            "related_indicators": [
+              "ICSA",
+              "IC4WSA",
+              "PAYEMS"
             ]
           },
           {
@@ -38519,6 +38636,14 @@ window.MACRO_DATA = {
             "market_reaction": "Break > 260K bền vững = soft landing scenario yếu đi, recession lo. Defensive bid (XLV/XLP/XLU).",
             "release_aliases": [
               "jobless claims 4-week avg"
+            ],
+            "read_format": "**MoM%** hoặc Δ (mới quan trọng) · Level (cho rate indicators) · KHÔNG xem cumulative level",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Weekly hoặc monthly",
+            "related_indicators": [
+              "PAYEMS",
+              "UNRATE",
+              "ICSA"
             ]
           },
           {
@@ -38534,6 +38659,13 @@ window.MACRO_DATA = {
             "release_aliases": [
               "adp nonfarm employment change",
               "adp employment change weekly"
+            ],
+            "read_format": "**Δ MoM (K)** — preview cho NFP. Correlate ~0.6 với NFP",
+            "watch_thresholds": "<100K = weak / 100-180K = healthy / >200K = hot. Diff với NFP thường ±50K",
+            "release_pattern": "Thứ Tư đầu tiên (2 ngày trước NFP), 8:15 ET",
+            "related_indicators": [
+              "PAYEMS",
+              "ICSA"
             ]
           },
           {
@@ -38548,6 +38680,13 @@ window.MACRO_DATA = {
             "market_reaction": "Challenger spike 2 tháng liên tiếp = market price-in NFP miss 4-6 tuần sau. Defensive sectors (XLV/XLP) bid sớm. Specific sectors hit nếu cuts concentrate (vd: Tech cuts → XLK đau).",
             "release_aliases": [
               "challenger job cuts"
+            ],
+            "read_format": "**Level (K announcements)** + **YoY%** (so cùng tháng năm trước)",
+            "watch_thresholds": "<50K = bình thường / 80-100K = layoff cycle bắt đầu / >150K = stress",
+            "release_pattern": "Thứ Năm đầu tháng, 7:30 ET",
+            "related_indicators": [
+              "ICSA",
+              "PAYEMS"
             ]
           },
           {
@@ -38562,6 +38701,13 @@ window.MACRO_DATA = {
             "market_reaction": "Productivity surprise mạnh → SPY rally (margin expansion thesis), XLK đặc biệt nếu narrative AI productivity boom. Yếu + ULC cao → margin compress lo → equities sell.",
             "release_aliases": [
               "nonfarm productivity"
+            ],
+            "read_format": "**YoY%** trend dài hạn · **QoQ annualized** quarterly read",
+            "watch_thresholds": "<1% = stagflation risk / 1-2% = normal / >3% = boom (AI?)",
+            "release_pattern": "Đầu tháng (5-9 ngày làm việc), 8:30 ET, quarterly",
+            "related_indicators": [
+              "ULCNFB",
+              "GDPC1"
             ]
           },
           {
@@ -38576,6 +38722,14 @@ window.MACRO_DATA = {
             "market_reaction": "ULC vọt > 4% YoY = Fed lo wage spiral → hawkish bias → yields up, growth equities pressure.",
             "release_aliases": [
               "unit labor costs"
+            ],
+            "read_format": "**MoM%** hoặc Δ (mới quan trọng) · Level (cho rate indicators) · KHÔNG xem cumulative level",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Weekly hoặc monthly",
+            "related_indicators": [
+              "PAYEMS",
+              "UNRATE",
+              "ICSA"
             ]
           },
           {
@@ -38590,6 +38744,14 @@ window.MACRO_DATA = {
             "market_reaction": "Cross-check với Unemployment Rate: UNRATE thấp + Participation cao = labor healthy. UNRATE thấp + Participation thấp = 'fake' tight (mọi người out of workforce).",
             "release_aliases": [
               "participation rate"
+            ],
+            "read_format": "**MoM%** hoặc Δ (mới quan trọng) · Level (cho rate indicators) · KHÔNG xem cumulative level",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Weekly hoặc monthly",
+            "related_indicators": [
+              "PAYEMS",
+              "UNRATE",
+              "ICSA"
             ]
           },
           {
@@ -38604,6 +38766,14 @@ window.MACRO_DATA = {
             "market_reaction": "Khi U6 spike trong khi UNRATE flat → market lo recession ẩn → defensive rotation. Khi cùng giảm → goldilocks confirm.",
             "release_aliases": [
               "u6 unemployment rate"
+            ],
+            "read_format": "**MoM%** hoặc Δ (mới quan trọng) · Level (cho rate indicators) · KHÔNG xem cumulative level",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Weekly hoặc monthly",
+            "related_indicators": [
+              "PAYEMS",
+              "UNRATE",
+              "ICSA"
             ]
           },
           {
@@ -38618,6 +38788,14 @@ window.MACRO_DATA = {
             "market_reaction": "Subtle indicator nhưng đáng tin: hours xuống → manuf demand yếu → XLI/XLB chịu áp lực. Cross-check với ISM Mfg Employment.",
             "release_aliases": [
               "average weekly hours"
+            ],
+            "read_format": "**MoM%** hoặc Δ (mới quan trọng) · Level (cho rate indicators) · KHÔNG xem cumulative level",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Weekly hoặc monthly",
+            "related_indicators": [
+              "PAYEMS",
+              "UNRATE",
+              "ICSA"
             ]
           },
           {
@@ -38632,6 +38810,14 @@ window.MACRO_DATA = {
             "market_reaction": "Market ít react trực tiếp; nhưng nhà phân tích để check 'quality' của NFP. Private NFP > Gov NFP = bull case thực sự.",
             "release_aliases": [
               "government payrolls"
+            ],
+            "read_format": "**MoM%** hoặc Δ (mới quan trọng) · Level (cho rate indicators) · KHÔNG xem cumulative level",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Weekly hoặc monthly",
+            "related_indicators": [
+              "PAYEMS",
+              "UNRATE",
+              "ICSA"
             ]
           },
           {
@@ -38646,6 +38832,14 @@ window.MACRO_DATA = {
             "market_reaction": "Cùng ISM Mfg PMI để cross-check. Mfg payrolls bounce + ISM > 50 = cyclical bull case → XLI/XLB rally.",
             "release_aliases": [
               "manufacturing payrolls"
+            ],
+            "read_format": "**MoM%** hoặc Δ (mới quan trọng) · Level (cho rate indicators) · KHÔNG xem cumulative level",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Weekly hoặc monthly",
+            "related_indicators": [
+              "PAYEMS",
+              "UNRATE",
+              "ICSA"
             ]
           },
           {
@@ -38660,6 +38854,14 @@ window.MACRO_DATA = {
             "market_reaction": "Phân tích deeper hơn headline NFP. Trader pro thường focus Private NFP để judge regime.",
             "release_aliases": [
               "private nonfarm payrolls"
+            ],
+            "read_format": "**MoM%** hoặc Δ (mới quan trọng) · Level (cho rate indicators) · KHÔNG xem cumulative level",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Weekly hoặc monthly",
+            "related_indicators": [
+              "PAYEMS",
+              "UNRATE",
+              "ICSA"
             ]
           },
           {
@@ -38674,6 +38876,14 @@ window.MACRO_DATA = {
             "market_reaction": "Niche indicator, ít market mover trực tiếp. Nhà phân tích chuyên dùng để fade NFP surprise (nếu CB ETI đã xấu rồi).",
             "release_aliases": [
               "cb employment trends index"
+            ],
+            "read_format": "**MoM%** hoặc Δ (mới quan trọng) · Level (cho rate indicators) · KHÔNG xem cumulative level",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Weekly hoặc monthly",
+            "related_indicators": [
+              "PAYEMS",
+              "UNRATE",
+              "ICSA"
             ]
           },
           {
@@ -38688,6 +38898,14 @@ window.MACRO_DATA = {
             "market_reaction": "Subtle nhưng quan trọng. Cross-check với Michigan inflation exp. Khi cả 2 cùng giảm → strong dovish signal cho FOMC.",
             "release_aliases": [
               "ny fed 1-year consumer inflation expectations"
+            ],
+            "read_format": "**MoM%** hoặc Δ (mới quan trọng) · Level (cho rate indicators) · KHÔNG xem cumulative level",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Weekly hoặc monthly",
+            "related_indicators": [
+              "PAYEMS",
+              "UNRATE",
+              "ICSA"
             ]
           }
         ]
@@ -38705,7 +38923,16 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/GDPC1",
             "expectation_meaning": "Khẳng định nền kinh tế đang mở rộng hay thu hẹp (Suy thoái = 2 quý GDP âm liên tiếp).",
             "good_vs_bad": "CAO HƠN DỰ BÁO: Tốt cho Chứng khoán (kinh tế khỏe), lợi suất tăng.\nTHẤP HƠN DỰ BÁO: Xấu, nguy cơ hạ cánh cứng (Hard Landing).",
-            "market_reaction": "📈 GDP mạnh: Sự bùng nổ của nhóm chu kỳ — Công nghiệp (XLI), Ngân hàng (XLF), Vật liệu (XLB) và Năng lượng (XLE). Dòng tiền rút khỏi Trái phiếu và cổ phiếu phòng thủ.\n📉 GDP suy thoái: Dòng tiền trú ẩn vào XLU (Tiện ích), XLV (Y tế) và Trái phiếu chính phủ."
+            "market_reaction": "📈 GDP mạnh: Sự bùng nổ của nhóm chu kỳ — Công nghiệp (XLI), Ngân hàng (XLF), Vật liệu (XLB) và Năng lượng (XLE). Dòng tiền rút khỏi Trái phiếu và cổ phiếu phòng thủ.\n📉 GDP suy thoái: Dòng tiền trú ẩn vào XLU (Tiện ích), XLV (Y tế) và Trái phiếu chính phủ.",
+            "read_format": "**QoQ annualized %** (BEA official) primary · YoY% = trend",
+            "watch_thresholds": "<1% weak / 1-2% slow / 2-3% trend / >3% strong. 2 quý âm liên tiếp = recession",
+            "release_pattern": "3 lần/quarter: Advance (~ngày 27 tháng sau quarter end), 2nd (~30 ngày sau), Final (~60 ngày sau)",
+            "related_indicators": [
+              "GDPNOW",
+              "PCE",
+              "INDPRO",
+              "RSAFS"
+            ]
           },
           {
             "id": "RSAFS",
@@ -38716,7 +38943,16 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/RSAFS",
             "expectation_meaning": "Bức tranh trực tiếp về sức mua của người dân.",
             "good_vs_bad": "MẠNH: Kinh tế tốt, nguy cơ lạm phát (Xấu cho Bond, Tùy thời điểm với Stock).\nYẾU: Người tiêu dùng cạn tiền, nguy cơ suy thoái.",
-            "market_reaction": "🛍️ Tác động trực tiếp lên nhóm Tiêu dùng tùy ý (XLY - Amazon, Tesla...). Nếu bán lẻ cực kỳ khỏe, cổ phiếu bán lẻ sẽ bay cao, kéo theo nhóm Thanh toán thẻ (Visa, Mastercard thuộc XLF)."
+            "market_reaction": "🛍️ Tác động trực tiếp lên nhóm Tiêu dùng tùy ý (XLY - Amazon, Tesla...). Nếu bán lẻ cực kỳ khỏe, cổ phiếu bán lẻ sẽ bay cao, kéo theo nhóm Thanh toán thẻ (Visa, Mastercard thuộc XLF).",
+            "read_format": "**MoM%** primary · **Control group ex-auto/gas/building/food** (vào GDP) quan trọng nhất · YoY% nominal",
+            "watch_thresholds": "MoM ±0.5% = noise / >+0.7% = strong / <-0.5% = consumer rút",
+            "release_pattern": "Giữa tháng (~15-17) sau tháng tham chiếu, 8:30 ET",
+            "related_indicators": [
+              "PCE",
+              "PI",
+              "UMCSENT",
+              "TOTALSA"
+            ]
           },
           {
             "id": "NAPM",
@@ -38727,7 +38963,15 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/NAPM",
             "expectation_meaning": "Chỉ báo dẫn dắt (Leading indicator) về sức khỏe mảng sản xuất.",
             "good_vs_bad": "> 50: Tích cực. < 50: Tiêu cực.",
-            "market_reaction": "⚙️ ISM Sản xuất > 50: Dấu hiệu phục hồi của chu kỳ sản xuất. Rất tốt cho nhóm Công nghiệp (XLI), Vận tải logistics và Vật liệu cơ bản (XLB). Giá đồng (Copper) và dầu (WTI) thường tăng theo."
+            "market_reaction": "⚙️ ISM Sản xuất > 50: Dấu hiệu phục hồi của chu kỳ sản xuất. Rất tốt cho nhóm Công nghiệp (XLI), Vận tải logistics và Vật liệu cơ bản (XLB). Giá đồng (Copper) và dầu (WTI) thường tăng theo.",
+            "read_format": "**MoM%** (monthly) hoặc **QoQ annualized %** (quarterly) · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "GDPC1",
+              "GDPNOW",
+              "INDPRO"
+            ]
           },
           {
             "id": "NAPMNMI",
@@ -38738,7 +38982,15 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/NAPMNMI",
             "expectation_meaning": "Quan trọng hơn Manufacturing PMI vì dịch vụ chiếm tỷ trọng lớn nhất.",
             "good_vs_bad": "MẠNH (> 50): Kinh tế vững chắc.\nYẾU (< 50): Dấu hiệu báo động về tăng trưởng.",
-            "market_reaction": "✈️ ISM Dịch vụ giảm dưới 50 báo hiệu một cuộc suy thoái thực sự (vì dịch vụ rất hiếm khi thu hẹp). Điều này kích hoạt đợt bán tháo toàn thị trường. Nếu ISM quá mạnh, thị trường lại sợ lạm phát dịch vụ dai dẳng (Xấu cho Tech/Growth)."
+            "market_reaction": "✈️ ISM Dịch vụ giảm dưới 50 báo hiệu một cuộc suy thoái thực sự (vì dịch vụ rất hiếm khi thu hẹp). Điều này kích hoạt đợt bán tháo toàn thị trường. Nếu ISM quá mạnh, thị trường lại sợ lạm phát dịch vụ dai dẳng (Xấu cho Tech/Growth).",
+            "read_format": "**MoM%** (monthly) hoặc **QoQ annualized %** (quarterly) · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "GDPC1",
+              "GDPNOW",
+              "INDPRO"
+            ]
           },
           {
             "id": "GDPNOW",
@@ -38752,6 +39004,15 @@ window.MACRO_DATA = {
             "market_reaction": "Khi GDPNow cut > 0.5pp trong 1 ngày → market re-rate growth narrative → yields giảm, cyclicals (XLI/XLB/XLY) chịu áp lực, defensives (XLV/XLP) bid.",
             "release_aliases": [
               "atlanta fed gdpnow"
+            ],
+            "read_format": "**Level (% annualized for current Q)** · update sau mỗi data release · revision range = signal",
+            "watch_thresholds": "0-1% recession risk / 1.5-2.5% trend / >3% boom. Cut >0.5pp/day = re-rate growth narrative",
+            "release_pattern": "Real-time, Atlanta Fed website. Update sau ISM PMI, NFP, Retail Sales...",
+            "related_indicators": [
+              "GDPC1",
+              "RSAFS",
+              "INDPRO",
+              "PCE"
             ]
           },
           {
@@ -38766,6 +39027,14 @@ window.MACRO_DATA = {
             "market_reaction": "Flash PMI miss/beat 2-3 điểm so với forecast → immediate yields + USD move. XLI/XLB nhạy nhất.",
             "release_aliases": [
               "s&p global manufacturing pmi"
+            ],
+            "read_format": "**MoM%** (monthly) hoặc **QoQ annualized %** (quarterly) · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "GDPC1",
+              "GDPNOW",
+              "INDPRO"
             ]
           },
           {
@@ -38780,6 +39049,14 @@ window.MACRO_DATA = {
             "market_reaction": "Svc PMI miss → defensive sectors (XLV, XLP) bid, XLC (Consumer Disc) chịu áp lực vì services là tiêu dùng.",
             "release_aliases": [
               "s&p global services pmi"
+            ],
+            "read_format": "**MoM%** (monthly) hoặc **QoQ annualized %** (quarterly) · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "GDPC1",
+              "GDPNOW",
+              "INDPRO"
             ]
           },
           {
@@ -38794,6 +39071,14 @@ window.MACRO_DATA = {
             "market_reaction": "Move SPY 0.5-1% trong các surprise lớn (>2 điểm diff vs forecast).",
             "release_aliases": [
               "s&p global composite pmi"
+            ],
+            "read_format": "**MoM%** (monthly) hoặc **QoQ annualized %** (quarterly) · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "GDPC1",
+              "GDPNOW",
+              "INDPRO"
             ]
           },
           {
@@ -38808,6 +39093,14 @@ window.MACRO_DATA = {
             "market_reaction": "Spike/miss 5+ điểm = bond yields move 5-10bps, USD react. Trader thường front-run ISM bằng Chicago PMI.",
             "release_aliases": [
               "chicago pmi"
+            ],
+            "read_format": "**MoM%** (monthly) hoặc **QoQ annualized %** (quarterly) · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "GDPC1",
+              "GDPNOW",
+              "INDPRO"
             ]
           },
           {
@@ -38823,6 +39116,14 @@ window.MACRO_DATA = {
             "release_aliases": [
               "ism manufacturing new orders index",
               "ism non-manufacturing new orders"
+            ],
+            "read_format": "**MoM%** (monthly) hoặc **QoQ annualized %** (quarterly) · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "GDPC1",
+              "GDPNOW",
+              "INDPRO"
             ]
           },
           {
@@ -38838,6 +39139,14 @@ window.MACRO_DATA = {
             "release_aliases": [
               "ism manufacturing prices",
               "ism non-manufacturing prices"
+            ],
+            "read_format": "**MoM%** (monthly) hoặc **QoQ annualized %** (quarterly) · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "GDPC1",
+              "GDPNOW",
+              "INDPRO"
             ]
           },
           {
@@ -38853,6 +39162,14 @@ window.MACRO_DATA = {
             "release_aliases": [
               "ism manufacturing employment",
               "ism non-manufacturing employment"
+            ],
+            "read_format": "**MoM%** (monthly) hoặc **QoQ annualized %** (quarterly) · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "GDPC1",
+              "GDPNOW",
+              "INDPRO"
             ]
           },
           {
@@ -38868,6 +39185,14 @@ window.MACRO_DATA = {
             "release_aliases": [
               "factory orders",
               "factory orders ex transportation"
+            ],
+            "read_format": "**MoM%** primary · YoY% trend · **Ex-transport** thường stable hơn (cuts máy bay)",
+            "watch_thresholds": "MoM ±1% noise / >+2% boom / <-2% manuf recession",
+            "release_pattern": "Đầu tháng sau (~5), 10:00 ET",
+            "related_indicators": [
+              "DGORDER",
+              "INDPRO",
+              "ISMMFGNEW"
             ]
           },
           {
@@ -38886,6 +39211,14 @@ window.MACRO_DATA = {
               "durables excluding defense",
               "durables excluding transport",
               "goods orders non defense ex air"
+            ],
+            "read_format": "**MoM%** primary · **Core (ex-defense, ex-aircraft)** capex proxy chính",
+            "watch_thresholds": "Core MoM ±0.5% noise / >+1% capex recovery / <-1% capex cycle xấu",
+            "release_pattern": "Cuối tháng (~27), 8:30 ET",
+            "related_indicators": [
+              "NEWORDER",
+              "INDPRO",
+              "MANEMP"
             ]
           },
           {
@@ -38900,6 +39233,14 @@ window.MACRO_DATA = {
             "market_reaction": "Cross-check với Housing Starts + Permits. Combo strong → XLRE (REITs) bid + XLB rally.",
             "release_aliases": [
               "construction spending"
+            ],
+            "read_format": "**MoM%** primary · YoY% trend",
+            "watch_thresholds": "MoM ±0.3% noise / >+0.5% boom / <-0.5% slowing",
+            "release_pattern": "Đầu tháng sau (~1-3), 10:00 ET",
+            "related_indicators": [
+              "PERMIT",
+              "HOUST",
+              "INDPRO"
             ]
           },
           {
@@ -38914,6 +39255,15 @@ window.MACRO_DATA = {
             "market_reaction": "IP yếu liên tục → XLI/XLB chịu áp lực. Manuf recovery confirm bull case cho cyclicals.",
             "release_aliases": [
               "industrial production"
+            ],
+            "read_format": "**MoM%** primary · YoY% trend",
+            "watch_thresholds": "MoM ±0.2% noise / >+0.5% boom / <-0.3% manuf weak",
+            "release_pattern": "Giữa tháng (~17), 9:15 ET",
+            "related_indicators": [
+              "MANEMP",
+              "NEWORDER",
+              "DGORDER",
+              "ISMMFGNEW"
             ]
           },
           {
@@ -38928,6 +39278,14 @@ window.MACRO_DATA = {
             "market_reaction": "PI surprise lớn → market revise consumer narrative. XLY/Retail react ngay.",
             "release_aliases": [
               "personal income"
+            ],
+            "read_format": "**MoM%** primary · **Real (trừ inflation)** mới meaningful · Cross-check spending = saving rate",
+            "watch_thresholds": "MoM ±0.3% noise / Income > Spending = saving rate up = consumer cẩn thận",
+            "release_pattern": "Cùng PCE, 8:30 ET",
+            "related_indicators": [
+              "PCE",
+              "AHE",
+              "REALEARN"
             ]
           },
           {
@@ -38944,6 +39302,15 @@ window.MACRO_DATA = {
               "personal spending",
               "real personal consumption",
               "real consumer spending"
+            ],
+            "read_format": "**Real MoM%** primary (đã trừ inflation) · YoY% trend",
+            "watch_thresholds": "Real MoM <0 = consumer weak / 0-0.3% normal / >0.5% strong",
+            "release_pattern": "Cuối tháng sau (~25-30), 8:30 ET",
+            "related_indicators": [
+              "PI",
+              "RSAFS",
+              "UMCSENT",
+              "PCEPI"
             ]
           },
           {
@@ -38960,6 +39327,14 @@ window.MACRO_DATA = {
               "total vehicle sales",
               "all car sales",
               "all truck sales"
+            ],
+            "read_format": "**MoM%** (monthly) hoặc **QoQ annualized %** (quarterly) · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "GDPC1",
+              "GDPNOW",
+              "INDPRO"
             ]
           },
           {
@@ -38975,6 +39350,14 @@ window.MACRO_DATA = {
             "release_aliases": [
               "wholesale inventories",
               "wholesale trade sales"
+            ],
+            "read_format": "**MoM%** (monthly) hoặc **QoQ annualized %** (quarterly) · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "GDPC1",
+              "GDPNOW",
+              "INDPRO"
             ]
           },
           {
@@ -38989,6 +39372,14 @@ window.MACRO_DATA = {
             "market_reaction": "Markdown risk = XRT (retail ETF) chịu áp lực. WMT/COST defensive (volume play).",
             "release_aliases": [
               "retail inventories ex auto"
+            ],
+            "read_format": "**MoM%** (monthly) hoặc **QoQ annualized %** (quarterly) · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "GDPC1",
+              "GDPNOW",
+              "INDPRO"
             ]
           },
           {
@@ -39003,6 +39394,14 @@ window.MACRO_DATA = {
             "market_reaction": "GDPNow update ngay sau Goods Trade Balance → indirect market impact.",
             "release_aliases": [
               "goods trade balance"
+            ],
+            "read_format": "**MoM%** (monthly) hoặc **QoQ annualized %** (quarterly) · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "GDPC1",
+              "GDPNOW",
+              "INDPRO"
             ]
           },
           {
@@ -39017,6 +39416,14 @@ window.MACRO_DATA = {
             "market_reaction": "Niche but powerful — academic/macro pro dùng. Khi cross -0.7 threshold → defensive rotation immediate.",
             "release_aliases": [
               "chicago fed national activity"
+            ],
+            "read_format": "**MoM%** (monthly) hoặc **QoQ annualized %** (quarterly) · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "GDPC1",
+              "GDPNOW",
+              "INDPRO"
             ]
           },
           {
@@ -39033,6 +39440,14 @@ window.MACRO_DATA = {
               "richmond manufacturing index",
               "richmond manufacturing shipments",
               "richmond services index"
+            ],
+            "read_format": "**MoM%** (monthly) hoặc **QoQ annualized %** (quarterly) · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "GDPC1",
+              "GDPNOW",
+              "INDPRO"
             ]
           },
           {
@@ -39050,6 +39465,14 @@ window.MACRO_DATA = {
               "dallas fed services revenues",
               "texas services sector outlook",
               "dallas fed pce"
+            ],
+            "read_format": "**MoM%** (monthly) hoặc **QoQ annualized %** (quarterly) · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "GDPC1",
+              "GDPNOW",
+              "INDPRO"
             ]
           },
           {
@@ -39064,6 +39487,14 @@ window.MACRO_DATA = {
             "market_reaction": "Major macro driver cho equity valuations. Trend > level quan trọng.",
             "release_aliases": [
               "corporate profits"
+            ],
+            "read_format": "**MoM%** (monthly) hoặc **QoQ annualized %** (quarterly) · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "GDPC1",
+              "GDPNOW",
+              "INDPRO"
             ]
           },
           {
@@ -39078,6 +39509,14 @@ window.MACRO_DATA = {
             "market_reaction": "Track cùng ISM Svc PMI headline. Spread giữa Business Activity vs New Orders cho insight về momentum.",
             "release_aliases": [
               "ism non-manufacturing business activity"
+            ],
+            "read_format": "**MoM%** (monthly) hoặc **QoQ annualized %** (quarterly) · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "GDPC1",
+              "GDPNOW",
+              "INDPRO"
             ]
           }
         ]
@@ -39095,7 +39534,14 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/CSCICP03USM665S",
             "expectation_meaning": "Người lạc quan sẽ tiêu nhiều tiền hơn, hỗ trợ tăng trưởng.",
             "good_vs_bad": "CAO: Tốt cho tăng trưởng.\nTHẤP: Xấu, người dân có xu hướng thắt lưng buộc bụng.",
-            "market_reaction": "Tương quan mật thiết với nhóm Hàng tiêu dùng (XLY). Khi niềm tin sụp đổ, người dân chuyển sang mua hàng hóa thiết yếu (hỗ trợ nhóm XLP - Staples như Walmart, P&G)."
+            "market_reaction": "Tương quan mật thiết với nhóm Hàng tiêu dùng (XLY). Khi niềm tin sụp đổ, người dân chuyển sang mua hàng hóa thiết yếu (hỗ trợ nhóm XLP - Staples như Walmart, P&G).",
+            "read_format": "**Level (Index)** primary · MoM% momentum",
+            "watch_thresholds": "Phụ thuộc index baseline (50 hoặc 100)",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "UMCSENT",
+              "MICH1Y"
+            ]
           },
           {
             "id": "UMCSENT",
@@ -39106,7 +39552,16 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/UMCSENT",
             "expectation_meaning": "Fed chú ý nhiều tới \"Lạm phát kỳ vọng 1 năm / 5 năm\" trong khảo sát này.",
             "good_vs_bad": "Lạm phát kỳ vọng TĂNG: Rất xấu (Fed sẽ diều hâu).",
-            "market_reaction": "Thị trường chủ yếu nhìn vào cấu phần 'Inflation Expectations'. Nếu lạm phát kỳ vọng vọt lên, lợi suất Trái phiếu sẽ bật tăng mạnh, đè bẹp nhóm Công nghệ (XLK) và Bất động sản (XLRE)."
+            "market_reaction": "Thị trường chủ yếu nhìn vào cấu phần 'Inflation Expectations'. Nếu lạm phát kỳ vọng vọt lên, lợi suất Trái phiếu sẽ bật tăng mạnh, đè bẹp nhóm Công nghệ (XLK) và Bất động sản (XLRE).",
+            "read_format": "**Level (Index)** primary · MoM% momentum",
+            "watch_thresholds": ">90 = strong / 70-90 = neutral / <70 = bearish (recession-like)",
+            "release_pattern": "Preliminary giữa tháng (~10-15), Final cuối tháng (~25-30), 10:00 ET",
+            "related_indicators": [
+              "CSCICP03USM665S",
+              "MICHEXP",
+              "MICH1Y",
+              "MICH5Y"
+            ]
           },
           {
             "id": "MICHCURR",
@@ -39120,6 +39575,13 @@ window.MACRO_DATA = {
             "market_reaction": "Current Conditions track consumer NOW; Expectations forward 6-12 tháng. Cả 2 cùng giảm = serious warning.",
             "release_aliases": [
               "michigan current conditions"
+            ],
+            "read_format": "**Level (Index)** primary · MoM% momentum",
+            "watch_thresholds": "Phụ thuộc index baseline (50 hoặc 100)",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "UMCSENT",
+              "MICH1Y"
             ]
           },
           {
@@ -39134,6 +39596,13 @@ window.MACRO_DATA = {
             "market_reaction": "Khi Expectations < 60 và stay → defensive rotation, XLP/XLV bid.",
             "release_aliases": [
               "michigan consumer expectations"
+            ],
+            "read_format": "**Level (Index)** primary · MoM% momentum",
+            "watch_thresholds": "Phụ thuộc index baseline (50 hoặc 100)",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "UMCSENT",
+              "MICH1Y"
             ]
           },
           {
@@ -39148,6 +39617,15 @@ window.MACRO_DATA = {
             "market_reaction": "Michigan 1Y Inflation Exp surprise upside → yields jump 5-10bps, XLK pressure.",
             "release_aliases": [
               "michigan 1-year inflation expectations"
+            ],
+            "read_format": "**Level (%)** primary — Fed theo dõi sát expectations",
+            "watch_thresholds": "<3% anchored / 3-4% drift up / >4% Fed lo / >5% unanchored",
+            "release_pattern": "Cùng Michigan Sentiment, preliminary + final",
+            "related_indicators": [
+              "MICH5Y",
+              "NYFED1YINFL",
+              "T10YIE",
+              "CPIAUCSL"
             ]
           },
           {
@@ -39162,6 +39640,13 @@ window.MACRO_DATA = {
             "market_reaction": "Long-term inflation exp move = market thinks Fed losing control → mass selloff XLK + XLU/XLRE, Gold bid.",
             "release_aliases": [
               "michigan 5-year inflation expectations"
+            ],
+            "read_format": "**Level (%)** — Fed quan trọng nhất (long-term anchored?)",
+            "watch_thresholds": "<2.5% anchored / 2.5-3% normal / >3.5% Fed credibility risk",
+            "release_pattern": "Cùng Michigan",
+            "related_indicators": [
+              "MICH1Y",
+              "T10YIE"
             ]
           },
           {
@@ -39176,6 +39661,13 @@ window.MACRO_DATA = {
             "market_reaction": "Sub-component 'Hiring Plans' leads NFP 2-3 tháng. Sub-component 'Capex Plans' leads Industrial Production.",
             "release_aliases": [
               "nfib small business optimism"
+            ],
+            "read_format": "**Level (Index)** primary · MoM% momentum",
+            "watch_thresholds": "Phụ thuộc index baseline (50 hoặc 100)",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "UMCSENT",
+              "MICH1Y"
             ]
           },
           {
@@ -39190,6 +39682,13 @@ window.MACRO_DATA = {
             "market_reaction": "Niche, ít market mover. Pros dùng để diversify confidence reads.",
             "release_aliases": [
               "ibd/tipp economic optimism"
+            ],
+            "read_format": "**Level (Index)** primary · MoM% momentum",
+            "watch_thresholds": "Phụ thuộc index baseline (50 hoặc 100)",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "UMCSENT",
+              "MICH1Y"
             ]
           },
           {
@@ -39204,6 +39703,13 @@ window.MACRO_DATA = {
             "market_reaction": "Minor mover. Pros dùng để diversify consumer reads.",
             "release_aliases": [
               "thomson reuters ipsos pcsi"
+            ],
+            "read_format": "**Level (Index)** primary · MoM% momentum",
+            "watch_thresholds": "Phụ thuộc index baseline (50 hoặc 100)",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "UMCSENT",
+              "MICH1Y"
             ]
           }
         ]
@@ -39221,7 +39727,15 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/HOUST",
             "expectation_meaning": "Nhà ở ảnh hưởng tới nhiều ngành khác (nội thất, xây dựng, ngân hàng).",
             "good_vs_bad": "TĂNG: Tốt, phản ánh nhu cầu cao và nền kinh tế mở rộng.",
-            "market_reaction": "🏘️ Nhà khởi công tăng là bệ phóng cho các cổ phiếu Xây dựng (Homebuilders - ITB, XHB), Gỗ, Vật liệu xây dựng và chuỗi bán lẻ nội thất (Home Depot)."
+            "market_reaction": "🏘️ Nhà khởi công tăng là bệ phóng cho các cổ phiếu Xây dựng (Homebuilders - ITB, XHB), Gỗ, Vật liệu xây dựng và chuỗi bán lẻ nội thất (Home Depot).",
+            "read_format": "**Level (M annualized)** + **MoM%** · YoY% trend",
+            "watch_thresholds": "<1.2M weak / 1.3-1.5M normal / >1.6M boom",
+            "release_pattern": "Giữa tháng (~17-19), 8:30 ET",
+            "related_indicators": [
+              "PERMIT",
+              "HSN1F",
+              "MBA30Y"
+            ]
           },
           {
             "id": "EXHOSLUSM495S",
@@ -39232,7 +39746,15 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/EXHOSLUSM495S",
             "expectation_meaning": "Chiếm phần lớn thị trường bất động sản.",
             "good_vs_bad": "Chịu tác động mạnh từ Lãi suất thế chấp (Mortgage rates). Nếu lãi suất giảm, sales sẽ tăng.",
-            "market_reaction": "Ảnh hưởng đến cổ phiếu môi giới bất động sản, ngân hàng cho vay thế chấp (Mortgage lenders). Khi doanh số thấp do lãi suất cao, tiền sẽ đứng ngoài ngành BĐS."
+            "market_reaction": "Ảnh hưởng đến cổ phiếu môi giới bất động sản, ngân hàng cho vay thế chấp (Mortgage lenders). Khi doanh số thấp do lãi suất cao, tiền sẽ đứng ngoài ngành BĐS.",
+            "read_format": "**Level (M annualized)** + **MoM%** · YoY% trend",
+            "watch_thresholds": "<4M = freeze (rates cao) / 5-5.5M = normal / >6M = boom",
+            "release_pattern": "Cuối tháng (~20-23), 10:00 ET",
+            "related_indicators": [
+              "HSN1F",
+              "PERMIT",
+              "MBA30Y"
+            ]
           },
           {
             "id": "PERMIT",
@@ -39246,6 +39768,14 @@ window.MACRO_DATA = {
             "market_reaction": "Drop nhiều → XHB (homebuilders ETF) sell, XLB (vật liệu) chịu áp lực, REIT residential watch.",
             "release_aliases": [
               "building permits"
+            ],
+            "read_format": "**Level (M annualized)** + **MoM%** · Leading indicator cho Housing Starts 1-3 tháng",
+            "watch_thresholds": "Tương tự HOUST: <1.2M weak / >1.6M boom",
+            "release_pattern": "Cùng Housing Starts",
+            "related_indicators": [
+              "HOUST",
+              "HSN1F",
+              "EXHOSLUSM495S"
             ]
           },
           {
@@ -39260,6 +39790,14 @@ window.MACRO_DATA = {
             "market_reaction": "Spike → XHB rally; weak → XHB sell. Cross-check với Existing Home Sales.",
             "release_aliases": [
               "new home sales"
+            ],
+            "read_format": "**MoM%** + **Level** · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "HOUST",
+              "PERMIT",
+              "MBA30Y"
             ]
           },
           {
@@ -39274,6 +39812,14 @@ window.MACRO_DATA = {
             "market_reaction": "Combined với Case-Shiller làm consensus housing. Drop YoY → recession concern, defensive bid.",
             "release_aliases": [
               "house price index"
+            ],
+            "read_format": "**MoM%** + **Level** · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "HOUST",
+              "PERMIT",
+              "MBA30Y"
             ]
           },
           {
@@ -39289,6 +39835,14 @@ window.MACRO_DATA = {
             "release_aliases": [
               "s&p/cs hpi composite - 20 s.a.",
               "s&p/cs hpi composite - 20 n.s.a."
+            ],
+            "read_format": "**MoM%** + **Level** · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "HOUST",
+              "PERMIT",
+              "MBA30Y"
             ]
           },
           {
@@ -39303,6 +39857,14 @@ window.MACRO_DATA = {
             "market_reaction": "Mortgage rates < 6% → housing demand surge, XHB rally. > 7% = housing freeze.",
             "release_aliases": [
               "mba 30-year mortgage rate"
+            ],
+            "read_format": "**Level (%)** · weekly change",
+            "watch_thresholds": "<6% = home affordability OK / 6-7% = cooling / >7% = freeze",
+            "release_pattern": "Mọi Thứ Tư 7:00 ET",
+            "related_indicators": [
+              "DGS10",
+              "MBAAPPS",
+              "HOUST"
             ]
           },
           {
@@ -39320,6 +39882,14 @@ window.MACRO_DATA = {
               "mba purchase index",
               "mortgage market index",
               "mortgage refinance index"
+            ],
+            "read_format": "**MoM%** + **Level** · YoY% trend",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "HOUST",
+              "PERMIT",
+              "MBA30Y"
             ]
           }
         ]
@@ -39337,7 +39907,15 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/DFF",
             "expectation_meaning": "Quyết định chi phí vốn của dòng tiền toàn cầu.",
             "good_vs_bad": "TĂNG (Hike): Xấu cho Cổ phiếu/Crypto, Tốt cho USD.\nGIẢM (Cut): Tốt cho Cổ phiếu (dòng tiền rẻ chảy vào).",
-            "market_reaction": "💸 Fed nới lỏng (Giảm lãi suất): Siêu chu kỳ tăng giá (Bull market) cho Cổ phiếu, Crypto, Vàng. Nhóm vốn hóa nhỏ (Russell 2000) và Công nghệ hưởng lợi lớn nhất.\n💸 Fed thắt chặt (Tăng lãi suất): Tiền bị hút về hệ thống ngân hàng. Nhóm Tài chính (XLF) hưởng lợi nhờ NIM cao, nhưng toàn bộ thị trường chịu sức ép."
+            "market_reaction": "💸 Fed nới lỏng (Giảm lãi suất): Siêu chu kỳ tăng giá (Bull market) cho Cổ phiếu, Crypto, Vàng. Nhóm vốn hóa nhỏ (Russell 2000) và Công nghệ hưởng lợi lớn nhất.\n💸 Fed thắt chặt (Tăng lãi suất): Tiền bị hút về hệ thống ngân hàng. Nhóm Tài chính (XLF) hưởng lợi nhờ NIM cao, nhưng toàn bộ thị trường chịu sức ép.",
+            "read_format": "**Level (%)** · changes only at FOMC meetings (8/year)",
+            "watch_thresholds": "Neutral ~2.5-3% / Restrictive >3.5% / Accommodative <2%",
+            "release_pattern": "FOMC: 8 lần/năm. Daily effective rate from NY Fed.",
+            "related_indicators": [
+              "DGS2",
+              "DGS10",
+              "T10Y2Y"
+            ]
           },
           {
             "id": "DGS10",
@@ -39348,7 +39926,16 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/DGS10",
             "expectation_meaning": "Phản ánh kỳ vọng tăng trưởng và lạm phát dài hạn.",
             "good_vs_bad": "TĂNG MẠNH: Gây áp lực cực lớn lên Cổ phiếu Công nghệ (Growth) và Bất động sản.\nGIẢM: Tốt cho Cổ phiếu rủi ro.",
-            "market_reaction": "Trọng lực của thị trường. Lợi suất 10 năm vọt lên > 4.5% sẽ dìm chết định giá cổ phiếu Tech (XLK) và BĐS (XLRE). Lợi suất giảm (nhưng không do suy thoái) là bữa tiệc của cổ phiếu tăng trưởng."
+            "market_reaction": "Trọng lực của thị trường. Lợi suất 10 năm vọt lên > 4.5% sẽ dìm chết định giá cổ phiếu Tech (XLK) và BĐS (XLRE). Lợi suất giảm (nhưng không do suy thoái) là bữa tiệc của cổ phiếu tăng trưởng.",
+            "read_format": "**Level (%)** · 1D/1W changes for momentum · KHÔNG MoM/YoY",
+            "watch_thresholds": "<3% = recession bid / 4-4.5% = neutral / >5% = stress / spike >50bps/week = disruption",
+            "release_pattern": "Daily, real-time (US Treasury)",
+            "related_indicators": [
+              "DGS2",
+              "T10Y2Y",
+              "T10YIE",
+              "MBA30Y"
+            ]
           },
           {
             "id": "DGS2",
@@ -39359,7 +39946,15 @@ window.MACRO_DATA = {
             "link": "https://fred.stlouisfed.org/series/DGS2",
             "expectation_meaning": "Dùng cùng DGS10 để đo đường cong lợi suất (Yield Curve).",
             "good_vs_bad": "Nếu 2Y > 10Y (Đảo ngược): Cảnh báo Suy thoái mạnh (Recession).",
-            "market_reaction": "Lợi suất 2 năm đi sát với kỳ vọng tăng/giảm lãi suất của Fed. Khi 2Y sụt giảm nhanh, thị trường đang cược Fed sẽ xoay trục (Pivot) cứu nền kinh tế."
+            "market_reaction": "Lợi suất 2 năm đi sát với kỳ vọng tăng/giảm lãi suất của Fed. Khi 2Y sụt giảm nhanh, thị trường đang cược Fed sẽ xoay trục (Pivot) cứu nền kinh tế.",
+            "read_format": "**Level (%)** · Reflect Fed expectations 2y · Compare with Fed Funds",
+            "watch_thresholds": "DGS2 < Fed Funds = market expects cuts / > Fed Funds = expects hikes",
+            "release_pattern": "Daily, real-time",
+            "related_indicators": [
+              "DFF",
+              "DGS10",
+              "T10Y2Y"
+            ]
           }
         ]
       },
@@ -39379,6 +39974,13 @@ window.MACRO_DATA = {
             "market_reaction": "Trade deficit narrow → GDPNow revise up → cyclicals rally. Wide deficit + tariffs news → USD react.",
             "release_aliases": [
               "trade balance"
+            ],
+            "read_format": "**Level (B USD)** + **MoM** change · YoY% trend",
+            "watch_thresholds": "US thường deficit; thu hẹp = positive GDP",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "BOPGSTB",
+              "GOODSTRADE"
             ]
           },
           {
@@ -39393,6 +39995,13 @@ window.MACRO_DATA = {
             "market_reaction": "Strong exports + weak USD = perfect cho US multinationals → Tech (Apple, MSFT) rally.",
             "release_aliases": [
               "exports"
+            ],
+            "read_format": "**Level (B USD)** + **MoM** change · YoY% trend",
+            "watch_thresholds": "US thường deficit; thu hẹp = positive GDP",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "BOPGSTB",
+              "GOODSTRADE"
             ]
           },
           {
@@ -39407,6 +40016,13 @@ window.MACRO_DATA = {
             "market_reaction": "Imports drop liên tiếp = XLY (retail) pressure, recession concern.",
             "release_aliases": [
               "imports"
+            ],
+            "read_format": "**Level (B USD)** + **MoM** change · YoY% trend",
+            "watch_thresholds": "US thường deficit; thu hẹp = positive GDP",
+            "release_pattern": "Hàng tháng",
+            "related_indicators": [
+              "BOPGSTB",
+              "GOODSTRADE"
             ]
           }
         ]
@@ -39427,6 +40043,13 @@ window.MACRO_DATA = {
             "market_reaction": "Niche but watched by macro pros. M2 growth slow + Fed hawkish = liquidity squeeze → risk-off.",
             "release_aliases": [
               "m2 money supply"
+            ],
+            "read_format": "**Level** + **YoY%** trend dài hạn",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Weekly hoặc monthly",
+            "related_indicators": [
+              "WALCL",
+              "M2SL"
             ]
           },
           {
@@ -39441,6 +40064,13 @@ window.MACRO_DATA = {
             "market_reaction": "Khi Fed announce slow QT pace → bullish equities (less liquidity drain). Acceleration → risk-off.",
             "release_aliases": [
               "fed's balance sheet"
+            ],
+            "read_format": "**Level** + **YoY%** trend dài hạn",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Weekly hoặc monthly",
+            "related_indicators": [
+              "WALCL",
+              "M2SL"
             ]
           },
           {
@@ -39455,6 +40085,13 @@ window.MACRO_DATA = {
             "market_reaction": "Watched by repo market, banks. Drop sharp + repo rates spike = Fed phải intervene → emergency bullish for assets.",
             "release_aliases": [
               "reserve balances with federal reserve banks"
+            ],
+            "read_format": "**Level** + **YoY%** trend dài hạn",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Weekly hoặc monthly",
+            "related_indicators": [
+              "WALCL",
+              "M2SL"
             ]
           },
           {
@@ -39469,6 +40106,13 @@ window.MACRO_DATA = {
             "market_reaction": "Credit card delinquency rates lên kèm consumer credit tăng = imminent consumer slowdown.",
             "release_aliases": [
               "consumer credit"
+            ],
+            "read_format": "**Level** + **YoY%** trend dài hạn",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Weekly hoặc monthly",
+            "related_indicators": [
+              "WALCL",
+              "M2SL"
             ]
           },
           {
@@ -39483,6 +40127,13 @@ window.MACRO_DATA = {
             "market_reaction": "Khi deficit blow out > expectations → 10Y yield jump. Bond auctions với deficit cao có thể tail (yield premium).",
             "release_aliases": [
               "federal budget balance"
+            ],
+            "read_format": "**Level** + **YoY%** trend dài hạn",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Weekly hoặc monthly",
+            "related_indicators": [
+              "WALCL",
+              "M2SL"
             ]
           },
           {
@@ -39497,6 +40148,13 @@ window.MACRO_DATA = {
             "market_reaction": "Niche. Pros theo dõi để adjust position pre-Retail Sales monthly.",
             "release_aliases": [
               "redbook"
+            ],
+            "read_format": "**Level** + **YoY%** trend dài hạn",
+            "watch_thresholds": "Xem mục good_vs_bad",
+            "release_pattern": "Weekly hoặc monthly",
+            "related_indicators": [
+              "WALCL",
+              "M2SL"
             ]
           }
         ]
@@ -39519,6 +40177,13 @@ window.MACRO_DATA = {
               "crude oil inventories",
               "cushing crude oil inventories",
               "crude oil imports"
+            ],
+            "read_format": "**Level (M barrels hoặc K)** + **WoW change** (vs forecast)",
+            "watch_thresholds": "Big surprise vs forecast = price mover",
+            "release_pattern": "Weekly",
+            "related_indicators": [
+              "WCESTUS1",
+              "DCOILWTICO"
             ]
           },
           {
@@ -39533,6 +40198,13 @@ window.MACRO_DATA = {
             "market_reaction": "WTI react immediate. Pros dùng API surprise để fade nếu EIA tomorrow expected opposite.",
             "release_aliases": [
               "api weekly crude oil stock"
+            ],
+            "read_format": "**Level (M barrels hoặc K)** + **WoW change** (vs forecast)",
+            "watch_thresholds": "Big surprise vs forecast = price mover",
+            "release_pattern": "Weekly",
+            "related_indicators": [
+              "WCESTUS1",
+              "DCOILWTICO"
             ]
           },
           {
@@ -39547,6 +40219,13 @@ window.MACRO_DATA = {
             "market_reaction": "Henry Hub natural gas futures move 2-5% sau release. Utilities (XLU) sometimes indirect impact.",
             "release_aliases": [
               "natural gas storage"
+            ],
+            "read_format": "**Level (M barrels hoặc K)** + **WoW change** (vs forecast)",
+            "watch_thresholds": "Big surprise vs forecast = price mover",
+            "release_pattern": "Weekly",
+            "related_indicators": [
+              "WCESTUS1",
+              "DCOILWTICO"
             ]
           },
           {
@@ -39562,6 +40241,13 @@ window.MACRO_DATA = {
             "release_aliases": [
               "u.s. baker hughes oil rig count",
               "u.s. baker hughes total rig count"
+            ],
+            "read_format": "**Level (M barrels hoặc K)** + **WoW change** (vs forecast)",
+            "watch_thresholds": "Big surprise vs forecast = price mover",
+            "release_pattern": "Weekly",
+            "related_indicators": [
+              "WCESTUS1",
+              "DCOILWTICO"
             ]
           },
           {
@@ -39576,6 +40262,13 @@ window.MACRO_DATA = {
             "market_reaction": "Niche. Combined với Refinery Utilization để gauge sức khoẻ refining sector.",
             "release_aliases": [
               "eia refinery crude runs"
+            ],
+            "read_format": "**Level (M barrels hoặc K)** + **WoW change** (vs forecast)",
+            "watch_thresholds": "Big surprise vs forecast = price mover",
+            "release_pattern": "Weekly",
+            "related_indicators": [
+              "WCESTUS1",
+              "DCOILWTICO"
             ]
           },
           {
@@ -39592,6 +40285,13 @@ window.MACRO_DATA = {
               "eia weekly distillates stocks",
               "distillate fuel production",
               "heating oil stockpiles"
+            ],
+            "read_format": "**Level (M barrels hoặc K)** + **WoW change** (vs forecast)",
+            "watch_thresholds": "Big surprise vs forecast = price mover",
+            "release_pattern": "Weekly",
+            "related_indicators": [
+              "WCESTUS1",
+              "DCOILWTICO"
             ]
           },
           {
@@ -39606,6 +40306,13 @@ window.MACRO_DATA = {
             "market_reaction": "Niche. Energy traders dùng.",
             "release_aliases": [
               "gasoline production"
+            ],
+            "read_format": "**Level (M barrels hoặc K)** + **WoW change** (vs forecast)",
+            "watch_thresholds": "Big surprise vs forecast = price mover",
+            "release_pattern": "Weekly",
+            "related_indicators": [
+              "WCESTUS1",
+              "DCOILWTICO"
             ]
           },
           {
@@ -39620,6 +40327,13 @@ window.MACRO_DATA = {
             "market_reaction": "WTI react. CPI Energy component reflects retail gasoline 2-4 tuần sau.",
             "release_aliases": [
               "gasoline inventories"
+            ],
+            "read_format": "**Level (M barrels hoặc K)** + **WoW change** (vs forecast)",
+            "watch_thresholds": "Big surprise vs forecast = price mover",
+            "release_pattern": "Weekly",
+            "related_indicators": [
+              "WCESTUS1",
+              "DCOILWTICO"
             ]
           },
           {
@@ -39634,6 +40348,13 @@ window.MACRO_DATA = {
             "market_reaction": "VLO, MPC, PSX react. Indirect WTI impact (refineries demand crude).",
             "release_aliases": [
               "eia weekly refinery utilization rates"
+            ],
+            "read_format": "**Level (M barrels hoặc K)** + **WoW change** (vs forecast)",
+            "watch_thresholds": "Big surprise vs forecast = price mover",
+            "release_pattern": "Weekly",
+            "related_indicators": [
+              "WCESTUS1",
+              "DCOILWTICO"
             ]
           },
           {
@@ -39648,7 +40369,276 @@ window.MACRO_DATA = {
             "market_reaction": "Big monthly mover for energy thesis. Combined với OPEC Monthly + IEA Monthly để xây global oil view.",
             "release_aliases": [
               "eia short-term energy outlook"
+            ],
+            "read_format": "**Level (M barrels hoặc K)** + **WoW change** (vs forecast)",
+            "watch_thresholds": "Big surprise vs forecast = price mover",
+            "release_pattern": "Weekly",
+            "related_indicators": [
+              "WCESTUS1",
+              "DCOILWTICO"
             ]
+          }
+        ]
+      },
+      {
+        "id": "glossary",
+        "name": "Khái Niệm Cơ Bản (Glossary)",
+        "indicators": [
+          {
+            "id": "G_SURPRISE",
+            "short_name": "Surprise / Beat / Miss",
+            "full_name": "Surprise — Beat / Miss / In-line",
+            "frequency": "—",
+            "link": "",
+            "description": "Khi 1 chỉ số công bố ACTUAL khác FORECAST của consensus analysts: **beat** = actual > forecast (positive surprise), **miss** = actual < forecast (negative surprise), **in-line** = sát forecast (chênh <2% hoặc <0.05).",
+            "expectation_meaning": "Market đã price-in forecast. Chỉ phần SURPRISE mới move giá.",
+            "good_vs_bad": "Beat/miss tự nó không bullish/bearish — phụ thuộc direction (beat CPI = bearish equities; beat NFP = bullish equities thường).",
+            "market_reaction": "Surprise lớn (vd > ±0.5σ) = market move ngay. In-line = ít phản ứng. Pros theo dõi surprise direction + magnitude.",
+            "read_format": "—",
+            "watch_thresholds": "<0.5σ noise / 0.5-1σ mild / 1-2σ strong / >2σ shock",
+            "release_pattern": "Mọi data release đều có forecast cluster",
+            "related_indicators": []
+          },
+          {
+            "id": "G_SIGMA",
+            "short_name": "σ (Sigma / Standard Deviation)",
+            "full_name": "Standard Deviation (σ) — Surprise Magnitude",
+            "frequency": "—",
+            "link": "",
+            "description": "Đo magnitude của surprise vs forecast distribution. 1σ = std dev của analyst forecasts. 2σ = surprise rất hiếm (~5% xác suất).",
+            "expectation_meaning": "Surprise 1σ ≈ rate phổ biến trong 'beat/miss'; 2σ ≈ shock; >3σ ≈ extreme rare.",
+            "good_vs_bad": "Càng lớn σ → market move càng mạnh.",
+            "market_reaction": "Pros định cỡ position theo expected σ. Surprise 2σ thường tạo break-out kỹ thuật.",
+            "read_format": "—",
+            "watch_thresholds": "1σ normal / 2σ strong / 3σ shock",
+            "release_pattern": "—",
+            "related_indicators": []
+          },
+          {
+            "id": "G_SA_NSA",
+            "short_name": "SA / NSA",
+            "full_name": "Seasonally Adjusted (SA) vs Not Seasonally Adjusted (NSA)",
+            "frequency": "—",
+            "link": "https://www.bls.gov/cps/seasfaq.htm",
+            "description": "**SA** = data đã loại bỏ seasonal patterns (vd retail spike December, job adds spring). **NSA** = raw data theo lịch.",
+            "expectation_meaning": "Hầu hết indicators đang xem là SA. NSA thường used cho long-term trend.",
+            "good_vs_bad": "SA giúp so sánh tháng-tháng. NSA cho seasonal context (vd retail YoY NSA mới meaningful Dec vs Jul).",
+            "market_reaction": "Đừng so SA và NSA. Đa số headline = SA.",
+            "read_format": "Hỏi rõ data source ghi SA hay NSA. Default SA cho US monthly.",
+            "watch_thresholds": "—",
+            "release_pattern": "—",
+            "related_indicators": []
+          },
+          {
+            "id": "G_HEADLINE_CORE",
+            "short_name": "Headline vs Core",
+            "full_name": "Headline vs Core (Food & Energy excluded)",
+            "frequency": "—",
+            "link": "",
+            "description": "**Headline** = full basket (gồm thực phẩm + năng lượng — volatile). **Core** = loại bỏ food + energy (sticky inflation gauge).",
+            "expectation_meaning": "Fed nhìn Core hơn Headline vì food/energy noise. Trader thường nhìn cả 2.",
+            "good_vs_bad": "Core hơn Headline (vd Core CPI 2.5%, Headline 4%) → energy spike tạm thời; Core < Headline kéo dài → disinflation thực.",
+            "market_reaction": "Core surprise > Headline surprise → react mạnh hơn (Fed-relevant).",
+            "read_format": "Cả 2 nên xem YoY. Compare diff.",
+            "watch_thresholds": "—",
+            "release_pattern": "—",
+            "related_indicators": [
+              "CPIAUCSL",
+              "CPILFESL",
+              "PCEPI",
+              "PCEPILFE"
+            ]
+          },
+          {
+            "id": "G_HARD_SURVEY",
+            "short_name": "Hard data vs Survey",
+            "full_name": "Hard Data vs Soft Data (Survey)",
+            "frequency": "—",
+            "link": "",
+            "description": "**Hard data** = số đo được (NFP, Retail Sales, CPI từ BLS/BEA). **Soft data / Survey** = ý kiến (ISM PMI, Michigan, NFIB).",
+            "expectation_meaning": "Hard data lag hơn Survey. Survey lead hard data 1-3 tháng.",
+            "good_vs_bad": "Divergence: Survey weak nhưng Hard data strong = consumer/biz lo nhưng vẫn chi. Vice versa = lo hard data follow soft.",
+            "market_reaction": "Trader weight hard data cao hơn cho regime calls; soft data cho early signals.",
+            "read_format": "—",
+            "watch_thresholds": "—",
+            "release_pattern": "—",
+            "related_indicators": [
+              "PAYEMS",
+              "RSAFS",
+              "UMCSENT",
+              "NFIB"
+            ]
+          },
+          {
+            "id": "G_REAL_NOMINAL",
+            "short_name": "Real vs Nominal",
+            "full_name": "Real (Inflation-Adjusted) vs Nominal",
+            "frequency": "—",
+            "link": "",
+            "description": "**Nominal** = giá trị USD hiện tại. **Real** = đã trừ inflation (purchasing power).",
+            "expectation_meaning": "Real = sức mua thật. Nominal growth 5% với CPI 4% = Real 1% (yếu).",
+            "good_vs_bad": "Real growth dương = economy thật sự khoẻ. Real âm = bị inflation nuốt.",
+            "market_reaction": "Real Retail Sales, Real PCE, Real Earnings → metric quan trọng cho consumer thesis.",
+            "read_format": "Khi có data Nominal + Real, **luôn ưu tiên Real**.",
+            "watch_thresholds": "—",
+            "release_pattern": "—",
+            "related_indicators": [
+              "PCE",
+              "RSAFS",
+              "REALEARN"
+            ]
+          },
+          {
+            "id": "G_YOY_MOM_QOQ",
+            "short_name": "YoY / MoM / QoQ Ann.",
+            "full_name": "Year-over-Year / Month-over-Month / Quarter-over-Quarter Annualized",
+            "frequency": "—",
+            "link": "",
+            "description": "**YoY%** so cùng kỳ năm trước (trend dài). **MoM%** so tháng trước (momentum gần). **QoQ ann.** = 4 quý quy năm (cho GDP).",
+            "expectation_meaning": "YoY noise ít, lag. MoM signal sớm hơn, noise nhiều. QoQ ann. only meaningful for quarterly series.",
+            "good_vs_bad": "Pros nhìn cả 3 để hiểu: YoY = vị trí trend, MoM = momentum gần, 3-mo annualized = 'Fed view'.",
+            "market_reaction": "MoM surprise move giá nhanh; YoY confirm regime.",
+            "read_format": "—",
+            "watch_thresholds": "—",
+            "release_pattern": "—",
+            "related_indicators": []
+          },
+          {
+            "id": "G_3MO_ANN",
+            "short_name": "3-Month Annualized",
+            "full_name": "3-Month Annualized Rate",
+            "frequency": "—",
+            "link": "",
+            "description": "Tăng trưởng 3 tháng gần nhất quy thành tỷ lệ năm. Công thức: ((latest/3mo_ago)^4 − 1) × 100.",
+            "expectation_meaning": "Fed dùng cho Core PCE để judge 'momentum gần' (vs YoY lag). Quan trọng cho inflation reads.",
+            "good_vs_bad": "3-mo annualized > YoY → đang tăng tốc. < YoY → giảm tốc.",
+            "market_reaction": "Powell cite 3-mo annualized rất nhiều trong press conferences post-FOMC.",
+            "read_format": "—",
+            "watch_thresholds": "Core PCE 3-mo >4% = hawkish urgency / <2.5% = cuts khả thi",
+            "release_pattern": "—",
+            "related_indicators": [
+              "PCEPILFE",
+              "CPILFESL"
+            ]
+          },
+          {
+            "id": "G_REVISION",
+            "short_name": "Revisions",
+            "full_name": "Data Revisions",
+            "frequency": "—",
+            "link": "",
+            "description": "Khi 1 series được revise (BLS revise NFP T+1, T+2 tháng; BEA revise GDP 3 lần). Initial release thường được revise.",
+            "expectation_meaning": "Initial number = best guess. Revisions = refinement. NFP có thể revise ±50K. GDP advance vs final ±0.5%.",
+            "good_vs_bad": "Watch revision direction: nếu series consistently revised down = momentum yếu hơn initial reports.",
+            "market_reaction": "Revisions ít market mover trừ khi quá lớn (vd 2024 NFP revision -800K → market shock).",
+            "read_format": "Khi tracking trend → dùng revised data. Khi tracking surprise → dùng initial release.",
+            "watch_thresholds": "—",
+            "release_pattern": "—",
+            "related_indicators": [
+              "PAYEMS",
+              "GDPC1"
+            ]
+          },
+          {
+            "id": "G_FORECAST_CONSENSUS",
+            "short_name": "Forecast / Consensus",
+            "full_name": "Analyst Forecast / Consensus Estimate",
+            "frequency": "—",
+            "link": "",
+            "description": "Bloomberg/Reuters polls ~50-100 analysts trước mỗi release. Median = consensus. Range = uncertainty.",
+            "expectation_meaning": "Market price = consensus. Move chỉ khi actual ≠ consensus.",
+            "good_vs_bad": "Consensus tight (range hẹp) → surprise dễ shock. Consensus wide → surprise expected.",
+            "market_reaction": "Trader thường so actual vs consensus, KHÔNG so actual vs previous.",
+            "read_format": "—",
+            "watch_thresholds": "—",
+            "release_pattern": "—",
+            "related_indicators": []
+          },
+          {
+            "id": "G_FRONT_RUNNING",
+            "short_name": "Front-running / Whisper Number",
+            "full_name": "Front-running & Whisper Number",
+            "frequency": "—",
+            "link": "",
+            "description": "**Front-running** = position trước release theo intuition. **Whisper** = unofficial expectation từ trading community (thường khác consensus).",
+            "expectation_meaning": "Khi Whisper khác Consensus, actual matching Whisper sẽ react khác matching Consensus.",
+            "good_vs_bad": "Pros theo dõi 'whisper > consensus' để gauge positioning skew.",
+            "market_reaction": "—",
+            "read_format": "—",
+            "watch_thresholds": "—",
+            "release_pattern": "—",
+            "related_indicators": []
+          },
+          {
+            "id": "G_RISK_ON_OFF",
+            "short_name": "Risk-on / Risk-off",
+            "full_name": "Risk-on vs Risk-off Regime",
+            "frequency": "—",
+            "link": "",
+            "description": "**Risk-on** = market embraces risk (equities up, HY tight, VIX low). **Risk-off** = flight to safety (bonds up, USD up, VIX up, equities down).",
+            "expectation_meaning": "Cluster: VIX, HY spread, USD, gold, BTC, equity sectors all confirm together.",
+            "good_vs_bad": "Risk-on bullish equities (Tech/Discretionary lead). Risk-off bullish bonds + defensives (Staples/Healthcare/Utilities).",
+            "market_reaction": "—",
+            "read_format": "—",
+            "watch_thresholds": "VIX <15 + HY <3% = risk-on extreme / VIX >25 + HY >5% = risk-off",
+            "release_pattern": "—",
+            "related_indicators": [
+              "VIXCLS",
+              "BAMLH0A0HYM2",
+              "DTWEXBGS"
+            ]
+          },
+          {
+            "id": "G_DCF_DURATION",
+            "short_name": "DCF / Duration",
+            "full_name": "Discounted Cash Flow (DCF) — Duration Sensitivity",
+            "frequency": "—",
+            "link": "",
+            "description": "Stock value = discounted future cash flows. Yields tăng → discount factor lớn hơn → present value xuống.",
+            "expectation_meaning": "Long-duration assets (Tech, REITs, Utilities) nhạy với yields nhất. Short-duration (Energy, Financials) ít nhạy.",
+            "good_vs_bad": "10Y yield giảm 50bps → XLK +3-5%; tăng 50bps → XLK -3-5%.",
+            "market_reaction": "Cross-check sector RS với yields. Divergence (vd XLK rally khi yields tăng) = AI narrative override macro.",
+            "read_format": "—",
+            "watch_thresholds": "—",
+            "release_pattern": "—",
+            "related_indicators": [
+              "DGS10",
+              "T10YIE"
+            ]
+          },
+          {
+            "id": "G_HAWKISH_DOVISH",
+            "short_name": "Hawkish / Dovish",
+            "full_name": "Fed Stance: Hawkish vs Dovish",
+            "frequency": "—",
+            "link": "",
+            "description": "**Hawkish** = Fed muốn giữ rate cao / không cut (fight inflation). **Dovish** = Fed sẵn sàng cut (support growth/jobs).",
+            "expectation_meaning": "Powell speeches + FOMC statements + dot plot → judge stance.",
+            "good_vs_bad": "Hawkish: yields up, USD up, XLK pressure. Dovish: yields down, USD down, XLK rally.",
+            "market_reaction": "Most market-moving events: Powell post-FOMC press conf, Jackson Hole.",
+            "read_format": "—",
+            "watch_thresholds": "—",
+            "release_pattern": "FOMC 8x/year + speakers monthly",
+            "related_indicators": [
+              "DFF",
+              "DGS2",
+              "DGS10"
+            ]
+          },
+          {
+            "id": "G_CLUSTER_READ",
+            "short_name": "Cluster Reads",
+            "full_name": "Cluster Reads — 1 data point ≠ trend",
+            "frequency": "—",
+            "link": "",
+            "description": "Single data point = noise (1 month NFP -50K không phải recession). Cần ≥2 indicators cùng signal mới reliable.",
+            "expectation_meaning": "Vd 'labor cracking' chỉ confirm khi ICSA tăng + Challenger spike + ADP yếu + NFP miss đồng thời.",
+            "good_vs_bad": "Pros chờ cluster confirm trước khi rebalance. Amateurs react single data → whipsaw.",
+            "market_reaction": "—",
+            "read_format": "Luôn nhìn cluster, không nhìn single data point.",
+            "watch_thresholds": "—",
+            "release_pattern": "—",
+            "related_indicators": []
           }
         ]
       }

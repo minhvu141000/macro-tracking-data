@@ -50,6 +50,7 @@ h1 {
   font-weight: 700;
   background: linear-gradient(to right, #60a5fa, #34d399);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -370,3 +371,31 @@ h1 {
 .surprise-beat { color: var(--highlight-color); font-weight: bold; }
 .surprise-miss { color: var(--danger-color); font-weight: bold; }
 .surprise-inline { color: var(--text-secondary); }
+
+/* Related indicators chips */
+.related-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.related-chip {
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: #93c5fd;
+  padding: 0.4rem 0.85rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.related-chip:hover {
+  background: rgba(59, 130, 246, 0.25);
+  border-color: var(--accent-color);
+  color: #fff;
+  transform: translateY(-1px);
+}
