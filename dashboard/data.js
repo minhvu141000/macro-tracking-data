@@ -1,189 +1,8 @@
 window.MACRO_DATA = {
-  "last_updated": "2026-06-13T02:12:26.899622+00:00",
+  "last_updated": "2026-06-13T14:13:52.563373+00:00",
   "daily_releases": {
-    "date": "2026-06-12",
-    "releases": [
-      {
-        "name": "Michigan 1-Year Inflation Expectations  (Jun)",
-        "time": "2026/06/12 10:00:00",
-        "importance": "bull2",
-        "actual": "4.6%",
-        "forecast": "4.9%",
-        "previous": "4.8%",
-        "event_url": "https://www.investing.com/economic-calendar/michigan-1-year-inflation-expectations-389",
-        "source": "investing.com"
-      },
-      {
-        "name": "Michigan 5-Year Inflation Expectations  (Jun)",
-        "time": "2026/06/12 10:00:00",
-        "importance": "bull2",
-        "actual": "3.4%",
-        "forecast": "3.8%",
-        "previous": "3.9%",
-        "event_url": "https://www.investing.com/economic-calendar/michigan-5-year-inflation-expectations-1568",
-        "source": "investing.com"
-      },
-      {
-        "name": "Michigan Consumer Expectations  (Jun)",
-        "time": "2026/06/12 10:00:00",
-        "importance": "bull2",
-        "actual": "49.3",
-        "forecast": "44.3",
-        "previous": "44.1",
-        "event_url": "https://www.investing.com/economic-calendar/michigan-consumer-expectations-900",
-        "source": "investing.com"
-      },
-      {
-        "name": "Michigan Consumer Sentiment  (Jun)",
-        "time": "2026/06/12 10:00:00",
-        "importance": "bull2",
-        "actual": "48.9",
-        "forecast": "46.1",
-        "previous": "44.8",
-        "event_url": "https://www.investing.com/economic-calendar/michigan-consumer-sentiment-320",
-        "source": "investing.com"
-      },
-      {
-        "name": "Michigan Current Conditions  (Jun)",
-        "time": "2026/06/12 10:00:00",
-        "importance": "bull1",
-        "actual": "48.4",
-        "forecast": "46.2",
-        "previous": "45.8",
-        "event_url": "https://www.investing.com/economic-calendar/michigan-current-conditions-901",
-        "source": "investing.com"
-      },
-      {
-        "name": "U.S. Baker Hughes Oil Rig Count",
-        "time": "2026/06/12 13:00:00",
-        "importance": "bull2",
-        "actual": "433",
-        "forecast": null,
-        "previous": "431",
-        "event_url": "https://www.investing.com/economic-calendar/baker-hughes-u.s.-rig-count-1652",
-        "source": "investing.com"
-      },
-      {
-        "name": "U.S. Baker Hughes Total Rig Count",
-        "time": "2026/06/12 13:00:00",
-        "importance": "bull2",
-        "actual": "562",
-        "forecast": null,
-        "previous": "563",
-        "event_url": "https://www.investing.com/economic-calendar/u.s.-baker-hughes-total-rig-count-1810",
-        "source": "investing.com"
-      },
-      {
-        "name": "CFTC Aluminium speculative net positions",
-        "time": "2026/06/12 15:30:00",
-        "importance": "bull1",
-        "actual": "0.4K",
-        "forecast": null,
-        "previous": "0.8K",
-        "event_url": "https://www.investing.com/economic-calendar/cftc-aluminium-speculative-net-positions-1821",
-        "source": "investing.com"
-      },
-      {
-        "name": "CFTC Copper speculative net positions",
-        "time": "2026/06/12 15:30:00",
-        "importance": "bull1",
-        "actual": "74.5K",
-        "forecast": null,
-        "previous": "78.8K",
-        "event_url": "https://www.investing.com/economic-calendar/cftc-copper-speculative-positions-1620",
-        "source": "investing.com"
-      },
-      {
-        "name": "CFTC Corn speculative net positions",
-        "time": "2026/06/12 15:30:00",
-        "importance": "bull1",
-        "actual": "103.6K",
-        "forecast": null,
-        "previous": "199.9K",
-        "event_url": "https://www.investing.com/economic-calendar/cftc-corn-speculative-positions-1813",
-        "source": "investing.com"
-      },
-      {
-        "name": "CFTC Crude Oil speculative net positions",
-        "time": "2026/06/12 15:30:00",
-        "importance": "bull2",
-        "actual": "130.3K",
-        "forecast": null,
-        "previous": "155.9K",
-        "event_url": "https://www.investing.com/economic-calendar/cftc-crude-oil-speculative-positions-1653",
-        "source": "investing.com"
-      },
-      {
-        "name": "CFTC Gold speculative net positions",
-        "time": "2026/06/12 15:30:00",
-        "importance": "bull2",
-        "actual": "173.8K",
-        "forecast": null,
-        "previous": "176.0K",
-        "event_url": "https://www.investing.com/economic-calendar/cftc-gold-speculative-positions-1618",
-        "source": "investing.com"
-      },
-      {
-        "name": "CFTC Nasdaq 100 speculative net positions",
-        "time": "2026/06/12 15:30:00",
-        "importance": "bull2",
-        "actual": "-1.3K",
-        "forecast": null,
-        "previous": "-14.9K",
-        "event_url": "https://www.investing.com/economic-calendar/cftc-nasdaq-100-speculative-positions-1959",
-        "source": "investing.com"
-      },
-      {
-        "name": "CFTC Natural Gas speculative net positions",
-        "time": "2026/06/12 15:30:00",
-        "importance": "bull1",
-        "actual": "-194.0K",
-        "forecast": null,
-        "previous": "-186.1K",
-        "event_url": "https://www.investing.com/economic-calendar/cftc-natural-gas-speculative-positions-1820",
-        "source": "investing.com"
-      },
-      {
-        "name": "CFTC S&P 500 speculative net positions",
-        "time": "2026/06/12 15:30:00",
-        "importance": "bull2",
-        "actual": "-205.6K",
-        "forecast": null,
-        "previous": "-220.8K",
-        "event_url": "https://www.investing.com/economic-calendar/cftc-s-p-500-speculative-positions-1619",
-        "source": "investing.com"
-      },
-      {
-        "name": "CFTC Silver speculative net positions",
-        "time": "2026/06/12 15:30:00",
-        "importance": "bull1",
-        "actual": "22.2K",
-        "forecast": null,
-        "previous": "23.9K",
-        "event_url": "https://www.investing.com/economic-calendar/cftc-silver-speculative-positions-1621",
-        "source": "investing.com"
-      },
-      {
-        "name": "CFTC Soybeans speculative net positions",
-        "time": "2026/06/12 15:30:00",
-        "importance": "bull1",
-        "actual": "150.5K",
-        "forecast": null,
-        "previous": "187.8K",
-        "event_url": "https://www.investing.com/economic-calendar/cftc-soybeans-speculative-positions-1811",
-        "source": "investing.com"
-      },
-      {
-        "name": "CFTC Wheat speculative net positions",
-        "time": "2026/06/12 15:30:00",
-        "importance": "bull1",
-        "actual": "-57.9K",
-        "forecast": null,
-        "previous": "-40.8K",
-        "event_url": "https://www.investing.com/economic-calendar/cftc-wheat-speculative-positions-1812",
-        "source": "investing.com"
-      }
-    ]
+    "date": "2026-06-13",
+    "releases": []
   },
   "releases_history": {
     "2026-05-21": [],
@@ -2937,7 +2756,8 @@ window.MACRO_DATA = {
         "event_url": "https://www.investing.com/economic-calendar/cftc-wheat-speculative-positions-1812",
         "source": "investing.com"
       }
-    ]
+    ],
+    "2026-06-13": []
   },
   "history": {
     "CPIAUCSL": {
@@ -5893,6 +5713,1490 @@ window.MACRO_DATA = {
         {
           "date": "2026-05-01",
           "value": 154.147
+        }
+      ]
+    },
+    "CUSR0000SAH1": {
+      "label": "CPI Shelter",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 427.998
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 426.642
+      },
+      "change_pct": 0.318,
+      "history": [
+        {
+          "date": "2016-06-01",
+          "value": 287.819
+        },
+        {
+          "date": "2016-07-01",
+          "value": 288.524
+        },
+        {
+          "date": "2016-08-01",
+          "value": 289.367
+        },
+        {
+          "date": "2016-09-01",
+          "value": 290.369
+        },
+        {
+          "date": "2016-10-01",
+          "value": 291.378
+        },
+        {
+          "date": "2016-11-01",
+          "value": 292.227
+        },
+        {
+          "date": "2016-12-01",
+          "value": 293.066
+        },
+        {
+          "date": "2017-01-01",
+          "value": 293.769
+        },
+        {
+          "date": "2017-02-01",
+          "value": 294.543
+        },
+        {
+          "date": "2017-03-01",
+          "value": 295.012
+        },
+        {
+          "date": "2017-04-01",
+          "value": 295.741
+        },
+        {
+          "date": "2017-05-01",
+          "value": 296.461
+        },
+        {
+          "date": "2017-06-01",
+          "value": 297.215
+        },
+        {
+          "date": "2017-07-01",
+          "value": 297.676
+        },
+        {
+          "date": "2017-08-01",
+          "value": 298.904
+        },
+        {
+          "date": "2017-09-01",
+          "value": 299.711
+        },
+        {
+          "date": "2017-10-01",
+          "value": 300.814
+        },
+        {
+          "date": "2017-11-01",
+          "value": 301.43
+        },
+        {
+          "date": "2017-12-01",
+          "value": 302.428
+        },
+        {
+          "date": "2018-01-01",
+          "value": 303.213
+        },
+        {
+          "date": "2018-02-01",
+          "value": 303.784
+        },
+        {
+          "date": "2018-03-01",
+          "value": 304.812
+        },
+        {
+          "date": "2018-04-01",
+          "value": 305.72
+        },
+        {
+          "date": "2018-05-01",
+          "value": 306.808
+        },
+        {
+          "date": "2018-06-01",
+          "value": 307.183
+        },
+        {
+          "date": "2018-07-01",
+          "value": 308.05
+        },
+        {
+          "date": "2018-08-01",
+          "value": 309.004
+        },
+        {
+          "date": "2018-09-01",
+          "value": 309.522
+        },
+        {
+          "date": "2018-10-01",
+          "value": 310.401
+        },
+        {
+          "date": "2018-11-01",
+          "value": 311.247
+        },
+        {
+          "date": "2018-12-01",
+          "value": 312.132
+        },
+        {
+          "date": "2019-01-01",
+          "value": 312.998
+        },
+        {
+          "date": "2019-02-01",
+          "value": 314.072
+        },
+        {
+          "date": "2019-03-01",
+          "value": 315.051
+        },
+        {
+          "date": "2019-04-01",
+          "value": 316.172
+        },
+        {
+          "date": "2019-05-01",
+          "value": 317.03
+        },
+        {
+          "date": "2019-06-01",
+          "value": 317.949
+        },
+        {
+          "date": "2019-07-01",
+          "value": 318.777
+        },
+        {
+          "date": "2019-08-01",
+          "value": 319.37
+        },
+        {
+          "date": "2019-09-01",
+          "value": 320.436
+        },
+        {
+          "date": "2019-10-01",
+          "value": 320.862
+        },
+        {
+          "date": "2019-11-01",
+          "value": 321.611
+        },
+        {
+          "date": "2019-12-01",
+          "value": 322.247
+        },
+        {
+          "date": "2020-01-01",
+          "value": 323.487
+        },
+        {
+          "date": "2020-02-01",
+          "value": 324.483
+        },
+        {
+          "date": "2020-03-01",
+          "value": 324.54
+        },
+        {
+          "date": "2020-04-01",
+          "value": 324.391
+        },
+        {
+          "date": "2020-05-01",
+          "value": 324.973
+        },
+        {
+          "date": "2020-06-01",
+          "value": 325.425
+        },
+        {
+          "date": "2020-07-01",
+          "value": 326.249
+        },
+        {
+          "date": "2020-08-01",
+          "value": 326.782
+        },
+        {
+          "date": "2020-09-01",
+          "value": 327.043
+        },
+        {
+          "date": "2020-10-01",
+          "value": 327.421
+        },
+        {
+          "date": "2020-11-01",
+          "value": 327.801
+        },
+        {
+          "date": "2020-12-01",
+          "value": 328.217
+        },
+        {
+          "date": "2021-01-01",
+          "value": 328.535
+        },
+        {
+          "date": "2021-02-01",
+          "value": 329.124
+        },
+        {
+          "date": "2021-03-01",
+          "value": 329.947
+        },
+        {
+          "date": "2021-04-01",
+          "value": 331.208
+        },
+        {
+          "date": "2021-05-01",
+          "value": 332.111
+        },
+        {
+          "date": "2021-06-01",
+          "value": 333.835
+        },
+        {
+          "date": "2021-07-01",
+          "value": 335.446
+        },
+        {
+          "date": "2021-08-01",
+          "value": 336.022
+        },
+        {
+          "date": "2021-09-01",
+          "value": 337.357
+        },
+        {
+          "date": "2021-10-01",
+          "value": 338.948
+        },
+        {
+          "date": "2021-11-01",
+          "value": 340.544
+        },
+        {
+          "date": "2021-12-01",
+          "value": 341.931
+        },
+        {
+          "date": "2022-01-01",
+          "value": 342.858
+        },
+        {
+          "date": "2022-02-01",
+          "value": 344.705
+        },
+        {
+          "date": "2022-03-01",
+          "value": 346.396
+        },
+        {
+          "date": "2022-04-01",
+          "value": 348.23
+        },
+        {
+          "date": "2022-05-01",
+          "value": 350.204
+        },
+        {
+          "date": "2022-06-01",
+          "value": 352.616
+        },
+        {
+          "date": "2022-07-01",
+          "value": 354.68
+        },
+        {
+          "date": "2022-08-01",
+          "value": 357.048
+        },
+        {
+          "date": "2022-09-01",
+          "value": 359.601
+        },
+        {
+          "date": "2022-10-01",
+          "value": 362.353
+        },
+        {
+          "date": "2022-11-01",
+          "value": 364.695
+        },
+        {
+          "date": "2022-12-01",
+          "value": 367.466
+        },
+        {
+          "date": "2023-01-01",
+          "value": 369.911
+        },
+        {
+          "date": "2023-02-01",
+          "value": 372.636
+        },
+        {
+          "date": "2023-03-01",
+          "value": 374.678
+        },
+        {
+          "date": "2023-04-01",
+          "value": 376.404
+        },
+        {
+          "date": "2023-05-01",
+          "value": 378.304
+        },
+        {
+          "date": "2023-06-01",
+          "value": 380.155
+        },
+        {
+          "date": "2023-07-01",
+          "value": 381.895
+        },
+        {
+          "date": "2023-08-01",
+          "value": 382.947
+        },
+        {
+          "date": "2023-09-01",
+          "value": 385.285
+        },
+        {
+          "date": "2023-10-01",
+          "value": 386.771
+        },
+        {
+          "date": "2023-11-01",
+          "value": 388.525
+        },
+        {
+          "date": "2023-12-01",
+          "value": 390.139
+        },
+        {
+          "date": "2024-01-01",
+          "value": 392.322
+        },
+        {
+          "date": "2024-02-01",
+          "value": 394.078
+        },
+        {
+          "date": "2024-03-01",
+          "value": 395.827
+        },
+        {
+          "date": "2024-04-01",
+          "value": 397.196
+        },
+        {
+          "date": "2024-05-01",
+          "value": 398.689
+        },
+        {
+          "date": "2024-06-01",
+          "value": 399.699
+        },
+        {
+          "date": "2024-07-01",
+          "value": 401.139
+        },
+        {
+          "date": "2024-08-01",
+          "value": 402.895
+        },
+        {
+          "date": "2024-09-01",
+          "value": 403.956
+        },
+        {
+          "date": "2024-10-01",
+          "value": 405.721
+        },
+        {
+          "date": "2024-11-01",
+          "value": 407.114
+        },
+        {
+          "date": "2024-12-01",
+          "value": 408.165
+        },
+        {
+          "date": "2025-01-01",
+          "value": 409.579
+        },
+        {
+          "date": "2025-02-01",
+          "value": 410.793
+        },
+        {
+          "date": "2025-03-01",
+          "value": 411.639
+        },
+        {
+          "date": "2025-04-01",
+          "value": 413.04
+        },
+        {
+          "date": "2025-05-01",
+          "value": 414.109
+        },
+        {
+          "date": "2025-06-01",
+          "value": 414.981
+        },
+        {
+          "date": "2025-07-01",
+          "value": 415.931
+        },
+        {
+          "date": "2025-08-01",
+          "value": 417.555
+        },
+        {
+          "date": "2025-09-01",
+          "value": 418.422
+        },
+        {
+          "date": "2025-11-01",
+          "value": 419.431
+        },
+        {
+          "date": "2025-12-01",
+          "value": 421.039
+        },
+        {
+          "date": "2026-01-01",
+          "value": 421.965
+        },
+        {
+          "date": "2026-02-01",
+          "value": 422.942
+        },
+        {
+          "date": "2026-03-01",
+          "value": 424.069
+        },
+        {
+          "date": "2026-04-01",
+          "value": 426.642
+        },
+        {
+          "date": "2026-05-01",
+          "value": 427.998
+        }
+      ]
+    },
+    "CUSR0000SAF1": {
+      "label": "CPI Food",
+      "latest": null,
+      "previous": null,
+      "change_pct": null,
+      "history": []
+    },
+    "CUSR0000SA0E": {
+      "label": "CPI Energy",
+      "latest": null,
+      "previous": null,
+      "change_pct": null,
+      "history": []
+    },
+    "CUSR0000SACL1E": {
+      "label": "CPI Core Goods (ex Food & Energy)",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 167.575
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 167.767
+      },
+      "change_pct": -0.114,
+      "history": [
+        {
+          "date": "2016-06-01",
+          "value": 145.452
+        },
+        {
+          "date": "2016-07-01",
+          "value": 145.175
+        },
+        {
+          "date": "2016-08-01",
+          "value": 145.296
+        },
+        {
+          "date": "2016-09-01",
+          "value": 145.56
+        },
+        {
+          "date": "2016-10-01",
+          "value": 145.416
+        },
+        {
+          "date": "2016-11-01",
+          "value": 144.881
+        },
+        {
+          "date": "2016-12-01",
+          "value": 144.726
+        },
+        {
+          "date": "2017-01-01",
+          "value": 144.935
+        },
+        {
+          "date": "2017-02-01",
+          "value": 144.989
+        },
+        {
+          "date": "2017-03-01",
+          "value": 144.995
+        },
+        {
+          "date": "2017-04-01",
+          "value": 144.922
+        },
+        {
+          "date": "2017-05-01",
+          "value": 144.597
+        },
+        {
+          "date": "2017-06-01",
+          "value": 144.43
+        },
+        {
+          "date": "2017-07-01",
+          "value": 144.196
+        },
+        {
+          "date": "2017-08-01",
+          "value": 143.976
+        },
+        {
+          "date": "2017-09-01",
+          "value": 143.61
+        },
+        {
+          "date": "2017-10-01",
+          "value": 143.92
+        },
+        {
+          "date": "2017-11-01",
+          "value": 143.734
+        },
+        {
+          "date": "2017-12-01",
+          "value": 143.742
+        },
+        {
+          "date": "2018-01-01",
+          "value": 144.243
+        },
+        {
+          "date": "2018-02-01",
+          "value": 144.361
+        },
+        {
+          "date": "2018-03-01",
+          "value": 144.49
+        },
+        {
+          "date": "2018-04-01",
+          "value": 144.466
+        },
+        {
+          "date": "2018-05-01",
+          "value": 144.435
+        },
+        {
+          "date": "2018-06-01",
+          "value": 144.12
+        },
+        {
+          "date": "2018-07-01",
+          "value": 143.835
+        },
+        {
+          "date": "2018-08-01",
+          "value": 143.342
+        },
+        {
+          "date": "2018-09-01",
+          "value": 143.421
+        },
+        {
+          "date": "2018-10-01",
+          "value": 143.754
+        },
+        {
+          "date": "2018-11-01",
+          "value": 143.95
+        },
+        {
+          "date": "2018-12-01",
+          "value": 144.218
+        },
+        {
+          "date": "2019-01-01",
+          "value": 144.788
+        },
+        {
+          "date": "2019-02-01",
+          "value": 144.749
+        },
+        {
+          "date": "2019-03-01",
+          "value": 144.733
+        },
+        {
+          "date": "2019-04-01",
+          "value": 144.37
+        },
+        {
+          "date": "2019-05-01",
+          "value": 144.146
+        },
+        {
+          "date": "2019-06-01",
+          "value": 144.173
+        },
+        {
+          "date": "2019-07-01",
+          "value": 144.206
+        },
+        {
+          "date": "2019-08-01",
+          "value": 144.225
+        },
+        {
+          "date": "2019-09-01",
+          "value": 144.175
+        },
+        {
+          "date": "2019-10-01",
+          "value": 144.225
+        },
+        {
+          "date": "2019-11-01",
+          "value": 144.257
+        },
+        {
+          "date": "2019-12-01",
+          "value": 144.38
+        },
+        {
+          "date": "2020-01-01",
+          "value": 144.308
+        },
+        {
+          "date": "2020-02-01",
+          "value": 144.717
+        },
+        {
+          "date": "2020-03-01",
+          "value": 144.488
+        },
+        {
+          "date": "2020-04-01",
+          "value": 143.211
+        },
+        {
+          "date": "2020-05-01",
+          "value": 142.711
+        },
+        {
+          "date": "2020-06-01",
+          "value": 142.586
+        },
+        {
+          "date": "2020-07-01",
+          "value": 143.375
+        },
+        {
+          "date": "2020-08-01",
+          "value": 144.691
+        },
+        {
+          "date": "2020-09-01",
+          "value": 145.698
+        },
+        {
+          "date": "2020-10-01",
+          "value": 146.112
+        },
+        {
+          "date": "2020-11-01",
+          "value": 146.388
+        },
+        {
+          "date": "2020-12-01",
+          "value": 146.718
+        },
+        {
+          "date": "2021-01-01",
+          "value": 146.752
+        },
+        {
+          "date": "2021-02-01",
+          "value": 146.617
+        },
+        {
+          "date": "2021-03-01",
+          "value": 146.933
+        },
+        {
+          "date": "2021-04-01",
+          "value": 149.554
+        },
+        {
+          "date": "2021-05-01",
+          "value": 151.991
+        },
+        {
+          "date": "2021-06-01",
+          "value": 154.821
+        },
+        {
+          "date": "2021-07-01",
+          "value": 155.288
+        },
+        {
+          "date": "2021-08-01",
+          "value": 155.57
+        },
+        {
+          "date": "2021-09-01",
+          "value": 156.259
+        },
+        {
+          "date": "2021-10-01",
+          "value": 158.483
+        },
+        {
+          "date": "2021-11-01",
+          "value": 160.247
+        },
+        {
+          "date": "2021-12-01",
+          "value": 162.481
+        },
+        {
+          "date": "2022-01-01",
+          "value": 164.074
+        },
+        {
+          "date": "2022-02-01",
+          "value": 164.945
+        },
+        {
+          "date": "2022-03-01",
+          "value": 164.318
+        },
+        {
+          "date": "2022-04-01",
+          "value": 164.153
+        },
+        {
+          "date": "2022-05-01",
+          "value": 164.883
+        },
+        {
+          "date": "2022-06-01",
+          "value": 165.765
+        },
+        {
+          "date": "2022-07-01",
+          "value": 165.911
+        },
+        {
+          "date": "2022-08-01",
+          "value": 166.337
+        },
+        {
+          "date": "2022-09-01",
+          "value": 166.6
+        },
+        {
+          "date": "2022-10-01",
+          "value": 166.614
+        },
+        {
+          "date": "2022-11-01",
+          "value": 166.214
+        },
+        {
+          "date": "2022-12-01",
+          "value": 165.939
+        },
+        {
+          "date": "2023-01-01",
+          "value": 166.187
+        },
+        {
+          "date": "2023-02-01",
+          "value": 166.408
+        },
+        {
+          "date": "2023-03-01",
+          "value": 166.755
+        },
+        {
+          "date": "2023-04-01",
+          "value": 167.495
+        },
+        {
+          "date": "2023-05-01",
+          "value": 168.261
+        },
+        {
+          "date": "2023-06-01",
+          "value": 168.061
+        },
+        {
+          "date": "2023-07-01",
+          "value": 167.462
+        },
+        {
+          "date": "2023-08-01",
+          "value": 167.037
+        },
+        {
+          "date": "2023-09-01",
+          "value": 166.558
+        },
+        {
+          "date": "2023-10-01",
+          "value": 166.697
+        },
+        {
+          "date": "2023-11-01",
+          "value": 166.254
+        },
+        {
+          "date": "2023-12-01",
+          "value": 166.117
+        },
+        {
+          "date": "2024-01-01",
+          "value": 165.637
+        },
+        {
+          "date": "2024-02-01",
+          "value": 165.903
+        },
+        {
+          "date": "2024-03-01",
+          "value": 165.775
+        },
+        {
+          "date": "2024-04-01",
+          "value": 165.598
+        },
+        {
+          "date": "2024-05-01",
+          "value": 165.375
+        },
+        {
+          "date": "2024-06-01",
+          "value": 165.079
+        },
+        {
+          "date": "2024-07-01",
+          "value": 164.669
+        },
+        {
+          "date": "2024-08-01",
+          "value": 164.399
+        },
+        {
+          "date": "2024-09-01",
+          "value": 164.634
+        },
+        {
+          "date": "2024-10-01",
+          "value": 164.698
+        },
+        {
+          "date": "2024-11-01",
+          "value": 165.018
+        },
+        {
+          "date": "2024-12-01",
+          "value": 165.006
+        },
+        {
+          "date": "2025-01-01",
+          "value": 165.508
+        },
+        {
+          "date": "2025-02-01",
+          "value": 165.832
+        },
+        {
+          "date": "2025-03-01",
+          "value": 165.719
+        },
+        {
+          "date": "2025-04-01",
+          "value": 165.87
+        },
+        {
+          "date": "2025-05-01",
+          "value": 165.807
+        },
+        {
+          "date": "2025-06-01",
+          "value": 166.114
+        },
+        {
+          "date": "2025-07-01",
+          "value": 166.468
+        },
+        {
+          "date": "2025-08-01",
+          "value": 166.838
+        },
+        {
+          "date": "2025-09-01",
+          "value": 167.17
+        },
+        {
+          "date": "2025-11-01",
+          "value": 167.272
+        },
+        {
+          "date": "2025-12-01",
+          "value": 167.325
+        },
+        {
+          "date": "2026-01-01",
+          "value": 167.394
+        },
+        {
+          "date": "2026-02-01",
+          "value": 167.53
+        },
+        {
+          "date": "2026-03-01",
+          "value": 167.71
+        },
+        {
+          "date": "2026-04-01",
+          "value": 167.767
+        },
+        {
+          "date": "2026-05-01",
+          "value": 167.575
+        }
+      ]
+    },
+    "CUSR0000SASLE": {
+      "label": "CPI Core Services (ex Energy)",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 444.46
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 443.154
+      },
+      "change_pct": 0.295,
+      "history": [
+        {
+          "date": "2016-06-01",
+          "value": 310.354
+        },
+        {
+          "date": "2016-07-01",
+          "value": 310.99
+        },
+        {
+          "date": "2016-08-01",
+          "value": 311.824
+        },
+        {
+          "date": "2016-09-01",
+          "value": 312.348
+        },
+        {
+          "date": "2016-10-01",
+          "value": 312.98
+        },
+        {
+          "date": "2016-11-01",
+          "value": 313.848
+        },
+        {
+          "date": "2016-12-01",
+          "value": 314.701
+        },
+        {
+          "date": "2017-01-01",
+          "value": 315.557
+        },
+        {
+          "date": "2017-02-01",
+          "value": 316.398
+        },
+        {
+          "date": "2017-03-01",
+          "value": 316.298
+        },
+        {
+          "date": "2017-04-01",
+          "value": 316.804
+        },
+        {
+          "date": "2017-05-01",
+          "value": 317.379
+        },
+        {
+          "date": "2017-06-01",
+          "value": 318.046
+        },
+        {
+          "date": "2017-07-01",
+          "value": 318.581
+        },
+        {
+          "date": "2017-08-01",
+          "value": 319.594
+        },
+        {
+          "date": "2017-09-01",
+          "value": 320.32
+        },
+        {
+          "date": "2017-10-01",
+          "value": 321.304
+        },
+        {
+          "date": "2017-11-01",
+          "value": 321.847
+        },
+        {
+          "date": "2017-12-01",
+          "value": 322.767
+        },
+        {
+          "date": "2018-01-01",
+          "value": 323.842
+        },
+        {
+          "date": "2018-02-01",
+          "value": 324.616
+        },
+        {
+          "date": "2018-03-01",
+          "value": 325.461
+        },
+        {
+          "date": "2018-04-01",
+          "value": 326.07
+        },
+        {
+          "date": "2018-05-01",
+          "value": 326.999
+        },
+        {
+          "date": "2018-06-01",
+          "value": 327.704
+        },
+        {
+          "date": "2018-07-01",
+          "value": 328.432
+        },
+        {
+          "date": "2018-08-01",
+          "value": 329.054
+        },
+        {
+          "date": "2018-09-01",
+          "value": 329.794
+        },
+        {
+          "date": "2018-10-01",
+          "value": 330.488
+        },
+        {
+          "date": "2018-11-01",
+          "value": 331.189
+        },
+        {
+          "date": "2018-12-01",
+          "value": 332.093
+        },
+        {
+          "date": "2019-01-01",
+          "value": 332.853
+        },
+        {
+          "date": "2019-02-01",
+          "value": 333.622
+        },
+        {
+          "date": "2019-03-01",
+          "value": 334.296
+        },
+        {
+          "date": "2019-04-01",
+          "value": 335.264
+        },
+        {
+          "date": "2019-05-01",
+          "value": 335.821
+        },
+        {
+          "date": "2019-06-01",
+          "value": 336.728
+        },
+        {
+          "date": "2019-07-01",
+          "value": 337.621
+        },
+        {
+          "date": "2019-08-01",
+          "value": 338.548
+        },
+        {
+          "date": "2019-09-01",
+          "value": 339.461
+        },
+        {
+          "date": "2019-10-01",
+          "value": 340.409
+        },
+        {
+          "date": "2019-11-01",
+          "value": 341.296
+        },
+        {
+          "date": "2019-12-01",
+          "value": 342.021
+        },
+        {
+          "date": "2020-01-01",
+          "value": 343.272
+        },
+        {
+          "date": "2020-02-01",
+          "value": 344.125
+        },
+        {
+          "date": "2020-03-01",
+          "value": 343.768
+        },
+        {
+          "date": "2020-04-01",
+          "value": 342.508
+        },
+        {
+          "date": "2020-05-01",
+          "value": 342.329
+        },
+        {
+          "date": "2020-06-01",
+          "value": 343.259
+        },
+        {
+          "date": "2020-07-01",
+          "value": 345.28
+        },
+        {
+          "date": "2020-08-01",
+          "value": 345.913
+        },
+        {
+          "date": "2020-09-01",
+          "value": 346.004
+        },
+        {
+          "date": "2020-10-01",
+          "value": 346.302
+        },
+        {
+          "date": "2020-11-01",
+          "value": 347.166
+        },
+        {
+          "date": "2020-12-01",
+          "value": 347.508
+        },
+        {
+          "date": "2021-01-01",
+          "value": 347.622
+        },
+        {
+          "date": "2021-02-01",
+          "value": 348.449
+        },
+        {
+          "date": "2021-03-01",
+          "value": 349.342
+        },
+        {
+          "date": "2021-04-01",
+          "value": 351.017
+        },
+        {
+          "date": "2021-05-01",
+          "value": 352.15
+        },
+        {
+          "date": "2021-06-01",
+          "value": 353.72
+        },
+        {
+          "date": "2021-07-01",
+          "value": 355.085
+        },
+        {
+          "date": "2021-08-01",
+          "value": 355.355
+        },
+        {
+          "date": "2021-09-01",
+          "value": 356.039
+        },
+        {
+          "date": "2021-10-01",
+          "value": 357.631
+        },
+        {
+          "date": "2021-11-01",
+          "value": 359.116
+        },
+        {
+          "date": "2021-12-01",
+          "value": 360.353
+        },
+        {
+          "date": "2022-01-01",
+          "value": 361.776
+        },
+        {
+          "date": "2022-02-01",
+          "value": 363.705
+        },
+        {
+          "date": "2022-03-01",
+          "value": 365.6
+        },
+        {
+          "date": "2022-04-01",
+          "value": 368.292
+        },
+        {
+          "date": "2022-05-01",
+          "value": 370.356
+        },
+        {
+          "date": "2022-06-01",
+          "value": 373.179
+        },
+        {
+          "date": "2022-07-01",
+          "value": 374.896
+        },
+        {
+          "date": "2022-08-01",
+          "value": 376.951
+        },
+        {
+          "date": "2022-09-01",
+          "value": 379.719
+        },
+        {
+          "date": "2022-10-01",
+          "value": 381.747
+        },
+        {
+          "date": "2022-11-01",
+          "value": 383.604
+        },
+        {
+          "date": "2022-12-01",
+          "value": 385.666
+        },
+        {
+          "date": "2023-01-01",
+          "value": 387.676
+        },
+        {
+          "date": "2023-02-01",
+          "value": 390.116
+        },
+        {
+          "date": "2023-03-01",
+          "value": 391.613
+        },
+        {
+          "date": "2023-04-01",
+          "value": 393.434
+        },
+        {
+          "date": "2023-05-01",
+          "value": 394.692
+        },
+        {
+          "date": "2023-06-01",
+          "value": 396.15
+        },
+        {
+          "date": "2023-07-01",
+          "value": 397.813
+        },
+        {
+          "date": "2023-08-01",
+          "value": 399.157
+        },
+        {
+          "date": "2023-09-01",
+          "value": 401.294
+        },
+        {
+          "date": "2023-10-01",
+          "value": 402.788
+        },
+        {
+          "date": "2023-11-01",
+          "value": 404.695
+        },
+        {
+          "date": "2023-12-01",
+          "value": 406.159
+        },
+        {
+          "date": "2024-01-01",
+          "value": 408.579
+        },
+        {
+          "date": "2024-02-01",
+          "value": 410.539
+        },
+        {
+          "date": "2024-03-01",
+          "value": 412.733
+        },
+        {
+          "date": "2024-04-01",
+          "value": 414.371
+        },
+        {
+          "date": "2024-05-01",
+          "value": 415.245
+        },
+        {
+          "date": "2024-06-01",
+          "value": 416.08
+        },
+        {
+          "date": "2024-07-01",
+          "value": 417.361
+        },
+        {
+          "date": "2024-08-01",
+          "value": 418.852
+        },
+        {
+          "date": "2024-09-01",
+          "value": 420.377
+        },
+        {
+          "date": "2024-10-01",
+          "value": 422.04
+        },
+        {
+          "date": "2024-11-01",
+          "value": 423.277
+        },
+        {
+          "date": "2024-12-01",
+          "value": 424.227
+        },
+        {
+          "date": "2025-01-01",
+          "value": 426.204
+        },
+        {
+          "date": "2025-02-01",
+          "value": 427.422
+        },
+        {
+          "date": "2025-03-01",
+          "value": 427.911
+        },
+        {
+          "date": "2025-04-01",
+          "value": 429.192
+        },
+        {
+          "date": "2025-05-01",
+          "value": 429.914
+        },
+        {
+          "date": "2025-06-01",
+          "value": 431.105
+        },
+        {
+          "date": "2025-07-01",
+          "value": 432.617
+        },
+        {
+          "date": "2025-08-01",
+          "value": 433.984
+        },
+        {
+          "date": "2025-09-01",
+          "value": 434.996
+        },
+        {
+          "date": "2025-11-01",
+          "value": 435.903
+        },
+        {
+          "date": "2025-12-01",
+          "value": 437.09
+        },
+        {
+          "date": "2026-01-01",
+          "value": 438.784
+        },
+        {
+          "date": "2026-02-01",
+          "value": 439.959
+        },
+        {
+          "date": "2026-03-01",
+          "value": 440.951
+        },
+        {
+          "date": "2026-04-01",
+          "value": 443.154
+        },
+        {
+          "date": "2026-05-01",
+          "value": 444.46
         }
       ]
     },
@@ -8856,6 +10160,514 @@ window.MACRO_DATA = {
         }
       ]
     },
+    "DPCERY1Q225SBEA": {
+      "label": "Real PCE Growth QoQ ann.",
+      "latest": null,
+      "previous": null,
+      "change_pct": null,
+      "history": []
+    },
+    "A006RL1Q225SBEA": {
+      "label": "Real Gross Private Investment Growth QoQ ann.",
+      "latest": {
+        "date": "2026-01-01",
+        "value": 7.0
+      },
+      "previous": {
+        "date": "2025-10-01",
+        "value": 2.3
+      },
+      "change_pct": 204.348,
+      "history": [
+        {
+          "date": "1996-04-01",
+          "value": 20.6
+        },
+        {
+          "date": "1996-07-01",
+          "value": 19.4
+        },
+        {
+          "date": "1996-10-01",
+          "value": -0.5
+        },
+        {
+          "date": "1997-01-01",
+          "value": 8.3
+        },
+        {
+          "date": "1997-04-01",
+          "value": 26.9
+        },
+        {
+          "date": "1997-07-01",
+          "value": 5.7
+        },
+        {
+          "date": "1997-10-01",
+          "value": 6.0
+        },
+        {
+          "date": "1998-01-01",
+          "value": 18.7
+        },
+        {
+          "date": "1998-04-01",
+          "value": -2.5
+        },
+        {
+          "date": "1998-07-01",
+          "value": 10.8
+        },
+        {
+          "date": "1998-10-01",
+          "value": 12.7
+        },
+        {
+          "date": "1999-01-01",
+          "value": 11.5
+        },
+        {
+          "date": "1999-04-01",
+          "value": 0.2
+        },
+        {
+          "date": "1999-07-01",
+          "value": 11.5
+        },
+        {
+          "date": "1999-10-01",
+          "value": 11.1
+        },
+        {
+          "date": "2000-01-01",
+          "value": -2.8
+        },
+        {
+          "date": "2000-04-01",
+          "value": 25.9
+        },
+        {
+          "date": "2000-07-01",
+          "value": -3.8
+        },
+        {
+          "date": "2000-10-01",
+          "value": 0.8
+        },
+        {
+          "date": "2001-01-01",
+          "value": -17.0
+        },
+        {
+          "date": "2001-04-01",
+          "value": 0.6
+        },
+        {
+          "date": "2001-07-01",
+          "value": -8.4
+        },
+        {
+          "date": "2001-10-01",
+          "value": -18.4
+        },
+        {
+          "date": "2002-01-01",
+          "value": 12.5
+        },
+        {
+          "date": "2002-04-01",
+          "value": 6.7
+        },
+        {
+          "date": "2002-07-01",
+          "value": -0.5
+        },
+        {
+          "date": "2002-10-01",
+          "value": -0.4
+        },
+        {
+          "date": "2003-01-01",
+          "value": 3.3
+        },
+        {
+          "date": "2003-04-01",
+          "value": 2.6
+        },
+        {
+          "date": "2003-07-01",
+          "value": 15.3
+        },
+        {
+          "date": "2003-10-01",
+          "value": 14.4
+        },
+        {
+          "date": "2004-01-01",
+          "value": 0.7
+        },
+        {
+          "date": "2004-04-01",
+          "value": 16.9
+        },
+        {
+          "date": "2004-07-01",
+          "value": 6.5
+        },
+        {
+          "date": "2004-10-01",
+          "value": 8.6
+        },
+        {
+          "date": "2005-01-01",
+          "value": 11.7
+        },
+        {
+          "date": "2005-04-01",
+          "value": -5.1
+        },
+        {
+          "date": "2005-07-01",
+          "value": 5.4
+        },
+        {
+          "date": "2005-10-01",
+          "value": 13.4
+        },
+        {
+          "date": "2006-01-01",
+          "value": 6.0
+        },
+        {
+          "date": "2006-04-01",
+          "value": -2.3
+        },
+        {
+          "date": "2006-07-01",
+          "value": -1.5
+        },
+        {
+          "date": "2006-10-01",
+          "value": -7.2
+        },
+        {
+          "date": "2007-01-01",
+          "value": -2.6
+        },
+        {
+          "date": "2007-04-01",
+          "value": 3.9
+        },
+        {
+          "date": "2007-07-01",
+          "value": -4.5
+        },
+        {
+          "date": "2007-10-01",
+          "value": -4.5
+        },
+        {
+          "date": "2008-01-01",
+          "value": -10.5
+        },
+        {
+          "date": "2008-04-01",
+          "value": -6.6
+        },
+        {
+          "date": "2008-07-01",
+          "value": -7.7
+        },
+        {
+          "date": "2008-10-01",
+          "value": -33.4
+        },
+        {
+          "date": "2009-01-01",
+          "value": -38.3
+        },
+        {
+          "date": "2009-04-01",
+          "value": -21.3
+        },
+        {
+          "date": "2009-07-01",
+          "value": -1.2
+        },
+        {
+          "date": "2009-10-01",
+          "value": 42.9
+        },
+        {
+          "date": "2010-01-01",
+          "value": 8.9
+        },
+        {
+          "date": "2010-04-01",
+          "value": 22.7
+        },
+        {
+          "date": "2010-07-01",
+          "value": 19.0
+        },
+        {
+          "date": "2010-10-01",
+          "value": -1.1
+        },
+        {
+          "date": "2011-01-01",
+          "value": -7.2
+        },
+        {
+          "date": "2011-04-01",
+          "value": 17.4
+        },
+        {
+          "date": "2011-07-01",
+          "value": 1.8
+        },
+        {
+          "date": "2011-10-01",
+          "value": 34.6
+        },
+        {
+          "date": "2012-01-01",
+          "value": 9.2
+        },
+        {
+          "date": "2012-04-01",
+          "value": 9.3
+        },
+        {
+          "date": "2012-07-01",
+          "value": 1.1
+        },
+        {
+          "date": "2012-10-01",
+          "value": -3.3
+        },
+        {
+          "date": "2013-01-01",
+          "value": 16.9
+        },
+        {
+          "date": "2013-04-01",
+          "value": 5.3
+        },
+        {
+          "date": "2013-07-01",
+          "value": 17.2
+        },
+        {
+          "date": "2013-10-01",
+          "value": 3.9
+        },
+        {
+          "date": "2014-01-01",
+          "value": -3.9
+        },
+        {
+          "date": "2014-04-01",
+          "value": 17.5
+        },
+        {
+          "date": "2014-07-01",
+          "value": 9.5
+        },
+        {
+          "date": "2014-10-01",
+          "value": 1.3
+        },
+        {
+          "date": "2015-01-01",
+          "value": 14.7
+        },
+        {
+          "date": "2015-04-01",
+          "value": 1.6
+        },
+        {
+          "date": "2015-07-01",
+          "value": 0.9
+        },
+        {
+          "date": "2015-10-01",
+          "value": -2.4
+        },
+        {
+          "date": "2016-01-01",
+          "value": -1.7
+        },
+        {
+          "date": "2016-04-01",
+          "value": -1.7
+        },
+        {
+          "date": "2016-07-01",
+          "value": 1.7
+        },
+        {
+          "date": "2016-10-01",
+          "value": 11.4
+        },
+        {
+          "date": "2017-01-01",
+          "value": -1.1
+        },
+        {
+          "date": "2017-04-01",
+          "value": 6.4
+        },
+        {
+          "date": "2017-07-01",
+          "value": 6.8
+        },
+        {
+          "date": "2017-10-01",
+          "value": 7.7
+        },
+        {
+          "date": "2018-01-01",
+          "value": 6.2
+        },
+        {
+          "date": "2018-04-01",
+          "value": -0.1
+        },
+        {
+          "date": "2018-07-01",
+          "value": 12.7
+        },
+        {
+          "date": "2018-10-01",
+          "value": 0.3
+        },
+        {
+          "date": "2019-01-01",
+          "value": 3.3
+        },
+        {
+          "date": "2019-04-01",
+          "value": 3.7
+        },
+        {
+          "date": "2019-07-01",
+          "value": 3.2
+        },
+        {
+          "date": "2019-10-01",
+          "value": -5.1
+        },
+        {
+          "date": "2020-01-01",
+          "value": -9.6
+        },
+        {
+          "date": "2020-04-01",
+          "value": -45.2
+        },
+        {
+          "date": "2020-07-01",
+          "value": 98.6
+        },
+        {
+          "date": "2020-10-01",
+          "value": 13.8
+        },
+        {
+          "date": "2021-01-01",
+          "value": -3.0
+        },
+        {
+          "date": "2021-04-01",
+          "value": -5.1
+        },
+        {
+          "date": "2021-07-01",
+          "value": 15.4
+        },
+        {
+          "date": "2021-10-01",
+          "value": 28.5
+        },
+        {
+          "date": "2022-01-01",
+          "value": 7.9
+        },
+        {
+          "date": "2022-04-01",
+          "value": -8.6
+        },
+        {
+          "date": "2022-07-01",
+          "value": -6.7
+        },
+        {
+          "date": "2022-10-01",
+          "value": 8.0
+        },
+        {
+          "date": "2023-01-01",
+          "value": -7.1
+        },
+        {
+          "date": "2023-04-01",
+          "value": 7.2
+        },
+        {
+          "date": "2023-07-01",
+          "value": 9.4
+        },
+        {
+          "date": "2023-10-01",
+          "value": 3.6
+        },
+        {
+          "date": "2024-01-01",
+          "value": -1.6
+        },
+        {
+          "date": "2024-04-01",
+          "value": 8.2
+        },
+        {
+          "date": "2024-07-01",
+          "value": 0.9
+        },
+        {
+          "date": "2024-10-01",
+          "value": -6.8
+        },
+        {
+          "date": "2025-01-01",
+          "value": 23.3
+        },
+        {
+          "date": "2025-04-01",
+          "value": -13.8
+        },
+        {
+          "date": "2025-07-01",
+          "value": 0.0
+        },
+        {
+          "date": "2025-10-01",
+          "value": 2.3
+        },
+        {
+          "date": "2026-01-01",
+          "value": 7.0
+        }
+      ]
+    },
+    "A020RL1Q225SBEA": {
+      "label": "Real Government Spending Growth QoQ ann.",
+      "latest": null,
+      "previous": null,
+      "change_pct": null,
+      "history": []
+    },
     "RSAFS": {
       "label": "Retail Sales",
       "latest": {
@@ -9347,6 +11159,500 @@ window.MACRO_DATA = {
         {
           "date": "2026-04-01",
           "value": 757085.0
+        }
+      ]
+    },
+    "RSFSXMV": {
+      "label": "Retail Sales ex-Motor Vehicles",
+      "latest": {
+        "date": "2026-04-01",
+        "value": 617856.0
+      },
+      "previous": {
+        "date": "2026-03-01",
+        "value": 613556.0
+      },
+      "change_pct": 0.701,
+      "history": [
+        {
+          "date": "2016-05-01",
+          "value": 352784.0
+        },
+        {
+          "date": "2016-06-01",
+          "value": 356783.0
+        },
+        {
+          "date": "2016-07-01",
+          "value": 355106.0
+        },
+        {
+          "date": "2016-08-01",
+          "value": 354876.0
+        },
+        {
+          "date": "2016-09-01",
+          "value": 357222.0
+        },
+        {
+          "date": "2016-10-01",
+          "value": 358315.0
+        },
+        {
+          "date": "2016-11-01",
+          "value": 358672.0
+        },
+        {
+          "date": "2016-12-01",
+          "value": 361410.0
+        },
+        {
+          "date": "2017-01-01",
+          "value": 366585.0
+        },
+        {
+          "date": "2017-02-01",
+          "value": 367057.0
+        },
+        {
+          "date": "2017-03-01",
+          "value": 368272.0
+        },
+        {
+          "date": "2017-04-01",
+          "value": 369323.0
+        },
+        {
+          "date": "2017-05-01",
+          "value": 366527.0
+        },
+        {
+          "date": "2017-06-01",
+          "value": 367876.0
+        },
+        {
+          "date": "2017-07-01",
+          "value": 367728.0
+        },
+        {
+          "date": "2017-08-01",
+          "value": 370481.0
+        },
+        {
+          "date": "2017-09-01",
+          "value": 376369.0
+        },
+        {
+          "date": "2017-10-01",
+          "value": 376051.0
+        },
+        {
+          "date": "2017-11-01",
+          "value": 381716.0
+        },
+        {
+          "date": "2017-12-01",
+          "value": 384511.0
+        },
+        {
+          "date": "2018-01-01",
+          "value": 382986.0
+        },
+        {
+          "date": "2018-02-01",
+          "value": 385861.0
+        },
+        {
+          "date": "2018-03-01",
+          "value": 385772.0
+        },
+        {
+          "date": "2018-04-01",
+          "value": 385764.0
+        },
+        {
+          "date": "2018-05-01",
+          "value": 392669.0
+        },
+        {
+          "date": "2018-06-01",
+          "value": 391387.0
+        },
+        {
+          "date": "2018-07-01",
+          "value": 393827.0
+        },
+        {
+          "date": "2018-08-01",
+          "value": 394789.0
+        },
+        {
+          "date": "2018-09-01",
+          "value": 393463.0
+        },
+        {
+          "date": "2018-10-01",
+          "value": 397830.0
+        },
+        {
+          "date": "2018-11-01",
+          "value": 399145.0
+        },
+        {
+          "date": "2018-12-01",
+          "value": 388493.0
+        },
+        {
+          "date": "2019-01-01",
+          "value": 392701.0
+        },
+        {
+          "date": "2019-02-01",
+          "value": 392781.0
+        },
+        {
+          "date": "2019-03-01",
+          "value": 397587.0
+        },
+        {
+          "date": "2019-04-01",
+          "value": 399785.0
+        },
+        {
+          "date": "2019-05-01",
+          "value": 403398.0
+        },
+        {
+          "date": "2019-06-01",
+          "value": 403851.0
+        },
+        {
+          "date": "2019-07-01",
+          "value": 407200.0
+        },
+        {
+          "date": "2019-08-01",
+          "value": 408296.0
+        },
+        {
+          "date": "2019-09-01",
+          "value": 407535.0
+        },
+        {
+          "date": "2019-10-01",
+          "value": 408777.0
+        },
+        {
+          "date": "2019-11-01",
+          "value": 409726.0
+        },
+        {
+          "date": "2019-12-01",
+          "value": 413614.0
+        },
+        {
+          "date": "2020-01-01",
+          "value": 414267.0
+        },
+        {
+          "date": "2020-02-01",
+          "value": 413878.0
+        },
+        {
+          "date": "2020-03-01",
+          "value": 393751.0
+        },
+        {
+          "date": "2020-04-01",
+          "value": 336693.0
+        },
+        {
+          "date": "2020-05-01",
+          "value": 381626.0
+        },
+        {
+          "date": "2020-06-01",
+          "value": 412904.0
+        },
+        {
+          "date": "2020-07-01",
+          "value": 421417.0
+        },
+        {
+          "date": "2020-08-01",
+          "value": 425171.0
+        },
+        {
+          "date": "2020-09-01",
+          "value": 431983.0
+        },
+        {
+          "date": "2020-10-01",
+          "value": 430433.0
+        },
+        {
+          "date": "2020-11-01",
+          "value": 426447.0
+        },
+        {
+          "date": "2020-12-01",
+          "value": 429003.0
+        },
+        {
+          "date": "2021-01-01",
+          "value": 446473.0
+        },
+        {
+          "date": "2021-02-01",
+          "value": 436001.0
+        },
+        {
+          "date": "2021-03-01",
+          "value": 475805.0
+        },
+        {
+          "date": "2021-04-01",
+          "value": 477995.0
+        },
+        {
+          "date": "2021-05-01",
+          "value": 477118.0
+        },
+        {
+          "date": "2021-06-01",
+          "value": 486882.0
+        },
+        {
+          "date": "2021-07-01",
+          "value": 481516.0
+        },
+        {
+          "date": "2021-08-01",
+          "value": 488486.0
+        },
+        {
+          "date": "2021-09-01",
+          "value": 491553.0
+        },
+        {
+          "date": "2021-10-01",
+          "value": 498558.0
+        },
+        {
+          "date": "2021-11-01",
+          "value": 502877.0
+        },
+        {
+          "date": "2021-12-01",
+          "value": 501176.0
+        },
+        {
+          "date": "2022-01-01",
+          "value": 504428.0
+        },
+        {
+          "date": "2022-02-01",
+          "value": 510871.0
+        },
+        {
+          "date": "2022-03-01",
+          "value": 525362.0
+        },
+        {
+          "date": "2022-04-01",
+          "value": 532203.0
+        },
+        {
+          "date": "2022-05-01",
+          "value": 536643.0
+        },
+        {
+          "date": "2022-06-01",
+          "value": 541528.0
+        },
+        {
+          "date": "2022-07-01",
+          "value": 537880.0
+        },
+        {
+          "date": "2022-08-01",
+          "value": 538373.0
+        },
+        {
+          "date": "2022-09-01",
+          "value": 537491.0
+        },
+        {
+          "date": "2022-10-01",
+          "value": 541862.0
+        },
+        {
+          "date": "2022-11-01",
+          "value": 536108.0
+        },
+        {
+          "date": "2022-12-01",
+          "value": 532212.0
+        },
+        {
+          "date": "2023-01-01",
+          "value": 547880.0
+        },
+        {
+          "date": "2023-02-01",
+          "value": 543895.0
+        },
+        {
+          "date": "2023-03-01",
+          "value": 538675.0
+        },
+        {
+          "date": "2023-04-01",
+          "value": 542521.0
+        },
+        {
+          "date": "2023-05-01",
+          "value": 543792.0
+        },
+        {
+          "date": "2023-06-01",
+          "value": 544674.0
+        },
+        {
+          "date": "2023-07-01",
+          "value": 547943.0
+        },
+        {
+          "date": "2023-08-01",
+          "value": 553381.0
+        },
+        {
+          "date": "2023-09-01",
+          "value": 556575.0
+        },
+        {
+          "date": "2023-10-01",
+          "value": 555690.0
+        },
+        {
+          "date": "2023-11-01",
+          "value": 555244.0
+        },
+        {
+          "date": "2023-12-01",
+          "value": 556052.0
+        },
+        {
+          "date": "2024-01-01",
+          "value": 551100.0
+        },
+        {
+          "date": "2024-02-01",
+          "value": 553809.0
+        },
+        {
+          "date": "2024-03-01",
+          "value": 557426.0
+        },
+        {
+          "date": "2024-04-01",
+          "value": 558388.0
+        },
+        {
+          "date": "2024-05-01",
+          "value": 560134.0
+        },
+        {
+          "date": "2024-06-01",
+          "value": 563966.0
+        },
+        {
+          "date": "2024-07-01",
+          "value": 566007.0
+        },
+        {
+          "date": "2024-08-01",
+          "value": 564844.0
+        },
+        {
+          "date": "2024-09-01",
+          "value": 570796.0
+        },
+        {
+          "date": "2024-10-01",
+          "value": 572687.0
+        },
+        {
+          "date": "2024-11-01",
+          "value": 572288.0
+        },
+        {
+          "date": "2024-12-01",
+          "value": 577232.0
+        },
+        {
+          "date": "2025-01-01",
+          "value": 574070.0
+        },
+        {
+          "date": "2025-02-01",
+          "value": 577763.0
+        },
+        {
+          "date": "2025-03-01",
+          "value": 581017.0
+        },
+        {
+          "date": "2025-04-01",
+          "value": 581040.0
+        },
+        {
+          "date": "2025-05-01",
+          "value": 580943.0
+        },
+        {
+          "date": "2025-06-01",
+          "value": 586272.0
+        },
+        {
+          "date": "2025-07-01",
+          "value": 588742.0
+        },
+        {
+          "date": "2025-08-01",
+          "value": 592134.0
+        },
+        {
+          "date": "2025-09-01",
+          "value": 592652.0
+        },
+        {
+          "date": "2025-10-01",
+          "value": 593611.0
+        },
+        {
+          "date": "2025-11-01",
+          "value": 596008.0
+        },
+        {
+          "date": "2025-12-01",
+          "value": 596072.0
+        },
+        {
+          "date": "2026-01-01",
+          "value": 596884.0
+        },
+        {
+          "date": "2026-02-01",
+          "value": 602258.0
+        },
+        {
+          "date": "2026-03-01",
+          "value": 613556.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 617856.0
         }
       ]
     },
@@ -20015,6 +22321,16 @@ window.MACRO_DATA = {
       "key_takeaway": "Hôm nay 12/06 chứng kiến bộ số liệu \"Goldilocks\" hoàn hảo từ Đại học Michigan. Kỳ vọng lạm phát 1 năm và 5 năm hạ nhiệt mạnh mẽ (lần lượt xuống 4.6% và 3.4%), trong khi Niềm tin Người tiêu dùng và Điều kiện Hiện tại vượt xa dự báo. Điều này củng cố kịch bản hạ cánh mềm (soft-landing) với sự hỗ trợ đắc lực từ xu hướng giảm áp lực giá cả. Thị trường duy trì tâm lý tích cực, lợi suất trái phiếu 10 năm ổn định quanh mức 4.49%.",
       "body_preview": "# Vĩ mô Mỹ — 2026-06-12",
       "body": "# Vĩ mô Mỹ — 2026-06-12\n\n## Tóm tắt\n\nHôm nay ngày 12/06, thị trường đón nhận tin vui lớn từ khảo sát tâm lý người tiêu dùng của Đại học Michigan (UoM). Kết quả công bố cho thấy một kịch bản **Goldilocks hoàn hảo**:\n1. **Kỳ vọng lạm phát trung và dài hạn giảm mạnh**: Kỳ vọng lạm phát 1 năm hạ nhiệt xuống 4.6% (dự báo 4.9%) và kỳ vọng 5 năm giảm mạnh về 3.4% (dự báo 3.8%). Đây là tín hiệu cực kỳ quan trọng giúp củng cố niềm tin của Fed rằng lạm phát đang quay trở lại tầm kiểm soát mà không cần thắt chặt thêm.\n2. **Niềm tin người tiêu dùng bật tăng mạnh mẽ**: Chỉ số Michigan Consumer Sentiment tăng lên 48.9 (vượt xa dự báo 46.1), cùng với Consumer Expectations đạt 49.3 (dự báo 44.3).\n\nSự kết hợp giữa lạm phát kỳ vọng hạ nhiệt và niềm tin tiêu dùng cải thiện là minh chứng rõ nét cho kịch bản **Soft Landing** (Hạ cánh mềm). Phản ứng thị trường duy trì trạng thái **Risk-On**: Lợi suất trái phiếu 10 năm dao động ổn định quanh 4.49%, Dollar Index (DXY) duy trì mốc 99.8, và các nhóm ngành cổ phiếu tăng trưởng tiếp tục thu hút dòng vốn khi rủi ro tăng lãi suất biến mất.\n\n## Chi tiết từng chỉ số (5 releases quan trọng hôm nay)\n\n### Michigan Consumer Sentiment (Jun - Sơ bộ) (Nguồn: UoM / investing.com) — BIG BEAT\n- **Actual:** **48.9** | **Forecast:** **46.1** | **Previous:** **44.8**\n- **Δ:** **+2.8** so với dự báo và **+4.1** so với tháng trước.\n- **Significance:** Thước đo tâm lý tiêu dùng phản ánh góc nhìn của người dân về sức khỏe kinh tế cá nhân và triển vọng chung. Việc chỉ số này tăng mạnh cho thấy sự bi quan cực độ trong giai đoạn trước đang dần được giải tỏa nhờ giá năng lượng (xăng dầu) hạ nhiệt.\n- **Hàm ý:** Tăng trưởng tiêu dùng cá nhân (chiếm 70% GDP) sẽ tiếp tục được giữ vững, loại bỏ lo ngại recession.\n\n### Michigan 1-Year Inflation Expectations (Jun) (Nguồn: UoM) — INFLATION COOLING\n- **Actual:** **4.6%** | **Forecast:** **4.9%** | **Previous:** **4.8%**\n- **Δ:** **-0.3pp** so với dự báo và **-0.2pp** so với tháng trước.\n- **Significance:** Kỳ vọng lạm phát ngắn hạn của người dân. Người dân kỳ vọng lạm phát giảm sẽ giúp kiềm chế hành vi tăng giá từ doanh nghiệp và yêu cầu tăng lương quá mức từ người lao động.\n- **Hàm ý:** Tín hiệu rất Dovish cho Fed, hỗ trợ lộ trình cắt giảm lãi suất trong nửa cuối năm.\n\n### Michigan 5-Year Inflation Expectations (Jun) (Nguồn: UoM) — ANCHOR SECURED\n- **Actual:** **3.4%** | **Forecast:** **3.8%** | **Previous:** **3.9%**\n- **Δ:** **-0.4pp** so với dự báo và **-0.5pp** so với tháng trước.\n- **Significance:** Đây là chỉ số mà Powell và các thành viên FOMC theo dõi sát sao nhất để đánh giá liệu kỳ vọng lạm phát dài hạn có bị \"mất neo\" (de-anchored) hay không. Con số 3.4% hạ nhiệt mạnh mẽ từ mức 3.9% tháng trước chứng tỏ uy tín của Fed trong việc chống lạm phát vẫn rất vững vàng.\n- **Hàm ý:** Cực kỳ Dovish. Rào cản tâm lý lớn nhất của Fed đã được tháo gỡ.\n\n### Michigan Consumer Expectations (Jun) (Nguồn: UoM) — STRONGER FUTURES\n- **Actual:** **49.3** | **Forecast:** **44.3** | **Previous:** **44.1**\n- **Δ:** **+5.0** so với dự báo.\n- **Significance:** Kỳ vọng của người tiêu dùng về triển vọng thu nhập và việc làm trong tương lai gần. Sự bứt phá mạnh mẽ này cho thấy thị trường lao động dù đang hạ nhiệt nhưng vẫn đảm bảo sự an tâm cho người lao động.\n\n### Michigan Current Conditions (Jun) (Nguồn: UoM) — PRESENT IMPROVEMENT\n- **Actual:** **48.4** | **Forecast:** **46.2** | **Previous:** **45.8**\n- **Δ:** **+2.2** so với dự báo.\n- **Significance:** Đánh giá của người dân về điều kiện kinh tế hiện tại. Sự cải thiện này phản ánh thực tế rằng áp lực chi phí sinh hoạt hàng ngày đang dịu đi tương đối.\n\n---\n\n### Các số liệu khác:\n- **U.S. Baker Hughes Oil Rig Count:** Tăng nhẹ thêm 2 giàn lên 433 (so với 431 tuần trước). Hoạt động khai thác thượng nguồn dầu khí Mỹ đi ngang ổn định, chưa có dấu hiệu bùng nổ nguồn cung mới nhưng cũng không suy giảm.\n- **CFTC Positions (Dữ liệu định vị trạng thái):**\n  - **Nasdaq 100:** Tiếp tục giảm vị thế bán ròng (net short) xuống chỉ còn **-1.3K** (từ -14.9K tuần trước). Làn sóng short squeeze/covering tại nhóm công nghệ diễn ra mạnh mẽ khi Tech dẫn đầu đà tăng tuần.\n  - **S&P 500:** Giảm vị thế bán ròng về **-205.6K** (từ -220.8K). Vẫn còn lượng lớn vị thế Short chưa cover, tạo lực đẩy tiềm năng cho thị trường tiếp tục grind-up.\n\n## Bối cảnh xu hướng\n\n- **Yields & VIX:** Lợi suất trái phiếu 10 năm (US10Y) đóng cửa tuần ở mức 4.49%, hạ nhiệt đáng kể sau khi chạm mốc 4.55% đầu tuần. VIX ổn định ở 17.68 phản ánh tâm lý thị trường đã bình ổn trở lại sau volatility event của tuần trước.\n- **DXY & Commodities:** USD Index (DXY) dao động ở 99.8. Giá dầu thô WTI (CL=F) giao dịch quanh $84.3 (giảm mạnh -16.5% trong 1 tháng qua) đóng vai trò then chốt giúp kỳ vọng lạm phát của người tiêu dùng hạ nhiệt rõ rệt. Giá vàng (GC=F) giữ quanh $4235.7.\n- **Sectors:** Nhóm Y tế (XLV +4.84% 1M) và Tài chính (XLF +4.61% 1M) duy trì đà dẫn dắt dòng tiền. Công nghệ (XLK +4.50% 1M) đang nỗ lực phục hồi và thiết lập vùng tích lũy (stalking) sau phiên bùng nổ relief rally ngày hôm qua.\n\n## Conviction calls — UPDATE 06-12\n\n| Sector | Stance 06-11 | NOW (06-12) | Reasoning |\n|---|---|---|---|\n| **XLK Technology** | Neutral → Stalking | **Stalking / Light OW** | Kỳ vọng lạm phát hạ nhiệt là động lực lớn nhất giải tỏa áp lực định giá cho Tech. Sẵn sàng giải ngân từng phần. |\n| **XLV Healthcare** | Overweight CONFIRMED | **Overweight CONFIRMED** | Tiếp tục duy trì hiệu suất dẫn đầu tuyệt đối (+4.84% 1M). Core defensive của danh mục. |\n| **XLE Energy** | Light OW → Neutral | **Neutral** | Giá dầu WTI giữ quanh $84.3, áp lực chốt lời ngắn hạn vẫn còn khi dòng tiền xoay vòng về các nhóm tăng trưởng và tài chính. |\n| **XLF Financials** | Neutral GIỮ | **Neutral → Light OW** | Niềm tin tiêu dùng tốt và rủi ro recession biến mất giúp củng cố danh mục cho vay của khối ngân hàng. |\n| **XLI Industrials** | Neutral → Light OW | **Light OW** | Khớp với kịch bản soft-landing, sản xuất phục hồi trong khi chi phí vốn không bị tăng thêm áp lực. |\n\n## Bottom line\n\nTuần giao dịch khép lại với bộ đôi chất xúc tác cực kỳ chất lượng: **Core PPI hạ nhiệt sâu (11/06)** và **Kỳ vọng lạm phát UoM giảm mạnh (12/06)**. Cơn ác mộng \"lạm phát quay trở lại\" chính thức tạm thời tan biến. Kịch bản Goldilocks/Soft Landing đang chiếm lĩnh hoàn toàn narrative của thị trường. Chiến lược tối ưu hiện tại là gia tăng nhẹ tỷ trọng **Tech (XLK)** ở các vùng tích lũy, song song với việc nắm giữ các nhóm ngành chu kỳ khỏe như **Công nghiệp (XLI)** và defensive core **Y tế (XLV)**."
+    },
+    {
+      "file": "2026-06-13.md",
+      "date": "2026-06-13",
+      "schema_version": "1.1",
+      "surprise_count": "0",
+      "regime_signal": "bounce-relief",
+      "key_takeaway": "Thứ Sáu 13/6 không có lịch kinh tế Mỹ — báo cáo tuần tổng hợp cross-asset sau bộ ba CPI/PPI/Michigan; tín hiệu disinflation được củng cố, yields giảm, VIX hạ về 19.44, breakeven 10Y ổn định 2.31%, thị trường đang tiêu hóa \"soft landing\" trong một tuần bùng nổ.",
+      "body_preview": "# Vĩ mô Mỹ — 2026-06-13 (Thứ Sáu, Không có lịch kinh tế)",
+      "body": "# Vĩ mô Mỹ — 2026-06-13 (Thứ Sáu, Không có lịch kinh tế)\n\n## Tóm tắt\n\nHôm nay 13/6 không có bất kỳ chỉ số kinh tế Mỹ nào từ investing.com (`releases: []`). Báo cáo này là wrap-up tuần 9–13/6 và cross-asset snapshot cuối ngày. Tuần này ghi nhận ba dữ liệu quan trọng liên tiếp: **CPI tháng 5 (10/6)** xác nhận Core CPI hạ nhiệt về +0.21% MoM, **PPI tháng 5 (11/6)** với Core PPI YoY 4.9% (thấp hơn dự báo 5.4%), và **Michigan Consumer Sentiment sơ bộ tháng 6 (12/6)** với kỳ vọng lạm phát 1Y/5Y giảm mạnh xuống 4.6%/3.4%. Bộ ba này hội tụ thành narrative **disinflation đang quay lại**, 10Y yield rút về 4.45% (từ đỉnh 4.55–4.56% tuần trước), VIX giảm mạnh từ 22.22 xuống 19.44, và HY OAS thu hẹp về 2.78% — tín hiệu rõ ràng cho **regime bounce-relief** kết thúc tuần.\n\n---\n\n## Không có chỉ số mới công bố trong ngày\n\nKhông có lịch kinh tế Mỹ vào Thứ Sáu 13/6. Phân tích bên dưới tập trung vào tổng kết tuần và trạng thái cross-asset từ FRED snapshot mới nhất.\n\n---\n\n## Tổng kết tuần 9–13/6: Ba dữ liệu định hình lại narrative\n\n### 1. CPI tháng 5 — Công bố 10/6 (nguồn: investing.com + FRED)\n\n- **Headline CPI YoY (FRED CPIAUCSL):** 4.27% | MoM: +0.47% | 3M annualized: 8.2%\n- **Core CPI YoY (FRED CPILFESL):** 2.96% | MoM: +0.21% | 3M annualized: 3.17%\n- **Surprise:** Core CPI MoM 0.21% beat nhẹ (vs forecast 0.3%) — ~+1.5σ theo chiều tích cực\n- **Ý nghĩa:** Core CPI là thước đo Fed theo dõi chặt nhất. MoM 0.21% là mức thấp nhất kể từ đầu năm 2026, tín hiệu services inflation đang dịu lại. Phân tích theo sub-components: Core Goods YoY +1.03% gần trung tính (MoM -0.11%), Shelter YoY +3.62% (3M annualized 4.87%) đang chậm dần từ mức >5% trước đó, Core Services ex Shelter là yếu tố chính cần theo dõi — 3M annualized 4.16% vẫn trên mục tiêu nhưng đang giảm tốc.\n- **Hàm ý:** Kết quả xác nhận Fed không cần thắt chặt thêm. Xác suất cắt lãi suất quý 3 tăng. 10Y yield giảm -10bp phản ứng ngay, dòng tiền đổ mạnh vào tech và rate-sensitive sectors. Headline 4.27% vẫn cao so với mục tiêu 2% nhưng phần lớn do energy và import cost (tariff) — Fed hiểu rõ và sẽ nhìn qua.\n\n### 2. PPI tháng 5 — Công bố 11/6 (nguồn: investing.com + FRED)\n\n- **PPI Final Demand YoY (FRED PPIFID):** 6.46% | MoM: +1.03% | 3M annualized: 13.2%\n- **Core PPI YoY (FRED PPIFES):** 4.9% | MoM: +0.42% | 3M annualized: 5.6%\n- **Surprise:** Core PPI YoY 4.9% — shock beat so với forecast 5.4% (~-1σ theo chiều disinflation); tuy nhiên Headline PPI MoM +1.03% là cảnh báo pipeline áp lực chưa tắt hẳn\n- **Ý nghĩa:** PPI đo giá nhà sản xuất/bán buôn — đây là \"upstream\" của CPI, thường dẫn trước 2–4 tháng. Core PPI hạ nhiệt là tín hiệu pipeline disinflation. Tuy nhiên, Headline PPI YoY vẫn ở 6.46% (3M annualized đáng lo ngại ở 13.2%) phản ánh áp lực từ năng lượng và vật liệu thô — phần này có thể lây lan sang CPI Headline thêm 1–2 tháng nếu WTI không giảm tiếp.\n- **Hàm ý:** Thị trường phản ứng tích cực với Core PPI miss (tức là disinflation tốt hơn kỳ vọng). 10Y yield tiếp tục rút. Nhóm Industrials (XLI) và Materials (XLB) hưởng lợi từ giá đầu vào bớt áp lực. Headline PPI cao cảnh báo: nếu WTI bật trở lại >$100, CPI Headline Q3 sẽ tăng tốc trở lại.\n\n### 3. Michigan Consumer Sentiment sơ bộ tháng 6 — Công bố 12/6 (nguồn: investing.com)\n\n- **Michigan Consumer Sentiment:** 48.9 | Forecast: 46.1 | Previous (tháng 5): không có trong FRED (FRED đang lag tháng 4 ở 49.8)\n- **1Y Inflation Expectations:** 4.6% | Forecast: 4.9%\n- **5Y Inflation Expectations:** 3.4% | Forecast: 3.8%\n- **Surprise:** Sentiment beat mạnh +2.8 điểm (~+1σ); kỳ vọng lạm phát cả 1Y lẫn 5Y đều hạ nhiệt đáng kể — đây là shock beat theo chiều disinflation\n- **Ý nghĩa:** Fed đặc biệt theo dõi kỳ vọng lạm phát 5Y vì đây là thước đo \"neo lạm phát\" (inflation expectations anchoring). Khi 5Y expectations giảm từ 3.8% xuống 3.4%, tức là người dân tin rằng lạm phát sẽ về mức bình thường trong dài hạn — điều này cho phép Fed không cần thắt chặt thêm và mở đường cho cắt lãi suất mà không mất uy tín.\n- **Hàm ý:** Đây là \"dấu xác nhận cuối cùng\" của narrative soft-landing tuần này. Cộng hưởng với CPI và PPI, bộ ba dữ liệu này tạo ra môi trường dovish nhất kể từ đầu năm 2026. USD giảm, yields giảm, equities tăng — đặc biệt là tech (XLK) và rate-sensitive sectors (XLRE, XLU bounce). Cảnh báo: Michigan Sentiment tuyệt đối 48.9 vẫn ở vùng thấp lịch sử, phản ánh consumer đang chịu áp lực thực từ giá cả — tín hiệu mixed cho discretionary spending dài hạn.\n\n---\n\n## Cross-Asset Snapshot cuối tuần (nguồn: FRED)\n\n| Tài sản | Giá trị | Ngày | Nhận xét |\n|---|---|---|---|\n| **Fed Funds Rate** | 3.62% | 11/6 | Bất động — Fed giữ nguyên |\n| **10Y Treasury Yield** | 4.45% | 11/6 | Giảm -10bp từ đỉnh 4.55% tuần này |\n| **2Y Treasury Yield** | 4.05% | 11/6 | Giảm -8bp, cut expectations tăng |\n| **T10Y2Y Spread** | +0.39% | 12/6 | Đường cong tiếp tục dẹt nhẹ (từ +0.42% tuần trước) |\n| **VIX** | 19.44 | 11/6 | Hạ nhiệt từ 22.22 (10/6) — relief rally xác nhận |\n| **HY OAS** | 2.78% | 11/6 | Ổn định, credit benign |\n| **IG OAS** | 0.75% | 11/6 | Flat — IG credit không có stress |\n| **10Y Inflation Breakeven** | 2.31% | 12/6 | Nhích +2bp từ 2.29% — thị trường tin disinflation nhưng KHÔNG deflation |\n| **WTI Crude Oil** | $95.00 | 08/6 | Consolidating — rủi ro upside nếu OPEC hành động |\n| **USD Broad Index** | 120.08 | 05/6 | Lagging data — khả năng đã giảm do yields drop tuần này |\n\n**Nhận xét đường cong lãi suất:** 3M (3.78%) / 6M (3.81%) / 2Y (4.05%) / 10Y (4.45%) — front-end inverted với Fed Funds (3.62%) đã GIẢI TỎA một phần (2Y > Fed Funds = thị trường price cut nhưng không aggressive). Spread 10Y-2Y +0.39% dẹt nhẹ nhưng dương — không tín hiệu recession ngay lập tức.\n\n---\n\n## FRED Snapshot — Tổng quan nền tảng vĩ mô\n\n### Lạm phát — Pipeline vẫn nóng nhưng đỉnh đã qua\n\n| Series | YoY | MoM | 3M Ann. | Tín hiệu |\n|---|---|---|---|---|\n| CPI Headline | 4.27% | +0.47% | 8.2% | Cao do energy/tariff; headline nóng |\n| Core CPI | 2.96% | +0.21% | 3.17% | DISINFLATION — tiến gần 3% |\n| Core PCE | 3.29% | +0.24% | 3.78% | Trên target nhưng đang giảm |\n| PPI Final Demand | 6.46% | +1.03% | 13.2% | Pipeline nóng — watch Q3 |\n| Core PPI | 4.90% | +0.42% | 5.6% | Giảm tốc so với tháng trước |\n| CPI Shelter | 3.62% | +0.32% | 4.87% | Chậm dần — tín hiệu tích cực |\n| CPI Core Goods | 1.03% | -0.11% | 0.11% | Gần trung tính — tariff chưa pass-through mạnh |\n| CPI Core Services | 3.56% | +0.30% | 4.16% | Sticky nhưng giảm tốc |\n\n**Điểm chú ý:** Divergence giữa Headline PPI (6.46%) và Core CPI (2.96%) rất lớn — phần lớn là energy/commodity-driven. Khi WTI ổn định hoặc giảm, base effect sẽ kéo Headline CPI xuống Q3/Q4 2026.\n\n### Lao động — Kiên cường nhưng bắt đầu rạn nứt\n\n- **NFP tháng 5:** +172K (vs forecast 85K — beat mạnh), FRED PAYEMS cho thấy mức absolute 159,001K\n- **Unemployment Rate:** 4.3% — flat 3 tháng liên tiếp (tháng 3, 4, 5 đều 4.3%)\n- **Initial Jobless Claims:** 229K (tuần 06-06) — trend tăng từ 190–210K tháng 4 lên 225–229K tháng 5–6\n- **JOLTS Job Openings:** 7,618K (tháng 4) — bật mạnh +10.6% MoM sau chuỗi giảm; labor demand vẫn cao\n- **Avg Hourly Earnings:** YoY 3.45%, 3M annualized 2.82% — tiền lương đang MODERAT, không còn accelerating\n\n**Tổng hợp:** Labor market ở trạng thái \"late-cycle resilient but softening at the edges\" — tức là vẫn tạo việc làm nhưng claims trending up và tốc độ chậm lại so với đỉnh. Fed có thể bắt đầu cut lãi suất mà không sợ \"re-ignite\" wage inflation vì AHE 3M annualized đã về 2.82%.\n\n### Tăng trưởng — Bounce từ đáy, GDPNow Q2 tích cực\n\n- **Real GDP Q1 2026:** +1.6% QoQ ann. (hồi phục từ Q4 2025: +0.5%)\n- **GDPNow Q2 2026:** +3.29% — bounce mạnh, consumer + investment lead\n- **Retail Sales tháng 4:** MoM +0.49%, YoY +4.87%, 3M annualized 12.88% — consumer vẫn chi tiêu\n- **Durable Goods Orders tháng 4:** MoM +8.02%, YoY +17.26% — capex bùng phát\n- **Industrial Production tháng 4:** MoM +0.68%, YoY +1.35% — ổn định\n- **JOLTS:** 7,618K — demand for labor vẫn mạnh\n\n**Tổng hợp:** Growth picture tích cực — không có dấu hiệu recession. GDPNow Q2 ở 3.29% là mức khỏe mạnh. Rủi ro chính là consumer sentiment thấp (Michigan 49.8 FRED tháng 4 — preliminary June 48.9) phản ánh lo ngại lạm phát/chi phí sinh hoạt, nhưng hành vi chi tiêu thực tế (Retail Sales) vẫn mạnh — hành động quan trọng hơn cảm xúc.\n\n---\n\n## Bối cảnh xu hướng (so với 30 ngày qua)\n\n### Ba turning points định hình lại regime từ cuối tháng 5\n\nNhìn lại 22 ngày từ 22/5 đến 13/6, thị trường đã trải qua ba bước ngoặt rõ rệt. Mỗi bước làm thay đổi cơ bản cách định giá rủi ro và phân bổ dòng tiền theo sector.\n\n---\n\n**Turning Point 1 — 2026-06-04: Tech leadership CRACK và rotation broadening**\n\nNgày 4/6 là ngày rotation lớn nhất kể từ khi hệ thống theo dõi. Đây là thời điểm XLK bắt đầu mất vai trò dẫn dắt thị trường sau gần ba tuần độc chiếm tăng trưởng (XLK đã tăng từ +15.75% 1M ngày 25/5 lên +21.09% 1M đỉnh ngày 4/6 trước khi rơi 4.5 điểm phần trăm chỉ trong một phiên).\n\nCatalyst kép: Initial Jobless Claims nhảy vọt lên 225K — lần đầu tiên phá ngưỡng 220K kể từ năm 2025 — cùng Challenger Job Cuts đảo chiều YoY từ -20.9% sang +3.4%, tức là thị trường lao động bắt đầu xuất hiện dấu hiệu căng thẳng từ phía người sử dụng lao động.\n\nPhản ứng thị trường ngược với trực giác và mang ý nghĩa cấu trúc: 9/11 sectors tăng trong khi XLK -1.56%. Các sector dẫn đầu là XLV +3.07% (healthcare) và XLF +2.59% (financials) — tức là thị trường đang re-rate sang narrative \"labor softening dẫn đến Fed cut\" thay vì \"growth mạnh dẫn đến tech beat\". 10Y yield giảm nhẹ xuống 4.46%, tín hiệu market đang price xác suất cut cao hơn nhưng chưa panic về recession.\n\nHàm ý sector dài hạn từ turning point này: rotation từ \"pure growth/duration play\" (XLK) sang \"defensive-growth hybrid\" (XLV, XLF). Đây là dấu hiệu chu kỳ đang chuyển sang giai đoạn muộn hơn, nơi cash-flow visibility và pricing power quan trọng hơn multiple expansion từ lãi suất thấp.\n\n---\n\n**Turning Point 2 — 2026-06-08: NFP +265K và VIX spike — \"No Landing\" shock**\n\nTuần từ 4–8/6 là đỉnh điểm của xung đột giữa hai narrative. NFP tháng 5 in ra +265K (inferred từ FRED PAYEMS: 159,001K vs 158,736K trước đó) — beat mạnh vs consensus ~150K — đẩy 10Y yield nhảy +9bp lên 4.55% và 2Y yield tăng +12bp lên 4.17% chỉ trong một phiên. Đồng thời AVGO earnings (4/6 sau close) kết quả kém hơn kỳ vọng, đánh thẳng vào AI capex narrative vốn là nền tảng của XLK rally.\n\nKết quả: XLK de-rate -8.09 điểm phần trăm trong vòng 4 phiên (từ +16.63% 1M ngày 4/6 xuống +8.54% 1M ngày 8/6). VIX spike +39.7% từ 16.06 lên 21.51 — first major vol event trong hơn 6 tuần, tức là thị trường lần đầu tiên sau nhiều tuần bị buộc phải mua bảo hiểm rủi ro giảm.\n\nĐiều quan trọng không phải là VIX spike mà là cái gì thay thế XLK trong leadership: XLV +5.48% 1M và XLE +4.25% 1M dẫn đầu trong tuần đó. Healthcare dẫn đầu vì nó có hai đặc tính cùng lúc — nó vừa là defensive (chống chịu tốt khi growth uncertainty tăng) vừa là duration asset (hưởng lợi khi yields giảm dài hạn theo kịch bản Fed cut). Energy dẫn đầu nhờ supply story riêng (crude inventory draw -7.97M shock tuần 3/6).\n\nHàm ý: NFP mạnh trong khi claims trend tăng và Challenger cuts đảo chiều YoY là tín hiệu hỗn hợp — lagging indicators (NFP) còn mạnh trong khi leading indicators (claims, Challenger) đã bắt đầu xấu. Thị trường bond phản ứng với lagging data (yields tăng), còn sector rotation phản ứng với leading data (healthcare bid). Đây là thời điểm cần nhìn qua \"noise\" của một bản NFP và theo dõi xu hướng claims tuần sau.\n\n---\n\n**Turning Point 3 — 2026-06-10/11: Bộ ba CPI/PPI/Michigan — Full disinflation confirmation**\n\nĐây là turning point đảo chiều hoàn toàn: trong khi tuần trước yields tăng vì NFP \"no landing\", tuần này bộ ba CPI (10/6) + PPI (11/6) + Michigan (12/6) đã cùng lúc xác nhận rằng lạm phát đang hạ nhiệt theo đúng lộ trình. Ba số liệu:\n\n- Core CPI MoM tháng 5: 0.21% (vs forecast 0.30%) — tốt nhất kể từ đầu năm 2026; 3M annualized giảm xuống 3.17%.\n- Core PPI YoY tháng 5: 4.9% (vs forecast 5.4%) — xác nhận pipeline áp lực thượng nguồn đang dịu; khoảng cách giữa PPI headline (6.46%) và Core CPI (2.96%) phản ánh energy/tariff isolated, không phải broad-based inflation.\n- Michigan 5Y Inflation Expectations: 3.4% (vs forecast 3.8%) — neo lạm phát dài hạn ổn định, cung cấp cho Fed \"political cover\" để bắt đầu cut mà không bị coi là bỏ qua lạm phát.\n\nKết quả market: 10Y yield rút -10bp từ 4.55% về 4.45%, 2Y yield rút -8bp về 4.05%, VIX hạ từ 22.22 về 19.44, HY OAS thu hẹp về 2.78%. SPY +1.7% ngày 11/6. XLK +3.73% và XLI +3.24% dẫn đầu — khác với rotation cũ, đây là \"growth + industrial\" cùng dẫn đầu, tín hiệu thị trường đang tin vào kịch bản \"growth tốt + inflation giảm\" dài hơi hơn.\n\n---\n\n### Bức tranh xu hướng định lượng 22 ngày\n\n**Lạm phát — xu hướng rõ ràng nhất:**\n\nCore CPI đang trên lộ trình giảm tốc bền vững. MoM progression từ Jan đến May 2026: +0.30% → +0.22% → +0.20% → +0.37% → +0.21%. Tháng 3 và tháng 4 có biến động nhưng 3M annualized (tính đến May) hiện ở 3.17% — đây là tốc độ thấp nhất trong năm 2026 và tiến gần mục tiêu 2% của Fed hơn bất kỳ thời điểm nào kể từ giữa 2025.\n\nCore PCE (thước đo Fed ưu tiên nhất) cũng đang giảm tốc: MoM tháng 4 là +0.24% và 3M annualized ở 3.78% — vẫn trên target nhưng trajectory rõ ràng là đi xuống.\n\nShelter YoY đang giảm từ >5% (đỉnh giữa 2025) về 3.62% hiện tại (3M annualized 4.87%), cho thấy lagged rent disinflation đang thẩm thấu dần vào CPI. Đây là thành phần có trọng số lớn nhất (~33% trong Core CPI), khi nó tiếp tục cool về 3.5% YoY trong Q3/Q4, áp lực đối với Fed để duy trì restrictive stance sẽ giảm đáng kể.\n\nCore Goods thậm chí đang deflate: MoM tháng 5 là -0.11%, 3M annualized chỉ 0.11% — tariff pass-through yếu hơn nhiều so với lo ngại ban đầu, có thể do USD mạnh (broad index 120.08) hấp thụ bớt chi phí import.\n\n**Lao động — xu hướng phân tầng:**\n\nHai lớp tín hiệu đang diverge rõ ràng và đây là điều cần theo dõi nhất:\n\nLớp lagging (backward-looking): NFP vẫn mạnh (+172K tháng 5, beat mạnh vs 85K forecast), JOLTS bật lên 7.618M (+10.6% MoM), UNRATE flat ở 4.3% ba tháng liên tiếp. Những số này cho thấy thị trường lao động CHƯA suy yếu — đây là lý do Fed sẽ chưa vội vã cut.\n\nLớp leading (forward-looking): Initial Claims tăng từ vùng 190–210K (tháng 4) lên 225–229K (tháng 5–6). Challenger Job Cuts đảo chiều YoY từ -20.9% sang +3.4% trong ngày 4/6. AHE 3M annualized đã giảm về 2.82% — dưới mức Core CPI 3M annualized 3.17%, tức là real wage growth đang âm dần (real wages đang bị lạm phát ăn mòn), đây là áp lực ngược cho consumer spending trong 2–3 quý tới.\n\nConclusion: Labor market đang ở giai đoạn \"soft landing in progress\" — chưa crack nhưng đã có nhiều vết rạn. Fed có thể cut lãi suất 1–2 lần trong H2 2026 mà không kích hoạt inflation surge vì AHE đã moderat đủ.\n\n**Tăng trưởng — đang ở peak Q2, cần xem Q3:**\n\nGDPNow Q2 ở 3.29% là mức khỏe mạnh và cao hơn nhiều so với Q1 (1.6%). Durable Goods +8.02% MoM và Retail Sales +0.49% MoM tháng 4 là những số tốt nhất trong năm. Tuy nhiên, điều đáng lo là đây có thể là peak Q2 trước khi consumer sentiment thấp (Michigan 48.9 preliminary) bắt đầu ảnh hưởng đến hành vi chi tiêu thực tế trong Q3. Retail Sales tháng 5 (sẽ công bố tuần tới) là số cần xem kỹ nhất.\n\n**Đường cong lãi suất — tín hiệu regime:**\n\nT10Y2Y spread hiện ở +0.39% (dẹt nhẹ từ +0.43% cuối tháng 5). Đường cong dương nhưng flat là tín hiệu thị trường đang trong giai đoạn chuyển tiếp: không còn \"hawkish inversion\" (đường cong âm như giai đoạn 2022–2023), nhưng cũng chưa \"steepening\" theo kiểu classic dovish pivot. Để đường cong steepen mạnh trở lại, cần ít nhất một trong hai điều kiện: Fed cắt rate (giảm 2Y) hoặc growth outlook xấu đi đáng kể (giảm cả 2Y và 10Y nhưng 2Y giảm nhanh hơn).\n\n---\n\n### Regime hiện tại và sector implications dài hạn\n\n**Regime hiện tại: Late-cycle disinflation với dovish optionality**\n\nNền kinh tế Mỹ đang ở giai đoạn cuối của chu kỳ thắt chặt, đặc trưng bởi: tăng trưởng vẫn dương nhưng đang chậm dần (GDP Q1 +1.6% vs Q2 est. +3.29% — volatile); lạm phát đang giảm tốc rõ rệt ở core metrics; lao động còn tight nhưng leading indicators đang crack dần; Fed đứng yên nhưng thị trường đang price xác suất 1–2 lần cut trong H2 2026.\n\nĐây là môi trường mà lịch sử cho thấy **không phải tất cả sectors đều hưởng lợi đều nhau**. Bảng dưới đây map các tín hiệu macro hiện tại sang sector implications:\n\n| Tín hiệu macro hiện tại | Mức độ | Sectors hưởng lợi | Sectors chịu áp lực |\n|---|---|---|---|\n| Core CPI giảm tốc (3M ann. 3.17%) | Mạnh | Tech (DCF), REITs (yields), Healthcare | Energy, Materials (pricing power giảm) |\n| AHE 3M ann. 2.82% — moderat | Tích cực vừa | Staples (chi phí lao động giảm), Healthcare | Margin-sensitive: restaurants, retail |\n| Claims trend tăng (225→229K) | Cảnh báo | Healthcare (defensive), Staples | Consumer Disc, Financials (credit) |\n| GDPNow Q2 +3.29% | Mạnh | Industrials, Materials, Financials | Utilities (anti-cyclical) |\n| Durable Goods +8% MoM | Mạnh | Industrials (capex), Tech (semis) | — |\n| T10Y2Y +0.39% flat | Hỗn hợp | — | Financials (NIM không expand) |\n| WTI consolidate $95 | Trung tính | Energy (floor) | Consumer Disc (gas costs) |\n| Michigan 5Y Inflation Exp. 3.4% | Cực tích cực | Tech, REITs (Fed cut path opened) | — |\n| USD Broad 120.08 (mạnh) | Áp lực | Domestic-focus (Financials, Staples) | Multinationals (Tech FX drag), Materials |\n\n**Conviction dài hạn từ bức tranh xu hướng:**\n\nHealthcare (XLV) là sector duy nhất hưởng lợi từ gần như tất cả các tín hiệu cùng lúc — defensive khi labor market crack, duration asset khi yields giảm, không bị ảnh hưởng bởi USD mạnh hay WTI volatility. Đây là core conviction hold.\n\nIndustrials (XLI) được hỗ trợ bởi capex cycle (Durable Goods +8%, ISM Mfg 54.0, GDPNow Q2 mạnh) nhưng cần xem Industrial Production tháng 5 (tuần tới) để xác nhận momentum. Nếu IP giảm tốc, thesis này bị thử thách.\n\nTechnology (XLK) trở thành sector \"conditional OW\" — phụ thuộc vào lộ trình yields. Mỗi -10bp trên 10Y yield tương đương với khoảng +2–3% re-rating cho high-multiple tech. Core CPI 3M annualized 3.17% đang đặt nền cho kịch bản yields tiếp tục giảm về 4.20–4.30% trong Q3, đó sẽ là catalyst mạnh nhất cho XLK. Rủi ro chính: AI capex narrative bị challenge (AVGO precedent), USD mạnh đè FX revenue.\n\nFinancials (XLF) là sector tín hiệu hỗn hợp nhất: yields giảm → NIM pressure (tiêu cực); Fed cut → steeper curve potentially (tích cực dài hạn); labor soft-landing → credit quality ổn (tích cực); GDPNow mạnh → loan demand (tích cực). Net: neutral-to-cautious cho đến khi curve steepen rõ hơn.\n\nReal Estate (XLRE) là sector \"waiting for the starter gun\" — yields giảm -10bp tuần này là tailwind rõ nhất, nhưng housing supply vẫn thấp (Starts tháng 4: 1,465K, giảm -2.79% MoM) và mortgage demand chưa phục hồi. Nếu 10Y về 4.30% và Housing Starts tháng 5 tăng trở lại, XLRE có thể là sector tăng mạnh nhất trong H2 2026.\n\nEnergy (XLE) là sector \"orphaned\" — WTI đã giảm từ $112 xuống $95 (crash -15% peak-to-trough), thesis supply tốt vẫn còn (crude draw -7.97M shock tuần 3/6), nhưng disinflation narrative dài hạn và growth slowdown concerns làm giảm demand outlook. Neutral cho đến khi có OPEC catalyst hoặc WTI stabilize và bật qua $100.\n\n---\n\n**Xu hướng đang gia tốc và rủi ro đảo chiều:**\n\nDisinflation trajectory đang tăng tốc: Core CPI đã giảm từ đỉnh 3M ann. ~5.5% (đầu Q1 2026) xuống 3.17% hiện tại. Nếu momentum này duy trì, Core CPI 3M annualized có thể về 2.50–2.80% vào Q4 2026, tức là Fed sẽ có đủ điều kiện để cut 50–75bp trước cuối năm mà không bị mất uy tín.\n\nRủi ro đảo chiều chính có hai nguồn: (1) WTI bật mạnh trở lại >$100 do OPEC hoặc geopolitical shock, làm Headline CPI Q3 tăng tốc và buộc Fed phải giữ lãi suất cao hơn lâu hơn — headwind cho Tech và REITs; (2) Labor market crack nhanh hơn dự kiến (claims vượt 250K, NFP tháng 6 miss) → growth scare → Fed cut nhưng VIX tăng → defensive bid mạnh (Healthcare, Staples) nhưng cyclicals (Industrials, Materials) bị đè.\n\nKịch bản baseline (xác suất cao nhất) là disinflation tiếp tục, Fed cut 1–2 lần trong H2 2026, GDPNow Q2 thực tế về khoảng 2.8–3.0% (thấp hơn nowcast do revision), thị trường duy trì regime \"risk-on với rotation rộng hơn\" — không còn narrow XLK monopoly như tháng 5, mà là broad participation giữa Tech + Healthcare + Industrials.\n\n---\n\n## Cảnh báo & Catalyst sắp tới\n\n**Tuần tới (16–20/6):**\n\n1. **Retail Sales tháng 5 (dự kiến ~17/6):** Consumer có tiếp tục chi tiêu sau tháng 4 mạnh (+0.49% MoM)? Nếu miss, GDPNow Q2 sẽ bị cắt — rủi ro cho XLY/XLK.\n\n2. **Industrial Production tháng 5 (~17/6):** Xác nhận Mfg cluster ISM 54.0 có trụ được không? Ảnh hưởng XLI/XLB.\n\n3. **Housing Starts tháng 5 (~18/6):** Housing Starts tháng 4 giảm -2.79% về 1,465K — yields giảm tuần này có giúp hồi phục? XLRE sẽ nhạy cảm nhất.\n\n4. **Fed Speakers:** Theo dõi bất kỳ Fed member nào comment về CPI/PPI data tuần này — sẽ định hình thời điểm cut. Nếu 2–3 officials confirm \"đủ điều kiện để cut\", 2Y yield có thể giảm thêm về 3.90–3.95%.\n\n5. **WTI Crude Oil:** Hiện $95 và đang consolidate sau crash từ $112 (tháng 5). OPEC+ meeting hoặc bất kỳ geopolitical shock nào có thể đẩy WTI về $100+ — đây là rủi ro chính cho Headline CPI Q3 và narrative disinflation hiện tại.\n\n6. **10Y Inflation Breakeven:** Vừa nhích lên 2.31% sau khi chạm đáy 2.29%. Nếu breakeven tăng tiếp lên 2.40%+ mà không có lý do data tốt, đó là cảnh báo thị trường bond nghi ngờ disinflation narrative.\n\n---\n\n## Conviction Sectors — Cập nhật cuối tuần\n\n| Sector | Stance | Lý do |\n|---|---|---|\n| **XLK Technology** | Stalking / Light OW | Disinflation narrative = DCF tailwind. Core CPI 3M ann 3.17% là tốt nhất từ đầu năm. Yields drop -10bp tuần này hỗ trợ. FOMO risk nếu Core CPI tiếp tục cool về <0.2% MoM. |\n| **XLV Healthcare** | Overweight CONFIRMED | Defensive core, RS 1M vẫn dẫn đầu. Hưởng lợi từ yields giảm (duration assets). Không có catalyst tiêu cực. |\n| **XLF Financials** | Neutral / Light OW (cautious) | T10Y2Y +0.39% vẫn flat — NIM không cải thiện mạnh. Nhưng nếu labor softening tiếp tục → Fed cut → curve có thể steepen → upgrade. Theo dõi. |\n| **XLI Industrials** | Light OW | GDPNow Q2 3.29% + Durable Goods +8% + ISM Mfg 54.0 → capex cycle on. Relief rally tuần này xác nhận sức mạnh XLI. |\n| **XLE Energy** | Neutral | WTI $95 — không upside catalyst rõ ràng. OPEC risk duy nhất. Không entry mới. |\n| **XLRE Real Estate** | Watch (nâng từ UW) | 10Y giảm -10bp tuần này là strong tailwind. Housing Starts data tuần tới là catalyst. Nếu 10Y về 4.30%, upgrade OW. |\n| **XLU Utilities** | Underweight | Dù yields giảm hỗ trợ, RS 1M vẫn tệ. Không có growth catalyst riêng. |\n| **XLP Staples** | Neutral | Defensive bid nhưng không có thematic catalyst mạnh khi regime risk-on. |\n| **XLY Discretionary** | Neutral (cautious) | Michigan Sentiment 48.9 tuyệt đối thấp vs hành vi Retail Sales mạnh — tín hiệu hỗn hợp. Chờ Retail Sales T5. |\n| **XLC Communications** | Underweight | RS tệ, không có catalyst. |\n| **XLB Materials** | Neutral | Relief rally tuần này nhờ disinflation. Core Goods deflation (-0.11% MoM) có thể là headwind cho pricing power. |\n\n---\n\n*Nguồn dữ liệu: FRED API (fred_snapshot, collected 2026-06-13T13:12:30 UTC). Không có data mới từ investing.com hôm nay. Context từ daily_summaries.md (báo cáo 10/6, 11/6, 12/6). FRED series lag 1 ngày so với thị trường — 10Y yield 4.45% tính đến 11/6 (Thứ Năm); T10Y2Y 0.39% tính đến 12/6 (Thứ Sáu). WTI và USD Broad lag hơn do không có FRED update ngày 12-13/6.*"
     }
   ],
   "monthly_reports": [
@@ -20048,11 +22364,12 @@ window.MACRO_DATA = {
     "2026-06-09",
     "2026-06-10",
     "2026-06-11",
-    "2026-06-12"
+    "2026-06-12",
+    "2026-06-13"
   ],
   "sectors": {
     "schema_version": "1.1",
-    "fetched_at": "2026-06-12T20:58:37.838530+00:00",
+    "fetched_at": "2026-06-13T13:15:02.276101+00:00",
     "benchmark": {
       "latest": 741.75,
       "latest_date": "2026-06-12",
@@ -21662,7 +23979,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-12-17",
-            "value": 108.64
+            "value": 108.65
           },
           {
             "date": "2025-12-18",
@@ -22744,7 +25061,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-01-02",
-            "value": 84.73
+            "value": 84.74
           },
           {
             "date": "2026-01-05",
@@ -23234,7 +25551,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-06-16",
-            "value": 83.98
+            "value": 83.99
           },
           {
             "date": "2025-06-17",
@@ -28748,7 +31065,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-10-03",
-            "value": 105.43
+            "value": 105.44
           },
           {
             "date": "2025-10-06",
@@ -29192,7 +31509,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-03-16",
-            "value": 112.62
+            "value": 112.63
           },
           {
             "date": "2026-03-17",
@@ -31538,7 +33855,7 @@ window.MACRO_DATA = {
   },
   "cross_asset": {
     "schema_version": "1.1",
-    "fetched_at": "2026-06-12T20:58:38.281402+00:00",
+    "fetched_at": "2026-06-13T13:15:02.833023+00:00",
     "assets": {
       "^VIX": {
         "latest": 17.68,
@@ -33587,15 +35904,15 @@ window.MACRO_DATA = {
         "label": "10Y Treasury Yield (^TNX)"
       },
       "DX-Y.NYB": {
-        "latest": 99.8,
+        "latest": 99.75,
         "latest_date": "2026-06-12",
-        "ret_1d": -0.06,
-        "ret_1w": -0.27,
-        "ret_1m": 1.34,
-        "ret_3m": -0.56,
-        "ret_6m": 1.02,
-        "ret_1y": 1.18,
-        "ret_ytd": 1.4,
+        "ret_1d": -0.11,
+        "ret_1w": -0.32,
+        "ret_1m": 1.29,
+        "ret_3m": -0.61,
+        "ret_6m": 0.97,
+        "ret_1y": 1.14,
+        "ret_ytd": 1.35,
         "history": [
           {
             "date": "2025-06-12",
@@ -34603,22 +36920,22 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-12",
-            "value": 99.8
+            "value": 99.75
           }
         ],
         "ticker": "DX-Y.NYB",
         "label": "DXY US Dollar Index"
       },
       "CL=F": {
-        "latest": 84.3,
+        "latest": 84.88,
         "latest_date": "2026-06-12",
-        "ret_1d": -3.89,
-        "ret_1w": -6.89,
-        "ret_1m": -16.55,
-        "ret_3m": -14.6,
-        "ret_6m": 44.2,
-        "ret_1y": 23.9,
-        "ret_ytd": 47.07,
+        "ret_1d": -3.23,
+        "ret_1w": -6.25,
+        "ret_1m": -15.98,
+        "ret_3m": -14.01,
+        "ret_6m": 45.19,
+        "ret_1y": 24.75,
+        "ret_ytd": 48.08,
         "history": [
           {
             "date": "2025-06-13",
@@ -35626,22 +37943,22 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-12",
-            "value": 84.3
+            "value": 84.88
           }
         ],
         "ticker": "CL=F",
         "label": "WTI Crude Oil Futures"
       },
       "GC=F": {
-        "latest": 4235.7,
+        "latest": 4215.0,
         "latest_date": "2026-06-12",
-        "ret_1d": 3.55,
-        "ret_1w": -2.34,
-        "ret_1m": -9.83,
-        "ret_3m": -16.17,
-        "ret_6m": 0.94,
-        "ret_1y": 25.28,
-        "ret_ytd": -1.82,
+        "ret_1d": 3.05,
+        "ret_1w": -2.82,
+        "ret_1m": -10.28,
+        "ret_3m": -16.58,
+        "ret_6m": 0.44,
+        "ret_1y": 24.67,
+        "ret_ytd": -2.3,
         "history": [
           {
             "date": "2025-06-13",
@@ -36649,22 +38966,22 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-12",
-            "value": 4235.7
+            "value": 4215.0
           }
         ],
         "ticker": "GC=F",
         "label": "Gold Futures"
       },
       "HG=F": {
-        "latest": 6.47,
+        "latest": 6.43,
         "latest_date": "2026-06-12",
-        "ret_1d": 3.44,
-        "ret_1w": 3.36,
-        "ret_1m": -2.43,
-        "ret_3m": 13.29,
-        "ret_6m": 22.72,
-        "ret_1y": 34.27,
-        "ret_ytd": 14.79,
+        "ret_1d": 2.74,
+        "ret_1w": 2.67,
+        "ret_1m": -3.09,
+        "ret_3m": 12.53,
+        "ret_6m": 21.89,
+        "ret_1y": 33.37,
+        "ret_ytd": 14.02,
         "history": [
           {
             "date": "2025-06-13",
@@ -37672,27 +39989,23 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-12",
-            "value": 6.47
+            "value": 6.43
           }
         ],
         "ticker": "HG=F",
         "label": "Copper Futures"
       },
       "BTC-USD": {
-        "latest": 63416.92,
-        "latest_date": "2026-06-12",
-        "ret_1d": -0.23,
-        "ret_1w": 0.28,
-        "ret_1m": -15.99,
-        "ret_3m": -13.1,
-        "ret_6m": -10.12,
-        "ret_1y": -48.13,
-        "ret_ytd": -28.53,
+        "latest": 64133.88,
+        "latest_date": "2026-06-13",
+        "ret_1d": 0.93,
+        "ret_1w": 1.65,
+        "ret_1m": -16.35,
+        "ret_3m": -12.21,
+        "ret_6m": -7.43,
+        "ret_1y": -47.61,
+        "ret_ytd": -27.72,
         "history": [
-          {
-            "date": "2025-10-04",
-            "value": 122425.43
-          },
           {
             "date": "2025-10-05",
             "value": 123513.48
@@ -38695,7 +41008,11 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-12",
-            "value": 63416.92
+            "value": 63543.2
+          },
+          {
+            "date": "2026-06-13",
+            "value": 64133.88
           }
         ],
         "ticker": "BTC-USD",
@@ -38705,9 +41022,9 @@ window.MACRO_DATA = {
   },
   "calendar": {
     "schema_version": "1.1",
-    "fetched_at": "2026-06-12T21:00:13.470660+00:00",
-    "window_start": "2026-06-12",
-    "window_end": "2026-07-03",
+    "fetched_at": "2026-06-13T13:17:23.076024+00:00",
+    "window_start": "2026-06-13",
+    "window_end": "2026-07-04",
     "macro": [
       {
         "date": "2026-06-15",
@@ -38810,8 +41127,8 @@ window.MACRO_DATA = {
         "ticker": "NKE",
         "name": "Nike",
         "sector_etf": "XLY",
-        "time": "AMC",
-        "eps_estimate": 0.12,
+        "time": null,
+        "eps_estimate": null,
         "revenue_estimate_b": null,
         "importance": "medium",
         "type": "earnings"
@@ -38844,7 +41161,8 @@ window.MACRO_DATA = {
               "PCEPILFE",
               "PPIFID",
               "MICH1Y"
-            ]
+            ],
+            "primary_link": "https://www.bls.gov/cpi/"
           },
           {
             "id": "CPILFESL",
@@ -38863,7 +41181,8 @@ window.MACRO_DATA = {
               "CPIAUCSL",
               "PCEPILFE",
               "MEDCPIM158SFRBCLE"
-            ]
+            ],
+            "primary_link": "https://www.bls.gov/cpi/"
           },
           {
             "id": "PCEPI",
@@ -38883,7 +41202,8 @@ window.MACRO_DATA = {
               "CPIAUCSL",
               "PI",
               "PCE"
-            ]
+            ],
+            "primary_link": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
           },
           {
             "id": "PCEPILFE",
@@ -38903,7 +41223,8 @@ window.MACRO_DATA = {
               "PCEPI",
               "ULCNFB",
               "AHE"
-            ]
+            ],
+            "primary_link": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
           },
           {
             "id": "PPIFID",
@@ -38922,7 +41243,8 @@ window.MACRO_DATA = {
               "PPIFES",
               "CPIAUCSL",
               "ISMMFGPRICES"
-            ]
+            ],
+            "primary_link": "https://www.bls.gov/ppi/"
           },
           {
             "id": "PPIFES",
@@ -38946,7 +41268,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "PPIFID",
               "CPILFESL"
-            ]
+            ],
+            "primary_link": "https://www.bls.gov/ppi/"
           },
           {
             "id": "MEDCPIM158SFRBCLE",
@@ -38967,7 +41290,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "CPILFESL",
               "CPIAUCSL"
-            ]
+            ],
+            "primary_link": "https://www.clevelandfed.org/our-research/indicators-and-data/median-cpi-methodology.aspx"
           },
           {
             "id": "REALEARN",
@@ -38989,7 +41313,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "CPIAUCSL",
               "PCEPILFE"
-            ]
+            ],
+            "primary_link": "https://www.bls.gov/news.release/realer.htm"
           }
         ]
       },
@@ -39016,7 +41341,8 @@ window.MACRO_DATA = {
               "ICSA",
               "JTSJOL",
               "ADPMNUSNERNSA"
-            ]
+            ],
+            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm"
           },
           {
             "id": "UNRATE",
@@ -39036,7 +41362,8 @@ window.MACRO_DATA = {
               "U6RATE",
               "CIVPART",
               "ICSA"
-            ]
+            ],
+            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm"
           },
           {
             "id": "ICSA",
@@ -39056,7 +41383,8 @@ window.MACRO_DATA = {
               "IC4WSA",
               "CHALLENGER",
               "PAYEMS"
-            ]
+            ],
+            "primary_link": "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases"
           },
           {
             "id": "CES0500000003",
@@ -39075,7 +41403,8 @@ window.MACRO_DATA = {
               "PAYEMS",
               "ULCNFB",
               "PCEPILFE"
-            ]
+            ],
+            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm"
           },
           {
             "id": "JTSJOL",
@@ -39094,7 +41423,8 @@ window.MACRO_DATA = {
               "UNRATE",
               "PAYEMS",
               "CHALLENGER"
-            ]
+            ],
+            "primary_link": "https://www.bls.gov/jlt/"
           },
           {
             "id": "CCSA",
@@ -39116,7 +41446,8 @@ window.MACRO_DATA = {
               "ICSA",
               "IC4WSA",
               "PAYEMS"
-            ]
+            ],
+            "primary_link": "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases"
           },
           {
             "id": "IC4WSA",
@@ -39138,7 +41469,8 @@ window.MACRO_DATA = {
               "PAYEMS",
               "UNRATE",
               "ICSA"
-            ]
+            ],
+            "primary_link": "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases"
           },
           {
             "id": "ADPMNUSNERNSA",
@@ -39160,7 +41492,9 @@ window.MACRO_DATA = {
             "related_indicators": [
               "PAYEMS",
               "ICSA"
-            ]
+            ],
+            "primary_link": "https://adpemploymentreport.com/",
+            "news_release_link": "https://adpemploymentreport.com/"
           },
           {
             "id": "CHALLENGER",
@@ -39181,7 +41515,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "ICSA",
               "PAYEMS"
-            ]
+            ],
+            "primary_link": "https://www.challengergray.com/tags/job-cuts/"
           },
           {
             "id": "OPHNFB",
@@ -39202,7 +41537,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "ULCNFB",
               "GDPC1"
-            ]
+            ],
+            "primary_link": "https://www.bls.gov/lpc/"
           },
           {
             "id": "ULCNFB",
@@ -39224,7 +41560,8 @@ window.MACRO_DATA = {
               "PAYEMS",
               "UNRATE",
               "ICSA"
-            ]
+            ],
+            "primary_link": "https://www.bls.gov/lpc/"
           },
           {
             "id": "CIVPART",
@@ -39246,7 +41583,8 @@ window.MACRO_DATA = {
               "PAYEMS",
               "UNRATE",
               "ICSA"
-            ]
+            ],
+            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm"
           },
           {
             "id": "U6RATE",
@@ -39268,7 +41606,8 @@ window.MACRO_DATA = {
               "PAYEMS",
               "UNRATE",
               "ICSA"
-            ]
+            ],
+            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm"
           },
           {
             "id": "AWHAETP",
@@ -39290,7 +41629,8 @@ window.MACRO_DATA = {
               "PAYEMS",
               "UNRATE",
               "ICSA"
-            ]
+            ],
+            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm"
           },
           {
             "id": "CES9091000001",
@@ -39312,7 +41652,8 @@ window.MACRO_DATA = {
               "PAYEMS",
               "UNRATE",
               "ICSA"
-            ]
+            ],
+            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm"
           },
           {
             "id": "MANEMP",
@@ -39334,7 +41675,8 @@ window.MACRO_DATA = {
               "PAYEMS",
               "UNRATE",
               "ICSA"
-            ]
+            ],
+            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm"
           },
           {
             "id": "CES0500000008",
@@ -39356,7 +41698,8 @@ window.MACRO_DATA = {
               "PAYEMS",
               "UNRATE",
               "ICSA"
-            ]
+            ],
+            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm"
           },
           {
             "id": "CETI",
@@ -39378,7 +41721,9 @@ window.MACRO_DATA = {
               "PAYEMS",
               "UNRATE",
               "ICSA"
-            ]
+            ],
+            "primary_link": "https://www.conference-board.org/data/employmenttrends.cfm",
+            "news_release_link": "https://www.conference-board.org/topics/consumer-confidence"
           },
           {
             "id": "NYFED1YINFL",
@@ -39400,7 +41745,9 @@ window.MACRO_DATA = {
               "PAYEMS",
               "UNRATE",
               "ICSA"
-            ]
+            ],
+            "primary_link": "https://www.newyorkfed.org/microeconomics/sce",
+            "news_release_link": "https://www.newyorkfed.org/microeconomics/sce"
           }
         ]
       },
@@ -39414,7 +41761,7 @@ window.MACRO_DATA = {
             "full_name": "Real Gross Domestic Product",
             "description": "Tổng sản phẩm quốc nội thực (đã điều chỉnh lạm phát). Thước đo rộng nhất về hoạt động kinh tế.",
             "frequency": "Hàng quý (có nhiều bản estimate: Advance, Second, Final)",
-            "link": "https://fred.stlouisfed.org/series/GDPC1",
+            "link": "https://fred.stlouisfed.org/series/A191RL1Q225SBEA",
             "expectation_meaning": "Khẳng định nền kinh tế đang mở rộng hay thu hẹp (Suy thoái = 2 quý GDP âm liên tiếp).",
             "good_vs_bad": "CAO HƠN DỰ BÁO: Tốt cho Chứng khoán (kinh tế khỏe), lợi suất tăng.\nTHẤP HƠN DỰ BÁO: Xấu, nguy cơ hạ cánh cứng (Hard Landing).",
             "market_reaction": "📈 GDP mạnh: Sự bùng nổ của nhóm chu kỳ — Công nghiệp (XLI), Ngân hàng (XLF), Vật liệu (XLB) và Năng lượng (XLE). Dòng tiền rút khỏi Trái phiếu và cổ phiếu phòng thủ.\n📉 GDP suy thoái: Dòng tiền trú ẩn vào XLU (Tiện ích), XLV (Y tế) và Trái phiếu chính phủ.",
@@ -39426,7 +41773,8 @@ window.MACRO_DATA = {
               "PCE",
               "INDPRO",
               "RSAFS"
-            ]
+            ],
+            "primary_link": "https://www.bea.gov/data/gdp/gross-domestic-product"
           },
           {
             "id": "RSAFS",
@@ -39446,7 +41794,9 @@ window.MACRO_DATA = {
               "PI",
               "UMCSENT",
               "TOTALSA"
-            ]
+            ],
+            "primary_link": "https://www.census.gov/retail/marts/index.html",
+            "news_release_link": "https://www.census.gov/economic-indicators/"
           },
           {
             "id": "NAPM",
@@ -39465,7 +41815,8 @@ window.MACRO_DATA = {
               "GDPC1",
               "GDPNOW",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/"
           },
           {
             "id": "NAPMNMI",
@@ -39484,7 +41835,8 @@ window.MACRO_DATA = {
               "GDPC1",
               "GDPNOW",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/"
           },
           {
             "id": "GDPNOW",
@@ -39507,7 +41859,9 @@ window.MACRO_DATA = {
               "RSAFS",
               "INDPRO",
               "PCE"
-            ]
+            ],
+            "primary_link": "https://www.atlantafed.org/cqer/research/gdpnow",
+            "news_release_link": "https://www.atlantafed.org/cqer/research/gdpnow"
           },
           {
             "id": "SPGLOBALMFG",
@@ -39529,7 +41883,8 @@ window.MACRO_DATA = {
               "GDPC1",
               "GDPNOW",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.spglobal.com/marketintelligence/en/mi/products/pmi.html"
           },
           {
             "id": "SPGLOBALSVC",
@@ -39551,7 +41906,8 @@ window.MACRO_DATA = {
               "GDPC1",
               "GDPNOW",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.spglobal.com/marketintelligence/en/mi/products/pmi.html"
           },
           {
             "id": "SPGLOBALCOMP",
@@ -39573,7 +41929,8 @@ window.MACRO_DATA = {
               "GDPC1",
               "GDPNOW",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.spglobal.com/marketintelligence/en/mi/products/pmi.html"
           },
           {
             "id": "CHICAGOPMI",
@@ -39595,7 +41952,8 @@ window.MACRO_DATA = {
               "GDPC1",
               "GDPNOW",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.ism-chicago.org/"
           },
           {
             "id": "ISMMFGNEW",
@@ -39618,7 +41976,8 @@ window.MACRO_DATA = {
               "GDPC1",
               "GDPNOW",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/"
           },
           {
             "id": "ISMMFGPRICES",
@@ -39641,7 +42000,8 @@ window.MACRO_DATA = {
               "GDPC1",
               "GDPNOW",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/"
           },
           {
             "id": "ISMMFGEMP",
@@ -39664,7 +42024,8 @@ window.MACRO_DATA = {
               "GDPC1",
               "GDPNOW",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/"
           },
           {
             "id": "NEWORDER",
@@ -39687,7 +42048,9 @@ window.MACRO_DATA = {
               "DGORDER",
               "INDPRO",
               "ISMMFGNEW"
-            ]
+            ],
+            "primary_link": "https://www.census.gov/manufacturing/m3/index.html",
+            "news_release_link": "https://www.census.gov/economic-indicators/"
           },
           {
             "id": "DGORDER",
@@ -39713,7 +42076,9 @@ window.MACRO_DATA = {
               "NEWORDER",
               "INDPRO",
               "MANEMP"
-            ]
+            ],
+            "primary_link": "https://www.census.gov/manufacturing/m3/index.html",
+            "news_release_link": "https://www.census.gov/economic-indicators/"
           },
           {
             "id": "TTLCONS",
@@ -39735,7 +42100,9 @@ window.MACRO_DATA = {
               "PERMIT",
               "HOUST",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.census.gov/construction/c30/index.html",
+            "news_release_link": "https://www.census.gov/economic-indicators/"
           },
           {
             "id": "INDPRO",
@@ -39758,7 +42125,9 @@ window.MACRO_DATA = {
               "NEWORDER",
               "DGORDER",
               "ISMMFGNEW"
-            ]
+            ],
+            "primary_link": "https://www.federalreserve.gov/releases/g17/current/default.htm",
+            "news_release_link": "https://www.federalreserve.gov/releases/g17/current/default.htm"
           },
           {
             "id": "PI",
@@ -39780,7 +42149,8 @@ window.MACRO_DATA = {
               "PCE",
               "AHE",
               "REALEARN"
-            ]
+            ],
+            "primary_link": "https://www.bea.gov/data/income-saving/personal-income"
           },
           {
             "id": "PCE",
@@ -39805,7 +42175,8 @@ window.MACRO_DATA = {
               "RSAFS",
               "UMCSENT",
               "PCEPI"
-            ]
+            ],
+            "primary_link": "https://www.bea.gov/data/personal-consumption-expenditures"
           },
           {
             "id": "TOTALSA",
@@ -39829,7 +42200,8 @@ window.MACRO_DATA = {
               "GDPC1",
               "GDPNOW",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.bea.gov/data/special-topics/motor-vehicles"
           },
           {
             "id": "WHLSLRIMSA",
@@ -39852,7 +42224,9 @@ window.MACRO_DATA = {
               "GDPC1",
               "GDPNOW",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.census.gov/wholesale/index.html",
+            "news_release_link": "https://www.census.gov/economic-indicators/"
           },
           {
             "id": "RETAILINV",
@@ -39874,7 +42248,9 @@ window.MACRO_DATA = {
               "GDPC1",
               "GDPNOW",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.census.gov/retail/index.html",
+            "news_release_link": "https://www.census.gov/economic-indicators/"
           },
           {
             "id": "GOODSTRADE",
@@ -39896,7 +42272,9 @@ window.MACRO_DATA = {
               "GDPC1",
               "GDPNOW",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.census.gov/foreign-trade/index.html",
+            "news_release_link": "https://www.census.gov/economic-indicators/"
           },
           {
             "id": "CFNAI",
@@ -39918,7 +42296,9 @@ window.MACRO_DATA = {
               "GDPC1",
               "GDPNOW",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.chicagofed.org/research/data/cfnai/current-data",
+            "news_release_link": "https://www.chicagofed.org/research/data/cfnai/current-data"
           },
           {
             "id": "RICHMONDMFG",
@@ -39942,7 +42322,8 @@ window.MACRO_DATA = {
               "GDPC1",
               "GDPNOW",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.richmondfed.org/research/data_analysis/manufacturing"
           },
           {
             "id": "DALLASMFG",
@@ -39967,7 +42348,9 @@ window.MACRO_DATA = {
               "GDPC1",
               "GDPNOW",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.dallasfed.org/research/surveys/tmos",
+            "news_release_link": "https://www.dallasfed.org/research/surveys/tmos"
           },
           {
             "id": "CORPPROFITS",
@@ -39989,7 +42372,8 @@ window.MACRO_DATA = {
               "GDPC1",
               "GDPNOW",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.bea.gov/data/income-saving/corporate-profits"
           },
           {
             "id": "ISMSVCBA",
@@ -40011,7 +42395,8 @@ window.MACRO_DATA = {
               "GDPC1",
               "GDPNOW",
               "INDPRO"
-            ]
+            ],
+            "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/"
           }
         ]
       },
@@ -40035,7 +42420,9 @@ window.MACRO_DATA = {
             "related_indicators": [
               "UMCSENT",
               "MICH1Y"
-            ]
+            ],
+            "primary_link": "https://www.conference-board.org/data/consumerconfidence.cfm",
+            "news_release_link": "https://www.conference-board.org/topics/consumer-confidence"
           },
           {
             "id": "UMCSENT",
@@ -40055,7 +42442,9 @@ window.MACRO_DATA = {
               "MICHEXP",
               "MICH1Y",
               "MICH5Y"
-            ]
+            ],
+            "primary_link": "http://www.sca.isr.umich.edu/",
+            "news_release_link": "https://data.sca.isr.umich.edu/charts.html"
           },
           {
             "id": "MICHCURR",
@@ -40076,7 +42465,9 @@ window.MACRO_DATA = {
             "related_indicators": [
               "UMCSENT",
               "MICH1Y"
-            ]
+            ],
+            "primary_link": "http://www.sca.isr.umich.edu/",
+            "news_release_link": "https://data.sca.isr.umich.edu/charts.html"
           },
           {
             "id": "MICHEXP",
@@ -40097,7 +42488,9 @@ window.MACRO_DATA = {
             "related_indicators": [
               "UMCSENT",
               "MICH1Y"
-            ]
+            ],
+            "primary_link": "http://www.sca.isr.umich.edu/",
+            "news_release_link": "https://data.sca.isr.umich.edu/charts.html"
           },
           {
             "id": "MICH1Y",
@@ -40120,7 +42513,9 @@ window.MACRO_DATA = {
               "NYFED1YINFL",
               "T10YIE",
               "CPIAUCSL"
-            ]
+            ],
+            "primary_link": "http://www.sca.isr.umich.edu/",
+            "news_release_link": "https://data.sca.isr.umich.edu/charts.html"
           },
           {
             "id": "MICH5Y",
@@ -40141,7 +42536,9 @@ window.MACRO_DATA = {
             "related_indicators": [
               "MICH1Y",
               "T10YIE"
-            ]
+            ],
+            "primary_link": "http://www.sca.isr.umich.edu/",
+            "news_release_link": "https://data.sca.isr.umich.edu/charts.html"
           },
           {
             "id": "NFIB",
@@ -40162,7 +42559,9 @@ window.MACRO_DATA = {
             "related_indicators": [
               "UMCSENT",
               "MICH1Y"
-            ]
+            ],
+            "primary_link": "https://www.nfib.com/surveys/small-business-economic-trends/",
+            "news_release_link": "https://www.nfib.com/surveys/small-business-economic-trends/"
           },
           {
             "id": "IBDTIPP",
@@ -40183,7 +42582,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "UMCSENT",
               "MICH1Y"
-            ]
+            ],
+            "primary_link": "https://www.tipponline.com/"
           },
           {
             "id": "IPSOSPCSI",
@@ -40204,7 +42604,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "UMCSENT",
               "MICH1Y"
-            ]
+            ],
+            "primary_link": "https://www.ipsos.com/en/economy/PCSI"
           }
         ]
       },
@@ -40229,7 +42630,9 @@ window.MACRO_DATA = {
               "PERMIT",
               "HSN1F",
               "MBA30Y"
-            ]
+            ],
+            "primary_link": "https://www.census.gov/construction/nrc/index.html",
+            "news_release_link": "https://www.census.gov/economic-indicators/"
           },
           {
             "id": "EXHOSLUSM495S",
@@ -40248,7 +42651,9 @@ window.MACRO_DATA = {
               "HSN1F",
               "PERMIT",
               "MBA30Y"
-            ]
+            ],
+            "primary_link": "https://www.nar.realtor/research-and-statistics/housing-statistics/existing-home-sales",
+            "news_release_link": "https://www.nar.realtor/research-and-statistics/housing-statistics/existing-home-sales"
           },
           {
             "id": "PERMIT",
@@ -40270,7 +42675,9 @@ window.MACRO_DATA = {
               "HOUST",
               "HSN1F",
               "EXHOSLUSM495S"
-            ]
+            ],
+            "primary_link": "https://www.census.gov/construction/nrc/index.html",
+            "news_release_link": "https://www.census.gov/economic-indicators/"
           },
           {
             "id": "HSN1F",
@@ -40292,7 +42699,9 @@ window.MACRO_DATA = {
               "HOUST",
               "PERMIT",
               "MBA30Y"
-            ]
+            ],
+            "primary_link": "https://www.census.gov/construction/nrs/index.html",
+            "news_release_link": "https://www.census.gov/economic-indicators/"
           },
           {
             "id": "USSTHPI",
@@ -40314,7 +42723,9 @@ window.MACRO_DATA = {
               "HOUST",
               "PERMIT",
               "MBA30Y"
-            ]
+            ],
+            "primary_link": "https://www.fhfa.gov/DataTools/Downloads/Pages/House-Price-Index.aspx",
+            "news_release_link": "https://www.fhfa.gov/DataTools/Downloads/Pages/House-Price-Index.aspx"
           },
           {
             "id": "CSCH20",
@@ -40337,7 +42748,8 @@ window.MACRO_DATA = {
               "HOUST",
               "PERMIT",
               "MBA30Y"
-            ]
+            ],
+            "primary_link": "https://www.spglobal.com/spdji/en/index-family/indicators/sp-corelogic-case-shiller/"
           },
           {
             "id": "MBA30Y",
@@ -40359,7 +42771,8 @@ window.MACRO_DATA = {
               "DGS10",
               "MBAAPPS",
               "HOUST"
-            ]
+            ],
+            "primary_link": "https://www.mba.org/news-and-research/research-and-economics/single-family-research/mortgage-bankers-weekly-applications-survey"
           },
           {
             "id": "MBAAPPS",
@@ -40384,7 +42797,8 @@ window.MACRO_DATA = {
               "HOUST",
               "PERMIT",
               "MBA30Y"
-            ]
+            ],
+            "primary_link": "https://www.mba.org/news-and-research/research-and-economics/single-family-research/mortgage-bankers-weekly-applications-survey"
           }
         ]
       },
@@ -40409,7 +42823,9 @@ window.MACRO_DATA = {
               "DGS2",
               "DGS10",
               "T10Y2Y"
-            ]
+            ],
+            "primary_link": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+            "news_release_link": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
           },
           {
             "id": "DGS10",
@@ -40429,7 +42845,9 @@ window.MACRO_DATA = {
               "T10Y2Y",
               "T10YIE",
               "MBA30Y"
-            ]
+            ],
+            "primary_link": "https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yield",
+            "news_release_link": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
           },
           {
             "id": "DGS2",
@@ -40448,7 +42866,9 @@ window.MACRO_DATA = {
               "DFF",
               "DGS10",
               "T10Y2Y"
-            ]
+            ],
+            "primary_link": "https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yield",
+            "news_release_link": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
           }
         ]
       },
@@ -40475,7 +42895,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "BOPGSTB",
               "GOODSTRADE"
-            ]
+            ],
+            "primary_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services"
           },
           {
             "id": "EXPGS",
@@ -40496,7 +42917,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "BOPGSTB",
               "GOODSTRADE"
-            ]
+            ],
+            "primary_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services"
           },
           {
             "id": "IMPGS",
@@ -40517,7 +42939,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "BOPGSTB",
               "GOODSTRADE"
-            ]
+            ],
+            "primary_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services"
           }
         ]
       },
@@ -40544,7 +42967,9 @@ window.MACRO_DATA = {
             "related_indicators": [
               "WALCL",
               "M2SL"
-            ]
+            ],
+            "primary_link": "https://www.federalreserve.gov/releases/h6/current/default.htm",
+            "news_release_link": "https://www.federalreserve.gov/releases/h6/current/default.htm"
           },
           {
             "id": "WALCL",
@@ -40565,7 +42990,9 @@ window.MACRO_DATA = {
             "related_indicators": [
               "WALCL",
               "M2SL"
-            ]
+            ],
+            "primary_link": "https://www.federalreserve.gov/releases/h41/current/default.htm",
+            "news_release_link": "https://www.federalreserve.gov/releases/h41/current/default.htm"
           },
           {
             "id": "WRESBAL",
@@ -40586,7 +43013,9 @@ window.MACRO_DATA = {
             "related_indicators": [
               "WALCL",
               "M2SL"
-            ]
+            ],
+            "primary_link": "https://www.federalreserve.gov/releases/h41/current/default.htm",
+            "news_release_link": "https://www.federalreserve.gov/releases/h41/current/default.htm"
           },
           {
             "id": "TOTALSL",
@@ -40607,7 +43036,9 @@ window.MACRO_DATA = {
             "related_indicators": [
               "WALCL",
               "M2SL"
-            ]
+            ],
+            "primary_link": "https://www.federalreserve.gov/releases/g19/current/default.htm",
+            "news_release_link": "https://www.federalreserve.gov/releases/g19/current/default.htm"
           },
           {
             "id": "MTSDS",
@@ -40628,7 +43059,9 @@ window.MACRO_DATA = {
             "related_indicators": [
               "WALCL",
               "M2SL"
-            ]
+            ],
+            "primary_link": "https://www.fiscal.treasury.gov/reports-statements/mts/",
+            "news_release_link": "https://www.fiscal.treasury.gov/reports-statements/mts/"
           },
           {
             "id": "REDBOOK",
@@ -40649,7 +43082,9 @@ window.MACRO_DATA = {
             "related_indicators": [
               "WALCL",
               "M2SL"
-            ]
+            ],
+            "primary_link": "https://www.redbookresearch.com/",
+            "news_release_link": "https://www.redbookresearch.com/"
           }
         ]
       },
@@ -40678,7 +43113,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "WCESTUS1",
               "DCOILWTICO"
-            ]
+            ],
+            "primary_link": "https://www.eia.gov/petroleum/weekly/"
           },
           {
             "id": "APICRUDE",
@@ -40699,7 +43135,9 @@ window.MACRO_DATA = {
             "related_indicators": [
               "WCESTUS1",
               "DCOILWTICO"
-            ]
+            ],
+            "primary_link": "https://www.api.org/products-and-services/statistics/weekly-statistical-bulletin",
+            "news_release_link": "https://www.api.org/products-and-services/statistics/weekly-statistical-bulletin"
           },
           {
             "id": "NATGAS",
@@ -40720,7 +43158,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "WCESTUS1",
               "DCOILWTICO"
-            ]
+            ],
+            "primary_link": "https://www.eia.gov/naturalgas/weekly/"
           },
           {
             "id": "BAKERHUGHES",
@@ -40742,7 +43181,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "WCESTUS1",
               "DCOILWTICO"
-            ]
+            ],
+            "primary_link": "https://rigcount.bakerhughes.com/"
           },
           {
             "id": "EIA_REFINERY_RUNS",
@@ -40763,7 +43203,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "WCESTUS1",
               "DCOILWTICO"
-            ]
+            ],
+            "primary_link": "https://www.eia.gov/petroleum/weekly/"
           },
           {
             "id": "EIA_DISTILLATES_STOCKS",
@@ -40786,7 +43227,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "WCESTUS1",
               "DCOILWTICO"
-            ]
+            ],
+            "primary_link": "https://www.eia.gov/petroleum/weekly/"
           },
           {
             "id": "EIA_GASOLINE_PROD",
@@ -40807,7 +43249,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "WCESTUS1",
               "DCOILWTICO"
-            ]
+            ],
+            "primary_link": "https://www.eia.gov/petroleum/weekly/"
           },
           {
             "id": "EIA_GASOLINE_INV",
@@ -40828,7 +43271,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "WCESTUS1",
               "DCOILWTICO"
-            ]
+            ],
+            "primary_link": "https://www.eia.gov/petroleum/weekly/"
           },
           {
             "id": "EIA_REFINERY_UTIL",
@@ -40921,7 +43365,8 @@ window.MACRO_DATA = {
             "read_format": "Hỏi rõ data source ghi SA hay NSA. Default SA cho US monthly.",
             "watch_thresholds": "—",
             "release_pattern": "—",
-            "related_indicators": []
+            "related_indicators": [],
+            "primary_link": "https://www.bls.gov/"
           },
           {
             "id": "G_HEADLINE_CORE",
@@ -41139,7 +43584,7 @@ window.MACRO_DATA = {
     ]
   },
   "fred_history": {
-    "updated_at": "2026-06-13T02:12:08.662236+00:00",
+    "updated_at": "2026-06-13T13:12:30.837274+00:00",
     "fred_snapshot": {
       "CPIAUCSL": {
         "label": "CPI All Items",
@@ -44118,6 +46563,1498 @@ window.MACRO_DATA = {
           {
             "date": "2026-05-01",
             "value": 154.147
+          }
+        ]
+      },
+      "CUSR0000SAH1": {
+        "label": "CPI Shelter",
+        "latest": {
+          "date": "2026-05-01",
+          "value": 427.998
+        },
+        "previous": {
+          "date": "2026-04-01",
+          "value": 426.642
+        },
+        "change_pct": 0.318,
+        "frequency": "monthly",
+        "mom_pct": 0.318,
+        "yoy_pct": 3.62,
+        "mo3_annualized_pct": 4.87,
+        "history": [
+          {
+            "date": "2016-06-01",
+            "value": 287.819
+          },
+          {
+            "date": "2016-07-01",
+            "value": 288.524
+          },
+          {
+            "date": "2016-08-01",
+            "value": 289.367
+          },
+          {
+            "date": "2016-09-01",
+            "value": 290.369
+          },
+          {
+            "date": "2016-10-01",
+            "value": 291.378
+          },
+          {
+            "date": "2016-11-01",
+            "value": 292.227
+          },
+          {
+            "date": "2016-12-01",
+            "value": 293.066
+          },
+          {
+            "date": "2017-01-01",
+            "value": 293.769
+          },
+          {
+            "date": "2017-02-01",
+            "value": 294.543
+          },
+          {
+            "date": "2017-03-01",
+            "value": 295.012
+          },
+          {
+            "date": "2017-04-01",
+            "value": 295.741
+          },
+          {
+            "date": "2017-05-01",
+            "value": 296.461
+          },
+          {
+            "date": "2017-06-01",
+            "value": 297.215
+          },
+          {
+            "date": "2017-07-01",
+            "value": 297.676
+          },
+          {
+            "date": "2017-08-01",
+            "value": 298.904
+          },
+          {
+            "date": "2017-09-01",
+            "value": 299.711
+          },
+          {
+            "date": "2017-10-01",
+            "value": 300.814
+          },
+          {
+            "date": "2017-11-01",
+            "value": 301.43
+          },
+          {
+            "date": "2017-12-01",
+            "value": 302.428
+          },
+          {
+            "date": "2018-01-01",
+            "value": 303.213
+          },
+          {
+            "date": "2018-02-01",
+            "value": 303.784
+          },
+          {
+            "date": "2018-03-01",
+            "value": 304.812
+          },
+          {
+            "date": "2018-04-01",
+            "value": 305.72
+          },
+          {
+            "date": "2018-05-01",
+            "value": 306.808
+          },
+          {
+            "date": "2018-06-01",
+            "value": 307.183
+          },
+          {
+            "date": "2018-07-01",
+            "value": 308.05
+          },
+          {
+            "date": "2018-08-01",
+            "value": 309.004
+          },
+          {
+            "date": "2018-09-01",
+            "value": 309.522
+          },
+          {
+            "date": "2018-10-01",
+            "value": 310.401
+          },
+          {
+            "date": "2018-11-01",
+            "value": 311.247
+          },
+          {
+            "date": "2018-12-01",
+            "value": 312.132
+          },
+          {
+            "date": "2019-01-01",
+            "value": 312.998
+          },
+          {
+            "date": "2019-02-01",
+            "value": 314.072
+          },
+          {
+            "date": "2019-03-01",
+            "value": 315.051
+          },
+          {
+            "date": "2019-04-01",
+            "value": 316.172
+          },
+          {
+            "date": "2019-05-01",
+            "value": 317.03
+          },
+          {
+            "date": "2019-06-01",
+            "value": 317.949
+          },
+          {
+            "date": "2019-07-01",
+            "value": 318.777
+          },
+          {
+            "date": "2019-08-01",
+            "value": 319.37
+          },
+          {
+            "date": "2019-09-01",
+            "value": 320.436
+          },
+          {
+            "date": "2019-10-01",
+            "value": 320.862
+          },
+          {
+            "date": "2019-11-01",
+            "value": 321.611
+          },
+          {
+            "date": "2019-12-01",
+            "value": 322.247
+          },
+          {
+            "date": "2020-01-01",
+            "value": 323.487
+          },
+          {
+            "date": "2020-02-01",
+            "value": 324.483
+          },
+          {
+            "date": "2020-03-01",
+            "value": 324.54
+          },
+          {
+            "date": "2020-04-01",
+            "value": 324.391
+          },
+          {
+            "date": "2020-05-01",
+            "value": 324.973
+          },
+          {
+            "date": "2020-06-01",
+            "value": 325.425
+          },
+          {
+            "date": "2020-07-01",
+            "value": 326.249
+          },
+          {
+            "date": "2020-08-01",
+            "value": 326.782
+          },
+          {
+            "date": "2020-09-01",
+            "value": 327.043
+          },
+          {
+            "date": "2020-10-01",
+            "value": 327.421
+          },
+          {
+            "date": "2020-11-01",
+            "value": 327.801
+          },
+          {
+            "date": "2020-12-01",
+            "value": 328.217
+          },
+          {
+            "date": "2021-01-01",
+            "value": 328.535
+          },
+          {
+            "date": "2021-02-01",
+            "value": 329.124
+          },
+          {
+            "date": "2021-03-01",
+            "value": 329.947
+          },
+          {
+            "date": "2021-04-01",
+            "value": 331.208
+          },
+          {
+            "date": "2021-05-01",
+            "value": 332.111
+          },
+          {
+            "date": "2021-06-01",
+            "value": 333.835
+          },
+          {
+            "date": "2021-07-01",
+            "value": 335.446
+          },
+          {
+            "date": "2021-08-01",
+            "value": 336.022
+          },
+          {
+            "date": "2021-09-01",
+            "value": 337.357
+          },
+          {
+            "date": "2021-10-01",
+            "value": 338.948
+          },
+          {
+            "date": "2021-11-01",
+            "value": 340.544
+          },
+          {
+            "date": "2021-12-01",
+            "value": 341.931
+          },
+          {
+            "date": "2022-01-01",
+            "value": 342.858
+          },
+          {
+            "date": "2022-02-01",
+            "value": 344.705
+          },
+          {
+            "date": "2022-03-01",
+            "value": 346.396
+          },
+          {
+            "date": "2022-04-01",
+            "value": 348.23
+          },
+          {
+            "date": "2022-05-01",
+            "value": 350.204
+          },
+          {
+            "date": "2022-06-01",
+            "value": 352.616
+          },
+          {
+            "date": "2022-07-01",
+            "value": 354.68
+          },
+          {
+            "date": "2022-08-01",
+            "value": 357.048
+          },
+          {
+            "date": "2022-09-01",
+            "value": 359.601
+          },
+          {
+            "date": "2022-10-01",
+            "value": 362.353
+          },
+          {
+            "date": "2022-11-01",
+            "value": 364.695
+          },
+          {
+            "date": "2022-12-01",
+            "value": 367.466
+          },
+          {
+            "date": "2023-01-01",
+            "value": 369.911
+          },
+          {
+            "date": "2023-02-01",
+            "value": 372.636
+          },
+          {
+            "date": "2023-03-01",
+            "value": 374.678
+          },
+          {
+            "date": "2023-04-01",
+            "value": 376.404
+          },
+          {
+            "date": "2023-05-01",
+            "value": 378.304
+          },
+          {
+            "date": "2023-06-01",
+            "value": 380.155
+          },
+          {
+            "date": "2023-07-01",
+            "value": 381.895
+          },
+          {
+            "date": "2023-08-01",
+            "value": 382.947
+          },
+          {
+            "date": "2023-09-01",
+            "value": 385.285
+          },
+          {
+            "date": "2023-10-01",
+            "value": 386.771
+          },
+          {
+            "date": "2023-11-01",
+            "value": 388.525
+          },
+          {
+            "date": "2023-12-01",
+            "value": 390.139
+          },
+          {
+            "date": "2024-01-01",
+            "value": 392.322
+          },
+          {
+            "date": "2024-02-01",
+            "value": 394.078
+          },
+          {
+            "date": "2024-03-01",
+            "value": 395.827
+          },
+          {
+            "date": "2024-04-01",
+            "value": 397.196
+          },
+          {
+            "date": "2024-05-01",
+            "value": 398.689
+          },
+          {
+            "date": "2024-06-01",
+            "value": 399.699
+          },
+          {
+            "date": "2024-07-01",
+            "value": 401.139
+          },
+          {
+            "date": "2024-08-01",
+            "value": 402.895
+          },
+          {
+            "date": "2024-09-01",
+            "value": 403.956
+          },
+          {
+            "date": "2024-10-01",
+            "value": 405.721
+          },
+          {
+            "date": "2024-11-01",
+            "value": 407.114
+          },
+          {
+            "date": "2024-12-01",
+            "value": 408.165
+          },
+          {
+            "date": "2025-01-01",
+            "value": 409.579
+          },
+          {
+            "date": "2025-02-01",
+            "value": 410.793
+          },
+          {
+            "date": "2025-03-01",
+            "value": 411.639
+          },
+          {
+            "date": "2025-04-01",
+            "value": 413.04
+          },
+          {
+            "date": "2025-05-01",
+            "value": 414.109
+          },
+          {
+            "date": "2025-06-01",
+            "value": 414.981
+          },
+          {
+            "date": "2025-07-01",
+            "value": 415.931
+          },
+          {
+            "date": "2025-08-01",
+            "value": 417.555
+          },
+          {
+            "date": "2025-09-01",
+            "value": 418.422
+          },
+          {
+            "date": "2025-11-01",
+            "value": 419.431
+          },
+          {
+            "date": "2025-12-01",
+            "value": 421.039
+          },
+          {
+            "date": "2026-01-01",
+            "value": 421.965
+          },
+          {
+            "date": "2026-02-01",
+            "value": 422.942
+          },
+          {
+            "date": "2026-03-01",
+            "value": 424.069
+          },
+          {
+            "date": "2026-04-01",
+            "value": 426.642
+          },
+          {
+            "date": "2026-05-01",
+            "value": 427.998
+          }
+        ]
+      },
+      "CUSR0000SAF1": {
+        "label": "CPI Food",
+        "latest": null,
+        "history": []
+      },
+      "CUSR0000SA0E": {
+        "label": "CPI Energy",
+        "latest": null,
+        "history": []
+      },
+      "CUSR0000SACL1E": {
+        "label": "CPI Core Goods (ex Food & Energy)",
+        "latest": {
+          "date": "2026-05-01",
+          "value": 167.575
+        },
+        "previous": {
+          "date": "2026-04-01",
+          "value": 167.767
+        },
+        "change_pct": -0.114,
+        "frequency": "monthly",
+        "mom_pct": -0.114,
+        "yoy_pct": 1.03,
+        "mo3_annualized_pct": 0.11,
+        "history": [
+          {
+            "date": "2016-06-01",
+            "value": 145.452
+          },
+          {
+            "date": "2016-07-01",
+            "value": 145.175
+          },
+          {
+            "date": "2016-08-01",
+            "value": 145.296
+          },
+          {
+            "date": "2016-09-01",
+            "value": 145.56
+          },
+          {
+            "date": "2016-10-01",
+            "value": 145.416
+          },
+          {
+            "date": "2016-11-01",
+            "value": 144.881
+          },
+          {
+            "date": "2016-12-01",
+            "value": 144.726
+          },
+          {
+            "date": "2017-01-01",
+            "value": 144.935
+          },
+          {
+            "date": "2017-02-01",
+            "value": 144.989
+          },
+          {
+            "date": "2017-03-01",
+            "value": 144.995
+          },
+          {
+            "date": "2017-04-01",
+            "value": 144.922
+          },
+          {
+            "date": "2017-05-01",
+            "value": 144.597
+          },
+          {
+            "date": "2017-06-01",
+            "value": 144.43
+          },
+          {
+            "date": "2017-07-01",
+            "value": 144.196
+          },
+          {
+            "date": "2017-08-01",
+            "value": 143.976
+          },
+          {
+            "date": "2017-09-01",
+            "value": 143.61
+          },
+          {
+            "date": "2017-10-01",
+            "value": 143.92
+          },
+          {
+            "date": "2017-11-01",
+            "value": 143.734
+          },
+          {
+            "date": "2017-12-01",
+            "value": 143.742
+          },
+          {
+            "date": "2018-01-01",
+            "value": 144.243
+          },
+          {
+            "date": "2018-02-01",
+            "value": 144.361
+          },
+          {
+            "date": "2018-03-01",
+            "value": 144.49
+          },
+          {
+            "date": "2018-04-01",
+            "value": 144.466
+          },
+          {
+            "date": "2018-05-01",
+            "value": 144.435
+          },
+          {
+            "date": "2018-06-01",
+            "value": 144.12
+          },
+          {
+            "date": "2018-07-01",
+            "value": 143.835
+          },
+          {
+            "date": "2018-08-01",
+            "value": 143.342
+          },
+          {
+            "date": "2018-09-01",
+            "value": 143.421
+          },
+          {
+            "date": "2018-10-01",
+            "value": 143.754
+          },
+          {
+            "date": "2018-11-01",
+            "value": 143.95
+          },
+          {
+            "date": "2018-12-01",
+            "value": 144.218
+          },
+          {
+            "date": "2019-01-01",
+            "value": 144.788
+          },
+          {
+            "date": "2019-02-01",
+            "value": 144.749
+          },
+          {
+            "date": "2019-03-01",
+            "value": 144.733
+          },
+          {
+            "date": "2019-04-01",
+            "value": 144.37
+          },
+          {
+            "date": "2019-05-01",
+            "value": 144.146
+          },
+          {
+            "date": "2019-06-01",
+            "value": 144.173
+          },
+          {
+            "date": "2019-07-01",
+            "value": 144.206
+          },
+          {
+            "date": "2019-08-01",
+            "value": 144.225
+          },
+          {
+            "date": "2019-09-01",
+            "value": 144.175
+          },
+          {
+            "date": "2019-10-01",
+            "value": 144.225
+          },
+          {
+            "date": "2019-11-01",
+            "value": 144.257
+          },
+          {
+            "date": "2019-12-01",
+            "value": 144.38
+          },
+          {
+            "date": "2020-01-01",
+            "value": 144.308
+          },
+          {
+            "date": "2020-02-01",
+            "value": 144.717
+          },
+          {
+            "date": "2020-03-01",
+            "value": 144.488
+          },
+          {
+            "date": "2020-04-01",
+            "value": 143.211
+          },
+          {
+            "date": "2020-05-01",
+            "value": 142.711
+          },
+          {
+            "date": "2020-06-01",
+            "value": 142.586
+          },
+          {
+            "date": "2020-07-01",
+            "value": 143.375
+          },
+          {
+            "date": "2020-08-01",
+            "value": 144.691
+          },
+          {
+            "date": "2020-09-01",
+            "value": 145.698
+          },
+          {
+            "date": "2020-10-01",
+            "value": 146.112
+          },
+          {
+            "date": "2020-11-01",
+            "value": 146.388
+          },
+          {
+            "date": "2020-12-01",
+            "value": 146.718
+          },
+          {
+            "date": "2021-01-01",
+            "value": 146.752
+          },
+          {
+            "date": "2021-02-01",
+            "value": 146.617
+          },
+          {
+            "date": "2021-03-01",
+            "value": 146.933
+          },
+          {
+            "date": "2021-04-01",
+            "value": 149.554
+          },
+          {
+            "date": "2021-05-01",
+            "value": 151.991
+          },
+          {
+            "date": "2021-06-01",
+            "value": 154.821
+          },
+          {
+            "date": "2021-07-01",
+            "value": 155.288
+          },
+          {
+            "date": "2021-08-01",
+            "value": 155.57
+          },
+          {
+            "date": "2021-09-01",
+            "value": 156.259
+          },
+          {
+            "date": "2021-10-01",
+            "value": 158.483
+          },
+          {
+            "date": "2021-11-01",
+            "value": 160.247
+          },
+          {
+            "date": "2021-12-01",
+            "value": 162.481
+          },
+          {
+            "date": "2022-01-01",
+            "value": 164.074
+          },
+          {
+            "date": "2022-02-01",
+            "value": 164.945
+          },
+          {
+            "date": "2022-03-01",
+            "value": 164.318
+          },
+          {
+            "date": "2022-04-01",
+            "value": 164.153
+          },
+          {
+            "date": "2022-05-01",
+            "value": 164.883
+          },
+          {
+            "date": "2022-06-01",
+            "value": 165.765
+          },
+          {
+            "date": "2022-07-01",
+            "value": 165.911
+          },
+          {
+            "date": "2022-08-01",
+            "value": 166.337
+          },
+          {
+            "date": "2022-09-01",
+            "value": 166.6
+          },
+          {
+            "date": "2022-10-01",
+            "value": 166.614
+          },
+          {
+            "date": "2022-11-01",
+            "value": 166.214
+          },
+          {
+            "date": "2022-12-01",
+            "value": 165.939
+          },
+          {
+            "date": "2023-01-01",
+            "value": 166.187
+          },
+          {
+            "date": "2023-02-01",
+            "value": 166.408
+          },
+          {
+            "date": "2023-03-01",
+            "value": 166.755
+          },
+          {
+            "date": "2023-04-01",
+            "value": 167.495
+          },
+          {
+            "date": "2023-05-01",
+            "value": 168.261
+          },
+          {
+            "date": "2023-06-01",
+            "value": 168.061
+          },
+          {
+            "date": "2023-07-01",
+            "value": 167.462
+          },
+          {
+            "date": "2023-08-01",
+            "value": 167.037
+          },
+          {
+            "date": "2023-09-01",
+            "value": 166.558
+          },
+          {
+            "date": "2023-10-01",
+            "value": 166.697
+          },
+          {
+            "date": "2023-11-01",
+            "value": 166.254
+          },
+          {
+            "date": "2023-12-01",
+            "value": 166.117
+          },
+          {
+            "date": "2024-01-01",
+            "value": 165.637
+          },
+          {
+            "date": "2024-02-01",
+            "value": 165.903
+          },
+          {
+            "date": "2024-03-01",
+            "value": 165.775
+          },
+          {
+            "date": "2024-04-01",
+            "value": 165.598
+          },
+          {
+            "date": "2024-05-01",
+            "value": 165.375
+          },
+          {
+            "date": "2024-06-01",
+            "value": 165.079
+          },
+          {
+            "date": "2024-07-01",
+            "value": 164.669
+          },
+          {
+            "date": "2024-08-01",
+            "value": 164.399
+          },
+          {
+            "date": "2024-09-01",
+            "value": 164.634
+          },
+          {
+            "date": "2024-10-01",
+            "value": 164.698
+          },
+          {
+            "date": "2024-11-01",
+            "value": 165.018
+          },
+          {
+            "date": "2024-12-01",
+            "value": 165.006
+          },
+          {
+            "date": "2025-01-01",
+            "value": 165.508
+          },
+          {
+            "date": "2025-02-01",
+            "value": 165.832
+          },
+          {
+            "date": "2025-03-01",
+            "value": 165.719
+          },
+          {
+            "date": "2025-04-01",
+            "value": 165.87
+          },
+          {
+            "date": "2025-05-01",
+            "value": 165.807
+          },
+          {
+            "date": "2025-06-01",
+            "value": 166.114
+          },
+          {
+            "date": "2025-07-01",
+            "value": 166.468
+          },
+          {
+            "date": "2025-08-01",
+            "value": 166.838
+          },
+          {
+            "date": "2025-09-01",
+            "value": 167.17
+          },
+          {
+            "date": "2025-11-01",
+            "value": 167.272
+          },
+          {
+            "date": "2025-12-01",
+            "value": 167.325
+          },
+          {
+            "date": "2026-01-01",
+            "value": 167.394
+          },
+          {
+            "date": "2026-02-01",
+            "value": 167.53
+          },
+          {
+            "date": "2026-03-01",
+            "value": 167.71
+          },
+          {
+            "date": "2026-04-01",
+            "value": 167.767
+          },
+          {
+            "date": "2026-05-01",
+            "value": 167.575
+          }
+        ]
+      },
+      "CUSR0000SASLE": {
+        "label": "CPI Core Services (ex Energy)",
+        "latest": {
+          "date": "2026-05-01",
+          "value": 444.46
+        },
+        "previous": {
+          "date": "2026-04-01",
+          "value": 443.154
+        },
+        "change_pct": 0.295,
+        "frequency": "monthly",
+        "mom_pct": 0.295,
+        "yoy_pct": 3.56,
+        "mo3_annualized_pct": 4.16,
+        "history": [
+          {
+            "date": "2016-06-01",
+            "value": 310.354
+          },
+          {
+            "date": "2016-07-01",
+            "value": 310.99
+          },
+          {
+            "date": "2016-08-01",
+            "value": 311.824
+          },
+          {
+            "date": "2016-09-01",
+            "value": 312.348
+          },
+          {
+            "date": "2016-10-01",
+            "value": 312.98
+          },
+          {
+            "date": "2016-11-01",
+            "value": 313.848
+          },
+          {
+            "date": "2016-12-01",
+            "value": 314.701
+          },
+          {
+            "date": "2017-01-01",
+            "value": 315.557
+          },
+          {
+            "date": "2017-02-01",
+            "value": 316.398
+          },
+          {
+            "date": "2017-03-01",
+            "value": 316.298
+          },
+          {
+            "date": "2017-04-01",
+            "value": 316.804
+          },
+          {
+            "date": "2017-05-01",
+            "value": 317.379
+          },
+          {
+            "date": "2017-06-01",
+            "value": 318.046
+          },
+          {
+            "date": "2017-07-01",
+            "value": 318.581
+          },
+          {
+            "date": "2017-08-01",
+            "value": 319.594
+          },
+          {
+            "date": "2017-09-01",
+            "value": 320.32
+          },
+          {
+            "date": "2017-10-01",
+            "value": 321.304
+          },
+          {
+            "date": "2017-11-01",
+            "value": 321.847
+          },
+          {
+            "date": "2017-12-01",
+            "value": 322.767
+          },
+          {
+            "date": "2018-01-01",
+            "value": 323.842
+          },
+          {
+            "date": "2018-02-01",
+            "value": 324.616
+          },
+          {
+            "date": "2018-03-01",
+            "value": 325.461
+          },
+          {
+            "date": "2018-04-01",
+            "value": 326.07
+          },
+          {
+            "date": "2018-05-01",
+            "value": 326.999
+          },
+          {
+            "date": "2018-06-01",
+            "value": 327.704
+          },
+          {
+            "date": "2018-07-01",
+            "value": 328.432
+          },
+          {
+            "date": "2018-08-01",
+            "value": 329.054
+          },
+          {
+            "date": "2018-09-01",
+            "value": 329.794
+          },
+          {
+            "date": "2018-10-01",
+            "value": 330.488
+          },
+          {
+            "date": "2018-11-01",
+            "value": 331.189
+          },
+          {
+            "date": "2018-12-01",
+            "value": 332.093
+          },
+          {
+            "date": "2019-01-01",
+            "value": 332.853
+          },
+          {
+            "date": "2019-02-01",
+            "value": 333.622
+          },
+          {
+            "date": "2019-03-01",
+            "value": 334.296
+          },
+          {
+            "date": "2019-04-01",
+            "value": 335.264
+          },
+          {
+            "date": "2019-05-01",
+            "value": 335.821
+          },
+          {
+            "date": "2019-06-01",
+            "value": 336.728
+          },
+          {
+            "date": "2019-07-01",
+            "value": 337.621
+          },
+          {
+            "date": "2019-08-01",
+            "value": 338.548
+          },
+          {
+            "date": "2019-09-01",
+            "value": 339.461
+          },
+          {
+            "date": "2019-10-01",
+            "value": 340.409
+          },
+          {
+            "date": "2019-11-01",
+            "value": 341.296
+          },
+          {
+            "date": "2019-12-01",
+            "value": 342.021
+          },
+          {
+            "date": "2020-01-01",
+            "value": 343.272
+          },
+          {
+            "date": "2020-02-01",
+            "value": 344.125
+          },
+          {
+            "date": "2020-03-01",
+            "value": 343.768
+          },
+          {
+            "date": "2020-04-01",
+            "value": 342.508
+          },
+          {
+            "date": "2020-05-01",
+            "value": 342.329
+          },
+          {
+            "date": "2020-06-01",
+            "value": 343.259
+          },
+          {
+            "date": "2020-07-01",
+            "value": 345.28
+          },
+          {
+            "date": "2020-08-01",
+            "value": 345.913
+          },
+          {
+            "date": "2020-09-01",
+            "value": 346.004
+          },
+          {
+            "date": "2020-10-01",
+            "value": 346.302
+          },
+          {
+            "date": "2020-11-01",
+            "value": 347.166
+          },
+          {
+            "date": "2020-12-01",
+            "value": 347.508
+          },
+          {
+            "date": "2021-01-01",
+            "value": 347.622
+          },
+          {
+            "date": "2021-02-01",
+            "value": 348.449
+          },
+          {
+            "date": "2021-03-01",
+            "value": 349.342
+          },
+          {
+            "date": "2021-04-01",
+            "value": 351.017
+          },
+          {
+            "date": "2021-05-01",
+            "value": 352.15
+          },
+          {
+            "date": "2021-06-01",
+            "value": 353.72
+          },
+          {
+            "date": "2021-07-01",
+            "value": 355.085
+          },
+          {
+            "date": "2021-08-01",
+            "value": 355.355
+          },
+          {
+            "date": "2021-09-01",
+            "value": 356.039
+          },
+          {
+            "date": "2021-10-01",
+            "value": 357.631
+          },
+          {
+            "date": "2021-11-01",
+            "value": 359.116
+          },
+          {
+            "date": "2021-12-01",
+            "value": 360.353
+          },
+          {
+            "date": "2022-01-01",
+            "value": 361.776
+          },
+          {
+            "date": "2022-02-01",
+            "value": 363.705
+          },
+          {
+            "date": "2022-03-01",
+            "value": 365.6
+          },
+          {
+            "date": "2022-04-01",
+            "value": 368.292
+          },
+          {
+            "date": "2022-05-01",
+            "value": 370.356
+          },
+          {
+            "date": "2022-06-01",
+            "value": 373.179
+          },
+          {
+            "date": "2022-07-01",
+            "value": 374.896
+          },
+          {
+            "date": "2022-08-01",
+            "value": 376.951
+          },
+          {
+            "date": "2022-09-01",
+            "value": 379.719
+          },
+          {
+            "date": "2022-10-01",
+            "value": 381.747
+          },
+          {
+            "date": "2022-11-01",
+            "value": 383.604
+          },
+          {
+            "date": "2022-12-01",
+            "value": 385.666
+          },
+          {
+            "date": "2023-01-01",
+            "value": 387.676
+          },
+          {
+            "date": "2023-02-01",
+            "value": 390.116
+          },
+          {
+            "date": "2023-03-01",
+            "value": 391.613
+          },
+          {
+            "date": "2023-04-01",
+            "value": 393.434
+          },
+          {
+            "date": "2023-05-01",
+            "value": 394.692
+          },
+          {
+            "date": "2023-06-01",
+            "value": 396.15
+          },
+          {
+            "date": "2023-07-01",
+            "value": 397.813
+          },
+          {
+            "date": "2023-08-01",
+            "value": 399.157
+          },
+          {
+            "date": "2023-09-01",
+            "value": 401.294
+          },
+          {
+            "date": "2023-10-01",
+            "value": 402.788
+          },
+          {
+            "date": "2023-11-01",
+            "value": 404.695
+          },
+          {
+            "date": "2023-12-01",
+            "value": 406.159
+          },
+          {
+            "date": "2024-01-01",
+            "value": 408.579
+          },
+          {
+            "date": "2024-02-01",
+            "value": 410.539
+          },
+          {
+            "date": "2024-03-01",
+            "value": 412.733
+          },
+          {
+            "date": "2024-04-01",
+            "value": 414.371
+          },
+          {
+            "date": "2024-05-01",
+            "value": 415.245
+          },
+          {
+            "date": "2024-06-01",
+            "value": 416.08
+          },
+          {
+            "date": "2024-07-01",
+            "value": 417.361
+          },
+          {
+            "date": "2024-08-01",
+            "value": 418.852
+          },
+          {
+            "date": "2024-09-01",
+            "value": 420.377
+          },
+          {
+            "date": "2024-10-01",
+            "value": 422.04
+          },
+          {
+            "date": "2024-11-01",
+            "value": 423.277
+          },
+          {
+            "date": "2024-12-01",
+            "value": 424.227
+          },
+          {
+            "date": "2025-01-01",
+            "value": 426.204
+          },
+          {
+            "date": "2025-02-01",
+            "value": 427.422
+          },
+          {
+            "date": "2025-03-01",
+            "value": 427.911
+          },
+          {
+            "date": "2025-04-01",
+            "value": 429.192
+          },
+          {
+            "date": "2025-05-01",
+            "value": 429.914
+          },
+          {
+            "date": "2025-06-01",
+            "value": 431.105
+          },
+          {
+            "date": "2025-07-01",
+            "value": 432.617
+          },
+          {
+            "date": "2025-08-01",
+            "value": 433.984
+          },
+          {
+            "date": "2025-09-01",
+            "value": 434.996
+          },
+          {
+            "date": "2025-11-01",
+            "value": 435.903
+          },
+          {
+            "date": "2025-12-01",
+            "value": 437.09
+          },
+          {
+            "date": "2026-01-01",
+            "value": 438.784
+          },
+          {
+            "date": "2026-02-01",
+            "value": 439.959
+          },
+          {
+            "date": "2026-03-01",
+            "value": 440.951
+          },
+          {
+            "date": "2026-04-01",
+            "value": 443.154
+          },
+          {
+            "date": "2026-05-01",
+            "value": 444.46
           }
         ]
       },
@@ -47102,6 +51039,513 @@ window.MACRO_DATA = {
           }
         ]
       },
+      "DPCERY1Q225SBEA": {
+        "label": "Real PCE Growth QoQ ann.",
+        "latest": null,
+        "history": []
+      },
+      "A006RL1Q225SBEA": {
+        "label": "Real Gross Private Investment Growth QoQ ann.",
+        "latest": {
+          "date": "2026-01-01",
+          "value": 7.0
+        },
+        "previous": {
+          "date": "2025-10-01",
+          "value": 2.3
+        },
+        "change_pct": 204.348,
+        "frequency": "quarterly",
+        "mom_pct": 204.348,
+        "yoy_pct": -69.96,
+        "history": [
+          {
+            "date": "1996-04-01",
+            "value": 20.6
+          },
+          {
+            "date": "1996-07-01",
+            "value": 19.4
+          },
+          {
+            "date": "1996-10-01",
+            "value": -0.5
+          },
+          {
+            "date": "1997-01-01",
+            "value": 8.3
+          },
+          {
+            "date": "1997-04-01",
+            "value": 26.9
+          },
+          {
+            "date": "1997-07-01",
+            "value": 5.7
+          },
+          {
+            "date": "1997-10-01",
+            "value": 6.0
+          },
+          {
+            "date": "1998-01-01",
+            "value": 18.7
+          },
+          {
+            "date": "1998-04-01",
+            "value": -2.5
+          },
+          {
+            "date": "1998-07-01",
+            "value": 10.8
+          },
+          {
+            "date": "1998-10-01",
+            "value": 12.7
+          },
+          {
+            "date": "1999-01-01",
+            "value": 11.5
+          },
+          {
+            "date": "1999-04-01",
+            "value": 0.2
+          },
+          {
+            "date": "1999-07-01",
+            "value": 11.5
+          },
+          {
+            "date": "1999-10-01",
+            "value": 11.1
+          },
+          {
+            "date": "2000-01-01",
+            "value": -2.8
+          },
+          {
+            "date": "2000-04-01",
+            "value": 25.9
+          },
+          {
+            "date": "2000-07-01",
+            "value": -3.8
+          },
+          {
+            "date": "2000-10-01",
+            "value": 0.8
+          },
+          {
+            "date": "2001-01-01",
+            "value": -17.0
+          },
+          {
+            "date": "2001-04-01",
+            "value": 0.6
+          },
+          {
+            "date": "2001-07-01",
+            "value": -8.4
+          },
+          {
+            "date": "2001-10-01",
+            "value": -18.4
+          },
+          {
+            "date": "2002-01-01",
+            "value": 12.5
+          },
+          {
+            "date": "2002-04-01",
+            "value": 6.7
+          },
+          {
+            "date": "2002-07-01",
+            "value": -0.5
+          },
+          {
+            "date": "2002-10-01",
+            "value": -0.4
+          },
+          {
+            "date": "2003-01-01",
+            "value": 3.3
+          },
+          {
+            "date": "2003-04-01",
+            "value": 2.6
+          },
+          {
+            "date": "2003-07-01",
+            "value": 15.3
+          },
+          {
+            "date": "2003-10-01",
+            "value": 14.4
+          },
+          {
+            "date": "2004-01-01",
+            "value": 0.7
+          },
+          {
+            "date": "2004-04-01",
+            "value": 16.9
+          },
+          {
+            "date": "2004-07-01",
+            "value": 6.5
+          },
+          {
+            "date": "2004-10-01",
+            "value": 8.6
+          },
+          {
+            "date": "2005-01-01",
+            "value": 11.7
+          },
+          {
+            "date": "2005-04-01",
+            "value": -5.1
+          },
+          {
+            "date": "2005-07-01",
+            "value": 5.4
+          },
+          {
+            "date": "2005-10-01",
+            "value": 13.4
+          },
+          {
+            "date": "2006-01-01",
+            "value": 6.0
+          },
+          {
+            "date": "2006-04-01",
+            "value": -2.3
+          },
+          {
+            "date": "2006-07-01",
+            "value": -1.5
+          },
+          {
+            "date": "2006-10-01",
+            "value": -7.2
+          },
+          {
+            "date": "2007-01-01",
+            "value": -2.6
+          },
+          {
+            "date": "2007-04-01",
+            "value": 3.9
+          },
+          {
+            "date": "2007-07-01",
+            "value": -4.5
+          },
+          {
+            "date": "2007-10-01",
+            "value": -4.5
+          },
+          {
+            "date": "2008-01-01",
+            "value": -10.5
+          },
+          {
+            "date": "2008-04-01",
+            "value": -6.6
+          },
+          {
+            "date": "2008-07-01",
+            "value": -7.7
+          },
+          {
+            "date": "2008-10-01",
+            "value": -33.4
+          },
+          {
+            "date": "2009-01-01",
+            "value": -38.3
+          },
+          {
+            "date": "2009-04-01",
+            "value": -21.3
+          },
+          {
+            "date": "2009-07-01",
+            "value": -1.2
+          },
+          {
+            "date": "2009-10-01",
+            "value": 42.9
+          },
+          {
+            "date": "2010-01-01",
+            "value": 8.9
+          },
+          {
+            "date": "2010-04-01",
+            "value": 22.7
+          },
+          {
+            "date": "2010-07-01",
+            "value": 19.0
+          },
+          {
+            "date": "2010-10-01",
+            "value": -1.1
+          },
+          {
+            "date": "2011-01-01",
+            "value": -7.2
+          },
+          {
+            "date": "2011-04-01",
+            "value": 17.4
+          },
+          {
+            "date": "2011-07-01",
+            "value": 1.8
+          },
+          {
+            "date": "2011-10-01",
+            "value": 34.6
+          },
+          {
+            "date": "2012-01-01",
+            "value": 9.2
+          },
+          {
+            "date": "2012-04-01",
+            "value": 9.3
+          },
+          {
+            "date": "2012-07-01",
+            "value": 1.1
+          },
+          {
+            "date": "2012-10-01",
+            "value": -3.3
+          },
+          {
+            "date": "2013-01-01",
+            "value": 16.9
+          },
+          {
+            "date": "2013-04-01",
+            "value": 5.3
+          },
+          {
+            "date": "2013-07-01",
+            "value": 17.2
+          },
+          {
+            "date": "2013-10-01",
+            "value": 3.9
+          },
+          {
+            "date": "2014-01-01",
+            "value": -3.9
+          },
+          {
+            "date": "2014-04-01",
+            "value": 17.5
+          },
+          {
+            "date": "2014-07-01",
+            "value": 9.5
+          },
+          {
+            "date": "2014-10-01",
+            "value": 1.3
+          },
+          {
+            "date": "2015-01-01",
+            "value": 14.7
+          },
+          {
+            "date": "2015-04-01",
+            "value": 1.6
+          },
+          {
+            "date": "2015-07-01",
+            "value": 0.9
+          },
+          {
+            "date": "2015-10-01",
+            "value": -2.4
+          },
+          {
+            "date": "2016-01-01",
+            "value": -1.7
+          },
+          {
+            "date": "2016-04-01",
+            "value": -1.7
+          },
+          {
+            "date": "2016-07-01",
+            "value": 1.7
+          },
+          {
+            "date": "2016-10-01",
+            "value": 11.4
+          },
+          {
+            "date": "2017-01-01",
+            "value": -1.1
+          },
+          {
+            "date": "2017-04-01",
+            "value": 6.4
+          },
+          {
+            "date": "2017-07-01",
+            "value": 6.8
+          },
+          {
+            "date": "2017-10-01",
+            "value": 7.7
+          },
+          {
+            "date": "2018-01-01",
+            "value": 6.2
+          },
+          {
+            "date": "2018-04-01",
+            "value": -0.1
+          },
+          {
+            "date": "2018-07-01",
+            "value": 12.7
+          },
+          {
+            "date": "2018-10-01",
+            "value": 0.3
+          },
+          {
+            "date": "2019-01-01",
+            "value": 3.3
+          },
+          {
+            "date": "2019-04-01",
+            "value": 3.7
+          },
+          {
+            "date": "2019-07-01",
+            "value": 3.2
+          },
+          {
+            "date": "2019-10-01",
+            "value": -5.1
+          },
+          {
+            "date": "2020-01-01",
+            "value": -9.6
+          },
+          {
+            "date": "2020-04-01",
+            "value": -45.2
+          },
+          {
+            "date": "2020-07-01",
+            "value": 98.6
+          },
+          {
+            "date": "2020-10-01",
+            "value": 13.8
+          },
+          {
+            "date": "2021-01-01",
+            "value": -3.0
+          },
+          {
+            "date": "2021-04-01",
+            "value": -5.1
+          },
+          {
+            "date": "2021-07-01",
+            "value": 15.4
+          },
+          {
+            "date": "2021-10-01",
+            "value": 28.5
+          },
+          {
+            "date": "2022-01-01",
+            "value": 7.9
+          },
+          {
+            "date": "2022-04-01",
+            "value": -8.6
+          },
+          {
+            "date": "2022-07-01",
+            "value": -6.7
+          },
+          {
+            "date": "2022-10-01",
+            "value": 8.0
+          },
+          {
+            "date": "2023-01-01",
+            "value": -7.1
+          },
+          {
+            "date": "2023-04-01",
+            "value": 7.2
+          },
+          {
+            "date": "2023-07-01",
+            "value": 9.4
+          },
+          {
+            "date": "2023-10-01",
+            "value": 3.6
+          },
+          {
+            "date": "2024-01-01",
+            "value": -1.6
+          },
+          {
+            "date": "2024-04-01",
+            "value": 8.2
+          },
+          {
+            "date": "2024-07-01",
+            "value": 0.9
+          },
+          {
+            "date": "2024-10-01",
+            "value": -6.8
+          },
+          {
+            "date": "2025-01-01",
+            "value": 23.3
+          },
+          {
+            "date": "2025-04-01",
+            "value": -13.8
+          },
+          {
+            "date": "2025-07-01",
+            "value": 0.0
+          },
+          {
+            "date": "2025-10-01",
+            "value": 2.3
+          },
+          {
+            "date": "2026-01-01",
+            "value": 7.0
+          }
+        ]
+      },
+      "A020RL1Q225SBEA": {
+        "label": "Real Government Spending Growth QoQ ann.",
+        "latest": null,
+        "history": []
+      },
       "RSAFS": {
         "label": "Retail Sales",
         "latest": {
@@ -47597,6 +52041,504 @@ window.MACRO_DATA = {
           {
             "date": "2026-04-01",
             "value": 757085.0
+          }
+        ]
+      },
+      "RSFSXMV": {
+        "label": "Retail Sales ex-Motor Vehicles",
+        "latest": {
+          "date": "2026-04-01",
+          "value": 617856.0
+        },
+        "previous": {
+          "date": "2026-03-01",
+          "value": 613556.0
+        },
+        "change_pct": 0.701,
+        "frequency": "monthly",
+        "mom_pct": 0.701,
+        "yoy_pct": 6.34,
+        "mo3_annualized_pct": 14.81,
+        "history": [
+          {
+            "date": "2016-05-01",
+            "value": 352784.0
+          },
+          {
+            "date": "2016-06-01",
+            "value": 356783.0
+          },
+          {
+            "date": "2016-07-01",
+            "value": 355106.0
+          },
+          {
+            "date": "2016-08-01",
+            "value": 354876.0
+          },
+          {
+            "date": "2016-09-01",
+            "value": 357222.0
+          },
+          {
+            "date": "2016-10-01",
+            "value": 358315.0
+          },
+          {
+            "date": "2016-11-01",
+            "value": 358672.0
+          },
+          {
+            "date": "2016-12-01",
+            "value": 361410.0
+          },
+          {
+            "date": "2017-01-01",
+            "value": 366585.0
+          },
+          {
+            "date": "2017-02-01",
+            "value": 367057.0
+          },
+          {
+            "date": "2017-03-01",
+            "value": 368272.0
+          },
+          {
+            "date": "2017-04-01",
+            "value": 369323.0
+          },
+          {
+            "date": "2017-05-01",
+            "value": 366527.0
+          },
+          {
+            "date": "2017-06-01",
+            "value": 367876.0
+          },
+          {
+            "date": "2017-07-01",
+            "value": 367728.0
+          },
+          {
+            "date": "2017-08-01",
+            "value": 370481.0
+          },
+          {
+            "date": "2017-09-01",
+            "value": 376369.0
+          },
+          {
+            "date": "2017-10-01",
+            "value": 376051.0
+          },
+          {
+            "date": "2017-11-01",
+            "value": 381716.0
+          },
+          {
+            "date": "2017-12-01",
+            "value": 384511.0
+          },
+          {
+            "date": "2018-01-01",
+            "value": 382986.0
+          },
+          {
+            "date": "2018-02-01",
+            "value": 385861.0
+          },
+          {
+            "date": "2018-03-01",
+            "value": 385772.0
+          },
+          {
+            "date": "2018-04-01",
+            "value": 385764.0
+          },
+          {
+            "date": "2018-05-01",
+            "value": 392669.0
+          },
+          {
+            "date": "2018-06-01",
+            "value": 391387.0
+          },
+          {
+            "date": "2018-07-01",
+            "value": 393827.0
+          },
+          {
+            "date": "2018-08-01",
+            "value": 394789.0
+          },
+          {
+            "date": "2018-09-01",
+            "value": 393463.0
+          },
+          {
+            "date": "2018-10-01",
+            "value": 397830.0
+          },
+          {
+            "date": "2018-11-01",
+            "value": 399145.0
+          },
+          {
+            "date": "2018-12-01",
+            "value": 388493.0
+          },
+          {
+            "date": "2019-01-01",
+            "value": 392701.0
+          },
+          {
+            "date": "2019-02-01",
+            "value": 392781.0
+          },
+          {
+            "date": "2019-03-01",
+            "value": 397587.0
+          },
+          {
+            "date": "2019-04-01",
+            "value": 399785.0
+          },
+          {
+            "date": "2019-05-01",
+            "value": 403398.0
+          },
+          {
+            "date": "2019-06-01",
+            "value": 403851.0
+          },
+          {
+            "date": "2019-07-01",
+            "value": 407200.0
+          },
+          {
+            "date": "2019-08-01",
+            "value": 408296.0
+          },
+          {
+            "date": "2019-09-01",
+            "value": 407535.0
+          },
+          {
+            "date": "2019-10-01",
+            "value": 408777.0
+          },
+          {
+            "date": "2019-11-01",
+            "value": 409726.0
+          },
+          {
+            "date": "2019-12-01",
+            "value": 413614.0
+          },
+          {
+            "date": "2020-01-01",
+            "value": 414267.0
+          },
+          {
+            "date": "2020-02-01",
+            "value": 413878.0
+          },
+          {
+            "date": "2020-03-01",
+            "value": 393751.0
+          },
+          {
+            "date": "2020-04-01",
+            "value": 336693.0
+          },
+          {
+            "date": "2020-05-01",
+            "value": 381626.0
+          },
+          {
+            "date": "2020-06-01",
+            "value": 412904.0
+          },
+          {
+            "date": "2020-07-01",
+            "value": 421417.0
+          },
+          {
+            "date": "2020-08-01",
+            "value": 425171.0
+          },
+          {
+            "date": "2020-09-01",
+            "value": 431983.0
+          },
+          {
+            "date": "2020-10-01",
+            "value": 430433.0
+          },
+          {
+            "date": "2020-11-01",
+            "value": 426447.0
+          },
+          {
+            "date": "2020-12-01",
+            "value": 429003.0
+          },
+          {
+            "date": "2021-01-01",
+            "value": 446473.0
+          },
+          {
+            "date": "2021-02-01",
+            "value": 436001.0
+          },
+          {
+            "date": "2021-03-01",
+            "value": 475805.0
+          },
+          {
+            "date": "2021-04-01",
+            "value": 477995.0
+          },
+          {
+            "date": "2021-05-01",
+            "value": 477118.0
+          },
+          {
+            "date": "2021-06-01",
+            "value": 486882.0
+          },
+          {
+            "date": "2021-07-01",
+            "value": 481516.0
+          },
+          {
+            "date": "2021-08-01",
+            "value": 488486.0
+          },
+          {
+            "date": "2021-09-01",
+            "value": 491553.0
+          },
+          {
+            "date": "2021-10-01",
+            "value": 498558.0
+          },
+          {
+            "date": "2021-11-01",
+            "value": 502877.0
+          },
+          {
+            "date": "2021-12-01",
+            "value": 501176.0
+          },
+          {
+            "date": "2022-01-01",
+            "value": 504428.0
+          },
+          {
+            "date": "2022-02-01",
+            "value": 510871.0
+          },
+          {
+            "date": "2022-03-01",
+            "value": 525362.0
+          },
+          {
+            "date": "2022-04-01",
+            "value": 532203.0
+          },
+          {
+            "date": "2022-05-01",
+            "value": 536643.0
+          },
+          {
+            "date": "2022-06-01",
+            "value": 541528.0
+          },
+          {
+            "date": "2022-07-01",
+            "value": 537880.0
+          },
+          {
+            "date": "2022-08-01",
+            "value": 538373.0
+          },
+          {
+            "date": "2022-09-01",
+            "value": 537491.0
+          },
+          {
+            "date": "2022-10-01",
+            "value": 541862.0
+          },
+          {
+            "date": "2022-11-01",
+            "value": 536108.0
+          },
+          {
+            "date": "2022-12-01",
+            "value": 532212.0
+          },
+          {
+            "date": "2023-01-01",
+            "value": 547880.0
+          },
+          {
+            "date": "2023-02-01",
+            "value": 543895.0
+          },
+          {
+            "date": "2023-03-01",
+            "value": 538675.0
+          },
+          {
+            "date": "2023-04-01",
+            "value": 542521.0
+          },
+          {
+            "date": "2023-05-01",
+            "value": 543792.0
+          },
+          {
+            "date": "2023-06-01",
+            "value": 544674.0
+          },
+          {
+            "date": "2023-07-01",
+            "value": 547943.0
+          },
+          {
+            "date": "2023-08-01",
+            "value": 553381.0
+          },
+          {
+            "date": "2023-09-01",
+            "value": 556575.0
+          },
+          {
+            "date": "2023-10-01",
+            "value": 555690.0
+          },
+          {
+            "date": "2023-11-01",
+            "value": 555244.0
+          },
+          {
+            "date": "2023-12-01",
+            "value": 556052.0
+          },
+          {
+            "date": "2024-01-01",
+            "value": 551100.0
+          },
+          {
+            "date": "2024-02-01",
+            "value": 553809.0
+          },
+          {
+            "date": "2024-03-01",
+            "value": 557426.0
+          },
+          {
+            "date": "2024-04-01",
+            "value": 558388.0
+          },
+          {
+            "date": "2024-05-01",
+            "value": 560134.0
+          },
+          {
+            "date": "2024-06-01",
+            "value": 563966.0
+          },
+          {
+            "date": "2024-07-01",
+            "value": 566007.0
+          },
+          {
+            "date": "2024-08-01",
+            "value": 564844.0
+          },
+          {
+            "date": "2024-09-01",
+            "value": 570796.0
+          },
+          {
+            "date": "2024-10-01",
+            "value": 572687.0
+          },
+          {
+            "date": "2024-11-01",
+            "value": 572288.0
+          },
+          {
+            "date": "2024-12-01",
+            "value": 577232.0
+          },
+          {
+            "date": "2025-01-01",
+            "value": 574070.0
+          },
+          {
+            "date": "2025-02-01",
+            "value": 577763.0
+          },
+          {
+            "date": "2025-03-01",
+            "value": 581017.0
+          },
+          {
+            "date": "2025-04-01",
+            "value": 581040.0
+          },
+          {
+            "date": "2025-05-01",
+            "value": 580943.0
+          },
+          {
+            "date": "2025-06-01",
+            "value": 586272.0
+          },
+          {
+            "date": "2025-07-01",
+            "value": 588742.0
+          },
+          {
+            "date": "2025-08-01",
+            "value": 592134.0
+          },
+          {
+            "date": "2025-09-01",
+            "value": 592652.0
+          },
+          {
+            "date": "2025-10-01",
+            "value": 593611.0
+          },
+          {
+            "date": "2025-11-01",
+            "value": 596008.0
+          },
+          {
+            "date": "2025-12-01",
+            "value": 596072.0
+          },
+          {
+            "date": "2026-01-01",
+            "value": 596884.0
+          },
+          {
+            "date": "2026-02-01",
+            "value": 602258.0
+          },
+          {
+            "date": "2026-03-01",
+            "value": 613556.0
+          },
+          {
+            "date": "2026-04-01",
+            "value": 617856.0
           }
         ]
       },
@@ -58208,13 +63150,14 @@ window.MACRO_DATA = {
     }
   },
   "latest_daily": {
-    "file": "2026-06-12.md",
-    "date": "2026-06-12",
-    "surprise_count": "5",
-    "regime_signal": "risk-on",
-    "key_takeaway": "Hôm nay 12/06 chứng kiến bộ số liệu \"Goldilocks\" hoàn hảo từ Đại học Michigan. Kỳ vọng lạm phát 1 năm và 5 năm hạ nhiệt mạnh mẽ (lần lượt xuống 4.6% và 3.4%), trong khi Niềm tin Người tiêu dùng và Điều kiện Hiện tại vượt xa dự báo. Điều này củng cố kịch bản hạ cánh mềm (soft-landing) với sự hỗ trợ đắc lực từ xu hướng giảm áp lực giá cả. Thị trường duy trì tâm lý tích cực, lợi suất trái phiếu 10 năm ổn định quanh mức 4.49%.",
-    "body_preview": "# Vĩ mô Mỹ — 2026-06-12",
-    "body": "# Vĩ mô Mỹ — 2026-06-12\n\n## Tóm tắt\n\nHôm nay ngày 12/06, thị trường đón nhận tin vui lớn từ khảo sát tâm lý người tiêu dùng của Đại học Michigan (UoM). Kết quả công bố cho thấy một kịch bản **Goldilocks hoàn hảo**:\n1. **Kỳ vọng lạm phát trung và dài hạn giảm mạnh**: Kỳ vọng lạm phát 1 năm hạ nhiệt xuống 4.6% (dự báo 4.9%) và kỳ vọng 5 năm giảm mạnh về 3.4% (dự báo 3.8%). Đây là tín hiệu cực kỳ quan trọng giúp củng cố niềm tin của Fed rằng lạm phát đang quay trở lại tầm kiểm soát mà không cần thắt chặt thêm.\n2. **Niềm tin người tiêu dùng bật tăng mạnh mẽ**: Chỉ số Michigan Consumer Sentiment tăng lên 48.9 (vượt xa dự báo 46.1), cùng với Consumer Expectations đạt 49.3 (dự báo 44.3).\n\nSự kết hợp giữa lạm phát kỳ vọng hạ nhiệt và niềm tin tiêu dùng cải thiện là minh chứng rõ nét cho kịch bản **Soft Landing** (Hạ cánh mềm). Phản ứng thị trường duy trì trạng thái **Risk-On**: Lợi suất trái phiếu 10 năm dao động ổn định quanh 4.49%, Dollar Index (DXY) duy trì mốc 99.8, và các nhóm ngành cổ phiếu tăng trưởng tiếp tục thu hút dòng vốn khi rủi ro tăng lãi suất biến mất.\n\n## Chi tiết từng chỉ số (5 releases quan trọng hôm nay)\n\n### Michigan Consumer Sentiment (Jun - Sơ bộ) (Nguồn: UoM / investing.com) — BIG BEAT\n- **Actual:** **48.9** | **Forecast:** **46.1** | **Previous:** **44.8**\n- **Δ:** **+2.8** so với dự báo và **+4.1** so với tháng trước.\n- **Significance:** Thước đo tâm lý tiêu dùng phản ánh góc nhìn của người dân về sức khỏe kinh tế cá nhân và triển vọng chung. Việc chỉ số này tăng mạnh cho thấy sự bi quan cực độ trong giai đoạn trước đang dần được giải tỏa nhờ giá năng lượng (xăng dầu) hạ nhiệt.\n- **Hàm ý:** Tăng trưởng tiêu dùng cá nhân (chiếm 70% GDP) sẽ tiếp tục được giữ vững, loại bỏ lo ngại recession.\n\n### Michigan 1-Year Inflation Expectations (Jun) (Nguồn: UoM) — INFLATION COOLING\n- **Actual:** **4.6%** | **Forecast:** **4.9%** | **Previous:** **4.8%**\n- **Δ:** **-0.3pp** so với dự báo và **-0.2pp** so với tháng trước.\n- **Significance:** Kỳ vọng lạm phát ngắn hạn của người dân. Người dân kỳ vọng lạm phát giảm sẽ giúp kiềm chế hành vi tăng giá từ doanh nghiệp và yêu cầu tăng lương quá mức từ người lao động.\n- **Hàm ý:** Tín hiệu rất Dovish cho Fed, hỗ trợ lộ trình cắt giảm lãi suất trong nửa cuối năm.\n\n### Michigan 5-Year Inflation Expectations (Jun) (Nguồn: UoM) — ANCHOR SECURED\n- **Actual:** **3.4%** | **Forecast:** **3.8%** | **Previous:** **3.9%**\n- **Δ:** **-0.4pp** so với dự báo và **-0.5pp** so với tháng trước.\n- **Significance:** Đây là chỉ số mà Powell và các thành viên FOMC theo dõi sát sao nhất để đánh giá liệu kỳ vọng lạm phát dài hạn có bị \"mất neo\" (de-anchored) hay không. Con số 3.4% hạ nhiệt mạnh mẽ từ mức 3.9% tháng trước chứng tỏ uy tín của Fed trong việc chống lạm phát vẫn rất vững vàng.\n- **Hàm ý:** Cực kỳ Dovish. Rào cản tâm lý lớn nhất của Fed đã được tháo gỡ.\n\n### Michigan Consumer Expectations (Jun) (Nguồn: UoM) — STRONGER FUTURES\n- **Actual:** **49.3** | **Forecast:** **44.3** | **Previous:** **44.1**\n- **Δ:** **+5.0** so với dự báo.\n- **Significance:** Kỳ vọng của người tiêu dùng về triển vọng thu nhập và việc làm trong tương lai gần. Sự bứt phá mạnh mẽ này cho thấy thị trường lao động dù đang hạ nhiệt nhưng vẫn đảm bảo sự an tâm cho người lao động.\n\n### Michigan Current Conditions (Jun) (Nguồn: UoM) — PRESENT IMPROVEMENT\n- **Actual:** **48.4** | **Forecast:** **46.2** | **Previous:** **45.8**\n- **Δ:** **+2.2** so với dự báo.\n- **Significance:** Đánh giá của người dân về điều kiện kinh tế hiện tại. Sự cải thiện này phản ánh thực tế rằng áp lực chi phí sinh hoạt hàng ngày đang dịu đi tương đối.\n\n---\n\n### Các số liệu khác:\n- **U.S. Baker Hughes Oil Rig Count:** Tăng nhẹ thêm 2 giàn lên 433 (so với 431 tuần trước). Hoạt động khai thác thượng nguồn dầu khí Mỹ đi ngang ổn định, chưa có dấu hiệu bùng nổ nguồn cung mới nhưng cũng không suy giảm.\n- **CFTC Positions (Dữ liệu định vị trạng thái):**\n  - **Nasdaq 100:** Tiếp tục giảm vị thế bán ròng (net short) xuống chỉ còn **-1.3K** (từ -14.9K tuần trước). Làn sóng short squeeze/covering tại nhóm công nghệ diễn ra mạnh mẽ khi Tech dẫn đầu đà tăng tuần.\n  - **S&P 500:** Giảm vị thế bán ròng về **-205.6K** (từ -220.8K). Vẫn còn lượng lớn vị thế Short chưa cover, tạo lực đẩy tiềm năng cho thị trường tiếp tục grind-up.\n\n## Bối cảnh xu hướng\n\n- **Yields & VIX:** Lợi suất trái phiếu 10 năm (US10Y) đóng cửa tuần ở mức 4.49%, hạ nhiệt đáng kể sau khi chạm mốc 4.55% đầu tuần. VIX ổn định ở 17.68 phản ánh tâm lý thị trường đã bình ổn trở lại sau volatility event của tuần trước.\n- **DXY & Commodities:** USD Index (DXY) dao động ở 99.8. Giá dầu thô WTI (CL=F) giao dịch quanh $84.3 (giảm mạnh -16.5% trong 1 tháng qua) đóng vai trò then chốt giúp kỳ vọng lạm phát của người tiêu dùng hạ nhiệt rõ rệt. Giá vàng (GC=F) giữ quanh $4235.7.\n- **Sectors:** Nhóm Y tế (XLV +4.84% 1M) và Tài chính (XLF +4.61% 1M) duy trì đà dẫn dắt dòng tiền. Công nghệ (XLK +4.50% 1M) đang nỗ lực phục hồi và thiết lập vùng tích lũy (stalking) sau phiên bùng nổ relief rally ngày hôm qua.\n\n## Conviction calls — UPDATE 06-12\n\n| Sector | Stance 06-11 | NOW (06-12) | Reasoning |\n|---|---|---|---|\n| **XLK Technology** | Neutral → Stalking | **Stalking / Light OW** | Kỳ vọng lạm phát hạ nhiệt là động lực lớn nhất giải tỏa áp lực định giá cho Tech. Sẵn sàng giải ngân từng phần. |\n| **XLV Healthcare** | Overweight CONFIRMED | **Overweight CONFIRMED** | Tiếp tục duy trì hiệu suất dẫn đầu tuyệt đối (+4.84% 1M). Core defensive của danh mục. |\n| **XLE Energy** | Light OW → Neutral | **Neutral** | Giá dầu WTI giữ quanh $84.3, áp lực chốt lời ngắn hạn vẫn còn khi dòng tiền xoay vòng về các nhóm tăng trưởng và tài chính. |\n| **XLF Financials** | Neutral GIỮ | **Neutral → Light OW** | Niềm tin tiêu dùng tốt và rủi ro recession biến mất giúp củng cố danh mục cho vay của khối ngân hàng. |\n| **XLI Industrials** | Neutral → Light OW | **Light OW** | Khớp với kịch bản soft-landing, sản xuất phục hồi trong khi chi phí vốn không bị tăng thêm áp lực. |\n\n## Bottom line\n\nTuần giao dịch khép lại với bộ đôi chất xúc tác cực kỳ chất lượng: **Core PPI hạ nhiệt sâu (11/06)** và **Kỳ vọng lạm phát UoM giảm mạnh (12/06)**. Cơn ác mộng \"lạm phát quay trở lại\" chính thức tạm thời tan biến. Kịch bản Goldilocks/Soft Landing đang chiếm lĩnh hoàn toàn narrative của thị trường. Chiến lược tối ưu hiện tại là gia tăng nhẹ tỷ trọng **Tech (XLK)** ở các vùng tích lũy, song song với việc nắm giữ các nhóm ngành chu kỳ khỏe như **Công nghiệp (XLI)** và defensive core **Y tế (XLV)**."
+    "file": "2026-06-13.md",
+    "date": "2026-06-13",
+    "schema_version": "1.1",
+    "surprise_count": "0",
+    "regime_signal": "bounce-relief",
+    "key_takeaway": "Thứ Sáu 13/6 không có lịch kinh tế Mỹ — báo cáo tuần tổng hợp cross-asset sau bộ ba CPI/PPI/Michigan; tín hiệu disinflation được củng cố, yields giảm, VIX hạ về 19.44, breakeven 10Y ổn định 2.31%, thị trường đang tiêu hóa \"soft landing\" trong một tuần bùng nổ.",
+    "body_preview": "# Vĩ mô Mỹ — 2026-06-13 (Thứ Sáu, Không có lịch kinh tế)",
+    "body": "# Vĩ mô Mỹ — 2026-06-13 (Thứ Sáu, Không có lịch kinh tế)\n\n## Tóm tắt\n\nHôm nay 13/6 không có bất kỳ chỉ số kinh tế Mỹ nào từ investing.com (`releases: []`). Báo cáo này là wrap-up tuần 9–13/6 và cross-asset snapshot cuối ngày. Tuần này ghi nhận ba dữ liệu quan trọng liên tiếp: **CPI tháng 5 (10/6)** xác nhận Core CPI hạ nhiệt về +0.21% MoM, **PPI tháng 5 (11/6)** với Core PPI YoY 4.9% (thấp hơn dự báo 5.4%), và **Michigan Consumer Sentiment sơ bộ tháng 6 (12/6)** với kỳ vọng lạm phát 1Y/5Y giảm mạnh xuống 4.6%/3.4%. Bộ ba này hội tụ thành narrative **disinflation đang quay lại**, 10Y yield rút về 4.45% (từ đỉnh 4.55–4.56% tuần trước), VIX giảm mạnh từ 22.22 xuống 19.44, và HY OAS thu hẹp về 2.78% — tín hiệu rõ ràng cho **regime bounce-relief** kết thúc tuần.\n\n---\n\n## Không có chỉ số mới công bố trong ngày\n\nKhông có lịch kinh tế Mỹ vào Thứ Sáu 13/6. Phân tích bên dưới tập trung vào tổng kết tuần và trạng thái cross-asset từ FRED snapshot mới nhất.\n\n---\n\n## Tổng kết tuần 9–13/6: Ba dữ liệu định hình lại narrative\n\n### 1. CPI tháng 5 — Công bố 10/6 (nguồn: investing.com + FRED)\n\n- **Headline CPI YoY (FRED CPIAUCSL):** 4.27% | MoM: +0.47% | 3M annualized: 8.2%\n- **Core CPI YoY (FRED CPILFESL):** 2.96% | MoM: +0.21% | 3M annualized: 3.17%\n- **Surprise:** Core CPI MoM 0.21% beat nhẹ (vs forecast 0.3%) — ~+1.5σ theo chiều tích cực\n- **Ý nghĩa:** Core CPI là thước đo Fed theo dõi chặt nhất. MoM 0.21% là mức thấp nhất kể từ đầu năm 2026, tín hiệu services inflation đang dịu lại. Phân tích theo sub-components: Core Goods YoY +1.03% gần trung tính (MoM -0.11%), Shelter YoY +3.62% (3M annualized 4.87%) đang chậm dần từ mức >5% trước đó, Core Services ex Shelter là yếu tố chính cần theo dõi — 3M annualized 4.16% vẫn trên mục tiêu nhưng đang giảm tốc.\n- **Hàm ý:** Kết quả xác nhận Fed không cần thắt chặt thêm. Xác suất cắt lãi suất quý 3 tăng. 10Y yield giảm -10bp phản ứng ngay, dòng tiền đổ mạnh vào tech và rate-sensitive sectors. Headline 4.27% vẫn cao so với mục tiêu 2% nhưng phần lớn do energy và import cost (tariff) — Fed hiểu rõ và sẽ nhìn qua.\n\n### 2. PPI tháng 5 — Công bố 11/6 (nguồn: investing.com + FRED)\n\n- **PPI Final Demand YoY (FRED PPIFID):** 6.46% | MoM: +1.03% | 3M annualized: 13.2%\n- **Core PPI YoY (FRED PPIFES):** 4.9% | MoM: +0.42% | 3M annualized: 5.6%\n- **Surprise:** Core PPI YoY 4.9% — shock beat so với forecast 5.4% (~-1σ theo chiều disinflation); tuy nhiên Headline PPI MoM +1.03% là cảnh báo pipeline áp lực chưa tắt hẳn\n- **Ý nghĩa:** PPI đo giá nhà sản xuất/bán buôn — đây là \"upstream\" của CPI, thường dẫn trước 2–4 tháng. Core PPI hạ nhiệt là tín hiệu pipeline disinflation. Tuy nhiên, Headline PPI YoY vẫn ở 6.46% (3M annualized đáng lo ngại ở 13.2%) phản ánh áp lực từ năng lượng và vật liệu thô — phần này có thể lây lan sang CPI Headline thêm 1–2 tháng nếu WTI không giảm tiếp.\n- **Hàm ý:** Thị trường phản ứng tích cực với Core PPI miss (tức là disinflation tốt hơn kỳ vọng). 10Y yield tiếp tục rút. Nhóm Industrials (XLI) và Materials (XLB) hưởng lợi từ giá đầu vào bớt áp lực. Headline PPI cao cảnh báo: nếu WTI bật trở lại >$100, CPI Headline Q3 sẽ tăng tốc trở lại.\n\n### 3. Michigan Consumer Sentiment sơ bộ tháng 6 — Công bố 12/6 (nguồn: investing.com)\n\n- **Michigan Consumer Sentiment:** 48.9 | Forecast: 46.1 | Previous (tháng 5): không có trong FRED (FRED đang lag tháng 4 ở 49.8)\n- **1Y Inflation Expectations:** 4.6% | Forecast: 4.9%\n- **5Y Inflation Expectations:** 3.4% | Forecast: 3.8%\n- **Surprise:** Sentiment beat mạnh +2.8 điểm (~+1σ); kỳ vọng lạm phát cả 1Y lẫn 5Y đều hạ nhiệt đáng kể — đây là shock beat theo chiều disinflation\n- **Ý nghĩa:** Fed đặc biệt theo dõi kỳ vọng lạm phát 5Y vì đây là thước đo \"neo lạm phát\" (inflation expectations anchoring). Khi 5Y expectations giảm từ 3.8% xuống 3.4%, tức là người dân tin rằng lạm phát sẽ về mức bình thường trong dài hạn — điều này cho phép Fed không cần thắt chặt thêm và mở đường cho cắt lãi suất mà không mất uy tín.\n- **Hàm ý:** Đây là \"dấu xác nhận cuối cùng\" của narrative soft-landing tuần này. Cộng hưởng với CPI và PPI, bộ ba dữ liệu này tạo ra môi trường dovish nhất kể từ đầu năm 2026. USD giảm, yields giảm, equities tăng — đặc biệt là tech (XLK) và rate-sensitive sectors (XLRE, XLU bounce). Cảnh báo: Michigan Sentiment tuyệt đối 48.9 vẫn ở vùng thấp lịch sử, phản ánh consumer đang chịu áp lực thực từ giá cả — tín hiệu mixed cho discretionary spending dài hạn.\n\n---\n\n## Cross-Asset Snapshot cuối tuần (nguồn: FRED)\n\n| Tài sản | Giá trị | Ngày | Nhận xét |\n|---|---|---|---|\n| **Fed Funds Rate** | 3.62% | 11/6 | Bất động — Fed giữ nguyên |\n| **10Y Treasury Yield** | 4.45% | 11/6 | Giảm -10bp từ đỉnh 4.55% tuần này |\n| **2Y Treasury Yield** | 4.05% | 11/6 | Giảm -8bp, cut expectations tăng |\n| **T10Y2Y Spread** | +0.39% | 12/6 | Đường cong tiếp tục dẹt nhẹ (từ +0.42% tuần trước) |\n| **VIX** | 19.44 | 11/6 | Hạ nhiệt từ 22.22 (10/6) — relief rally xác nhận |\n| **HY OAS** | 2.78% | 11/6 | Ổn định, credit benign |\n| **IG OAS** | 0.75% | 11/6 | Flat — IG credit không có stress |\n| **10Y Inflation Breakeven** | 2.31% | 12/6 | Nhích +2bp từ 2.29% — thị trường tin disinflation nhưng KHÔNG deflation |\n| **WTI Crude Oil** | $95.00 | 08/6 | Consolidating — rủi ro upside nếu OPEC hành động |\n| **USD Broad Index** | 120.08 | 05/6 | Lagging data — khả năng đã giảm do yields drop tuần này |\n\n**Nhận xét đường cong lãi suất:** 3M (3.78%) / 6M (3.81%) / 2Y (4.05%) / 10Y (4.45%) — front-end inverted với Fed Funds (3.62%) đã GIẢI TỎA một phần (2Y > Fed Funds = thị trường price cut nhưng không aggressive). Spread 10Y-2Y +0.39% dẹt nhẹ nhưng dương — không tín hiệu recession ngay lập tức.\n\n---\n\n## FRED Snapshot — Tổng quan nền tảng vĩ mô\n\n### Lạm phát — Pipeline vẫn nóng nhưng đỉnh đã qua\n\n| Series | YoY | MoM | 3M Ann. | Tín hiệu |\n|---|---|---|---|---|\n| CPI Headline | 4.27% | +0.47% | 8.2% | Cao do energy/tariff; headline nóng |\n| Core CPI | 2.96% | +0.21% | 3.17% | DISINFLATION — tiến gần 3% |\n| Core PCE | 3.29% | +0.24% | 3.78% | Trên target nhưng đang giảm |\n| PPI Final Demand | 6.46% | +1.03% | 13.2% | Pipeline nóng — watch Q3 |\n| Core PPI | 4.90% | +0.42% | 5.6% | Giảm tốc so với tháng trước |\n| CPI Shelter | 3.62% | +0.32% | 4.87% | Chậm dần — tín hiệu tích cực |\n| CPI Core Goods | 1.03% | -0.11% | 0.11% | Gần trung tính — tariff chưa pass-through mạnh |\n| CPI Core Services | 3.56% | +0.30% | 4.16% | Sticky nhưng giảm tốc |\n\n**Điểm chú ý:** Divergence giữa Headline PPI (6.46%) và Core CPI (2.96%) rất lớn — phần lớn là energy/commodity-driven. Khi WTI ổn định hoặc giảm, base effect sẽ kéo Headline CPI xuống Q3/Q4 2026.\n\n### Lao động — Kiên cường nhưng bắt đầu rạn nứt\n\n- **NFP tháng 5:** +172K (vs forecast 85K — beat mạnh), FRED PAYEMS cho thấy mức absolute 159,001K\n- **Unemployment Rate:** 4.3% — flat 3 tháng liên tiếp (tháng 3, 4, 5 đều 4.3%)\n- **Initial Jobless Claims:** 229K (tuần 06-06) — trend tăng từ 190–210K tháng 4 lên 225–229K tháng 5–6\n- **JOLTS Job Openings:** 7,618K (tháng 4) — bật mạnh +10.6% MoM sau chuỗi giảm; labor demand vẫn cao\n- **Avg Hourly Earnings:** YoY 3.45%, 3M annualized 2.82% — tiền lương đang MODERAT, không còn accelerating\n\n**Tổng hợp:** Labor market ở trạng thái \"late-cycle resilient but softening at the edges\" — tức là vẫn tạo việc làm nhưng claims trending up và tốc độ chậm lại so với đỉnh. Fed có thể bắt đầu cut lãi suất mà không sợ \"re-ignite\" wage inflation vì AHE 3M annualized đã về 2.82%.\n\n### Tăng trưởng — Bounce từ đáy, GDPNow Q2 tích cực\n\n- **Real GDP Q1 2026:** +1.6% QoQ ann. (hồi phục từ Q4 2025: +0.5%)\n- **GDPNow Q2 2026:** +3.29% — bounce mạnh, consumer + investment lead\n- **Retail Sales tháng 4:** MoM +0.49%, YoY +4.87%, 3M annualized 12.88% — consumer vẫn chi tiêu\n- **Durable Goods Orders tháng 4:** MoM +8.02%, YoY +17.26% — capex bùng phát\n- **Industrial Production tháng 4:** MoM +0.68%, YoY +1.35% — ổn định\n- **JOLTS:** 7,618K — demand for labor vẫn mạnh\n\n**Tổng hợp:** Growth picture tích cực — không có dấu hiệu recession. GDPNow Q2 ở 3.29% là mức khỏe mạnh. Rủi ro chính là consumer sentiment thấp (Michigan 49.8 FRED tháng 4 — preliminary June 48.9) phản ánh lo ngại lạm phát/chi phí sinh hoạt, nhưng hành vi chi tiêu thực tế (Retail Sales) vẫn mạnh — hành động quan trọng hơn cảm xúc.\n\n---\n\n## Bối cảnh xu hướng (so với 30 ngày qua)\n\n### Ba turning points định hình lại regime từ cuối tháng 5\n\nNhìn lại 22 ngày từ 22/5 đến 13/6, thị trường đã trải qua ba bước ngoặt rõ rệt. Mỗi bước làm thay đổi cơ bản cách định giá rủi ro và phân bổ dòng tiền theo sector.\n\n---\n\n**Turning Point 1 — 2026-06-04: Tech leadership CRACK và rotation broadening**\n\nNgày 4/6 là ngày rotation lớn nhất kể từ khi hệ thống theo dõi. Đây là thời điểm XLK bắt đầu mất vai trò dẫn dắt thị trường sau gần ba tuần độc chiếm tăng trưởng (XLK đã tăng từ +15.75% 1M ngày 25/5 lên +21.09% 1M đỉnh ngày 4/6 trước khi rơi 4.5 điểm phần trăm chỉ trong một phiên).\n\nCatalyst kép: Initial Jobless Claims nhảy vọt lên 225K — lần đầu tiên phá ngưỡng 220K kể từ năm 2025 — cùng Challenger Job Cuts đảo chiều YoY từ -20.9% sang +3.4%, tức là thị trường lao động bắt đầu xuất hiện dấu hiệu căng thẳng từ phía người sử dụng lao động.\n\nPhản ứng thị trường ngược với trực giác và mang ý nghĩa cấu trúc: 9/11 sectors tăng trong khi XLK -1.56%. Các sector dẫn đầu là XLV +3.07% (healthcare) và XLF +2.59% (financials) — tức là thị trường đang re-rate sang narrative \"labor softening dẫn đến Fed cut\" thay vì \"growth mạnh dẫn đến tech beat\". 10Y yield giảm nhẹ xuống 4.46%, tín hiệu market đang price xác suất cut cao hơn nhưng chưa panic về recession.\n\nHàm ý sector dài hạn từ turning point này: rotation từ \"pure growth/duration play\" (XLK) sang \"defensive-growth hybrid\" (XLV, XLF). Đây là dấu hiệu chu kỳ đang chuyển sang giai đoạn muộn hơn, nơi cash-flow visibility và pricing power quan trọng hơn multiple expansion từ lãi suất thấp.\n\n---\n\n**Turning Point 2 — 2026-06-08: NFP +265K và VIX spike — \"No Landing\" shock**\n\nTuần từ 4–8/6 là đỉnh điểm của xung đột giữa hai narrative. NFP tháng 5 in ra +265K (inferred từ FRED PAYEMS: 159,001K vs 158,736K trước đó) — beat mạnh vs consensus ~150K — đẩy 10Y yield nhảy +9bp lên 4.55% và 2Y yield tăng +12bp lên 4.17% chỉ trong một phiên. Đồng thời AVGO earnings (4/6 sau close) kết quả kém hơn kỳ vọng, đánh thẳng vào AI capex narrative vốn là nền tảng của XLK rally.\n\nKết quả: XLK de-rate -8.09 điểm phần trăm trong vòng 4 phiên (từ +16.63% 1M ngày 4/6 xuống +8.54% 1M ngày 8/6). VIX spike +39.7% từ 16.06 lên 21.51 — first major vol event trong hơn 6 tuần, tức là thị trường lần đầu tiên sau nhiều tuần bị buộc phải mua bảo hiểm rủi ro giảm.\n\nĐiều quan trọng không phải là VIX spike mà là cái gì thay thế XLK trong leadership: XLV +5.48% 1M và XLE +4.25% 1M dẫn đầu trong tuần đó. Healthcare dẫn đầu vì nó có hai đặc tính cùng lúc — nó vừa là defensive (chống chịu tốt khi growth uncertainty tăng) vừa là duration asset (hưởng lợi khi yields giảm dài hạn theo kịch bản Fed cut). Energy dẫn đầu nhờ supply story riêng (crude inventory draw -7.97M shock tuần 3/6).\n\nHàm ý: NFP mạnh trong khi claims trend tăng và Challenger cuts đảo chiều YoY là tín hiệu hỗn hợp — lagging indicators (NFP) còn mạnh trong khi leading indicators (claims, Challenger) đã bắt đầu xấu. Thị trường bond phản ứng với lagging data (yields tăng), còn sector rotation phản ứng với leading data (healthcare bid). Đây là thời điểm cần nhìn qua \"noise\" của một bản NFP và theo dõi xu hướng claims tuần sau.\n\n---\n\n**Turning Point 3 — 2026-06-10/11: Bộ ba CPI/PPI/Michigan — Full disinflation confirmation**\n\nĐây là turning point đảo chiều hoàn toàn: trong khi tuần trước yields tăng vì NFP \"no landing\", tuần này bộ ba CPI (10/6) + PPI (11/6) + Michigan (12/6) đã cùng lúc xác nhận rằng lạm phát đang hạ nhiệt theo đúng lộ trình. Ba số liệu:\n\n- Core CPI MoM tháng 5: 0.21% (vs forecast 0.30%) — tốt nhất kể từ đầu năm 2026; 3M annualized giảm xuống 3.17%.\n- Core PPI YoY tháng 5: 4.9% (vs forecast 5.4%) — xác nhận pipeline áp lực thượng nguồn đang dịu; khoảng cách giữa PPI headline (6.46%) và Core CPI (2.96%) phản ánh energy/tariff isolated, không phải broad-based inflation.\n- Michigan 5Y Inflation Expectations: 3.4% (vs forecast 3.8%) — neo lạm phát dài hạn ổn định, cung cấp cho Fed \"political cover\" để bắt đầu cut mà không bị coi là bỏ qua lạm phát.\n\nKết quả market: 10Y yield rút -10bp từ 4.55% về 4.45%, 2Y yield rút -8bp về 4.05%, VIX hạ từ 22.22 về 19.44, HY OAS thu hẹp về 2.78%. SPY +1.7% ngày 11/6. XLK +3.73% và XLI +3.24% dẫn đầu — khác với rotation cũ, đây là \"growth + industrial\" cùng dẫn đầu, tín hiệu thị trường đang tin vào kịch bản \"growth tốt + inflation giảm\" dài hơi hơn.\n\n---\n\n### Bức tranh xu hướng định lượng 22 ngày\n\n**Lạm phát — xu hướng rõ ràng nhất:**\n\nCore CPI đang trên lộ trình giảm tốc bền vững. MoM progression từ Jan đến May 2026: +0.30% → +0.22% → +0.20% → +0.37% → +0.21%. Tháng 3 và tháng 4 có biến động nhưng 3M annualized (tính đến May) hiện ở 3.17% — đây là tốc độ thấp nhất trong năm 2026 và tiến gần mục tiêu 2% của Fed hơn bất kỳ thời điểm nào kể từ giữa 2025.\n\nCore PCE (thước đo Fed ưu tiên nhất) cũng đang giảm tốc: MoM tháng 4 là +0.24% và 3M annualized ở 3.78% — vẫn trên target nhưng trajectory rõ ràng là đi xuống.\n\nShelter YoY đang giảm từ >5% (đỉnh giữa 2025) về 3.62% hiện tại (3M annualized 4.87%), cho thấy lagged rent disinflation đang thẩm thấu dần vào CPI. Đây là thành phần có trọng số lớn nhất (~33% trong Core CPI), khi nó tiếp tục cool về 3.5% YoY trong Q3/Q4, áp lực đối với Fed để duy trì restrictive stance sẽ giảm đáng kể.\n\nCore Goods thậm chí đang deflate: MoM tháng 5 là -0.11%, 3M annualized chỉ 0.11% — tariff pass-through yếu hơn nhiều so với lo ngại ban đầu, có thể do USD mạnh (broad index 120.08) hấp thụ bớt chi phí import.\n\n**Lao động — xu hướng phân tầng:**\n\nHai lớp tín hiệu đang diverge rõ ràng và đây là điều cần theo dõi nhất:\n\nLớp lagging (backward-looking): NFP vẫn mạnh (+172K tháng 5, beat mạnh vs 85K forecast), JOLTS bật lên 7.618M (+10.6% MoM), UNRATE flat ở 4.3% ba tháng liên tiếp. Những số này cho thấy thị trường lao động CHƯA suy yếu — đây là lý do Fed sẽ chưa vội vã cut.\n\nLớp leading (forward-looking): Initial Claims tăng từ vùng 190–210K (tháng 4) lên 225–229K (tháng 5–6). Challenger Job Cuts đảo chiều YoY từ -20.9% sang +3.4% trong ngày 4/6. AHE 3M annualized đã giảm về 2.82% — dưới mức Core CPI 3M annualized 3.17%, tức là real wage growth đang âm dần (real wages đang bị lạm phát ăn mòn), đây là áp lực ngược cho consumer spending trong 2–3 quý tới.\n\nConclusion: Labor market đang ở giai đoạn \"soft landing in progress\" — chưa crack nhưng đã có nhiều vết rạn. Fed có thể cut lãi suất 1–2 lần trong H2 2026 mà không kích hoạt inflation surge vì AHE đã moderat đủ.\n\n**Tăng trưởng — đang ở peak Q2, cần xem Q3:**\n\nGDPNow Q2 ở 3.29% là mức khỏe mạnh và cao hơn nhiều so với Q1 (1.6%). Durable Goods +8.02% MoM và Retail Sales +0.49% MoM tháng 4 là những số tốt nhất trong năm. Tuy nhiên, điều đáng lo là đây có thể là peak Q2 trước khi consumer sentiment thấp (Michigan 48.9 preliminary) bắt đầu ảnh hưởng đến hành vi chi tiêu thực tế trong Q3. Retail Sales tháng 5 (sẽ công bố tuần tới) là số cần xem kỹ nhất.\n\n**Đường cong lãi suất — tín hiệu regime:**\n\nT10Y2Y spread hiện ở +0.39% (dẹt nhẹ từ +0.43% cuối tháng 5). Đường cong dương nhưng flat là tín hiệu thị trường đang trong giai đoạn chuyển tiếp: không còn \"hawkish inversion\" (đường cong âm như giai đoạn 2022–2023), nhưng cũng chưa \"steepening\" theo kiểu classic dovish pivot. Để đường cong steepen mạnh trở lại, cần ít nhất một trong hai điều kiện: Fed cắt rate (giảm 2Y) hoặc growth outlook xấu đi đáng kể (giảm cả 2Y và 10Y nhưng 2Y giảm nhanh hơn).\n\n---\n\n### Regime hiện tại và sector implications dài hạn\n\n**Regime hiện tại: Late-cycle disinflation với dovish optionality**\n\nNền kinh tế Mỹ đang ở giai đoạn cuối của chu kỳ thắt chặt, đặc trưng bởi: tăng trưởng vẫn dương nhưng đang chậm dần (GDP Q1 +1.6% vs Q2 est. +3.29% — volatile); lạm phát đang giảm tốc rõ rệt ở core metrics; lao động còn tight nhưng leading indicators đang crack dần; Fed đứng yên nhưng thị trường đang price xác suất 1–2 lần cut trong H2 2026.\n\nĐây là môi trường mà lịch sử cho thấy **không phải tất cả sectors đều hưởng lợi đều nhau**. Bảng dưới đây map các tín hiệu macro hiện tại sang sector implications:\n\n| Tín hiệu macro hiện tại | Mức độ | Sectors hưởng lợi | Sectors chịu áp lực |\n|---|---|---|---|\n| Core CPI giảm tốc (3M ann. 3.17%) | Mạnh | Tech (DCF), REITs (yields), Healthcare | Energy, Materials (pricing power giảm) |\n| AHE 3M ann. 2.82% — moderat | Tích cực vừa | Staples (chi phí lao động giảm), Healthcare | Margin-sensitive: restaurants, retail |\n| Claims trend tăng (225→229K) | Cảnh báo | Healthcare (defensive), Staples | Consumer Disc, Financials (credit) |\n| GDPNow Q2 +3.29% | Mạnh | Industrials, Materials, Financials | Utilities (anti-cyclical) |\n| Durable Goods +8% MoM | Mạnh | Industrials (capex), Tech (semis) | — |\n| T10Y2Y +0.39% flat | Hỗn hợp | — | Financials (NIM không expand) |\n| WTI consolidate $95 | Trung tính | Energy (floor) | Consumer Disc (gas costs) |\n| Michigan 5Y Inflation Exp. 3.4% | Cực tích cực | Tech, REITs (Fed cut path opened) | — |\n| USD Broad 120.08 (mạnh) | Áp lực | Domestic-focus (Financials, Staples) | Multinationals (Tech FX drag), Materials |\n\n**Conviction dài hạn từ bức tranh xu hướng:**\n\nHealthcare (XLV) là sector duy nhất hưởng lợi từ gần như tất cả các tín hiệu cùng lúc — defensive khi labor market crack, duration asset khi yields giảm, không bị ảnh hưởng bởi USD mạnh hay WTI volatility. Đây là core conviction hold.\n\nIndustrials (XLI) được hỗ trợ bởi capex cycle (Durable Goods +8%, ISM Mfg 54.0, GDPNow Q2 mạnh) nhưng cần xem Industrial Production tháng 5 (tuần tới) để xác nhận momentum. Nếu IP giảm tốc, thesis này bị thử thách.\n\nTechnology (XLK) trở thành sector \"conditional OW\" — phụ thuộc vào lộ trình yields. Mỗi -10bp trên 10Y yield tương đương với khoảng +2–3% re-rating cho high-multiple tech. Core CPI 3M annualized 3.17% đang đặt nền cho kịch bản yields tiếp tục giảm về 4.20–4.30% trong Q3, đó sẽ là catalyst mạnh nhất cho XLK. Rủi ro chính: AI capex narrative bị challenge (AVGO precedent), USD mạnh đè FX revenue.\n\nFinancials (XLF) là sector tín hiệu hỗn hợp nhất: yields giảm → NIM pressure (tiêu cực); Fed cut → steeper curve potentially (tích cực dài hạn); labor soft-landing → credit quality ổn (tích cực); GDPNow mạnh → loan demand (tích cực). Net: neutral-to-cautious cho đến khi curve steepen rõ hơn.\n\nReal Estate (XLRE) là sector \"waiting for the starter gun\" — yields giảm -10bp tuần này là tailwind rõ nhất, nhưng housing supply vẫn thấp (Starts tháng 4: 1,465K, giảm -2.79% MoM) và mortgage demand chưa phục hồi. Nếu 10Y về 4.30% và Housing Starts tháng 5 tăng trở lại, XLRE có thể là sector tăng mạnh nhất trong H2 2026.\n\nEnergy (XLE) là sector \"orphaned\" — WTI đã giảm từ $112 xuống $95 (crash -15% peak-to-trough), thesis supply tốt vẫn còn (crude draw -7.97M shock tuần 3/6), nhưng disinflation narrative dài hạn và growth slowdown concerns làm giảm demand outlook. Neutral cho đến khi có OPEC catalyst hoặc WTI stabilize và bật qua $100.\n\n---\n\n**Xu hướng đang gia tốc và rủi ro đảo chiều:**\n\nDisinflation trajectory đang tăng tốc: Core CPI đã giảm từ đỉnh 3M ann. ~5.5% (đầu Q1 2026) xuống 3.17% hiện tại. Nếu momentum này duy trì, Core CPI 3M annualized có thể về 2.50–2.80% vào Q4 2026, tức là Fed sẽ có đủ điều kiện để cut 50–75bp trước cuối năm mà không bị mất uy tín.\n\nRủi ro đảo chiều chính có hai nguồn: (1) WTI bật mạnh trở lại >$100 do OPEC hoặc geopolitical shock, làm Headline CPI Q3 tăng tốc và buộc Fed phải giữ lãi suất cao hơn lâu hơn — headwind cho Tech và REITs; (2) Labor market crack nhanh hơn dự kiến (claims vượt 250K, NFP tháng 6 miss) → growth scare → Fed cut nhưng VIX tăng → defensive bid mạnh (Healthcare, Staples) nhưng cyclicals (Industrials, Materials) bị đè.\n\nKịch bản baseline (xác suất cao nhất) là disinflation tiếp tục, Fed cut 1–2 lần trong H2 2026, GDPNow Q2 thực tế về khoảng 2.8–3.0% (thấp hơn nowcast do revision), thị trường duy trì regime \"risk-on với rotation rộng hơn\" — không còn narrow XLK monopoly như tháng 5, mà là broad participation giữa Tech + Healthcare + Industrials.\n\n---\n\n## Cảnh báo & Catalyst sắp tới\n\n**Tuần tới (16–20/6):**\n\n1. **Retail Sales tháng 5 (dự kiến ~17/6):** Consumer có tiếp tục chi tiêu sau tháng 4 mạnh (+0.49% MoM)? Nếu miss, GDPNow Q2 sẽ bị cắt — rủi ro cho XLY/XLK.\n\n2. **Industrial Production tháng 5 (~17/6):** Xác nhận Mfg cluster ISM 54.0 có trụ được không? Ảnh hưởng XLI/XLB.\n\n3. **Housing Starts tháng 5 (~18/6):** Housing Starts tháng 4 giảm -2.79% về 1,465K — yields giảm tuần này có giúp hồi phục? XLRE sẽ nhạy cảm nhất.\n\n4. **Fed Speakers:** Theo dõi bất kỳ Fed member nào comment về CPI/PPI data tuần này — sẽ định hình thời điểm cut. Nếu 2–3 officials confirm \"đủ điều kiện để cut\", 2Y yield có thể giảm thêm về 3.90–3.95%.\n\n5. **WTI Crude Oil:** Hiện $95 và đang consolidate sau crash từ $112 (tháng 5). OPEC+ meeting hoặc bất kỳ geopolitical shock nào có thể đẩy WTI về $100+ — đây là rủi ro chính cho Headline CPI Q3 và narrative disinflation hiện tại.\n\n6. **10Y Inflation Breakeven:** Vừa nhích lên 2.31% sau khi chạm đáy 2.29%. Nếu breakeven tăng tiếp lên 2.40%+ mà không có lý do data tốt, đó là cảnh báo thị trường bond nghi ngờ disinflation narrative.\n\n---\n\n## Conviction Sectors — Cập nhật cuối tuần\n\n| Sector | Stance | Lý do |\n|---|---|---|\n| **XLK Technology** | Stalking / Light OW | Disinflation narrative = DCF tailwind. Core CPI 3M ann 3.17% là tốt nhất từ đầu năm. Yields drop -10bp tuần này hỗ trợ. FOMO risk nếu Core CPI tiếp tục cool về <0.2% MoM. |\n| **XLV Healthcare** | Overweight CONFIRMED | Defensive core, RS 1M vẫn dẫn đầu. Hưởng lợi từ yields giảm (duration assets). Không có catalyst tiêu cực. |\n| **XLF Financials** | Neutral / Light OW (cautious) | T10Y2Y +0.39% vẫn flat — NIM không cải thiện mạnh. Nhưng nếu labor softening tiếp tục → Fed cut → curve có thể steepen → upgrade. Theo dõi. |\n| **XLI Industrials** | Light OW | GDPNow Q2 3.29% + Durable Goods +8% + ISM Mfg 54.0 → capex cycle on. Relief rally tuần này xác nhận sức mạnh XLI. |\n| **XLE Energy** | Neutral | WTI $95 — không upside catalyst rõ ràng. OPEC risk duy nhất. Không entry mới. |\n| **XLRE Real Estate** | Watch (nâng từ UW) | 10Y giảm -10bp tuần này là strong tailwind. Housing Starts data tuần tới là catalyst. Nếu 10Y về 4.30%, upgrade OW. |\n| **XLU Utilities** | Underweight | Dù yields giảm hỗ trợ, RS 1M vẫn tệ. Không có growth catalyst riêng. |\n| **XLP Staples** | Neutral | Defensive bid nhưng không có thematic catalyst mạnh khi regime risk-on. |\n| **XLY Discretionary** | Neutral (cautious) | Michigan Sentiment 48.9 tuyệt đối thấp vs hành vi Retail Sales mạnh — tín hiệu hỗn hợp. Chờ Retail Sales T5. |\n| **XLC Communications** | Underweight | RS tệ, không có catalyst. |\n| **XLB Materials** | Neutral | Relief rally tuần này nhờ disinflation. Core Goods deflation (-0.11% MoM) có thể là headwind cho pricing power. |\n\n---\n\n*Nguồn dữ liệu: FRED API (fred_snapshot, collected 2026-06-13T13:12:30 UTC). Không có data mới từ investing.com hôm nay. Context từ daily_summaries.md (báo cáo 10/6, 11/6, 12/6). FRED series lag 1 ngày so với thị trường — 10Y yield 4.45% tính đến 11/6 (Thứ Năm); T10Y2Y 0.39% tính đến 12/6 (Thứ Sáu). WTI và USD Broad lag hơn do không có FRED update ngày 12-13/6.*"
   },
   "latest_monthly": {
     "file": "2026-05.md",

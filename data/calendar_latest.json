@@ -1,8 +1,8 @@
 {
   "schema_version": "1.1",
-  "fetched_at": "2026-06-12T21:00:13.470660+00:00",
-  "window_start": "2026-06-12",
-  "window_end": "2026-07-03",
+  "fetched_at": "2026-06-13T13:17:23.076024+00:00",
+  "window_start": "2026-06-13",
+  "window_end": "2026-07-04",
   "macro": [
     {
       "date": "2026-06-15",
@@ -105,8 +105,8 @@
       "ticker": "NKE",
       "name": "Nike",
       "sector_etf": "XLY",
-      "time": "AMC",
-      "eps_estimate": 0.12,
+      "time": null,
+      "eps_estimate": null,
       "revenue_estimate_b": null,
       "importance": "medium",
       "type": "earnings"

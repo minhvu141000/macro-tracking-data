@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "fetched_at": "2026-06-12T20:58:38.281402+00:00",
+  "fetched_at": "2026-06-13T13:15:02.833023+00:00",
   "assets": {
     "^VIX": {
       "latest": 17.68,
@@ -2049,15 +2049,15 @@
       "label": "10Y Treasury Yield (^TNX)"
     },
     "DX-Y.NYB": {
-      "latest": 99.8,
+      "latest": 99.75,
       "latest_date": "2026-06-12",
-      "ret_1d": -0.06,
-      "ret_1w": -0.27,
-      "ret_1m": 1.34,
-      "ret_3m": -0.56,
-      "ret_6m": 1.02,
-      "ret_1y": 1.18,
-      "ret_ytd": 1.4,
+      "ret_1d": -0.11,
+      "ret_1w": -0.32,
+      "ret_1m": 1.29,
+      "ret_3m": -0.61,
+      "ret_6m": 0.97,
+      "ret_1y": 1.14,
+      "ret_ytd": 1.35,
       "history": [
         {
           "date": "2025-06-12",
@@ -3065,22 +3065,22 @@
         },
         {
           "date": "2026-06-12",
-          "value": 99.8
+          "value": 99.75
         }
       ],
       "ticker": "DX-Y.NYB",
       "label": "DXY US Dollar Index"
     },
     "CL=F": {
-      "latest": 84.3,
+      "latest": 84.88,
       "latest_date": "2026-06-12",
-      "ret_1d": -3.89,
-      "ret_1w": -6.89,
-      "ret_1m": -16.55,
-      "ret_3m": -14.6,
-      "ret_6m": 44.2,
-      "ret_1y": 23.9,
-      "ret_ytd": 47.07,
+      "ret_1d": -3.23,
+      "ret_1w": -6.25,
+      "ret_1m": -15.98,
+      "ret_3m": -14.01,
+      "ret_6m": 45.19,
+      "ret_1y": 24.75,
+      "ret_ytd": 48.08,
       "history": [
         {
           "date": "2025-06-13",
@@ -4088,22 +4088,22 @@
         },
         {
           "date": "2026-06-12",
-          "value": 84.3
+          "value": 84.88
         }
       ],
       "ticker": "CL=F",
       "label": "WTI Crude Oil Futures"
     },
     "GC=F": {
-      "latest": 4235.7,
+      "latest": 4215.0,
       "latest_date": "2026-06-12",
-      "ret_1d": 3.55,
-      "ret_1w": -2.34,
-      "ret_1m": -9.83,
-      "ret_3m": -16.17,
-      "ret_6m": 0.94,
-      "ret_1y": 25.28,
-      "ret_ytd": -1.82,
+      "ret_1d": 3.05,
+      "ret_1w": -2.82,
+      "ret_1m": -10.28,
+      "ret_3m": -16.58,
+      "ret_6m": 0.44,
+      "ret_1y": 24.67,
+      "ret_ytd": -2.3,
       "history": [
         {
           "date": "2025-06-13",
@@ -5111,22 +5111,22 @@
         },
         {
           "date": "2026-06-12",
-          "value": 4235.7
+          "value": 4215.0
         }
       ],
       "ticker": "GC=F",
       "label": "Gold Futures"
     },
     "HG=F": {
-      "latest": 6.47,
+      "latest": 6.43,
       "latest_date": "2026-06-12",
-      "ret_1d": 3.44,
-      "ret_1w": 3.36,
-      "ret_1m": -2.43,
-      "ret_3m": 13.29,
-      "ret_6m": 22.72,
-      "ret_1y": 34.27,
-      "ret_ytd": 14.79,
+      "ret_1d": 2.74,
+      "ret_1w": 2.67,
+      "ret_1m": -3.09,
+      "ret_3m": 12.53,
+      "ret_6m": 21.89,
+      "ret_1y": 33.37,
+      "ret_ytd": 14.02,
       "history": [
         {
           "date": "2025-06-13",
@@ -6134,27 +6134,23 @@
         },
         {
           "date": "2026-06-12",
-          "value": 6.47
+          "value": 6.43
         }
       ],
       "ticker": "HG=F",
       "label": "Copper Futures"
     },
     "BTC-USD": {
-      "latest": 63416.92,
-      "latest_date": "2026-06-12",
-      "ret_1d": -0.23,
-      "ret_1w": 0.28,
-      "ret_1m": -15.99,
-      "ret_3m": -13.1,
-      "ret_6m": -10.12,
-      "ret_1y": -48.13,
-      "ret_ytd": -28.53,
+      "latest": 64133.88,
+      "latest_date": "2026-06-13",
+      "ret_1d": 0.93,
+      "ret_1w": 1.65,
+      "ret_1m": -16.35,
+      "ret_3m": -12.21,
+      "ret_6m": -7.43,
+      "ret_1y": -47.61,
+      "ret_ytd": -27.72,
       "history": [
-        {
-          "date": "2025-10-04",
-          "value": 122425.43
-        },
         {
           "date": "2025-10-05",
           "value": 123513.48
@@ -7157,7 +7153,11 @@
         },
         {
           "date": "2026-06-12",
-          "value": 63416.92
+          "value": 63543.2
+        },
+        {
+          "date": "2026-06-13",
+          "value": 64133.88
         }
       ],
       "ticker": "BTC-USD",
