@@ -43,9 +43,11 @@ scripts/build_dashboard.py      # build data.js
 
 | Nhóm | Chỉ số (FRED series ID) |
 |---|---|
-| Lạm phát | CPI (CPIAUCSL), Core CPI (CPILFESL), PCE (PCEPI), Core PCE (PCEPILFE), PPI (PPIACO) |
-| Lao động | NFP (PAYEMS), Unemp (UNRATE), Jobless Claims (ICSA), AHE (CES0500000003), JOLTS (JTSJOL) |
-| Tăng trưởng | GDP (GDPC1), Retail Sales (RSAFS), Industrial Prod (INDPRO), ISM Mfg (NAPM), ISM Svc (NAPMNMI) |
+| Lạm phát | CPI (CPIAUCSL), Core CPI (CPILFESL), PCE (PCEPI), Core PCE (PCEPILFE), PPI Final Demand (PPIFID), Core PPI (PPIFES) |
+| Lao động | NFP (PAYEMS, đọc Δ MoM), Unemp (UNRATE), Jobless Claims (ICSA), AHE (CES0500000003), JOLTS (JTSJOL) |
+| Tăng trưởng | GDP Growth QoQ-ann. (A191RL1Q225SBEA), Retail Sales (RSAFS), Industrial Prod (INDPRO), ISM Mfg (NAPM), ISM Svc (NAPMNMI) |
+
+> **Chuẩn hoá theo investing.com:** dùng đúng series thị trường quote — PPI = Final Demand (PPIFID, YoY ~6.5%) **không** phải All Commodities (PPIACO, YoY ~13%); GDP = tốc độ tăng trưởng QoQ annualized **không** phải mức $B; NFP đọc theo thay đổi MoM (Δ nghìn người) không phải mức tuyệt đối. Mỗi series có `DEFAULT_VIEW` trong dashboard để mở đúng metric headline.
 | Niềm tin | Consumer Conf (CSCICP03USM665S), Michigan (UMCSENT) |
 | Nhà ở | Housing Starts (HOUST), Existing Home Sales (EXHOSLUSM495S), Case-Shiller (CSUSHPINSA) |
 | Fed | Fed Funds Rate (DFF), 10Y Yield (DGS10), 2Y Yield (DGS2) |

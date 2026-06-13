@@ -21,7 +21,7 @@
             "CPILFESL",
             "PCEPI",
             "PCEPILFE",
-            "PPIACO",
+            "PPIFID",
             "MICH1Y"
           ]
         },
@@ -85,30 +85,30 @@
           ]
         },
         {
-          "id": "PPIACO",
+          "id": "PPIFID",
           "short_name": "PPI",
-          "full_name": "Producer Price Index",
-          "description": "Chỉ số giá sản xuất, đo lường chi phí sản xuất của các nhà máy. Thường được coi là chỉ báo sớm cho CPI (vì chi phí sản xuất tăng sẽ đẩy giá bán lẻ tăng).",
+          "full_name": "Producer Price Index — Final Demand",
+          "description": "Chỉ số giá sản xuất (Final Demand) — rổ mà thị trường/investing.com quote khi nói 'PPI'. Đo chi phí giá đầu ra của nhà sản xuất. Chỉ báo sớm cho CPI. LƯU Ý: không phải PPI All Commodities (PPIACO), vốn cho YoY cao hơn nhiều.",
           "frequency": "Hàng tháng",
-          "link": "https://fred.stlouisfed.org/series/PPIACO",
+          "link": "https://fred.stlouisfed.org/series/PPIFID",
           "expectation_meaning": "Cung cấp góc nhìn về lạm phát từ phía nguồn cung.",
           "good_vs_bad": "NÓNG: Cảnh báo lạm phát tiêu dùng có thể tăng, xấu cho Cổ phiếu.\nNGUỘI: Tốt cho cổ phiếu, báo hiệu áp lực giá cả hạ nhiệt.",
           "market_reaction": "🏭 PPI tăng mạnh báo hiệu biên lợi nhuận (Margin) của các công ty bán lẻ/sản xuất (XLY, XLP) có thể bị thu hẹp do chi phí đầu vào tăng. Cổ phiếu Vật liệu (XLB) có thể tăng nhờ giá nguyên liệu cao.",
           "read_format": "**YoY%** (pipeline pressure) · **MoM%** (recent shock) · 3-mo annualized (truyền dẫn vào CPI)",
-          "watch_thresholds": "YoY <3% = clean / 5-8% = warning / >10% = sẽ truyền vào CPI 2-3 tháng",
+          "watch_thresholds": "YoY <2% = clean / 2-4% = neutral / 4-6% = warning / >6% = sẽ truyền vào CPI 2-3 tháng",
           "release_pattern": "Hàng tháng, ~ngày 11-15 (1 ngày trước CPI), 8:30 ET",
           "related_indicators": [
-            "PPILFE",
+            "PPIFES",
             "CPIAUCSL",
             "ISMMFGPRICES"
           ]
         },
         {
-          "id": "PPILFE",
+          "id": "PPIFES",
           "short_name": "Core PPI",
-          "full_name": "Core Producer Price Index",
+          "full_name": "Core Producer Price Index (Final Demand ex Food & Energy)",
           "frequency": "Hàng tháng",
-          "link": "https://fred.stlouisfed.org/series/PPILFE",
+          "link": "https://fred.stlouisfed.org/series/PPIFES",
           "description": "PPI loại trừ thực phẩm và năng lượng — đo áp lực giá đầu vào của nhà sản xuất ở phần 'sticky' (ít biến động).",
           "expectation_meaning": "Forecast MoM thường 0.1-0.3%, YoY 2-3%. Vượt trên = áp lực giá lan toả; dưới = disinflation pipeline.",
           "good_vs_bad": "Cao = áp lực giá đầu vào → có thể truyền vào CPI tháng sau → Fed hawkish. Thấp = tốt cho margin doanh nghiệp + tốt cho equities.",
@@ -123,7 +123,7 @@
           "watch_thresholds": "YoY <2.5% = anchored / >3.5% = sticky pipeline",
           "release_pattern": "Cùng PPI headline",
           "related_indicators": [
-            "PPIACO",
+            "PPIFID",
             "CPILFESL"
           ]
         },

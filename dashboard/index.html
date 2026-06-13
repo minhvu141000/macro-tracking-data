@@ -607,13 +607,14 @@ function openModal({ fredId, name, latest, change, releaseData }) {
 
   // Trend chart section if FRED ID matched and we have history
   const hasHistory = info._fredId && D.history && D.history[info._fredId] && (D.history[info._fredId].history || []).length > 0;
+  // Default the chart to the metric investing.com headlines (YoY for inflation,
+  // Δ MoM for NFP, level for rates/GDP-rate…) so the value matches the release.
+  const modalDefaultView = (hasHistory && DEFAULT_VIEW[info._fredId]) || "level";
   const trendHtml = hasHistory ? `
     <div class="modal-section">
       <div class="label">Xu hướng</div>
       <div class="view-toggle" data-modal-fred="${info._fredId}" style="margin: 6px 0 8px; display: inline-flex;">
-        <button class="view-btn active" data-view="level">Level</button>
-        <button class="view-btn" data-view="mom">MoM%</button>
-        <button class="view-btn" data-view="yoy">YoY%</button>
+        ${buildToggleButtons(info._fredId, modalDefaultView)}
       </div>
       <div class="chart-box" style="height: 180px;"><canvas id="modal-trend-chart"></canvas></div>
     </div>` : "";
@@ -635,7 +636,7 @@ function openModal({ fredId, name, latest, change, releaseData }) {
 
   // Render trend chart + bind toggle
   if (hasHistory) {
-    renderModalTrendChart(info._fredId, "level");
+    renderModalTrendChart(info._fredId, modalDefaultView);
     body.querySelectorAll(".view-toggle[data-modal-fred] .view-btn").forEach(btn => {
       btn.addEventListener("click", () => {
         body.querySelectorAll(".view-toggle[data-modal-fred] .view-btn").forEach(b => b.classList.remove("active"));
@@ -995,15 +996,18 @@ const GROUPS = {
 // "level_ma4" = level smoothed with 4-period moving average
 const DEFAULT_VIEW = {
   // Inflation → YoY (Fed compares vs 2% target)
-  CPIAUCSL: "yoy", CPILFESL: "yoy", PCEPI: "yoy", PCEPILFE: "yoy", PPIACO: "yoy",
+  CPIAUCSL: "yoy", CPILFESL: "yoy", PCEPI: "yoy", PCEPILFE: "yoy",
+  PPIFID: "yoy", PPIFES: "yoy",   // PPI Final Demand + Core PPI (match investing.com)
   // Labor
   PAYEMS: "mom_delta",      // change in jobs (k people)
   UNRATE: "level",          // already %
   ICSA: "level_ma4",        // 4-week MA reduces noise
   CES0500000003: "yoy",     // wage growth
   JTSJOL: "level",          // openings count
-  // Growth
-  GDPC1: "yoy", RSAFS: "yoy", INDPRO: "yoy", MANEMP: "yoy", UMCSENT: "level",
+  // Growth — GDP series is already a QoQ-annualized rate, so show it as "level".
+  // Retail Sales / Industrial Production / Durable Goods: investing.com headlines MoM%.
+  A191RL1Q225SBEA: "level", RSAFS: "mom", INDPRO: "mom", DGORDER: "mom",
+  MANEMP: "yoy", UMCSENT: "level",
   // Housing
   HOUST: "yoy", EXHOSLUSM495S: "yoy", CSUSHPINSA: "yoy",
   // Rates → already %, just level
@@ -1014,8 +1018,12 @@ const DEFAULT_VIEW = {
 function getReferenceLines(fredId, view) {
   const lines = [];
   // Fed 2% target on inflation series, only in YoY view
-  if (view === "yoy" && ["CPIAUCSL", "CPILFESL", "PCEPI", "PCEPILFE", "PPIACO"].includes(fredId)) {
+  if (view === "yoy" && ["CPIAUCSL", "CPILFESL", "PCEPI", "PCEPILFE", "PPIFID", "PPIFES"].includes(fredId)) {
     lines.push({ value: 2, label: "Fed target 2%", color: "#fbbf24" });
+  }
+  // ~2% trend-growth line on GDP growth rate
+  if (fredId === "A191RL1Q225SBEA") {
+    lines.push({ value: 2, label: "Trend ~2%", color: "#fbbf24" });
   }
   // Recession line 0 on T10Y2Y spread
   if (fredId === "T10Y2Y") {
@@ -1162,7 +1170,13 @@ const VIEW_LABELS = {
   level_ma4: "MA",
 };
 
+// Series that are already a rate/%; MoM/YoY transforms are meaningless → level only
+const LEVEL_ONLY = new Set(["A191RL1Q225SBEA"]);
+
 function buildToggleButtons(fredId, currentView) {
+  if (LEVEL_ONLY.has(fredId)) {
+    return `<button class="view-btn active" data-view="level">${VIEW_LABELS.level}</button>`;
+  }
   // Show 3 sensible options based on default view
   const options = ["level", "mom", "yoy"];
   // If default is mom_delta (NFP), include it instead of mom

@@ -33,7 +33,10 @@ FRED_SERIES = {
     "CPILFESL": "Core CPI",
     "PCEPI": "PCE Price Index",
     "PCEPILFE": "Core PCE",
-    "PPIACO": "PPI All Commodities",
+    # PPI: investing.com headline = "PPI Final Demand" (PPIFID), NOT All Commodities
+    # (PPIACO). PPIACO YoY ~13% misleads — Final Demand YoY ~6.5% matches the release.
+    "PPIFID": "PPI Final Demand",
+    "PPIFES": "Core PPI (Final Demand ex Food & Energy)",
     # Labor
     "PAYEMS": "Nonfarm Payrolls",
     "UNRATE": "Unemployment Rate",
@@ -41,7 +44,9 @@ FRED_SERIES = {
     "CES0500000003": "Avg Hourly Earnings",
     "JTSJOL": "Job Openings (JOLTS)",
     # Growth
-    "GDPC1": "Real GDP",
+    # GDP: investing.com headline = QoQ annualized growth RATE (e.g. +1.6%), not the
+    # level in $B. A191RL1Q225SBEA is already that rate → chart it directly (view=level).
+    "A191RL1Q225SBEA": "Real GDP Growth (QoQ ann.)",
     "RSAFS": "Retail Sales",
     "INDPRO": "Industrial Production",
     "MANEMP": "Manufacturing Employment",

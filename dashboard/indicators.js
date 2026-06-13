@@ -49,16 +49,27 @@ window.INDICATORS = {
       why: "Toàn bộ chính sách tiền tệ Mỹ xoay quanh việc Core PCE có quay về 2% hay không. Mỗi 0.1 điểm phần trăm thay đổi đều ảnh hưởng lớn đến thị trường.",
       watch: "3-month annualized rate (tốc độ 3 tháng quy năm) là thước đo Fed dùng để đánh giá xu hướng gần. Trên 3% → còn xa mục tiêu.",
     },
-    "PPIACO": {
-      name: "PPI — Chỉ số giá sản xuất",
-      unit: "Index 1982=100",
+    "PPIFID": {
+      name: "PPI — Chỉ số giá sản xuất (Final Demand)",
+      unit: "Index Nov 2009=100 · đọc theo YoY%",
       freq: "Hàng tháng",
       source: "BLS",
-      what: "Đo giá đầu ra của nhà sản xuất (giá bán buôn). Đo lạm phát ở giai đoạn TRƯỚC khi đến tay người tiêu dùng.",
+      what: "Đo giá đầu ra của nhà sản xuất ở mức 'final demand' (cùng rổ mà investing.com/thị trường quote). Đo lạm phát ở giai đoạn TRƯỚC khi đến tay người tiêu dùng.",
       high_means: "Áp lực giá đầu vào tăng → có thể truyền vào CPI tháng sau. Cảnh báo sớm về lạm phát.",
       low_means: "Áp lực giá đầu vào giảm → CPI có thể hạ. Tốt cho margin của doanh nghiệp.",
-      why: "Là **leading indicator** cho CPI. Nếu PPI tăng mạnh nhưng CPI chưa → công ty đang 'gánh' chi phí, sớm muộn sẽ chuyển sang người tiêu dùng hoặc margin sẽ co.",
+      why: "Là **leading indicator** cho CPI. Nếu PPI tăng mạnh nhưng CPI chưa → công ty đang 'gánh' chi phí, sớm muộn sẽ chuyển sang người tiêu dùng hoặc margin sẽ co. (Lưu ý: đây là Final Demand — KHÔNG phải PPI All Commodities/PPIACO, vốn cho YoY cao hơn nhiều.)",
       watch: "PPI tăng nhanh + Retail Sales yếu = squeeze biên lợi nhuận doanh nghiệp → equities xấu.",
+    },
+    "PPIFES": {
+      name: "Core PPI — PPI Final Demand ex Food & Energy",
+      unit: "Index Apr 2010=100 · đọc theo YoY%",
+      freq: "Hàng tháng (cùng ngày PPI headline)",
+      source: "BLS",
+      what: "PPI Final Demand loại trừ thực phẩm & năng lượng — phản ánh áp lực giá đầu vào cốt lõi, ít nhiễu hơn headline.",
+      high_means: "Áp lực giá lõi dai dẳng → risk lạm phát sticky, xấu cho Growth/Tech.",
+      low_means: "Giá lõi hạ nhiệt → tốt cho margin và equities nói chung.",
+      why: "Cross-check với Core CPI/Core PCE. Fed quan tâm phần lõi vì nó dự báo xu hướng tốt hơn.",
+      watch: "Đọc YoY%. Phân kỳ giữa Core PPI và Core CPI = tín hiệu về margin doanh nghiệp.",
     },
 
     // ===== LAO ĐỘNG =====
@@ -119,16 +130,16 @@ window.INDICATORS = {
     },
 
     // ===== TĂNG TRƯỞNG =====
-    "GDPC1": {
-      name: "Real GDP — GDP thực (đã điều chỉnh lạm phát)",
-      unit: "Tỷ USD (giá 2017)",
+    "A191RL1Q225SBEA": {
+      name: "Real GDP Growth — Tăng trưởng GDP thực (QoQ annualized)",
+      unit: "% (QoQ đã quy năm) — giống con số investing.com quote",
       freq: "Hàng quý (3 lần công bố: advance, second, final)",
       source: "BEA",
-      what: "Tổng giá trị hàng hoá và dịch vụ sản xuất tại Mỹ, đã loại bỏ ảnh hưởng lạm phát. Đo tăng trưởng kinh tế thực.",
+      what: "Tốc độ tăng trưởng GDP thực so với quý trước, đã quy năm (annualized) — đây là con số headline mà thị trường/investing.com theo dõi, KHÔNG phải mức GDP tuyệt đối ($B).",
       high_means: "Kinh tế mạnh → tốt cho cyclicals (Industrials, Financials, Discretionary, Materials). Nhưng quá nóng → Fed lo lạm phát.",
       low_means: "Kinh tế yếu/recession → Fed dovish, defensive sectors (Staples, Healthcare, Utilities) outperform.",
       why: "Là **thước đo định nghĩa** của recession (theo NBER): 2 quý liên tiếp GDP âm. Quyết định 'risk-on' vs 'risk-off' regime.",
-      watch: "Trend Mỹ ~2% annualized. Trên 3% = strong; 1-2% = mềm; âm = suy thoái. Component breakdown: Consumer + Investment + Government + Net Exports.",
+      watch: "Trend Mỹ ~2%. Trên 3% = strong; 1-2% = mềm; âm = suy thoái. Component breakdown: Consumer + Investment + Government + Net Exports.",
     },
     "RSAFS": {
       name: "Retail Sales — Doanh số bán lẻ",
@@ -539,7 +550,7 @@ window.INDICATORS = {
     },
     {
       match: /ism manufacturing prices/i,
-      useFredId: "PPIACO",
+      useFredId: "PPIFES",
       info_override: {
         name: "ISM Mfg Prices Paid",
         unit: "Index, 50 = không đổi",
@@ -560,14 +571,15 @@ window.INDICATORS = {
     { match: /\bcpi\b/i, useFredId: "CPIAUCSL" },
     { match: /core pce/i, useFredId: "PCEPILFE" },
     { match: /\bpce\b/i, useFredId: "PCEPI" },
-    { match: /\bppi\b/i, useFredId: "PPIACO" },
+    { match: /core ppi|ppi.*(ex|less).*(food|energy)/i, useFredId: "PPIFES" },
+    { match: /\bppi\b/i, useFredId: "PPIFID" },
     { match: /nonfarm payroll|nfp/i, useFredId: "PAYEMS" },
     { match: /unemployment rate/i, useFredId: "UNRATE" },
     { match: /(initial )?jobless claims/i, useFredId: "ICSA" },
     { match: /continuing claims/i, useFredId: "ICSA" },
     { match: /average hourly earnings|avg hourly/i, useFredId: "CES0500000003" },
     { match: /jolts|job openings/i, useFredId: "JTSJOL" },
-    { match: /\bgdp\b/i, useFredId: "GDPC1" },
+    { match: /\bgdp\b/i, useFredId: "A191RL1Q225SBEA" },
     { match: /retail sales/i, useFredId: "RSAFS" },
     { match: /industrial production/i, useFredId: "INDPRO" },
     { match: /housing starts/i, useFredId: "HOUST" },

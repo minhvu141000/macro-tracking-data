@@ -30,7 +30,7 @@ ENRICHMENTS = {
         "read_format": "**YoY%** (primary, Fed target 2%) · **MoM%** (momentum, > 0.3% nóng) · **3-mo annualized** (Fed view ngắn hạn)",
         "watch_thresholds": "YoY <2% = anchored / 2-3% = neutral / 3-4% = sticky → Fed lo / >4% = problem",
         "release_pattern": "Hàng tháng, khoảng ngày 10-15 của tháng sau, 8:30 ET (BLS)",
-        "related_indicators": ["CPILFESL", "PCEPI", "PCEPILFE", "PPIACO", "MICH1Y"],
+        "related_indicators": ["CPILFESL", "PCEPI", "PCEPILFE", "PPIFID", "MICH1Y"],
     },
     "CPILFESL": {
         "read_format": "**YoY%** (primary, Fed lo nhất) · **3-mo annualized** (sticky inflation gauge) · MoM% (noise nhiều)",
@@ -50,7 +50,7 @@ ENRICHMENTS = {
         "release_pattern": "Cuối tháng, ~25-30, 8:30 ET. **Sau CPI 2 tuần** → market đã price phần lớn.",
         "related_indicators": ["CPILFESL", "PCEPI", "ULCNFB", "AHE"],
     },
-    "PPIACO": {
+    "PPIFID": {
         "read_format": "**YoY%** (pipeline pressure) · **MoM%** (recent shock) · 3-mo annualized (truyền dẫn vào CPI)",
         "watch_thresholds": "YoY <3% = clean / 5-8% = warning / >10% = sẽ truyền vào CPI 2-3 tháng",
         "release_pattern": "Hàng tháng, ~ngày 11-15 (1 ngày trước CPI), 8:30 ET",
@@ -60,7 +60,7 @@ ENRICHMENTS = {
         "read_format": "**YoY%** + **MoM%** — sticky pipeline; Fed dùng cross-check Core CPI/PCE",
         "watch_thresholds": "YoY <2.5% = anchored / >3.5% = sticky pipeline",
         "release_pattern": "Cùng PPI headline",
-        "related_indicators": ["PPIACO", "CPILFESL"],
+        "related_indicators": ["PPIFID", "CPILFESL"],
     },
     "MEDCPIM158SFRBCLE": {
         "read_format": "**YoY%** chính · MoM% noisy. Median = strip outliers tốt hơn Core CPI",
