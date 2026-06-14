@@ -54,6 +54,8 @@ scripts/build_dashboard.py      # build data.js
 
 ## Viết daily report bằng BẤT KỲ agent nào (kể cả agent ngoài)
 
+> **Bắt đầu ở `RUNBOOK_DAILY.md`** (thư mục gốc) — runbook tự chứa collect → viết → validate cho mọi agent.
+
 Hệ thống có guardrail tất định để báo cáo đạt chất lượng dù do agent nào tạo:
 1. **Đọc spec:** `.claude/agents/macro-analyst.md` — template đầy đủ + format breakdown cho từng nhóm chỉ số.
 2. **Dữ liệu đã enrich sẵn:** `data/raw/<date>.json` có sẵn cho mỗi release: `parsed`, `surprise` (z_score + label), `vs_previous`, `group`, `is_noise`; block `release_summary` (`surprise_count` chuẩn + `groups_present`); và block `inflation_context` (CPI/PCE hard-data + cờ `hard_data_hot`). **Copy `surprise_count` từ đây, gộp release cùng `group` vào 1 section. Khi `hard_data_hot=true` và ngày chỉ có soft-data → PHẢI đối chiếu, không tuyên bố disinflation/dovish một chiều.**

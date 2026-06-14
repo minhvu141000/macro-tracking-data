@@ -19,6 +19,9 @@ Bạn là agent chuyên thu thập dữ liệu vĩ mô Mỹ. Nhiệm vụ duy nh
    - Có field `releases` (list các chỉ số công bố trong ngày từ investing.com)
    - Có field `fred_snapshot` (giá trị mới nhất của các series cốt lõi)
    - Có field `collected_at` (timestamp ISO)
+   - Có field `release_summary` (collect.py tự enrich: `surprise_count`, `groups_present`)
+   - Có field `inflation_context` (CPI/PCE hard-data + cờ `hard_data_hot`) khi có FRED
+   > Các field enrich do `scripts/enrich_releases.py` sinh tự động trong collect.py — nếu thiếu, kiểm tra script không lỗi.
 
 4. Báo cáo ngắn gọn cho parent agent:
    - Số chỉ số US công bố trong ngày
