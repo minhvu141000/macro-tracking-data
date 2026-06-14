@@ -52,6 +52,15 @@ scripts/build_dashboard.py      # build data.js
 | Nhà ở | Housing Starts (HOUST), Existing Home Sales (EXHOSLUSM495S), Case-Shiller (CSUSHPINSA) |
 | Fed | Fed Funds Rate (DFF), 10Y Yield (DGS10), 2Y Yield (DGS2) |
 
+## Viết daily report bằng BẤT KỲ agent nào (kể cả agent ngoài)
+
+Hệ thống có guardrail tất định để báo cáo đạt chất lượng dù do agent nào tạo:
+1. **Đọc spec:** `.claude/agents/macro-analyst.md` — template đầy đủ + format breakdown cho từng nhóm chỉ số.
+2. **Dữ liệu đã enrich sẵn:** `data/raw/<date>.json` có sẵn cho mỗi release: `parsed`, `surprise` (z_score + label), `vs_previous`, `group`, `is_noise`; và block `release_summary` (`surprise_count` chuẩn + `groups_present`). **Copy `surprise_count` từ đây, gộp release cùng `group` vào 1 section.**
+3. **Validate bắt buộc:** sau khi viết, chạy `python scripts/validate_report.py <date>` — sửa đến khi PASS (0 ERROR). Validator bắt: surprise_count sai, thiếu nhóm chỉ số, regime_signal sai enum, thiếu frontmatter.
+
+> Logic khó (chấm surprise, gộp nhóm) nằm trong code (`scripts/enrich_releases.py`), KHÔNG để LLM tự tính → kết quả nhất quán giữa các agent.
+
 ## Quy ước
 - Mọi script Python chạy từ project root: `python scripts/<name>.py`.
 - Date format mọi nơi: `YYYY-MM-DD` (ISO).

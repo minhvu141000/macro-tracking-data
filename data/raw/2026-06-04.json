@@ -10,7 +10,19 @@
       "forecast": null,
       "previous": "-20.9%",
       "event_url": "https://www.investing.com/economic-calendar/challenger-job-cuts-333",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.4,
+        "forecast": null,
+        "previous": -20.9
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 24.3,
+        "direction": "up"
+      },
+      "group": "challenger",
+      "is_noise": false
     },
     {
       "name": "Challenger Job Cuts  (May)",
@@ -20,7 +32,19 @@
       "forecast": null,
       "previous": "83.387K",
       "event_url": "https://www.investing.com/economic-calendar/challenger-job-cuts-888",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 97.006,
+        "forecast": null,
+        "previous": 83.387
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 13.619,
+        "direction": "up"
+      },
+      "group": "challenger",
+      "is_noise": false
     },
     {
       "name": "Continuing Jobless Claims",
@@ -30,7 +54,23 @@
       "forecast": "1,780K",
       "previous": "1,785K",
       "event_url": "https://www.investing.com/economic-calendar/continuing-jobless-claims-522",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1777.0,
+        "forecast": 1780.0,
+        "previous": 1785.0
+      },
+      "surprise": {
+        "deviation": -3.0,
+        "z_score": -0.03,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": -8.0,
+        "direction": "down"
+      },
+      "group": "jobless_claims",
+      "is_noise": false
     },
     {
       "name": "FOMC Member Barkin Speaks",
@@ -40,7 +80,16 @@
       "forecast": null,
       "previous": null,
       "event_url": "https://www.investing.com/economic-calendar/fomc-member-barkin-speaks-1775",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     },
     {
       "name": "Initial Jobless Claims",
@@ -50,7 +99,23 @@
       "forecast": "214K",
       "previous": "212K",
       "event_url": "https://www.investing.com/economic-calendar/initial-jobless-claims-294",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 225.0,
+        "forecast": 214.0,
+        "previous": 212.0
+      },
+      "surprise": {
+        "deviation": 11.0,
+        "z_score": 1.03,
+        "label": "above-forecast"
+      },
+      "vs_previous": {
+        "delta": 13.0,
+        "direction": "up"
+      },
+      "group": "jobless_claims",
+      "is_noise": false
     },
     {
       "name": "Jobless Claims 4-Week Avg.",
@@ -60,7 +125,19 @@
       "forecast": null,
       "previous": "208.25K",
       "event_url": "https://www.investing.com/economic-calendar/jobless-claims-4-week-avg.-1041",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 214.75,
+        "forecast": null,
+        "previous": 208.25
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 6.5,
+        "direction": "up"
+      },
+      "group": "jobless_claims",
+      "is_noise": false
     },
     {
       "name": "Nonfarm Productivity (QoQ)  (Q1)",
@@ -70,7 +147,23 @@
       "forecast": "0.8%",
       "previous": "1.8%",
       "event_url": "https://www.investing.com/economic-calendar/nonfarm-productivity-228",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.3,
+        "forecast": 0.8,
+        "previous": 1.8
+      },
+      "surprise": {
+        "deviation": -0.5,
+        "z_score": -12.5,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -1.5,
+        "direction": "down"
+      },
+      "group": "other",
+      "is_noise": false
     },
     {
       "name": "Unit Labor Costs (QoQ)  (Q1)",
@@ -80,7 +173,23 @@
       "forecast": "2.3%",
       "previous": "4.4%",
       "event_url": "https://www.investing.com/economic-calendar/unit-labor-costs-303",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1.8,
+        "forecast": 2.3,
+        "previous": 4.4
+      },
+      "surprise": {
+        "deviation": -0.5,
+        "z_score": -4.35,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -2.6,
+        "direction": "down"
+      },
+      "group": "other",
+      "is_noise": false
     },
     {
       "name": "FOMC Member Bowman Speaks",
@@ -90,7 +199,16 @@
       "forecast": null,
       "previous": null,
       "event_url": "https://www.investing.com/economic-calendar/fomc-member-bowman-speaks-1835",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     },
     {
       "name": "Natural Gas Storage",
@@ -100,7 +218,23 @@
       "forecast": "99B",
       "previous": "92B",
       "event_url": "https://www.investing.com/economic-calendar/natural-gas-storage-386",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 95.0,
+        "forecast": 99.0,
+        "previous": 92.0
+      },
+      "surprise": {
+        "deviation": -4.0,
+        "z_score": -0.81,
+        "label": "below-forecast"
+      },
+      "vs_previous": {
+        "delta": 3.0,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "4-Week Bill Auction",
@@ -110,7 +244,19 @@
       "forecast": null,
       "previous": "3.630%",
       "event_url": "https://www.investing.com/economic-calendar/4-week-bill-auction-567",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.615,
+        "forecast": null,
+        "previous": 3.63
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.015,
+        "direction": "down"
+      },
+      "group": "auctions",
+      "is_noise": true
     },
     {
       "name": "8-Week Bill Auction",
@@ -120,7 +266,19 @@
       "forecast": null,
       "previous": "3.615%",
       "event_url": "https://www.investing.com/economic-calendar/8-week-bill-auction-1801",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.61,
+        "forecast": null,
+        "previous": 3.615
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.005,
+        "direction": "down"
+      },
+      "group": "auctions",
+      "is_noise": true
     },
     {
       "name": "FOMC Member Daly Speaks",
@@ -130,7 +288,16 @@
       "forecast": null,
       "previous": null,
       "event_url": "https://www.investing.com/economic-calendar/fomc-member-daly-speaks-1802",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     },
     {
       "name": "FOMC Member Daly Speaks",
@@ -140,7 +307,16 @@
       "forecast": null,
       "previous": null,
       "event_url": "https://www.investing.com/economic-calendar/fomc-member-daly-speaks-1802",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     },
     {
       "name": "Fed's Balance Sheet",
@@ -150,7 +326,19 @@
       "forecast": null,
       "previous": "6,704B",
       "event_url": "https://www.investing.com/economic-calendar/fed's-balance-sheet-2145",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 6711.0,
+        "forecast": null,
+        "previous": 6704.0
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 7.0,
+        "direction": "up"
+      },
+      "group": "fed_plumbing",
+      "is_noise": true
     },
     {
       "name": "Reserve Balances with Federal Reserve Banks",
@@ -160,7 +348,19 @@
       "forecast": null,
       "previous": "3.067T",
       "event_url": "https://www.investing.com/economic-calendar/reserve-balances-with-federal-reserve-banks-2120",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.045,
+        "forecast": null,
+        "previous": 3.067
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.022,
+        "direction": "down"
+      },
+      "group": "fed_plumbing",
+      "is_noise": true
     }
   ],
   "fred_snapshot": {
@@ -16586,5 +16786,20 @@
   "sources": {
     "investing.com": true,
     "fred": true
+  },
+  "release_summary": {
+    "signal_release_count": 11,
+    "noise_release_count": 5,
+    "surprise_count": 2,
+    "groups_present": [
+      "challenger",
+      "fed",
+      "jobless_claims",
+      "other"
+    ],
+    "surprised_groups": [
+      "jobless_claims",
+      "other"
+    ]
   }
 }

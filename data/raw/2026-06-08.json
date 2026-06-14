@@ -10,7 +10,19 @@
       "forecast": null,
       "previous": "107.88",
       "event_url": "https://www.investing.com/economic-calendar/cb-employment-trends-index-660",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 107.01,
+        "forecast": null,
+        "previous": 107.88
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.87,
+        "direction": "down"
+      },
+      "group": "confidence",
+      "is_noise": false
     },
     {
       "name": "NY Fed 1-Year Consumer Inflation Expectations  (May)",
@@ -20,7 +32,19 @@
       "forecast": null,
       "previous": "3.6%",
       "event_url": "https://www.investing.com/economic-calendar/ny-fed-1-year-consumer-inflation-expectations-2024",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.5,
+        "forecast": null,
+        "previous": 3.6
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.1,
+        "direction": "down"
+      },
+      "group": "michigan_sentiment",
+      "is_noise": false
     },
     {
       "name": "3-Month Bill Auction",
@@ -30,7 +54,19 @@
       "forecast": null,
       "previous": "3.630%",
       "event_url": "https://www.investing.com/economic-calendar/3-month-bill-auction-568",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.64,
+        "forecast": null,
+        "previous": 3.63
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.01,
+        "direction": "up"
+      },
+      "group": "auctions",
+      "is_noise": true
     },
     {
       "name": "6-Month Bill Auction",
@@ -40,7 +76,19 @@
       "forecast": null,
       "previous": "3.665%",
       "event_url": "https://www.investing.com/economic-calendar/6-month-bill-auction-679",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.69,
+        "forecast": null,
+        "previous": 3.665
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.025,
+        "direction": "up"
+      },
+      "group": "auctions",
+      "is_noise": true
     }
   ],
   "fred_snapshot": {
@@ -3422,5 +3470,15 @@
   "sources": {
     "investing.com": true,
     "fred": true
+  },
+  "release_summary": {
+    "signal_release_count": 2,
+    "noise_release_count": 2,
+    "surprise_count": 0,
+    "groups_present": [
+      "confidence",
+      "michigan_sentiment"
+    ],
+    "surprised_groups": []
   }
 }

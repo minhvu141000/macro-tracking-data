@@ -10,7 +10,19 @@
       "forecast": null,
       "previous": "-0.15",
       "event_url": "https://www.investing.com/economic-calendar/chicago-fed-national-activity-523",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.14,
+        "forecast": null,
+        "previous": -0.15
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.29,
+        "direction": "up"
+      },
+      "group": "regional_fed",
+      "is_noise": false
     },
     {
       "name": "House Price Index (MoM)  (Mar)",
@@ -20,7 +32,23 @@
       "forecast": "0.1%",
       "previous": "-0.1%",
       "event_url": "https://www.investing.com/economic-calendar/house-price-index-327",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.1,
+        "forecast": 0.1,
+        "previous": -0.1
+      },
+      "surprise": {
+        "deviation": 0.0,
+        "z_score": 0.0,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 0.2,
+        "direction": "up"
+      },
+      "group": "home_prices",
+      "is_noise": false
     },
     {
       "name": "House Price Index (YoY)  (Mar)",
@@ -30,7 +58,19 @@
       "forecast": null,
       "previous": "1.7%",
       "event_url": "https://www.investing.com/economic-calendar/house-price-index-897",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1.7,
+        "forecast": null,
+        "previous": 1.7
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.0,
+        "direction": "flat"
+      },
+      "group": "home_prices",
+      "is_noise": false
     },
     {
       "name": "House Price Index  (Mar)",
@@ -40,7 +80,19 @@
       "forecast": null,
       "previous": "441.2",
       "event_url": "https://www.investing.com/economic-calendar/monthly-home-price-index-1287",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 441.5,
+        "forecast": null,
+        "previous": 441.2
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.3,
+        "direction": "up"
+      },
+      "group": "home_prices",
+      "is_noise": false
     },
     {
       "name": "S&P/CS HPI Composite - 20 s.a. (MoM)  (Mar)",
@@ -50,7 +102,19 @@
       "forecast": null,
       "previous": "-0.1%",
       "event_url": "https://www.investing.com/economic-calendar/s-p-cs-hpi-composite---20-s.a.-1334",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -0.2,
+        "forecast": null,
+        "previous": -0.1
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.1,
+        "direction": "down"
+      },
+      "group": "home_prices",
+      "is_noise": false
     },
     {
       "name": "S&P/CS HPI Composite - 20 n.s.a. (YoY)  (Mar)",
@@ -60,7 +124,23 @@
       "forecast": "0.9%",
       "previous": "0.9%",
       "event_url": "https://www.investing.com/economic-calendar/s-p-cs-hpi-composite-20-n.s.a.-329",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.8,
+        "forecast": 0.9,
+        "previous": 0.9
+      },
+      "surprise": {
+        "deviation": -0.1,
+        "z_score": -2.22,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -0.1,
+        "direction": "down"
+      },
+      "group": "home_prices",
+      "is_noise": false
     },
     {
       "name": "S&P/CS HPI Composite - 20 n.s.a. (MoM)  (Mar)",
@@ -70,7 +150,19 @@
       "forecast": null,
       "previous": "0.4%",
       "event_url": "https://www.investing.com/economic-calendar/s-p-cs-hpi-composite-20-n.s.a.-913",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1.0,
+        "forecast": null,
+        "previous": 0.4
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.6,
+        "direction": "up"
+      },
+      "group": "home_prices",
+      "is_noise": false
     },
     {
       "name": "CB Consumer Confidence  (May)",
@@ -80,7 +172,23 @@
       "forecast": "91.9",
       "previous": "93.8",
       "event_url": "https://www.investing.com/economic-calendar/cb-consumer-confidence-48",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 93.1,
+        "forecast": 91.9,
+        "previous": 93.8
+      },
+      "surprise": {
+        "deviation": 1.2,
+        "z_score": 0.26,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": -0.7,
+        "direction": "down"
+      },
+      "group": "confidence",
+      "is_noise": false
     },
     {
       "name": "Dallas Fed Mfg Business Index  (May)",
@@ -90,7 +198,19 @@
       "forecast": null,
       "previous": "-2.3",
       "event_url": "https://www.investing.com/economic-calendar/dallas-fed-mfg-business-index-658",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.4,
+        "forecast": null,
+        "previous": -2.3
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 2.7,
+        "direction": "up"
+      },
+      "group": "regional_fed",
+      "is_noise": false
     },
     {
       "name": "3-Month Bill Auction",
@@ -100,7 +220,19 @@
       "forecast": null,
       "previous": "3.600%",
       "event_url": "https://www.investing.com/economic-calendar/3-month-bill-auction-568",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.595,
+        "forecast": null,
+        "previous": 3.6
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.005,
+        "direction": "down"
+      },
+      "group": "auctions",
+      "is_noise": true
     },
     {
       "name": "6-Month Bill Auction",
@@ -110,7 +242,19 @@
       "forecast": null,
       "previous": "3.615%",
       "event_url": "https://www.investing.com/economic-calendar/6-month-bill-auction-679",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.65,
+        "forecast": null,
+        "previous": 3.615
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.035,
+        "direction": "up"
+      },
+      "group": "auctions",
+      "is_noise": true
     },
     {
       "name": "2-Year Note Auction",
@@ -120,7 +264,19 @@
       "forecast": null,
       "previous": "3.812%",
       "event_url": "https://www.investing.com/economic-calendar/2-year-note-auction-569",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 4.071,
+        "forecast": null,
+        "previous": 3.812
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.259,
+        "direction": "up"
+      },
+      "group": "auctions",
+      "is_noise": true
     },
     {
       "name": "M2 Money Supply (MoM)  (Apr)",
@@ -130,7 +286,19 @@
       "forecast": null,
       "previous": "22.69T",
       "event_url": "https://www.investing.com/economic-calendar/us-m2-money-supply-1999",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 22.8,
+        "forecast": null,
+        "previous": 22.69
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.11,
+        "direction": "up"
+      },
+      "group": "money_credit",
+      "is_noise": false
     }
   ],
   "fred_snapshot": {
@@ -3512,5 +3680,19 @@
   "sources": {
     "investing.com": true,
     "fred": true
+  },
+  "release_summary": {
+    "signal_release_count": 10,
+    "noise_release_count": 3,
+    "surprise_count": 1,
+    "groups_present": [
+      "confidence",
+      "home_prices",
+      "money_credit",
+      "regional_fed"
+    ],
+    "surprised_groups": [
+      "home_prices"
+    ]
   }
 }

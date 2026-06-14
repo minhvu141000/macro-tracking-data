@@ -10,7 +10,16 @@
       "forecast": null,
       "previous": null,
       "event_url": "https://www.investing.com/economic-calendar/fed-logan-speaks-2119",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     },
     {
       "name": "MBA 30-Year Mortgage Rate",
@@ -20,7 +29,19 @@
       "forecast": null,
       "previous": "6.56%",
       "event_url": "https://www.investing.com/economic-calendar/mba-30-year-mortgage-rate-1042",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 6.65,
+        "forecast": null,
+        "previous": 6.56
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.09,
+        "direction": "up"
+      },
+      "group": "mortgage",
+      "is_noise": false
     },
     {
       "name": "MBA Mortgage Applications (WoW)",
@@ -30,7 +51,19 @@
       "forecast": null,
       "previous": "-2.3%",
       "event_url": "https://www.investing.com/economic-calendar/mba-mortgage-applications-380",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -8.5,
+        "forecast": null,
+        "previous": -2.3
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -6.2,
+        "direction": "down"
+      },
+      "group": "mortgage",
+      "is_noise": false
     },
     {
       "name": "MBA Purchase Index",
@@ -40,7 +73,19 @@
       "forecast": null,
       "previous": "170.4",
       "event_url": "https://www.investing.com/economic-calendar/mba-purchase-index-1494",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 169.7,
+        "forecast": null,
+        "previous": 170.4
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.7,
+        "direction": "down"
+      },
+      "group": "mortgage",
+      "is_noise": false
     },
     {
       "name": "Mortgage Market Index",
@@ -50,7 +95,19 @@
       "forecast": null,
       "previous": "283.5",
       "event_url": "https://www.investing.com/economic-calendar/mortgage-market-index-1427",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 259.4,
+        "forecast": null,
+        "previous": 283.5
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -24.1,
+        "direction": "down"
+      },
+      "group": "mortgage",
+      "is_noise": false
     },
     {
       "name": "Mortgage Refinance Index",
@@ -60,7 +117,19 @@
       "forecast": null,
       "previous": "920.2",
       "event_url": "https://www.investing.com/economic-calendar/mortgage-refinance-index-1428",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 753.7,
+        "forecast": null,
+        "previous": 920.2
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -166.5,
+        "direction": "down"
+      },
+      "group": "mortgage",
+      "is_noise": false
     },
     {
       "name": "ADP Employment Change Weekly",
@@ -70,7 +139,19 @@
       "forecast": null,
       "previous": "40.80K",
       "event_url": "https://www.investing.com/economic-calendar/adp-employment-change-weekly-2295",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 35.75,
+        "forecast": null,
+        "previous": 40.8
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -5.05,
+        "direction": "down"
+      },
+      "group": "adp",
+      "is_noise": false
     },
     {
       "name": "Redbook (YoY)",
@@ -80,7 +161,19 @@
       "forecast": null,
       "previous": "8.1%",
       "event_url": "https://www.investing.com/economic-calendar/redbook-911",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 9.0,
+        "forecast": null,
+        "previous": 8.1
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.9,
+        "direction": "up"
+      },
+      "group": "fed_plumbing",
+      "is_noise": true
     },
     {
       "name": "Richmond Manufacturing Index  (May)",
@@ -90,7 +183,23 @@
       "forecast": "4",
       "previous": "3",
       "event_url": "https://www.investing.com/economic-calendar/richmond-manufacturing-index-263",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 13.0,
+        "forecast": 4.0,
+        "previous": 3.0
+      },
+      "surprise": {
+        "deviation": 9.0,
+        "z_score": 45.0,
+        "label": "shock-above"
+      },
+      "vs_previous": {
+        "delta": 10.0,
+        "direction": "up"
+      },
+      "group": "regional_fed",
+      "is_noise": false
     },
     {
       "name": "Richmond Manufacturing Shipments  (May)",
@@ -100,7 +209,19 @@
       "forecast": null,
       "previous": "-2",
       "event_url": "https://www.investing.com/economic-calendar/richmond-manufacturing-shipments-1510",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 16.0,
+        "forecast": null,
+        "previous": -2.0
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 18.0,
+        "direction": "up"
+      },
+      "group": "regional_fed",
+      "is_noise": false
     },
     {
       "name": "Richmond Services Index  (May)",
@@ -110,7 +231,19 @@
       "forecast": null,
       "previous": "9",
       "event_url": "https://www.investing.com/economic-calendar/richmond-services-index-1511",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 14.0,
+        "forecast": null,
+        "previous": 9.0
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 5.0,
+        "direction": "up"
+      },
+      "group": "regional_fed",
+      "is_noise": false
     },
     {
       "name": "Dallas Fed Services Revenues  (May)",
@@ -120,7 +253,19 @@
       "forecast": null,
       "previous": "4.3",
       "event_url": "https://www.investing.com/economic-calendar/dallas-fed-services-revenues-1444",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 5.0,
+        "forecast": null,
+        "previous": 4.3
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.7,
+        "direction": "up"
+      },
+      "group": "regional_fed",
+      "is_noise": false
     },
     {
       "name": "Texas Services Sector Outlook  (May)",
@@ -130,7 +275,19 @@
       "forecast": null,
       "previous": "-9.9",
       "event_url": "https://www.investing.com/economic-calendar/texas-services-sector-outlook-1519",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -7.7,
+        "forecast": null,
+        "previous": -9.9
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 2.2,
+        "direction": "up"
+      },
+      "group": "other",
+      "is_noise": false
     },
     {
       "name": "5-Year Note Auction",
@@ -140,7 +297,19 @@
       "forecast": null,
       "previous": "3.955%",
       "event_url": "https://www.investing.com/economic-calendar/5-year-note-auction-570",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 4.182,
+        "forecast": null,
+        "previous": 3.955
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.227,
+        "direction": "up"
+      },
+      "group": "auctions",
+      "is_noise": true
     },
     {
       "name": "Fed Governor Cook Speaks",
@@ -150,7 +319,16 @@
       "forecast": null,
       "previous": null,
       "event_url": "https://www.investing.com/economic-calendar/fed-governor-cook-speaks-2114",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     },
     {
       "name": "API Weekly Crude Oil Stock",
@@ -160,7 +338,19 @@
       "forecast": null,
       "previous": "-9.100M",
       "event_url": "https://www.investing.com/economic-calendar/api-weekly-crude-stock-656",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -2.8,
+        "forecast": null,
+        "previous": -9.1
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 6.3,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Fed Governor Jefferson Speaks",
@@ -170,7 +360,16 @@
       "forecast": null,
       "previous": null,
       "event_url": "https://www.investing.com/economic-calendar/fed-governor-jefferson-speaks-2113",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     },
     {
       "name": "Fed Goolsbee Speaks",
@@ -180,7 +379,16 @@
       "forecast": null,
       "previous": null,
       "event_url": "https://www.investing.com/economic-calendar/fed-goolsbee-speaks-2211",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     }
   ],
   "fred_snapshot": {
@@ -3562,5 +3770,20 @@
   "sources": {
     "investing.com": true,
     "fred": true
+  },
+  "release_summary": {
+    "signal_release_count": 15,
+    "noise_release_count": 3,
+    "surprise_count": 1,
+    "groups_present": [
+      "adp",
+      "fed",
+      "mortgage",
+      "other",
+      "regional_fed"
+    ],
+    "surprised_groups": [
+      "regional_fed"
+    ]
   }
 }

@@ -387,6 +387,15 @@ def collect(target: date, force: bool = False) -> Path:
     releases = scrape_investing_calendar(target)
     print(f"  Found {len(releases)} US releases")
 
+    # Deterministic enrichment: parse numbers, score surprise, tag groups.
+    # Moves "hard logic" out of the LLM so any agent reading the JSON gets a
+    # consistent analysis scaffold for free.
+    from enrich_releases import enrich_releases
+    release_summary = enrich_releases(releases)
+    print(f"  Enriched: {release_summary['signal_release_count']} signal / "
+          f"{release_summary['noise_release_count']} noise, "
+          f"surprise_count={release_summary['surprise_count']}")
+
     print("  Fetching FRED snapshot...")
     if FRED_API_KEY:
         fred_trimmed, fred_full = fetch_fred_snapshot()
@@ -399,6 +408,7 @@ def collect(target: date, force: bool = False) -> Path:
     payload = {
         "date": target.isoformat(),
         "collected_at": datetime.now(timezone.utc).isoformat(),
+        "release_summary": release_summary,
         "releases": releases,
         "fred_snapshot": fred_trimmed,
         "sources": {

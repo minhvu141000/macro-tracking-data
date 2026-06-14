@@ -1,5 +1,5 @@
 window.MACRO_DATA = {
-  "last_updated": "2026-06-14T04:22:57.794254+00:00",
+  "last_updated": "2026-06-14T04:42:58.850539+00:00",
   "daily_releases": {
     "date": "2026-06-13",
     "releases": []
@@ -17,7 +17,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-0.15",
         "event_url": "https://www.investing.com/economic-calendar/chicago-fed-national-activity-523",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.14,
+          "forecast": null,
+          "previous": -0.15
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.29,
+          "direction": "up"
+        },
+        "group": "regional_fed",
+        "is_noise": false
       },
       {
         "name": "House Price Index (MoM)  (Mar)",
@@ -27,7 +39,23 @@ window.MACRO_DATA = {
         "forecast": "0.1%",
         "previous": "-0.1%",
         "event_url": "https://www.investing.com/economic-calendar/house-price-index-327",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.1,
+          "forecast": 0.1,
+          "previous": -0.1
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.2,
+          "direction": "up"
+        },
+        "group": "home_prices",
+        "is_noise": false
       },
       {
         "name": "House Price Index (YoY)  (Mar)",
@@ -37,7 +65,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "1.7%",
         "event_url": "https://www.investing.com/economic-calendar/house-price-index-897",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.7,
+          "forecast": null,
+          "previous": 1.7
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.0,
+          "direction": "flat"
+        },
+        "group": "home_prices",
+        "is_noise": false
       },
       {
         "name": "House Price Index  (Mar)",
@@ -47,7 +87,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "441.2",
         "event_url": "https://www.investing.com/economic-calendar/monthly-home-price-index-1287",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 441.5,
+          "forecast": null,
+          "previous": 441.2
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.3,
+          "direction": "up"
+        },
+        "group": "home_prices",
+        "is_noise": false
       },
       {
         "name": "S&P/CS HPI Composite - 20 s.a. (MoM)  (Mar)",
@@ -57,7 +109,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-0.1%",
         "event_url": "https://www.investing.com/economic-calendar/s-p-cs-hpi-composite---20-s.a.-1334",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -0.2,
+          "forecast": null,
+          "previous": -0.1
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.1,
+          "direction": "down"
+        },
+        "group": "home_prices",
+        "is_noise": false
       },
       {
         "name": "S&P/CS HPI Composite - 20 n.s.a. (YoY)  (Mar)",
@@ -67,7 +131,23 @@ window.MACRO_DATA = {
         "forecast": "0.9%",
         "previous": "0.9%",
         "event_url": "https://www.investing.com/economic-calendar/s-p-cs-hpi-composite-20-n.s.a.-329",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.8,
+          "forecast": 0.9,
+          "previous": 0.9
+        },
+        "surprise": {
+          "deviation": -0.1,
+          "z_score": -2.22,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -0.1,
+          "direction": "down"
+        },
+        "group": "home_prices",
+        "is_noise": false
       },
       {
         "name": "S&P/CS HPI Composite - 20 n.s.a. (MoM)  (Mar)",
@@ -77,7 +157,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.4%",
         "event_url": "https://www.investing.com/economic-calendar/s-p-cs-hpi-composite-20-n.s.a.-913",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.0,
+          "forecast": null,
+          "previous": 0.4
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.6,
+          "direction": "up"
+        },
+        "group": "home_prices",
+        "is_noise": false
       },
       {
         "name": "CB Consumer Confidence  (May)",
@@ -87,7 +179,23 @@ window.MACRO_DATA = {
         "forecast": "91.9",
         "previous": "93.8",
         "event_url": "https://www.investing.com/economic-calendar/cb-consumer-confidence-48",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 93.1,
+          "forecast": 91.9,
+          "previous": 93.8
+        },
+        "surprise": {
+          "deviation": 1.2,
+          "z_score": 0.26,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": -0.7,
+          "direction": "down"
+        },
+        "group": "confidence",
+        "is_noise": false
       },
       {
         "name": "Dallas Fed Mfg Business Index  (May)",
@@ -97,7 +205,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-2.3",
         "event_url": "https://www.investing.com/economic-calendar/dallas-fed-mfg-business-index-658",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.4,
+          "forecast": null,
+          "previous": -2.3
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 2.7,
+          "direction": "up"
+        },
+        "group": "regional_fed",
+        "is_noise": false
       },
       {
         "name": "3-Month Bill Auction",
@@ -107,7 +227,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.600%",
         "event_url": "https://www.investing.com/economic-calendar/3-month-bill-auction-568",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.595,
+          "forecast": null,
+          "previous": 3.6
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.005,
+          "direction": "down"
+        },
+        "group": "auctions",
+        "is_noise": true
       },
       {
         "name": "6-Month Bill Auction",
@@ -117,7 +249,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.615%",
         "event_url": "https://www.investing.com/economic-calendar/6-month-bill-auction-679",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.65,
+          "forecast": null,
+          "previous": 3.615
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.035,
+          "direction": "up"
+        },
+        "group": "auctions",
+        "is_noise": true
       },
       {
         "name": "2-Year Note Auction",
@@ -127,7 +271,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.812%",
         "event_url": "https://www.investing.com/economic-calendar/2-year-note-auction-569",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.071,
+          "forecast": null,
+          "previous": 3.812
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.259,
+          "direction": "up"
+        },
+        "group": "auctions",
+        "is_noise": true
       },
       {
         "name": "M2 Money Supply (MoM)  (Apr)",
@@ -137,7 +293,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "22.69T",
         "event_url": "https://www.investing.com/economic-calendar/us-m2-money-supply-1999",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 22.8,
+          "forecast": null,
+          "previous": 22.69
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.11,
+          "direction": "up"
+        },
+        "group": "money_credit",
+        "is_noise": false
       }
     ],
     "2026-05-27": [
@@ -149,7 +317,16 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": null,
         "event_url": "https://www.investing.com/economic-calendar/fed-logan-speaks-2119",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       },
       {
         "name": "MBA 30-Year Mortgage Rate",
@@ -159,7 +336,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "6.56%",
         "event_url": "https://www.investing.com/economic-calendar/mba-30-year-mortgage-rate-1042",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 6.65,
+          "forecast": null,
+          "previous": 6.56
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.09,
+          "direction": "up"
+        },
+        "group": "mortgage",
+        "is_noise": false
       },
       {
         "name": "MBA Mortgage Applications (WoW)",
@@ -169,7 +358,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-2.3%",
         "event_url": "https://www.investing.com/economic-calendar/mba-mortgage-applications-380",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -8.5,
+          "forecast": null,
+          "previous": -2.3
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -6.2,
+          "direction": "down"
+        },
+        "group": "mortgage",
+        "is_noise": false
       },
       {
         "name": "MBA Purchase Index",
@@ -179,7 +380,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "170.4",
         "event_url": "https://www.investing.com/economic-calendar/mba-purchase-index-1494",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 169.7,
+          "forecast": null,
+          "previous": 170.4
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.7,
+          "direction": "down"
+        },
+        "group": "mortgage",
+        "is_noise": false
       },
       {
         "name": "Mortgage Market Index",
@@ -189,7 +402,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "283.5",
         "event_url": "https://www.investing.com/economic-calendar/mortgage-market-index-1427",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 259.4,
+          "forecast": null,
+          "previous": 283.5
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -24.1,
+          "direction": "down"
+        },
+        "group": "mortgage",
+        "is_noise": false
       },
       {
         "name": "Mortgage Refinance Index",
@@ -199,7 +424,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "920.2",
         "event_url": "https://www.investing.com/economic-calendar/mortgage-refinance-index-1428",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 753.7,
+          "forecast": null,
+          "previous": 920.2
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -166.5,
+          "direction": "down"
+        },
+        "group": "mortgage",
+        "is_noise": false
       },
       {
         "name": "ADP Employment Change Weekly",
@@ -209,7 +446,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "40.80K",
         "event_url": "https://www.investing.com/economic-calendar/adp-employment-change-weekly-2295",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 35.75,
+          "forecast": null,
+          "previous": 40.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -5.05,
+          "direction": "down"
+        },
+        "group": "adp",
+        "is_noise": false
       },
       {
         "name": "Redbook (YoY)",
@@ -219,7 +468,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "8.1%",
         "event_url": "https://www.investing.com/economic-calendar/redbook-911",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 9.0,
+          "forecast": null,
+          "previous": 8.1
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.9,
+          "direction": "up"
+        },
+        "group": "fed_plumbing",
+        "is_noise": true
       },
       {
         "name": "Richmond Manufacturing Index  (May)",
@@ -229,7 +490,23 @@ window.MACRO_DATA = {
         "forecast": "4",
         "previous": "3",
         "event_url": "https://www.investing.com/economic-calendar/richmond-manufacturing-index-263",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 13.0,
+          "forecast": 4.0,
+          "previous": 3.0
+        },
+        "surprise": {
+          "deviation": 9.0,
+          "z_score": 45.0,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 10.0,
+          "direction": "up"
+        },
+        "group": "regional_fed",
+        "is_noise": false
       },
       {
         "name": "Richmond Manufacturing Shipments  (May)",
@@ -239,7 +516,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-2",
         "event_url": "https://www.investing.com/economic-calendar/richmond-manufacturing-shipments-1510",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 16.0,
+          "forecast": null,
+          "previous": -2.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 18.0,
+          "direction": "up"
+        },
+        "group": "regional_fed",
+        "is_noise": false
       },
       {
         "name": "Richmond Services Index  (May)",
@@ -249,7 +538,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "9",
         "event_url": "https://www.investing.com/economic-calendar/richmond-services-index-1511",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 14.0,
+          "forecast": null,
+          "previous": 9.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 5.0,
+          "direction": "up"
+        },
+        "group": "regional_fed",
+        "is_noise": false
       },
       {
         "name": "Dallas Fed Services Revenues  (May)",
@@ -259,7 +560,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "4.3",
         "event_url": "https://www.investing.com/economic-calendar/dallas-fed-services-revenues-1444",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 5.0,
+          "forecast": null,
+          "previous": 4.3
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.7,
+          "direction": "up"
+        },
+        "group": "regional_fed",
+        "is_noise": false
       },
       {
         "name": "Texas Services Sector Outlook  (May)",
@@ -269,7 +582,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-9.9",
         "event_url": "https://www.investing.com/economic-calendar/texas-services-sector-outlook-1519",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -7.7,
+          "forecast": null,
+          "previous": -9.9
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 2.2,
+          "direction": "up"
+        },
+        "group": "other",
+        "is_noise": false
       },
       {
         "name": "5-Year Note Auction",
@@ -279,7 +604,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.955%",
         "event_url": "https://www.investing.com/economic-calendar/5-year-note-auction-570",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.182,
+          "forecast": null,
+          "previous": 3.955
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.227,
+          "direction": "up"
+        },
+        "group": "auctions",
+        "is_noise": true
       },
       {
         "name": "Fed Governor Cook Speaks",
@@ -289,7 +626,16 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": null,
         "event_url": "https://www.investing.com/economic-calendar/fed-governor-cook-speaks-2114",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       },
       {
         "name": "API Weekly Crude Oil Stock",
@@ -299,7 +645,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-9.100M",
         "event_url": "https://www.investing.com/economic-calendar/api-weekly-crude-stock-656",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -2.8,
+          "forecast": null,
+          "previous": -9.1
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 6.3,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Fed Governor Jefferson Speaks",
@@ -309,7 +667,16 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": null,
         "event_url": "https://www.investing.com/economic-calendar/fed-governor-jefferson-speaks-2113",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       },
       {
         "name": "Fed Goolsbee Speaks",
@@ -319,7 +686,16 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": null,
         "event_url": "https://www.investing.com/economic-calendar/fed-goolsbee-speaks-2211",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       }
     ],
     "2026-05-28": [
@@ -331,7 +707,23 @@ window.MACRO_DATA = {
         "forecast": "5.8%",
         "previous": "-11.4%",
         "event_url": "https://www.investing.com/economic-calendar/building-permits-885",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.4,
+          "forecast": 5.8,
+          "previous": -11.4
+        },
+        "surprise": {
+          "deviation": -1.4,
+          "z_score": -4.83,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": 15.8,
+          "direction": "up"
+        },
+        "group": "housing_starts",
+        "is_noise": false
       },
       {
         "name": "Building Permits  (Apr)",
@@ -341,7 +733,23 @@ window.MACRO_DATA = {
         "forecast": "1.442M",
         "previous": "1.363M",
         "event_url": "https://www.investing.com/economic-calendar/building-permits-25",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.423,
+          "forecast": 1.442,
+          "previous": 1.363
+        },
+        "surprise": {
+          "deviation": -0.019,
+          "z_score": -0.26,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.06,
+          "direction": "up"
+        },
+        "group": "housing_starts",
+        "is_noise": false
       },
       {
         "name": "Continuing Jobless Claims",
@@ -351,7 +759,23 @@ window.MACRO_DATA = {
         "forecast": "1,780K",
         "previous": "1,771K",
         "event_url": "https://www.investing.com/economic-calendar/continuing-jobless-claims-522",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1786.0,
+          "forecast": 1780.0,
+          "previous": 1771.0
+        },
+        "surprise": {
+          "deviation": 6.0,
+          "z_score": 0.07,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 15.0,
+          "direction": "up"
+        },
+        "group": "jobless_claims",
+        "is_noise": false
       },
       {
         "name": "Core Durable Goods Orders (MoM)  (Apr)",
@@ -361,7 +785,23 @@ window.MACRO_DATA = {
         "forecast": "0.5%",
         "previous": "1.1%",
         "event_url": "https://www.investing.com/economic-calendar/core-durable-goods-orders-59",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.1,
+          "forecast": 0.5,
+          "previous": 1.1
+        },
+        "surprise": {
+          "deviation": 0.6,
+          "z_score": 24.0,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 0.0,
+          "direction": "flat"
+        },
+        "group": "durable_goods",
+        "is_noise": false
       },
       {
         "name": "Core PCE Price Index (MoM)  (Apr)",
@@ -371,7 +811,23 @@ window.MACRO_DATA = {
         "forecast": "0.3%",
         "previous": "0.3%",
         "event_url": "https://www.investing.com/economic-calendar/core-pce-price-index-61",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.2,
+          "forecast": 0.3,
+          "previous": 0.3
+        },
+        "surprise": {
+          "deviation": -0.1,
+          "z_score": -6.67,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -0.1,
+          "direction": "down"
+        },
+        "group": "pce_inflation",
+        "is_noise": false
       },
       {
         "name": "Core PCE Price Index (YoY)  (Apr)",
@@ -381,7 +837,23 @@ window.MACRO_DATA = {
         "forecast": "3.3%",
         "previous": "3.2%",
         "event_url": "https://www.investing.com/economic-calendar/core-pce-price-index-905",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.3,
+          "forecast": 3.3,
+          "previous": 3.2
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.1,
+          "direction": "up"
+        },
+        "group": "pce_inflation",
+        "is_noise": false
       },
       {
         "name": "Core PCE Prices  (Q1)",
@@ -391,7 +863,23 @@ window.MACRO_DATA = {
         "forecast": "4.30%",
         "previous": "2.70%",
         "event_url": "https://www.investing.com/economic-calendar/core-pce-prices-1548",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.4,
+          "forecast": 4.3,
+          "previous": 2.7
+        },
+        "surprise": {
+          "deviation": 0.1,
+          "z_score": 0.47,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 1.7,
+          "direction": "up"
+        },
+        "group": "pce_inflation",
+        "is_noise": false
       },
       {
         "name": "Corporate Profits (QoQ)  (Q1)",
@@ -401,7 +889,23 @@ window.MACRO_DATA = {
         "forecast": "5.7%",
         "previous": "4.7%",
         "event_url": "https://www.investing.com/economic-calendar/corporate-profits-1315",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -0.4,
+          "forecast": 5.7,
+          "previous": 4.7
+        },
+        "surprise": {
+          "deviation": -6.1,
+          "z_score": -21.4,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -5.1,
+          "direction": "down"
+        },
+        "group": "gdp",
+        "is_noise": false
       },
       {
         "name": "Durable Goods Orders (MoM)  (Apr)",
@@ -411,7 +915,23 @@ window.MACRO_DATA = {
         "forecast": "4.0%",
         "previous": "1.3%",
         "event_url": "https://www.investing.com/economic-calendar/durable-goods-orders-86",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 7.9,
+          "forecast": 4.0,
+          "previous": 1.3
+        },
+        "surprise": {
+          "deviation": 3.9,
+          "z_score": 19.5,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 6.6,
+          "direction": "up"
+        },
+        "group": "durable_goods",
+        "is_noise": false
       },
       {
         "name": "Durables Excluding Defense (MoM)  (Apr)",
@@ -421,7 +941,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-0.3%",
         "event_url": "https://www.investing.com/economic-calendar/durables-excluding-defense-1446",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 8.1,
+          "forecast": null,
+          "previous": -0.3
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 8.4,
+          "direction": "up"
+        },
+        "group": "durable_goods",
+        "is_noise": false
       },
       {
         "name": "GDP (QoQ)  (Q1)",
@@ -431,7 +963,23 @@ window.MACRO_DATA = {
         "forecast": "2.0%",
         "previous": "0.5%",
         "event_url": "https://www.investing.com/economic-calendar/gdp-375",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.6,
+          "forecast": 2.0,
+          "previous": 0.5
+        },
+        "surprise": {
+          "deviation": -0.4,
+          "z_score": -4.0,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": 1.1,
+          "direction": "up"
+        },
+        "group": "gdp",
+        "is_noise": false
       },
       {
         "name": "GDP Price Index (QoQ)  (Q1)",
@@ -441,7 +989,23 @@ window.MACRO_DATA = {
         "forecast": "3.6%",
         "previous": "3.6%",
         "event_url": "https://www.investing.com/economic-calendar/gdp-price-index-343",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.5,
+          "forecast": 3.6,
+          "previous": 3.6
+        },
+        "surprise": {
+          "deviation": -0.1,
+          "z_score": -0.56,
+          "label": "below-forecast"
+        },
+        "vs_previous": {
+          "delta": -0.1,
+          "direction": "down"
+        },
+        "group": "gdp",
+        "is_noise": false
       },
       {
         "name": "GDP Sales  (Q1)",
@@ -451,7 +1015,23 @@ window.MACRO_DATA = {
         "forecast": "1.6%",
         "previous": "0.3%",
         "event_url": "https://www.investing.com/economic-calendar/gdp-sales-1468",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.5,
+          "forecast": 1.6,
+          "previous": 0.3
+        },
+        "surprise": {
+          "deviation": -0.1,
+          "z_score": -1.25,
+          "label": "below-forecast"
+        },
+        "vs_previous": {
+          "delta": 1.2,
+          "direction": "up"
+        },
+        "group": "gdp",
+        "is_noise": false
       },
       {
         "name": "Goods Orders Non Defense Ex Air (MoM)  (Apr)",
@@ -461,7 +1041,23 @@ window.MACRO_DATA = {
         "forecast": "0.4%",
         "previous": "3.9%",
         "event_url": "https://www.investing.com/economic-calendar/goods-orders-non-defense-ex-air-1047",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -1.1,
+          "forecast": 0.4,
+          "previous": 3.9
+        },
+        "surprise": {
+          "deviation": -1.5,
+          "z_score": -75.0,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -5.0,
+          "direction": "down"
+        },
+        "group": "durable_goods",
+        "is_noise": false
       },
       {
         "name": "Initial Jobless Claims",
@@ -471,7 +1067,23 @@ window.MACRO_DATA = {
         "forecast": "211K",
         "previous": "210K",
         "event_url": "https://www.investing.com/economic-calendar/initial-jobless-claims-294",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 215.0,
+          "forecast": 211.0,
+          "previous": 210.0
+        },
+        "surprise": {
+          "deviation": 4.0,
+          "z_score": 0.38,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 5.0,
+          "direction": "up"
+        },
+        "group": "jobless_claims",
+        "is_noise": false
       },
       {
         "name": "Jobless Claims 4-Week Avg.",
@@ -481,7 +1093,23 @@ window.MACRO_DATA = {
         "forecast": "211.00K",
         "previous": "202.75K",
         "event_url": "https://www.investing.com/economic-calendar/jobless-claims-4-week-avg.-1041",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 209.0,
+          "forecast": 211.0,
+          "previous": 202.75
+        },
+        "surprise": {
+          "deviation": -2.0,
+          "z_score": -0.19,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 6.25,
+          "direction": "up"
+        },
+        "group": "jobless_claims",
+        "is_noise": false
       },
       {
         "name": "PCE price index (MoM)  (Apr)",
@@ -491,7 +1119,23 @@ window.MACRO_DATA = {
         "forecast": "0.5%",
         "previous": "0.7%",
         "event_url": "https://www.investing.com/economic-calendar/pce-price-index-904",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.4,
+          "forecast": 0.5,
+          "previous": 0.7
+        },
+        "surprise": {
+          "deviation": -0.1,
+          "z_score": -4.0,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -0.3,
+          "direction": "down"
+        },
+        "group": "pce_inflation",
+        "is_noise": false
       },
       {
         "name": "PCE Price index (YoY)  (Apr)",
@@ -501,7 +1145,23 @@ window.MACRO_DATA = {
         "forecast": "3.8%",
         "previous": "3.5%",
         "event_url": "https://www.investing.com/economic-calendar/pce-price-index-906",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.8,
+          "forecast": 3.8,
+          "previous": 3.5
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.3,
+          "direction": "up"
+        },
+        "group": "pce_inflation",
+        "is_noise": false
       },
       {
         "name": "PCE Prices  (Q1)",
@@ -511,7 +1171,23 @@ window.MACRO_DATA = {
         "forecast": "4.5%",
         "previous": "2.9%",
         "event_url": "https://www.investing.com/economic-calendar/pce-prices-1571",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.5,
+          "forecast": 4.5,
+          "previous": 2.9
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 1.6,
+          "direction": "up"
+        },
+        "group": "pce_inflation",
+        "is_noise": false
       },
       {
         "name": "Personal Income (MoM)  (Apr)",
@@ -521,7 +1197,23 @@ window.MACRO_DATA = {
         "forecast": "0.4%",
         "previous": "0.5%",
         "event_url": "https://www.investing.com/economic-calendar/personal-income-234",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.0,
+          "forecast": 0.4,
+          "previous": 0.5
+        },
+        "surprise": {
+          "deviation": -0.4,
+          "z_score": -20.0,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -0.5,
+          "direction": "down"
+        },
+        "group": "income_spending",
+        "is_noise": false
       },
       {
         "name": "Personal Spending (MoM)  (Apr)",
@@ -531,7 +1223,23 @@ window.MACRO_DATA = {
         "forecast": "0.5%",
         "previous": "1.0%",
         "event_url": "https://www.investing.com/economic-calendar/personal-spending-235",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.5,
+          "forecast": 0.5,
+          "previous": 1.0
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": -0.5,
+          "direction": "down"
+        },
+        "group": "income_spending",
+        "is_noise": false
       },
       {
         "name": "Real Consumer Spending  (Q1)",
@@ -541,7 +1249,23 @@ window.MACRO_DATA = {
         "forecast": "1.6%",
         "previous": "1.9%",
         "event_url": "https://www.investing.com/economic-calendar/real-consumer-spending-914",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.4,
+          "forecast": 1.6,
+          "previous": 1.9
+        },
+        "surprise": {
+          "deviation": -0.2,
+          "z_score": -2.5,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -0.5,
+          "direction": "down"
+        },
+        "group": "income_spending",
+        "is_noise": false
       },
       {
         "name": "Real Personal Consumption (MoM)  (Apr)",
@@ -551,7 +1275,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.3%",
         "event_url": "https://www.investing.com/economic-calendar/real-personal-consumption-895",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.1,
+          "forecast": null,
+          "previous": 0.3
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.2,
+          "direction": "down"
+        },
+        "group": "income_spending",
+        "is_noise": false
       },
       {
         "name": "FOMC Member Williams Speaks",
@@ -561,7 +1297,16 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": null,
         "event_url": "https://www.investing.com/economic-calendar/fomc-member-williams-speaks-1585",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       },
       {
         "name": "New Home Sales  (Apr)",
@@ -571,7 +1316,23 @@ window.MACRO_DATA = {
         "forecast": "661K",
         "previous": "663K",
         "event_url": "https://www.investing.com/economic-calendar/new-home-sales-222",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 622.0,
+          "forecast": 661.0,
+          "previous": 663.0
+        },
+        "surprise": {
+          "deviation": -39.0,
+          "z_score": -1.18,
+          "label": "below-forecast"
+        },
+        "vs_previous": {
+          "delta": -41.0,
+          "direction": "down"
+        },
+        "group": "home_sales",
+        "is_noise": false
       },
       {
         "name": "New Home Sales (MoM)  (Apr)",
@@ -581,7 +1342,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.4%",
         "event_url": "https://www.investing.com/economic-calendar/new-home-sales-896",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -6.2,
+          "forecast": null,
+          "previous": 3.4
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -9.6,
+          "direction": "down"
+        },
+        "group": "home_sales",
+        "is_noise": false
       },
       {
         "name": "Natural Gas Storage",
@@ -591,7 +1364,23 @@ window.MACRO_DATA = {
         "forecast": "96B",
         "previous": "101B",
         "event_url": "https://www.investing.com/economic-calendar/natural-gas-storage-386",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 92.0,
+          "forecast": 96.0,
+          "previous": 101.0
+        },
+        "surprise": {
+          "deviation": -4.0,
+          "z_score": -0.83,
+          "label": "below-forecast"
+        },
+        "vs_previous": {
+          "delta": -9.0,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "4-Week Bill Auction",
@@ -601,7 +1390,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.610%",
         "event_url": "https://www.investing.com/economic-calendar/4-week-bill-auction-567",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.63,
+          "forecast": null,
+          "previous": 3.61
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.02,
+          "direction": "up"
+        },
+        "group": "auctions",
+        "is_noise": true
       },
       {
         "name": "8-Week Bill Auction",
@@ -611,7 +1412,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.600%",
         "event_url": "https://www.investing.com/economic-calendar/8-week-bill-auction-1801",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.615,
+          "forecast": null,
+          "previous": 3.6
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.015,
+          "direction": "up"
+        },
+        "group": "auctions",
+        "is_noise": true
       },
       {
         "name": "Atlanta Fed GDPNow  (Q2)",
@@ -621,7 +1434,23 @@ window.MACRO_DATA = {
         "forecast": "4.3%",
         "previous": "4.3%",
         "event_url": "https://www.investing.com/economic-calendar/atlanta-fed-gdpnow-2260",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.8,
+          "forecast": 4.3,
+          "previous": 4.3
+        },
+        "surprise": {
+          "deviation": -0.5,
+          "z_score": -2.33,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -0.5,
+          "direction": "down"
+        },
+        "group": "other",
+        "is_noise": false
       },
       {
         "name": "Dallas Fed PCE  (Apr)",
@@ -631,7 +1460,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "2.90%",
         "event_url": "https://www.investing.com/economic-calendar/dallas-fed-pce-1550",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.5,
+          "forecast": null,
+          "previous": 2.9
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.4,
+          "direction": "down"
+        },
+        "group": "regional_fed",
+        "is_noise": false
       },
       {
         "name": "Crude Oil Inventories",
@@ -641,7 +1482,23 @@ window.MACRO_DATA = {
         "forecast": "-3.800M",
         "previous": "-7.863M",
         "event_url": "https://www.investing.com/economic-calendar/eia-crude-oil-inventories-75",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -3.327,
+          "forecast": -3.8,
+          "previous": -7.863
+        },
+        "surprise": {
+          "deviation": 0.473,
+          "z_score": 2.49,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 4.536,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "EIA Refinery Crude Runs  (WoW)",
@@ -651,7 +1508,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-0.080M",
         "event_url": "https://www.investing.com/economic-calendar/eia-refinery-crude-runs-1960",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.652,
+          "forecast": null,
+          "previous": -0.08
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.732,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Crude Oil Imports",
@@ -661,7 +1530,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.003M",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-crude-imports-1658",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.36,
+          "forecast": null,
+          "previous": 0.003
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.357,
+          "direction": "up"
+        },
+        "group": "trade",
+        "is_noise": false
       },
       {
         "name": "Cushing Crude Oil Inventories",
@@ -671,7 +1552,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-1.604M",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-cushing-oil-inventories-1657",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -2.794,
+          "forecast": null,
+          "previous": -1.604
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -1.19,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Distillate Fuel Production",
@@ -681,7 +1574,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.214M",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillate-fuel-production-1660",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.076,
+          "forecast": null,
+          "previous": 0.214
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.138,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "EIA Weekly Distillates Stocks",
@@ -691,7 +1596,23 @@ window.MACRO_DATA = {
         "forecast": "-1.000M",
         "previous": "0.372M",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillates-stocks-917",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -2.107,
+          "forecast": -1.0,
+          "previous": 0.372
+        },
+        "surprise": {
+          "deviation": -1.107,
+          "z_score": -22.14,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -2.479,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Gasoline Production",
@@ -701,7 +1622,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-0.446M",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-gasoline-production-1661",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.6,
+          "forecast": null,
+          "previous": -0.446
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 1.046,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Heating Oil Stockpiles",
@@ -711,7 +1644,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.021M",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-heatoil-stock-1659",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.306,
+          "forecast": null,
+          "previous": 0.021
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.285,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "EIA Weekly Refinery Utilization Rates (WoW)",
@@ -721,7 +1666,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-0.1%",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-refinery-utilization-rates-1961",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.9,
+          "forecast": null,
+          "previous": -0.1
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 3.0,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Gasoline Inventories",
@@ -731,7 +1688,23 @@ window.MACRO_DATA = {
         "forecast": "-2.400M",
         "previous": "-1.548M",
         "event_url": "https://www.investing.com/economic-calendar/gasoline-inventories-485",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -2.572,
+          "forecast": -2.4,
+          "previous": -1.548
+        },
+        "surprise": {
+          "deviation": -0.172,
+          "z_score": -1.43,
+          "label": "below-forecast"
+        },
+        "vs_previous": {
+          "delta": -1.024,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "7-Year Note Auction",
@@ -741,7 +1714,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "4.175%",
         "event_url": "https://www.investing.com/economic-calendar/7-year-note-auction-682",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.29,
+          "forecast": null,
+          "previous": 4.175
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.115,
+          "direction": "up"
+        },
+        "group": "auctions",
+        "is_noise": true
       },
       {
         "name": "FOMC Member Barkin Speaks",
@@ -751,7 +1736,16 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": null,
         "event_url": "https://www.investing.com/economic-calendar/fomc-member-barkin-speaks-1775",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       },
       {
         "name": "Fed's Balance Sheet",
@@ -761,7 +1755,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "6,714B",
         "event_url": "https://www.investing.com/economic-calendar/fed's-balance-sheet-2145",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 6704.0,
+          "forecast": null,
+          "previous": 6714.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -10.0,
+          "direction": "down"
+        },
+        "group": "fed_plumbing",
+        "is_noise": true
       },
       {
         "name": "Reserve Balances with Federal Reserve Banks",
@@ -771,7 +1777,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.106T",
         "event_url": "https://www.investing.com/economic-calendar/reserve-balances-with-federal-reserve-banks-2120",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.067,
+          "forecast": null,
+          "previous": 3.106
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.039,
+          "direction": "down"
+        },
+        "group": "fed_plumbing",
+        "is_noise": true
       }
     ],
     "2026-05-29": [
@@ -782,7 +1800,16 @@ window.MACRO_DATA = {
         "actual": null,
         "forecast": null,
         "previous": null,
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       },
       {
         "name": "Goods Trade Balance  (Apr)",
@@ -791,7 +1818,23 @@ window.MACRO_DATA = {
         "actual": "-82.40B",
         "forecast": "-86.70B",
         "previous": "-85.30B",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -82.4,
+          "forecast": -86.7,
+          "previous": -85.3
+        },
+        "surprise": {
+          "deviation": 4.3,
+          "z_score": 0.99,
+          "label": "above-forecast"
+        },
+        "vs_previous": {
+          "delta": 2.9,
+          "direction": "up"
+        },
+        "group": "trade",
+        "is_noise": false
       },
       {
         "name": "Retail Inventories Ex Auto  (Apr)",
@@ -800,7 +1843,19 @@ window.MACRO_DATA = {
         "actual": "0.6%",
         "forecast": null,
         "previous": "0.6%",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.6,
+          "forecast": null,
+          "previous": 0.6
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.0,
+          "direction": "flat"
+        },
+        "group": "inventories",
+        "is_noise": false
       },
       {
         "name": "Wholesale Inventories (MoM)  (Apr)",
@@ -809,7 +1864,23 @@ window.MACRO_DATA = {
         "actual": "0.5%",
         "forecast": "0.6%",
         "previous": "1.5%",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.5,
+          "forecast": 0.6,
+          "previous": 1.5
+        },
+        "surprise": {
+          "deviation": -0.1,
+          "z_score": -3.33,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -1.0,
+          "direction": "down"
+        },
+        "group": "inventories",
+        "is_noise": false
       },
       {
         "name": "FOMC Member Bowman Speaks",
@@ -818,7 +1889,16 @@ window.MACRO_DATA = {
         "actual": null,
         "forecast": null,
         "previous": null,
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       },
       {
         "name": "Chicago PMI  (May)",
@@ -827,7 +1907,16 @@ window.MACRO_DATA = {
         "actual": null,
         "forecast": "50.6",
         "previous": "49.2",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": 50.6,
+          "previous": 49.2
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "regional_fed",
+        "is_noise": false
       },
       {
         "name": "FOMC Member Daly Speaks",
@@ -836,7 +1925,16 @@ window.MACRO_DATA = {
         "actual": null,
         "forecast": null,
         "previous": null,
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       },
       {
         "name": "U.S. Baker Hughes Oil Rig Count",
@@ -845,7 +1943,16 @@ window.MACRO_DATA = {
         "actual": null,
         "forecast": null,
         "previous": "425",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": 425.0
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "rig_count",
+        "is_noise": true
       },
       {
         "name": "U.S. Baker Hughes Total Rig Count",
@@ -854,7 +1961,16 @@ window.MACRO_DATA = {
         "actual": null,
         "forecast": null,
         "previous": "558",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": 558.0
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "rig_count",
+        "is_noise": true
       },
       {
         "name": "CFTC Aluminium speculative net positions",
@@ -863,7 +1979,16 @@ window.MACRO_DATA = {
         "actual": null,
         "forecast": null,
         "previous": "0.5K",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": 0.5
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Copper speculative net positions",
@@ -872,7 +1997,16 @@ window.MACRO_DATA = {
         "actual": null,
         "forecast": null,
         "previous": "75.9K",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": 75.9
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Corn speculative net positions",
@@ -881,7 +2015,16 @@ window.MACRO_DATA = {
         "actual": null,
         "forecast": null,
         "previous": "358.1K",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": 358.1
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Crude Oil speculative net positions",
@@ -890,7 +2033,16 @@ window.MACRO_DATA = {
         "actual": null,
         "forecast": null,
         "previous": "172.6K",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": 172.6
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Gold speculative net positions",
@@ -899,7 +2051,16 @@ window.MACRO_DATA = {
         "actual": null,
         "forecast": null,
         "previous": "159.8K",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": 159.8
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Nasdaq 100 speculative net positions",
@@ -908,7 +2069,16 @@ window.MACRO_DATA = {
         "actual": null,
         "forecast": null,
         "previous": "-1.4K",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": -1.4
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Natural Gas speculative net positions",
@@ -917,7 +2087,16 @@ window.MACRO_DATA = {
         "actual": null,
         "forecast": null,
         "previous": "-192.2K",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": -192.2
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC S&P 500 speculative net positions",
@@ -926,7 +2105,16 @@ window.MACRO_DATA = {
         "actual": null,
         "forecast": null,
         "previous": "-140.6K",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": -140.6
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Silver speculative net positions",
@@ -935,7 +2123,16 @@ window.MACRO_DATA = {
         "actual": null,
         "forecast": null,
         "previous": "24.7K",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": 24.7
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Soybeans speculative net positions",
@@ -944,7 +2141,16 @@ window.MACRO_DATA = {
         "actual": null,
         "forecast": null,
         "previous": "212.2K",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": 212.2
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Wheat speculative net positions",
@@ -953,7 +2159,16 @@ window.MACRO_DATA = {
         "actual": null,
         "forecast": null,
         "previous": "0.3K",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": 0.3
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "cftc_positions",
+        "is_noise": true
       }
     ],
     "2026-05-31": [
@@ -964,7 +2179,16 @@ window.MACRO_DATA = {
         "actual": null,
         "forecast": null,
         "previous": null,
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       }
     ],
     "2026-06-01": [
@@ -976,7 +2200,16 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": null,
         "event_url": "https://www.investing.com/economic-calendar/fed-waller-speaks-1997",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       },
       {
         "name": "S&P Global Manufacturing PMI  (May)",
@@ -986,7 +2219,23 @@ window.MACRO_DATA = {
         "forecast": "55.3",
         "previous": "54.5",
         "event_url": "https://www.investing.com/economic-calendar/manufacturing-pmi-829",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 55.1,
+          "forecast": 55.3,
+          "previous": 54.5
+        },
+        "surprise": {
+          "deviation": -0.2,
+          "z_score": -0.07,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.6,
+          "direction": "up"
+        },
+        "group": "spglobal_pmi",
+        "is_noise": false
       },
       {
         "name": "Construction Spending (MoM)  (Apr)",
@@ -996,7 +2245,23 @@ window.MACRO_DATA = {
         "forecast": "0.3%",
         "previous": "0.2%",
         "event_url": "https://www.investing.com/economic-calendar/construction-spending-45",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.4,
+          "forecast": 0.3,
+          "previous": 0.2
+        },
+        "surprise": {
+          "deviation": 0.1,
+          "z_score": 6.67,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 0.2,
+          "direction": "up"
+        },
+        "group": "construction",
+        "is_noise": false
       },
       {
         "name": "ISM Manufacturing Employment  (May)",
@@ -1006,7 +2271,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "46.4",
         "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-employment-1046",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 48.6,
+          "forecast": null,
+          "previous": 46.4
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 2.2,
+          "direction": "up"
+        },
+        "group": "ism_manufacturing",
+        "is_noise": false
       },
       {
         "name": "ISM Manufacturing New Orders Index  (May)",
@@ -1016,7 +2293,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "54.1",
         "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-new-orders-index-1483",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 56.8,
+          "forecast": null,
+          "previous": 54.1
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 2.7,
+          "direction": "up"
+        },
+        "group": "ism_manufacturing",
+        "is_noise": false
       },
       {
         "name": "ISM Manufacturing PMI  (May)",
@@ -1026,7 +2315,23 @@ window.MACRO_DATA = {
         "forecast": "53.3",
         "previous": "52.7",
         "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-pmi-173",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 54.0,
+          "forecast": 53.3,
+          "previous": 52.7
+        },
+        "surprise": {
+          "deviation": 0.7,
+          "z_score": 0.26,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 1.3,
+          "direction": "up"
+        },
+        "group": "ism_manufacturing",
+        "is_noise": false
       },
       {
         "name": "ISM Manufacturing Prices  (May)",
@@ -1036,7 +2341,23 @@ window.MACRO_DATA = {
         "forecast": "85.3",
         "previous": "84.6",
         "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-prices-174",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 82.1,
+          "forecast": 85.3,
+          "previous": 84.6
+        },
+        "surprise": {
+          "deviation": -3.2,
+          "z_score": -0.75,
+          "label": "below-forecast"
+        },
+        "vs_previous": {
+          "delta": -2.5,
+          "direction": "down"
+        },
+        "group": "ism_manufacturing",
+        "is_noise": false
       },
       {
         "name": "3-Month Bill Auction",
@@ -1046,7 +2367,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.595%",
         "event_url": "https://www.investing.com/economic-calendar/3-month-bill-auction-568",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.63,
+          "forecast": null,
+          "previous": 3.595
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.035,
+          "direction": "up"
+        },
+        "group": "auctions",
+        "is_noise": true
       },
       {
         "name": "6-Month Bill Auction",
@@ -1056,7 +2389,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.650%",
         "event_url": "https://www.investing.com/economic-calendar/6-month-bill-auction-679",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.665,
+          "forecast": null,
+          "previous": 3.65
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.015,
+          "direction": "up"
+        },
+        "group": "auctions",
+        "is_noise": true
       },
       {
         "name": "Atlanta Fed GDPNow  (Q2)",
@@ -1066,7 +2411,23 @@ window.MACRO_DATA = {
         "forecast": "3.8%",
         "previous": "3.8%",
         "event_url": "https://www.investing.com/economic-calendar/atlanta-fed-gdpnow-2260",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.0,
+          "forecast": 3.8,
+          "previous": 3.8
+        },
+        "surprise": {
+          "deviation": -0.8,
+          "z_score": -4.21,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -0.8,
+          "direction": "down"
+        },
+        "group": "other",
+        "is_noise": false
       }
     ],
     "2026-06-02": [
@@ -1078,7 +2439,16 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": null,
         "event_url": "https://www.investing.com/economic-calendar/fomc-member-kashkari-speaks-1665",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       },
       {
         "name": "Redbook (YoY)",
@@ -1088,7 +2458,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "9.0%",
         "event_url": "https://www.investing.com/economic-calendar/redbook-911",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 9.0,
+          "forecast": null,
+          "previous": 9.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.0,
+          "direction": "flat"
+        },
+        "group": "fed_plumbing",
+        "is_noise": true
       },
       {
         "name": "JOLTS Job Openings  (Apr)",
@@ -1098,7 +2480,23 @@ window.MACRO_DATA = {
         "forecast": "6.860M",
         "previous": "6.887M",
         "event_url": "https://www.investing.com/economic-calendar/jolts-job-openings-1057",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 7.618,
+          "forecast": 6.86,
+          "previous": 6.887
+        },
+        "surprise": {
+          "deviation": 0.758,
+          "z_score": 2.21,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 0.731,
+          "direction": "up"
+        },
+        "group": "jolts",
+        "is_noise": false
       },
       {
         "name": "IBD/TIPP Economic Optimism  (Jun)",
@@ -1108,7 +2506,23 @@ window.MACRO_DATA = {
         "forecast": "44.5",
         "previous": "42.6",
         "event_url": "https://www.investing.com/economic-calendar/ibd-tipp-economic-optimism-325",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 42.5,
+          "forecast": 44.5,
+          "previous": 42.6
+        },
+        "surprise": {
+          "deviation": -2.0,
+          "z_score": -0.9,
+          "label": "below-forecast"
+        },
+        "vs_previous": {
+          "delta": -0.1,
+          "direction": "down"
+        },
+        "group": "confidence",
+        "is_noise": false
       },
       {
         "name": "Total Vehicle Sales  (May)",
@@ -1118,7 +2532,23 @@ window.MACRO_DATA = {
         "forecast": "16.00M",
         "previous": "15.90M",
         "event_url": "https://www.investing.com/economic-calendar/total-vehicle-sales-85",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 16.1,
+          "forecast": 16.0,
+          "previous": 15.9
+        },
+        "surprise": {
+          "deviation": 0.1,
+          "z_score": 0.13,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.2,
+          "direction": "up"
+        },
+        "group": "vehicle_sales",
+        "is_noise": false
       },
       {
         "name": "API Weekly Crude Oil Stock",
@@ -1128,7 +2558,23 @@ window.MACRO_DATA = {
         "forecast": "-3.600M",
         "previous": "-2.800M",
         "event_url": "https://www.investing.com/economic-calendar/api-weekly-crude-stock-656",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -6.75,
+          "forecast": -3.6,
+          "previous": -2.8
+        },
+        "surprise": {
+          "deviation": -3.15,
+          "z_score": -17.5,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -3.95,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       }
     ],
     "2026-06-03": [
@@ -1140,7 +2586,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "6.65%",
         "event_url": "https://www.investing.com/economic-calendar/mba-30-year-mortgage-rate-1042",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 6.57,
+          "forecast": null,
+          "previous": 6.65
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.08,
+          "direction": "down"
+        },
+        "group": "mortgage",
+        "is_noise": false
       },
       {
         "name": "MBA Mortgage Applications (WoW)",
@@ -1150,7 +2608,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-8.5%",
         "event_url": "https://www.investing.com/economic-calendar/mba-mortgage-applications-380",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -2.5,
+          "forecast": null,
+          "previous": -8.5
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 6.0,
+          "direction": "up"
+        },
+        "group": "mortgage",
+        "is_noise": false
       },
       {
         "name": "MBA Purchase Index",
@@ -1160,7 +2630,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "169.7",
         "event_url": "https://www.investing.com/economic-calendar/mba-purchase-index-1494",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 164.8,
+          "forecast": null,
+          "previous": 169.7
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -4.9,
+          "direction": "down"
+        },
+        "group": "mortgage",
+        "is_noise": false
       },
       {
         "name": "Mortgage Market Index",
@@ -1170,7 +2652,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "259.4",
         "event_url": "https://www.investing.com/economic-calendar/mortgage-market-index-1427",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 252.8,
+          "forecast": null,
+          "previous": 259.4
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -6.6,
+          "direction": "down"
+        },
+        "group": "mortgage",
+        "is_noise": false
       },
       {
         "name": "Mortgage Refinance Index",
@@ -1180,7 +2674,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "753.7",
         "event_url": "https://www.investing.com/economic-calendar/mortgage-refinance-index-1428",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 736.2,
+          "forecast": null,
+          "previous": 753.7
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -17.5,
+          "direction": "down"
+        },
+        "group": "mortgage",
+        "is_noise": false
       },
       {
         "name": "ADP Nonfarm Employment Change  (May)",
@@ -1190,7 +2696,23 @@ window.MACRO_DATA = {
         "forecast": "118K",
         "previous": "105K",
         "event_url": "https://www.investing.com/economic-calendar/adp-nonfarm-employment-change-1",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 122.0,
+          "forecast": 118.0,
+          "previous": 105.0
+        },
+        "surprise": {
+          "deviation": 4.0,
+          "z_score": 0.68,
+          "label": "above-forecast"
+        },
+        "vs_previous": {
+          "delta": 17.0,
+          "direction": "up"
+        },
+        "group": "adp",
+        "is_noise": false
       },
       {
         "name": "Fed Vice Chair for Supervision Barr Speaks",
@@ -1200,7 +2722,16 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": null,
         "event_url": "https://www.investing.com/economic-calendar/fed-vice-chair-for-supervision-barr-speaks-2108",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       },
       {
         "name": "S&P Global Composite PMI  (May)",
@@ -1210,7 +2741,23 @@ window.MACRO_DATA = {
         "forecast": "51.7",
         "previous": "51.7",
         "event_url": "https://www.investing.com/economic-calendar/s-p-global-composite-pmi-1492",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 51.5,
+          "forecast": 51.7,
+          "previous": 51.7
+        },
+        "surprise": {
+          "deviation": -0.2,
+          "z_score": -0.08,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": -0.2,
+          "direction": "down"
+        },
+        "group": "spglobal_pmi",
+        "is_noise": false
       },
       {
         "name": "S&P Global Services PMI  (May)",
@@ -1220,7 +2767,23 @@ window.MACRO_DATA = {
         "forecast": "50.9",
         "previous": "50.9",
         "event_url": "https://www.investing.com/economic-calendar/services-pmi-1062",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 50.7,
+          "forecast": 50.9,
+          "previous": 50.9
+        },
+        "surprise": {
+          "deviation": -0.2,
+          "z_score": -0.08,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": -0.2,
+          "direction": "down"
+        },
+        "group": "spglobal_pmi",
+        "is_noise": false
       },
       {
         "name": "All Car Sales  (May)",
@@ -1230,7 +2793,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "2.69M",
         "event_url": "https://www.investing.com/economic-calendar/all-car-sales-886",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.66,
+          "forecast": null,
+          "previous": 2.69
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.03,
+          "direction": "down"
+        },
+        "group": "vehicle_sales",
+        "is_noise": false
       },
       {
         "name": "All Truck Sales  (May)",
@@ -1240,7 +2815,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "13.32M",
         "event_url": "https://www.investing.com/economic-calendar/all-truck-sales-1437",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 13.43,
+          "forecast": null,
+          "previous": 13.32
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.11,
+          "direction": "up"
+        },
+        "group": "vehicle_sales",
+        "is_noise": false
       },
       {
         "name": "Durables Excluding Defense (MoM)  (Apr)",
@@ -1250,7 +2837,23 @@ window.MACRO_DATA = {
         "forecast": "8.1%",
         "previous": "-0.3%",
         "event_url": "https://www.investing.com/economic-calendar/durables-excluding-defense-1446",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 8.1,
+          "forecast": 8.1,
+          "previous": -0.3
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 8.4,
+          "direction": "up"
+        },
+        "group": "durable_goods",
+        "is_noise": false
       },
       {
         "name": "Durables Excluding Transport (MoM)  (Apr)",
@@ -1260,7 +2863,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.9%",
         "event_url": "https://www.investing.com/economic-calendar/durables-excluding-transport-2030",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.1,
+          "forecast": null,
+          "previous": 0.9
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.2,
+          "direction": "up"
+        },
+        "group": "durable_goods",
+        "is_noise": false
       },
       {
         "name": "Factory Orders (MoM)  (Apr)",
@@ -1270,7 +2885,23 @@ window.MACRO_DATA = {
         "forecast": "4.6%",
         "previous": "1.8%",
         "event_url": "https://www.investing.com/economic-calendar/factory-orders-100",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.8,
+          "forecast": 4.6,
+          "previous": 1.8
+        },
+        "surprise": {
+          "deviation": 0.2,
+          "z_score": 0.87,
+          "label": "above-forecast"
+        },
+        "vs_previous": {
+          "delta": 3.0,
+          "direction": "up"
+        },
+        "group": "durable_goods",
+        "is_noise": false
       },
       {
         "name": "Factory orders ex transportation (MoM)  (Apr)",
@@ -1280,7 +2911,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "1.8%",
         "event_url": "https://www.investing.com/economic-calendar/factory-orders-ex-transportation-893",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.3,
+          "forecast": null,
+          "previous": 1.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.5,
+          "direction": "down"
+        },
+        "group": "durable_goods",
+        "is_noise": false
       },
       {
         "name": "ISM Non-Manufacturing Business Activity  (May)",
@@ -1290,7 +2933,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "55.9",
         "event_url": "https://www.investing.com/economic-calendar/ism-non-manufacturing-business-activity-1484",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 57.7,
+          "forecast": null,
+          "previous": 55.9
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 1.8,
+          "direction": "up"
+        },
+        "group": "ism_services",
+        "is_noise": false
       },
       {
         "name": "ISM Non-Manufacturing Employment  (May)",
@@ -1300,7 +2955,23 @@ window.MACRO_DATA = {
         "forecast": "48.8",
         "previous": "48.0",
         "event_url": "https://www.investing.com/economic-calendar/ism-non-manufacturing-employment-1048",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 47.9,
+          "forecast": 48.8,
+          "previous": 48.0
+        },
+        "surprise": {
+          "deviation": -0.9,
+          "z_score": -0.37,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": -0.1,
+          "direction": "down"
+        },
+        "group": "ism_services",
+        "is_noise": false
       },
       {
         "name": "ISM Non-Manufacturing New Orders  (May)",
@@ -1310,7 +2981,23 @@ window.MACRO_DATA = {
         "forecast": "53.4",
         "previous": "53.5",
         "event_url": "https://www.investing.com/economic-calendar/ism-non-manufacturing-new-orders-1050",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 57.3,
+          "forecast": 53.4,
+          "previous": 53.5
+        },
+        "surprise": {
+          "deviation": 3.9,
+          "z_score": 1.46,
+          "label": "above-forecast"
+        },
+        "vs_previous": {
+          "delta": 3.8,
+          "direction": "up"
+        },
+        "group": "ism_services",
+        "is_noise": false
       },
       {
         "name": "ISM Non-Manufacturing PMI  (May)",
@@ -1320,7 +3007,23 @@ window.MACRO_DATA = {
         "forecast": "53.7",
         "previous": "53.6",
         "event_url": "https://www.investing.com/economic-calendar/ism-non-manufacturing-pmi-176",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 54.5,
+          "forecast": 53.7,
+          "previous": 53.6
+        },
+        "surprise": {
+          "deviation": 0.8,
+          "z_score": 0.3,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.9,
+          "direction": "up"
+        },
+        "group": "ism_services",
+        "is_noise": false
       },
       {
         "name": "ISM Non-Manufacturing Prices  (May)",
@@ -1330,7 +3033,23 @@ window.MACRO_DATA = {
         "forecast": "72.3",
         "previous": "70.7",
         "event_url": "https://www.investing.com/economic-calendar/ism-non-manufacturing-prices-1049",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 71.3,
+          "forecast": 72.3,
+          "previous": 70.7
+        },
+        "surprise": {
+          "deviation": -1.0,
+          "z_score": -0.28,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.6,
+          "direction": "up"
+        },
+        "group": "ism_services",
+        "is_noise": false
       },
       {
         "name": "Crude Oil Inventories",
@@ -1340,7 +3059,23 @@ window.MACRO_DATA = {
         "forecast": "-2.900M",
         "previous": "-3.327M",
         "event_url": "https://www.investing.com/economic-calendar/eia-crude-oil-inventories-75",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -7.974,
+          "forecast": -2.9,
+          "previous": -3.327
+        },
+        "surprise": {
+          "deviation": -5.074,
+          "z_score": -34.99,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -4.647,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "EIA Refinery Crude Runs  (WoW)",
@@ -1350,7 +3085,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.652M",
         "event_url": "https://www.investing.com/economic-calendar/eia-refinery-crude-runs-1960",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -0.09,
+          "forecast": null,
+          "previous": 0.652
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.742,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Crude Oil Imports",
@@ -1360,7 +3107,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.360M",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-crude-imports-1658",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -0.249,
+          "forecast": null,
+          "previous": 0.36
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.609,
+          "direction": "down"
+        },
+        "group": "trade",
+        "is_noise": false
       },
       {
         "name": "Cushing Crude Oil Inventories",
@@ -1370,7 +3129,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-2.794M",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-cushing-oil-inventories-1657",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -0.583,
+          "forecast": null,
+          "previous": -2.794
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 2.211,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Distillate Fuel Production",
@@ -1380,7 +3151,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.076M",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillate-fuel-production-1660",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.098,
+          "forecast": null,
+          "previous": 0.076
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.022,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "EIA Weekly Distillates Stocks",
@@ -1390,7 +3173,23 @@ window.MACRO_DATA = {
         "forecast": "-0.300M",
         "previous": "-2.107M",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillates-stocks-917",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.502,
+          "forecast": -0.3,
+          "previous": -2.107
+        },
+        "surprise": {
+          "deviation": 1.802,
+          "z_score": 120.13,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 3.609,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Gasoline Production",
@@ -1400,7 +3199,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.600M",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-gasoline-production-1661",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -0.515,
+          "forecast": null,
+          "previous": 0.6
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -1.115,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Heating Oil Stockpiles",
@@ -1410,7 +3221,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.306M",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-heatoil-stock-1659",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.255,
+          "forecast": null,
+          "previous": 0.306
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.051,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "EIA Weekly Refinery Utilization Rates (WoW)",
@@ -1420,7 +3243,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "2.9%",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-refinery-utilization-rates-1961",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.2,
+          "forecast": null,
+          "previous": 2.9
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -2.7,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Gasoline Inventories",
@@ -1430,7 +3265,23 @@ window.MACRO_DATA = {
         "forecast": "-0.500M",
         "previous": "-2.572M",
         "event_url": "https://www.investing.com/economic-calendar/gasoline-inventories-485",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.364,
+          "forecast": -0.5,
+          "previous": -2.572
+        },
+        "surprise": {
+          "deviation": 3.864,
+          "z_score": 154.56,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 5.936,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Beige Book",
@@ -1440,7 +3291,16 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": null,
         "event_url": "https://www.investing.com/economic-calendar/beige-book-10",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       },
       {
         "name": "Fed Logan Speaks",
@@ -1450,7 +3310,16 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": null,
         "event_url": "https://www.investing.com/economic-calendar/fed-logan-speaks-2119",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       }
     ],
     "2026-06-04": [
@@ -1462,7 +3331,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-20.9%",
         "event_url": "https://www.investing.com/economic-calendar/challenger-job-cuts-333",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.4,
+          "forecast": null,
+          "previous": -20.9
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 24.3,
+          "direction": "up"
+        },
+        "group": "challenger",
+        "is_noise": false
       },
       {
         "name": "Challenger Job Cuts  (May)",
@@ -1472,7 +3353,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "83.387K",
         "event_url": "https://www.investing.com/economic-calendar/challenger-job-cuts-888",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 97.006,
+          "forecast": null,
+          "previous": 83.387
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 13.619,
+          "direction": "up"
+        },
+        "group": "challenger",
+        "is_noise": false
       },
       {
         "name": "Continuing Jobless Claims",
@@ -1482,7 +3375,23 @@ window.MACRO_DATA = {
         "forecast": "1,780K",
         "previous": "1,785K",
         "event_url": "https://www.investing.com/economic-calendar/continuing-jobless-claims-522",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1777.0,
+          "forecast": 1780.0,
+          "previous": 1785.0
+        },
+        "surprise": {
+          "deviation": -3.0,
+          "z_score": -0.03,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": -8.0,
+          "direction": "down"
+        },
+        "group": "jobless_claims",
+        "is_noise": false
       },
       {
         "name": "FOMC Member Barkin Speaks",
@@ -1492,7 +3401,16 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": null,
         "event_url": "https://www.investing.com/economic-calendar/fomc-member-barkin-speaks-1775",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       },
       {
         "name": "Initial Jobless Claims",
@@ -1502,7 +3420,23 @@ window.MACRO_DATA = {
         "forecast": "214K",
         "previous": "212K",
         "event_url": "https://www.investing.com/economic-calendar/initial-jobless-claims-294",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 225.0,
+          "forecast": 214.0,
+          "previous": 212.0
+        },
+        "surprise": {
+          "deviation": 11.0,
+          "z_score": 1.03,
+          "label": "above-forecast"
+        },
+        "vs_previous": {
+          "delta": 13.0,
+          "direction": "up"
+        },
+        "group": "jobless_claims",
+        "is_noise": false
       },
       {
         "name": "Jobless Claims 4-Week Avg.",
@@ -1512,7 +3446,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "208.25K",
         "event_url": "https://www.investing.com/economic-calendar/jobless-claims-4-week-avg.-1041",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 214.75,
+          "forecast": null,
+          "previous": 208.25
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 6.5,
+          "direction": "up"
+        },
+        "group": "jobless_claims",
+        "is_noise": false
       },
       {
         "name": "Nonfarm Productivity (QoQ)  (Q1)",
@@ -1522,7 +3468,23 @@ window.MACRO_DATA = {
         "forecast": "0.8%",
         "previous": "1.8%",
         "event_url": "https://www.investing.com/economic-calendar/nonfarm-productivity-228",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.3,
+          "forecast": 0.8,
+          "previous": 1.8
+        },
+        "surprise": {
+          "deviation": -0.5,
+          "z_score": -12.5,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -1.5,
+          "direction": "down"
+        },
+        "group": "other",
+        "is_noise": false
       },
       {
         "name": "Unit Labor Costs (QoQ)  (Q1)",
@@ -1532,7 +3494,23 @@ window.MACRO_DATA = {
         "forecast": "2.3%",
         "previous": "4.4%",
         "event_url": "https://www.investing.com/economic-calendar/unit-labor-costs-303",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.8,
+          "forecast": 2.3,
+          "previous": 4.4
+        },
+        "surprise": {
+          "deviation": -0.5,
+          "z_score": -4.35,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -2.6,
+          "direction": "down"
+        },
+        "group": "other",
+        "is_noise": false
       },
       {
         "name": "FOMC Member Bowman Speaks",
@@ -1542,7 +3520,16 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": null,
         "event_url": "https://www.investing.com/economic-calendar/fomc-member-bowman-speaks-1835",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       },
       {
         "name": "Natural Gas Storage",
@@ -1552,7 +3539,23 @@ window.MACRO_DATA = {
         "forecast": "99B",
         "previous": "92B",
         "event_url": "https://www.investing.com/economic-calendar/natural-gas-storage-386",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 95.0,
+          "forecast": 99.0,
+          "previous": 92.0
+        },
+        "surprise": {
+          "deviation": -4.0,
+          "z_score": -0.81,
+          "label": "below-forecast"
+        },
+        "vs_previous": {
+          "delta": 3.0,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "4-Week Bill Auction",
@@ -1562,7 +3565,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.630%",
         "event_url": "https://www.investing.com/economic-calendar/4-week-bill-auction-567",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.615,
+          "forecast": null,
+          "previous": 3.63
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.015,
+          "direction": "down"
+        },
+        "group": "auctions",
+        "is_noise": true
       },
       {
         "name": "8-Week Bill Auction",
@@ -1572,7 +3587,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.615%",
         "event_url": "https://www.investing.com/economic-calendar/8-week-bill-auction-1801",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.61,
+          "forecast": null,
+          "previous": 3.615
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.005,
+          "direction": "down"
+        },
+        "group": "auctions",
+        "is_noise": true
       },
       {
         "name": "FOMC Member Daly Speaks",
@@ -1582,7 +3609,16 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": null,
         "event_url": "https://www.investing.com/economic-calendar/fomc-member-daly-speaks-1802",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       },
       {
         "name": "FOMC Member Daly Speaks",
@@ -1592,7 +3628,16 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": null,
         "event_url": "https://www.investing.com/economic-calendar/fomc-member-daly-speaks-1802",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
       },
       {
         "name": "Fed's Balance Sheet",
@@ -1602,7 +3647,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "6,704B",
         "event_url": "https://www.investing.com/economic-calendar/fed's-balance-sheet-2145",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 6711.0,
+          "forecast": null,
+          "previous": 6704.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 7.0,
+          "direction": "up"
+        },
+        "group": "fed_plumbing",
+        "is_noise": true
       },
       {
         "name": "Reserve Balances with Federal Reserve Banks",
@@ -1612,7 +3669,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.067T",
         "event_url": "https://www.investing.com/economic-calendar/reserve-balances-with-federal-reserve-banks-2120",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.045,
+          "forecast": null,
+          "previous": 3.067
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.022,
+          "direction": "down"
+        },
+        "group": "fed_plumbing",
+        "is_noise": true
       }
     ],
     "2026-06-05": [
@@ -1624,7 +3693,23 @@ window.MACRO_DATA = {
         "forecast": "3.4%",
         "previous": "3.6%",
         "event_url": "https://www.investing.com/economic-calendar/average-hourly-earnings-1777",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.4,
+          "forecast": 3.4,
+          "previous": 3.6
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": -0.2,
+          "direction": "down"
+        },
+        "group": "jobs_report",
+        "is_noise": false
       },
       {
         "name": "Average Hourly Earnings (MoM)  (May)",
@@ -1634,7 +3719,23 @@ window.MACRO_DATA = {
         "forecast": "0.3%",
         "previous": "0.2%",
         "event_url": "https://www.investing.com/economic-calendar/average-hourly-earnings-8",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.3,
+          "forecast": 0.3,
+          "previous": 0.2
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.1,
+          "direction": "up"
+        },
+        "group": "jobs_report",
+        "is_noise": false
       },
       {
         "name": "Average Weekly Hours  (May)",
@@ -1644,7 +3745,23 @@ window.MACRO_DATA = {
         "forecast": "34.3",
         "previous": "34.3",
         "event_url": "https://www.investing.com/economic-calendar/average-weekly-hours-379",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 34.3,
+          "forecast": 34.3,
+          "previous": 34.3
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.0,
+          "direction": "flat"
+        },
+        "group": "jobs_report",
+        "is_noise": false
       },
       {
         "name": "Government Payrolls  (May)",
@@ -1654,7 +3771,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "2.0K",
         "event_url": "https://www.investing.com/economic-calendar/government-payrolls-1579",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 52.0,
+          "forecast": null,
+          "previous": 2.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 50.0,
+          "direction": "up"
+        },
+        "group": "jobs_report",
+        "is_noise": false
       },
       {
         "name": "Manufacturing Payrolls  (May)",
@@ -1664,7 +3793,23 @@ window.MACRO_DATA = {
         "forecast": "2K",
         "previous": "0K",
         "event_url": "https://www.investing.com/economic-calendar/manufacturing-payrolls-1531",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 7.0,
+          "forecast": 2.0,
+          "previous": 0.0
+        },
+        "surprise": {
+          "deviation": 5.0,
+          "z_score": 50.0,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 7.0,
+          "direction": "up"
+        },
+        "group": "jobs_report",
+        "is_noise": false
       },
       {
         "name": "Nonfarm Payrolls  (May)",
@@ -1674,7 +3819,23 @@ window.MACRO_DATA = {
         "forecast": "85K",
         "previous": "179K",
         "event_url": "https://www.investing.com/economic-calendar/nonfarm-payrolls-227",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 172.0,
+          "forecast": 85.0,
+          "previous": 179.0
+        },
+        "surprise": {
+          "deviation": 87.0,
+          "z_score": 20.47,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": -7.0,
+          "direction": "down"
+        },
+        "group": "jobs_report",
+        "is_noise": false
       },
       {
         "name": "Participation Rate  (May)",
@@ -1684,7 +3845,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "61.8%",
         "event_url": "https://www.investing.com/economic-calendar/participation-rate-1581",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 61.8,
+          "forecast": null,
+          "previous": 61.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.0,
+          "direction": "flat"
+        },
+        "group": "jobs_report",
+        "is_noise": false
       },
       {
         "name": "Private Nonfarm Payrolls  (May)",
@@ -1694,7 +3867,23 @@ window.MACRO_DATA = {
         "forecast": "85K",
         "previous": "177K",
         "event_url": "https://www.investing.com/economic-calendar/private-nonfarm-payrolls-528",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 120.0,
+          "forecast": 85.0,
+          "previous": 177.0
+        },
+        "surprise": {
+          "deviation": 35.0,
+          "z_score": 8.24,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": -57.0,
+          "direction": "down"
+        },
+        "group": "jobs_report",
+        "is_noise": false
       },
       {
         "name": "U6 Unemployment Rate  (May)",
@@ -1704,7 +3893,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "8.2%",
         "event_url": "https://www.investing.com/economic-calendar/u6-unemployment-rate-1670",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 8.1,
+          "forecast": null,
+          "previous": 8.2
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.1,
+          "direction": "down"
+        },
+        "group": "jobs_report",
+        "is_noise": false
       },
       {
         "name": "Unemployment Rate  (May)",
@@ -1714,7 +3915,23 @@ window.MACRO_DATA = {
         "forecast": "4.3%",
         "previous": "4.3%",
         "event_url": "https://www.investing.com/economic-calendar/unemployment-rate-300",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.3,
+          "forecast": 4.3,
+          "previous": 4.3
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.0,
+          "direction": "flat"
+        },
+        "group": "jobs_report",
+        "is_noise": false
       },
       {
         "name": "U.S. Baker Hughes Oil Rig Count",
@@ -1724,7 +3941,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "429",
         "event_url": "https://www.investing.com/economic-calendar/baker-hughes-u.s.-rig-count-1652",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 431.0,
+          "forecast": null,
+          "previous": 429.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 2.0,
+          "direction": "up"
+        },
+        "group": "rig_count",
+        "is_noise": true
       },
       {
         "name": "U.S. Baker Hughes Total Rig Count",
@@ -1734,7 +3963,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "562",
         "event_url": "https://www.investing.com/economic-calendar/u.s.-baker-hughes-total-rig-count-1810",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 563.0,
+          "forecast": null,
+          "previous": 562.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 1.0,
+          "direction": "up"
+        },
+        "group": "rig_count",
+        "is_noise": true
       },
       {
         "name": "Consumer Credit  (Apr)",
@@ -1744,7 +3985,23 @@ window.MACRO_DATA = {
         "forecast": "17.80B",
         "previous": "22.23B",
         "event_url": "https://www.investing.com/economic-calendar/consumer-credit-52",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 20.73,
+          "forecast": 17.8,
+          "previous": 22.23
+        },
+        "surprise": {
+          "deviation": 2.93,
+          "z_score": 3.29,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": -1.5,
+          "direction": "down"
+        },
+        "group": "money_credit",
+        "is_noise": false
       },
       {
         "name": "CFTC Aluminium speculative net positions",
@@ -1754,7 +4011,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.3K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-aluminium-speculative-net-positions-1821",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.8,
+          "forecast": null,
+          "previous": 0.3
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.5,
+          "direction": "up"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Copper speculative net positions",
@@ -1764,7 +4033,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "73.0K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-copper-speculative-positions-1620",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 78.8,
+          "forecast": null,
+          "previous": 73.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 5.8,
+          "direction": "up"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Corn speculative net positions",
@@ -1774,7 +4055,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "302.0K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-corn-speculative-positions-1813",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 199.9,
+          "forecast": null,
+          "previous": 302.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -102.1,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Crude Oil speculative net positions",
@@ -1784,7 +4077,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "161.0K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-crude-oil-speculative-positions-1653",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 155.9,
+          "forecast": null,
+          "previous": 161.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -5.1,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Gold speculative net positions",
@@ -1794,7 +4099,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "154.3K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-gold-speculative-positions-1618",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 176.0,
+          "forecast": null,
+          "previous": 154.3
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 21.7,
+          "direction": "up"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Nasdaq 100 speculative net positions",
@@ -1804,7 +4121,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-6.1K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-nasdaq-100-speculative-positions-1959",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -14.9,
+          "forecast": null,
+          "previous": -6.1
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -8.8,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Natural Gas speculative net positions",
@@ -1814,7 +4143,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-203.2K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-natural-gas-speculative-positions-1820",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -186.1,
+          "forecast": null,
+          "previous": -203.2
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 17.1,
+          "direction": "up"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC S&P 500 speculative net positions",
@@ -1824,7 +4165,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-165.8K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-s-p-500-speculative-positions-1619",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -220.8,
+          "forecast": null,
+          "previous": -165.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -55.0,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Silver speculative net positions",
@@ -1834,7 +4187,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "22.2K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-silver-speculative-positions-1621",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 23.9,
+          "forecast": null,
+          "previous": 22.2
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 1.7,
+          "direction": "up"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Soybeans speculative net positions",
@@ -1844,7 +4209,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "204.7K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-soybeans-speculative-positions-1811",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 187.8,
+          "forecast": null,
+          "previous": 204.7
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -16.9,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Wheat speculative net positions",
@@ -1854,7 +4231,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-9.5K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-wheat-speculative-positions-1812",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -40.8,
+          "forecast": null,
+          "previous": -9.5
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -31.3,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       }
     ],
     "2026-06-08": [
@@ -1866,7 +4255,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "107.88",
         "event_url": "https://www.investing.com/economic-calendar/cb-employment-trends-index-660",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 107.01,
+          "forecast": null,
+          "previous": 107.88
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.87,
+          "direction": "down"
+        },
+        "group": "confidence",
+        "is_noise": false
       },
       {
         "name": "NY Fed 1-Year Consumer Inflation Expectations  (May)",
@@ -1876,7 +4277,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.6%",
         "event_url": "https://www.investing.com/economic-calendar/ny-fed-1-year-consumer-inflation-expectations-2024",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.5,
+          "forecast": null,
+          "previous": 3.6
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.1,
+          "direction": "down"
+        },
+        "group": "michigan_sentiment",
+        "is_noise": false
       },
       {
         "name": "3-Month Bill Auction",
@@ -1886,7 +4299,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.630%",
         "event_url": "https://www.investing.com/economic-calendar/3-month-bill-auction-568",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.64,
+          "forecast": null,
+          "previous": 3.63
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.01,
+          "direction": "up"
+        },
+        "group": "auctions",
+        "is_noise": true
       },
       {
         "name": "6-Month Bill Auction",
@@ -1896,7 +4321,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.665%",
         "event_url": "https://www.investing.com/economic-calendar/6-month-bill-auction-679",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.69,
+          "forecast": null,
+          "previous": 3.665
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.025,
+          "direction": "up"
+        },
+        "group": "auctions",
+        "is_noise": true
       }
     ],
     "2026-06-09": [
@@ -1908,7 +4345,23 @@ window.MACRO_DATA = {
         "forecast": "96.0",
         "previous": "95.9",
         "event_url": "https://www.investing.com/economic-calendar/nfib-small-business-optimism-537",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 95.3,
+          "forecast": 96.0,
+          "previous": 95.9
+        },
+        "surprise": {
+          "deviation": -0.7,
+          "z_score": -0.15,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": -0.6,
+          "direction": "down"
+        },
+        "group": "confidence",
+        "is_noise": false
       },
       {
         "name": "ADP Employment Change Weekly",
@@ -1918,7 +4371,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "30.50K",
         "event_url": "https://www.investing.com/economic-calendar/adp-employment-change-weekly-2295",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 29.0,
+          "forecast": null,
+          "previous": 30.5
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -1.5,
+          "direction": "down"
+        },
+        "group": "adp",
+        "is_noise": false
       },
       {
         "name": "Exports  (Apr)",
@@ -1928,7 +4393,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "318.80B",
         "event_url": "https://www.investing.com/economic-calendar/exports-1762",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 327.1,
+          "forecast": null,
+          "previous": 318.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 8.3,
+          "direction": "up"
+        },
+        "group": "trade",
+        "is_noise": false
       },
       {
         "name": "Imports  (Apr)",
@@ -1938,7 +4415,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "375.40B",
         "event_url": "https://www.investing.com/economic-calendar/imports-1763",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 383.0,
+          "forecast": null,
+          "previous": 375.4
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 7.6,
+          "direction": "up"
+        },
+        "group": "trade",
+        "is_noise": false
       },
       {
         "name": "Trade Balance  (Apr)",
@@ -1948,7 +4437,23 @@ window.MACRO_DATA = {
         "forecast": "-56.20B",
         "previous": "-56.60B",
         "event_url": "https://www.investing.com/economic-calendar/trade-balance-286",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -55.9,
+          "forecast": -56.2,
+          "previous": -56.6
+        },
+        "surprise": {
+          "deviation": 0.3,
+          "z_score": 0.11,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.7,
+          "direction": "up"
+        },
+        "group": "trade",
+        "is_noise": false
       },
       {
         "name": "Redbook (YoY)",
@@ -1958,7 +4463,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "9.0%",
         "event_url": "https://www.investing.com/economic-calendar/redbook-911",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 9.1,
+          "forecast": null,
+          "previous": 9.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.1,
+          "direction": "up"
+        },
+        "group": "fed_plumbing",
+        "is_noise": true
       },
       {
         "name": "Existing Home Sales  (May)",
@@ -1968,7 +4485,23 @@ window.MACRO_DATA = {
         "forecast": "4.07M",
         "previous": "4.04M",
         "event_url": "https://www.investing.com/economic-calendar/existing-home-sales-99",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.17,
+          "forecast": 4.07,
+          "previous": 4.04
+        },
+        "surprise": {
+          "deviation": 0.1,
+          "z_score": 0.49,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.13,
+          "direction": "up"
+        },
+        "group": "home_sales",
+        "is_noise": false
       },
       {
         "name": "Existing Home Sales (MoM)  (May)",
@@ -1978,7 +4511,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.7%",
         "event_url": "https://www.investing.com/economic-calendar/existing-home-sales-891",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.2,
+          "forecast": null,
+          "previous": 0.7
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 2.5,
+          "direction": "up"
+        },
+        "group": "home_sales",
+        "is_noise": false
       },
       {
         "name": "Wholesale Inventories (MoM)  (Apr)",
@@ -1988,7 +4533,23 @@ window.MACRO_DATA = {
         "forecast": "0.5%",
         "previous": "1.3%",
         "event_url": "https://www.investing.com/economic-calendar/wholesale-inventories-305",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.6,
+          "forecast": 0.5,
+          "previous": 1.3
+        },
+        "surprise": {
+          "deviation": 0.1,
+          "z_score": 4.0,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": -0.7,
+          "direction": "down"
+        },
+        "group": "inventories",
+        "is_noise": false
       },
       {
         "name": "Wholesale Trade Sales (MoM)  (Apr)",
@@ -1998,7 +4559,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.0%",
         "event_url": "https://www.investing.com/economic-calendar/wholesale-trade-sales-1765",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.0,
+          "forecast": null,
+          "previous": 3.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -1.0,
+          "direction": "down"
+        },
+        "group": "other",
+        "is_noise": false
       },
       {
         "name": "52-Week Bill Auction",
@@ -2008,7 +4581,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.650%",
         "event_url": "https://www.investing.com/economic-calendar/52-week-bill-auction-680",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.75,
+          "forecast": null,
+          "previous": 3.65
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.1,
+          "direction": "up"
+        },
+        "group": "auctions",
+        "is_noise": true
       },
       {
         "name": "Atlanta Fed GDPNow  (Q2)",
@@ -2018,7 +4603,23 @@ window.MACRO_DATA = {
         "forecast": "3.0%",
         "previous": "3.0%",
         "event_url": "https://www.investing.com/economic-calendar/atlanta-fed-gdpnow-2260",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.3,
+          "forecast": 3.0,
+          "previous": 3.0
+        },
+        "surprise": {
+          "deviation": 0.3,
+          "z_score": 2.0,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 0.3,
+          "direction": "up"
+        },
+        "group": "other",
+        "is_noise": false
       },
       {
         "name": "EIA Short-Term Energy Outlook",
@@ -2028,7 +4629,16 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": null,
         "event_url": "https://www.investing.com/economic-calendar/eia-short-term-energy-outlook-1986",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "3-Year Note Auction",
@@ -2038,7 +4648,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.965%",
         "event_url": "https://www.investing.com/economic-calendar/3-year-note-auction-681",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.192,
+          "forecast": null,
+          "previous": 3.965
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.227,
+          "direction": "up"
+        },
+        "group": "auctions",
+        "is_noise": true
       },
       {
         "name": "API Weekly Crude Oil Stock",
@@ -2048,7 +4670,23 @@ window.MACRO_DATA = {
         "forecast": "-3.400M",
         "previous": "-6.750M",
         "event_url": "https://www.investing.com/economic-calendar/api-weekly-crude-stock-656",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -9.119,
+          "forecast": -3.4,
+          "previous": -6.75
+        },
+        "surprise": {
+          "deviation": -5.719,
+          "z_score": -33.64,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -2.369,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       }
     ],
     "2026-06-10": [
@@ -2060,7 +4698,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "6.57%",
         "event_url": "https://www.investing.com/economic-calendar/mba-30-year-mortgage-rate-1042",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 6.6,
+          "forecast": null,
+          "previous": 6.57
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.03,
+          "direction": "up"
+        },
+        "group": "mortgage",
+        "is_noise": false
       },
       {
         "name": "MBA Mortgage Applications (WoW)",
@@ -2070,7 +4720,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-2.5%",
         "event_url": "https://www.investing.com/economic-calendar/mba-mortgage-applications-380",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 10.8,
+          "forecast": null,
+          "previous": -2.5
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 13.3,
+          "direction": "up"
+        },
+        "group": "mortgage",
+        "is_noise": false
       },
       {
         "name": "MBA Purchase Index",
@@ -2080,7 +4742,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "164.8",
         "event_url": "https://www.investing.com/economic-calendar/mba-purchase-index-1494",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 176.9,
+          "forecast": null,
+          "previous": 164.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 12.1,
+          "direction": "up"
+        },
+        "group": "mortgage",
+        "is_noise": false
       },
       {
         "name": "Mortgage Market Index",
@@ -2090,7 +4764,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "252.8",
         "event_url": "https://www.investing.com/economic-calendar/mortgage-market-index-1427",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 280.1,
+          "forecast": null,
+          "previous": 252.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 27.3,
+          "direction": "up"
+        },
+        "group": "mortgage",
+        "is_noise": false
       },
       {
         "name": "Mortgage Refinance Index",
@@ -2100,7 +4786,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "736.2",
         "event_url": "https://www.investing.com/economic-calendar/mortgage-refinance-index-1428",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 848.7,
+          "forecast": null,
+          "previous": 736.2
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 112.5,
+          "direction": "up"
+        },
+        "group": "mortgage",
+        "is_noise": false
       },
       {
         "name": "Core CPI (MoM)  (May)",
@@ -2110,7 +4808,23 @@ window.MACRO_DATA = {
         "forecast": "0.3%",
         "previous": "0.4%",
         "event_url": "https://www.investing.com/economic-calendar/core-cpi-56",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.2,
+          "forecast": 0.3,
+          "previous": 0.4
+        },
+        "surprise": {
+          "deviation": -0.1,
+          "z_score": -6.67,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -0.2,
+          "direction": "down"
+        },
+        "group": "cpi",
+        "is_noise": false
       },
       {
         "name": "Core CPI (YoY)  (May)",
@@ -2120,7 +4834,23 @@ window.MACRO_DATA = {
         "forecast": "2.9%",
         "previous": "2.8%",
         "event_url": "https://www.investing.com/economic-calendar/core-cpi-736",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.9,
+          "forecast": 2.9,
+          "previous": 2.8
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.1,
+          "direction": "up"
+        },
+        "group": "cpi",
+        "is_noise": false
       },
       {
         "name": "Core CPI Index  (May)",
@@ -2130,7 +4860,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "335.42",
         "event_url": "https://www.investing.com/economic-calendar/core-cpi-index-1226",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 336.12,
+          "forecast": null,
+          "previous": 335.42
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.7,
+          "direction": "up"
+        },
+        "group": "cpi",
+        "is_noise": false
       },
       {
         "name": "CPI (MoM)  (May)",
@@ -2140,7 +4882,23 @@ window.MACRO_DATA = {
         "forecast": "0.5%",
         "previous": "0.6%",
         "event_url": "https://www.investing.com/economic-calendar/cpi-69",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.5,
+          "forecast": 0.5,
+          "previous": 0.6
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": -0.1,
+          "direction": "down"
+        },
+        "group": "cpi",
+        "is_noise": false
       },
       {
         "name": "CPI (YoY)  (May)",
@@ -2150,7 +4908,23 @@ window.MACRO_DATA = {
         "forecast": "4.2%",
         "previous": "3.8%",
         "event_url": "https://www.investing.com/economic-calendar/cpi-733",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.2,
+          "forecast": 4.2,
+          "previous": 3.8
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.4,
+          "direction": "up"
+        },
+        "group": "cpi",
+        "is_noise": false
       },
       {
         "name": "CPI Index, n.s.a.  (May)",
@@ -2160,7 +4934,23 @@ window.MACRO_DATA = {
         "forecast": "335.11",
         "previous": "333.02",
         "event_url": "https://www.investing.com/economic-calendar/cpi-index,-n.s.a.-1549",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 335.12,
+          "forecast": 335.11,
+          "previous": 333.02
+        },
+        "surprise": {
+          "deviation": 0.01,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 2.1,
+          "direction": "up"
+        },
+        "group": "cpi",
+        "is_noise": false
       },
       {
         "name": "CPI Index, s.a  (May)",
@@ -2170,7 +4960,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "332.41",
         "event_url": "https://www.investing.com/economic-calendar/cpi-index,-s.a-1889",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 333.98,
+          "forecast": null,
+          "previous": 332.41
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 1.57,
+          "direction": "up"
+        },
+        "group": "cpi",
+        "is_noise": false
       },
       {
         "name": "CPI, n.s.a (MoM)  (May)",
@@ -2180,7 +4982,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.85%",
         "event_url": "https://www.investing.com/economic-calendar/cpi,-n.s.a-1888",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.63,
+          "forecast": null,
+          "previous": 0.85
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.22,
+          "direction": "down"
+        },
+        "group": "cpi",
+        "is_noise": false
       },
       {
         "name": "Real Earnings (MoM)  (May)",
@@ -2190,7 +5004,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-0.2%",
         "event_url": "https://www.investing.com/economic-calendar/real-earnings-890",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -0.2,
+          "forecast": null,
+          "previous": -0.2
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.0,
+          "direction": "flat"
+        },
+        "group": "other",
+        "is_noise": false
       },
       {
         "name": "Crude Oil Inventories",
@@ -2200,7 +5026,23 @@ window.MACRO_DATA = {
         "forecast": "-3.000M",
         "previous": "-7.974M",
         "event_url": "https://www.investing.com/economic-calendar/eia-crude-oil-inventories-75",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -7.227,
+          "forecast": -3.0,
+          "previous": -7.974
+        },
+        "surprise": {
+          "deviation": -4.227,
+          "z_score": -28.18,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": 0.747,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "EIA Refinery Crude Runs  (WoW)",
@@ -2210,7 +5052,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-0.090M",
         "event_url": "https://www.investing.com/economic-calendar/eia-refinery-crude-runs-1960",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.081,
+          "forecast": null,
+          "previous": -0.09
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.171,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Crude Oil Imports",
@@ -2220,7 +5074,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-0.249M",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-crude-imports-1658",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.525,
+          "forecast": null,
+          "previous": -0.249
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.774,
+          "direction": "up"
+        },
+        "group": "trade",
+        "is_noise": false
       },
       {
         "name": "Cushing Crude Oil Inventories",
@@ -2230,7 +5096,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-0.583M",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-cushing-oil-inventories-1657",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -0.801,
+          "forecast": null,
+          "previous": -0.583
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.218,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Distillate Fuel Production",
@@ -2240,7 +5118,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.098M",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillate-fuel-production-1660",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.024,
+          "forecast": null,
+          "previous": 0.098
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.074,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "EIA Weekly Distillates Stocks",
@@ -2250,7 +5140,23 @@ window.MACRO_DATA = {
         "forecast": "-0.500M",
         "previous": "1.502M",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillates-stocks-917",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -0.2,
+          "forecast": -0.5,
+          "previous": 1.502
+        },
+        "surprise": {
+          "deviation": 0.3,
+          "z_score": 12.0,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": -1.702,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Gasoline Production",
@@ -2260,7 +5166,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-0.515M",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-gasoline-production-1661",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.296,
+          "forecast": null,
+          "previous": -0.515
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.811,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Heating Oil Stockpiles",
@@ -2270,7 +5188,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.255M",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-heatoil-stock-1659",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -0.246,
+          "forecast": null,
+          "previous": 0.255
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.501,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "EIA Weekly Refinery Utilization Rates (WoW)",
@@ -2280,7 +5210,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.2%",
         "event_url": "https://www.investing.com/economic-calendar/eia-weekly-refinery-utilization-rates-1961",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.6,
+          "forecast": null,
+          "previous": 0.2
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.4,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Gasoline Inventories",
@@ -2290,7 +5232,23 @@ window.MACRO_DATA = {
         "forecast": "-0.500M",
         "previous": "3.364M",
         "event_url": "https://www.investing.com/economic-calendar/gasoline-inventories-485",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.186,
+          "forecast": -0.5,
+          "previous": 3.364
+        },
+        "surprise": {
+          "deviation": 0.686,
+          "z_score": 27.44,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": -3.178,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "OPEC Crude Oil Production Algeria (Barrel)",
@@ -2300,7 +5258,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.97M",
         "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-algeria-(barrel)-1951",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.97,
+          "forecast": null,
+          "previous": 0.97
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.0,
+          "direction": "flat"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "OPEC Crude Oil Production Congo (Barrel)",
@@ -2310,7 +5280,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.26M",
         "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-congo-(barrel)-1954",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.27,
+          "forecast": null,
+          "previous": 0.26
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.01,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "OPEC Crude Oil Production Gabon (Barrel)",
@@ -2320,7 +5302,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.23M",
         "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-gabon-(barrel)-1952",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.22,
+          "forecast": null,
+          "previous": 0.23
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.01,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "OPEC Crude Oil Production Guinea (Barrel)",
@@ -2330,7 +5324,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.05M",
         "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-guinea-(barrel)-1956",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.05,
+          "forecast": null,
+          "previous": 0.05
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.0,
+          "direction": "flat"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "OPEC Crude oil Production Iran (Barrel)",
@@ -2340,7 +5346,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.00M",
         "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-iran-(barrel)-1944",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.0,
+          "forecast": null,
+          "previous": 3.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -1.0,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "OPEC Crude oil Production Iraq (Barrel)",
@@ -2350,7 +5368,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "1.40M",
         "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-iraq-(barrel)-1860",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.56,
+          "forecast": null,
+          "previous": 1.4
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.16,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "OPEC Crude Oil Production Libya (Barrel)",
@@ -2360,7 +5390,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "1.27M",
         "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-libya-(barrel)-1949",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.25,
+          "forecast": null,
+          "previous": 1.27
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.02,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "OPEC Crude oil Production Saudi Arabia (Barrel)",
@@ -2370,7 +5412,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "7.65M",
         "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-saudi-arabia-(barrel)-1945",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 6.5,
+          "forecast": null,
+          "previous": 7.65
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -1.15,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "OPEC Crude oil Production UAE (Barrel)",
@@ -2380,7 +5434,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "2.00M",
         "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-uae-(barrel)-1947",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.1,
+          "forecast": null,
+          "previous": 2.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.1,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "OPEC Crude oil Production Venezuela (Barrel)",
@@ -2390,7 +5456,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "1.10M",
         "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-venezuela-(barrel)-1946",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.13,
+          "forecast": null,
+          "previous": 1.1
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.03,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Cleveland CPI (MoM)  (May)",
@@ -2400,7 +5478,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.4%",
         "event_url": "https://www.investing.com/economic-calendar/cleveland-cpi-887",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.3,
+          "forecast": null,
+          "previous": 0.4
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.1,
+          "direction": "down"
+        },
+        "group": "cpi",
+        "is_noise": false
       },
       {
         "name": "Thomson Reuters IPSOS PCSI  (Jun)",
@@ -2410,7 +5500,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "49.65",
         "event_url": "https://www.investing.com/economic-calendar/thomson-reuters-ipsos-pcsi-1879",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 49.14,
+          "forecast": null,
+          "previous": 49.65
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.51,
+          "direction": "down"
+        },
+        "group": "other",
+        "is_noise": false
       },
       {
         "name": "10-Year Note Auction",
@@ -2420,7 +5522,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "4.468%",
         "event_url": "https://www.investing.com/economic-calendar/10-year-note-auction-571",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.538,
+          "forecast": null,
+          "previous": 4.468
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.07,
+          "direction": "up"
+        },
+        "group": "auctions",
+        "is_noise": true
       },
       {
         "name": "Federal Budget Balance  (May)",
@@ -2430,7 +5544,23 @@ window.MACRO_DATA = {
         "forecast": "-282.9B",
         "previous": "215.0B",
         "event_url": "https://www.investing.com/economic-calendar/federal-budget-balance-369",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -293.0,
+          "forecast": -282.9,
+          "previous": 215.0
+        },
+        "surprise": {
+          "deviation": -10.1,
+          "z_score": -0.71,
+          "label": "below-forecast"
+        },
+        "vs_previous": {
+          "delta": -508.0,
+          "direction": "down"
+        },
+        "group": "fiscal",
+        "is_noise": false
       }
     ],
     "2026-06-11": [
@@ -2442,7 +5572,16 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": null,
         "event_url": "https://www.investing.com/economic-calendar/opec-monthly-report-1673",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "Continuing Jobless Claims",
@@ -2452,7 +5591,23 @@ window.MACRO_DATA = {
         "forecast": "1,780K",
         "previous": "1,771K",
         "event_url": "https://www.investing.com/economic-calendar/continuing-jobless-claims-522",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1795.0,
+          "forecast": 1780.0,
+          "previous": 1771.0
+        },
+        "surprise": {
+          "deviation": 15.0,
+          "z_score": 0.17,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 24.0,
+          "direction": "up"
+        },
+        "group": "jobless_claims",
+        "is_noise": false
       },
       {
         "name": "Core PPI (MoM)  (May)",
@@ -2462,7 +5617,23 @@ window.MACRO_DATA = {
         "forecast": "0.5%",
         "previous": "0.7%",
         "event_url": "https://www.investing.com/economic-calendar/core-ppi-62",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.4,
+          "forecast": 0.5,
+          "previous": 0.7
+        },
+        "surprise": {
+          "deviation": -0.1,
+          "z_score": -4.0,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -0.3,
+          "direction": "down"
+        },
+        "group": "ppi",
+        "is_noise": false
       },
       {
         "name": "Core PPI (YoY)  (May)",
@@ -2472,7 +5643,23 @@ window.MACRO_DATA = {
         "forecast": "5.4%",
         "previous": "4.9%",
         "event_url": "https://www.investing.com/economic-calendar/core-ppi-735",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.9,
+          "forecast": 5.4,
+          "previous": 4.9
+        },
+        "surprise": {
+          "deviation": -0.5,
+          "z_score": -1.85,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": 0.0,
+          "direction": "flat"
+        },
+        "group": "ppi",
+        "is_noise": false
       },
       {
         "name": "Initial Jobless Claims",
@@ -2482,7 +5669,23 @@ window.MACRO_DATA = {
         "forecast": "220K",
         "previous": "225K",
         "event_url": "https://www.investing.com/economic-calendar/initial-jobless-claims-294",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 229.0,
+          "forecast": 220.0,
+          "previous": 225.0
+        },
+        "surprise": {
+          "deviation": 9.0,
+          "z_score": 0.82,
+          "label": "above-forecast"
+        },
+        "vs_previous": {
+          "delta": 4.0,
+          "direction": "up"
+        },
+        "group": "jobless_claims",
+        "is_noise": false
       },
       {
         "name": "Jobless Claims 4-Week Avg.",
@@ -2492,7 +5695,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "214.75K",
         "event_url": "https://www.investing.com/economic-calendar/jobless-claims-4-week-avg.-1041",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 219.0,
+          "forecast": null,
+          "previous": 214.75
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 4.25,
+          "direction": "up"
+        },
+        "group": "jobless_claims",
+        "is_noise": false
       },
       {
         "name": "PPI (MoM)  (May)",
@@ -2502,7 +5717,23 @@ window.MACRO_DATA = {
         "forecast": "0.7%",
         "previous": "1.1%",
         "event_url": "https://www.investing.com/economic-calendar/ppi-238",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.1,
+          "forecast": 0.7,
+          "previous": 1.1
+        },
+        "surprise": {
+          "deviation": 0.4,
+          "z_score": 11.43,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 0.0,
+          "direction": "flat"
+        },
+        "group": "ppi",
+        "is_noise": false
       },
       {
         "name": "PPI (YoY)  (May)",
@@ -2512,7 +5743,23 @@ window.MACRO_DATA = {
         "forecast": "6.4%",
         "previous": "5.7%",
         "event_url": "https://www.investing.com/economic-calendar/ppi-734",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 6.5,
+          "forecast": 6.4,
+          "previous": 5.7
+        },
+        "surprise": {
+          "deviation": 0.1,
+          "z_score": 0.31,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.8,
+          "direction": "up"
+        },
+        "group": "ppi",
+        "is_noise": false
       },
       {
         "name": "PPI ex. Food/Energy/Transport (YoY)  (May)",
@@ -2522,7 +5769,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "4.4%",
         "event_url": "https://www.investing.com/economic-calendar/ppi-ex.-food-energy-trade-2048",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 5.1,
+          "forecast": null,
+          "previous": 4.4
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.7,
+          "direction": "up"
+        },
+        "group": "ppi",
+        "is_noise": false
       },
       {
         "name": "PPI ex. Food/Energy/Transport (MoM)  (May)",
@@ -2532,7 +5791,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.5%",
         "event_url": "https://www.investing.com/economic-calendar/ppi-ex.-food-energy-trade-2049",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.8,
+          "forecast": null,
+          "previous": 0.5
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.3,
+          "direction": "up"
+        },
+        "group": "ppi",
+        "is_noise": false
       },
       {
         "name": "Natural Gas Storage",
@@ -2542,7 +5813,23 @@ window.MACRO_DATA = {
         "forecast": "101B",
         "previous": "95B",
         "event_url": "https://www.investing.com/economic-calendar/natural-gas-storage-386",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 108.0,
+          "forecast": 101.0,
+          "previous": 95.0
+        },
+        "surprise": {
+          "deviation": 7.0,
+          "z_score": 1.39,
+          "label": "above-forecast"
+        },
+        "vs_previous": {
+          "delta": 13.0,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
       },
       {
         "name": "4-Week Bill Auction",
@@ -2552,7 +5839,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.615%",
         "event_url": "https://www.investing.com/economic-calendar/4-week-bill-auction-567",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.595,
+          "forecast": null,
+          "previous": 3.615
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.02,
+          "direction": "down"
+        },
+        "group": "auctions",
+        "is_noise": true
       },
       {
         "name": "8-Week Bill Auction",
@@ -2562,7 +5861,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "3.610%",
         "event_url": "https://www.investing.com/economic-calendar/8-week-bill-auction-1801",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.61,
+          "forecast": null,
+          "previous": 3.61
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.0,
+          "direction": "flat"
+        },
+        "group": "auctions",
+        "is_noise": true
       },
       {
         "name": "WASDE Report",
@@ -2572,7 +5883,16 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": null,
         "event_url": "https://www.investing.com/economic-calendar/wasde-report-1764",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "energy_inventory",
+        "is_noise": true
       }
     ],
     "2026-06-12": [
@@ -2584,7 +5904,23 @@ window.MACRO_DATA = {
         "forecast": "4.9%",
         "previous": "4.8%",
         "event_url": "https://www.investing.com/economic-calendar/michigan-1-year-inflation-expectations-389",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.6,
+          "forecast": 4.9,
+          "previous": 4.8
+        },
+        "surprise": {
+          "deviation": -0.3,
+          "z_score": -1.22,
+          "label": "below-forecast"
+        },
+        "vs_previous": {
+          "delta": -0.2,
+          "direction": "down"
+        },
+        "group": "michigan_sentiment",
+        "is_noise": false
       },
       {
         "name": "Michigan 5-Year Inflation Expectations  (Jun)",
@@ -2594,7 +5930,23 @@ window.MACRO_DATA = {
         "forecast": "3.8%",
         "previous": "3.9%",
         "event_url": "https://www.investing.com/economic-calendar/michigan-5-year-inflation-expectations-1568",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.4,
+          "forecast": 3.8,
+          "previous": 3.9
+        },
+        "surprise": {
+          "deviation": -0.4,
+          "z_score": -2.11,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -0.5,
+          "direction": "down"
+        },
+        "group": "michigan_sentiment",
+        "is_noise": false
       },
       {
         "name": "Michigan Consumer Expectations  (Jun)",
@@ -2604,7 +5956,23 @@ window.MACRO_DATA = {
         "forecast": "44.3",
         "previous": "44.1",
         "event_url": "https://www.investing.com/economic-calendar/michigan-consumer-expectations-900",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 49.3,
+          "forecast": 44.3,
+          "previous": 44.1
+        },
+        "surprise": {
+          "deviation": 5.0,
+          "z_score": 2.26,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 5.2,
+          "direction": "up"
+        },
+        "group": "michigan_sentiment",
+        "is_noise": false
       },
       {
         "name": "Michigan Consumer Sentiment  (Jun)",
@@ -2614,7 +5982,23 @@ window.MACRO_DATA = {
         "forecast": "46.1",
         "previous": "44.8",
         "event_url": "https://www.investing.com/economic-calendar/michigan-consumer-sentiment-320",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 48.9,
+          "forecast": 46.1,
+          "previous": 44.8
+        },
+        "surprise": {
+          "deviation": 2.8,
+          "z_score": 1.21,
+          "label": "above-forecast"
+        },
+        "vs_previous": {
+          "delta": 4.1,
+          "direction": "up"
+        },
+        "group": "michigan_sentiment",
+        "is_noise": false
       },
       {
         "name": "Michigan Current Conditions  (Jun)",
@@ -2624,7 +6008,23 @@ window.MACRO_DATA = {
         "forecast": "46.2",
         "previous": "45.8",
         "event_url": "https://www.investing.com/economic-calendar/michigan-current-conditions-901",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 48.4,
+          "forecast": 46.2,
+          "previous": 45.8
+        },
+        "surprise": {
+          "deviation": 2.2,
+          "z_score": 0.95,
+          "label": "above-forecast"
+        },
+        "vs_previous": {
+          "delta": 2.6,
+          "direction": "up"
+        },
+        "group": "michigan_sentiment",
+        "is_noise": false
       },
       {
         "name": "U.S. Baker Hughes Oil Rig Count",
@@ -2634,7 +6034,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "431",
         "event_url": "https://www.investing.com/economic-calendar/baker-hughes-u.s.-rig-count-1652",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 433.0,
+          "forecast": null,
+          "previous": 431.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 2.0,
+          "direction": "up"
+        },
+        "group": "rig_count",
+        "is_noise": true
       },
       {
         "name": "U.S. Baker Hughes Total Rig Count",
@@ -2644,7 +6056,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "563",
         "event_url": "https://www.investing.com/economic-calendar/u.s.-baker-hughes-total-rig-count-1810",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 562.0,
+          "forecast": null,
+          "previous": 563.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -1.0,
+          "direction": "down"
+        },
+        "group": "rig_count",
+        "is_noise": true
       },
       {
         "name": "CFTC Aluminium speculative net positions",
@@ -2654,7 +6078,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "0.8K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-aluminium-speculative-net-positions-1821",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.4,
+          "forecast": null,
+          "previous": 0.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.4,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Copper speculative net positions",
@@ -2664,7 +6100,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "78.8K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-copper-speculative-positions-1620",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 74.5,
+          "forecast": null,
+          "previous": 78.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -4.3,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Corn speculative net positions",
@@ -2674,7 +6122,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "199.9K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-corn-speculative-positions-1813",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 103.6,
+          "forecast": null,
+          "previous": 199.9
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -96.3,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Crude Oil speculative net positions",
@@ -2684,7 +6144,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "155.9K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-crude-oil-speculative-positions-1653",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 130.3,
+          "forecast": null,
+          "previous": 155.9
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -25.6,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Gold speculative net positions",
@@ -2694,7 +6166,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "176.0K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-gold-speculative-positions-1618",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 173.8,
+          "forecast": null,
+          "previous": 176.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -2.2,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Nasdaq 100 speculative net positions",
@@ -2704,7 +6188,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-14.9K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-nasdaq-100-speculative-positions-1959",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -1.3,
+          "forecast": null,
+          "previous": -14.9
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 13.6,
+          "direction": "up"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Natural Gas speculative net positions",
@@ -2714,7 +6210,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-186.1K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-natural-gas-speculative-positions-1820",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -194.0,
+          "forecast": null,
+          "previous": -186.1
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -7.9,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC S&P 500 speculative net positions",
@@ -2724,7 +6232,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-220.8K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-s-p-500-speculative-positions-1619",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -205.6,
+          "forecast": null,
+          "previous": -220.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 15.2,
+          "direction": "up"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Silver speculative net positions",
@@ -2734,7 +6254,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "23.9K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-silver-speculative-positions-1621",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 22.2,
+          "forecast": null,
+          "previous": 23.9
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -1.7,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Soybeans speculative net positions",
@@ -2744,7 +6276,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "187.8K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-soybeans-speculative-positions-1811",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": 150.5,
+          "forecast": null,
+          "previous": 187.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -37.3,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       },
       {
         "name": "CFTC Wheat speculative net positions",
@@ -2754,7 +6298,19 @@ window.MACRO_DATA = {
         "forecast": null,
         "previous": "-40.8K",
         "event_url": "https://www.investing.com/economic-calendar/cftc-wheat-speculative-positions-1812",
-        "source": "investing.com"
+        "source": "investing.com",
+        "parsed": {
+          "actual": -57.9,
+          "forecast": null,
+          "previous": -40.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -17.1,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
       }
     ],
     "2026-06-13": []
@@ -22316,11 +25872,12 @@ window.MACRO_DATA = {
     {
       "file": "2026-06-12.md",
       "date": "2026-06-12",
-      "surprise_count": "5",
-      "regime_signal": "risk-on",
-      "key_takeaway": "Hôm nay 12/06 chứng kiến bộ số liệu \"Goldilocks\" hoàn hảo từ Đại học Michigan. Kỳ vọng lạm phát 1 năm và 5 năm hạ nhiệt mạnh mẽ (lần lượt xuống 4.6% và 3.4%), trong khi Niềm tin Người tiêu dùng và Điều kiện Hiện tại vượt xa dự báo. Điều này củng cố kịch bản hạ cánh mềm (soft-landing) với sự hỗ trợ đắc lực từ xu hướng giảm áp lực giá cả. Thị trường duy trì tâm lý tích cực, lợi suất trái phiếu 10 năm ổn định quanh mức 4.49%.",
+      "schema_version": "1.1",
+      "surprise_count": "1",
+      "regime_signal": "bounce-relief",
+      "key_takeaway": "Niềm tin tiêu dùng Michigan tháng 6 bật mạnh và kỳ vọng lạm phát rơi sâu — tín hiệu dovish nhẹ, củng cố nhịp hồi của thị trường sau cú VIX spike đầu tháng.",
       "body_preview": "# Vĩ mô Mỹ — 2026-06-12",
-      "body": "# Vĩ mô Mỹ — 2026-06-12\n\n## Tóm tắt\n\nHôm nay ngày 12/06, thị trường đón nhận tin vui lớn từ khảo sát tâm lý người tiêu dùng của Đại học Michigan (UoM). Kết quả công bố cho thấy một kịch bản **Goldilocks hoàn hảo**:\n1. **Kỳ vọng lạm phát trung và dài hạn giảm mạnh**: Kỳ vọng lạm phát 1 năm hạ nhiệt xuống 4.6% (dự báo 4.9%) và kỳ vọng 5 năm giảm mạnh về 3.4% (dự báo 3.8%). Đây là tín hiệu cực kỳ quan trọng giúp củng cố niềm tin của Fed rằng lạm phát đang quay trở lại tầm kiểm soát mà không cần thắt chặt thêm.\n2. **Niềm tin người tiêu dùng bật tăng mạnh mẽ**: Chỉ số Michigan Consumer Sentiment tăng lên 48.9 (vượt xa dự báo 46.1), cùng với Consumer Expectations đạt 49.3 (dự báo 44.3).\n\nSự kết hợp giữa lạm phát kỳ vọng hạ nhiệt và niềm tin tiêu dùng cải thiện là minh chứng rõ nét cho kịch bản **Soft Landing** (Hạ cánh mềm). Phản ứng thị trường duy trì trạng thái **Risk-On**: Lợi suất trái phiếu 10 năm dao động ổn định quanh 4.49%, Dollar Index (DXY) duy trì mốc 99.8, và các nhóm ngành cổ phiếu tăng trưởng tiếp tục thu hút dòng vốn khi rủi ro tăng lãi suất biến mất.\n\n## Chi tiết từng chỉ số (5 releases quan trọng hôm nay)\n\n### Michigan Consumer Sentiment (Jun - Sơ bộ) (Nguồn: UoM / investing.com) — BIG BEAT\n- **Actual:** **48.9** | **Forecast:** **46.1** | **Previous:** **44.8**\n- **Δ:** **+2.8** so với dự báo và **+4.1** so với tháng trước.\n- **Significance:** Thước đo tâm lý tiêu dùng phản ánh góc nhìn của người dân về sức khỏe kinh tế cá nhân và triển vọng chung. Việc chỉ số này tăng mạnh cho thấy sự bi quan cực độ trong giai đoạn trước đang dần được giải tỏa nhờ giá năng lượng (xăng dầu) hạ nhiệt.\n- **Hàm ý:** Tăng trưởng tiêu dùng cá nhân (chiếm 70% GDP) sẽ tiếp tục được giữ vững, loại bỏ lo ngại recession.\n\n### Michigan 1-Year Inflation Expectations (Jun) (Nguồn: UoM) — INFLATION COOLING\n- **Actual:** **4.6%** | **Forecast:** **4.9%** | **Previous:** **4.8%**\n- **Δ:** **-0.3pp** so với dự báo và **-0.2pp** so với tháng trước.\n- **Significance:** Kỳ vọng lạm phát ngắn hạn của người dân. Người dân kỳ vọng lạm phát giảm sẽ giúp kiềm chế hành vi tăng giá từ doanh nghiệp và yêu cầu tăng lương quá mức từ người lao động.\n- **Hàm ý:** Tín hiệu rất Dovish cho Fed, hỗ trợ lộ trình cắt giảm lãi suất trong nửa cuối năm.\n\n### Michigan 5-Year Inflation Expectations (Jun) (Nguồn: UoM) — ANCHOR SECURED\n- **Actual:** **3.4%** | **Forecast:** **3.8%** | **Previous:** **3.9%**\n- **Δ:** **-0.4pp** so với dự báo và **-0.5pp** so với tháng trước.\n- **Significance:** Đây là chỉ số mà Powell và các thành viên FOMC theo dõi sát sao nhất để đánh giá liệu kỳ vọng lạm phát dài hạn có bị \"mất neo\" (de-anchored) hay không. Con số 3.4% hạ nhiệt mạnh mẽ từ mức 3.9% tháng trước chứng tỏ uy tín của Fed trong việc chống lạm phát vẫn rất vững vàng.\n- **Hàm ý:** Cực kỳ Dovish. Rào cản tâm lý lớn nhất của Fed đã được tháo gỡ.\n\n### Michigan Consumer Expectations (Jun) (Nguồn: UoM) — STRONGER FUTURES\n- **Actual:** **49.3** | **Forecast:** **44.3** | **Previous:** **44.1**\n- **Δ:** **+5.0** so với dự báo.\n- **Significance:** Kỳ vọng của người tiêu dùng về triển vọng thu nhập và việc làm trong tương lai gần. Sự bứt phá mạnh mẽ này cho thấy thị trường lao động dù đang hạ nhiệt nhưng vẫn đảm bảo sự an tâm cho người lao động.\n\n### Michigan Current Conditions (Jun) (Nguồn: UoM) — PRESENT IMPROVEMENT\n- **Actual:** **48.4** | **Forecast:** **46.2** | **Previous:** **45.8**\n- **Δ:** **+2.2** so với dự báo.\n- **Significance:** Đánh giá của người dân về điều kiện kinh tế hiện tại. Sự cải thiện này phản ánh thực tế rằng áp lực chi phí sinh hoạt hàng ngày đang dịu đi tương đối.\n\n---\n\n### Các số liệu khác:\n- **U.S. Baker Hughes Oil Rig Count:** Tăng nhẹ thêm 2 giàn lên 433 (so với 431 tuần trước). Hoạt động khai thác thượng nguồn dầu khí Mỹ đi ngang ổn định, chưa có dấu hiệu bùng nổ nguồn cung mới nhưng cũng không suy giảm.\n- **CFTC Positions (Dữ liệu định vị trạng thái):**\n  - **Nasdaq 100:** Tiếp tục giảm vị thế bán ròng (net short) xuống chỉ còn **-1.3K** (từ -14.9K tuần trước). Làn sóng short squeeze/covering tại nhóm công nghệ diễn ra mạnh mẽ khi Tech dẫn đầu đà tăng tuần.\n  - **S&P 500:** Giảm vị thế bán ròng về **-205.6K** (từ -220.8K). Vẫn còn lượng lớn vị thế Short chưa cover, tạo lực đẩy tiềm năng cho thị trường tiếp tục grind-up.\n\n## Bối cảnh xu hướng\n\n- **Yields & VIX:** Lợi suất trái phiếu 10 năm (US10Y) đóng cửa tuần ở mức 4.49%, hạ nhiệt đáng kể sau khi chạm mốc 4.55% đầu tuần. VIX ổn định ở 17.68 phản ánh tâm lý thị trường đã bình ổn trở lại sau volatility event của tuần trước.\n- **DXY & Commodities:** USD Index (DXY) dao động ở 99.8. Giá dầu thô WTI (CL=F) giao dịch quanh $84.3 (giảm mạnh -16.5% trong 1 tháng qua) đóng vai trò then chốt giúp kỳ vọng lạm phát của người tiêu dùng hạ nhiệt rõ rệt. Giá vàng (GC=F) giữ quanh $4235.7.\n- **Sectors:** Nhóm Y tế (XLV +4.84% 1M) và Tài chính (XLF +4.61% 1M) duy trì đà dẫn dắt dòng tiền. Công nghệ (XLK +4.50% 1M) đang nỗ lực phục hồi và thiết lập vùng tích lũy (stalking) sau phiên bùng nổ relief rally ngày hôm qua.\n\n## Conviction calls — UPDATE 06-12\n\n| Sector | Stance 06-11 | NOW (06-12) | Reasoning |\n|---|---|---|---|\n| **XLK Technology** | Neutral → Stalking | **Stalking / Light OW** | Kỳ vọng lạm phát hạ nhiệt là động lực lớn nhất giải tỏa áp lực định giá cho Tech. Sẵn sàng giải ngân từng phần. |\n| **XLV Healthcare** | Overweight CONFIRMED | **Overweight CONFIRMED** | Tiếp tục duy trì hiệu suất dẫn đầu tuyệt đối (+4.84% 1M). Core defensive của danh mục. |\n| **XLE Energy** | Light OW → Neutral | **Neutral** | Giá dầu WTI giữ quanh $84.3, áp lực chốt lời ngắn hạn vẫn còn khi dòng tiền xoay vòng về các nhóm tăng trưởng và tài chính. |\n| **XLF Financials** | Neutral GIỮ | **Neutral → Light OW** | Niềm tin tiêu dùng tốt và rủi ro recession biến mất giúp củng cố danh mục cho vay của khối ngân hàng. |\n| **XLI Industrials** | Neutral → Light OW | **Light OW** | Khớp với kịch bản soft-landing, sản xuất phục hồi trong khi chi phí vốn không bị tăng thêm áp lực. |\n\n## Bottom line\n\nTuần giao dịch khép lại với bộ đôi chất xúc tác cực kỳ chất lượng: **Core PPI hạ nhiệt sâu (11/06)** và **Kỳ vọng lạm phát UoM giảm mạnh (12/06)**. Cơn ác mộng \"lạm phát quay trở lại\" chính thức tạm thời tan biến. Kịch bản Goldilocks/Soft Landing đang chiếm lĩnh hoàn toàn narrative của thị trường. Chiến lược tối ưu hiện tại là gia tăng nhẹ tỷ trọng **Tech (XLK)** ở các vùng tích lũy, song song với việc nắm giữ các nhóm ngành chu kỳ khỏe như **Công nghiệp (XLI)** và defensive core **Y tế (XLV)**."
+      "body": "# Vĩ mô Mỹ — 2026-06-12\n\n## Tóm tắt\nNgày 12/06 chỉ có một nhóm chỉ số \"signal\" duy nhất: **khảo sát Đại học Michigan (sơ bộ tháng 6)**. Kết quả tích cực toàn diện — niềm tin tiêu dùng và kỳ vọng (Expectations) bật mạnh khỏi vùng đáy, trong khi **kỳ vọng lạm phát 1 năm và 5 năm rơi sâu** (5Y về 3.4%, shock-below). Đây là combo dovish-thân-thiện-rủi-ro: consumer bớt bi quan + áp lực kỳ vọng lạm phát hạ nhiệt giúp Fed có thêm dư địa. Bối cảnh cross-asset cùng chiều: 10Y yield giảm về 4.45%, breakeven 10Y rơi xuống 2.29%, VIX hạ nhiệt từ 22.2 về 19.4. Phần còn lại trong ngày là CFTC positions và Baker Hughes rig count — đều là nhiễu, không có forecast.\n\n## Chi tiết từng chỉ số\n\n### Michigan Consumer Survey (sơ bộ Jun) — ABOVE-FORECAST (1 surprise nhóm)\n**Headline Sentiment:** 48.9 | Forecast: 46.1 | Previous: 44.8 (z = +1.21, above-forecast)\n\nKhảo sát Michigan tháng 6 (sơ bộ) tốt hơn dự báo trên gần như mọi cấu phần. Điểm đáng chú ý nhất không phải headline mà là **kỳ vọng lạm phát giảm mạnh** — yếu tố Fed theo dõi sát vì nó phản ánh mức độ \"neo\" của lạm phát trong tâm lý hộ gia đình.\n\n**Phân tích sub-components (tất cả từ investing.com releases — nhóm `michigan_sentiment`):**\n| Thành phần | Actual | Forecast | Previous | z-score / label | Nhận xét |\n|---|---|---|---|---|---|\n| Consumer Sentiment (headline) | 48.9 | 46.1 | 44.8 | +1.21 / above-forecast | Bật khỏi đáy nhưng vẫn ở vùng suy thoái lịch sử (<50) |\n| Consumer Expectations | 49.3 | 44.3 | 44.1 | +2.26 / **shock-above** | Cấu phần forward-looking — nhảy +5.2 điểm, mạnh nhất bảng |\n| Current Conditions | 48.4 | 46.2 | 45.8 | +0.95 / above-forecast | Đánh giá hiện tại cải thiện vừa phải |\n| 1-Year Inflation Expectations | 4.6% | 4.9% | 4.8% | -1.22 / below-forecast | Kỳ vọng ngắn hạn hạ nhiệt — dovish |\n| 5-Year Inflation Expectations | 3.4% | 3.8% | 3.9% | -2.11 / **shock-below** | Kỳ vọng dài hạn rơi sâu — tín hiệu \"neo\" tốt cho Fed |\n\n**Cái gì đang cải thiện?** Cả hai trục đều chuyển tích cực: tâm lý (sentiment/expectations bật lên) và kỳ vọng giá (inflation expectations giảm). Cấu phần Expectations shock-above +5 điểm cho thấy hộ gia đình bớt lo về triển vọng 6-12 tháng tới — thường đi trước cải thiện chi tiêu thực. Đồng thời, **kỳ vọng lạm phát 5 năm 3.4%** (giảm 0.5 điểm so với kỳ trước) là điểm Fed mong muốn nhất: lạm phát kỳ vọng dài hạn không bị \"de-anchor\" dù lạm phát thực tế (CPI YoY 4.27%, PCE YoY 3.77%) vẫn cao.\n\n**Lưu ý quan trọng — đây là khảo sát soft-data, không phải hard-data.** Series FRED `UMCSENT` mới nhất (tháng 4) là 49.8 và đang trong xu hướng giảm dài hạn (từ ~70 cuối 2024). Con số sơ bộ tháng 6 = 48.9 đánh dấu **lần bật đầu tiên sau chuỗi giảm**, nhưng vẫn nằm sâu dưới vùng trung tính (~70-80). Nói cách khác: tốt hơn kỳ vọng, nhưng tuyệt đối vẫn yếu.\n\n**Hàm ý Fed:** Dovish nhẹ. Kỳ vọng lạm phát hạ (đặc biệt 5Y shock-below) giảm rủi ro vòng xoáy giá-lương; Fed có thêm tự tin rằng inflation expectations vẫn neo. Tuy nhiên đây chỉ là 1 điểm dữ liệu mềm — chưa đủ thay đổi lộ trình. Fed Funds vẫn 3.62%.\n\n**Hàm ý thị trường:** Risk-on nhẹ. Consumer-facing sectors (XLY discretionary) hưởng lợi từ tín hiệu tâm lý cải thiện; tín hiệu inflation-expectations giảm tốt cho duration (REITs, growth/tech) và đồng pha với việc yields giảm trong ngày.\n\n### Nhiễu trong ngày (is_noise = true, không có forecast)\n- **Baker Hughes Rig Count:** Oil rigs 433 (+2), Total 562 (-1). Gần như đi ngang — không tín hiệu nguồn cung dầu mới đáng kể. WTI quanh 95 USD.\n- **CFTC speculative net positions (tuần):** Đáng chú ý ở positioning rủi ro — **Nasdaq 100 net short thu hẹp mạnh** (-14.9K → -1.3K) và **S&P 500 net short cũng thu hẹp** (-220.8K → -205.6K), cho thấy giới đầu cơ giảm đặt cược giảm giá vào equity — đồng pha bounce-relief. Hàng hóa nông sản (Corn -96K, Soybeans -37K) và Crude (-25.6K) bị cắt giảm net long mạnh. Gold gần như giữ nguyên (173.8K). Đây là dữ liệu vị thế, chỉ tham khảo bối cảnh.\n\n## Conviction calls (cross-asset, mức độ tin cậy)\n| Tín hiệu | Hướng | Conviction | Cơ sở |\n|---|---|---|---|\n| Duration / growth (REITs, tech) | Tích cực | Trung bình | Breakeven 10Y 2.29% + Michigan 5Y inflation exp 3.4% cùng giảm; 10Y yield -10bp về 4.45% |\n| Consumer discretionary (XLY) | Tích cực nhẹ | Thấp-TB | Sentiment + Expectations bật khỏi đáy, nhưng tuyệt đối vẫn <50 (vùng yếu) |\n| Equity beta nói chung | Tích cực nhẹ | Thấp | VIX 22.2→19.4, CFTC index net short thu hẹp, HY spread ổn định 2.78% |\n| Cược \"Fed dovish hẳn\" | Trung lập | Thấp | Survey dovish nhưng hard-data (CPI 4.27%, Core PCE 3M ann 3.78%) chưa xác nhận |\n\n## Bối cảnh xu hướng (so với 30 ngày qua)\n- **Niềm tin tiêu dùng:** `UMCSENT` đã giảm liên tục từ tháng 1 (56.4) xuống tháng 4 (49.8). Số sơ bộ tháng 6 = 48.9 là **lần đảo chiều tích cực đầu tiên** — cần bản final + tháng 7 để xác nhận có phải regime shift hay chỉ nhiễu.\n- **Kỳ vọng lạm phát hạ nhiệt đồng pha thị trường:** Breakeven 10Y (`T10YIE`) giảm từ ~2.47% giữa tháng 5 xuống 2.29% (11/06); Michigan 5Y inflation expectations cũng rơi xuống 3.4%. Hai nguồn dữ liệu (market-based + survey-based) cùng chỉ xuống — củng cố luận điểm áp lực kỳ vọng lạm phát đang dịu.\n- **Rủi ro hạ nhiệt:** VIX từ đỉnh 22.2 (10/06) về 19.4; HY credit spread (`BAMLH0A0HYM2`) ổn định quanh 2.78%, IG spread đi ngang 0.75% — không có dấu hiệu stress tín dụng. 10Y-2Y vẫn dương (+0.40), đường cong không đảo ngược.\n- **Mâu thuẫn cần theo dõi:** Lạm phát hard-data vẫn nóng — CPI YoY 4.27%, Core CPI 2.96%, PPI All Commodities YoY +13%, Core PCE 3M annualized 3.78%. Survey dovish nhưng hard-data chưa xác nhận đường về 2%.\n\n## Cảnh báo & catalyst sắp tới\n- **Michigan final tháng 6** (cuối tháng): xác nhận liệu cú bật sơ bộ có giữ được, đặc biệt là số 5Y inflation expectations 3.4% — nếu final điều chỉnh lên lại sẽ làm loãng tín hiệu dovish.\n- **CPI/PPI tháng 5-6 sắp công bố:** đây mới là hard-data quyết định lộ trình Fed. Với CPI YoY 4.27% và PPI commodities tăng nóng, một bản CPI nóng có thể đảo ngược toàn bộ tâm lý dovish từ survey hôm nay.\n- **Core PCE (Fed #1 target):** YoY 3.29%, 3M annualized 3.78% — vẫn xa mục tiêu 2%. Bản tiếp theo là test quan trọng cho kỳ vọng cắt lãi suất.\n- **Theo dõi VIX & credit spreads:** nếu VIX tiếp tục hạ dưới 16 và HY spread giữ thấp, nhịp bounce-relief có thể chuyển thành risk-on bền hơn; ngược lại một cú CPI nóng dễ kéo VIX vượt 22 trở lại.\n\n---\n*Nguồn: investing.com (releases Michigan, CFTC, Baker Hughes); FRED fred_snapshot (UMCSENT, CPIAUCSL, CPILFESL, PCEPILFE, T10YIE, VIXCLS, DGS10, DGS2, BAMLH0A0HYM2). Các nhãn surprise/z-score lấy nguyên từ field `surprise` đã chấm sẵn trong raw JSON.*"
     },
     {
       "file": "2026-06-13.md",

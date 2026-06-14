@@ -26,6 +26,28 @@ Mỗi FRED series trong `fred_snapshot` đã có:
 
 **Dùng các metric đã có thay vì tự compute**: vd CPI YoY = `fred.CPIAUCSL.yoy_pct`, không cần đọc 12 obs lịch sử.
 
+## Enriched fields trong releases (TẤT ĐỊNH — bắt buộc dùng, KHÔNG tự bịa)
+
+Mỗi release trong `releases[]` đã được code chấm sẵn — **dùng nguyên, đừng tự đánh giá lại**:
+- `parsed`: `{actual, forecast, previous}` đã parse thành số (xử lý %, K, M, dấu phẩy).
+- `surprise`: `{deviation, z_score, label}` — label ∈ {`in-line`, `above-forecast`, `below-forecast`, `shock-above`, `shock-below`}. **Đây là hướng so với forecast, CHƯA phải tốt/xấu** — bạn tự suy good/bad theo loại chỉ số (CPI above = xấu; NFP above = tốt).
+- `vs_previous`: `{delta, direction}` so với kỳ trước.
+- `group`: nhóm chỉ số (vd `michigan_sentiment`, `jobs_report`, `cpi`). **Tất cả release cùng `group` → gộp 1 section.**
+- `is_noise`: `true` = chỉ số nhiễu (CFTC, rig count, EIA, auctions) → chỉ ghi 2-3 dòng, không bảng.
+
+Block `release_summary` ở đầu JSON có:
+- `surprise_count`: **con số CHÍNH XÁC phải copy vào frontmatter** (đã dedupe theo group — 5 dòng Michigan = 1 surprise, KHÔNG phải 5).
+- `groups_present`: tất cả nhóm signal — **mỗi nhóm PHẢI có 1 section trong báo cáo**.
+- `signal_release_count` / `noise_release_count`.
+
+## BẮT BUỘC sau khi viết xong
+
+Chạy validator và sửa đến khi PASS:
+```
+python scripts/validate_report.py <date>
+```
+Nó kiểm tra: frontmatter đủ field, `surprise_count` khớp raw, regime_signal hợp lệ, và **mọi nhóm signal đều được phân tích**. Nếu FAIL → sửa báo cáo, chạy lại. KHÔNG nộp báo cáo khi còn ERROR.
+
 ## Nguyên tắc nhóm chỉ số khi phân tích
 
 Investing.com trả về **mỗi sub-indicator là một dòng riêng** trong `releases`. Khi viết báo cáo, **GOM CÁC DÒNG LIÊN QUAN VÀO MỘT SECTION**, không viết mỗi dòng một section riêng.
@@ -286,11 +308,10 @@ key_takeaway: <1 câu tóm tắt>
 
 ## Quy tắc phân tích chung
 
-**Đánh giá surprise:**
-- Tính z-score thô: `(actual - forecast) / |forecast * 0.05|` (xấp xỉ).
-- |z| < 0.5 → "in-line"
-- 0.5 ≤ |z| < 1.5 → "beat"/"miss" nhẹ
-- |z| ≥ 1.5 → "shock beat"/"shock miss"
+**Đánh giá surprise:** ĐỪNG tự tính z-score — đọc `release.surprise.z_score` và `release.surprise.label` đã chấm sẵn. Việc của bạn là dịch `label` (above/below-forecast) sang **tốt/xấu theo loại chỉ số**:
+- Lạm phát (CPI/PPI/PCE) above-forecast → hawkish/xấu cho equities.
+- Lao động (NFP) / tăng trưởng (GDP/ISM/Retail) above-forecast → tốt cho growth (nhưng cân nhắc hawkish nếu quá nóng).
+- Jobless Claims above-forecast → labor yếu → dovish.
 
 **Map chỉ số → tín hiệu:**
 - CPI/PCE cao hơn dự kiến → hawkish Fed → USD↑, yields↑, equities↓ (đặc biệt growth/tech).

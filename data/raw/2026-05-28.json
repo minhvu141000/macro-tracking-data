@@ -10,7 +10,23 @@
       "forecast": "5.8%",
       "previous": "-11.4%",
       "event_url": "https://www.investing.com/economic-calendar/building-permits-885",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 4.4,
+        "forecast": 5.8,
+        "previous": -11.4
+      },
+      "surprise": {
+        "deviation": -1.4,
+        "z_score": -4.83,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": 15.8,
+        "direction": "up"
+      },
+      "group": "housing_starts",
+      "is_noise": false
     },
     {
       "name": "Building Permits  (Apr)",
@@ -20,7 +36,23 @@
       "forecast": "1.442M",
       "previous": "1.363M",
       "event_url": "https://www.investing.com/economic-calendar/building-permits-25",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1.423,
+        "forecast": 1.442,
+        "previous": 1.363
+      },
+      "surprise": {
+        "deviation": -0.019,
+        "z_score": -0.26,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 0.06,
+        "direction": "up"
+      },
+      "group": "housing_starts",
+      "is_noise": false
     },
     {
       "name": "Continuing Jobless Claims",
@@ -30,7 +62,23 @@
       "forecast": "1,780K",
       "previous": "1,771K",
       "event_url": "https://www.investing.com/economic-calendar/continuing-jobless-claims-522",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1786.0,
+        "forecast": 1780.0,
+        "previous": 1771.0
+      },
+      "surprise": {
+        "deviation": 6.0,
+        "z_score": 0.07,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 15.0,
+        "direction": "up"
+      },
+      "group": "jobless_claims",
+      "is_noise": false
     },
     {
       "name": "Core Durable Goods Orders (MoM)  (Apr)",
@@ -40,7 +88,23 @@
       "forecast": "0.5%",
       "previous": "1.1%",
       "event_url": "https://www.investing.com/economic-calendar/core-durable-goods-orders-59",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1.1,
+        "forecast": 0.5,
+        "previous": 1.1
+      },
+      "surprise": {
+        "deviation": 0.6,
+        "z_score": 24.0,
+        "label": "shock-above"
+      },
+      "vs_previous": {
+        "delta": 0.0,
+        "direction": "flat"
+      },
+      "group": "durable_goods",
+      "is_noise": false
     },
     {
       "name": "Core PCE Price Index (MoM)  (Apr)",
@@ -50,7 +114,23 @@
       "forecast": "0.3%",
       "previous": "0.3%",
       "event_url": "https://www.investing.com/economic-calendar/core-pce-price-index-61",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.2,
+        "forecast": 0.3,
+        "previous": 0.3
+      },
+      "surprise": {
+        "deviation": -0.1,
+        "z_score": -6.67,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -0.1,
+        "direction": "down"
+      },
+      "group": "pce_inflation",
+      "is_noise": false
     },
     {
       "name": "Core PCE Price Index (YoY)  (Apr)",
@@ -60,7 +140,23 @@
       "forecast": "3.3%",
       "previous": "3.2%",
       "event_url": "https://www.investing.com/economic-calendar/core-pce-price-index-905",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.3,
+        "forecast": 3.3,
+        "previous": 3.2
+      },
+      "surprise": {
+        "deviation": 0.0,
+        "z_score": 0.0,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 0.1,
+        "direction": "up"
+      },
+      "group": "pce_inflation",
+      "is_noise": false
     },
     {
       "name": "Core PCE Prices  (Q1)",
@@ -70,7 +166,23 @@
       "forecast": "4.30%",
       "previous": "2.70%",
       "event_url": "https://www.investing.com/economic-calendar/core-pce-prices-1548",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 4.4,
+        "forecast": 4.3,
+        "previous": 2.7
+      },
+      "surprise": {
+        "deviation": 0.1,
+        "z_score": 0.47,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 1.7,
+        "direction": "up"
+      },
+      "group": "pce_inflation",
+      "is_noise": false
     },
     {
       "name": "Corporate Profits (QoQ)  (Q1)",
@@ -80,7 +192,23 @@
       "forecast": "5.7%",
       "previous": "4.7%",
       "event_url": "https://www.investing.com/economic-calendar/corporate-profits-1315",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -0.4,
+        "forecast": 5.7,
+        "previous": 4.7
+      },
+      "surprise": {
+        "deviation": -6.1,
+        "z_score": -21.4,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -5.1,
+        "direction": "down"
+      },
+      "group": "gdp",
+      "is_noise": false
     },
     {
       "name": "Durable Goods Orders (MoM)  (Apr)",
@@ -90,7 +218,23 @@
       "forecast": "4.0%",
       "previous": "1.3%",
       "event_url": "https://www.investing.com/economic-calendar/durable-goods-orders-86",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 7.9,
+        "forecast": 4.0,
+        "previous": 1.3
+      },
+      "surprise": {
+        "deviation": 3.9,
+        "z_score": 19.5,
+        "label": "shock-above"
+      },
+      "vs_previous": {
+        "delta": 6.6,
+        "direction": "up"
+      },
+      "group": "durable_goods",
+      "is_noise": false
     },
     {
       "name": "Durables Excluding Defense (MoM)  (Apr)",
@@ -100,7 +244,19 @@
       "forecast": null,
       "previous": "-0.3%",
       "event_url": "https://www.investing.com/economic-calendar/durables-excluding-defense-1446",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 8.1,
+        "forecast": null,
+        "previous": -0.3
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 8.4,
+        "direction": "up"
+      },
+      "group": "durable_goods",
+      "is_noise": false
     },
     {
       "name": "GDP (QoQ)  (Q1)",
@@ -110,7 +266,23 @@
       "forecast": "2.0%",
       "previous": "0.5%",
       "event_url": "https://www.investing.com/economic-calendar/gdp-375",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1.6,
+        "forecast": 2.0,
+        "previous": 0.5
+      },
+      "surprise": {
+        "deviation": -0.4,
+        "z_score": -4.0,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": 1.1,
+        "direction": "up"
+      },
+      "group": "gdp",
+      "is_noise": false
     },
     {
       "name": "GDP Price Index (QoQ)  (Q1)",
@@ -120,7 +292,23 @@
       "forecast": "3.6%",
       "previous": "3.6%",
       "event_url": "https://www.investing.com/economic-calendar/gdp-price-index-343",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.5,
+        "forecast": 3.6,
+        "previous": 3.6
+      },
+      "surprise": {
+        "deviation": -0.1,
+        "z_score": -0.56,
+        "label": "below-forecast"
+      },
+      "vs_previous": {
+        "delta": -0.1,
+        "direction": "down"
+      },
+      "group": "gdp",
+      "is_noise": false
     },
     {
       "name": "GDP Sales  (Q1)",
@@ -130,7 +318,23 @@
       "forecast": "1.6%",
       "previous": "0.3%",
       "event_url": "https://www.investing.com/economic-calendar/gdp-sales-1468",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1.5,
+        "forecast": 1.6,
+        "previous": 0.3
+      },
+      "surprise": {
+        "deviation": -0.1,
+        "z_score": -1.25,
+        "label": "below-forecast"
+      },
+      "vs_previous": {
+        "delta": 1.2,
+        "direction": "up"
+      },
+      "group": "gdp",
+      "is_noise": false
     },
     {
       "name": "Goods Orders Non Defense Ex Air (MoM)  (Apr)",
@@ -140,7 +344,23 @@
       "forecast": "0.4%",
       "previous": "3.9%",
       "event_url": "https://www.investing.com/economic-calendar/goods-orders-non-defense-ex-air-1047",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -1.1,
+        "forecast": 0.4,
+        "previous": 3.9
+      },
+      "surprise": {
+        "deviation": -1.5,
+        "z_score": -75.0,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -5.0,
+        "direction": "down"
+      },
+      "group": "durable_goods",
+      "is_noise": false
     },
     {
       "name": "Initial Jobless Claims",
@@ -150,7 +370,23 @@
       "forecast": "211K",
       "previous": "210K",
       "event_url": "https://www.investing.com/economic-calendar/initial-jobless-claims-294",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 215.0,
+        "forecast": 211.0,
+        "previous": 210.0
+      },
+      "surprise": {
+        "deviation": 4.0,
+        "z_score": 0.38,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 5.0,
+        "direction": "up"
+      },
+      "group": "jobless_claims",
+      "is_noise": false
     },
     {
       "name": "Jobless Claims 4-Week Avg.",
@@ -160,7 +396,23 @@
       "forecast": "211.00K",
       "previous": "202.75K",
       "event_url": "https://www.investing.com/economic-calendar/jobless-claims-4-week-avg.-1041",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 209.0,
+        "forecast": 211.0,
+        "previous": 202.75
+      },
+      "surprise": {
+        "deviation": -2.0,
+        "z_score": -0.19,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 6.25,
+        "direction": "up"
+      },
+      "group": "jobless_claims",
+      "is_noise": false
     },
     {
       "name": "PCE price index (MoM)  (Apr)",
@@ -170,7 +422,23 @@
       "forecast": "0.5%",
       "previous": "0.7%",
       "event_url": "https://www.investing.com/economic-calendar/pce-price-index-904",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.4,
+        "forecast": 0.5,
+        "previous": 0.7
+      },
+      "surprise": {
+        "deviation": -0.1,
+        "z_score": -4.0,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -0.3,
+        "direction": "down"
+      },
+      "group": "pce_inflation",
+      "is_noise": false
     },
     {
       "name": "PCE Price index (YoY)  (Apr)",
@@ -180,7 +448,23 @@
       "forecast": "3.8%",
       "previous": "3.5%",
       "event_url": "https://www.investing.com/economic-calendar/pce-price-index-906",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.8,
+        "forecast": 3.8,
+        "previous": 3.5
+      },
+      "surprise": {
+        "deviation": 0.0,
+        "z_score": 0.0,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 0.3,
+        "direction": "up"
+      },
+      "group": "pce_inflation",
+      "is_noise": false
     },
     {
       "name": "PCE Prices  (Q1)",
@@ -190,7 +474,23 @@
       "forecast": "4.5%",
       "previous": "2.9%",
       "event_url": "https://www.investing.com/economic-calendar/pce-prices-1571",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 4.5,
+        "forecast": 4.5,
+        "previous": 2.9
+      },
+      "surprise": {
+        "deviation": 0.0,
+        "z_score": 0.0,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 1.6,
+        "direction": "up"
+      },
+      "group": "pce_inflation",
+      "is_noise": false
     },
     {
       "name": "Personal Income (MoM)  (Apr)",
@@ -200,7 +500,23 @@
       "forecast": "0.4%",
       "previous": "0.5%",
       "event_url": "https://www.investing.com/economic-calendar/personal-income-234",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.0,
+        "forecast": 0.4,
+        "previous": 0.5
+      },
+      "surprise": {
+        "deviation": -0.4,
+        "z_score": -20.0,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -0.5,
+        "direction": "down"
+      },
+      "group": "income_spending",
+      "is_noise": false
     },
     {
       "name": "Personal Spending (MoM)  (Apr)",
@@ -210,7 +526,23 @@
       "forecast": "0.5%",
       "previous": "1.0%",
       "event_url": "https://www.investing.com/economic-calendar/personal-spending-235",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.5,
+        "forecast": 0.5,
+        "previous": 1.0
+      },
+      "surprise": {
+        "deviation": 0.0,
+        "z_score": 0.0,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": -0.5,
+        "direction": "down"
+      },
+      "group": "income_spending",
+      "is_noise": false
     },
     {
       "name": "Real Consumer Spending  (Q1)",
@@ -220,7 +552,23 @@
       "forecast": "1.6%",
       "previous": "1.9%",
       "event_url": "https://www.investing.com/economic-calendar/real-consumer-spending-914",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1.4,
+        "forecast": 1.6,
+        "previous": 1.9
+      },
+      "surprise": {
+        "deviation": -0.2,
+        "z_score": -2.5,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -0.5,
+        "direction": "down"
+      },
+      "group": "income_spending",
+      "is_noise": false
     },
     {
       "name": "Real Personal Consumption (MoM)  (Apr)",
@@ -230,7 +578,19 @@
       "forecast": null,
       "previous": "0.3%",
       "event_url": "https://www.investing.com/economic-calendar/real-personal-consumption-895",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.1,
+        "forecast": null,
+        "previous": 0.3
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.2,
+        "direction": "down"
+      },
+      "group": "income_spending",
+      "is_noise": false
     },
     {
       "name": "FOMC Member Williams Speaks",
@@ -240,7 +600,16 @@
       "forecast": null,
       "previous": null,
       "event_url": "https://www.investing.com/economic-calendar/fomc-member-williams-speaks-1585",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     },
     {
       "name": "New Home Sales  (Apr)",
@@ -250,7 +619,23 @@
       "forecast": "661K",
       "previous": "663K",
       "event_url": "https://www.investing.com/economic-calendar/new-home-sales-222",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 622.0,
+        "forecast": 661.0,
+        "previous": 663.0
+      },
+      "surprise": {
+        "deviation": -39.0,
+        "z_score": -1.18,
+        "label": "below-forecast"
+      },
+      "vs_previous": {
+        "delta": -41.0,
+        "direction": "down"
+      },
+      "group": "home_sales",
+      "is_noise": false
     },
     {
       "name": "New Home Sales (MoM)  (Apr)",
@@ -260,7 +645,19 @@
       "forecast": null,
       "previous": "3.4%",
       "event_url": "https://www.investing.com/economic-calendar/new-home-sales-896",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -6.2,
+        "forecast": null,
+        "previous": 3.4
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -9.6,
+        "direction": "down"
+      },
+      "group": "home_sales",
+      "is_noise": false
     },
     {
       "name": "Natural Gas Storage",
@@ -270,7 +667,23 @@
       "forecast": "96B",
       "previous": "101B",
       "event_url": "https://www.investing.com/economic-calendar/natural-gas-storage-386",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 92.0,
+        "forecast": 96.0,
+        "previous": 101.0
+      },
+      "surprise": {
+        "deviation": -4.0,
+        "z_score": -0.83,
+        "label": "below-forecast"
+      },
+      "vs_previous": {
+        "delta": -9.0,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "4-Week Bill Auction",
@@ -280,7 +693,19 @@
       "forecast": null,
       "previous": "3.610%",
       "event_url": "https://www.investing.com/economic-calendar/4-week-bill-auction-567",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.63,
+        "forecast": null,
+        "previous": 3.61
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.02,
+        "direction": "up"
+      },
+      "group": "auctions",
+      "is_noise": true
     },
     {
       "name": "8-Week Bill Auction",
@@ -290,7 +715,19 @@
       "forecast": null,
       "previous": "3.600%",
       "event_url": "https://www.investing.com/economic-calendar/8-week-bill-auction-1801",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.615,
+        "forecast": null,
+        "previous": 3.6
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.015,
+        "direction": "up"
+      },
+      "group": "auctions",
+      "is_noise": true
     },
     {
       "name": "Atlanta Fed GDPNow  (Q2)",
@@ -300,7 +737,23 @@
       "forecast": "4.3%",
       "previous": "4.3%",
       "event_url": "https://www.investing.com/economic-calendar/atlanta-fed-gdpnow-2260",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.8,
+        "forecast": 4.3,
+        "previous": 4.3
+      },
+      "surprise": {
+        "deviation": -0.5,
+        "z_score": -2.33,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -0.5,
+        "direction": "down"
+      },
+      "group": "other",
+      "is_noise": false
     },
     {
       "name": "Dallas Fed PCE  (Apr)",
@@ -310,7 +763,19 @@
       "forecast": null,
       "previous": "2.90%",
       "event_url": "https://www.investing.com/economic-calendar/dallas-fed-pce-1550",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 2.5,
+        "forecast": null,
+        "previous": 2.9
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.4,
+        "direction": "down"
+      },
+      "group": "regional_fed",
+      "is_noise": false
     },
     {
       "name": "Crude Oil Inventories",
@@ -320,7 +785,23 @@
       "forecast": "-3.800M",
       "previous": "-7.863M",
       "event_url": "https://www.investing.com/economic-calendar/eia-crude-oil-inventories-75",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -3.327,
+        "forecast": -3.8,
+        "previous": -7.863
+      },
+      "surprise": {
+        "deviation": 0.473,
+        "z_score": 2.49,
+        "label": "shock-above"
+      },
+      "vs_previous": {
+        "delta": 4.536,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "EIA Refinery Crude Runs  (WoW)",
@@ -330,7 +811,19 @@
       "forecast": null,
       "previous": "-0.080M",
       "event_url": "https://www.investing.com/economic-calendar/eia-refinery-crude-runs-1960",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.652,
+        "forecast": null,
+        "previous": -0.08
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.732,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Crude Oil Imports",
@@ -340,7 +833,19 @@
       "forecast": null,
       "previous": "0.003M",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-crude-imports-1658",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.36,
+        "forecast": null,
+        "previous": 0.003
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.357,
+        "direction": "up"
+      },
+      "group": "trade",
+      "is_noise": false
     },
     {
       "name": "Cushing Crude Oil Inventories",
@@ -350,7 +855,19 @@
       "forecast": null,
       "previous": "-1.604M",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-cushing-oil-inventories-1657",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -2.794,
+        "forecast": null,
+        "previous": -1.604
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -1.19,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Distillate Fuel Production",
@@ -360,7 +877,19 @@
       "forecast": null,
       "previous": "0.214M",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillate-fuel-production-1660",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.076,
+        "forecast": null,
+        "previous": 0.214
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.138,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "EIA Weekly Distillates Stocks",
@@ -370,7 +899,23 @@
       "forecast": "-1.000M",
       "previous": "0.372M",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillates-stocks-917",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -2.107,
+        "forecast": -1.0,
+        "previous": 0.372
+      },
+      "surprise": {
+        "deviation": -1.107,
+        "z_score": -22.14,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -2.479,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Gasoline Production",
@@ -380,7 +925,19 @@
       "forecast": null,
       "previous": "-0.446M",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-gasoline-production-1661",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.6,
+        "forecast": null,
+        "previous": -0.446
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 1.046,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Heating Oil Stockpiles",
@@ -390,7 +947,19 @@
       "forecast": null,
       "previous": "0.021M",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-heatoil-stock-1659",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.306,
+        "forecast": null,
+        "previous": 0.021
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.285,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "EIA Weekly Refinery Utilization Rates (WoW)",
@@ -400,7 +969,19 @@
       "forecast": null,
       "previous": "-0.1%",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-refinery-utilization-rates-1961",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 2.9,
+        "forecast": null,
+        "previous": -0.1
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 3.0,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Gasoline Inventories",
@@ -410,7 +991,23 @@
       "forecast": "-2.400M",
       "previous": "-1.548M",
       "event_url": "https://www.investing.com/economic-calendar/gasoline-inventories-485",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -2.572,
+        "forecast": -2.4,
+        "previous": -1.548
+      },
+      "surprise": {
+        "deviation": -0.172,
+        "z_score": -1.43,
+        "label": "below-forecast"
+      },
+      "vs_previous": {
+        "delta": -1.024,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "7-Year Note Auction",
@@ -420,7 +1017,19 @@
       "forecast": null,
       "previous": "4.175%",
       "event_url": "https://www.investing.com/economic-calendar/7-year-note-auction-682",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 4.29,
+        "forecast": null,
+        "previous": 4.175
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.115,
+        "direction": "up"
+      },
+      "group": "auctions",
+      "is_noise": true
     },
     {
       "name": "FOMC Member Barkin Speaks",
@@ -430,7 +1039,16 @@
       "forecast": null,
       "previous": null,
       "event_url": "https://www.investing.com/economic-calendar/fomc-member-barkin-speaks-1775",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     },
     {
       "name": "Fed's Balance Sheet",
@@ -440,7 +1058,19 @@
       "forecast": null,
       "previous": "6,714B",
       "event_url": "https://www.investing.com/economic-calendar/fed's-balance-sheet-2145",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 6704.0,
+        "forecast": null,
+        "previous": 6714.0
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -10.0,
+        "direction": "down"
+      },
+      "group": "fed_plumbing",
+      "is_noise": true
     },
     {
       "name": "Reserve Balances with Federal Reserve Banks",
@@ -450,7 +1080,19 @@
       "forecast": null,
       "previous": "3.106T",
       "event_url": "https://www.investing.com/economic-calendar/reserve-balances-with-federal-reserve-banks-2120",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.067,
+        "forecast": null,
+        "previous": 3.106
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.039,
+        "direction": "down"
+      },
+      "group": "fed_plumbing",
+      "is_noise": true
     }
   ],
   "fred_snapshot": {
@@ -3832,5 +4474,32 @@
   "sources": {
     "investing.com": true,
     "fred": true
+  },
+  "release_summary": {
+    "signal_release_count": 30,
+    "noise_release_count": 15,
+    "surprise_count": 7,
+    "groups_present": [
+      "durable_goods",
+      "fed",
+      "gdp",
+      "home_sales",
+      "housing_starts",
+      "income_spending",
+      "jobless_claims",
+      "other",
+      "pce_inflation",
+      "regional_fed",
+      "trade"
+    ],
+    "surprised_groups": [
+      "durable_goods",
+      "gdp",
+      "home_sales",
+      "housing_starts",
+      "income_spending",
+      "other",
+      "pce_inflation"
+    ]
   }
 }

@@ -29,6 +29,14 @@ Nếu Yahoo fail → cảnh báo nhưng tiếp tục flow.
 Dùng Agent tool với `subagent_type: macro-analyst`. Truyền vào prompt: "Phân tích raw data cho ngày <date>, viết báo cáo vào data/daily/<date>.md".
 Đợi agent hoàn thành.
 
+## Bước 2b: Validate báo cáo (guardrail tất định)
+Chạy:
+```
+source .venv/bin/activate && python scripts/validate_report.py <date>
+```
+- Nếu PASS → tiếp tục.
+- Nếu FAIL (exit 1) → đọc các ERROR, gọi lại `macro-analyst` để sửa đúng các lỗi đó (vd surprise_count sai, thiếu nhóm chỉ số). Lặp đến khi PASS. KHÔNG sang bước 3 khi còn ERROR.
+
 ## Bước 3: Cập nhật trend signals
 Trước khi gọi agent, **regenerate file tóm tắt 30 ngày** (compact ~600 tokens/report) để agent không phải đọc full 30 reports:
 ```

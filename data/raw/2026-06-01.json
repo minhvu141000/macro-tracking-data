@@ -10,7 +10,16 @@
       "forecast": null,
       "previous": null,
       "event_url": "https://www.investing.com/economic-calendar/fed-waller-speaks-1997",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     },
     {
       "name": "S&P Global Manufacturing PMI  (May)",
@@ -20,7 +29,23 @@
       "forecast": "55.3",
       "previous": "54.5",
       "event_url": "https://www.investing.com/economic-calendar/manufacturing-pmi-829",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 55.1,
+        "forecast": 55.3,
+        "previous": 54.5
+      },
+      "surprise": {
+        "deviation": -0.2,
+        "z_score": -0.07,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 0.6,
+        "direction": "up"
+      },
+      "group": "spglobal_pmi",
+      "is_noise": false
     },
     {
       "name": "Construction Spending (MoM)  (Apr)",
@@ -30,7 +55,23 @@
       "forecast": "0.3%",
       "previous": "0.2%",
       "event_url": "https://www.investing.com/economic-calendar/construction-spending-45",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.4,
+        "forecast": 0.3,
+        "previous": 0.2
+      },
+      "surprise": {
+        "deviation": 0.1,
+        "z_score": 6.67,
+        "label": "shock-above"
+      },
+      "vs_previous": {
+        "delta": 0.2,
+        "direction": "up"
+      },
+      "group": "construction",
+      "is_noise": false
     },
     {
       "name": "ISM Manufacturing Employment  (May)",
@@ -40,7 +81,19 @@
       "forecast": null,
       "previous": "46.4",
       "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-employment-1046",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 48.6,
+        "forecast": null,
+        "previous": 46.4
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 2.2,
+        "direction": "up"
+      },
+      "group": "ism_manufacturing",
+      "is_noise": false
     },
     {
       "name": "ISM Manufacturing New Orders Index  (May)",
@@ -50,7 +103,19 @@
       "forecast": null,
       "previous": "54.1",
       "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-new-orders-index-1483",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 56.8,
+        "forecast": null,
+        "previous": 54.1
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 2.7,
+        "direction": "up"
+      },
+      "group": "ism_manufacturing",
+      "is_noise": false
     },
     {
       "name": "ISM Manufacturing PMI  (May)",
@@ -60,7 +125,23 @@
       "forecast": "53.3",
       "previous": "52.7",
       "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-pmi-173",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 54.0,
+        "forecast": 53.3,
+        "previous": 52.7
+      },
+      "surprise": {
+        "deviation": 0.7,
+        "z_score": 0.26,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 1.3,
+        "direction": "up"
+      },
+      "group": "ism_manufacturing",
+      "is_noise": false
     },
     {
       "name": "ISM Manufacturing Prices  (May)",
@@ -70,7 +151,23 @@
       "forecast": "85.3",
       "previous": "84.6",
       "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-prices-174",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 82.1,
+        "forecast": 85.3,
+        "previous": 84.6
+      },
+      "surprise": {
+        "deviation": -3.2,
+        "z_score": -0.75,
+        "label": "below-forecast"
+      },
+      "vs_previous": {
+        "delta": -2.5,
+        "direction": "down"
+      },
+      "group": "ism_manufacturing",
+      "is_noise": false
     },
     {
       "name": "3-Month Bill Auction",
@@ -80,7 +177,19 @@
       "forecast": null,
       "previous": "3.595%",
       "event_url": "https://www.investing.com/economic-calendar/3-month-bill-auction-568",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.63,
+        "forecast": null,
+        "previous": 3.595
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.035,
+        "direction": "up"
+      },
+      "group": "auctions",
+      "is_noise": true
     },
     {
       "name": "6-Month Bill Auction",
@@ -90,7 +199,19 @@
       "forecast": null,
       "previous": "3.650%",
       "event_url": "https://www.investing.com/economic-calendar/6-month-bill-auction-679",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.665,
+        "forecast": null,
+        "previous": 3.65
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.015,
+        "direction": "up"
+      },
+      "group": "auctions",
+      "is_noise": true
     },
     {
       "name": "Atlanta Fed GDPNow  (Q2)",
@@ -100,7 +221,23 @@
       "forecast": "3.8%",
       "previous": "3.8%",
       "event_url": "https://www.investing.com/economic-calendar/atlanta-fed-gdpnow-2260",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.0,
+        "forecast": 3.8,
+        "previous": 3.8
+      },
+      "surprise": {
+        "deviation": -0.8,
+        "z_score": -4.21,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -0.8,
+        "direction": "down"
+      },
+      "group": "other",
+      "is_noise": false
     }
   ],
   "fred_snapshot": {
@@ -16526,5 +16663,22 @@
   "sources": {
     "investing.com": true,
     "fred": true
+  },
+  "release_summary": {
+    "signal_release_count": 8,
+    "noise_release_count": 2,
+    "surprise_count": 3,
+    "groups_present": [
+      "construction",
+      "fed",
+      "ism_manufacturing",
+      "other",
+      "spglobal_pmi"
+    ],
+    "surprised_groups": [
+      "construction",
+      "ism_manufacturing",
+      "other"
+    ]
   }
 }

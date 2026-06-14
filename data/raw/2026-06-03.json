@@ -10,7 +10,19 @@
       "forecast": null,
       "previous": "6.65%",
       "event_url": "https://www.investing.com/economic-calendar/mba-30-year-mortgage-rate-1042",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 6.57,
+        "forecast": null,
+        "previous": 6.65
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.08,
+        "direction": "down"
+      },
+      "group": "mortgage",
+      "is_noise": false
     },
     {
       "name": "MBA Mortgage Applications (WoW)",
@@ -20,7 +32,19 @@
       "forecast": null,
       "previous": "-8.5%",
       "event_url": "https://www.investing.com/economic-calendar/mba-mortgage-applications-380",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -2.5,
+        "forecast": null,
+        "previous": -8.5
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 6.0,
+        "direction": "up"
+      },
+      "group": "mortgage",
+      "is_noise": false
     },
     {
       "name": "MBA Purchase Index",
@@ -30,7 +54,19 @@
       "forecast": null,
       "previous": "169.7",
       "event_url": "https://www.investing.com/economic-calendar/mba-purchase-index-1494",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 164.8,
+        "forecast": null,
+        "previous": 169.7
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -4.9,
+        "direction": "down"
+      },
+      "group": "mortgage",
+      "is_noise": false
     },
     {
       "name": "Mortgage Market Index",
@@ -40,7 +76,19 @@
       "forecast": null,
       "previous": "259.4",
       "event_url": "https://www.investing.com/economic-calendar/mortgage-market-index-1427",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 252.8,
+        "forecast": null,
+        "previous": 259.4
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -6.6,
+        "direction": "down"
+      },
+      "group": "mortgage",
+      "is_noise": false
     },
     {
       "name": "Mortgage Refinance Index",
@@ -50,7 +98,19 @@
       "forecast": null,
       "previous": "753.7",
       "event_url": "https://www.investing.com/economic-calendar/mortgage-refinance-index-1428",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 736.2,
+        "forecast": null,
+        "previous": 753.7
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -17.5,
+        "direction": "down"
+      },
+      "group": "mortgage",
+      "is_noise": false
     },
     {
       "name": "ADP Nonfarm Employment Change  (May)",
@@ -60,7 +120,23 @@
       "forecast": "118K",
       "previous": "105K",
       "event_url": "https://www.investing.com/economic-calendar/adp-nonfarm-employment-change-1",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 122.0,
+        "forecast": 118.0,
+        "previous": 105.0
+      },
+      "surprise": {
+        "deviation": 4.0,
+        "z_score": 0.68,
+        "label": "above-forecast"
+      },
+      "vs_previous": {
+        "delta": 17.0,
+        "direction": "up"
+      },
+      "group": "adp",
+      "is_noise": false
     },
     {
       "name": "Fed Vice Chair for Supervision Barr Speaks",
@@ -70,7 +146,16 @@
       "forecast": null,
       "previous": null,
       "event_url": "https://www.investing.com/economic-calendar/fed-vice-chair-for-supervision-barr-speaks-2108",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     },
     {
       "name": "S&P Global Composite PMI  (May)",
@@ -80,7 +165,23 @@
       "forecast": "51.7",
       "previous": "51.7",
       "event_url": "https://www.investing.com/economic-calendar/s-p-global-composite-pmi-1492",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 51.5,
+        "forecast": 51.7,
+        "previous": 51.7
+      },
+      "surprise": {
+        "deviation": -0.2,
+        "z_score": -0.08,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": -0.2,
+        "direction": "down"
+      },
+      "group": "spglobal_pmi",
+      "is_noise": false
     },
     {
       "name": "S&P Global Services PMI  (May)",
@@ -90,7 +191,23 @@
       "forecast": "50.9",
       "previous": "50.9",
       "event_url": "https://www.investing.com/economic-calendar/services-pmi-1062",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 50.7,
+        "forecast": 50.9,
+        "previous": 50.9
+      },
+      "surprise": {
+        "deviation": -0.2,
+        "z_score": -0.08,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": -0.2,
+        "direction": "down"
+      },
+      "group": "spglobal_pmi",
+      "is_noise": false
     },
     {
       "name": "All Car Sales  (May)",
@@ -100,7 +217,19 @@
       "forecast": null,
       "previous": "2.69M",
       "event_url": "https://www.investing.com/economic-calendar/all-car-sales-886",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 2.66,
+        "forecast": null,
+        "previous": 2.69
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.03,
+        "direction": "down"
+      },
+      "group": "vehicle_sales",
+      "is_noise": false
     },
     {
       "name": "All Truck Sales  (May)",
@@ -110,7 +239,19 @@
       "forecast": null,
       "previous": "13.32M",
       "event_url": "https://www.investing.com/economic-calendar/all-truck-sales-1437",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 13.43,
+        "forecast": null,
+        "previous": 13.32
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.11,
+        "direction": "up"
+      },
+      "group": "vehicle_sales",
+      "is_noise": false
     },
     {
       "name": "Durables Excluding Defense (MoM)  (Apr)",
@@ -120,7 +261,23 @@
       "forecast": "8.1%",
       "previous": "-0.3%",
       "event_url": "https://www.investing.com/economic-calendar/durables-excluding-defense-1446",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 8.1,
+        "forecast": 8.1,
+        "previous": -0.3
+      },
+      "surprise": {
+        "deviation": 0.0,
+        "z_score": 0.0,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 8.4,
+        "direction": "up"
+      },
+      "group": "durable_goods",
+      "is_noise": false
     },
     {
       "name": "Durables Excluding Transport (MoM)  (Apr)",
@@ -130,7 +287,19 @@
       "forecast": null,
       "previous": "0.9%",
       "event_url": "https://www.investing.com/economic-calendar/durables-excluding-transport-2030",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1.1,
+        "forecast": null,
+        "previous": 0.9
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.2,
+        "direction": "up"
+      },
+      "group": "durable_goods",
+      "is_noise": false
     },
     {
       "name": "Factory Orders (MoM)  (Apr)",
@@ -140,7 +309,23 @@
       "forecast": "4.6%",
       "previous": "1.8%",
       "event_url": "https://www.investing.com/economic-calendar/factory-orders-100",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 4.8,
+        "forecast": 4.6,
+        "previous": 1.8
+      },
+      "surprise": {
+        "deviation": 0.2,
+        "z_score": 0.87,
+        "label": "above-forecast"
+      },
+      "vs_previous": {
+        "delta": 3.0,
+        "direction": "up"
+      },
+      "group": "durable_goods",
+      "is_noise": false
     },
     {
       "name": "Factory orders ex transportation (MoM)  (Apr)",
@@ -150,7 +335,19 @@
       "forecast": null,
       "previous": "1.8%",
       "event_url": "https://www.investing.com/economic-calendar/factory-orders-ex-transportation-893",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1.3,
+        "forecast": null,
+        "previous": 1.8
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.5,
+        "direction": "down"
+      },
+      "group": "durable_goods",
+      "is_noise": false
     },
     {
       "name": "ISM Non-Manufacturing Business Activity  (May)",
@@ -160,7 +357,19 @@
       "forecast": null,
       "previous": "55.9",
       "event_url": "https://www.investing.com/economic-calendar/ism-non-manufacturing-business-activity-1484",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 57.7,
+        "forecast": null,
+        "previous": 55.9
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 1.8,
+        "direction": "up"
+      },
+      "group": "ism_services",
+      "is_noise": false
     },
     {
       "name": "ISM Non-Manufacturing Employment  (May)",
@@ -170,7 +379,23 @@
       "forecast": "48.8",
       "previous": "48.0",
       "event_url": "https://www.investing.com/economic-calendar/ism-non-manufacturing-employment-1048",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 47.9,
+        "forecast": 48.8,
+        "previous": 48.0
+      },
+      "surprise": {
+        "deviation": -0.9,
+        "z_score": -0.37,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": -0.1,
+        "direction": "down"
+      },
+      "group": "ism_services",
+      "is_noise": false
     },
     {
       "name": "ISM Non-Manufacturing New Orders  (May)",
@@ -180,7 +405,23 @@
       "forecast": "53.4",
       "previous": "53.5",
       "event_url": "https://www.investing.com/economic-calendar/ism-non-manufacturing-new-orders-1050",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 57.3,
+        "forecast": 53.4,
+        "previous": 53.5
+      },
+      "surprise": {
+        "deviation": 3.9,
+        "z_score": 1.46,
+        "label": "above-forecast"
+      },
+      "vs_previous": {
+        "delta": 3.8,
+        "direction": "up"
+      },
+      "group": "ism_services",
+      "is_noise": false
     },
     {
       "name": "ISM Non-Manufacturing PMI  (May)",
@@ -190,7 +431,23 @@
       "forecast": "53.7",
       "previous": "53.6",
       "event_url": "https://www.investing.com/economic-calendar/ism-non-manufacturing-pmi-176",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 54.5,
+        "forecast": 53.7,
+        "previous": 53.6
+      },
+      "surprise": {
+        "deviation": 0.8,
+        "z_score": 0.3,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 0.9,
+        "direction": "up"
+      },
+      "group": "ism_services",
+      "is_noise": false
     },
     {
       "name": "ISM Non-Manufacturing Prices  (May)",
@@ -200,7 +457,23 @@
       "forecast": "72.3",
       "previous": "70.7",
       "event_url": "https://www.investing.com/economic-calendar/ism-non-manufacturing-prices-1049",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 71.3,
+        "forecast": 72.3,
+        "previous": 70.7
+      },
+      "surprise": {
+        "deviation": -1.0,
+        "z_score": -0.28,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 0.6,
+        "direction": "up"
+      },
+      "group": "ism_services",
+      "is_noise": false
     },
     {
       "name": "Crude Oil Inventories",
@@ -210,7 +483,23 @@
       "forecast": "-2.900M",
       "previous": "-3.327M",
       "event_url": "https://www.investing.com/economic-calendar/eia-crude-oil-inventories-75",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -7.974,
+        "forecast": -2.9,
+        "previous": -3.327
+      },
+      "surprise": {
+        "deviation": -5.074,
+        "z_score": -34.99,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -4.647,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "EIA Refinery Crude Runs  (WoW)",
@@ -220,7 +509,19 @@
       "forecast": null,
       "previous": "0.652M",
       "event_url": "https://www.investing.com/economic-calendar/eia-refinery-crude-runs-1960",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -0.09,
+        "forecast": null,
+        "previous": 0.652
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.742,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Crude Oil Imports",
@@ -230,7 +531,19 @@
       "forecast": null,
       "previous": "0.360M",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-crude-imports-1658",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -0.249,
+        "forecast": null,
+        "previous": 0.36
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.609,
+        "direction": "down"
+      },
+      "group": "trade",
+      "is_noise": false
     },
     {
       "name": "Cushing Crude Oil Inventories",
@@ -240,7 +553,19 @@
       "forecast": null,
       "previous": "-2.794M",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-cushing-oil-inventories-1657",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -0.583,
+        "forecast": null,
+        "previous": -2.794
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 2.211,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Distillate Fuel Production",
@@ -250,7 +575,19 @@
       "forecast": null,
       "previous": "0.076M",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillate-fuel-production-1660",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.098,
+        "forecast": null,
+        "previous": 0.076
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.022,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "EIA Weekly Distillates Stocks",
@@ -260,7 +597,23 @@
       "forecast": "-0.300M",
       "previous": "-2.107M",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillates-stocks-917",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1.502,
+        "forecast": -0.3,
+        "previous": -2.107
+      },
+      "surprise": {
+        "deviation": 1.802,
+        "z_score": 120.13,
+        "label": "shock-above"
+      },
+      "vs_previous": {
+        "delta": 3.609,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Gasoline Production",
@@ -270,7 +623,19 @@
       "forecast": null,
       "previous": "0.600M",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-gasoline-production-1661",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -0.515,
+        "forecast": null,
+        "previous": 0.6
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -1.115,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Heating Oil Stockpiles",
@@ -280,7 +645,19 @@
       "forecast": null,
       "previous": "0.306M",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-heatoil-stock-1659",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.255,
+        "forecast": null,
+        "previous": 0.306
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.051,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "EIA Weekly Refinery Utilization Rates (WoW)",
@@ -290,7 +667,19 @@
       "forecast": null,
       "previous": "2.9%",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-refinery-utilization-rates-1961",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.2,
+        "forecast": null,
+        "previous": 2.9
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -2.7,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Gasoline Inventories",
@@ -300,7 +689,23 @@
       "forecast": "-0.500M",
       "previous": "-2.572M",
       "event_url": "https://www.investing.com/economic-calendar/gasoline-inventories-485",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.364,
+        "forecast": -0.5,
+        "previous": -2.572
+      },
+      "surprise": {
+        "deviation": 3.864,
+        "z_score": 154.56,
+        "label": "shock-above"
+      },
+      "vs_previous": {
+        "delta": 5.936,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Beige Book",
@@ -310,7 +715,16 @@
       "forecast": null,
       "previous": null,
       "event_url": "https://www.investing.com/economic-calendar/beige-book-10",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     },
     {
       "name": "Fed Logan Speaks",
@@ -320,7 +734,16 @@
       "forecast": null,
       "previous": null,
       "event_url": "https://www.investing.com/economic-calendar/fed-logan-speaks-2119",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     }
   ],
   "fred_snapshot": {
@@ -16746,5 +17169,25 @@
   "sources": {
     "investing.com": true,
     "fred": true
+  },
+  "release_summary": {
+    "signal_release_count": 23,
+    "noise_release_count": 9,
+    "surprise_count": 3,
+    "groups_present": [
+      "adp",
+      "durable_goods",
+      "fed",
+      "ism_services",
+      "mortgage",
+      "spglobal_pmi",
+      "trade",
+      "vehicle_sales"
+    ],
+    "surprised_groups": [
+      "adp",
+      "durable_goods",
+      "ism_services"
+    ]
   }
 }

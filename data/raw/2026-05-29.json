@@ -9,7 +9,16 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     },
     {
       "name": "Goods Trade Balance  (Apr)",
@@ -18,7 +27,23 @@
       "actual": "-82.40B",
       "forecast": "-86.70B",
       "previous": "-85.30B",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -82.4,
+        "forecast": -86.7,
+        "previous": -85.3
+      },
+      "surprise": {
+        "deviation": 4.3,
+        "z_score": 0.99,
+        "label": "above-forecast"
+      },
+      "vs_previous": {
+        "delta": 2.9,
+        "direction": "up"
+      },
+      "group": "trade",
+      "is_noise": false
     },
     {
       "name": "Retail Inventories Ex Auto  (Apr)",
@@ -27,7 +52,19 @@
       "actual": "0.6%",
       "forecast": null,
       "previous": "0.6%",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.6,
+        "forecast": null,
+        "previous": 0.6
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.0,
+        "direction": "flat"
+      },
+      "group": "inventories",
+      "is_noise": false
     },
     {
       "name": "Wholesale Inventories (MoM)  (Apr)",
@@ -36,7 +73,23 @@
       "actual": "0.5%",
       "forecast": "0.6%",
       "previous": "1.5%",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.5,
+        "forecast": 0.6,
+        "previous": 1.5
+      },
+      "surprise": {
+        "deviation": -0.1,
+        "z_score": -3.33,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -1.0,
+        "direction": "down"
+      },
+      "group": "inventories",
+      "is_noise": false
     },
     {
       "name": "FOMC Member Bowman Speaks",
@@ -45,7 +98,16 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     },
     {
       "name": "Chicago PMI  (May)",
@@ -54,7 +116,16 @@
       "actual": null,
       "forecast": "50.6",
       "previous": "49.2",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": 50.6,
+        "previous": 49.2
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "regional_fed",
+      "is_noise": false
     },
     {
       "name": "FOMC Member Daly Speaks",
@@ -63,7 +134,16 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     },
     {
       "name": "U.S. Baker Hughes Oil Rig Count",
@@ -72,7 +152,16 @@
       "actual": null,
       "forecast": null,
       "previous": "425",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": 425.0
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "rig_count",
+      "is_noise": true
     },
     {
       "name": "U.S. Baker Hughes Total Rig Count",
@@ -81,7 +170,16 @@
       "actual": null,
       "forecast": null,
       "previous": "558",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": 558.0
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "rig_count",
+      "is_noise": true
     },
     {
       "name": "CFTC Aluminium speculative net positions",
@@ -90,7 +188,16 @@
       "actual": null,
       "forecast": null,
       "previous": "0.5K",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": 0.5
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC Copper speculative net positions",
@@ -99,7 +206,16 @@
       "actual": null,
       "forecast": null,
       "previous": "75.9K",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": 75.9
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC Corn speculative net positions",
@@ -108,7 +224,16 @@
       "actual": null,
       "forecast": null,
       "previous": "358.1K",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": 358.1
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC Crude Oil speculative net positions",
@@ -117,7 +242,16 @@
       "actual": null,
       "forecast": null,
       "previous": "172.6K",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": 172.6
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC Gold speculative net positions",
@@ -126,7 +260,16 @@
       "actual": null,
       "forecast": null,
       "previous": "159.8K",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": 159.8
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC Nasdaq 100 speculative net positions",
@@ -135,7 +278,16 @@
       "actual": null,
       "forecast": null,
       "previous": "-1.4K",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": -1.4
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC Natural Gas speculative net positions",
@@ -144,7 +296,16 @@
       "actual": null,
       "forecast": null,
       "previous": "-192.2K",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": -192.2
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC S&P 500 speculative net positions",
@@ -153,7 +314,16 @@
       "actual": null,
       "forecast": null,
       "previous": "-140.6K",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": -140.6
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC Silver speculative net positions",
@@ -162,7 +332,16 @@
       "actual": null,
       "forecast": null,
       "previous": "24.7K",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": 24.7
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC Soybeans speculative net positions",
@@ -171,7 +350,16 @@
       "actual": null,
       "forecast": null,
       "previous": "212.2K",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": 212.2
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC Wheat speculative net positions",
@@ -180,7 +368,16 @@
       "actual": null,
       "forecast": null,
       "previous": "0.3K",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": 0.3
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "cftc_positions",
+      "is_noise": true
     }
   ],
   "fred_snapshot": {
@@ -14894,5 +15091,20 @@
   "sources": {
     "investing.com": true,
     "fred": true
+  },
+  "release_summary": {
+    "signal_release_count": 7,
+    "noise_release_count": 13,
+    "surprise_count": 2,
+    "groups_present": [
+      "fed",
+      "inventories",
+      "regional_fed",
+      "trade"
+    ],
+    "surprised_groups": [
+      "inventories",
+      "trade"
+    ]
   }
 }

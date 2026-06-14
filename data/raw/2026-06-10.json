@@ -10,7 +10,19 @@
       "forecast": null,
       "previous": "6.57%",
       "event_url": "https://www.investing.com/economic-calendar/mba-30-year-mortgage-rate-1042",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 6.6,
+        "forecast": null,
+        "previous": 6.57
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.03,
+        "direction": "up"
+      },
+      "group": "mortgage",
+      "is_noise": false
     },
     {
       "name": "MBA Mortgage Applications (WoW)",
@@ -20,7 +32,19 @@
       "forecast": null,
       "previous": "-2.5%",
       "event_url": "https://www.investing.com/economic-calendar/mba-mortgage-applications-380",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 10.8,
+        "forecast": null,
+        "previous": -2.5
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 13.3,
+        "direction": "up"
+      },
+      "group": "mortgage",
+      "is_noise": false
     },
     {
       "name": "MBA Purchase Index",
@@ -30,7 +54,19 @@
       "forecast": null,
       "previous": "164.8",
       "event_url": "https://www.investing.com/economic-calendar/mba-purchase-index-1494",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 176.9,
+        "forecast": null,
+        "previous": 164.8
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 12.1,
+        "direction": "up"
+      },
+      "group": "mortgage",
+      "is_noise": false
     },
     {
       "name": "Mortgage Market Index",
@@ -40,7 +76,19 @@
       "forecast": null,
       "previous": "252.8",
       "event_url": "https://www.investing.com/economic-calendar/mortgage-market-index-1427",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 280.1,
+        "forecast": null,
+        "previous": 252.8
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 27.3,
+        "direction": "up"
+      },
+      "group": "mortgage",
+      "is_noise": false
     },
     {
       "name": "Mortgage Refinance Index",
@@ -50,7 +98,19 @@
       "forecast": null,
       "previous": "736.2",
       "event_url": "https://www.investing.com/economic-calendar/mortgage-refinance-index-1428",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 848.7,
+        "forecast": null,
+        "previous": 736.2
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 112.5,
+        "direction": "up"
+      },
+      "group": "mortgage",
+      "is_noise": false
     },
     {
       "name": "Core CPI (MoM)  (May)",
@@ -60,7 +120,23 @@
       "forecast": "0.3%",
       "previous": "0.4%",
       "event_url": "https://www.investing.com/economic-calendar/core-cpi-56",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.2,
+        "forecast": 0.3,
+        "previous": 0.4
+      },
+      "surprise": {
+        "deviation": -0.1,
+        "z_score": -6.67,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -0.2,
+        "direction": "down"
+      },
+      "group": "cpi",
+      "is_noise": false
     },
     {
       "name": "Core CPI (YoY)  (May)",
@@ -70,7 +146,23 @@
       "forecast": "2.9%",
       "previous": "2.8%",
       "event_url": "https://www.investing.com/economic-calendar/core-cpi-736",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 2.9,
+        "forecast": 2.9,
+        "previous": 2.8
+      },
+      "surprise": {
+        "deviation": 0.0,
+        "z_score": 0.0,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 0.1,
+        "direction": "up"
+      },
+      "group": "cpi",
+      "is_noise": false
     },
     {
       "name": "Core CPI Index  (May)",
@@ -80,7 +172,19 @@
       "forecast": null,
       "previous": "335.42",
       "event_url": "https://www.investing.com/economic-calendar/core-cpi-index-1226",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 336.12,
+        "forecast": null,
+        "previous": 335.42
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.7,
+        "direction": "up"
+      },
+      "group": "cpi",
+      "is_noise": false
     },
     {
       "name": "CPI (MoM)  (May)",
@@ -90,7 +194,23 @@
       "forecast": "0.5%",
       "previous": "0.6%",
       "event_url": "https://www.investing.com/economic-calendar/cpi-69",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.5,
+        "forecast": 0.5,
+        "previous": 0.6
+      },
+      "surprise": {
+        "deviation": 0.0,
+        "z_score": 0.0,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": -0.1,
+        "direction": "down"
+      },
+      "group": "cpi",
+      "is_noise": false
     },
     {
       "name": "CPI (YoY)  (May)",
@@ -100,7 +220,23 @@
       "forecast": "4.2%",
       "previous": "3.8%",
       "event_url": "https://www.investing.com/economic-calendar/cpi-733",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 4.2,
+        "forecast": 4.2,
+        "previous": 3.8
+      },
+      "surprise": {
+        "deviation": 0.0,
+        "z_score": 0.0,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 0.4,
+        "direction": "up"
+      },
+      "group": "cpi",
+      "is_noise": false
     },
     {
       "name": "CPI Index, n.s.a.  (May)",
@@ -110,7 +246,23 @@
       "forecast": "335.11",
       "previous": "333.02",
       "event_url": "https://www.investing.com/economic-calendar/cpi-index,-n.s.a.-1549",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 335.12,
+        "forecast": 335.11,
+        "previous": 333.02
+      },
+      "surprise": {
+        "deviation": 0.01,
+        "z_score": 0.0,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 2.1,
+        "direction": "up"
+      },
+      "group": "cpi",
+      "is_noise": false
     },
     {
       "name": "CPI Index, s.a  (May)",
@@ -120,7 +272,19 @@
       "forecast": null,
       "previous": "332.41",
       "event_url": "https://www.investing.com/economic-calendar/cpi-index,-s.a-1889",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 333.98,
+        "forecast": null,
+        "previous": 332.41
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 1.57,
+        "direction": "up"
+      },
+      "group": "cpi",
+      "is_noise": false
     },
     {
       "name": "CPI, n.s.a (MoM)  (May)",
@@ -130,7 +294,19 @@
       "forecast": null,
       "previous": "0.85%",
       "event_url": "https://www.investing.com/economic-calendar/cpi,-n.s.a-1888",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.63,
+        "forecast": null,
+        "previous": 0.85
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.22,
+        "direction": "down"
+      },
+      "group": "cpi",
+      "is_noise": false
     },
     {
       "name": "Real Earnings (MoM)  (May)",
@@ -140,7 +316,19 @@
       "forecast": null,
       "previous": "-0.2%",
       "event_url": "https://www.investing.com/economic-calendar/real-earnings-890",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -0.2,
+        "forecast": null,
+        "previous": -0.2
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.0,
+        "direction": "flat"
+      },
+      "group": "other",
+      "is_noise": false
     },
     {
       "name": "Crude Oil Inventories",
@@ -150,7 +338,23 @@
       "forecast": "-3.000M",
       "previous": "-7.974M",
       "event_url": "https://www.investing.com/economic-calendar/eia-crude-oil-inventories-75",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -7.227,
+        "forecast": -3.0,
+        "previous": -7.974
+      },
+      "surprise": {
+        "deviation": -4.227,
+        "z_score": -28.18,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": 0.747,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "EIA Refinery Crude Runs  (WoW)",
@@ -160,7 +364,19 @@
       "forecast": null,
       "previous": "-0.090M",
       "event_url": "https://www.investing.com/economic-calendar/eia-refinery-crude-runs-1960",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.081,
+        "forecast": null,
+        "previous": -0.09
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.171,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Crude Oil Imports",
@@ -170,7 +386,19 @@
       "forecast": null,
       "previous": "-0.249M",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-crude-imports-1658",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.525,
+        "forecast": null,
+        "previous": -0.249
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.774,
+        "direction": "up"
+      },
+      "group": "trade",
+      "is_noise": false
     },
     {
       "name": "Cushing Crude Oil Inventories",
@@ -180,7 +408,19 @@
       "forecast": null,
       "previous": "-0.583M",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-cushing-oil-inventories-1657",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -0.801,
+        "forecast": null,
+        "previous": -0.583
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.218,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Distillate Fuel Production",
@@ -190,7 +430,19 @@
       "forecast": null,
       "previous": "0.098M",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillate-fuel-production-1660",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.024,
+        "forecast": null,
+        "previous": 0.098
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.074,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "EIA Weekly Distillates Stocks",
@@ -200,7 +452,23 @@
       "forecast": "-0.500M",
       "previous": "1.502M",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillates-stocks-917",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -0.2,
+        "forecast": -0.5,
+        "previous": 1.502
+      },
+      "surprise": {
+        "deviation": 0.3,
+        "z_score": 12.0,
+        "label": "shock-above"
+      },
+      "vs_previous": {
+        "delta": -1.702,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Gasoline Production",
@@ -210,7 +478,19 @@
       "forecast": null,
       "previous": "-0.515M",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-gasoline-production-1661",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.296,
+        "forecast": null,
+        "previous": -0.515
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.811,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Heating Oil Stockpiles",
@@ -220,7 +500,19 @@
       "forecast": null,
       "previous": "0.255M",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-heatoil-stock-1659",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -0.246,
+        "forecast": null,
+        "previous": 0.255
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.501,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "EIA Weekly Refinery Utilization Rates (WoW)",
@@ -230,7 +522,19 @@
       "forecast": null,
       "previous": "0.2%",
       "event_url": "https://www.investing.com/economic-calendar/eia-weekly-refinery-utilization-rates-1961",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.6,
+        "forecast": null,
+        "previous": 0.2
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.4,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Gasoline Inventories",
@@ -240,7 +544,23 @@
       "forecast": "-0.500M",
       "previous": "3.364M",
       "event_url": "https://www.investing.com/economic-calendar/gasoline-inventories-485",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.186,
+        "forecast": -0.5,
+        "previous": 3.364
+      },
+      "surprise": {
+        "deviation": 0.686,
+        "z_score": 27.44,
+        "label": "shock-above"
+      },
+      "vs_previous": {
+        "delta": -3.178,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "OPEC Crude Oil Production Algeria (Barrel)",
@@ -250,7 +570,19 @@
       "forecast": null,
       "previous": "0.97M",
       "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-algeria-(barrel)-1951",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.97,
+        "forecast": null,
+        "previous": 0.97
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.0,
+        "direction": "flat"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "OPEC Crude Oil Production Congo (Barrel)",
@@ -260,7 +592,19 @@
       "forecast": null,
       "previous": "0.26M",
       "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-congo-(barrel)-1954",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.27,
+        "forecast": null,
+        "previous": 0.26
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.01,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "OPEC Crude Oil Production Gabon (Barrel)",
@@ -270,7 +614,19 @@
       "forecast": null,
       "previous": "0.23M",
       "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-gabon-(barrel)-1952",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.22,
+        "forecast": null,
+        "previous": 0.23
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.01,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "OPEC Crude Oil Production Guinea (Barrel)",
@@ -280,7 +636,19 @@
       "forecast": null,
       "previous": "0.05M",
       "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-guinea-(barrel)-1956",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.05,
+        "forecast": null,
+        "previous": 0.05
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.0,
+        "direction": "flat"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "OPEC Crude oil Production Iran (Barrel)",
@@ -290,7 +658,19 @@
       "forecast": null,
       "previous": "3.00M",
       "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-iran-(barrel)-1944",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 2.0,
+        "forecast": null,
+        "previous": 3.0
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -1.0,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "OPEC Crude oil Production Iraq (Barrel)",
@@ -300,7 +680,19 @@
       "forecast": null,
       "previous": "1.40M",
       "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-iraq-(barrel)-1860",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1.56,
+        "forecast": null,
+        "previous": 1.4
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.16,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "OPEC Crude Oil Production Libya (Barrel)",
@@ -310,7 +702,19 @@
       "forecast": null,
       "previous": "1.27M",
       "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-libya-(barrel)-1949",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1.25,
+        "forecast": null,
+        "previous": 1.27
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.02,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "OPEC Crude oil Production Saudi Arabia (Barrel)",
@@ -320,7 +724,19 @@
       "forecast": null,
       "previous": "7.65M",
       "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-saudi-arabia-(barrel)-1945",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 6.5,
+        "forecast": null,
+        "previous": 7.65
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -1.15,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "OPEC Crude oil Production UAE (Barrel)",
@@ -330,7 +746,19 @@
       "forecast": null,
       "previous": "2.00M",
       "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-uae-(barrel)-1947",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 2.1,
+        "forecast": null,
+        "previous": 2.0
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.1,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "OPEC Crude oil Production Venezuela (Barrel)",
@@ -340,7 +768,19 @@
       "forecast": null,
       "previous": "1.10M",
       "event_url": "https://www.investing.com/economic-calendar/opec-crude-oil-production-venezuela-(barrel)-1946",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1.13,
+        "forecast": null,
+        "previous": 1.1
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.03,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Cleveland CPI (MoM)  (May)",
@@ -350,7 +790,19 @@
       "forecast": null,
       "previous": "0.4%",
       "event_url": "https://www.investing.com/economic-calendar/cleveland-cpi-887",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.3,
+        "forecast": null,
+        "previous": 0.4
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.1,
+        "direction": "down"
+      },
+      "group": "cpi",
+      "is_noise": false
     },
     {
       "name": "Thomson Reuters IPSOS PCSI  (Jun)",
@@ -360,7 +812,19 @@
       "forecast": null,
       "previous": "49.65",
       "event_url": "https://www.investing.com/economic-calendar/thomson-reuters-ipsos-pcsi-1879",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 49.14,
+        "forecast": null,
+        "previous": 49.65
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.51,
+        "direction": "down"
+      },
+      "group": "other",
+      "is_noise": false
     },
     {
       "name": "10-Year Note Auction",
@@ -370,7 +834,19 @@
       "forecast": null,
       "previous": "4.468%",
       "event_url": "https://www.investing.com/economic-calendar/10-year-note-auction-571",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 4.538,
+        "forecast": null,
+        "previous": 4.468
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.07,
+        "direction": "up"
+      },
+      "group": "auctions",
+      "is_noise": true
     },
     {
       "name": "Federal Budget Balance  (May)",
@@ -380,7 +856,23 @@
       "forecast": "-282.9B",
       "previous": "215.0B",
       "event_url": "https://www.investing.com/economic-calendar/federal-budget-balance-369",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -293.0,
+        "forecast": -282.9,
+        "previous": 215.0
+      },
+      "surprise": {
+        "deviation": -10.1,
+        "z_score": -0.71,
+        "label": "below-forecast"
+      },
+      "vs_previous": {
+        "delta": -508.0,
+        "direction": "down"
+      },
+      "group": "fiscal",
+      "is_noise": false
     }
   ],
   "fred_snapshot": {
@@ -3762,5 +4254,21 @@
   "sources": {
     "investing.com": true,
     "fred": true
+  },
+  "release_summary": {
+    "signal_release_count": 18,
+    "noise_release_count": 20,
+    "surprise_count": 2,
+    "groups_present": [
+      "cpi",
+      "fiscal",
+      "mortgage",
+      "other",
+      "trade"
+    ],
+    "surprised_groups": [
+      "cpi",
+      "fiscal"
+    ]
   }
 }

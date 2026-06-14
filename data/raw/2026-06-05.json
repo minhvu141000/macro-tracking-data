@@ -10,7 +10,23 @@
       "forecast": "3.4%",
       "previous": "3.6%",
       "event_url": "https://www.investing.com/economic-calendar/average-hourly-earnings-1777",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.4,
+        "forecast": 3.4,
+        "previous": 3.6
+      },
+      "surprise": {
+        "deviation": 0.0,
+        "z_score": 0.0,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": -0.2,
+        "direction": "down"
+      },
+      "group": "jobs_report",
+      "is_noise": false
     },
     {
       "name": "Average Hourly Earnings (MoM)  (May)",
@@ -20,7 +36,23 @@
       "forecast": "0.3%",
       "previous": "0.2%",
       "event_url": "https://www.investing.com/economic-calendar/average-hourly-earnings-8",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.3,
+        "forecast": 0.3,
+        "previous": 0.2
+      },
+      "surprise": {
+        "deviation": 0.0,
+        "z_score": 0.0,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 0.1,
+        "direction": "up"
+      },
+      "group": "jobs_report",
+      "is_noise": false
     },
     {
       "name": "Average Weekly Hours  (May)",
@@ -30,7 +62,23 @@
       "forecast": "34.3",
       "previous": "34.3",
       "event_url": "https://www.investing.com/economic-calendar/average-weekly-hours-379",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 34.3,
+        "forecast": 34.3,
+        "previous": 34.3
+      },
+      "surprise": {
+        "deviation": 0.0,
+        "z_score": 0.0,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 0.0,
+        "direction": "flat"
+      },
+      "group": "jobs_report",
+      "is_noise": false
     },
     {
       "name": "Government Payrolls  (May)",
@@ -40,7 +88,19 @@
       "forecast": null,
       "previous": "2.0K",
       "event_url": "https://www.investing.com/economic-calendar/government-payrolls-1579",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 52.0,
+        "forecast": null,
+        "previous": 2.0
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 50.0,
+        "direction": "up"
+      },
+      "group": "jobs_report",
+      "is_noise": false
     },
     {
       "name": "Manufacturing Payrolls  (May)",
@@ -50,7 +110,23 @@
       "forecast": "2K",
       "previous": "0K",
       "event_url": "https://www.investing.com/economic-calendar/manufacturing-payrolls-1531",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 7.0,
+        "forecast": 2.0,
+        "previous": 0.0
+      },
+      "surprise": {
+        "deviation": 5.0,
+        "z_score": 50.0,
+        "label": "shock-above"
+      },
+      "vs_previous": {
+        "delta": 7.0,
+        "direction": "up"
+      },
+      "group": "jobs_report",
+      "is_noise": false
     },
     {
       "name": "Nonfarm Payrolls  (May)",
@@ -60,7 +136,23 @@
       "forecast": "85K",
       "previous": "179K",
       "event_url": "https://www.investing.com/economic-calendar/nonfarm-payrolls-227",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 172.0,
+        "forecast": 85.0,
+        "previous": 179.0
+      },
+      "surprise": {
+        "deviation": 87.0,
+        "z_score": 20.47,
+        "label": "shock-above"
+      },
+      "vs_previous": {
+        "delta": -7.0,
+        "direction": "down"
+      },
+      "group": "jobs_report",
+      "is_noise": false
     },
     {
       "name": "Participation Rate  (May)",
@@ -70,7 +162,19 @@
       "forecast": null,
       "previous": "61.8%",
       "event_url": "https://www.investing.com/economic-calendar/participation-rate-1581",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 61.8,
+        "forecast": null,
+        "previous": 61.8
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.0,
+        "direction": "flat"
+      },
+      "group": "jobs_report",
+      "is_noise": false
     },
     {
       "name": "Private Nonfarm Payrolls  (May)",
@@ -80,7 +184,23 @@
       "forecast": "85K",
       "previous": "177K",
       "event_url": "https://www.investing.com/economic-calendar/private-nonfarm-payrolls-528",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 120.0,
+        "forecast": 85.0,
+        "previous": 177.0
+      },
+      "surprise": {
+        "deviation": 35.0,
+        "z_score": 8.24,
+        "label": "shock-above"
+      },
+      "vs_previous": {
+        "delta": -57.0,
+        "direction": "down"
+      },
+      "group": "jobs_report",
+      "is_noise": false
     },
     {
       "name": "U6 Unemployment Rate  (May)",
@@ -90,7 +210,19 @@
       "forecast": null,
       "previous": "8.2%",
       "event_url": "https://www.investing.com/economic-calendar/u6-unemployment-rate-1670",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 8.1,
+        "forecast": null,
+        "previous": 8.2
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.1,
+        "direction": "down"
+      },
+      "group": "jobs_report",
+      "is_noise": false
     },
     {
       "name": "Unemployment Rate  (May)",
@@ -100,7 +232,23 @@
       "forecast": "4.3%",
       "previous": "4.3%",
       "event_url": "https://www.investing.com/economic-calendar/unemployment-rate-300",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 4.3,
+        "forecast": 4.3,
+        "previous": 4.3
+      },
+      "surprise": {
+        "deviation": 0.0,
+        "z_score": 0.0,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 0.0,
+        "direction": "flat"
+      },
+      "group": "jobs_report",
+      "is_noise": false
     },
     {
       "name": "U.S. Baker Hughes Oil Rig Count",
@@ -110,7 +258,19 @@
       "forecast": null,
       "previous": "429",
       "event_url": "https://www.investing.com/economic-calendar/baker-hughes-u.s.-rig-count-1652",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 431.0,
+        "forecast": null,
+        "previous": 429.0
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 2.0,
+        "direction": "up"
+      },
+      "group": "rig_count",
+      "is_noise": true
     },
     {
       "name": "U.S. Baker Hughes Total Rig Count",
@@ -120,7 +280,19 @@
       "forecast": null,
       "previous": "562",
       "event_url": "https://www.investing.com/economic-calendar/u.s.-baker-hughes-total-rig-count-1810",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 563.0,
+        "forecast": null,
+        "previous": 562.0
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 1.0,
+        "direction": "up"
+      },
+      "group": "rig_count",
+      "is_noise": true
     },
     {
       "name": "Consumer Credit  (Apr)",
@@ -130,7 +302,23 @@
       "forecast": "17.80B",
       "previous": "22.23B",
       "event_url": "https://www.investing.com/economic-calendar/consumer-credit-52",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 20.73,
+        "forecast": 17.8,
+        "previous": 22.23
+      },
+      "surprise": {
+        "deviation": 2.93,
+        "z_score": 3.29,
+        "label": "shock-above"
+      },
+      "vs_previous": {
+        "delta": -1.5,
+        "direction": "down"
+      },
+      "group": "money_credit",
+      "is_noise": false
     },
     {
       "name": "CFTC Aluminium speculative net positions",
@@ -140,7 +328,19 @@
       "forecast": null,
       "previous": "0.3K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-aluminium-speculative-net-positions-1821",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.8,
+        "forecast": null,
+        "previous": 0.3
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.5,
+        "direction": "up"
+      },
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC Copper speculative net positions",
@@ -150,7 +350,19 @@
       "forecast": null,
       "previous": "73.0K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-copper-speculative-positions-1620",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 78.8,
+        "forecast": null,
+        "previous": 73.0
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 5.8,
+        "direction": "up"
+      },
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC Corn speculative net positions",
@@ -160,7 +372,19 @@
       "forecast": null,
       "previous": "302.0K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-corn-speculative-positions-1813",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 199.9,
+        "forecast": null,
+        "previous": 302.0
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -102.1,
+        "direction": "down"
+      },
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC Crude Oil speculative net positions",
@@ -170,7 +394,19 @@
       "forecast": null,
       "previous": "161.0K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-crude-oil-speculative-positions-1653",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 155.9,
+        "forecast": null,
+        "previous": 161.0
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -5.1,
+        "direction": "down"
+      },
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC Gold speculative net positions",
@@ -180,7 +416,19 @@
       "forecast": null,
       "previous": "154.3K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-gold-speculative-positions-1618",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 176.0,
+        "forecast": null,
+        "previous": 154.3
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 21.7,
+        "direction": "up"
+      },
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC Nasdaq 100 speculative net positions",
@@ -190,7 +438,19 @@
       "forecast": null,
       "previous": "-6.1K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-nasdaq-100-speculative-positions-1959",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -14.9,
+        "forecast": null,
+        "previous": -6.1
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -8.8,
+        "direction": "down"
+      },
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC Natural Gas speculative net positions",
@@ -200,7 +460,19 @@
       "forecast": null,
       "previous": "-203.2K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-natural-gas-speculative-positions-1820",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -186.1,
+        "forecast": null,
+        "previous": -203.2
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 17.1,
+        "direction": "up"
+      },
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC S&P 500 speculative net positions",
@@ -210,7 +482,19 @@
       "forecast": null,
       "previous": "-165.8K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-s-p-500-speculative-positions-1619",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -220.8,
+        "forecast": null,
+        "previous": -165.8
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -55.0,
+        "direction": "down"
+      },
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC Silver speculative net positions",
@@ -220,7 +504,19 @@
       "forecast": null,
       "previous": "22.2K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-silver-speculative-positions-1621",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 23.9,
+        "forecast": null,
+        "previous": 22.2
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 1.7,
+        "direction": "up"
+      },
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC Soybeans speculative net positions",
@@ -230,7 +526,19 @@
       "forecast": null,
       "previous": "204.7K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-soybeans-speculative-positions-1811",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 187.8,
+        "forecast": null,
+        "previous": 204.7
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -16.9,
+        "direction": "down"
+      },
+      "group": "cftc_positions",
+      "is_noise": true
     },
     {
       "name": "CFTC Wheat speculative net positions",
@@ -240,7 +548,19 @@
       "forecast": null,
       "previous": "-9.5K",
       "event_url": "https://www.investing.com/economic-calendar/cftc-wheat-speculative-positions-1812",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -40.8,
+        "forecast": null,
+        "previous": -9.5
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -31.3,
+        "direction": "down"
+      },
+      "group": "cftc_positions",
+      "is_noise": true
     }
   ],
   "fred_snapshot": {
@@ -3622,5 +3942,18 @@
   "sources": {
     "investing.com": true,
     "fred": true
+  },
+  "release_summary": {
+    "signal_release_count": 11,
+    "noise_release_count": 13,
+    "surprise_count": 2,
+    "groups_present": [
+      "jobs_report",
+      "money_credit"
+    ],
+    "surprised_groups": [
+      "jobs_report",
+      "money_credit"
+    ]
   }
 }

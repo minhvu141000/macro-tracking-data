@@ -10,7 +10,16 @@
       "forecast": null,
       "previous": null,
       "event_url": "https://www.investing.com/economic-calendar/fomc-member-kashkari-speaks-1665",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     },
     {
       "name": "Redbook (YoY)",
@@ -20,7 +29,19 @@
       "forecast": null,
       "previous": "9.0%",
       "event_url": "https://www.investing.com/economic-calendar/redbook-911",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 9.0,
+        "forecast": null,
+        "previous": 9.0
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.0,
+        "direction": "flat"
+      },
+      "group": "fed_plumbing",
+      "is_noise": true
     },
     {
       "name": "JOLTS Job Openings  (Apr)",
@@ -30,7 +51,23 @@
       "forecast": "6.860M",
       "previous": "6.887M",
       "event_url": "https://www.investing.com/economic-calendar/jolts-job-openings-1057",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 7.618,
+        "forecast": 6.86,
+        "previous": 6.887
+      },
+      "surprise": {
+        "deviation": 0.758,
+        "z_score": 2.21,
+        "label": "shock-above"
+      },
+      "vs_previous": {
+        "delta": 0.731,
+        "direction": "up"
+      },
+      "group": "jolts",
+      "is_noise": false
     },
     {
       "name": "IBD/TIPP Economic Optimism  (Jun)",
@@ -40,7 +77,23 @@
       "forecast": "44.5",
       "previous": "42.6",
       "event_url": "https://www.investing.com/economic-calendar/ibd-tipp-economic-optimism-325",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 42.5,
+        "forecast": 44.5,
+        "previous": 42.6
+      },
+      "surprise": {
+        "deviation": -2.0,
+        "z_score": -0.9,
+        "label": "below-forecast"
+      },
+      "vs_previous": {
+        "delta": -0.1,
+        "direction": "down"
+      },
+      "group": "confidence",
+      "is_noise": false
     },
     {
       "name": "Total Vehicle Sales  (May)",
@@ -50,7 +103,23 @@
       "forecast": "16.00M",
       "previous": "15.90M",
       "event_url": "https://www.investing.com/economic-calendar/total-vehicle-sales-85",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 16.1,
+        "forecast": 16.0,
+        "previous": 15.9
+      },
+      "surprise": {
+        "deviation": 0.1,
+        "z_score": 0.13,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 0.2,
+        "direction": "up"
+      },
+      "group": "vehicle_sales",
+      "is_noise": false
     },
     {
       "name": "API Weekly Crude Oil Stock",
@@ -60,7 +129,23 @@
       "forecast": "-3.600M",
       "previous": "-2.800M",
       "event_url": "https://www.investing.com/economic-calendar/api-weekly-crude-stock-656",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": -6.75,
+        "forecast": -3.6,
+        "previous": -2.8
+      },
+      "surprise": {
+        "deviation": -3.15,
+        "z_score": -17.5,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -3.95,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     }
   ],
   "fred_snapshot": {
@@ -3442,5 +3527,20 @@
   "sources": {
     "investing.com": true,
     "fred": true
+  },
+  "release_summary": {
+    "signal_release_count": 4,
+    "noise_release_count": 2,
+    "surprise_count": 2,
+    "groups_present": [
+      "confidence",
+      "fed",
+      "jolts",
+      "vehicle_sales"
+    ],
+    "surprised_groups": [
+      "confidence",
+      "jolts"
+    ]
   }
 }

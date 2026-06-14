@@ -9,7 +9,16 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
     }
   ],
   "fred_snapshot": {
@@ -14723,5 +14732,14 @@
   "sources": {
     "investing.com": true,
     "fred": true
+  },
+  "release_summary": {
+    "signal_release_count": 1,
+    "noise_release_count": 0,
+    "surprise_count": 0,
+    "groups_present": [
+      "fed"
+    ],
+    "surprised_groups": []
   }
 }

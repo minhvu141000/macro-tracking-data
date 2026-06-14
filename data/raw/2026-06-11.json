@@ -10,7 +10,16 @@
       "forecast": null,
       "previous": null,
       "event_url": "https://www.investing.com/economic-calendar/opec-monthly-report-1673",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "Continuing Jobless Claims",
@@ -20,7 +29,23 @@
       "forecast": "1,780K",
       "previous": "1,771K",
       "event_url": "https://www.investing.com/economic-calendar/continuing-jobless-claims-522",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1795.0,
+        "forecast": 1780.0,
+        "previous": 1771.0
+      },
+      "surprise": {
+        "deviation": 15.0,
+        "z_score": 0.17,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 24.0,
+        "direction": "up"
+      },
+      "group": "jobless_claims",
+      "is_noise": false
     },
     {
       "name": "Core PPI (MoM)  (May)",
@@ -30,7 +55,23 @@
       "forecast": "0.5%",
       "previous": "0.7%",
       "event_url": "https://www.investing.com/economic-calendar/core-ppi-62",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.4,
+        "forecast": 0.5,
+        "previous": 0.7
+      },
+      "surprise": {
+        "deviation": -0.1,
+        "z_score": -4.0,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -0.3,
+        "direction": "down"
+      },
+      "group": "ppi",
+      "is_noise": false
     },
     {
       "name": "Core PPI (YoY)  (May)",
@@ -40,7 +81,23 @@
       "forecast": "5.4%",
       "previous": "4.9%",
       "event_url": "https://www.investing.com/economic-calendar/core-ppi-735",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 4.9,
+        "forecast": 5.4,
+        "previous": 4.9
+      },
+      "surprise": {
+        "deviation": -0.5,
+        "z_score": -1.85,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": 0.0,
+        "direction": "flat"
+      },
+      "group": "ppi",
+      "is_noise": false
     },
     {
       "name": "Initial Jobless Claims",
@@ -50,7 +107,23 @@
       "forecast": "220K",
       "previous": "225K",
       "event_url": "https://www.investing.com/economic-calendar/initial-jobless-claims-294",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 229.0,
+        "forecast": 220.0,
+        "previous": 225.0
+      },
+      "surprise": {
+        "deviation": 9.0,
+        "z_score": 0.82,
+        "label": "above-forecast"
+      },
+      "vs_previous": {
+        "delta": 4.0,
+        "direction": "up"
+      },
+      "group": "jobless_claims",
+      "is_noise": false
     },
     {
       "name": "Jobless Claims 4-Week Avg.",
@@ -60,7 +133,19 @@
       "forecast": null,
       "previous": "214.75K",
       "event_url": "https://www.investing.com/economic-calendar/jobless-claims-4-week-avg.-1041",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 219.0,
+        "forecast": null,
+        "previous": 214.75
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 4.25,
+        "direction": "up"
+      },
+      "group": "jobless_claims",
+      "is_noise": false
     },
     {
       "name": "PPI (MoM)  (May)",
@@ -70,7 +155,23 @@
       "forecast": "0.7%",
       "previous": "1.1%",
       "event_url": "https://www.investing.com/economic-calendar/ppi-238",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1.1,
+        "forecast": 0.7,
+        "previous": 1.1
+      },
+      "surprise": {
+        "deviation": 0.4,
+        "z_score": 11.43,
+        "label": "shock-above"
+      },
+      "vs_previous": {
+        "delta": 0.0,
+        "direction": "flat"
+      },
+      "group": "ppi",
+      "is_noise": false
     },
     {
       "name": "PPI (YoY)  (May)",
@@ -80,7 +181,23 @@
       "forecast": "6.4%",
       "previous": "5.7%",
       "event_url": "https://www.investing.com/economic-calendar/ppi-734",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 6.5,
+        "forecast": 6.4,
+        "previous": 5.7
+      },
+      "surprise": {
+        "deviation": 0.1,
+        "z_score": 0.31,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 0.8,
+        "direction": "up"
+      },
+      "group": "ppi",
+      "is_noise": false
     },
     {
       "name": "PPI ex. Food/Energy/Transport (YoY)  (May)",
@@ -90,7 +207,19 @@
       "forecast": null,
       "previous": "4.4%",
       "event_url": "https://www.investing.com/economic-calendar/ppi-ex.-food-energy-trade-2048",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 5.1,
+        "forecast": null,
+        "previous": 4.4
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.7,
+        "direction": "up"
+      },
+      "group": "ppi",
+      "is_noise": false
     },
     {
       "name": "PPI ex. Food/Energy/Transport (MoM)  (May)",
@@ -100,7 +229,19 @@
       "forecast": null,
       "previous": "0.5%",
       "event_url": "https://www.investing.com/economic-calendar/ppi-ex.-food-energy-trade-2049",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.8,
+        "forecast": null,
+        "previous": 0.5
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.3,
+        "direction": "up"
+      },
+      "group": "ppi",
+      "is_noise": false
     },
     {
       "name": "Natural Gas Storage",
@@ -110,7 +251,23 @@
       "forecast": "101B",
       "previous": "95B",
       "event_url": "https://www.investing.com/economic-calendar/natural-gas-storage-386",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 108.0,
+        "forecast": 101.0,
+        "previous": 95.0
+      },
+      "surprise": {
+        "deviation": 7.0,
+        "z_score": 1.39,
+        "label": "above-forecast"
+      },
+      "vs_previous": {
+        "delta": 13.0,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
     },
     {
       "name": "4-Week Bill Auction",
@@ -120,7 +277,19 @@
       "forecast": null,
       "previous": "3.615%",
       "event_url": "https://www.investing.com/economic-calendar/4-week-bill-auction-567",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.595,
+        "forecast": null,
+        "previous": 3.615
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.02,
+        "direction": "down"
+      },
+      "group": "auctions",
+      "is_noise": true
     },
     {
       "name": "8-Week Bill Auction",
@@ -130,7 +299,19 @@
       "forecast": null,
       "previous": "3.610%",
       "event_url": "https://www.investing.com/economic-calendar/8-week-bill-auction-1801",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.61,
+        "forecast": null,
+        "previous": 3.61
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.0,
+        "direction": "flat"
+      },
+      "group": "auctions",
+      "is_noise": true
     },
     {
       "name": "WASDE Report",
@@ -140,7 +321,16 @@
       "forecast": null,
       "previous": null,
       "event_url": "https://www.investing.com/economic-calendar/wasde-report-1764",
-      "source": "investing.com"
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "energy_inventory",
+      "is_noise": true
     }
   ],
   "fred_snapshot": {
@@ -16574,5 +16764,18 @@
   "sources": {
     "investing.com": true,
     "fred": true
+  },
+  "release_summary": {
+    "signal_release_count": 9,
+    "noise_release_count": 5,
+    "surprise_count": 2,
+    "groups_present": [
+      "jobless_claims",
+      "ppi"
+    ],
+    "surprised_groups": [
+      "jobless_claims",
+      "ppi"
+    ]
   }
 }

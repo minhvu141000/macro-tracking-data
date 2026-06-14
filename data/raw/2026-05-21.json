@@ -11853,5 +11853,12 @@
   "sources": {
     "investing.com": true,
     "fred": true
+  },
+  "release_summary": {
+    "signal_release_count": 0,
+    "noise_release_count": 0,
+    "surprise_count": 0,
+    "groups_present": [],
+    "surprised_groups": []
   }
 }
