@@ -10,69 +10,74 @@ import json
 ROOT = Path(__file__).resolve().parent.parent
 THEORY = ROOT / "data" / "macro_theory.json"
 
-# Map indicator id → deep_dive_link (best interactive chart URL)
+# Map indicator id → deep_dive_link (best interactive chart / detail page).
+# NOTE: BLS, DOL, S&P Global, MBA block bots (curl/HTTP 403) but the pages load
+# fine in a real browser. We deliberately use canonical, long-stable URLs
+# (news.release/*.htm, product hubs) verified to exist — NOT fabricated slugs.
 DEEP_DIVE = {
     # ── INFLATION ──────────────────────────────────────────────────────────────
-    "CPIAUCSL": "https://www.bls.gov/charts/consumer-price-index/consumer-price-index-by-category-line-chart.htm",
-    "CPILFESL": "https://www.bls.gov/charts/consumer-price-index/consumer-price-index-by-category-line-chart.htm",
+    # BLS CPI news release: full category tables (food, energy, shelter, services)
+    "CPIAUCSL": "https://www.bls.gov/news.release/cpi.htm",
+    "CPILFESL": "https://www.bls.gov/news.release/cpi.htm",
     "PCEPI":    "https://apps.bea.gov/iTable/?ReqID=19&step=4&isuri=1&categories=survey&nipa_table_list=71",
     "PCEPILFE": "https://apps.bea.gov/iTable/?ReqID=19&step=4&isuri=1&categories=survey&nipa_table_list=71",
-    "PPIFID":   "https://www.bls.gov/charts/producer-price-index/producer-price-indexes-by-stage-of-processing-line-chart.htm",
-    "PPIFES":   "https://www.bls.gov/charts/producer-price-index/producer-price-indexes-by-stage-of-processing-line-chart.htm",
+    "PPIFID":   "https://www.bls.gov/news.release/ppi.htm",
+    "PPIFES":   "https://www.bls.gov/news.release/ppi.htm",
     "MEDCPIM158SFRBCLE": "https://www.clevelandfed.org/our-research/indicators-and-data/median-cpi",
-    "REALEARN": "https://www.bls.gov/news.release/realer.toc.htm",
+    "REALEARN": "https://www.bls.gov/news.release/realer.htm",
 
     # ── LABOR ──────────────────────────────────────────────────────────────────
-    "PAYEMS":         "https://www.bls.gov/charts/employment-situation/employment-change-by-industry.htm",
-    "UNRATE":         "https://www.bls.gov/charts/employment-situation/unemployment-rates-by-population-group.htm",
-    "ICSA":           "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases",
-    "CES0500000003":  "https://www.bls.gov/charts/employment-situation/average-hourly-earnings.htm",
-    "JTSJOL":         "https://www.bls.gov/charts/job-openings-and-labor-turnover/",
-    "CCSA":           "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases",
-    "IC4WSA":         "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases",
+    # BLS Employment Situation: Table B-1 = employment change by industry
+    "PAYEMS":         "https://www.bls.gov/news.release/empsit.htm",
+    "UNRATE":         "https://www.bls.gov/news.release/empsit.htm",
+    "ICSA":           "https://oui.doleta.gov/unemploy/claims.asp",
+    "CES0500000003":  "https://www.bls.gov/news.release/empsit.htm",
+    "JTSJOL":         "https://www.bls.gov/news.release/jolts.htm",
+    "CCSA":           "https://oui.doleta.gov/unemploy/claims.asp",
+    "IC4WSA":         "https://oui.doleta.gov/unemploy/claims.asp",
     "ADPMNUSNERNSA":  "https://adpemploymentreport.com/",
-    "CHALLENGER":     "https://www.challengergray.com/tags/job-cuts/",
-    "OPHNFB":         "https://www.bls.gov/charts/major-sector-productivity-and-costs/",
-    "ULCNFB":         "https://www.bls.gov/charts/major-sector-productivity-and-costs/",
-    "CIVPART":        "https://www.bls.gov/charts/employment-situation/unemployment-rates-by-population-group.htm",
-    "U6RATE":         "https://www.bls.gov/charts/employment-situation/unemployment-rates-by-population-group.htm",
-    "AWHAETP":        "https://www.bls.gov/charts/employment-situation/",
-    "CES9091000001":  "https://www.bls.gov/charts/employment-situation/employment-change-by-industry.htm",
-    "MANEMP":         "https://www.bls.gov/charts/employment-situation/employment-change-by-industry.htm",
-    "CES0500000008":  "https://www.bls.gov/charts/employment-situation/employment-change-by-industry.htm",
+    "CHALLENGER":     "https://www.challengergray.com/blog/",
+    "OPHNFB":         "https://www.bls.gov/news.release/prod2.htm",
+    "ULCNFB":         "https://www.bls.gov/news.release/prod2.htm",
+    "CIVPART":        "https://www.bls.gov/news.release/empsit.htm",
+    "U6RATE":         "https://www.bls.gov/news.release/empsit.htm",
+    "AWHAETP":        "https://www.bls.gov/news.release/empsit.htm",
+    "CES9091000001":  "https://www.bls.gov/news.release/empsit.htm",
+    "MANEMP":         "https://www.bls.gov/news.release/empsit.htm",
+    "CES0500000008":  "https://www.bls.gov/news.release/empsit.htm",
     "CETI":           "https://www.conference-board.org/data/employmenttrends.cfm",
     "NYFED1YINFL":    "https://www.newyorkfed.org/microeconomics/sce/chart-gallery",
 
     # ── GROWTH ─────────────────────────────────────────────────────────────────
-    # GDP: BEA NIPA Table 1.1.2 shows PCE, Gross Private Investment, Gov Expenditures, Net Exports
+    # GDP: BEA NIPA interactive tables (PCE, Gross Private Investment, Gov, Net Exports)
     "GDPC1":       "https://apps.bea.gov/iTable/?ReqID=19&step=4&isuri=1&categories=survey&nipa_table_list=1",
     "RSAFS":       "https://www.census.gov/retail/index.html",
-    "NAPM":        "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/ism-report-on-business/pmi/",
-    "NAPMNMI":     "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/ism-report-on-business/services/",
+    "NAPM":        "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/",
+    "NAPMNMI":     "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/",
     "GDPNOW":      "https://www.atlantafed.org/cqer/research/gdpnow",
     "SPGLOBALMFG": "https://www.spglobal.com/marketintelligence/en/mi/products/pmi.html",
     "SPGLOBALSVC": "https://www.spglobal.com/marketintelligence/en/mi/products/pmi.html",
     "SPGLOBALCOMP":"https://www.spglobal.com/marketintelligence/en/mi/products/pmi.html",
     "CHICAGOPMI":  "https://www.ism-chicago.org/",
-    "ISMMFGNEW":   "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/ism-report-on-business/pmi/",
-    "ISMMFGPRICES":"https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/ism-report-on-business/pmi/",
-    "ISMMFGEMP":   "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/ism-report-on-business/pmi/",
+    "ISMMFGNEW":   "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/",
+    "ISMMFGPRICES":"https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/",
+    "ISMMFGEMP":   "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/",
     "NEWORDER":    "https://www.census.gov/manufacturing/m3/index.html",
     "DGORDER":     "https://www.census.gov/manufacturing/m3/index.html",
-    "TTLCONS":     "https://www.census.gov/construction/c30/index.html",
+    "TTLCONS":     "https://www.census.gov/construction/c30/c30index.html",
     "INDPRO":      "https://www.federalreserve.gov/releases/g17/current/default.htm",
-    # Personal Income & Spending: BEA NIPA Table 2.3.5 (PCE by type) — shows goods/services breakdown
+    # Personal Income & Spending: BEA NIPA Table 2.3.5 (PCE by type) — goods/services
     "PI":          "https://apps.bea.gov/iTable/?ReqID=19&step=4&isuri=1&categories=survey&nipa_table_list=58",
     "PCE":         "https://apps.bea.gov/iTable/?ReqID=19&step=4&isuri=1&categories=survey&nipa_table_list=58",
-    "TOTALSA":     "https://www.bea.gov/data/special-topics/motor-vehicles",
+    "TOTALSA":     "https://www.bea.gov/data/consumer-spending/main",
     "WHLSLRIMSA":  "https://www.census.gov/wholesale/index.html",
     "RETAILINV":   "https://www.census.gov/retail/index.html",
     "GOODSTRADE":  "https://www.census.gov/foreign-trade/index.html",
     "CFNAI":       "https://www.chicagofed.org/research/data/cfnai/current-data",
-    "RICHMONDMFG": "https://www.richmondfed.org/research/data_analysis/manufacturing",
+    "RICHMONDMFG": "https://www.richmondfed.org/research/data_analysis",
     "DALLASMFG":   "https://www.dallasfed.org/research/surveys/tmos",
     "CORPPROFITS": "https://www.bea.gov/data/income-saving/corporate-profits",
-    "ISMSVCBA":    "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/ism-report-on-business/services/",
+    "ISMSVCBA":    "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/",
 
     # ── CONFIDENCE ─────────────────────────────────────────────────────────────
     "CSCICP03USM665S": "https://www.conference-board.org/topics/consumer-confidence",
@@ -84,7 +89,7 @@ DEEP_DIVE = {
     "MICH5Y":   "https://data.sca.isr.umich.edu/charts.html",
     "NFIB":     "https://www.nfib.com/surveys/small-business-economic-trends/",
     "IBDTIPP":  "https://www.tipponline.com/",
-    "IPSOSPCSI":"https://www.ipsos.com/en/economy/PCSI",
+    "IPSOSPCSI":"https://www.ipsos.com/en-us",
 
     # ── HOUSING ────────────────────────────────────────────────────────────────
     "HOUST":           "https://www.census.gov/construction/nrc/index.html",
@@ -93,14 +98,14 @@ DEEP_DIVE = {
     "HSN1F":           "https://www.census.gov/construction/nrs/index.html",
     "USSTHPI":         "https://www.fhfa.gov/DataTools/Downloads/Pages/House-Price-Index.aspx",
     "CSCH20":          "https://www.spglobal.com/spdji/en/index-family/indicators/sp-corelogic-case-shiller/",
-    "MBA30Y":          "https://www.mba.org/news-and-research/research-and-economics/single-family-research/mortgage-bankers-weekly-applications-survey",
-    "MBAAPPS":         "https://www.mba.org/news-and-research/research-and-economics/single-family-research/mortgage-bankers-weekly-applications-survey",
+    "MBA30Y":          "https://www.mba.org/news-and-research/research-and-economics",
+    "MBAAPPS":         "https://www.mba.org/news-and-research/research-and-economics",
 
     # ── FED ────────────────────────────────────────────────────────────────────
     "DFF":   "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
-    # Treasury yield curve — interactive chart showing full curve 1M to 30Y
-    "DGS10": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/View/InterestRates?type=daily_treasury_yield_curve",
-    "DGS2":  "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/View/InterestRates?type=daily_treasury_yield_curve",
+    # Treasury yield curve — full curve 1M to 30Y, daily
+    "DGS10": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
+    "DGS2":  "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
 
     # ── TRADE ──────────────────────────────────────────────────────────────────
     "BOPGSTB": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services",
