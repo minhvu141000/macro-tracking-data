@@ -20,6 +20,7 @@ SECTORS_FILE = ROOT / "data" / "sectors_latest.json"
 CROSS_ASSET_FILE = ROOT / "data" / "cross_asset_latest.json"
 CALENDAR_FILE = ROOT / "data" / "calendar_latest.json"
 THEORY_FILE = ROOT / "data" / "macro_theory.json"
+WEEKLY_DIR = ROOT / "data" / "weekly"
 OUT = ROOT / "dashboard" / "data.js"
 
 
@@ -148,6 +149,13 @@ def build() -> None:
     theory_payload = _load(THEORY_FILE, "theory")
     fred_history_payload = _load(ROOT / "data" / "fred_history.json", "fred_history")
 
+    weekly_dated = sorted(
+        [f for f in WEEKLY_DIR.glob("*.md") if f.name != "current.md"]
+    ) if WEEKLY_DIR.exists() else []
+    weekly_reports = [parse_daily_front_matter(f, include_full_body=True) for f in weekly_dated]
+    latest_weekly = parse_daily_front_matter(weekly_dated[-1], include_full_body=True) \
+        if weekly_dated else None
+
     payload = {
         "last_updated": datetime.now(timezone.utc).isoformat(),
         "daily_releases": build_today_releases(raw_files),
@@ -155,6 +163,7 @@ def build() -> None:
         "history": build_history(raw_files),
         "daily_reports": daily_reports,
         "monthly_reports": monthly_reports,
+        "weekly_reports": weekly_reports,
         "raw_dates": [r.get("date") for r in raw_files if r.get("date")],
         "sectors": sectors_payload,
         "cross_asset": cross_asset_payload,
@@ -163,6 +172,7 @@ def build() -> None:
         "fred_history": fred_history_payload,
         "latest_daily": latest_daily,
         "latest_monthly": latest_monthly,
+        "latest_weekly": latest_weekly,
     }
 
     OUT.parent.mkdir(parents=True, exist_ok=True)

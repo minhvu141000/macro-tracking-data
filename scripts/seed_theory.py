@@ -686,6 +686,54 @@ def main() -> int:
 
     cat_map = {c["id"]: c for c in theory["categories"]}
 
+    LINK_MAP = {
+        "CPI": "https://www.bls.gov/cpi/", "Core CPI": "https://www.bls.gov/cpi/", "PPI": "https://www.bls.gov/ppi/", "Core PPI": "https://www.bls.gov/ppi/",
+        "NFP": "https://www.bls.gov/news.release/empsit.toc.htm", "Unemployment": "https://www.bls.gov/news.release/empsit.toc.htm",
+        "AHE": "https://www.bls.gov/news.release/empsit.toc.htm", "JOLTS": "https://www.bls.gov/jlt/",
+        "Productivity": "https://www.bls.gov/lpc/", "Unit Labor Costs": "https://www.bls.gov/lpc/",
+        "Participation Rate": "https://www.bls.gov/news.release/empsit.toc.htm", "U6 Unemployment": "https://www.bls.gov/news.release/empsit.toc.htm",
+        "Avg Weekly Hours": "https://www.bls.gov/news.release/empsit.toc.htm", "Gov Payrolls": "https://www.bls.gov/news.release/empsit.toc.htm",
+        "Mfg Payrolls": "https://www.bls.gov/news.release/empsit.toc.htm", "Private NFP": "https://www.bls.gov/news.release/empsit.toc.htm",
+        "Real Earnings": "https://www.bls.gov/news.release/realer.htm", "GDP": "https://www.bea.gov/data/gdp/gross-domestic-product",
+        "PCE": "https://www.bea.gov/data/personal-consumption-expenditures-price-index", "Core PCE": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
+        "Personal Income": "https://www.bea.gov/data/income-saving/personal-income", "Personal Spending": "https://www.bea.gov/data/personal-consumption-expenditures",
+        "Vehicle Sales": "https://www.bea.gov/data/special-topics/motor-vehicles", "Corporate Profits": "https://www.bea.gov/data/income-saving/corporate-profits",
+        "Trade Balance": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services", "Exports": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services",
+        "Imports": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services", "Retail Sales": "https://www.census.gov/retail/marts/index.html",
+        "Housing Starts": "https://www.census.gov/construction/nrc/index.html", "Durable Goods": "https://www.census.gov/manufacturing/m3/index.html",
+        "Factory Orders": "https://www.census.gov/manufacturing/m3/index.html", "Construction Spending": "https://www.census.gov/construction/c30/index.html",
+        "Wholesale Inventories": "https://www.census.gov/wholesale/index.html", "Retail Inventories": "https://www.census.gov/retail/index.html",
+        "Goods Trade Balance": "https://www.census.gov/foreign-trade/index.html", "Building Permits": "https://www.census.gov/construction/nrc/index.html",
+        "New Home Sales": "https://www.census.gov/construction/nrs/index.html", "ISM Mfg": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/",
+        "ISM Svc": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/", "ISM Mfg New Orders": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/",
+        "ISM Mfg Prices Paid": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/", "ISM Mfg Employment": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/",
+        "ISM Svc Activity": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/", "Fed Funds Rate": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+        "10Y Yield": "https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yield", "2Y Yield": "https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yield",
+        "Industrial Production": "https://www.federalreserve.gov/releases/g17/current/default.htm", "M2 Money Supply": "https://www.federalreserve.gov/releases/h6/current/default.htm",
+        "Fed Balance Sheet": "https://www.federalreserve.gov/releases/h41/current/default.htm", "Reserve Balances": "https://www.federalreserve.gov/releases/h41/current/default.htm",
+        "Consumer Credit": "https://www.federalreserve.gov/releases/g19/current/default.htm", "Atlanta GDPNow": "https://www.atlantafed.org/cqer/research/gdpnow",
+        "Chicago Fed Activity": "https://www.chicagofed.org/research/data/cfnai/current-data", "Cleveland CPI": "https://www.clevelandfed.org/our-research/indicators-and-data/median-cpi-methodology.aspx",
+        "NY Fed 1Y Inflation Exp": "https://www.newyorkfed.org/microeconomics/sce", "Richmond Fed Mfg": "https://www.richmondfed.org/research/data_analysis/manufacturing",
+        "Dallas Fed Mfg": "https://www.dallasfed.org/research/surveys/tmos", "Michigan": "http://www.sca.isr.umich.edu/",
+        "Michigan Current": "http://www.sca.isr.umich.edu/", "Michigan Expectations": "http://www.sca.isr.umich.edu/",
+        "Michigan 1Y Inflation": "http://www.sca.isr.umich.edu/", "Michigan 5Y Inflation": "http://www.sca.isr.umich.edu/",
+        "Consumer Conf": "https://www.conference-board.org/data/consumerconfidence.cfm", "CB Employment Trends": "https://www.conference-board.org/data/employmenttrends.cfm",
+        "Jobless Claims": "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases", "Continuing Claims": "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases",
+        "Jobless 4-Week Avg": "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases", "ADP NFP": "https://adpemploymentreport.com/",
+        "Challenger Cuts": "https://www.challengergray.com/tags/job-cuts/", "S&P Global Mfg PMI": "https://www.spglobal.com/marketintelligence/en/mi/products/pmi.html",
+        "S&P Global Svc PMI": "https://www.spglobal.com/marketintelligence/en/mi/products/pmi.html", "S&P Global Composite": "https://www.spglobal.com/marketintelligence/en/mi/products/pmi.html",
+        "Chicago PMI": "https://www.ism-chicago.org/", "NFIB Small Biz": "https://www.nfib.com/surveys/small-business-economic-trends/",
+        "IBD/TIPP Optimism": "https://www.tipponline.com/", "IPSOS PCSI": "https://www.ipsos.com/en/economy/PCSI",
+        "Existing Home Sales": "https://www.nar.realtor/research-and-statistics/housing-statistics/existing-home-sales", "FHFA HPI": "https://www.fhfa.gov/DataTools/Downloads/Pages/House-Price-Index.aspx",
+        "Case-Shiller 20": "https://www.spglobal.com/spdji/en/index-family/indicators/sp-corelogic-case-shiller/", "MBA 30Y Rate": "https://www.mba.org/news-and-research/research-and-economics/single-family-research/mortgage-bankers-weekly-applications-survey",
+        "MBA Mortgage Apps": "https://www.mba.org/news-and-research/research-and-economics/single-family-research/mortgage-bankers-weekly-applications-survey", "Federal Budget": "https://www.fiscal.treasury.gov/reports-statements/mts/",
+        "Redbook": "https://www.redbookresearch.com/", "Crude Inventories": "https://www.eia.gov/petroleum/weekly/",
+        "API Crude Stock": "https://www.api.org/products-and-services/statistics/weekly-statistical-bulletin", "Nat Gas Storage": "https://www.eia.gov/naturalgas/weekly/",
+        "Baker Hughes Rigs": "https://rigcount.bakerhughes.com/", "EIA Refinery Runs": "https://www.eia.gov/petroleum/weekly/",
+        "Distillates Stocks": "https://www.eia.gov/petroleum/weekly/", "Gasoline Production": "https://www.eia.gov/petroleum/weekly/",
+        "Gasoline Inventories": "https://www.eia.gov/petroleum/weekly/"
+    }
+
     added = 0
     skipped = 0
     for cat_id, ind in NEW_INDICATORS:
@@ -697,6 +745,22 @@ def main() -> int:
         if ind["id"] in existing_ids:
             skipped += 1
             continue
+            
+        link = LINK_MAP.get(ind.get("short_name"))
+        if link:
+            ind["primary_link"] = link
+        elif ind.get("id") == "ICSA":
+            ind["primary_link"] = "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases"
+        else:
+            if "bls.gov" in ind.get("link", ""):
+                ind["primary_link"] = "https://www.bls.gov/"
+            elif "bea.gov" in ind.get("link", ""):
+                ind["primary_link"] = "https://www.bea.gov/"
+            elif "census.gov" in ind.get("link", ""):
+                ind["primary_link"] = "https://www.census.gov/"
+            elif "federalreserve.gov" in ind.get("link", ""):
+                ind["primary_link"] = "https://www.federalreserve.gov/"
+                
         cat["indicators"].append(ind)
         added += 1
 

@@ -37,6 +37,12 @@ FRED_SERIES = {
     # (PPIACO). PPIACO YoY ~13% misleads — Final Demand YoY ~6.5% matches the release.
     "PPIFID": "PPI Final Demand",
     "PPIFES": "Core PPI (Final Demand ex Food & Energy)",
+    # CPI sub-components — analyst uses for breakdown on CPI day (index levels, MoM/YoY derived)
+    "CUSR0000SAH1": "CPI Shelter",
+    "CPIUFDSL": "CPI Food",
+    "CPIENGSL": "CPI Energy",
+    "CUSR0000SACL1E": "CPI Core Goods (ex Food & Energy)",
+    "CUSR0000SASLE": "CPI Core Services (ex Energy)",
     # Labor
     "PAYEMS": "Nonfarm Payrolls",
     "UNRATE": "Unemployment Rate",
@@ -47,7 +53,13 @@ FRED_SERIES = {
     # GDP: investing.com headline = QoQ annualized growth RATE (e.g. +1.6%), not the
     # level in $B. A191RL1Q225SBEA is already that rate → chart it directly (view=level).
     "A191RL1Q225SBEA": "Real GDP Growth (QoQ ann.)",
+    # GDP components — level series (Chained 2017 $B, SAAR quarterly); mom_pct = QoQ%
+    "PCECC96": "Real PCE (Chained 2017 $B)",
+    "A006RL1Q225SBEA": "Real Gross Private Investment Growth QoQ ann.",
+    "GCEC96": "Real Government Spending (Chained 2017 $B)",
     "RSAFS": "Retail Sales",
+    # Retail Sales sub-component
+    "RSFSXMV": "Retail Sales ex-Motor Vehicles",
     "INDPRO": "Industrial Production",
     "MANEMP": "Manufacturing Employment",
     "BSCICP03USM665S": "Business Confidence",

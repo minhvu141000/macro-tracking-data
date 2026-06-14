@@ -15,7 +15,7 @@ Hệ thống agent thu thập, phân tích và visualize chỉ số vĩ mô Mỹ
 ### 2. Cấu hình
 
 ```bash
-cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking"
+cd "Vĩ mô Mỹ Tracking"
 cp .env.example .env
 # Mở .env, paste FRED_API_KEY=<key của bạn>
 ```

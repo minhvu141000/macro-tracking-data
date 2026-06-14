@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // DOM Elements for Content
   const elShortName = document.getElementById('ind-short-name');
   const elFullName = document.getElementById('ind-full-name');
+  const elNewsLink = document.getElementById('ind-news-link');
+  const elPrimaryLink = document.getElementById('ind-primary-link');
   const elLink = document.getElementById('ind-link');
   const elDesc = document.getElementById('ind-desc');
   const elFreq = document.getElementById('ind-freq');
@@ -219,6 +221,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     elShortName.textContent = indicator.short_name;
     elFullName.textContent = indicator.full_name;
+    
+    if (indicator.news_release_link) {
+      elNewsLink.href = indicator.news_release_link;
+      elNewsLink.style.display = 'inline-block';
+    } else {
+      elNewsLink.style.display = 'none';
+    }
+    
+    if (indicator.primary_link) {
+      elPrimaryLink.href = indicator.primary_link;
+      elPrimaryLink.style.display = 'inline-block';
+    } else {
+      elPrimaryLink.style.display = 'none';
+    }
+    
     elLink.href = indicator.link;
     elDesc.textContent = indicator.description;
     elFreq.textContent = indicator.frequency;

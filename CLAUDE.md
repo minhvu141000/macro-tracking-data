@@ -57,6 +57,7 @@ scripts/build_dashboard.py      # build data.js
 - Date format mọi nơi: `YYYY-MM-DD` (ISO).
 - Daily report `.md` luôn có front-matter YAML với `date`, `surprise_count`, `regime_signal`.
 - Dashboard mở bằng cách double-click `dashboard/index.html`.
+- **Hệ thống Deep Links:** Các chỉ số vĩ mô trong file lý thuyết (`data/macro_theory.json`) được cấu hình để dẫn trực tiếp tới trang gốc của cơ quan ban hành (`primary_link`) và biểu đồ tương tác/bản báo cáo chi tiết (`news_release_link`) như BLS, BEA, Census, Fed. Hệ thống có cơ chế tự động kiểm tra và loại bỏ các link hỏng (broken links) để đảm bảo trải nghiệm học tập trên dashboard (`dashboard/edu.html`).
 
 ## Setup
 Xem `README.md` cho hướng dẫn lấy FRED API key và cài Python deps.
