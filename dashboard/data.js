@@ -1,5 +1,5 @@
 window.MACRO_DATA = {
-  "last_updated": "2026-06-14T07:29:34.129728+00:00",
+  "last_updated": "2026-06-14T07:45:59.279322+00:00",
   "daily_releases": {
     "date": "2026-06-13",
     "releases": [],
@@ -44756,7 +44756,8 @@ window.MACRO_DATA = {
               "PPIFID",
               "MICH1Y"
             ],
-            "primary_link": "https://www.bls.gov/cpi/"
+            "primary_link": "https://www.bls.gov/cpi/",
+            "deep_dive_link": "https://www.bls.gov/charts/consumer-price-index/consumer-price-index-by-category-line-chart.htm"
           },
           {
             "id": "CPILFESL",
@@ -44776,7 +44777,8 @@ window.MACRO_DATA = {
               "PCEPILFE",
               "MEDCPIM158SFRBCLE"
             ],
-            "primary_link": "https://www.bls.gov/cpi/"
+            "primary_link": "https://www.bls.gov/cpi/",
+            "deep_dive_link": "https://www.bls.gov/charts/consumer-price-index/consumer-price-index-by-category-line-chart.htm"
           },
           {
             "id": "PCEPI",
@@ -44797,7 +44799,8 @@ window.MACRO_DATA = {
               "PI",
               "PCE"
             ],
-            "primary_link": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
+            "primary_link": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
+            "deep_dive_link": "https://apps.bea.gov/iTable/?ReqID=19&step=4&isuri=1&categories=survey&nipa_table_list=71"
           },
           {
             "id": "PCEPILFE",
@@ -44818,7 +44821,8 @@ window.MACRO_DATA = {
               "ULCNFB",
               "AHE"
             ],
-            "primary_link": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
+            "primary_link": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
+            "deep_dive_link": "https://apps.bea.gov/iTable/?ReqID=19&step=4&isuri=1&categories=survey&nipa_table_list=71"
           },
           {
             "id": "PPIFID",
@@ -44838,7 +44842,8 @@ window.MACRO_DATA = {
               "CPIAUCSL",
               "ISMMFGPRICES"
             ],
-            "primary_link": "https://www.bls.gov/ppi/"
+            "primary_link": "https://www.bls.gov/ppi/",
+            "deep_dive_link": "https://www.bls.gov/charts/producer-price-index/producer-price-indexes-by-stage-of-processing-line-chart.htm"
           },
           {
             "id": "PPIFES",
@@ -44863,7 +44868,8 @@ window.MACRO_DATA = {
               "PPIFID",
               "CPILFESL"
             ],
-            "primary_link": "https://www.bls.gov/ppi/"
+            "primary_link": "https://www.bls.gov/ppi/",
+            "deep_dive_link": "https://www.bls.gov/charts/producer-price-index/producer-price-indexes-by-stage-of-processing-line-chart.htm"
           },
           {
             "id": "MEDCPIM158SFRBCLE",
@@ -44885,7 +44891,8 @@ window.MACRO_DATA = {
               "CPILFESL",
               "CPIAUCSL"
             ],
-            "primary_link": "https://www.clevelandfed.org/our-research/indicators-and-data/median-cpi-methodology.aspx"
+            "primary_link": "https://www.clevelandfed.org/our-research/indicators-and-data/median-cpi-methodology.aspx",
+            "deep_dive_link": "https://www.clevelandfed.org/our-research/indicators-and-data/median-cpi"
           },
           {
             "id": "REALEARN",
@@ -44908,7 +44915,8 @@ window.MACRO_DATA = {
               "CPIAUCSL",
               "PCEPILFE"
             ],
-            "primary_link": "https://www.bls.gov/news.release/realer.htm"
+            "primary_link": "https://www.bls.gov/news.release/realer.htm",
+            "deep_dive_link": "https://www.bls.gov/news.release/realer.toc.htm"
           }
         ]
       },
@@ -44936,7 +44944,8 @@ window.MACRO_DATA = {
               "JTSJOL",
               "ADPMNUSNERNSA"
             ],
-            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm"
+            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm",
+            "deep_dive_link": "https://www.bls.gov/charts/employment-situation/employment-change-by-industry.htm"
           },
           {
             "id": "UNRATE",
@@ -44957,7 +44966,8 @@ window.MACRO_DATA = {
               "CIVPART",
               "ICSA"
             ],
-            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm"
+            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm",
+            "deep_dive_link": "https://www.bls.gov/charts/employment-situation/unemployment-rates-by-population-group.htm"
           },
           {
             "id": "ICSA",
@@ -44978,7 +44988,8 @@ window.MACRO_DATA = {
               "CHALLENGER",
               "PAYEMS"
             ],
-            "primary_link": "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases"
+            "primary_link": "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases",
+            "deep_dive_link": "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases"
           },
           {
             "id": "CES0500000003",
@@ -44998,7 +45009,8 @@ window.MACRO_DATA = {
               "ULCNFB",
               "PCEPILFE"
             ],
-            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm"
+            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm",
+            "deep_dive_link": "https://www.bls.gov/charts/employment-situation/average-hourly-earnings.htm"
           },
           {
             "id": "JTSJOL",
@@ -45018,7 +45030,8 @@ window.MACRO_DATA = {
               "PAYEMS",
               "CHALLENGER"
             ],
-            "primary_link": "https://www.bls.gov/jlt/"
+            "primary_link": "https://www.bls.gov/jlt/",
+            "deep_dive_link": "https://www.bls.gov/charts/job-openings-and-labor-turnover/"
           },
           {
             "id": "CCSA",
@@ -45041,7 +45054,8 @@ window.MACRO_DATA = {
               "IC4WSA",
               "PAYEMS"
             ],
-            "primary_link": "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases"
+            "primary_link": "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases",
+            "deep_dive_link": "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases"
           },
           {
             "id": "IC4WSA",
@@ -45064,7 +45078,8 @@ window.MACRO_DATA = {
               "UNRATE",
               "ICSA"
             ],
-            "primary_link": "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases"
+            "primary_link": "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases",
+            "deep_dive_link": "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases"
           },
           {
             "id": "ADPMNUSNERNSA",
@@ -45088,7 +45103,8 @@ window.MACRO_DATA = {
               "ICSA"
             ],
             "primary_link": "https://adpemploymentreport.com/",
-            "news_release_link": "https://adpemploymentreport.com/"
+            "news_release_link": "https://adpemploymentreport.com/",
+            "deep_dive_link": "https://adpemploymentreport.com/"
           },
           {
             "id": "CHALLENGER",
@@ -45110,7 +45126,8 @@ window.MACRO_DATA = {
               "ICSA",
               "PAYEMS"
             ],
-            "primary_link": "https://www.challengergray.com/tags/job-cuts/"
+            "primary_link": "https://www.challengergray.com/tags/job-cuts/",
+            "deep_dive_link": "https://www.challengergray.com/tags/job-cuts/"
           },
           {
             "id": "OPHNFB",
@@ -45132,7 +45149,8 @@ window.MACRO_DATA = {
               "ULCNFB",
               "GDPC1"
             ],
-            "primary_link": "https://www.bls.gov/lpc/"
+            "primary_link": "https://www.bls.gov/lpc/",
+            "deep_dive_link": "https://www.bls.gov/charts/major-sector-productivity-and-costs/"
           },
           {
             "id": "ULCNFB",
@@ -45155,7 +45173,8 @@ window.MACRO_DATA = {
               "UNRATE",
               "ICSA"
             ],
-            "primary_link": "https://www.bls.gov/lpc/"
+            "primary_link": "https://www.bls.gov/lpc/",
+            "deep_dive_link": "https://www.bls.gov/charts/major-sector-productivity-and-costs/"
           },
           {
             "id": "CIVPART",
@@ -45178,7 +45197,8 @@ window.MACRO_DATA = {
               "UNRATE",
               "ICSA"
             ],
-            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm"
+            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm",
+            "deep_dive_link": "https://www.bls.gov/charts/employment-situation/unemployment-rates-by-population-group.htm"
           },
           {
             "id": "U6RATE",
@@ -45201,7 +45221,8 @@ window.MACRO_DATA = {
               "UNRATE",
               "ICSA"
             ],
-            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm"
+            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm",
+            "deep_dive_link": "https://www.bls.gov/charts/employment-situation/unemployment-rates-by-population-group.htm"
           },
           {
             "id": "AWHAETP",
@@ -45224,7 +45245,8 @@ window.MACRO_DATA = {
               "UNRATE",
               "ICSA"
             ],
-            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm"
+            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm",
+            "deep_dive_link": "https://www.bls.gov/charts/employment-situation/"
           },
           {
             "id": "CES9091000001",
@@ -45247,7 +45269,8 @@ window.MACRO_DATA = {
               "UNRATE",
               "ICSA"
             ],
-            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm"
+            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm",
+            "deep_dive_link": "https://www.bls.gov/charts/employment-situation/employment-change-by-industry.htm"
           },
           {
             "id": "MANEMP",
@@ -45270,7 +45293,8 @@ window.MACRO_DATA = {
               "UNRATE",
               "ICSA"
             ],
-            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm"
+            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm",
+            "deep_dive_link": "https://www.bls.gov/charts/employment-situation/employment-change-by-industry.htm"
           },
           {
             "id": "CES0500000008",
@@ -45293,7 +45317,8 @@ window.MACRO_DATA = {
               "UNRATE",
               "ICSA"
             ],
-            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm"
+            "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm",
+            "deep_dive_link": "https://www.bls.gov/charts/employment-situation/employment-change-by-industry.htm"
           },
           {
             "id": "CETI",
@@ -45317,7 +45342,8 @@ window.MACRO_DATA = {
               "ICSA"
             ],
             "primary_link": "https://www.conference-board.org/data/employmenttrends.cfm",
-            "news_release_link": "https://www.conference-board.org/topics/consumer-confidence"
+            "news_release_link": "https://www.conference-board.org/topics/consumer-confidence",
+            "deep_dive_link": "https://www.conference-board.org/data/employmenttrends.cfm"
           },
           {
             "id": "NYFED1YINFL",
@@ -45341,7 +45367,8 @@ window.MACRO_DATA = {
               "ICSA"
             ],
             "primary_link": "https://www.newyorkfed.org/microeconomics/sce",
-            "news_release_link": "https://www.newyorkfed.org/microeconomics/sce"
+            "news_release_link": "https://www.newyorkfed.org/microeconomics/sce",
+            "deep_dive_link": "https://www.newyorkfed.org/microeconomics/sce/chart-gallery"
           }
         ]
       },
@@ -45368,7 +45395,8 @@ window.MACRO_DATA = {
               "INDPRO",
               "RSAFS"
             ],
-            "primary_link": "https://www.bea.gov/data/gdp/gross-domestic-product"
+            "primary_link": "https://www.bea.gov/data/gdp/gross-domestic-product",
+            "deep_dive_link": "https://apps.bea.gov/iTable/?ReqID=19&step=4&isuri=1&categories=survey&nipa_table_list=1"
           },
           {
             "id": "RSAFS",
@@ -45390,7 +45418,8 @@ window.MACRO_DATA = {
               "TOTALSA"
             ],
             "primary_link": "https://www.census.gov/retail/marts/index.html",
-            "news_release_link": "https://www.census.gov/economic-indicators/"
+            "news_release_link": "https://www.census.gov/economic-indicators/",
+            "deep_dive_link": "https://www.census.gov/retail/index.html"
           },
           {
             "id": "NAPM",
@@ -45410,7 +45439,8 @@ window.MACRO_DATA = {
               "GDPNOW",
               "INDPRO"
             ],
-            "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/"
+            "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/",
+            "deep_dive_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/ism-report-on-business/pmi/"
           },
           {
             "id": "NAPMNMI",
@@ -45430,7 +45460,8 @@ window.MACRO_DATA = {
               "GDPNOW",
               "INDPRO"
             ],
-            "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/"
+            "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/",
+            "deep_dive_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/ism-report-on-business/services/"
           },
           {
             "id": "GDPNOW",
@@ -45455,7 +45486,8 @@ window.MACRO_DATA = {
               "PCE"
             ],
             "primary_link": "https://www.atlantafed.org/cqer/research/gdpnow",
-            "news_release_link": "https://www.atlantafed.org/cqer/research/gdpnow"
+            "news_release_link": "https://www.atlantafed.org/cqer/research/gdpnow",
+            "deep_dive_link": "https://www.atlantafed.org/cqer/research/gdpnow"
           },
           {
             "id": "SPGLOBALMFG",
@@ -45478,7 +45510,8 @@ window.MACRO_DATA = {
               "GDPNOW",
               "INDPRO"
             ],
-            "primary_link": "https://www.spglobal.com/marketintelligence/en/mi/products/pmi.html"
+            "primary_link": "https://www.spglobal.com/marketintelligence/en/mi/products/pmi.html",
+            "deep_dive_link": "https://www.spglobal.com/marketintelligence/en/mi/products/pmi.html"
           },
           {
             "id": "SPGLOBALSVC",
@@ -45501,7 +45534,8 @@ window.MACRO_DATA = {
               "GDPNOW",
               "INDPRO"
             ],
-            "primary_link": "https://www.spglobal.com/marketintelligence/en/mi/products/pmi.html"
+            "primary_link": "https://www.spglobal.com/marketintelligence/en/mi/products/pmi.html",
+            "deep_dive_link": "https://www.spglobal.com/marketintelligence/en/mi/products/pmi.html"
           },
           {
             "id": "SPGLOBALCOMP",
@@ -45524,7 +45558,8 @@ window.MACRO_DATA = {
               "GDPNOW",
               "INDPRO"
             ],
-            "primary_link": "https://www.spglobal.com/marketintelligence/en/mi/products/pmi.html"
+            "primary_link": "https://www.spglobal.com/marketintelligence/en/mi/products/pmi.html",
+            "deep_dive_link": "https://www.spglobal.com/marketintelligence/en/mi/products/pmi.html"
           },
           {
             "id": "CHICAGOPMI",
@@ -45547,7 +45582,8 @@ window.MACRO_DATA = {
               "GDPNOW",
               "INDPRO"
             ],
-            "primary_link": "https://www.ism-chicago.org/"
+            "primary_link": "https://www.ism-chicago.org/",
+            "deep_dive_link": "https://www.ism-chicago.org/"
           },
           {
             "id": "ISMMFGNEW",
@@ -45571,7 +45607,8 @@ window.MACRO_DATA = {
               "GDPNOW",
               "INDPRO"
             ],
-            "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/"
+            "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/",
+            "deep_dive_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/ism-report-on-business/pmi/"
           },
           {
             "id": "ISMMFGPRICES",
@@ -45595,7 +45632,8 @@ window.MACRO_DATA = {
               "GDPNOW",
               "INDPRO"
             ],
-            "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/"
+            "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/",
+            "deep_dive_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/ism-report-on-business/pmi/"
           },
           {
             "id": "ISMMFGEMP",
@@ -45619,7 +45657,8 @@ window.MACRO_DATA = {
               "GDPNOW",
               "INDPRO"
             ],
-            "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/"
+            "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/",
+            "deep_dive_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/ism-report-on-business/pmi/"
           },
           {
             "id": "NEWORDER",
@@ -45644,7 +45683,8 @@ window.MACRO_DATA = {
               "ISMMFGNEW"
             ],
             "primary_link": "https://www.census.gov/manufacturing/m3/index.html",
-            "news_release_link": "https://www.census.gov/economic-indicators/"
+            "news_release_link": "https://www.census.gov/economic-indicators/",
+            "deep_dive_link": "https://www.census.gov/manufacturing/m3/index.html"
           },
           {
             "id": "DGORDER",
@@ -45672,7 +45712,8 @@ window.MACRO_DATA = {
               "MANEMP"
             ],
             "primary_link": "https://www.census.gov/manufacturing/m3/index.html",
-            "news_release_link": "https://www.census.gov/economic-indicators/"
+            "news_release_link": "https://www.census.gov/economic-indicators/",
+            "deep_dive_link": "https://www.census.gov/manufacturing/m3/index.html"
           },
           {
             "id": "TTLCONS",
@@ -45696,7 +45737,8 @@ window.MACRO_DATA = {
               "INDPRO"
             ],
             "primary_link": "https://www.census.gov/construction/c30/index.html",
-            "news_release_link": "https://www.census.gov/economic-indicators/"
+            "news_release_link": "https://www.census.gov/economic-indicators/",
+            "deep_dive_link": "https://www.census.gov/construction/c30/index.html"
           },
           {
             "id": "INDPRO",
@@ -45721,7 +45763,8 @@ window.MACRO_DATA = {
               "ISMMFGNEW"
             ],
             "primary_link": "https://www.federalreserve.gov/releases/g17/current/default.htm",
-            "news_release_link": "https://www.federalreserve.gov/releases/g17/current/default.htm"
+            "news_release_link": "https://www.federalreserve.gov/releases/g17/current/default.htm",
+            "deep_dive_link": "https://www.federalreserve.gov/releases/g17/current/default.htm"
           },
           {
             "id": "PI",
@@ -45744,7 +45787,8 @@ window.MACRO_DATA = {
               "AHE",
               "REALEARN"
             ],
-            "primary_link": "https://www.bea.gov/data/income-saving/personal-income"
+            "primary_link": "https://www.bea.gov/data/income-saving/personal-income",
+            "deep_dive_link": "https://apps.bea.gov/iTable/?ReqID=19&step=4&isuri=1&categories=survey&nipa_table_list=58"
           },
           {
             "id": "PCE",
@@ -45770,7 +45814,8 @@ window.MACRO_DATA = {
               "UMCSENT",
               "PCEPI"
             ],
-            "primary_link": "https://www.bea.gov/data/personal-consumption-expenditures"
+            "primary_link": "https://www.bea.gov/data/personal-consumption-expenditures",
+            "deep_dive_link": "https://apps.bea.gov/iTable/?ReqID=19&step=4&isuri=1&categories=survey&nipa_table_list=58"
           },
           {
             "id": "TOTALSA",
@@ -45795,7 +45840,8 @@ window.MACRO_DATA = {
               "GDPNOW",
               "INDPRO"
             ],
-            "primary_link": "https://www.bea.gov/data/special-topics/motor-vehicles"
+            "primary_link": "https://www.bea.gov/data/special-topics/motor-vehicles",
+            "deep_dive_link": "https://www.bea.gov/data/special-topics/motor-vehicles"
           },
           {
             "id": "WHLSLRIMSA",
@@ -45820,7 +45866,8 @@ window.MACRO_DATA = {
               "INDPRO"
             ],
             "primary_link": "https://www.census.gov/wholesale/index.html",
-            "news_release_link": "https://www.census.gov/economic-indicators/"
+            "news_release_link": "https://www.census.gov/economic-indicators/",
+            "deep_dive_link": "https://www.census.gov/wholesale/index.html"
           },
           {
             "id": "RETAILINV",
@@ -45844,7 +45891,8 @@ window.MACRO_DATA = {
               "INDPRO"
             ],
             "primary_link": "https://www.census.gov/retail/index.html",
-            "news_release_link": "https://www.census.gov/economic-indicators/"
+            "news_release_link": "https://www.census.gov/economic-indicators/",
+            "deep_dive_link": "https://www.census.gov/retail/index.html"
           },
           {
             "id": "GOODSTRADE",
@@ -45868,7 +45916,8 @@ window.MACRO_DATA = {
               "INDPRO"
             ],
             "primary_link": "https://www.census.gov/foreign-trade/index.html",
-            "news_release_link": "https://www.census.gov/economic-indicators/"
+            "news_release_link": "https://www.census.gov/economic-indicators/",
+            "deep_dive_link": "https://www.census.gov/foreign-trade/index.html"
           },
           {
             "id": "CFNAI",
@@ -45892,7 +45941,8 @@ window.MACRO_DATA = {
               "INDPRO"
             ],
             "primary_link": "https://www.chicagofed.org/research/data/cfnai/current-data",
-            "news_release_link": "https://www.chicagofed.org/research/data/cfnai/current-data"
+            "news_release_link": "https://www.chicagofed.org/research/data/cfnai/current-data",
+            "deep_dive_link": "https://www.chicagofed.org/research/data/cfnai/current-data"
           },
           {
             "id": "RICHMONDMFG",
@@ -45917,7 +45967,8 @@ window.MACRO_DATA = {
               "GDPNOW",
               "INDPRO"
             ],
-            "primary_link": "https://www.richmondfed.org/research/data_analysis/manufacturing"
+            "primary_link": "https://www.richmondfed.org/research/data_analysis/manufacturing",
+            "deep_dive_link": "https://www.richmondfed.org/research/data_analysis/manufacturing"
           },
           {
             "id": "DALLASMFG",
@@ -45944,7 +45995,8 @@ window.MACRO_DATA = {
               "INDPRO"
             ],
             "primary_link": "https://www.dallasfed.org/research/surveys/tmos",
-            "news_release_link": "https://www.dallasfed.org/research/surveys/tmos"
+            "news_release_link": "https://www.dallasfed.org/research/surveys/tmos",
+            "deep_dive_link": "https://www.dallasfed.org/research/surveys/tmos"
           },
           {
             "id": "CORPPROFITS",
@@ -45967,7 +46019,8 @@ window.MACRO_DATA = {
               "GDPNOW",
               "INDPRO"
             ],
-            "primary_link": "https://www.bea.gov/data/income-saving/corporate-profits"
+            "primary_link": "https://www.bea.gov/data/income-saving/corporate-profits",
+            "deep_dive_link": "https://www.bea.gov/data/income-saving/corporate-profits"
           },
           {
             "id": "ISMSVCBA",
@@ -45990,7 +46043,8 @@ window.MACRO_DATA = {
               "GDPNOW",
               "INDPRO"
             ],
-            "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/"
+            "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/",
+            "deep_dive_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/ism-report-on-business/services/"
           }
         ]
       },
@@ -46016,7 +46070,8 @@ window.MACRO_DATA = {
               "MICH1Y"
             ],
             "primary_link": "https://www.conference-board.org/data/consumerconfidence.cfm",
-            "news_release_link": "https://www.conference-board.org/topics/consumer-confidence"
+            "news_release_link": "https://www.conference-board.org/topics/consumer-confidence",
+            "deep_dive_link": "https://www.conference-board.org/topics/consumer-confidence"
           },
           {
             "id": "UMCSENT",
@@ -46038,7 +46093,8 @@ window.MACRO_DATA = {
               "MICH5Y"
             ],
             "primary_link": "http://www.sca.isr.umich.edu/",
-            "news_release_link": "https://data.sca.isr.umich.edu/charts.html"
+            "news_release_link": "https://data.sca.isr.umich.edu/charts.html",
+            "deep_dive_link": "https://data.sca.isr.umich.edu/charts.html"
           },
           {
             "id": "MICHCURR",
@@ -46061,7 +46117,8 @@ window.MACRO_DATA = {
               "MICH1Y"
             ],
             "primary_link": "http://www.sca.isr.umich.edu/",
-            "news_release_link": "https://data.sca.isr.umich.edu/charts.html"
+            "news_release_link": "https://data.sca.isr.umich.edu/charts.html",
+            "deep_dive_link": "https://data.sca.isr.umich.edu/charts.html"
           },
           {
             "id": "MICHEXP",
@@ -46084,7 +46141,8 @@ window.MACRO_DATA = {
               "MICH1Y"
             ],
             "primary_link": "http://www.sca.isr.umich.edu/",
-            "news_release_link": "https://data.sca.isr.umich.edu/charts.html"
+            "news_release_link": "https://data.sca.isr.umich.edu/charts.html",
+            "deep_dive_link": "https://data.sca.isr.umich.edu/charts.html"
           },
           {
             "id": "MICH1Y",
@@ -46109,7 +46167,8 @@ window.MACRO_DATA = {
               "CPIAUCSL"
             ],
             "primary_link": "http://www.sca.isr.umich.edu/",
-            "news_release_link": "https://data.sca.isr.umich.edu/charts.html"
+            "news_release_link": "https://data.sca.isr.umich.edu/charts.html",
+            "deep_dive_link": "https://data.sca.isr.umich.edu/charts.html"
           },
           {
             "id": "MICH5Y",
@@ -46132,7 +46191,8 @@ window.MACRO_DATA = {
               "T10YIE"
             ],
             "primary_link": "http://www.sca.isr.umich.edu/",
-            "news_release_link": "https://data.sca.isr.umich.edu/charts.html"
+            "news_release_link": "https://data.sca.isr.umich.edu/charts.html",
+            "deep_dive_link": "https://data.sca.isr.umich.edu/charts.html"
           },
           {
             "id": "NFIB",
@@ -46155,7 +46215,8 @@ window.MACRO_DATA = {
               "MICH1Y"
             ],
             "primary_link": "https://www.nfib.com/surveys/small-business-economic-trends/",
-            "news_release_link": "https://www.nfib.com/surveys/small-business-economic-trends/"
+            "news_release_link": "https://www.nfib.com/surveys/small-business-economic-trends/",
+            "deep_dive_link": "https://www.nfib.com/surveys/small-business-economic-trends/"
           },
           {
             "id": "IBDTIPP",
@@ -46177,7 +46238,8 @@ window.MACRO_DATA = {
               "UMCSENT",
               "MICH1Y"
             ],
-            "primary_link": "https://www.tipponline.com/"
+            "primary_link": "https://www.tipponline.com/",
+            "deep_dive_link": "https://www.tipponline.com/"
           },
           {
             "id": "IPSOSPCSI",
@@ -46199,7 +46261,8 @@ window.MACRO_DATA = {
               "UMCSENT",
               "MICH1Y"
             ],
-            "primary_link": "https://www.ipsos.com/en/economy/PCSI"
+            "primary_link": "https://www.ipsos.com/en/economy/PCSI",
+            "deep_dive_link": "https://www.ipsos.com/en/economy/PCSI"
           }
         ]
       },
@@ -46226,7 +46289,8 @@ window.MACRO_DATA = {
               "MBA30Y"
             ],
             "primary_link": "https://www.census.gov/construction/nrc/index.html",
-            "news_release_link": "https://www.census.gov/economic-indicators/"
+            "news_release_link": "https://www.census.gov/economic-indicators/",
+            "deep_dive_link": "https://www.census.gov/construction/nrc/index.html"
           },
           {
             "id": "EXHOSLUSM495S",
@@ -46247,7 +46311,8 @@ window.MACRO_DATA = {
               "MBA30Y"
             ],
             "primary_link": "https://www.nar.realtor/research-and-statistics/housing-statistics/existing-home-sales",
-            "news_release_link": "https://www.nar.realtor/research-and-statistics/housing-statistics/existing-home-sales"
+            "news_release_link": "https://www.nar.realtor/research-and-statistics/housing-statistics/existing-home-sales",
+            "deep_dive_link": "https://www.nar.realtor/research-and-statistics/housing-statistics/existing-home-sales"
           },
           {
             "id": "PERMIT",
@@ -46271,7 +46336,8 @@ window.MACRO_DATA = {
               "EXHOSLUSM495S"
             ],
             "primary_link": "https://www.census.gov/construction/nrc/index.html",
-            "news_release_link": "https://www.census.gov/economic-indicators/"
+            "news_release_link": "https://www.census.gov/economic-indicators/",
+            "deep_dive_link": "https://www.census.gov/construction/nrc/index.html"
           },
           {
             "id": "HSN1F",
@@ -46295,7 +46361,8 @@ window.MACRO_DATA = {
               "MBA30Y"
             ],
             "primary_link": "https://www.census.gov/construction/nrs/index.html",
-            "news_release_link": "https://www.census.gov/economic-indicators/"
+            "news_release_link": "https://www.census.gov/economic-indicators/",
+            "deep_dive_link": "https://www.census.gov/construction/nrs/index.html"
           },
           {
             "id": "USSTHPI",
@@ -46319,7 +46386,8 @@ window.MACRO_DATA = {
               "MBA30Y"
             ],
             "primary_link": "https://www.fhfa.gov/DataTools/Downloads/Pages/House-Price-Index.aspx",
-            "news_release_link": "https://www.fhfa.gov/DataTools/Downloads/Pages/House-Price-Index.aspx"
+            "news_release_link": "https://www.fhfa.gov/DataTools/Downloads/Pages/House-Price-Index.aspx",
+            "deep_dive_link": "https://www.fhfa.gov/DataTools/Downloads/Pages/House-Price-Index.aspx"
           },
           {
             "id": "CSCH20",
@@ -46343,7 +46411,8 @@ window.MACRO_DATA = {
               "PERMIT",
               "MBA30Y"
             ],
-            "primary_link": "https://www.spglobal.com/spdji/en/index-family/indicators/sp-corelogic-case-shiller/"
+            "primary_link": "https://www.spglobal.com/spdji/en/index-family/indicators/sp-corelogic-case-shiller/",
+            "deep_dive_link": "https://www.spglobal.com/spdji/en/index-family/indicators/sp-corelogic-case-shiller/"
           },
           {
             "id": "MBA30Y",
@@ -46366,7 +46435,8 @@ window.MACRO_DATA = {
               "MBAAPPS",
               "HOUST"
             ],
-            "primary_link": "https://www.mba.org/news-and-research/research-and-economics/single-family-research/mortgage-bankers-weekly-applications-survey"
+            "primary_link": "https://www.mba.org/news-and-research/research-and-economics/single-family-research/mortgage-bankers-weekly-applications-survey",
+            "deep_dive_link": "https://www.mba.org/news-and-research/research-and-economics/single-family-research/mortgage-bankers-weekly-applications-survey"
           },
           {
             "id": "MBAAPPS",
@@ -46392,7 +46462,8 @@ window.MACRO_DATA = {
               "PERMIT",
               "MBA30Y"
             ],
-            "primary_link": "https://www.mba.org/news-and-research/research-and-economics/single-family-research/mortgage-bankers-weekly-applications-survey"
+            "primary_link": "https://www.mba.org/news-and-research/research-and-economics/single-family-research/mortgage-bankers-weekly-applications-survey",
+            "deep_dive_link": "https://www.mba.org/news-and-research/research-and-economics/single-family-research/mortgage-bankers-weekly-applications-survey"
           }
         ]
       },
@@ -46419,7 +46490,8 @@ window.MACRO_DATA = {
               "T10Y2Y"
             ],
             "primary_link": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
-            "news_release_link": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+            "news_release_link": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+            "deep_dive_link": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm"
           },
           {
             "id": "DGS10",
@@ -46441,7 +46513,8 @@ window.MACRO_DATA = {
               "MBA30Y"
             ],
             "primary_link": "https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yield",
-            "news_release_link": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+            "news_release_link": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
+            "deep_dive_link": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/View/InterestRates?type=daily_treasury_yield_curve"
           },
           {
             "id": "DGS2",
@@ -46462,7 +46535,8 @@ window.MACRO_DATA = {
               "T10Y2Y"
             ],
             "primary_link": "https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yield",
-            "news_release_link": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+            "news_release_link": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
+            "deep_dive_link": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/View/InterestRates?type=daily_treasury_yield_curve"
           }
         ]
       },
@@ -46490,7 +46564,8 @@ window.MACRO_DATA = {
               "BOPGSTB",
               "GOODSTRADE"
             ],
-            "primary_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services"
+            "primary_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services",
+            "deep_dive_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services"
           },
           {
             "id": "EXPGS",
@@ -46512,7 +46587,8 @@ window.MACRO_DATA = {
               "BOPGSTB",
               "GOODSTRADE"
             ],
-            "primary_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services"
+            "primary_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services",
+            "deep_dive_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services"
           },
           {
             "id": "IMPGS",
@@ -46534,7 +46610,8 @@ window.MACRO_DATA = {
               "BOPGSTB",
               "GOODSTRADE"
             ],
-            "primary_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services"
+            "primary_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services",
+            "deep_dive_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services"
           }
         ]
       },
@@ -46563,7 +46640,8 @@ window.MACRO_DATA = {
               "M2SL"
             ],
             "primary_link": "https://www.federalreserve.gov/releases/h6/current/default.htm",
-            "news_release_link": "https://www.federalreserve.gov/releases/h6/current/default.htm"
+            "news_release_link": "https://www.federalreserve.gov/releases/h6/current/default.htm",
+            "deep_dive_link": "https://www.federalreserve.gov/releases/h6/current/default.htm"
           },
           {
             "id": "WALCL",
@@ -46586,7 +46664,8 @@ window.MACRO_DATA = {
               "M2SL"
             ],
             "primary_link": "https://www.federalreserve.gov/releases/h41/current/default.htm",
-            "news_release_link": "https://www.federalreserve.gov/releases/h41/current/default.htm"
+            "news_release_link": "https://www.federalreserve.gov/releases/h41/current/default.htm",
+            "deep_dive_link": "https://www.federalreserve.gov/releases/h41/current/default.htm"
           },
           {
             "id": "WRESBAL",
@@ -46609,7 +46688,8 @@ window.MACRO_DATA = {
               "M2SL"
             ],
             "primary_link": "https://www.federalreserve.gov/releases/h41/current/default.htm",
-            "news_release_link": "https://www.federalreserve.gov/releases/h41/current/default.htm"
+            "news_release_link": "https://www.federalreserve.gov/releases/h41/current/default.htm",
+            "deep_dive_link": "https://www.federalreserve.gov/releases/h41/current/default.htm"
           },
           {
             "id": "TOTALSL",
@@ -46632,7 +46712,8 @@ window.MACRO_DATA = {
               "M2SL"
             ],
             "primary_link": "https://www.federalreserve.gov/releases/g19/current/default.htm",
-            "news_release_link": "https://www.federalreserve.gov/releases/g19/current/default.htm"
+            "news_release_link": "https://www.federalreserve.gov/releases/g19/current/default.htm",
+            "deep_dive_link": "https://www.federalreserve.gov/releases/g19/current/default.htm"
           },
           {
             "id": "MTSDS",
@@ -46655,7 +46736,8 @@ window.MACRO_DATA = {
               "M2SL"
             ],
             "primary_link": "https://www.fiscal.treasury.gov/reports-statements/mts/",
-            "news_release_link": "https://www.fiscal.treasury.gov/reports-statements/mts/"
+            "news_release_link": "https://www.fiscal.treasury.gov/reports-statements/mts/",
+            "deep_dive_link": "https://www.fiscal.treasury.gov/reports-statements/mts/"
           },
           {
             "id": "REDBOOK",
@@ -46678,7 +46760,8 @@ window.MACRO_DATA = {
               "M2SL"
             ],
             "primary_link": "https://www.redbookresearch.com/",
-            "news_release_link": "https://www.redbookresearch.com/"
+            "news_release_link": "https://www.redbookresearch.com/",
+            "deep_dive_link": "https://www.redbookresearch.com/"
           }
         ]
       },
@@ -46708,7 +46791,8 @@ window.MACRO_DATA = {
               "WCESTUS1",
               "DCOILWTICO"
             ],
-            "primary_link": "https://www.eia.gov/petroleum/weekly/"
+            "primary_link": "https://www.eia.gov/petroleum/weekly/",
+            "deep_dive_link": "https://www.eia.gov/petroleum/supply/weekly/"
           },
           {
             "id": "APICRUDE",
@@ -46731,7 +46815,8 @@ window.MACRO_DATA = {
               "DCOILWTICO"
             ],
             "primary_link": "https://www.api.org/products-and-services/statistics/weekly-statistical-bulletin",
-            "news_release_link": "https://www.api.org/products-and-services/statistics/weekly-statistical-bulletin"
+            "news_release_link": "https://www.api.org/products-and-services/statistics/weekly-statistical-bulletin",
+            "deep_dive_link": "https://www.api.org/products-and-services/statistics/weekly-statistical-bulletin"
           },
           {
             "id": "NATGAS",
@@ -46753,7 +46838,8 @@ window.MACRO_DATA = {
               "WCESTUS1",
               "DCOILWTICO"
             ],
-            "primary_link": "https://www.eia.gov/naturalgas/weekly/"
+            "primary_link": "https://www.eia.gov/naturalgas/weekly/",
+            "deep_dive_link": "https://www.eia.gov/naturalgas/weekly/"
           },
           {
             "id": "BAKERHUGHES",
@@ -46776,7 +46862,8 @@ window.MACRO_DATA = {
               "WCESTUS1",
               "DCOILWTICO"
             ],
-            "primary_link": "https://rigcount.bakerhughes.com/"
+            "primary_link": "https://rigcount.bakerhughes.com/",
+            "deep_dive_link": "https://rigcount.bakerhughes.com/"
           },
           {
             "id": "EIA_REFINERY_RUNS",
@@ -46798,7 +46885,8 @@ window.MACRO_DATA = {
               "WCESTUS1",
               "DCOILWTICO"
             ],
-            "primary_link": "https://www.eia.gov/petroleum/weekly/"
+            "primary_link": "https://www.eia.gov/petroleum/weekly/",
+            "deep_dive_link": "https://www.eia.gov/petroleum/supply/weekly/"
           },
           {
             "id": "EIA_DISTILLATES_STOCKS",
@@ -46822,7 +46910,8 @@ window.MACRO_DATA = {
               "WCESTUS1",
               "DCOILWTICO"
             ],
-            "primary_link": "https://www.eia.gov/petroleum/weekly/"
+            "primary_link": "https://www.eia.gov/petroleum/weekly/",
+            "deep_dive_link": "https://www.eia.gov/petroleum/supply/weekly/"
           },
           {
             "id": "EIA_GASOLINE_PROD",
@@ -46844,7 +46933,8 @@ window.MACRO_DATA = {
               "WCESTUS1",
               "DCOILWTICO"
             ],
-            "primary_link": "https://www.eia.gov/petroleum/weekly/"
+            "primary_link": "https://www.eia.gov/petroleum/weekly/",
+            "deep_dive_link": "https://www.eia.gov/petroleum/supply/weekly/"
           },
           {
             "id": "EIA_GASOLINE_INV",
@@ -46866,7 +46956,8 @@ window.MACRO_DATA = {
               "WCESTUS1",
               "DCOILWTICO"
             ],
-            "primary_link": "https://www.eia.gov/petroleum/weekly/"
+            "primary_link": "https://www.eia.gov/petroleum/weekly/",
+            "deep_dive_link": "https://www.eia.gov/petroleum/supply/weekly/"
           },
           {
             "id": "EIA_REFINERY_UTIL",
@@ -46887,7 +46978,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "WCESTUS1",
               "DCOILWTICO"
-            ]
+            ],
+            "deep_dive_link": "https://www.eia.gov/petroleum/supply/weekly/"
           },
           {
             "id": "EIA_STEO",
@@ -46908,7 +47000,8 @@ window.MACRO_DATA = {
             "related_indicators": [
               "WCESTUS1",
               "DCOILWTICO"
-            ]
+            ],
+            "deep_dive_link": "https://www.eia.gov/outlooks/steo/"
           }
         ]
       },

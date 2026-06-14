@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // DOM Elements for Content
   const elShortName = document.getElementById('ind-short-name');
   const elFullName = document.getElementById('ind-full-name');
+  const elDeepDiveLink = document.getElementById('ind-deep-dive-link');
   const elNewsLink = document.getElementById('ind-news-link');
   const elPrimaryLink = document.getElementById('ind-primary-link');
   const elLink = document.getElementById('ind-link');
@@ -222,6 +223,13 @@ document.addEventListener('DOMContentLoaded', () => {
     elShortName.textContent = indicator.short_name;
     elFullName.textContent = indicator.full_name;
     
+    if (indicator.deep_dive_link) {
+      elDeepDiveLink.href = indicator.deep_dive_link;
+      elDeepDiveLink.style.display = 'inline-block';
+    } else {
+      elDeepDiveLink.style.display = 'none';
+    }
+
     if (indicator.news_release_link) {
       elNewsLink.href = indicator.news_release_link;
       elNewsLink.style.display = 'inline-block';
