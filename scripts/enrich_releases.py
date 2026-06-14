@@ -206,12 +206,66 @@ def enrich_releases(releases: list[dict[str, Any]]) -> dict[str, Any]:
     }
 
 
+def build_inflation_context(fred_snapshot: dict[str, Any]) -> dict[str, Any]:
+    """Pull the latest hard-data inflation readings into one block.
+
+    Forces every agent to SEE hard-data even on a soft-data day — so it can't
+    declare 'disinflation confirmed / dovish' off a single sentiment survey
+    while Core PCE is still >3%.
+
+    `hard_data_hot` = True when any core gauge is still above the Fed's comfort
+    zone (Core CPI or Core PCE YoY > 3.0%, or headline CPI YoY > 3.5%).
+    """
+    def get(sid: str, key: str) -> float | None:
+        s = fred_snapshot.get(sid) or {}
+        if key == "yoy":
+            return s.get("yoy_pct")
+        if key == "3mo":
+            return s.get("mo3_annualized_pct")
+        return None
+
+    ctx = {
+        "cpi_yoy": get("CPIAUCSL", "yoy"),
+        "cpi_3mo_ann": get("CPIAUCSL", "3mo"),
+        "core_cpi_yoy": get("CPILFESL", "yoy"),
+        "core_cpi_3mo_ann": get("CPILFESL", "3mo"),
+        "pce_yoy": get("PCEPI", "yoy"),
+        "core_pce_yoy": get("PCEPILFE", "yoy"),
+        "core_pce_3mo_ann": get("PCEPILFE", "3mo"),
+    }
+    core_cpi = ctx["core_cpi_yoy"]
+    core_pce = ctx["core_pce_yoy"]
+    cpi = ctx["cpi_yoy"]
+    hot = bool(
+        (core_cpi is not None and core_cpi > 3.0)
+        or (core_pce is not None and core_pce > 3.0)
+        or (cpi is not None and cpi > 3.5)
+    )
+    ctx["hard_data_hot"] = hot
+    if hot:
+        bits = []
+        if core_pce is not None:
+            bits.append(f"Core PCE YoY {core_pce}%")
+        if cpi is not None:
+            bits.append(f"CPI YoY {cpi}%")
+        ctx["note"] = (
+            "Hard-data lạm phát VẪN NÓNG (" + ", ".join(bits) + "). "
+            "Soft-data/khảo sát dovish CHƯA đủ xác nhận disinflation — "
+            "báo cáo phải đối chiếu, không tuyên bố 'risk-on bền/dovish hẳn' một chiều."
+        )
+    else:
+        ctx["note"] = "Hard-data lạm phát đã về vùng dễ chịu (core < 3%)."
+    return ctx
+
+
 def enrich_file(path: Path) -> dict[str, Any]:
     data = json.loads(path.read_text())
     releases = data.get("releases", [])
     summary = enrich_releases(releases)
     data["releases"] = releases
     data["release_summary"] = summary
+    if data.get("fred_snapshot"):
+        data["inflation_context"] = build_inflation_context(data["fred_snapshot"])
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False))
     return summary
 

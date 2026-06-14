@@ -137,14 +137,35 @@ def validate(date_str: str) -> tuple[list[str], list[str]]:
                     f"phân tích trong báo cáo (tìm keyword: {kws[:3]})"
                 )
 
-    # 6. No-data day sanity
+    # 6. Soft-data optimism vs hot hard-data (analytical guardrail → WARNING)
+    infl = raw.get("inflation_context") or {}
+    if infl.get("hard_data_hot"):
+        optimistic = [
+            "disinflation", "dovish", "risk-on bền", "risk-on bền vững",
+            "hạ cánh mềm", "soft landing", "soft-landing", "goldilocks",
+            "lạm phát đang thực sự hạ nhiệt", "lạm phát thực sự hạ nhiệt",
+        ]
+        reconcile = [
+            "hard-data", "hard data", "soft-data", "soft data", "mâu thuẫn",
+            "chưa xác nhận", "vẫn nóng", "vẫn cao", "core pce", "đối chiếu",
+        ]
+        hit_opt = [w for w in optimistic if w in body_low]
+        if hit_opt and not any(w in body_low for w in reconcile):
+            warnings.append(
+                "Báo cáo dùng giọng lạc quan/dovish ("
+                f"'{hit_opt[0]}') NHƯNG hard-data lạm phát còn nóng "
+                f"(Core PCE YoY {infl.get('core_pce_yoy')}%, CPI YoY {infl.get('cpi_yoy')}%) "
+                "và KHÔNG đối chiếu soft-data vs hard-data. Cân nhắc thêm caveat."
+            )
+
+    # 7. No-data day sanity
     if raw and summary.get("signal_release_count", 0) == 0:
         if "không có" not in body_low and "no " not in body_low:
             warnings.append(
                 "Ngày không có release signal nào — báo cáo nên ghi rõ '(không có chỉ số US)'"
             )
 
-    # 7. Length sanity
+    # 8. Length sanity
     if len(body.strip()) < 300:
         warnings.append("Báo cáo rất ngắn (<300 ký tự) — có thể thiếu nội dung")
 

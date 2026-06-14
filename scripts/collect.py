@@ -405,10 +405,14 @@ def collect(target: date, force: bool = False) -> Path:
 
     # Raw daily JSON: trimmed (latest + last 20 obs + pre-computed YoY/MoM/3mo).
     # ~7K tokens for LLM analyst vs ~42K for full version.
+    from enrich_releases import build_inflation_context
+    inflation_context = build_inflation_context(fred_trimmed) if fred_trimmed else None
+
     payload = {
         "date": target.isoformat(),
         "collected_at": datetime.now(timezone.utc).isoformat(),
         "release_summary": release_summary,
+        "inflation_context": inflation_context,
         "releases": releases,
         "fred_snapshot": fred_trimmed,
         "sources": {

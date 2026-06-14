@@ -11860,5 +11860,16 @@
     "surprise_count": 0,
     "groups_present": [],
     "surprised_groups": []
+  },
+  "inflation_context": {
+    "cpi_yoy": null,
+    "cpi_3mo_ann": null,
+    "core_cpi_yoy": null,
+    "core_cpi_3mo_ann": null,
+    "pce_yoy": null,
+    "core_pce_yoy": null,
+    "core_pce_3mo_ann": null,
+    "hard_data_hot": false,
+    "note": "Hard-data lạm phát đã về vùng dễ chịu (core < 3%)."
   }
 }

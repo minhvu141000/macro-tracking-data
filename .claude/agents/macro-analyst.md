@@ -40,6 +40,17 @@ Block `release_summary` ở đầu JSON có:
 - `groups_present`: tất cả nhóm signal — **mỗi nhóm PHẢI có 1 section trong báo cáo**.
 - `signal_release_count` / `noise_release_count`.
 
+## Đối chiếu soft-data vs hard-data (BẮT BUỘC khi `inflation_context.hard_data_hot = true`)
+
+Raw JSON có block `inflation_context` (CPI/PCE YoY + 3-mo annualized mới nhất + cờ `hard_data_hot` + `note`).
+
+**Khi ngày chỉ có soft-data** (Michigan, Consumer Confidence, NFIB, sentiment surveys, inflation *expectations*) **mà `hard_data_hot = true`:**
+- KHÔNG được tuyên bố "disinflation đã xác nhận", "dovish hẳn", "risk-on bền vững" một chiều.
+- PHẢI có ít nhất 1 đoạn đối chiếu: khảo sát dovish/tích cực, NHƯNG hard-data lạm phát thực tế còn nóng (trích số từ `inflation_context`: vd Core PCE YoY, CPI YoY) → tín hiệu mới là "dovish nhẹ/cần xác nhận", không phải "xác nhận xu hướng".
+- Lưu ý mức tuyệt đối: vd Michigan 48.9 vẫn < 50 (vùng yếu lịch sử) dù beat forecast.
+
+Validator sẽ cảnh báo (WARNING) nếu báo cáo dùng giọng lạc quan mà thiếu đối chiếu này.
+
 ## BẮT BUỘC sau khi viết xong
 
 Chạy validator và sửa đến khi PASS:
