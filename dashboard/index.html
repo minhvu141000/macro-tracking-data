@@ -317,6 +317,7 @@
   .badge-hawkish { background: rgba(248, 113, 113, 0.20); color: #fecaca; }
   .badge-dovish { background: rgba(74, 222, 128, 0.18); color: #86efac; }
   .badge-stagflation { background: rgba(251, 191, 36, 0.22); color: #fcd34d; }
+  .badge-warn { background: rgba(251, 191, 36, 0.22); color: #fcd34d; }
   .badge-expansion { background: rgba(74, 222, 128, 0.18); color: #86efac; }
   .badge-slowdown { background: rgba(251, 191, 36, 0.22); color: #fcd34d; }
   .badge-recession { background: rgba(248, 113, 113, 0.25); color: #fecaca; }
@@ -929,8 +930,26 @@ window.renderReleases = function(dateStr) {
       <td class="${surprise.cls}">${surprise.label}</td>
     </tr>`;
   }).join("");
+  // Day summary banner — chỉ có cho view hôm nay (release_summary + inflation_context)
+  const summary = (!dateStr && D.daily_releases) ? (D.daily_releases.release_summary || {}) : {};
+  const infl = (!dateStr && D.daily_releases) ? (D.daily_releases.inflation_context || {}) : {};
+  let banner = "";
+  if (summary.signal_release_count != null) {
+    const sc = summary.surprise_count || 0;
+    banner += `<div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px;">
+      <span class="insights-badge badge-neutral">${summary.signal_release_count} chỉ số chính</span>
+      <span class="insights-badge ${sc > 0 ? 'badge-warn' : 'badge-neutral'}">${sc} surprise</span>
+      <span class="insights-badge badge-neutral">${summary.noise_release_count || 0} nhiễu</span>
+    </div>`;
+  }
+  if (infl && infl.hard_data_hot) {
+    banner += `<div style="margin-bottom:10px; padding:8px 12px; border-radius:8px; background:rgba(248,113,113,.12); border:1px solid rgba(248,113,113,.35); color:#fca5a5; font-size:12px;">
+      ⚠️ <b>Hard-data lạm phát còn nóng</b> — Core PCE YoY ${infl.core_pce_yoy ?? '—'}% · CPI YoY ${infl.cpi_yoy ?? '—'}%. Soft-data dovish chưa đủ xác nhận disinflation.
+    </div>`;
+  }
   el.innerHTML = `
     <div style="margin-bottom:8px; color: var(--muted); font-size: 12px;">Ngày: ${displayDate}</div>
+    ${banner}
     <table>
       <thead><tr><th>Chỉ số</th><th>Giờ (NY)</th><th>Actual</th><th>Forecast</th><th>Previous</th><th>Surprise</th></tr></thead>
       <tbody>${rows}</tbody>
@@ -947,11 +966,23 @@ window.renderReleases = function(dateStr) {
 window.renderReleases();
 
 function classifySurprise(ev) {
+  // Ưu tiên field surprise đã chấm sẵn (z-score tất định từ enrich_releases.py)
+  if (ev.surprise && ev.surprise.label) {
+    const lbl = ev.surprise.label;
+    if (lbl === "in-line") return { label: "in-line", cls: "surprise-inline" };
+    const up = lbl.indexOf("above") !== -1;
+    const shock = lbl.indexOf("shock") !== -1;
+    return {
+      label: (shock ? "⚡ " : "") + (up ? "↑ trên dự báo" : "↓ dưới dự báo"),
+      cls: up ? "surprise-beat" : "surprise-miss"
+    };
+  }
+  // Fallback cho dòng không có surprise (nhiễu/không forecast)
   const a = parseFloat(String(ev.actual ?? "").replace(/[%,KMB]/g, ""));
   const f = parseFloat(String(ev.forecast ?? "").replace(/[%,KMB]/g, ""));
   if (isNaN(a) || isNaN(f)) return { label: "—", cls: "surprise-inline" };
   if (Math.abs(a - f) < Math.max(0.05, Math.abs(f) * 0.02)) return { label: "in-line", cls: "surprise-inline" };
-  return a > f ? { label: "beat", cls: "surprise-beat" } : { label: "miss", cls: "surprise-miss" };
+  return a > f ? { label: "↑ trên dự báo", cls: "surprise-beat" } : { label: "↓ dưới dự báo", cls: "surprise-miss" };
 }
 
 // === KPI grid ===

@@ -1,8 +1,26 @@
 window.MACRO_DATA = {
-  "last_updated": "2026-06-14T04:42:58.850539+00:00",
+  "last_updated": "2026-06-14T07:29:34.129728+00:00",
   "daily_releases": {
     "date": "2026-06-13",
-    "releases": []
+    "releases": [],
+    "release_summary": {
+      "signal_release_count": 0,
+      "noise_release_count": 0,
+      "surprise_count": 0,
+      "groups_present": [],
+      "surprised_groups": []
+    },
+    "inflation_context": {
+      "cpi_yoy": 4.27,
+      "cpi_3mo_ann": 8.2,
+      "core_cpi_yoy": 2.96,
+      "core_cpi_3mo_ann": 3.17,
+      "pce_yoy": 3.77,
+      "core_pce_yoy": 3.29,
+      "core_pce_3mo_ann": 3.78,
+      "hard_data_hot": true,
+      "note": "Hard-data lạm phát VẪN NÓNG (Core PCE YoY 3.29%, CPI YoY 4.27%). Soft-data/khảo sát dovish CHƯA đủ xác nhận disinflation — báo cáo phải đối chiếu, không tuyên bố 'risk-on bền/dovish hẳn' một chiều."
+    }
   },
   "releases_history": {
     "2026-05-21": [],

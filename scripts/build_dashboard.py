@@ -109,7 +109,14 @@ def build_today_releases(raw_files: list[dict[str, Any]]) -> dict[str, Any]:
     if not raw_files:
         return {"date": None, "releases": []}
     latest = raw_files[-1]
-    return {"date": latest.get("date"), "releases": latest.get("releases", [])}
+    # Pass through enriched blocks so the dashboard can surface the day's
+    # surprise_count + hard-data inflation context, not just raw rows.
+    return {
+        "date": latest.get("date"),
+        "releases": latest.get("releases", []),
+        "release_summary": latest.get("release_summary", {}),
+        "inflation_context": latest.get("inflation_context", {}),
+    }
 
 
 def build_releases_history(raw_files: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
