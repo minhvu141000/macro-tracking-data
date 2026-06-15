@@ -1,0 +1,74 @@
+{
+  "updated_at": "2026-06-15",
+  "latest": {
+    "as_of": "2026-06-12",
+    "growth_1m": 3.74,
+    "growth_3m": 3.74,
+    "inflation_1m": -6.74,
+    "inflation_3m": -6.74,
+    "growth_trend_1m": "rising",
+    "note": "Growth surprise 1M +3.7 (beating mạnh, rising), 3M +3.7. Inflation surprise 1M -6.7 (missing mạnh). Data đang vượt kỳ vọng → risk-on tailwind."
+  },
+  "series": [
+    {
+      "date": "2026-05-26",
+      "growth_score": 0.26,
+      "inflation_score": 0
+    },
+    {
+      "date": "2026-05-27",
+      "growth_score": 3.0,
+      "inflation_score": 0
+    },
+    {
+      "date": "2026-05-28",
+      "growth_score": -7.56,
+      "inflation_score": -3.0
+    },
+    {
+      "date": "2026-06-01",
+      "growth_score": 2.18,
+      "inflation_score": 0
+    },
+    {
+      "date": "2026-06-02",
+      "growth_score": 1.44,
+      "inflation_score": 0
+    },
+    {
+      "date": "2026-06-03",
+      "growth_score": 2.93,
+      "inflation_score": 0
+    },
+    {
+      "date": "2026-06-04",
+      "growth_score": -1.03,
+      "inflation_score": 0
+    },
+    {
+      "date": "2026-06-05",
+      "growth_score": 3.0,
+      "inflation_score": 0
+    },
+    {
+      "date": "2026-06-09",
+      "growth_score": 0.34,
+      "inflation_score": 0
+    },
+    {
+      "date": "2026-06-10",
+      "growth_score": 0,
+      "inflation_score": -3.0
+    },
+    {
+      "date": "2026-06-11",
+      "growth_score": -0.82,
+      "inflation_score": -3.0
+    },
+    {
+      "date": "2026-06-12",
+      "growth_score": 0,
+      "inflation_score": 2.26
+    }
+  ]
+}

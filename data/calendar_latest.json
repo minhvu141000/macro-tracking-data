@@ -1,8 +1,8 @@
 {
   "schema_version": "1.1",
-  "fetched_at": "2026-06-13T13:17:23.076024+00:00",
-  "window_start": "2026-06-13",
-  "window_end": "2026-07-04",
+  "fetched_at": "2026-06-15T20:06:24.293233+00:00",
+  "window_start": "2026-06-15",
+  "window_end": "2026-07-06",
   "macro": [
     {
       "date": "2026-06-15",
@@ -86,6 +86,13 @@
       "release_id": 50,
       "type": "macro",
       "estimated": true
+    },
+    {
+      "date": "2026-07-05",
+      "name": "Existing Home Sales",
+      "release_id": 97,
+      "type": "macro",
+      "estimated": true
     }
   ],
   "earnings": [
@@ -105,8 +112,8 @@
       "ticker": "NKE",
       "name": "Nike",
       "sector_etf": "XLY",
-      "time": null,
-      "eps_estimate": null,
+      "time": "AMC",
+      "eps_estimate": 0.12,
       "revenue_estimate_b": null,
       "importance": "medium",
       "type": "earnings"
