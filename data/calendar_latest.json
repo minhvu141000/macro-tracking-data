@@ -1,8 +1,8 @@
 {
   "schema_version": "1.1",
-  "fetched_at": "2026-06-16T05:12:59.959340+00:00",
-  "window_start": "2026-06-15",
-  "window_end": "2026-07-06",
+  "fetched_at": "2026-06-16T16:26:26.724715+00:00",
+  "window_start": "2026-06-16",
+  "window_end": "2026-07-07",
   "macro": [
     {
       "date": "2026-06-17",
@@ -121,10 +121,24 @@
   ],
   "fed_speakers": [],
   "lookahead": {
-    "tomorrow_date": "2026-06-16",
-    "week_end_date": "2026-06-22",
+    "tomorrow_date": "2026-06-17",
+    "week_end_date": "2026-06-23",
     "tomorrow": {
-      "macro": [],
+      "macro": [
+        {
+          "date": "2026-06-17",
+          "name": "FOMC Meeting (Fed rate decision)",
+          "release_id": 8,
+          "type": "macro"
+        },
+        {
+          "date": "2026-06-17",
+          "name": "Durable Goods Orders",
+          "release_id": 326,
+          "type": "macro",
+          "estimated": true
+        }
+      ],
       "earnings": [],
       "fed_speakers": []
     },
@@ -154,6 +168,13 @@
           "date": "2026-06-22",
           "name": "Producer Price Index (PPI)",
           "release_id": 17,
+          "type": "macro",
+          "estimated": true
+        },
+        {
+          "date": "2026-06-23",
+          "name": "Personal Income & Outlays (PCE)",
+          "release_id": 21,
           "type": "macro",
           "estimated": true
         }

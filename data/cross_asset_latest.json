@@ -1,17 +1,17 @@
 {
   "schema_version": "1.1",
-  "fetched_at": "2026-06-15T20:04:54.427179+00:00",
+  "fetched_at": "2026-06-16T16:25:02.513568+00:00",
   "assets": {
     "^VIX": {
-      "latest": 16.04,
-      "latest_date": "2026-06-15",
-      "ret_1d": -9.28,
-      "ret_1w": -15.22,
-      "ret_1m": -12.97,
-      "ret_3m": -28.3,
-      "ret_6m": 1.91,
-      "ret_1y": -22.96,
-      "ret_ytd": 10.54,
+      "latest": 15.9,
+      "latest_date": "2026-06-16",
+      "ret_1d": -10.07,
+      "ret_1w": -15.96,
+      "ret_1m": -13.73,
+      "ret_3m": -28.92,
+      "ret_6m": 1.02,
+      "ret_1y": -23.63,
+      "ret_ytd": 9.58,
       "history": [
         {
           "date": "2025-06-16",
@@ -1018,23 +1018,23 @@
           "value": 17.68
         },
         {
-          "date": "2026-06-15",
-          "value": 16.04
+          "date": "2026-06-16",
+          "value": 15.9
         }
       ],
       "ticker": "^VIX",
       "label": "VIX Volatility Index"
     },
     "^TNX": {
-      "latest": 4.47,
-      "latest_date": "2026-06-15",
-      "ret_1d": -0.4,
-      "ret_1w": -1.82,
-      "ret_1m": 0.18,
-      "ret_3m": 5.9,
-      "ret_6m": 7.92,
-      "ret_1y": 2.57,
-      "ret_ytd": 6.74,
+      "latest": 4.43,
+      "latest_date": "2026-06-16",
+      "ret_1d": -1.27,
+      "ret_1w": -2.68,
+      "ret_1m": -0.69,
+      "ret_3m": 4.98,
+      "ret_6m": 6.98,
+      "ret_1y": 1.68,
+      "ret_ytd": 5.8,
       "history": [
         {
           "date": "2025-06-13",
@@ -2041,23 +2041,23 @@
           "value": 4.49
         },
         {
-          "date": "2026-06-15",
-          "value": 4.47
+          "date": "2026-06-16",
+          "value": 4.43
         }
       ],
       "ticker": "^TNX",
       "label": "10Y Treasury Yield (^TNX)"
     },
     "DX-Y.NYB": {
-      "latest": 99.65,
-      "latest_date": "2026-06-15",
-      "ret_1d": -0.1,
-      "ret_1w": -0.4,
-      "ret_1m": 0.78,
-      "ret_3m": -0.06,
-      "ret_6m": 1.32,
-      "ret_1y": 1.77,
-      "ret_ytd": 1.25,
+      "latest": 99.48,
+      "latest_date": "2026-06-16",
+      "ret_1d": -0.27,
+      "ret_1w": -0.57,
+      "ret_1m": 0.61,
+      "ret_3m": -0.23,
+      "ret_6m": 1.15,
+      "ret_1y": 1.59,
+      "ret_ytd": 1.08,
       "history": [
         {
           "date": "2025-06-13",
@@ -3064,28 +3064,24 @@
           "value": 99.75
         },
         {
-          "date": "2026-06-15",
-          "value": 99.65
+          "date": "2026-06-16",
+          "value": 99.48
         }
       ],
       "ticker": "DX-Y.NYB",
       "label": "DXY US Dollar Index"
     },
     "CL=F": {
-      "latest": 81.35,
-      "latest_date": "2026-06-15",
-      "ret_1d": -4.16,
-      "ret_1w": -10.9,
-      "ret_1m": -19.59,
-      "ret_3m": -12.99,
-      "ret_6m": 41.23,
-      "ret_1y": 11.47,
-      "ret_ytd": 41.92,
+      "latest": 75.18,
+      "latest_date": "2026-06-16",
+      "ret_1d": -6.9,
+      "ret_1w": -14.76,
+      "ret_1m": -28.69,
+      "ret_3m": -21.86,
+      "ret_6m": 30.88,
+      "ret_1y": 4.75,
+      "ret_ytd": 31.16,
       "history": [
-        {
-          "date": "2025-06-16",
-          "value": 71.77
-        },
         {
           "date": "2025-06-17",
           "value": 74.84
@@ -4088,27 +4084,27 @@
         },
         {
           "date": "2026-06-15",
-          "value": 81.35
+          "value": 80.75
+        },
+        {
+          "date": "2026-06-16",
+          "value": 75.18
         }
       ],
       "ticker": "CL=F",
       "label": "WTI Crude Oil Futures"
     },
     "GC=F": {
-      "latest": 4341.8,
-      "latest_date": "2026-06-15",
-      "ret_1d": 3.01,
-      "ret_1w": 0.14,
-      "ret_1m": -7.19,
-      "ret_3m": -13.06,
-      "ret_6m": 1.31,
-      "ret_1y": 26.54,
-      "ret_ytd": 0.64,
+      "latest": 4367.4,
+      "latest_date": "2026-06-16",
+      "ret_1d": 0.91,
+      "ret_1w": 2.52,
+      "ret_1m": -4.14,
+      "ret_3m": -12.67,
+      "ret_6m": 1.57,
+      "ret_1y": 28.59,
+      "ret_ytd": 1.23,
       "history": [
-        {
-          "date": "2025-06-16",
-          "value": 3396.4
-        },
         {
           "date": "2025-06-17",
           "value": 3386.6
@@ -5111,27 +5107,27 @@
         },
         {
           "date": "2026-06-15",
-          "value": 4341.8
+          "value": 4328.0
+        },
+        {
+          "date": "2026-06-16",
+          "value": 4367.4
         }
       ],
       "ticker": "GC=F",
       "label": "Gold Futures"
     },
     "HG=F": {
-      "latest": 6.5,
-      "latest_date": "2026-06-15",
-      "ret_1d": 1.14,
-      "ret_1w": 2.75,
-      "ret_1m": -0.97,
-      "ret_3m": 12.31,
-      "ret_6m": 19.84,
-      "ret_1y": 35.4,
-      "ret_ytd": 15.31,
+      "latest": 6.51,
+      "latest_date": "2026-06-16",
+      "ret_1d": 0.46,
+      "ret_1w": 3.32,
+      "ret_1m": 4.17,
+      "ret_3m": 13.72,
+      "ret_6m": 23.25,
+      "ret_1y": 34.92,
+      "ret_ytd": 15.46,
       "history": [
-        {
-          "date": "2025-06-16",
-          "value": 4.83
-        },
         {
           "date": "2025-06-17",
           "value": 4.8
@@ -6134,27 +6130,27 @@
         },
         {
           "date": "2026-06-15",
-          "value": 6.5
+          "value": 6.48
+        },
+        {
+          "date": "2026-06-16",
+          "value": 6.51
         }
       ],
       "ticker": "HG=F",
       "label": "Copper Futures"
     },
     "BTC-USD": {
-      "latest": 66560.94,
-      "latest_date": "2026-06-15",
-      "ret_1d": 1.29,
-      "ret_1w": 8.32,
-      "ret_1m": -13.87,
-      "ret_3m": -10.64,
-      "ret_6m": -5.08,
-      "ret_1y": -46.65,
-      "ret_ytd": -24.99,
+      "latest": 65743.57,
+      "latest_date": "2026-06-16",
+      "ret_1d": -0.82,
+      "ret_1w": 3.43,
+      "ret_1m": -13.3,
+      "ret_3m": -11.37,
+      "ret_6m": -4.43,
+      "ret_1y": -45.87,
+      "ret_ytd": -25.91,
       "history": [
-        {
-          "date": "2025-10-07",
-          "value": 121451.38
-        },
         {
           "date": "2025-10-08",
           "value": 123354.87
@@ -7157,7 +7153,11 @@
         },
         {
           "date": "2026-06-15",
-          "value": 66560.94
+          "value": 66289.5
+        },
+        {
+          "date": "2026-06-16",
+          "value": 65743.57
         }
       ],
       "ticker": "BTC-USD",

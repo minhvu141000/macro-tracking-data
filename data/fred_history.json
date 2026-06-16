@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15T20:04:13.941453+00:00",
+  "updated_at": "2026-06-16T16:24:30.499264+00:00",
   "fred_snapshot": {
     "CPIAUCSL": {
       "label": "CPI All Items",
@@ -20360,16 +20360,16 @@
       "label": "Atlanta Fed GDPNow",
       "latest": {
         "date": "2026-04-01",
-        "value": 3.2906
+        "value": 2.8314
       },
       "previous": {
         "date": "2026-01-01",
         "value": 1.2392
       },
-      "change_pct": 165.542,
+      "change_pct": 128.486,
       "frequency": "quarterly",
-      "mom_pct": 165.542,
-      "yoy_pct": 13.39,
+      "mom_pct": 128.486,
+      "yoy_pct": -2.43,
       "history": [
         {
           "date": "2011-07-01",
@@ -20609,7 +20609,7 @@
         },
         {
           "date": "2026-04-01",
-          "value": 3.2906
+          "value": 2.8314
         }
       ]
     },
@@ -22110,23 +22110,19 @@
     "HOUST": {
       "label": "Housing Starts",
       "latest": {
-        "date": "2026-04-01",
-        "value": 1465.0
+        "date": "2026-05-01",
+        "value": 1177.0
       },
       "previous": {
-        "date": "2026-03-01",
-        "value": 1507.0
+        "date": "2026-04-01",
+        "value": 1392.0
       },
-      "change_pct": -2.787,
+      "change_pct": -15.445,
       "frequency": "monthly",
-      "mom_pct": -2.787,
-      "yoy_pct": 4.64,
-      "mo3_annualized_pct": 25.18,
+      "mom_pct": -15.445,
+      "yoy_pct": -8.69,
+      "mo3_annualized_pct": -41.53,
       "history": [
-        {
-          "date": "2016-05-01",
-          "value": 1148.0
-        },
         {
           "date": "2016-06-01",
           "value": 1203.0
@@ -22597,11 +22593,15 @@
         },
         {
           "date": "2026-03-01",
-          "value": 1507.0
+          "value": 1522.0
         },
         {
           "date": "2026-04-01",
-          "value": 1465.0
+          "value": 1392.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 1177.0
         }
       ]
     },
@@ -23176,21 +23176,17 @@
     "DFF": {
       "label": "Fed Funds Rate",
       "latest": {
-        "date": "2026-06-11",
+        "date": "2026-06-12",
         "value": 3.62
       },
       "previous": {
-        "date": "2026-06-10",
+        "date": "2026-06-11",
         "value": 3.62
       },
       "change_pct": 0.0,
       "frequency": "daily",
       "mom_pct": 0.0,
       "history": [
-        {
-          "date": "2026-02-12",
-          "value": 3.64
-        },
         {
           "date": "2026-02-13",
           "value": 3.64
@@ -23666,27 +23662,27 @@
         {
           "date": "2026-06-11",
           "value": 3.62
+        },
+        {
+          "date": "2026-06-12",
+          "value": 3.62
         }
       ]
     },
     "DGS10": {
       "label": "10Y Treasury Yield",
       "latest": {
+        "date": "2026-06-12",
+        "value": 4.48
+      },
+      "previous": {
         "date": "2026-06-11",
         "value": 4.45
       },
-      "previous": {
-        "date": "2026-06-10",
-        "value": 4.55
-      },
-      "change_pct": -2.198,
+      "change_pct": 0.674,
       "frequency": "daily",
-      "mom_pct": -2.198,
+      "mom_pct": 0.674,
       "history": [
-        {
-          "date": "2025-12-26",
-          "value": 4.14
-        },
         {
           "date": "2025-12-29",
           "value": 4.12
@@ -24146,27 +24142,27 @@
         {
           "date": "2026-06-11",
           "value": 4.45
+        },
+        {
+          "date": "2026-06-12",
+          "value": 4.48
         }
       ]
     },
     "DGS2": {
       "label": "2Y Treasury Yield",
       "latest": {
+        "date": "2026-06-12",
+        "value": 4.09
+      },
+      "previous": {
         "date": "2026-06-11",
         "value": 4.05
       },
-      "previous": {
-        "date": "2026-06-10",
-        "value": 4.13
-      },
-      "change_pct": -1.937,
+      "change_pct": 0.988,
       "frequency": "daily",
-      "mom_pct": -1.937,
+      "mom_pct": 0.988,
       "history": [
-        {
-          "date": "2025-12-26",
-          "value": 3.46
-        },
         {
           "date": "2025-12-29",
           "value": 3.45
@@ -24626,27 +24622,27 @@
         {
           "date": "2026-06-11",
           "value": 4.05
+        },
+        {
+          "date": "2026-06-12",
+          "value": 4.09
         }
       ]
     },
     "DGS3MO": {
       "label": "3M Treasury Yield",
       "latest": {
-        "date": "2026-06-11",
+        "date": "2026-06-12",
         "value": 3.78
       },
       "previous": {
-        "date": "2026-06-10",
-        "value": 3.79
+        "date": "2026-06-11",
+        "value": 3.78
       },
-      "change_pct": -0.264,
+      "change_pct": 0.0,
       "frequency": "daily",
-      "mom_pct": -0.264,
+      "mom_pct": 0.0,
       "history": [
-        {
-          "date": "2025-12-26",
-          "value": 3.64
-        },
         {
           "date": "2025-12-29",
           "value": 3.68
@@ -25106,27 +25102,27 @@
         {
           "date": "2026-06-11",
           "value": 3.78
+        },
+        {
+          "date": "2026-06-12",
+          "value": 3.78
         }
       ]
     },
     "DGS6MO": {
       "label": "6M Treasury Yield",
       "latest": {
+        "date": "2026-06-12",
+        "value": 3.82
+      },
+      "previous": {
         "date": "2026-06-11",
         "value": 3.81
       },
-      "previous": {
-        "date": "2026-06-10",
-        "value": 3.82
-      },
-      "change_pct": -0.262,
+      "change_pct": 0.262,
       "frequency": "daily",
-      "mom_pct": -0.262,
+      "mom_pct": 0.262,
       "history": [
-        {
-          "date": "2025-12-26",
-          "value": 3.58
-        },
         {
           "date": "2025-12-29",
           "value": 3.59
@@ -25586,27 +25582,27 @@
         {
           "date": "2026-06-11",
           "value": 3.81
+        },
+        {
+          "date": "2026-06-12",
+          "value": 3.82
         }
       ]
     },
     "T10Y2Y": {
       "label": "10Y-2Y Spread",
       "latest": {
+        "date": "2026-06-15",
+        "value": 0.4
+      },
+      "previous": {
         "date": "2026-06-12",
         "value": 0.39
       },
-      "previous": {
-        "date": "2026-06-11",
-        "value": 0.4
-      },
-      "change_pct": -2.5,
+      "change_pct": 2.564,
       "frequency": "daily",
-      "mom_pct": -2.5,
+      "mom_pct": 2.564,
       "history": [
-        {
-          "date": "2025-12-29",
-          "value": 0.67
-        },
         {
           "date": "2025-12-30",
           "value": 0.69
@@ -26066,39 +26062,27 @@
         {
           "date": "2026-06-12",
           "value": 0.39
+        },
+        {
+          "date": "2026-06-15",
+          "value": 0.4
         }
       ]
     },
     "DTWEXBGS": {
       "label": "USD Index (Broad)",
       "latest": {
-        "date": "2026-06-05",
-        "value": 120.0831
+        "date": "2026-06-12",
+        "value": 119.5073
       },
       "previous": {
-        "date": "2026-06-04",
-        "value": 119.3615
+        "date": "2026-06-11",
+        "value": 120.1174
       },
-      "change_pct": 0.605,
+      "change_pct": -0.508,
       "frequency": "daily",
-      "mom_pct": 0.605,
+      "mom_pct": -0.508,
       "history": [
-        {
-          "date": "2025-12-22",
-          "value": 119.9912
-        },
-        {
-          "date": "2025-12-23",
-          "value": 119.7057
-        },
-        {
-          "date": "2025-12-24",
-          "value": 119.4372
-        },
-        {
-          "date": "2025-12-26",
-          "value": 119.4723
-        },
         {
           "date": "2025-12-29",
           "value": 119.5899
@@ -26542,27 +26526,43 @@
         {
           "date": "2026-06-05",
           "value": 120.0831
+        },
+        {
+          "date": "2026-06-08",
+          "value": 120.034
+        },
+        {
+          "date": "2026-06-09",
+          "value": 119.9617
+        },
+        {
+          "date": "2026-06-10",
+          "value": 119.9134
+        },
+        {
+          "date": "2026-06-11",
+          "value": 120.1174
+        },
+        {
+          "date": "2026-06-12",
+          "value": 119.5073
         }
       ]
     },
     "VIXCLS": {
       "label": "VIX (Volatility Index)",
       "latest": {
+        "date": "2026-06-15",
+        "value": 16.2
+      },
+      "previous": {
         "date": "2026-06-12",
         "value": 17.68
       },
-      "previous": {
-        "date": "2026-06-11",
-        "value": 19.44
-      },
-      "change_pct": -9.053,
+      "change_pct": -8.371,
       "frequency": "daily",
-      "mom_pct": -9.053,
+      "mom_pct": -8.371,
       "history": [
-        {
-          "date": "2025-12-29",
-          "value": 14.2
-        },
         {
           "date": "2025-12-30",
           "value": 14.33
@@ -27030,6 +27030,10 @@
         {
           "date": "2026-06-12",
           "value": 17.68
+        },
+        {
+          "date": "2026-06-15",
+          "value": 16.2
         }
       ]
     },
@@ -27508,16 +27512,16 @@
     "BAMLH0A0HYM2": {
       "label": "High-Yield Credit Spread (HY OAS)",
       "latest": {
+        "date": "2026-06-15",
+        "value": 2.66
+      },
+      "previous": {
         "date": "2026-06-12",
         "value": 2.71
       },
-      "previous": {
-        "date": "2026-06-11",
-        "value": 2.78
-      },
-      "change_pct": -2.518,
+      "change_pct": -1.845,
       "frequency": "daily",
-      "mom_pct": -2.518,
+      "mom_pct": -1.845,
       "history": [
         {
           "date": "2026-01-02",
@@ -27994,22 +27998,26 @@
         {
           "date": "2026-06-12",
           "value": 2.71
+        },
+        {
+          "date": "2026-06-15",
+          "value": 2.66
         }
       ]
     },
     "BAMLC0A0CM": {
       "label": "Investment-Grade Credit Spread (IG OAS)",
       "latest": {
+        "date": "2026-06-15",
+        "value": 0.73
+      },
+      "previous": {
         "date": "2026-06-12",
         "value": 0.74
       },
-      "previous": {
-        "date": "2026-06-11",
-        "value": 0.75
-      },
-      "change_pct": -1.333,
+      "change_pct": -1.351,
       "frequency": "daily",
-      "mom_pct": -1.333,
+      "mom_pct": -1.351,
       "history": [
         {
           "date": "2026-01-02",
@@ -28486,27 +28494,27 @@
         {
           "date": "2026-06-12",
           "value": 0.74
+        },
+        {
+          "date": "2026-06-15",
+          "value": 0.73
         }
       ]
     },
     "T10YIE": {
       "label": "10Y Inflation Breakeven",
       "latest": {
+        "date": "2026-06-15",
+        "value": 2.32
+      },
+      "previous": {
         "date": "2026-06-12",
         "value": 2.31
       },
-      "previous": {
-        "date": "2026-06-11",
-        "value": 2.29
-      },
-      "change_pct": 0.873,
+      "change_pct": 0.433,
       "frequency": "daily",
-      "mom_pct": 0.873,
+      "mom_pct": 0.433,
       "history": [
-        {
-          "date": "2025-12-29",
-          "value": 2.22
-        },
         {
           "date": "2025-12-30",
           "value": 2.24
@@ -28966,6 +28974,10 @@
         {
           "date": "2026-06-12",
           "value": 2.31
+        },
+        {
+          "date": "2026-06-15",
+          "value": 2.32
         }
       ]
     }

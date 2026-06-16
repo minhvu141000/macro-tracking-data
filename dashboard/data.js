@@ -1,18 +1,326 @@
 window.MACRO_DATA = {
-  "last_updated": "2026-06-16T05:14:28.448864+00:00",
+  "last_updated": "2026-06-16T16:36:09.279782+00:00",
   "daily_releases": {
-    "date": "2026-06-15",
-    "releases": [],
+    "date": "2026-06-16",
+    "releases": [
+      {
+        "name": "ADP Employment Change Weekly",
+        "time": "2026/06/16 08:15:00",
+        "importance": "bull2",
+        "actual": "25.50K",
+        "forecast": null,
+        "previous": "29.00K",
+        "event_url": "https://www.investing.com/economic-calendar/adp-employment-change-weekly-2295",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 25.5,
+          "forecast": null,
+          "previous": 29.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -3.5,
+          "direction": "down"
+        },
+        "group": "adp",
+        "is_noise": false
+      },
+      {
+        "name": "Building Permits  (May)",
+        "time": "2026/06/16 08:30:00",
+        "importance": "bull2",
+        "actual": "1.413M",
+        "forecast": "1.420M",
+        "previous": "1.423M",
+        "event_url": "https://www.investing.com/economic-calendar/building-permits-25",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.413,
+          "forecast": 1.42,
+          "previous": 1.423
+        },
+        "surprise": {
+          "deviation": -0.007,
+          "z_score": -0.1,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": -0.01,
+          "direction": "down"
+        },
+        "group": "housing_starts",
+        "is_noise": false
+      },
+      {
+        "name": "Building Permits (MoM)  (May)",
+        "time": "2026/06/16 08:30:00",
+        "importance": "bull1",
+        "actual": "-0.7%",
+        "forecast": null,
+        "previous": "4.4%",
+        "event_url": "https://www.investing.com/economic-calendar/building-permits-885",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -0.7,
+          "forecast": null,
+          "previous": 4.4
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -5.1,
+          "direction": "down"
+        },
+        "group": "housing_starts",
+        "is_noise": false
+      },
+      {
+        "name": "Export Price Index (MoM)  (May)",
+        "time": "2026/06/16 08:30:00",
+        "importance": "bull2",
+        "actual": "1.3%",
+        "forecast": "1.2%",
+        "previous": "3.5%",
+        "event_url": "https://www.investing.com/economic-calendar/export-price-index-892",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.3,
+          "forecast": 1.2,
+          "previous": 3.5
+        },
+        "surprise": {
+          "deviation": 0.1,
+          "z_score": 1.67,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": -2.2,
+          "direction": "down"
+        },
+        "group": "other",
+        "is_noise": false
+      },
+      {
+        "name": "Export Price Index (YoY)  (May)",
+        "time": "2026/06/16 08:30:00",
+        "importance": "bull1",
+        "actual": "11.2%",
+        "forecast": null,
+        "previous": "8.8%",
+        "event_url": "https://www.investing.com/economic-calendar/export-price-index-1748",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 11.2,
+          "forecast": null,
+          "previous": 8.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 2.4,
+          "direction": "up"
+        },
+        "group": "other",
+        "is_noise": false
+      },
+      {
+        "name": "Housing Starts  (May)",
+        "time": "2026/06/16 08:30:00",
+        "importance": "bull2",
+        "actual": "1.177M",
+        "forecast": "1.430M",
+        "previous": "1.392M",
+        "event_url": "https://www.investing.com/economic-calendar/housing-starts-151",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.177,
+          "forecast": 1.43,
+          "previous": 1.392
+        },
+        "surprise": {
+          "deviation": -0.253,
+          "z_score": -3.54,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -0.215,
+          "direction": "down"
+        },
+        "group": "housing_starts",
+        "is_noise": false
+      },
+      {
+        "name": "Housing Starts (MoM)  (May)",
+        "time": "2026/06/16 08:30:00",
+        "importance": "bull2",
+        "actual": "-15.4%",
+        "forecast": null,
+        "previous": "-8.5%",
+        "event_url": "https://www.investing.com/economic-calendar/housing-starts-898",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -15.4,
+          "forecast": null,
+          "previous": -8.5
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -6.9,
+          "direction": "down"
+        },
+        "group": "housing_starts",
+        "is_noise": false
+      },
+      {
+        "name": "Import Price Index (MoM)  (May)",
+        "time": "2026/06/16 08:30:00",
+        "importance": "bull2",
+        "actual": "1.9%",
+        "forecast": "0.9%",
+        "previous": "2.0%",
+        "event_url": "https://www.investing.com/economic-calendar/import-price-index-153",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.9,
+          "forecast": 0.9,
+          "previous": 2.0
+        },
+        "surprise": {
+          "deviation": 1.0,
+          "z_score": 22.22,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": -0.1,
+          "direction": "down"
+        },
+        "group": "other",
+        "is_noise": false
+      },
+      {
+        "name": "Import Price Index (YoY)  (May)",
+        "time": "2026/06/16 08:30:00",
+        "importance": "bull1",
+        "actual": "6.7%",
+        "forecast": null,
+        "previous": "4.2%",
+        "event_url": "https://www.investing.com/economic-calendar/import-price-index-1747",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 6.7,
+          "forecast": null,
+          "previous": 4.2
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 2.5,
+          "direction": "up"
+        },
+        "group": "other",
+        "is_noise": false
+      },
+      {
+        "name": "Redbook (YoY)",
+        "time": "2026/06/16 08:55:00",
+        "importance": "bull1",
+        "actual": "9.4%",
+        "forecast": null,
+        "previous": "9.1%",
+        "event_url": "https://www.investing.com/economic-calendar/redbook-911",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 9.4,
+          "forecast": null,
+          "previous": 9.1
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.3,
+          "direction": "up"
+        },
+        "group": "fed_plumbing",
+        "is_noise": true
+      },
+      {
+        "name": "Atlanta Fed GDPNow  (Q2)",
+        "time": "2026/06/16 12:00:00",
+        "importance": "bull2",
+        "actual": "2.8%",
+        "forecast": "3.3%",
+        "previous": "3.3%",
+        "event_url": "https://www.investing.com/economic-calendar/atlanta-fed-gdpnow-2260",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.8,
+          "forecast": 3.3,
+          "previous": 3.3
+        },
+        "surprise": {
+          "deviation": -0.5,
+          "z_score": -3.03,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -0.5,
+          "direction": "down"
+        },
+        "group": "other",
+        "is_noise": false
+      },
+      {
+        "name": "20-Year Bond Auction",
+        "time": "2026/06/16 13:00:00",
+        "importance": "bull2",
+        "actual": null,
+        "forecast": null,
+        "previous": "5.122%",
+        "event_url": "https://www.investing.com/economic-calendar/20-year-bond-auction-1983",
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": 5.122
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "auctions",
+        "is_noise": true
+      },
+      {
+        "name": "API Weekly Crude Oil Stock",
+        "time": "2026/06/16 16:30:00",
+        "importance": "bull2",
+        "actual": null,
+        "forecast": "-4.500M",
+        "previous": "-9.119M",
+        "event_url": "https://www.investing.com/economic-calendar/api-weekly-crude-stock-656",
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": -4.5,
+          "previous": -9.119
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "energy_inventory",
+        "is_noise": true
+      }
+    ],
     "release_summary": {
-      "signal_release_count": 0,
-      "noise_release_count": 0,
-      "surprise_count": 0,
-      "groups_present": [],
-      "surprised_groups": [],
+      "signal_release_count": 10,
+      "noise_release_count": 3,
+      "surprise_count": 2,
+      "groups_present": [
+        "adp",
+        "housing_starts",
+        "other"
+      ],
+      "surprised_groups": [
+        "housing_starts",
+        "other"
+      ],
       "day_surprise_score": {
-        "growth_score": 0,
+        "growth_score": -3.0,
         "inflation_score": 0,
-        "n_growth": 0,
+        "n_growth": 1,
         "n_inflation": 0
       }
     },
@@ -6380,7 +6688,309 @@ window.MACRO_DATA = {
       }
     ],
     "2026-06-13": [],
-    "2026-06-15": []
+    "2026-06-15": [],
+    "2026-06-16": [
+      {
+        "name": "ADP Employment Change Weekly",
+        "time": "2026/06/16 08:15:00",
+        "importance": "bull2",
+        "actual": "25.50K",
+        "forecast": null,
+        "previous": "29.00K",
+        "event_url": "https://www.investing.com/economic-calendar/adp-employment-change-weekly-2295",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 25.5,
+          "forecast": null,
+          "previous": 29.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -3.5,
+          "direction": "down"
+        },
+        "group": "adp",
+        "is_noise": false
+      },
+      {
+        "name": "Building Permits  (May)",
+        "time": "2026/06/16 08:30:00",
+        "importance": "bull2",
+        "actual": "1.413M",
+        "forecast": "1.420M",
+        "previous": "1.423M",
+        "event_url": "https://www.investing.com/economic-calendar/building-permits-25",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.413,
+          "forecast": 1.42,
+          "previous": 1.423
+        },
+        "surprise": {
+          "deviation": -0.007,
+          "z_score": -0.1,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": -0.01,
+          "direction": "down"
+        },
+        "group": "housing_starts",
+        "is_noise": false
+      },
+      {
+        "name": "Building Permits (MoM)  (May)",
+        "time": "2026/06/16 08:30:00",
+        "importance": "bull1",
+        "actual": "-0.7%",
+        "forecast": null,
+        "previous": "4.4%",
+        "event_url": "https://www.investing.com/economic-calendar/building-permits-885",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -0.7,
+          "forecast": null,
+          "previous": 4.4
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -5.1,
+          "direction": "down"
+        },
+        "group": "housing_starts",
+        "is_noise": false
+      },
+      {
+        "name": "Export Price Index (MoM)  (May)",
+        "time": "2026/06/16 08:30:00",
+        "importance": "bull2",
+        "actual": "1.3%",
+        "forecast": "1.2%",
+        "previous": "3.5%",
+        "event_url": "https://www.investing.com/economic-calendar/export-price-index-892",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.3,
+          "forecast": 1.2,
+          "previous": 3.5
+        },
+        "surprise": {
+          "deviation": 0.1,
+          "z_score": 1.67,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": -2.2,
+          "direction": "down"
+        },
+        "group": "other",
+        "is_noise": false
+      },
+      {
+        "name": "Export Price Index (YoY)  (May)",
+        "time": "2026/06/16 08:30:00",
+        "importance": "bull1",
+        "actual": "11.2%",
+        "forecast": null,
+        "previous": "8.8%",
+        "event_url": "https://www.investing.com/economic-calendar/export-price-index-1748",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 11.2,
+          "forecast": null,
+          "previous": 8.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 2.4,
+          "direction": "up"
+        },
+        "group": "other",
+        "is_noise": false
+      },
+      {
+        "name": "Housing Starts  (May)",
+        "time": "2026/06/16 08:30:00",
+        "importance": "bull2",
+        "actual": "1.177M",
+        "forecast": "1.430M",
+        "previous": "1.392M",
+        "event_url": "https://www.investing.com/economic-calendar/housing-starts-151",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.177,
+          "forecast": 1.43,
+          "previous": 1.392
+        },
+        "surprise": {
+          "deviation": -0.253,
+          "z_score": -3.54,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -0.215,
+          "direction": "down"
+        },
+        "group": "housing_starts",
+        "is_noise": false
+      },
+      {
+        "name": "Housing Starts (MoM)  (May)",
+        "time": "2026/06/16 08:30:00",
+        "importance": "bull2",
+        "actual": "-15.4%",
+        "forecast": null,
+        "previous": "-8.5%",
+        "event_url": "https://www.investing.com/economic-calendar/housing-starts-898",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -15.4,
+          "forecast": null,
+          "previous": -8.5
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -6.9,
+          "direction": "down"
+        },
+        "group": "housing_starts",
+        "is_noise": false
+      },
+      {
+        "name": "Import Price Index (MoM)  (May)",
+        "time": "2026/06/16 08:30:00",
+        "importance": "bull2",
+        "actual": "1.9%",
+        "forecast": "0.9%",
+        "previous": "2.0%",
+        "event_url": "https://www.investing.com/economic-calendar/import-price-index-153",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.9,
+          "forecast": 0.9,
+          "previous": 2.0
+        },
+        "surprise": {
+          "deviation": 1.0,
+          "z_score": 22.22,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": -0.1,
+          "direction": "down"
+        },
+        "group": "other",
+        "is_noise": false
+      },
+      {
+        "name": "Import Price Index (YoY)  (May)",
+        "time": "2026/06/16 08:30:00",
+        "importance": "bull1",
+        "actual": "6.7%",
+        "forecast": null,
+        "previous": "4.2%",
+        "event_url": "https://www.investing.com/economic-calendar/import-price-index-1747",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 6.7,
+          "forecast": null,
+          "previous": 4.2
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 2.5,
+          "direction": "up"
+        },
+        "group": "other",
+        "is_noise": false
+      },
+      {
+        "name": "Redbook (YoY)",
+        "time": "2026/06/16 08:55:00",
+        "importance": "bull1",
+        "actual": "9.4%",
+        "forecast": null,
+        "previous": "9.1%",
+        "event_url": "https://www.investing.com/economic-calendar/redbook-911",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 9.4,
+          "forecast": null,
+          "previous": 9.1
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.3,
+          "direction": "up"
+        },
+        "group": "fed_plumbing",
+        "is_noise": true
+      },
+      {
+        "name": "Atlanta Fed GDPNow  (Q2)",
+        "time": "2026/06/16 12:00:00",
+        "importance": "bull2",
+        "actual": "2.8%",
+        "forecast": "3.3%",
+        "previous": "3.3%",
+        "event_url": "https://www.investing.com/economic-calendar/atlanta-fed-gdpnow-2260",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.8,
+          "forecast": 3.3,
+          "previous": 3.3
+        },
+        "surprise": {
+          "deviation": -0.5,
+          "z_score": -3.03,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -0.5,
+          "direction": "down"
+        },
+        "group": "other",
+        "is_noise": false
+      },
+      {
+        "name": "20-Year Bond Auction",
+        "time": "2026/06/16 13:00:00",
+        "importance": "bull2",
+        "actual": null,
+        "forecast": null,
+        "previous": "5.122%",
+        "event_url": "https://www.investing.com/economic-calendar/20-year-bond-auction-1983",
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": 5.122
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "auctions",
+        "is_noise": true
+      },
+      {
+        "name": "API Weekly Crude Oil Stock",
+        "time": "2026/06/16 16:30:00",
+        "importance": "bull2",
+        "actual": null,
+        "forecast": "-4.500M",
+        "previous": "-9.119M",
+        "event_url": "https://www.investing.com/economic-calendar/api-weekly-crude-stock-656",
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": -4.5,
+          "previous": -9.119
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "energy_inventory",
+        "is_noise": true
+      }
+    ]
   },
   "history": {
     "CPIAUCSL": {
@@ -26585,13 +27195,13 @@ window.MACRO_DATA = {
       "label": "Atlanta Fed GDPNow",
       "latest": {
         "date": "2026-04-01",
-        "value": 3.2906
+        "value": 2.8314
       },
       "previous": {
         "date": "2026-01-01",
         "value": 1.2392
       },
-      "change_pct": 165.542,
+      "change_pct": 128.486,
       "history": [
         {
           "date": "2011-07-01",
@@ -26831,7 +27441,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-04-01",
-          "value": 3.2906
+          "value": 2.8314
         }
       ]
     },
@@ -28320,19 +28930,15 @@ window.MACRO_DATA = {
     "HOUST": {
       "label": "Housing Starts",
       "latest": {
-        "date": "2026-04-01",
-        "value": 1465.0
+        "date": "2026-05-01",
+        "value": 1177.0
       },
       "previous": {
-        "date": "2026-03-01",
-        "value": 1507.0
+        "date": "2026-04-01",
+        "value": 1392.0
       },
-      "change_pct": -2.787,
+      "change_pct": -15.445,
       "history": [
-        {
-          "date": "2016-05-01",
-          "value": 1148.0
-        },
         {
           "date": "2016-06-01",
           "value": 1203.0
@@ -28803,11 +29409,15 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-03-01",
-          "value": 1507.0
+          "value": 1522.0
         },
         {
           "date": "2026-04-01",
-          "value": 1465.0
+          "value": 1392.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 1177.0
         }
       ]
     },
@@ -29374,19 +29984,15 @@ window.MACRO_DATA = {
     "DFF": {
       "label": "Fed Funds Rate",
       "latest": {
-        "date": "2026-06-11",
+        "date": "2026-06-12",
         "value": 3.62
       },
       "previous": {
-        "date": "2026-06-10",
+        "date": "2026-06-11",
         "value": 3.62
       },
       "change_pct": 0.0,
       "history": [
-        {
-          "date": "2026-02-12",
-          "value": 3.64
-        },
         {
           "date": "2026-02-13",
           "value": 3.64
@@ -29862,25 +30468,25 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-11",
           "value": 3.62
+        },
+        {
+          "date": "2026-06-12",
+          "value": 3.62
         }
       ]
     },
     "DGS10": {
       "label": "10Y Treasury Yield",
       "latest": {
+        "date": "2026-06-12",
+        "value": 4.48
+      },
+      "previous": {
         "date": "2026-06-11",
         "value": 4.45
       },
-      "previous": {
-        "date": "2026-06-10",
-        "value": 4.55
-      },
-      "change_pct": -2.198,
+      "change_pct": 0.674,
       "history": [
-        {
-          "date": "2025-12-26",
-          "value": 4.14
-        },
         {
           "date": "2025-12-29",
           "value": 4.12
@@ -30340,25 +30946,25 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-11",
           "value": 4.45
+        },
+        {
+          "date": "2026-06-12",
+          "value": 4.48
         }
       ]
     },
     "DGS2": {
       "label": "2Y Treasury Yield",
       "latest": {
+        "date": "2026-06-12",
+        "value": 4.09
+      },
+      "previous": {
         "date": "2026-06-11",
         "value": 4.05
       },
-      "previous": {
-        "date": "2026-06-10",
-        "value": 4.13
-      },
-      "change_pct": -1.937,
+      "change_pct": 0.988,
       "history": [
-        {
-          "date": "2025-12-26",
-          "value": 3.46
-        },
         {
           "date": "2025-12-29",
           "value": 3.45
@@ -30818,25 +31424,25 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-11",
           "value": 4.05
+        },
+        {
+          "date": "2026-06-12",
+          "value": 4.09
         }
       ]
     },
     "DGS3MO": {
       "label": "3M Treasury Yield",
       "latest": {
-        "date": "2026-06-11",
+        "date": "2026-06-12",
         "value": 3.78
       },
       "previous": {
-        "date": "2026-06-10",
-        "value": 3.79
+        "date": "2026-06-11",
+        "value": 3.78
       },
-      "change_pct": -0.264,
+      "change_pct": 0.0,
       "history": [
-        {
-          "date": "2025-12-26",
-          "value": 3.64
-        },
         {
           "date": "2025-12-29",
           "value": 3.68
@@ -31296,25 +31902,25 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-11",
           "value": 3.78
+        },
+        {
+          "date": "2026-06-12",
+          "value": 3.78
         }
       ]
     },
     "DGS6MO": {
       "label": "6M Treasury Yield",
       "latest": {
+        "date": "2026-06-12",
+        "value": 3.82
+      },
+      "previous": {
         "date": "2026-06-11",
         "value": 3.81
       },
-      "previous": {
-        "date": "2026-06-10",
-        "value": 3.82
-      },
-      "change_pct": -0.262,
+      "change_pct": 0.262,
       "history": [
-        {
-          "date": "2025-12-26",
-          "value": 3.58
-        },
         {
           "date": "2025-12-29",
           "value": 3.59
@@ -31774,25 +32380,25 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-11",
           "value": 3.81
+        },
+        {
+          "date": "2026-06-12",
+          "value": 3.82
         }
       ]
     },
     "T10Y2Y": {
       "label": "10Y-2Y Spread",
       "latest": {
+        "date": "2026-06-15",
+        "value": 0.4
+      },
+      "previous": {
         "date": "2026-06-12",
         "value": 0.39
       },
-      "previous": {
-        "date": "2026-06-11",
-        "value": 0.4
-      },
-      "change_pct": -2.5,
+      "change_pct": 2.564,
       "history": [
-        {
-          "date": "2025-12-29",
-          "value": 0.67
-        },
         {
           "date": "2025-12-30",
           "value": 0.69
@@ -32252,37 +32858,25 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-12",
           "value": 0.39
+        },
+        {
+          "date": "2026-06-15",
+          "value": 0.4
         }
       ]
     },
     "DTWEXBGS": {
       "label": "USD Index (Broad)",
       "latest": {
-        "date": "2026-06-05",
-        "value": 120.0831
+        "date": "2026-06-12",
+        "value": 119.5073
       },
       "previous": {
-        "date": "2026-06-04",
-        "value": 119.3615
+        "date": "2026-06-11",
+        "value": 120.1174
       },
-      "change_pct": 0.605,
+      "change_pct": -0.508,
       "history": [
-        {
-          "date": "2025-12-22",
-          "value": 119.9912
-        },
-        {
-          "date": "2025-12-23",
-          "value": 119.7057
-        },
-        {
-          "date": "2025-12-24",
-          "value": 119.4372
-        },
-        {
-          "date": "2025-12-26",
-          "value": 119.4723
-        },
         {
           "date": "2025-12-29",
           "value": 119.5899
@@ -32726,25 +33320,41 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-05",
           "value": 120.0831
+        },
+        {
+          "date": "2026-06-08",
+          "value": 120.034
+        },
+        {
+          "date": "2026-06-09",
+          "value": 119.9617
+        },
+        {
+          "date": "2026-06-10",
+          "value": 119.9134
+        },
+        {
+          "date": "2026-06-11",
+          "value": 120.1174
+        },
+        {
+          "date": "2026-06-12",
+          "value": 119.5073
         }
       ]
     },
     "VIXCLS": {
       "label": "VIX (Volatility Index)",
       "latest": {
+        "date": "2026-06-15",
+        "value": 16.2
+      },
+      "previous": {
         "date": "2026-06-12",
         "value": 17.68
       },
-      "previous": {
-        "date": "2026-06-11",
-        "value": 19.44
-      },
-      "change_pct": -9.053,
+      "change_pct": -8.371,
       "history": [
-        {
-          "date": "2025-12-29",
-          "value": 14.2
-        },
         {
           "date": "2025-12-30",
           "value": 14.33
@@ -33212,6 +33822,10 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-12",
           "value": 17.68
+        },
+        {
+          "date": "2026-06-15",
+          "value": 16.2
         }
       ]
     },
@@ -33688,14 +34302,14 @@ window.MACRO_DATA = {
     "BAMLH0A0HYM2": {
       "label": "High-Yield Credit Spread (HY OAS)",
       "latest": {
+        "date": "2026-06-15",
+        "value": 2.66
+      },
+      "previous": {
         "date": "2026-06-12",
         "value": 2.71
       },
-      "previous": {
-        "date": "2026-06-11",
-        "value": 2.78
-      },
-      "change_pct": -2.518,
+      "change_pct": -1.845,
       "history": [
         {
           "date": "2026-01-02",
@@ -34172,20 +34786,24 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-12",
           "value": 2.71
+        },
+        {
+          "date": "2026-06-15",
+          "value": 2.66
         }
       ]
     },
     "BAMLC0A0CM": {
       "label": "Investment-Grade Credit Spread (IG OAS)",
       "latest": {
+        "date": "2026-06-15",
+        "value": 0.73
+      },
+      "previous": {
         "date": "2026-06-12",
         "value": 0.74
       },
-      "previous": {
-        "date": "2026-06-11",
-        "value": 0.75
-      },
-      "change_pct": -1.333,
+      "change_pct": -1.351,
       "history": [
         {
           "date": "2026-01-02",
@@ -34662,25 +35280,25 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-12",
           "value": 0.74
+        },
+        {
+          "date": "2026-06-15",
+          "value": 0.73
         }
       ]
     },
     "T10YIE": {
       "label": "10Y Inflation Breakeven",
       "latest": {
+        "date": "2026-06-15",
+        "value": 2.32
+      },
+      "previous": {
         "date": "2026-06-12",
         "value": 2.31
       },
-      "previous": {
-        "date": "2026-06-11",
-        "value": 2.29
-      },
-      "change_pct": 0.873,
+      "change_pct": 0.433,
       "history": [
-        {
-          "date": "2025-12-29",
-          "value": 2.22
-        },
         {
           "date": "2025-12-30",
           "value": 2.24
@@ -35140,6 +35758,10 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-12",
           "value": 2.31
+        },
+        {
+          "date": "2026-06-15",
+          "value": 2.32
         }
       ]
     }
@@ -35291,6 +35913,16 @@ window.MACRO_DATA = {
       "key_takeaway": "Không có release macro nào hôm nay (investing.com bị chặn 403); cross-asset giữ nguyên tông risk-on sau chuỗi CPI/PPI dovish — VIX 17.68, HY OAS 271bp, đường cong normal +0.39 — nhưng hard data lạm phát nền vẫn nóng (CPI YoY 4.27%, Core PCE YoY 3.29%), bức tranh vĩ mô là \"risk-on thận trọng\" chứ không phải dovish hẳn.",
       "body_preview": "# Vĩ mô Mỹ — 2026-06-15",
       "body": "# Vĩ mô Mỹ — 2026-06-15\n\n## Tóm tắt\n\nKhông có chỉ số macro lớn nào được công bố hôm nay từ investing.com (nguồn bị block 403). Phiên hôm nay là ngày consolidation sau chuỗi catalyst dày đặc 10-12/6 (CPI miss, Core PPI miss, Michigan Sentiment beat). Cross-asset giữ tông risk-on: VIX 17.68 (dưới ngưỡng caution 20), HY OAS thu hẹp về 271bp, đường cong 2s10s bình thường +0.39. Tuy nhiên, cần nhấn mạnh: hard data lạm phát nền vẫn nóng — CPI YoY 4.27%, Core PCE YoY 3.29%, PPI Final Demand YoY 6.46% — khiến \"risk-on\" hiện tại vẫn mang tính thận trọng, phụ thuộc nhiều vào kỳ vọng và soft data hơn là xác nhận bền vững từ hard data. Chưa thể tuyên bố disinflation hẳn hay Fed dovish dứt khoát.\n\n## Chi tiết chỉ số được công bố hôm nay\n\nKhông có chỉ số macro lớn công bố hôm nay (investing.com bị block 403, `groups_present` rỗng). Phần dưới trình bày bức tranh FRED context phục vụ Market Pulse và định vị tuần tới.\n\n## Market Pulse\n\n**Yields & Đường cong lãi suất:**\n- 10Y: 4.45% (-10 bp so với 4.55% ngày 10/6) | 2Y: 4.05% (-8 bp) | 3M: 3.78% | Spread 2Y-10Y: +0.39 — normal, đang duy trì dốc nhẹ dương lần đầu sau nhiều tháng\n- Fed Funds hiệu dụng: 3.62% (đã cắt từ đỉnh) — gap 10Y vs Fed Funds = 83bp, phản ánh thị trường đang kỳ vọng thêm cuts\n- Breakeven 10Y: 2.31% — tăng nhẹ 2bp so với phiên trước (+0.87%); thị trường kỳ vọng lạm phát dài hạn vẫn trên target 2.0% nhưng không tăng tốc\n\n**USD & Cross-asset:**\n- USD Index (Broad, DTWEXBGS): 120.08 (+0.61% so với 119.36 ngày 04/6 — dữ liệu mới nhất có sẵn); người dùng cung cấp context DXY ~99.65, hàm ý USD yếu hơn nhiều so với tháng 4, hỗ trợ EM và commodities ngắn hạn\n- VIX: 17.68 (giảm mạnh từ 22.22 ngày 10/6 xuống 17.68 ngày 12/6, -9.1%) — vùng risk-on rõ ràng (<20), nhưng chưa trở về mức calm cực đoan (<15)\n- WTI Crude: $95.00/bbl (dữ liệu FRED 08/6); người dùng cung cấp WTI ~81.35 (-19.6% 1M) — mức thấp hơn đáng kể so với đỉnh tuần qua, áp lực giảm WTI là tín hiệu hai chiều: giảm energy cost pressure (tốt cho lạm phát) nhưng cũng phản ánh demand concerns (rủi ro cho XLE và growth narrative)\n\n**Credit Spreads:**\n- HY OAS: 271bp (-7bp so với 278bp ngày 11/6) | IG OAS: 74bp (-1bp)\n- Spreads thu hẹp liên tục từ đỉnh 280bp (10/6) — credit market đang đồng thuận với risk-on; HY OAS dưới 300bp = risk appetite bình thường, không có stress credit\n\n**Vị trí chu kỳ (từ `cycle_context`):**\n- Sahm Rule: +0.10pp — chưa kích hoạt (ngưỡng 0.50). Thất nghiệp 3mo-avg 4.3% vs đáy 12 tháng 4.2%. Thị trường lao động vẫn trong vùng an toàn, không có tín hiệu suy thoái từ labor\n- Đường cong: regime normal (2s10s +0.39, 116 phiên liên tục) — đây là tín hiệu tích cực so với giai đoạn inverted trước. 10Y-3M: +0.67. Chú ý: đường cong đang dis-invert sau giai đoạn inverted — về lý thuyết đây là giai đoạn cảnh báo suy thoái cận hơn, nhưng với Sahm +0.10 còn an toàn, tín hiệu nhìn chung vẫn ổn\n\n**Economic Surprise Index (từ `data/surprise_index.json`):**\n- Growth surprise 1M: +3.74 (beating mạnh, xu hướng rising) | Inflation surprise 1M: -6.74 (missing mạnh — tức là lạm phát thực tế thấp hơn dự báo, tốt cho thị trường)\n- Diễn giải: Data tháng qua đang vượt kỳ vọng về tăng trưởng đồng thời lạm phát thực tế miss forecast (về phía thấp hơn) — đây là combo risk-on tailwind lý tưởng. Tuy nhiên lưu ý \"inflation miss vs forecast\" KHÔNG đồng nghĩa lạm phát thấp trong tuyệt đối (CPI YoY 4.27% vẫn cao hơn target 2% đáng kể)\n\n**Tổng đánh giá cross-asset:** Risk-on được duy trì — VIX dưới 20, HY OAS thu hẹp, đường cong dương, Sahm an toàn — nhưng đây là risk-on mang tính kỳ vọng (dovish Fed expectations từ soft data) hơn là xác nhận từ hard data. Không có catalyst mới hôm nay, thị trường đang \"tiêu hóa\" dữ liệu 10-12/6.\n\n## Bối cảnh xu hướng (so với 30 ngày qua)\n\n### 1. Bản đồ regime 22/5 → 15/6: ba giai đoạn rõ ràng\n\nNhìn lại 16 reports kể từ 22/5, thị trường đã đi qua ba giai đoạn riêng biệt:\n\n| Giai đoạn | Thời gian | Regime | Đặc điểm |\n|---|---|---|---|\n| **A — Narrow risk-on** | 22/5 → 03/6 | risk-on (XLK độc dẫn) | XLK +20%+ 1M, defensives bị bán, ISM Mfg+Svc beat, goldilocks growth narrative |\n| **B — Rotation + Vol spike** | 04/6 → 08/6 | rotation-confirmed | Tech leadership crack, NFP +265k hawkish beat, AVGO disappoint, VIX spike +40% lên 21.51, yields jump +9-12bp |\n| **C — Relief rally + Consolidation** | 10/6 → 15/6 | bounce-relief / risk-on | Core CPI miss (-0.1pp vs fcst), Core PPI miss (-0.5pp vs fcst), Michigan 5Y inflation exp rơi về 3.4%, VIX hạ về 17.68, yields rút -10bp |\n\nNgày hôm nay (15/6) là ngày đầu tiên sau khi giai đoạn C ổn định — không có catalyst mới, cross-asset giữ tông risk-on nhưng chưa có xung lực mới để broaden tiếp.\n\n### 2. Ba ngày turning point quan trọng nhất\n\n**Turning point 1 — 2026-06-04: \"XLK Peak & Rotation Begins\"**\n\nĐây là ngày regime shift lớn nhất kể từ khi hệ thống hoạt động. Trước đó 2 tuần, XLK độc dẫn với 1M return +21.09% (close 3/6), breadth thị trường chỉ 3/11 sectors xanh. Ngày 4/6, cụm ba dữ liệu lao động cùng lúc đảo narrative:\n- Initial Jobless Claims 225K — lần đầu vượt ngưỡng 220K kể từ 2025, phá range 200-220K bền vững\n- Challenger Job Cuts YoY đảo chiều khổng lồ: từ -20.9% (improving) sang +3.4% (deteriorating) trong 1 tháng\n- Nonfarm Productivity Q1 sụp từ +1.8% xuống +0.3% — margin headwind doanh nghiệp\n\nKết quả: XLK -1.56%, 1M giảm 4.5pp xuống +16.63%. Nhưng SPY vẫn +0.38% nhờ 9/11 sectors xanh — XLV +3.07% (biggest 1D sector move), XLF +2.59%, XLI +1.21%. Conviction chuyển từ \"XLK overweight\" sang \"trim 30-40% → Neutral\", XLV từ \"UW→Neutral\" lên \"Overweight\".\n\n**Turning point 2 — 2026-06-08: \"Major Inflection Point Sealed\"**\n\nSau khi AVGO disappoint (inferred từ XLK -5.92% tuần) và NFP T5 in ra +265k (STRONG beat vs ~150k consensus), thị trường xác nhận inflection. Chuỗi diễn biến:\n- 10Y yield jump +9bp lên 4.55%, 2Y +12bp lên 4.17% — front-end re-price hawkish\n- VIX spike +39.7% từ 16.06 lên 21.51 — first major vol event 6+ tuần\n- XLK 1M de-rate từ +16.63% (4/6) xuống +8.54% (8/6) — giảm thêm 8pp trong 4 phiên\n\nDù NFP strong (labor chưa break), CB Employment Trends Index tháng 5 giảm -0.81 điểm (leading indicator đã đi trước lagging NFP) cộng NY Fed 1Y inflation expectations hạ về 3.5% — setup binary hoàn hảo cho CPI 11/6. Conviction lúc đó: XLV OW confirmed, XLE upgrade nhẹ lên Light OW, XLRE/XLU downgrade UW do yields jump.\n\n**Turning point 3 — 2026-06-10: \"CPI Miss — Risk-on Rekindled\"**\n\nCore CPI MoM tháng 5 in ra 0.2% (vs fcst 0.3%, vs prev 0.4%) — lần đầu tiên từ đầu năm Core CPI MoM về vùng \"in-line với target path\". Headline YoY đúng 4.2% (in-line). Phản ứng thị trường tức thì:\n- 10Y yield -10bp về 4.45% (từ đỉnh 4.55%)\n- VIX hạ từ 22.22 xuống 19.4 (-9.1%)\n- HY OAS thu hẹp về 280bp → tiếp tục về 271bp đến hôm nay\n- XLK bid lại (stalking), XLRE/XLU được nâng từ UW lên Watch\n\nNgày 11/6 tiếp tục được xác nhận bởi Core PPI YoY 4.9% (vs fcst 5.4%, -0.5pp miss) và Claims 229K xác nhận labor cooling đang tiếp diễn. Michigan 12/6 thêm dovish: kỳ vọng lạm phát 5Y về 3.4% (shock below).\n\n### 3. Momentum thay đổi theo từng nhóm chỉ số\n\n**Lạm phát — xu hướng: giảm tốc nhưng từ nền cao**\n\nCore CPI MoM đã đi từ +0.4% (T3/2026) → +0.3% (T4/2026) → +0.2% (T5/2026) — ba tháng giảm liên tiếp, mỗi tháng -0.1pp. Đây là tín hiệu disinflation MoM rõ ràng nhất. Tuy nhiên YoY vẫn ở 2.96% và Core PCE YoY ở 3.29% — còn cách target 2% của Fed khoảng 1.0-1.3pp. Inflation Surprise Index 1M âm -6.74 (lạm phát thực tế đang miss dự báo về phía thấp) là dấu hiệu market consensus đang điều chỉnh expectations tốt hơn thực tế — combo lý tưởng cho tâm lý thị trường nhưng chưa đủ cho Fed cut mạnh.\n\n**Lao động — xu hướng: late-cycle cooling, chưa crack**\n\nInitial Claims đi từ đáy 212K (23/5) lên 229K (06/6) — drift tăng 17K trong 2 tuần. Challenger Job Cuts YoY đảo chiều từ -20.9% sang +3.4%. Nhưng NFP T5 +265k và Continuing Claims 1,777K chưa bật — pattern điển hình late-cycle: leading indicators (Claims, Challenger) đã quay đầu trong khi lagging (NFP, Continuing Claims) vẫn mạnh. Sahm Rule +0.10 (ngưỡng 0.50) — còn xa vùng nguy hiểm nhưng UNRATE đã lên 4.3% từ đáy 3.x%. Kịch bản base là \"labor softening có kiểm soát\" không phải \"crack\" — phù hợp với soft-landing.\n\n**Tăng trưởng — xu hướng: mạnh trên bề mặt, có dấu hỏi chất lượng**\n\nISM Mfg 54.0 (1/6) và ISM Services 54.5 (3/6) đều beat — cả hai expansion accelerating. Factory Orders +4.8% beat. GDPNow Q2 tracking 3.29% (so với Q1 actual 1.6%) — nếu xác nhận sẽ là acceleration đáng kể. Nhưng GDPNow bị cắt từ 3.8% → 3.0% ngay trong ngày 1/6 (batch update), cho thấy underlying details yếu hơn headline. Growth Surprise Index 1M +3.74 (beating expectations) nhưng cần phân biệt \"beating low bar\" vs \"thực sự strong\".\n\n**Fed stance — xu hướng: \"kẹt\" giữa inflation nóng và labor cooling**\n\nFed Funds hiệu dụng 3.62% — đã cắt từ đỉnh nhưng gap với CPI YoY 4.27% là âm (real rate âm). Market pricing thêm cuts (gap 10Y vs Fed Funds = 83bp), nhưng với Core PCE 3.29% và CPI 3M ann 8.2% (bị energy kéo), Fed rất khó cắt aggressive. Thông điệp từ cluster Fed speakers 4/6 (Barkin, Bowman x2, Daly x2) không đủ dovish để đảo kỳ vọng thị trường. Base case: Fed giữ nguyên hoặc cut tối đa 1 lần trong Q3, phụ thuộc chuỗi CPI/PCE tháng 6-7.\n\n### 4. Sector leadership map: hành trình và vị trí hiện tại\n\n| Sector | Giai đoạn A (22/5-3/6) | Giai đoạn B (4-8/6) | Giai đoạn C (10-15/6) | Conviction hôm nay |\n|---|---|---|---|---|\n| XLK Tech | **OW — độc dẫn** (+21% 1M peak) | Crack (-8pp 1M trong 4 phiên) | Stalking / Light OW (yields drop hỗ trợ) | **Neutral-to-Stalking** — chờ xác nhận thêm |\n| XLV Healthcare | UW → Neutral | **Overweight** (defensive bid) | OW confirmed (+5.65% 1M dẫn đầu) | **Overweight** — core defensive holding |\n| XLI Industrials | Watch → Neutral-Mid | Neutral (GDPNow cut đè) | Light OW (relief rally +3.24% ngày 11/6) | **Light OW** — capex cycle on |\n| XLF Financials | Avoid → Neutral (cautious) | Neutral (yields jump + NIM ambiguous) | Neutral (yields drop = NIM headwind again) | **Neutral** — tín hiệu hỗn hợp |\n| XLE Energy | UW → Neutral | Light OW (comeback) | Neutral (XLE -1.94% ngày 11/6, WTI yếu) | **Neutral** — WTI ~81 giảm từ đỉnh $97 |\n| XLRE Real Estate | UW | UW (yields jump punish) | Watch (yields drop -10bp tailwind) | **Watch** — chờ Housing Starts xác nhận |\n| XLU Utilities | UW | UW confirmed (-3.55% 1M) | UW confirmed (laggard dù yields drop) | **Underweight** |\n| XLP Staples | UW → Neutral | Neutral up | Neutral up (defensive bid ổn định) | **Neutral** |\n| XLY Discretionary | Neutral | UW (-3.75% 1M) | Neutral-cautious (Michigan 48.9 thấp) | **Neutral-cautious** |\n| XLC Communications | UW | UW strongest (-5.36% 1M) | UW (không có recovery signal) | **Underweight** |\n| XLB Materials | Neutral | UW (-2.80% 1M) | Neutral (relief rally theo XLI) | **Neutral** |\n\n### 5. Tổng hợp và điều chỉnh conviction\n\n**Điều chỉnh tự sửa quan trọng:**\n- Ngày 1/6: dự báo nếu ISM beat sẽ upgrade XLI → đã SAI (ISM 54.0 beat nhưng XLI -0.27% do GDPNow cut). Bài học: ISM PMI không đủ override GDPNow revision.\n- Ngày 3/6: dự báo crude draw -7.97M sẽ dẫn XLE lên OW → đã SAI (WTI đảo chiều -5.27% ngay 4/6). Bài học: supply draw bullish 1 phiên, demand narrative thắng dài hạn.\n- Ngày 4/6: cảnh báo đúng \"peak signal XLK đã trigger\" → XLK thực sự crack -8pp trong tuần tiếp.\n- Ngày 8/6: cảnh báo đúng \"CPI 11/6 là binary\" → Core CPI miss xác nhận, yields drop, relief rally.\n\n**Regime hiện tại (15/6): Risk-on thận trọng, giai đoạn tiêu hóa**\n\nChu kỳ Sahm +0.10 (an toàn) + đường cong normal +0.39 + VIX 17.68 + HY OAS 271bp = các tín hiệu chu kỳ chưa kích hoạt bear regime. Tuy nhiên ba rủi ro chưa giải quyết: (1) hard data lạm phát vẫn nóng (Core PCE 3.29%, CPI YoY 4.27%), (2) labor leading indicators đang cooling (Claims trending up, Challenger YoY đảo chiều), (3) AI capex narrative bị challenged sau AVGO. Đây không phải môi trường để tăng beta đồng loạt — phân hóa sector vẫn là chiến thuật tối ưu.\n\n**Top 3 conviction hiện tại:**\n1. **XLV Overweight** — defensive core với labor cooling, yields drop, RS 1M dẫn đầu; không có catalyst tiêu cực\n2. **XLI Light OW** — capex cycle xác nhận (ISM Mfg+Svc+Factory Orders đều beat), relief rally 11/6 xác nhận sức mạnh\n3. **XLK Neutral-to-Stalking** — disinflation MoM narrative hỗ trợ DCF, nhưng AVGO overhang + hard data lạm phát cao cản việc re-enter OW; chờ Core CPI MoM thêm 1 tháng <0.2% để upgrade\n\n## Cảnh báo & catalyst sắp tới\n\n**Đối chiếu hard data vs soft data (BẮT BUỘC — `hard_data_hot = true`):**\n\nTrong khi soft data và kỳ vọng tuần qua (Michigan Sentiment beat 48.9, kỳ vọng lạm phát 5Y hạ về 3.4%, Inflation Surprise Index -6.74) tạo tông dovish tích cực, hard data lạm phát thực tế vẫn nóng đáng kể:\n\n| Chỉ số | Giá trị mới nhất | YoY / Tham chiếu | Tín hiệu |\n|---|---|---|---|\n| CPI Headline YoY | 4.27% (T5/2026) | +4.27% vs target 2% | Nóng — cao hơn target 2pp |\n| CPI 3-mo annualized | 8.2% | Tăng tốc ngắn hạn rất cao | Cảnh báo — spike energy kéo |\n| Core CPI YoY | 2.96% | 3-mo ann: 3.17% | Cao hơn target nhưng đang giảm |\n| Core PCE YoY | 3.29% (T4/2026) | 3-mo ann: 3.78% | Fed's target 2% — còn khoảng cách 1.3pp |\n| PPI Final Demand YoY | 6.46% (T5/2026) | 3-mo ann: 13.2% | Pipeline áp lực cao — chưa truyền hết vào CPI |\n| Energy CPI YoY | 22.1% | 3-mo ann: 104.4% | Đây là nguồn chính kéo CPI lên; volatile nhưng thực |\n\nKéo lạm phát LÊN mạnh nhất hiện tại là Energy (3-mo annualized 104.38% — mức spike cực cao, một phần là volatility nhưng vẫn phản ánh áp lực thực từ WTI cao). Kéo xuống mạnh nhất là Core Goods (3-mo ann chỉ 0.11%, yoy 1.03%) — phản ánh disinflation goods đang tiếp diễn. Shelter (3-mo ann 4.87%) và Core Services (4.16%) vẫn sticky trên mức target.\n\n**Kết luận:** Tín hiệu mới nhất là \"risk-on nhẹ / cần xác nhận thêm\", không phải \"xác nhận disinflation bền vững\". Fed sẽ cần thêm 2-3 tháng CPI/PCE hạ nhiệt về hướng 2% trước khi cuts thêm.\n\n**Ngày mai (2026-06-16):**\nKhông có catalyst lớn ngày mai (không có macro release, earnings high-importance, hay Fed speaker high/medium impact trong lịch).\n\n**Tuần này (đến 2026-06-22):**\n- **17/6 — FOMC Meeting (Fed rate decision):** Catalyst lớn nhất trong tuần. Với CPI YoY 4.27% và Core PCE 3.29%, không gian để Fed cắt thêm còn hạn chế dù kỳ vọng thị trường đang dovish.\n- **17/6 — Durable Goods Orders:** Theo dõi Nondefense Capital Goods ex-Aircraft (proxy CAPEX) — xác nhận hay phủ nhận capex cycle đang hỗ trợ XLI.\n- **19/6 — Consumer Confidence (Conference Board):** Đối chiếu với Michigan Sentiment (48.9, dưới 50) — xem khảo sát niềm tin có đồng pha không.\n- **22/6 — PPI:** Theo dõi pipeline pressure tiếp tục truyền vào CPI hay không, đặc biệt sau Core PPI miss tuần trước.\n\n**Theo dõi đặc biệt:** FOMC 17/6 là catalyst quan trọng nhất — với hard data lạm phát còn nóng (CPI YoY 4.27%, Core PCE 3.29%) nhưng thị trường đang định giá dovish, đây là điểm có thể gây bất ngờ (hawkish surprise) nếu Fed giữ nguyên thay vì tín hiệu cắt thêm.\n\n**Các điểm khác cần theo dõi (ngoài lịch lookahead 7 ngày):**\n- **Jobless Claims tuần tới (thứ Năm):** Initial Claims hiện 229K (tuần kết thúc 06/6), đang drift lên từ đáy 212K (23/5). Ngưỡng lo ngại: bền vững >250K.\n- **Housing Starts / Building Permits (tháng 5):** HOUST T4 giảm xuống 1,465K từ 1,507K — theo dõi xem yield giảm 10-12/6 có kích cầu xây dựng chưa.\n- **GDPNow Q2 update:** Atlanta Fed hiện track Q2 ở 3.29% (vs Q1 actual 1.6%) — nếu xác nhận sẽ là acceleration đáng kể.\n- **Michigan Sentiment Final (cuối tháng 6):** Preliminary 48.9 — vẫn dưới 50 (vùng yếu lịch sử) dù beat forecast."
+    },
+    {
+      "file": "2026-06-16.md",
+      "date": "2026-06-16",
+      "schema_version": "1.1",
+      "surprise_count": "2",
+      "regime_signal": "hawkish",
+      "key_takeaway": "Housing Starts sụp -15.4% MoM và GDPNow hạ về 2.8% cho thấy tăng trưởng hạ nhiệt, nhưng giá nhập khẩu/xuất khẩu vọt mạnh cùng hard-data lạm phát còn nóng (CPI YoY 4.27%, Core PCE 3.29%) giữ áp lực hawkish trước thềm FOMC ngày mai.",
+      "body_preview": "# Vĩ mô Mỹ — 2026-06-16",
+      "body": "# Vĩ mô Mỹ — 2026-06-16\n\n## Tóm tắt\nNgày trước FOMC, dữ liệu phát đi tín hiệu hỗn hợp lệch về stagflation nhẹ: tăng trưởng có dấu hiệu hạ nhiệt (Housing Starts sốc -15.4% MoM, Building Permits âm, Atlanta Fed GDPNow Q2 hạ từ 3.3% xuống 2.8%), nhưng áp lực giá phía nhập khẩu lại nóng bất ngờ — Import Price Index +1.9% MoM (gấp đôi forecast 0.9%) và Export Price Index +1.3%. Kết hợp với hard-data lạm phát vẫn cao (CPI YoY 4.27%, Core PCE YoY 3.29%, Energy CPI 3mo annualized 104%), bức tranh KHÔNG ủng hộ luận điểm \"disinflation đã xác nhận\" hay \"Fed sắp dovish hẳn\". Net: hơi hawkish cho Fed (lạm phát nhập khẩu chưa cho phép nới), nhưng growth chậm lại tạo rủi ro hai chiều cho equities — risk appetite vẫn được giữ nhờ VIX giảm về 16.2 và credit spreads thu hẹp.\n\n## Chi tiết chỉ số được công bố hôm nay\n\n### Housing Starts & Building Permits — MISS (shock-below)\n**Housing Starts (May):** Actual: 1.177M | Forecast: 1.430M | Previous: 1.392M (z = -3.54, shock-below)\n**Housing Starts MoM:** -15.4% (previous -8.5%) — tháng giảm thứ hai liên tiếp, tốc độ rơi sâu hơn\n**Building Permits (May):** 1.413M | Forecast: 1.420M | Previous: 1.423M (in-line, z = -0.1)\n**Building Permits MoM:** -0.7% (previous +4.4%)\n\n**Đánh giá:** Housing Starts là cú sốc lớn nhất trong ngày — hụt 253K so với kỳ vọng, mức -15.4% MoM là một trong những tháng tệ nhất chu kỳ. FRED `HOUST` xác nhận: 1.522M (T3) → 1.392M (T4) → 1.177M (T5), 3mo annualized -41.5%, YoY -8.69%. Đáng chú ý, Building Permits (chỉ báo dẫn dắt khởi công tương lai) chỉ giảm nhẹ -0.7% và sát forecast — nghĩa là cú sụp khởi công có thể mang tính nhiễu tháng đơn lẻ (thời tiết/điều chỉnh) hơn là sụp đổ cấu trúc, vì pipeline giấy phép chưa vỡ.\n\n**Bối cảnh nhà ở:** Tín hiệu trái chiều trong nhóm housing — Existing Home Sales (FRED `EXHOSLUSM495S`) lại tăng +3.2% MoM lên 4.17M và Case-Shiller giá nhà vẫn +0.67% YoY. Tức là nguồn cung MỚI co lại (starts giảm) trong khi giao dịch nhà cũ ấm lên → áp lực giá nhà khó giảm nhanh, gián tiếp giữ Shelter CPI sticky (Shelter 3mo annualized vẫn 4.87%).\n\n**Hàm ý thị trường:** Tiêu cực cho homebuilders (ITB/XHB) và vật liệu xây dựng (XLB) trong ngắn hạn; nhưng lãi suất 10Y ở 4.48% là thủ phạm chính — nếu FOMC ngày mai mở đường giảm lãi suất, nhóm này có thể đảo chiều. Construction payrolls (FRED `USCONS`) vẫn +0.2% MoM nên chưa thấy sa thải lan từ khởi công yếu.\n\n### Giá Xuất/Nhập khẩu & GDPNow (nhóm \"other\") — Import Prices SHOCK-ABOVE\n**Import Price Index MoM (May):** 1.9% | Forecast: 0.9% | Previous: 2.0% (shock-above)\n**Import Price Index YoY:** 6.7% (previous 4.2%) — tăng tốc mạnh\n**Export Price Index MoM:** 1.3% | Forecast: 1.2% | Previous: 3.5% (shock-above nhẹ)\n**Export Price Index YoY:** 11.2% (previous 8.8%)\n**Atlanta Fed GDPNow (Q2):** 2.8% | Forecast: 3.3% | Previous: 3.3% (shock-below, z = -3.03)\n\n**Đánh giá:** Đây là phần đáng lo nhất cho Fed. Giá nhập khẩu +1.9% MoM gấp đôi dự báo và YoY nhảy từ 4.2% lên 6.7% — áp lực giá đầu vào từ bên ngoài (có thể do USD và/hoặc tác động thuế quan/giá năng lượng) đang truyền vào chuỗi cung ứng nội địa. Điều này khớp với CPI Energy nóng (mom +3.88%, 3mo annualized 104%) và PPI Final Demand YoY 6.46% trong FRED. Trong khi đó GDPNow hạ 0.5pp về 2.8% cho thấy momentum tăng trưởng Q2 đang yếu đi.\n\n**Đối chiếu soft-data vs hard-data (BẮT BUỘC — `hard_data_hot = true`):** GDPNow hạ và Housing yếu KHÔNG cho phép kết luận \"tăng trưởng sụp → Fed phải cắt → risk-on bền\". Lý do: hard-data lạm phát VẪN NÓNG — CPI YoY 4.27% (3mo annualized 8.2%), Core CPI YoY 2.96%, Core PCE YoY 3.29% (3mo annualized 3.78%), tất cả còn xa mục tiêu 2%. Cộng thêm giá nhập khẩu vừa shock-above, pipeline lạm phát đang được tiếp thêm nhiên liệu chứ không hạ nhiệt. Đây là cấu hình stagflation-lite: growth chậm + giá cao đồng thời — vị thế khó nhất cho Fed. Tín hiệu đúng là \"hawkish thận trọng, chưa có cửa dovish rõ\", không phải \"dovish hẳn\".\n\n**Hàm ý Fed:** Trước FOMC ngày mai, dữ liệu hôm nay làm giảm khả năng Fed phát tín hiệu cắt mạnh — lạm phát nhập khẩu nóng buộc Fed giữ giọng thận trọng dù growth chậm. Kịch bản nền: giữ nguyên lãi suất (DFF 3.62%), nhấn mạnh \"data-dependent\", chưa cam kết lộ trình cắt.\n\n**Hàm ý thị trường:** Áp lực biên lợi nhuận lên doanh nghiệp nhập khẩu hàng (XLY, XLP) khi input cost tăng; hỗ trợ năng lượng (XLE) khi giá năng lượng đẩy import prices. USD yếu nhẹ hôm nay (-0.5%) lại càng làm hàng nhập đắt thêm — vòng xoáy cần theo dõi.\n\n### ADP Employment Change Weekly — không có forecast\n**Actual:** +25.5K | Previous: +29.0K (vs_previous: -3.5K, down)\n\nChỉ số việc làm tuần của ADP giảm nhẹ về +25.5K từ +29.0K, không có forecast nên không tính surprise. Đây là tín hiệu tần suất cao cho thấy đà tuyển dụng khu vực tư hạ nhiệt biên độ nhỏ — phù hợp với bức tranh labor đang nguội dần (FRED: Initial Claims nhích lên 229K, NFP MoM chỉ +0.11%). Chưa đủ tạo lo ngại về thị trường lao động nhưng củng cố hướng đi chậm lại của tăng trưởng.\n\n*Các chỉ số nhiễu (`is_noise`): Redbook YoY +9.4% (doanh số bán lẻ chuỗi vẫn mạnh, nhất quán với Retail Sales YoY 4.87%); 20-Year Bond Auction (previous yield 5.122%) và API Weekly Crude Oil Stock (forecast -4.5M) — không có actual, không phân tích.*\n\n## Market Pulse\n\n**Yields & Đường cong lãi suất:**\n- 10Y: 4.48% (+3 bp) | 2Y: 4.09% (+4 bp) | Spread 2Y-10Y (`T10Y2Y`): +0.40 → đường cong dốc lên bình thường, vừa steepen nhẹ\n- Breakeven 10Y (`T10YIE`): 2.32% (+1 bp) → kỳ vọng lạm phát thị trường nhích trên mục tiêu Fed 2%, nhất quán với import prices nóng\n\n**USD & Cross-asset:**\n- USD Index (Broad): 119.51 (-0.5%) → USD yếu nhẹ — hỗ trợ EM/commodities nhưng làm hàng nhập đắt hơn, đối nghịch nỗ lực hạ lạm phát nhập khẩu\n- VIX: 16.2 (-8.4%) → risk-on (<20), thị trường bình thản trước FOMC\n- WTI: $95.0/bbl (+0.7%) → giá dầu cao neo áp lực CPI Energy; hỗ trợ XLE, rủi ro lạm phát\n\n**Credit Spreads:**\n- HY OAS: 266 bp (-5 bp) | IG OAS: 73 bp (-1 bp)\n- Spreads thu hẹp → credit stress thấp, risk appetite vẫn lành mạnh, không có dấu hiệu căng thẳng tài chính\n\n**Vị trí chu kỳ (từ `cycle_context`):**\n- Sahm Rule: +0.10 (AN TOÀN) — thất nghiệp 3mo-avg 4.3% vs đáy 12 tháng 4.2%, chưa kích hoạt (ngưỡng 0.50)\n- Đường cong: regime \"normal\" (2s10s +0.40, 10Y-3M +0.70) — dương bình thường 116 phiên, chưa từng đảo trong cửa sổ dữ liệu; không có tín hiệu suy thoái cận kề\n\n**Tổng đánh giá cross-asset:** Risk-on thận trọng — VIX thấp, credit spreads thu hẹp, đường cong bình thường và Sahm an toàn cho thấy thị trường không định giá suy thoái. Tuy nhiên yields nhích lên + breakeven tăng + import prices nóng phản ánh lo ngại lạm phát chưa tan; tất cả chờ FOMC ngày mai làm chất xúc tác chính.\n\n## Bối cảnh xu hướng (so với 30 ngày qua)\n\n### 1. Cung đường regime trong 30 ngày — bốn nhịp chuyển rõ rệt\nTháng qua thị trường đi qua bốn chế độ liên tiếp, không phải một xu hướng đơn điệu:\n\n- **22-25/5 — stagflation-lite / risk-on hẹp:** CPI YoY 3.8%, PPI nóng, Michigan sụp về 53.3, đường cong dẹt. Dòng tiền chỉ trú vào tech/duration (XLK +15-20% 1M), mọi thứ khác underperform.\n- **29/5-3/6 — goldilocks → rotation broadening:** Cụm ISM Mfg 54.0 + ISM Services 54.5 + Factory Orders beat xác nhận growth lan ra cyclicals; ISM Prices Paid 82.1 miss làm dịu nỗi sợ lạm phát. Breadth bắt đầu mở ra cyclical + defensive twin bid.\n- **4-8/6 — MAJOR INFLECTION (tech leadership CRACK):** Tech 1M de-rate khổng lồ từ +16.6% xuống +8.5% trong 4 phiên (AVGO disappoint + NFP +172k strong → price out cuts → yields jump +9-12bp). VIX spike +39.7% lên 21.5. XLV/XLE lên dẫn dắt, rate-sensitive (XLRE/XLU) bị punish. Đây là **regime shift bền nhất tháng**, không phải nhiễu.\n- **10-13/6 — disinflation relief rally:** Core CPI 0.2% MoM miss + Core PPI 4.9% YoY miss + Michigan inflation expectations rơi sâu → yields lao về 4.45%, VIX hạ về 19.4. Tech/Industrials bùng nổ (XLK +3.73%, XLI +3.24% ngày 11/6), XLE bị bỏ lại.\n\n**Hôm nay (16/6) là nhịp thứ năm — re-test giả thuyết disinflation và THẤT BẠI một phần.** Import Prices shock-above + GDPNow cut đảo ngược phần nào sự lạc quan của tuần 10-13/6. Regime quay về **stagflation-lite / hawkish thận trọng** — gần với tông 22/5 hơn là tông relief rally 11/6. Điểm khác biệt quan trọng: lần này cross-asset (VIX 16.2, HY OAS 266bp) vẫn bình thản, nên đây là cảnh báo trên dữ liệu hơn là stress thị trường thực — bản lề là FOMC ngày mai.\n\n### 2. Xu hướng các trục macro nền (hard data, không phải soft data)\n- **Lạm phát — chưa quay đầu bền.** Bức tranh hai tốc độ rõ rệt: Core Goods deflation (3mo ann +0.11%) kéo xuống, nhưng Energy (104%), Shelter (4.87%), Core Services (4.16%) giữ nền sticky. Headline CPI 3mo annualized 8.2% và PCE 3mo ann 6.0% cho thấy momentum gần đây thực chất ĐANG NÓNG LÊN, mâu thuẫn với narrative relief rally tuần trước. Import Prices YoY nhảy 4.2% → 6.7% là pipeline mới đáng lo.\n- **Tăng trưởng — hạ nhiệt nhưng chưa gãy.** GDPNow Q2 trượt dốc 3.8% (1/6) → 3.3% → 2.8% (16/6). Housing đầu chu kỳ yếu (Starts -15.4%), nhưng Durable Goods +8% MoM, Retail Sales YoY +4.9%, Industrial Production +0.1% MoM cho thấy phần hard-economy cốt lõi vẫn dương. Đầu tàu GDP là Private Investment (+1.19pp), drag lớn nhất là Net Exports (-1.25pp).\n- **Lao động — nguội dần, chưa cracking.** Initial Claims trend lên 212k → 225k → 229k; NFP MoM chỉ +0.11%; ADP weekly hạ về +25.5k. Nhưng UNRATE đứng 4.3% ba tháng liền và Sahm +0.10 còn xa ngưỡng 0.50. JOLTS vọt lên 7.62M (T4) vẫn báo cầu lao động chưa đổ.\n- **Đường cong & vị thế chu kỳ — không cảnh báo suy thoái.** 2s10s dương bình thường +0.40 suốt 116 phiên, 10Y-3M +0.70. Đây là bối cảnh CHO PHÉP ưu tiên cyclicals hơn defensives theo khung chu kỳ (Sahm chưa kích hoạt + curve normal → chưa đến lúc phòng thủ hẳn).\n\n### 3. Hàm ý ngành (sector-level, từ rotation engine + macro trend)\n\nEngine rotation tất định hôm nay (`sector_rotation_latest.json`) xếp hạng dẫn dắt **XLY → XLI → XLK**, fading **XLV**, early **XLRE**. Đối chiếu với macro trend 30 ngày:\n\n| Sector | Stance | Macro driver (định lượng) |\n|---|---|---|\n| **Industrials (XLI)** | **Overweight** | Phù hợp nhất với bối cảnh: curve normal + Sahm an toàn ưu ái cyclicals; Durable Goods +8% MoM, ISM Mfg 54.0, Copper +4.2% 1M. Engine: rotation rank #2, LEADING, RS slope +1.5, breadth +33pp. Là leader bền nhất qua cả ba regime gần đây. |\n| **Consumer Discretionary (XLY)** | **Neutral → Light OW** | Engine xếp #1 (RISK +1.275, breadth +50pp) nhờ risk-on + WTI ổn định. NHƯNG cảnh báo: import prices nóng siết biên retail, Michigan sentiment 49.8 vẫn dưới 50. OW có điều kiện, không full. |\n| **Technology (XLK)** | **Neutral** | Hai mặt: disinflation Core Goods + yields ổn là tailwind DCF, nhưng momentum 1M đã de-rate mạnh sau AVGO + breadth thrust -16.7 (yếu nhất nhóm leading). Import prices nóng → nếu yields bật lại sau FOMC, tech chịu áp lực định giá đầu tiên. Không re-up OW trước FOMC. |\n| **Materials (XLB)** | **Neutral** | Copper +4.2% 1M + USD yếu hỗ trợ, nhưng Housing Starts sụp -15.4% là headwind trực tiếp cho vật liệu xây dựng; import prices nóng có thể là cả cost-push lẫn pricing power. Tín hiệu hỗn hợp. |\n| **Financials (XLF)** | **Neutral (cautious)** | Curve chỉ +0.40 vẫn flat → NIM chưa cải thiện mạnh. Inflation cooling surprise là negative nhẹ cho XLF (engine I-driver -0.674). Nếu FOMC hawkish giữ 2Y cao + labor không cracking → tactical hỗ trợ. RS slope +1.4 đang cải thiện. |\n| **Real Estate (XLRE)** | **Watch (early)** | Engine đánh dấu EARLY (vĩ mô hậu thuẫn nhưng giá chưa căng). 10Y 4.48% vẫn là trần; chỉ upgrade nếu FOMC mở cửa dovish kéo 10Y về <4.30%. Housing Starts yếu là cảnh báo demand đầu chu kỳ. |\n| **Energy (XLE)** | **Neutral/UW** | Engine xếp BÉT (rank #11, macro_tilt z -2.29) do WTI -28.7% 1M kéo momentum. NHƯNG import prices/CPI Energy nóng (104% 3mo ann) là counter-thesis cấp macro — nếu giá năng lượng tiếp tục đẩy lạm phát nhập khẩu, XLE có hedge value. Không bottom-fish nhưng giữ làm hedge lạm phát. |\n| **Healthcare (XLV)** | **Neutral (downgrade từ OW)** | Engine: FADING — RS slope -2.4, thrust -8pp. Defensive bid của regime 4-8/6 đang rút khi risk-on quay lại (VIX 16.2). Giảm khỏi OW đã giữ từ 4/6. |\n| **Staples (XLP)** | **Neutral/UW** | Risk-on penalize defensives (RISK -0.85). Import prices nóng siết input cost. Không catalyst tích cực. |\n| **Utilities (XLU)** | **Underweight** | Lagging defensive, macro_tilt z -0.76 (gần bét). Yields chưa giảm đủ để là duration play, risk-on rút bid phòng thủ. |\n| **Communication Services (XLC)** | **Underweight** | Dưới MA200 (sector duy nhất), RS 1M -5.29% tệ nhất, breadth thrust 0. Mega-cap mean-reversion sau AVGO chưa kết thúc. |\n\n**Top 3 conviction calls (sector-level, KHÔNG mã cụ thể):**\n1. **Industrials (XLI) Overweight** — leader bền nhất qua cả ba regime, được khung chu kỳ (curve normal + Sahm an toàn) hậu thuẫn, hard data capex (Durable Goods +8%) xác nhận. Conviction cao nhất.\n2. **Defensive rotation đảo chiều: hạ XLV/XLP/XLU** — VIX về 16.2 + credit spreads thu hẹp rút bid phòng thủ; XLV chuyển từ leader (4-8/6) sang FADING. Đây là thay đổi quan trọng nhất so với 2 tuần trước.\n3. **XLK Neutral, KHÔNG chase** — disinflation Core Goods là tailwind nhưng import prices nóng + momentum de-rate + FOMC binary là ba rủi ro. Chờ FOMC định hình yields trước khi re-rate.\n\n**Rủi ro chính cho khung sector:** FOMC ngày mai là binary. Nếu Fed hawkish (nhấn import-price inflation) → yields bật → đảo ngược lợi thế cyclical/duration, ưu ái Financials/Energy hơn Tech/REITs. Nếu Fed dovish bất ngờ (ưu tiên growth slowdown) → tech/REITs/discretionary hưởng lợi, nhưng mâu thuẫn với hard-data lạm phát còn nóng. Bộ đôi PPI (22/6) + PCE (23/6) cuối tuần sẽ xác nhận hay bác bỏ; nếu PCE > 3% → đẩy lùi kỳ vọng cắt, củng cố tông hawkish hôm nay.\n\n## Cảnh báo & catalyst sắp tới\n\n**Ngày mai (2026-06-17):**\n- FOMC Meeting (Fed rate decision) — sự kiện trọng tâm tuần\n- Durable Goods Orders (ước tính)\n\n**Tuần này (đến 2026-06-23):**\n- 2026-06-17: FOMC Meeting (Fed rate decision); Durable Goods Orders\n- 2026-06-19: Consumer Confidence (Conference Board)\n- 2026-06-22: Producer Price Index (PPI)\n- 2026-06-23: Personal Income & Outlays (PCE)\n\n**Theo dõi đặc biệt:** FOMC ngày mai là tâm điểm tuyệt đối. Dữ liệu hôm nay đặt Fed vào thế khó: growth hạ nhiệt (GDPNow 2.8%, Housing sụp) gọi cho dovish, nhưng import prices shock-above + hard-data lạm phát còn nóng (Core PCE 3.29%) chặn cửa cắt nhanh. Thị trường sẽ săm soi từ ngữ về lạm phát nhập khẩu và dot-plot — bất kỳ tín hiệu lo ngại lạm phát nào sẽ đẩy yields lên và gây áp lực growth/tech. Cuối tuần, bộ đôi PPI (22/6) và PCE (23/6) sẽ xác nhận hay bác bỏ luận điểm lạm phát còn nóng — nếu PCE tiếp tục trên 3%, kỳ vọng cắt lãi suất sẽ bị đẩy lùi."
     }
   ],
   "monthly_reports": [
@@ -35351,23 +35983,24 @@ window.MACRO_DATA = {
     "2026-06-11",
     "2026-06-12",
     "2026-06-13",
-    "2026-06-15"
+    "2026-06-15",
+    "2026-06-16"
   ],
   "sectors": {
     "schema_version": "1.1",
-    "fetched_at": "2026-06-15T20:04:53.994338+00:00",
+    "fetched_at": "2026-06-16T16:25:02.073869+00:00",
     "benchmark": {
-      "latest": 754.68,
-      "latest_date": "2026-06-15",
-      "ret_1d": 1.74,
-      "ret_1w": 2.09,
-      "ret_1m": 0.87,
-      "ret_3m": 13.11,
-      "ret_6m": 10.13,
-      "ret_1y": 26.43,
-      "ret_ytd": 10.77,
-      "ma50": 724.78,
-      "ma200": 684.64,
+      "latest": 753.51,
+      "latest_date": "2026-06-16",
+      "ret_1d": 1.59,
+      "ret_1w": 1.93,
+      "ret_1m": 0.71,
+      "ret_3m": 12.93,
+      "ret_6m": 9.96,
+      "ret_1y": 26.24,
+      "ret_ytd": 10.6,
+      "ma50": 724.75,
+      "ma200": 684.63,
       "above_ma50": true,
       "above_ma200": true,
       "golden_cross": true,
@@ -35376,17 +36009,17 @@ window.MACRO_DATA = {
     },
     "sectors": {
       "XLK": {
-        "latest": 191.82,
-        "latest_date": "2026-06-15",
-        "ret_1d": 3.8,
-        "ret_1w": 4.15,
-        "ret_1m": 6.86,
-        "ret_3m": 38.39,
-        "ret_6m": 29.99,
-        "ret_1y": 59.06,
-        "ret_ytd": 33.1,
-        "ma50": 169.16,
-        "ma200": 148.24,
+        "latest": 188.8,
+        "latest_date": "2026-06-16",
+        "ret_1d": 2.16,
+        "ret_1w": 2.51,
+        "ret_1m": 5.18,
+        "ret_3m": 36.21,
+        "ret_6m": 27.95,
+        "ret_1y": 56.56,
+        "ret_ytd": 31.0,
+        "ma50": 169.1,
+        "ma200": 148.22,
         "above_ma50": true,
         "above_ma200": true,
         "golden_cross": true,
@@ -35398,7 +36031,8 @@ window.MACRO_DATA = {
           "breadth_flag": "healthy",
           "holdings_checked": 12,
           "holdings_above_ma50": 6,
-          "holdings_above_ma200": 6
+          "holdings_above_ma200": 6,
+          "breadth_thrust": -16.7
         },
         "rs_history": [
           {
@@ -36406,28 +37040,29 @@ window.MACRO_DATA = {
             "value": 116.61
           },
           {
-            "date": "2026-06-15",
-            "value": 118.97
+            "date": "2026-06-16",
+            "value": 117.28
           }
         ],
-        "rs_1w": 2.01,
-        "rs_1m": 5.94,
-        "rs_3m": 22.35,
-        "rs_6m": 18.04,
-        "rs_1y": 25.81,
-        "rs_ytd": 20.16
+        "rs_1w": 0.56,
+        "rs_1m": 4.44,
+        "rs_3m": 20.61,
+        "rs_6m": 16.36,
+        "rs_1y": 24.02,
+        "rs_ytd": 18.45,
+        "rs_slope": -0.5
       },
       "XLF": {
-        "latest": 53.56,
-        "latest_date": "2026-06-15",
-        "ret_1d": 0.41,
-        "ret_1w": 3.06,
-        "ret_1m": 4.43,
-        "ret_3m": 9.2,
-        "ret_6m": -1.54,
-        "ret_1y": 6.64,
-        "ret_ytd": -1.99,
-        "ma50": 51.72,
+        "latest": 54.37,
+        "latest_date": "2026-06-16",
+        "ret_1d": 1.93,
+        "ret_1w": 4.62,
+        "ret_1m": 6.0,
+        "ret_3m": 10.85,
+        "ret_6m": -0.05,
+        "ret_1y": 8.25,
+        "ret_ytd": -0.51,
+        "ma50": 51.73,
         "ma200": 52.27,
         "above_ma50": true,
         "above_ma200": true,
@@ -36436,16 +37071,17 @@ window.MACRO_DATA = {
         "ticker": "XLF",
         "breadth": {
           "pct_above_ma50": 91.7,
-          "pct_above_ma200": 50.0,
+          "pct_above_ma200": 75.0,
           "breadth_flag": "broad",
           "holdings_checked": 12,
           "holdings_above_ma50": 11,
-          "holdings_above_ma200": 6
+          "holdings_above_ma200": 9,
+          "breadth_thrust": 25.0
         },
         "rs_history": [
           {
             "date": "2025-06-13",
-            "value": 111.96
+            "value": 111.95
           },
           {
             "date": "2025-06-16",
@@ -37448,27 +38084,28 @@ window.MACRO_DATA = {
             "value": 96.58
           },
           {
-            "date": "2026-06-15",
-            "value": 95.32
+            "date": "2026-06-16",
+            "value": 96.91
           }
         ],
-        "rs_1w": 0.95,
-        "rs_1m": 3.53,
-        "rs_3m": -3.46,
-        "rs_6m": -10.6,
-        "rs_1y": -15.65,
-        "rs_ytd": -11.52
+        "rs_1w": 2.63,
+        "rs_1m": 5.25,
+        "rs_3m": -1.85,
+        "rs_6m": -9.11,
+        "rs_1y": -14.24,
+        "rs_ytd": -10.04,
+        "rs_slope": 1.38
       },
       "XLE": {
-        "latest": 55.55,
-        "latest_date": "2026-06-15",
-        "ret_1d": -3.48,
-        "ret_1w": -4.77,
-        "ret_1m": -4.34,
-        "ret_3m": -3.43,
-        "ret_6m": 22.69,
-        "ret_1y": 32.43,
-        "ret_ytd": 22.48,
+        "latest": 55.24,
+        "latest_date": "2026-06-16",
+        "ret_1d": -4.01,
+        "ret_1w": -5.3,
+        "ret_1m": -4.87,
+        "ret_3m": -3.97,
+        "ret_6m": 22.01,
+        "ret_1y": 31.69,
+        "ret_ytd": 21.8,
         "ma50": 57.72,
         "ma200": 50.37,
         "above_ma50": false,
@@ -37477,12 +38114,13 @@ window.MACRO_DATA = {
         "name": "Energy",
         "ticker": "XLE",
         "breadth": {
-          "pct_above_ma50": 25.0,
+          "pct_above_ma50": 8.3,
           "pct_above_ma200": 100.0,
           "breadth_flag": "narrow",
           "holdings_checked": 12,
-          "holdings_above_ma50": 3,
-          "holdings_above_ma200": 12
+          "holdings_above_ma50": 1,
+          "holdings_above_ma200": 12,
+          "breadth_thrust": -50.0
         },
         "rs_history": [
           {
@@ -38490,28 +39128,29 @@ window.MACRO_DATA = {
             "value": 100.09
           },
           {
-            "date": "2026-06-15",
-            "value": 94.96
+            "date": "2026-06-16",
+            "value": 94.58
           }
         ],
-        "rs_1w": -6.72,
-        "rs_1m": -5.16,
-        "rs_3m": -14.62,
-        "rs_6m": 11.41,
-        "rs_1y": 4.74,
-        "rs_ytd": 10.57
+        "rs_1w": -7.09,
+        "rs_1m": -5.55,
+        "rs_3m": -14.97,
+        "rs_6m": 10.96,
+        "rs_1y": 4.32,
+        "rs_ytd": 10.13,
+        "rs_slope": -5.77
       },
       "XLV": {
-        "latest": 152.96,
-        "latest_date": "2026-06-15",
-        "ret_1d": -0.55,
-        "ret_1w": 0.2,
-        "ret_1m": 4.32,
-        "ret_3m": 1.71,
-        "ret_6m": 0.43,
-        "ret_1y": 13.8,
-        "ret_ytd": -1.24,
-        "ma50": 147.7,
+        "latest": 153.22,
+        "latest_date": "2026-06-16",
+        "ret_1d": -0.38,
+        "ret_1w": 0.37,
+        "ret_1m": 4.49,
+        "ret_3m": 1.88,
+        "ret_6m": 0.6,
+        "ret_1y": 13.99,
+        "ret_ytd": -1.07,
+        "ma50": 147.71,
         "ma200": 148.42,
         "above_ma50": true,
         "above_ma200": true,
@@ -38524,7 +39163,8 @@ window.MACRO_DATA = {
           "breadth_flag": "healthy",
           "holdings_checked": 12,
           "holdings_above_ma50": 6,
-          "holdings_above_ma200": 8
+          "holdings_above_ma200": 8,
+          "breadth_thrust": -8.3
         },
         "rs_history": [
           {
@@ -39532,27 +40172,28 @@ window.MACRO_DATA = {
             "value": 78.6
           },
           {
-            "date": "2026-06-15",
-            "value": 76.83
+            "date": "2026-06-16",
+            "value": 77.08
           }
         ],
-        "rs_1w": -1.85,
-        "rs_1m": 3.42,
-        "rs_3m": -10.08,
-        "rs_6m": -8.81,
-        "rs_1y": -9.99,
-        "rs_ytd": -10.84
+        "rs_1w": -1.53,
+        "rs_1m": 3.75,
+        "rs_3m": -9.79,
+        "rs_6m": -8.51,
+        "rs_1y": -9.7,
+        "rs_ytd": -10.55,
+        "rs_slope": -2.42
       },
       "XLY": {
-        "latest": 118.58,
-        "latest_date": "2026-06-15",
-        "ret_1d": 1.7,
-        "ret_1w": 2.76,
-        "ret_1m": -0.08,
-        "ret_3m": 5.9,
-        "ret_6m": -0.94,
-        "ret_1y": 11.85,
-        "ret_ytd": 0.4,
+        "latest": 118.79,
+        "latest_date": "2026-06-16",
+        "ret_1d": 1.88,
+        "ret_1w": 2.95,
+        "ret_1m": 0.1,
+        "ret_3m": 6.09,
+        "ret_6m": -0.76,
+        "ret_1y": 12.05,
+        "ret_ytd": 0.57,
         "ma50": 117.24,
         "ma200": 117.36,
         "above_ma50": true,
@@ -39561,12 +40202,13 @@ window.MACRO_DATA = {
         "name": "Consumer Discretionary",
         "ticker": "XLY",
         "breadth": {
-          "pct_above_ma50": 75.0,
+          "pct_above_ma50": 83.3,
           "pct_above_ma200": 50.0,
           "breadth_flag": "broad",
           "holdings_checked": 12,
-          "holdings_above_ma50": 9,
-          "holdings_above_ma200": 6
+          "holdings_above_ma50": 10,
+          "holdings_above_ma200": 6,
+          "breadth_thrust": 50.0
         },
         "rs_history": [
           {
@@ -39915,7 +40557,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-10-16",
-            "value": 105.48
+            "value": 105.47
           },
           {
             "date": "2025-10-17",
@@ -39931,7 +40573,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-10-22",
-            "value": 106.54
+            "value": 106.53
           },
           {
             "date": "2025-10-23",
@@ -40574,41 +41216,43 @@ window.MACRO_DATA = {
             "value": 94.1
           },
           {
-            "date": "2026-06-15",
-            "value": 94.06
+            "date": "2026-06-16",
+            "value": 94.37
           }
         ],
-        "rs_1w": 0.66,
-        "rs_1m": -0.94,
-        "rs_3m": -6.38,
-        "rs_6m": -10.05,
-        "rs_1y": -11.53,
-        "rs_ytd": -9.36
+        "rs_1w": 0.99,
+        "rs_1m": -0.61,
+        "rs_3m": -6.06,
+        "rs_6m": -9.75,
+        "rs_1y": -11.24,
+        "rs_ytd": -9.06,
+        "rs_slope": 1.14
       },
       "XLP": {
-        "latest": 85.49,
-        "latest_date": "2026-06-15",
-        "ret_1d": -0.38,
-        "ret_1w": 2.91,
-        "ret_1m": 0.6,
-        "ret_3m": 1.17,
-        "ret_6m": 9.98,
-        "ret_1y": 7.19,
-        "ret_ytd": 10.66,
+        "latest": 85.89,
+        "latest_date": "2026-06-16",
+        "ret_1d": 0.09,
+        "ret_1w": 3.4,
+        "ret_1m": 1.08,
+        "ret_3m": 1.65,
+        "ret_6m": 10.5,
+        "ret_1y": 7.7,
+        "ret_ytd": 11.18,
         "ma50": 83.52,
-        "ma200": 80.9,
+        "ma200": 80.91,
         "above_ma50": true,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Consumer Staples",
         "ticker": "XLP",
         "breadth": {
-          "pct_above_ma50": 66.7,
-          "pct_above_ma200": 83.3,
+          "pct_above_ma50": 75.0,
+          "pct_above_ma200": 91.7,
           "breadth_flag": "broad",
           "holdings_checked": 12,
-          "holdings_above_ma50": 8,
-          "holdings_above_ma200": 10
+          "holdings_above_ma50": 9,
+          "holdings_above_ma200": 11,
+          "breadth_thrust": 16.7
         },
         "rs_history": [
           {
@@ -41616,41 +42260,43 @@ window.MACRO_DATA = {
             "value": 83.88
           },
           {
-            "date": "2026-06-15",
-            "value": 82.12
+            "date": "2026-06-16",
+            "value": 82.64
           }
         ],
-        "rs_1w": 0.8,
-        "rs_1m": -0.27,
-        "rs_3m": -10.56,
-        "rs_6m": -0.14,
-        "rs_1y": -15.22,
-        "rs_ytd": -0.1
+        "rs_1w": 1.44,
+        "rs_1m": 0.36,
+        "rs_3m": -10.0,
+        "rs_6m": 0.49,
+        "rs_1y": -14.68,
+        "rs_ytd": 0.53,
+        "rs_slope": 1.35
       },
       "XLI": {
-        "latest": 178.7,
-        "latest_date": "2026-06-15",
-        "ret_1d": 1.43,
-        "ret_1w": 2.92,
-        "ret_1m": 2.4,
-        "ret_3m": 7.91,
-        "ret_6m": 14.0,
-        "ret_1y": 25.89,
-        "ret_ytd": 13.43,
-        "ma50": 172.65,
-        "ma200": 162.14,
+        "latest": 180.94,
+        "latest_date": "2026-06-16",
+        "ret_1d": 2.7,
+        "ret_1w": 4.21,
+        "ret_1m": 3.68,
+        "ret_3m": 9.27,
+        "ret_6m": 15.43,
+        "ret_1y": 27.47,
+        "ret_ytd": 14.86,
+        "ma50": 172.69,
+        "ma200": 162.15,
         "above_ma50": true,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Industrials",
         "ticker": "XLI",
         "breadth": {
-          "pct_above_ma50": 75.0,
-          "pct_above_ma200": 66.7,
+          "pct_above_ma50": 83.3,
+          "pct_above_ma200": 75.0,
           "breadth_flag": "broad",
           "holdings_checked": 12,
-          "holdings_above_ma50": 9,
-          "holdings_above_ma200": 8
+          "holdings_above_ma50": 10,
+          "holdings_above_ma200": 9,
+          "breadth_thrust": 33.3
         },
         "rs_history": [
           {
@@ -42658,28 +43304,29 @@ window.MACRO_DATA = {
             "value": 106.52
           },
           {
-            "date": "2026-06-15",
-            "value": 106.2
+            "date": "2026-06-16",
+            "value": 107.69
           }
         ],
-        "rs_1w": 0.81,
-        "rs_1m": 1.52,
-        "rs_3m": -4.59,
-        "rs_6m": 3.52,
-        "rs_1y": -0.43,
-        "rs_ytd": 2.41
+        "rs_1w": 2.23,
+        "rs_1m": 2.95,
+        "rs_3m": -3.25,
+        "rs_6m": 4.98,
+        "rs_1y": 0.98,
+        "rs_ytd": 3.85,
+        "rs_slope": 1.53
       },
       "XLB": {
-        "latest": 52.52,
-        "latest_date": "2026-06-15",
-        "ret_1d": 0.65,
-        "ret_1w": 5.12,
-        "ret_1m": 1.65,
-        "ret_3m": 6.79,
-        "ret_6m": 17.52,
-        "ret_1y": 21.14,
-        "ret_ytd": 14.38,
-        "ma50": 51.28,
+        "latest": 52.92,
+        "latest_date": "2026-06-16",
+        "ret_1d": 1.43,
+        "ret_1w": 5.93,
+        "ret_1m": 2.43,
+        "ret_3m": 7.61,
+        "ret_6m": 18.43,
+        "ret_1y": 22.07,
+        "ret_ytd": 15.27,
+        "ma50": 51.29,
         "ma200": 47.73,
         "above_ma50": true,
         "above_ma200": true,
@@ -42687,12 +43334,13 @@ window.MACRO_DATA = {
         "name": "Materials",
         "ticker": "XLB",
         "breadth": {
-          "pct_above_ma50": 66.7,
-          "pct_above_ma200": 75.0,
+          "pct_above_ma50": 75.0,
+          "pct_above_ma200": 83.3,
           "breadth_flag": "broad",
           "holdings_checked": 12,
-          "holdings_above_ma50": 8,
-          "holdings_above_ma200": 9
+          "holdings_above_ma50": 9,
+          "holdings_above_ma200": 10,
+          "breadth_thrust": 41.7
         },
         "rs_history": [
           {
@@ -43397,7 +44045,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-02-25",
-            "value": 94.65
+            "value": 94.64
           },
           {
             "date": "2026-02-26",
@@ -43700,41 +44348,43 @@ window.MACRO_DATA = {
             "value": 87.13
           },
           {
-            "date": "2026-06-15",
-            "value": 86.19
+            "date": "2026-06-16",
+            "value": 86.99
           }
         ],
-        "rs_1w": 2.97,
-        "rs_1m": 0.77,
-        "rs_3m": -5.59,
-        "rs_6m": 6.71,
-        "rs_1y": -4.19,
-        "rs_ytd": 3.26
+        "rs_1w": 3.93,
+        "rs_1m": 1.7,
+        "rs_3m": -4.71,
+        "rs_6m": 7.7,
+        "rs_1y": -3.3,
+        "rs_ytd": 4.22,
+        "rs_slope": 3.53
       },
       "XLU": {
-        "latest": 44.76,
-        "latest_date": "2026-06-15",
-        "ret_1d": 0.51,
-        "ret_1w": 2.84,
-        "ret_1m": -0.32,
-        "ret_3m": -4.64,
-        "ret_6m": 5.5,
-        "ret_1y": 12.42,
-        "ret_ytd": 4.37,
-        "ma50": 45.25,
-        "ma200": 44.14,
-        "above_ma50": false,
+        "latest": 45.45,
+        "latest_date": "2026-06-16",
+        "ret_1d": 2.07,
+        "ret_1w": 4.43,
+        "ret_1m": 1.22,
+        "ret_3m": -3.16,
+        "ret_6m": 7.13,
+        "ret_1y": 14.16,
+        "ret_ytd": 5.99,
+        "ma50": 45.27,
+        "ma200": 44.15,
+        "above_ma50": true,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Utilities",
         "ticker": "XLU",
         "breadth": {
-          "pct_above_ma50": 33.3,
+          "pct_above_ma50": 83.3,
           "pct_above_ma200": 91.7,
-          "breadth_flag": "narrow",
+          "breadth_flag": "broad",
           "holdings_checked": 12,
-          "holdings_above_ma50": 4,
-          "holdings_above_ma200": 11
+          "holdings_above_ma50": 10,
+          "holdings_above_ma200": 11,
+          "breadth_thrust": 75.0
         },
         "rs_history": [
           {
@@ -44742,41 +45392,43 @@ window.MACRO_DATA = {
             "value": 98.26
           },
           {
-            "date": "2026-06-15",
-            "value": 97.07
+            "date": "2026-06-16",
+            "value": 98.73
           }
         ],
-        "rs_1w": 0.73,
-        "rs_1m": -1.18,
-        "rs_3m": -15.69,
-        "rs_6m": -4.21,
-        "rs_1y": -11.09,
-        "rs_ytd": -5.77
+        "rs_1w": 2.45,
+        "rs_1m": 0.51,
+        "rs_3m": -14.25,
+        "rs_6m": -2.57,
+        "rs_1y": -9.56,
+        "rs_ytd": -4.16,
+        "rs_slope": 2.33
       },
       "XLRE": {
-        "latest": 44.99,
-        "latest_date": "2026-06-15",
-        "ret_1d": -0.82,
-        "ret_1w": 2.18,
-        "ret_1m": 2.46,
-        "ret_3m": 6.37,
-        "ret_6m": 12.22,
-        "ret_1y": 10.24,
-        "ret_ytd": 12.17,
-        "ma50": 43.98,
-        "ma200": 41.78,
+        "latest": 45.23,
+        "latest_date": "2026-06-16",
+        "ret_1d": 0.53,
+        "ret_1w": 0.57,
+        "ret_1m": 4.62,
+        "ret_3m": 6.58,
+        "ret_6m": 12.95,
+        "ret_1y": 11.72,
+        "ret_ytd": 12.76,
+        "ma50": 44.05,
+        "ma200": 41.81,
         "above_ma50": true,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Real Estate",
         "ticker": "XLRE",
         "breadth": {
-          "pct_above_ma50": 50.0,
+          "pct_above_ma50": 66.7,
           "pct_above_ma200": 83.3,
-          "breadth_flag": "healthy",
+          "breadth_flag": "broad",
           "holdings_checked": 12,
-          "holdings_above_ma50": 6,
-          "holdings_above_ma200": 10
+          "holdings_above_ma50": 8,
+          "holdings_above_ma200": 10,
+          "breadth_thrust": 8.4
         },
         "rs_history": [
           {
@@ -44977,7 +45629,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-08-25",
-            "value": 96.22
+            "value": 96.21
           },
           {
             "date": "2025-08-26",
@@ -45784,41 +46436,43 @@ window.MACRO_DATA = {
             "value": 91.24
           },
           {
-            "date": "2026-06-15",
-            "value": 88.94
+            "date": "2026-06-16",
+            "value": 89.55
           }
         ],
-        "rs_1w": 0.09,
-        "rs_1m": 1.58,
-        "rs_3m": -5.96,
-        "rs_6m": 1.9,
-        "rs_1y": -12.81,
-        "rs_ytd": 1.26
+        "rs_1w": 0.77,
+        "rs_1m": 2.27,
+        "rs_3m": -5.32,
+        "rs_6m": 2.6,
+        "rs_1y": -12.21,
+        "rs_ytd": 1.95,
+        "rs_slope": 0.23
       },
       "XLC": {
-        "latest": 112.16,
-        "latest_date": "2026-06-15",
-        "ret_1d": 0.46,
-        "ret_1w": 0.96,
-        "ret_1m": -4.23,
-        "ret_3m": -2.44,
-        "ret_6m": -3.36,
-        "ret_1y": 9.57,
-        "ret_ytd": -3.75,
+        "latest": 111.71,
+        "latest_date": "2026-06-16",
+        "ret_1d": -0.43,
+        "ret_1w": 0.2,
+        "ret_1m": -3.77,
+        "ret_3m": -2.87,
+        "ret_6m": -3.54,
+        "ret_1y": 10.25,
+        "ret_ytd": -4.14,
         "ma50": 115.28,
-        "ma200": 115.01,
+        "ma200": 115.02,
         "above_ma50": false,
         "above_ma200": false,
         "golden_cross": true,
         "name": "Communication Services",
         "ticker": "XLC",
         "breadth": {
-          "pct_above_ma50": 33.3,
+          "pct_above_ma50": 25.0,
           "pct_above_ma200": 41.7,
           "breadth_flag": "narrow",
           "holdings_checked": 12,
-          "holdings_above_ma50": 4,
-          "holdings_above_ma200": 5
+          "holdings_above_ma50": 3,
+          "holdings_above_ma200": 5,
+          "breadth_thrust": 0.0
         },
         "rs_history": [
           {
@@ -46826,33 +47480,34 @@ window.MACRO_DATA = {
             "value": 97.37
           },
           {
-            "date": "2026-06-15",
-            "value": 96.14
+            "date": "2026-06-16",
+            "value": 95.9
           }
         ],
-        "rs_1w": -1.11,
-        "rs_1m": -5.05,
-        "rs_3m": -13.75,
-        "rs_6m": -12.25,
-        "rs_1y": -13.33,
-        "rs_ytd": -13.11
+        "rs_1w": -1.35,
+        "rs_1m": -5.29,
+        "rs_3m": -13.96,
+        "rs_6m": -12.47,
+        "rs_1y": -13.55,
+        "rs_ytd": -13.32,
+        "rs_slope": -0.09
       }
     }
   },
   "cross_asset": {
     "schema_version": "1.1",
-    "fetched_at": "2026-06-15T20:04:54.427179+00:00",
+    "fetched_at": "2026-06-16T16:25:02.513568+00:00",
     "assets": {
       "^VIX": {
-        "latest": 16.04,
-        "latest_date": "2026-06-15",
-        "ret_1d": -9.28,
-        "ret_1w": -15.22,
-        "ret_1m": -12.97,
-        "ret_3m": -28.3,
-        "ret_6m": 1.91,
-        "ret_1y": -22.96,
-        "ret_ytd": 10.54,
+        "latest": 15.9,
+        "latest_date": "2026-06-16",
+        "ret_1d": -10.07,
+        "ret_1w": -15.96,
+        "ret_1m": -13.73,
+        "ret_3m": -28.92,
+        "ret_6m": 1.02,
+        "ret_1y": -23.63,
+        "ret_ytd": 9.58,
         "history": [
           {
             "date": "2025-06-16",
@@ -47859,23 +48514,23 @@ window.MACRO_DATA = {
             "value": 17.68
           },
           {
-            "date": "2026-06-15",
-            "value": 16.04
+            "date": "2026-06-16",
+            "value": 15.9
           }
         ],
         "ticker": "^VIX",
         "label": "VIX Volatility Index"
       },
       "^TNX": {
-        "latest": 4.47,
-        "latest_date": "2026-06-15",
-        "ret_1d": -0.4,
-        "ret_1w": -1.82,
-        "ret_1m": 0.18,
-        "ret_3m": 5.9,
-        "ret_6m": 7.92,
-        "ret_1y": 2.57,
-        "ret_ytd": 6.74,
+        "latest": 4.43,
+        "latest_date": "2026-06-16",
+        "ret_1d": -1.27,
+        "ret_1w": -2.68,
+        "ret_1m": -0.69,
+        "ret_3m": 4.98,
+        "ret_6m": 6.98,
+        "ret_1y": 1.68,
+        "ret_ytd": 5.8,
         "history": [
           {
             "date": "2025-06-13",
@@ -48882,23 +49537,23 @@ window.MACRO_DATA = {
             "value": 4.49
           },
           {
-            "date": "2026-06-15",
-            "value": 4.47
+            "date": "2026-06-16",
+            "value": 4.43
           }
         ],
         "ticker": "^TNX",
         "label": "10Y Treasury Yield (^TNX)"
       },
       "DX-Y.NYB": {
-        "latest": 99.65,
-        "latest_date": "2026-06-15",
-        "ret_1d": -0.1,
-        "ret_1w": -0.4,
-        "ret_1m": 0.78,
-        "ret_3m": -0.06,
-        "ret_6m": 1.32,
-        "ret_1y": 1.77,
-        "ret_ytd": 1.25,
+        "latest": 99.48,
+        "latest_date": "2026-06-16",
+        "ret_1d": -0.27,
+        "ret_1w": -0.57,
+        "ret_1m": 0.61,
+        "ret_3m": -0.23,
+        "ret_6m": 1.15,
+        "ret_1y": 1.59,
+        "ret_ytd": 1.08,
         "history": [
           {
             "date": "2025-06-13",
@@ -49905,28 +50560,24 @@ window.MACRO_DATA = {
             "value": 99.75
           },
           {
-            "date": "2026-06-15",
-            "value": 99.65
+            "date": "2026-06-16",
+            "value": 99.48
           }
         ],
         "ticker": "DX-Y.NYB",
         "label": "DXY US Dollar Index"
       },
       "CL=F": {
-        "latest": 81.35,
-        "latest_date": "2026-06-15",
-        "ret_1d": -4.16,
-        "ret_1w": -10.9,
-        "ret_1m": -19.59,
-        "ret_3m": -12.99,
-        "ret_6m": 41.23,
-        "ret_1y": 11.47,
-        "ret_ytd": 41.92,
+        "latest": 75.18,
+        "latest_date": "2026-06-16",
+        "ret_1d": -6.9,
+        "ret_1w": -14.76,
+        "ret_1m": -28.69,
+        "ret_3m": -21.86,
+        "ret_6m": 30.88,
+        "ret_1y": 4.75,
+        "ret_ytd": 31.16,
         "history": [
-          {
-            "date": "2025-06-16",
-            "value": 71.77
-          },
           {
             "date": "2025-06-17",
             "value": 74.84
@@ -50929,27 +51580,27 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-15",
-            "value": 81.35
+            "value": 80.75
+          },
+          {
+            "date": "2026-06-16",
+            "value": 75.18
           }
         ],
         "ticker": "CL=F",
         "label": "WTI Crude Oil Futures"
       },
       "GC=F": {
-        "latest": 4341.8,
-        "latest_date": "2026-06-15",
-        "ret_1d": 3.01,
-        "ret_1w": 0.14,
-        "ret_1m": -7.19,
-        "ret_3m": -13.06,
-        "ret_6m": 1.31,
-        "ret_1y": 26.54,
-        "ret_ytd": 0.64,
+        "latest": 4367.4,
+        "latest_date": "2026-06-16",
+        "ret_1d": 0.91,
+        "ret_1w": 2.52,
+        "ret_1m": -4.14,
+        "ret_3m": -12.67,
+        "ret_6m": 1.57,
+        "ret_1y": 28.59,
+        "ret_ytd": 1.23,
         "history": [
-          {
-            "date": "2025-06-16",
-            "value": 3396.4
-          },
           {
             "date": "2025-06-17",
             "value": 3386.6
@@ -51952,27 +52603,27 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-15",
-            "value": 4341.8
+            "value": 4328.0
+          },
+          {
+            "date": "2026-06-16",
+            "value": 4367.4
           }
         ],
         "ticker": "GC=F",
         "label": "Gold Futures"
       },
       "HG=F": {
-        "latest": 6.5,
-        "latest_date": "2026-06-15",
-        "ret_1d": 1.14,
-        "ret_1w": 2.75,
-        "ret_1m": -0.97,
-        "ret_3m": 12.31,
-        "ret_6m": 19.84,
-        "ret_1y": 35.4,
-        "ret_ytd": 15.31,
+        "latest": 6.51,
+        "latest_date": "2026-06-16",
+        "ret_1d": 0.46,
+        "ret_1w": 3.32,
+        "ret_1m": 4.17,
+        "ret_3m": 13.72,
+        "ret_6m": 23.25,
+        "ret_1y": 34.92,
+        "ret_ytd": 15.46,
         "history": [
-          {
-            "date": "2025-06-16",
-            "value": 4.83
-          },
           {
             "date": "2025-06-17",
             "value": 4.8
@@ -52975,27 +53626,27 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-15",
-            "value": 6.5
+            "value": 6.48
+          },
+          {
+            "date": "2026-06-16",
+            "value": 6.51
           }
         ],
         "ticker": "HG=F",
         "label": "Copper Futures"
       },
       "BTC-USD": {
-        "latest": 66560.94,
-        "latest_date": "2026-06-15",
-        "ret_1d": 1.29,
-        "ret_1w": 8.32,
-        "ret_1m": -13.87,
-        "ret_3m": -10.64,
-        "ret_6m": -5.08,
-        "ret_1y": -46.65,
-        "ret_ytd": -24.99,
+        "latest": 65743.57,
+        "latest_date": "2026-06-16",
+        "ret_1d": -0.82,
+        "ret_1w": 3.43,
+        "ret_1m": -13.3,
+        "ret_3m": -11.37,
+        "ret_6m": -4.43,
+        "ret_1y": -45.87,
+        "ret_ytd": -25.91,
         "history": [
-          {
-            "date": "2025-10-07",
-            "value": 121451.38
-          },
           {
             "date": "2025-10-08",
             "value": 123354.87
@@ -53998,7 +54649,11 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-15",
-            "value": 66560.94
+            "value": 66289.5
+          },
+          {
+            "date": "2026-06-16",
+            "value": 65743.57
           }
         ],
         "ticker": "BTC-USD",
@@ -54008,9 +54663,9 @@ window.MACRO_DATA = {
   },
   "calendar": {
     "schema_version": "1.1",
-    "fetched_at": "2026-06-16T05:12:59.959340+00:00",
-    "window_start": "2026-06-15",
-    "window_end": "2026-07-06",
+    "fetched_at": "2026-06-16T16:26:26.724715+00:00",
+    "window_start": "2026-06-16",
+    "window_end": "2026-07-07",
     "macro": [
       {
         "date": "2026-06-17",
@@ -54129,10 +54784,24 @@ window.MACRO_DATA = {
     ],
     "fed_speakers": [],
     "lookahead": {
-      "tomorrow_date": "2026-06-16",
-      "week_end_date": "2026-06-22",
+      "tomorrow_date": "2026-06-17",
+      "week_end_date": "2026-06-23",
       "tomorrow": {
-        "macro": [],
+        "macro": [
+          {
+            "date": "2026-06-17",
+            "name": "FOMC Meeting (Fed rate decision)",
+            "release_id": 8,
+            "type": "macro"
+          },
+          {
+            "date": "2026-06-17",
+            "name": "Durable Goods Orders",
+            "release_id": 326,
+            "type": "macro",
+            "estimated": true
+          }
+        ],
         "earnings": [],
         "fed_speakers": []
       },
@@ -54162,6 +54831,13 @@ window.MACRO_DATA = {
             "date": "2026-06-22",
             "name": "Producer Price Index (PPI)",
             "release_id": 17,
+            "type": "macro",
+            "estimated": true
+          },
+          {
+            "date": "2026-06-23",
+            "name": "Personal Income & Outlays (PCE)",
+            "release_id": 21,
             "type": "macro",
             "estimated": true
           }
@@ -54358,6 +55034,40 @@ window.MACRO_DATA = {
             ],
             "primary_link": "https://www.bls.gov/news.release/realer.htm",
             "deep_dive_link": "https://www.bls.gov/news.release/realer.htm"
+          },
+          {
+            "id": "IR",
+            "short_name": "Import Price Index",
+            "full_name": "Import Price Index (Chỉ số giá nhập khẩu)",
+            "frequency": "Hàng tháng",
+            "link": "https://fred.stlouisfed.org/series/IR",
+            "description": "Đo thay đổi giá hàng hoá/dịch vụ Mỹ nhập khẩu từ nước ngoài (BLS). Loại trừ thuế nhập khẩu — phản ánh giá gốc tại cửa khẩu. Là kênh truyền dẫn lạm phát nhập khẩu (imported inflation) vào CPI/PPI.",
+            "expectation_meaning": "MoM dương = chi phí hàng nhập tăng → áp lực lạm phát đầu vào. Chịu chi phối lớn bởi giá dầu/năng lượng và biến động USD: USD mạnh thường kéo import prices xuống (hàng nhập rẻ hơn tính theo USD).",
+            "good_vs_bad": "Cao hơn dự báo = hawkish, imported inflation truyền vào PPI/CPI 1-2 tháng sau → xấu cho equities (đặc biệt growth/tech). Thấp/âm = disinflation đầu vào, dovish-friendly. Ex-petroleum là thước đo lõi sạch hơn.",
+            "market_reaction": "Niche so với CPI nhưng pros theo dõi như leading indicator cho lạm phát hàng hoá. Tăng do dầu → áp lực XLE-positive nhưng squeeze margin nhóm tiêu dùng (XLY, XLP) và công nghiệp (XLI) phụ thuộc input nhập khẩu. USD mạnh + import prices giảm = tailwind cho importers/retailers.",
+            "release_aliases": [
+              "import price index",
+              "import prices",
+              "import price index (mom)",
+              "import price index (yoy)"
+            ]
+          },
+          {
+            "id": "IQ",
+            "short_name": "Export Price Index",
+            "full_name": "Export Price Index (Chỉ số giá xuất khẩu)",
+            "frequency": "Hàng tháng",
+            "link": "https://fred.stlouisfed.org/series/IQ",
+            "description": "Đo thay đổi giá hàng hoá/dịch vụ Mỹ bán ra nước ngoài (BLS). Phản ánh sức cạnh tranh và power định giá của nhà xuất khẩu Mỹ, đồng thời là tín hiệu lạm phát sản xuất nội địa truyền ra thị trường ngoài.",
+            "expectation_meaning": "MoM dương = nhà xuất khẩu Mỹ có pricing power tăng (cầu ngoài mạnh hoặc chi phí sản xuất lên). Nông sản và năng lượng chi phối mạnh phần biến động. USD yếu thường nâng đỡ giá xuất khẩu tính theo USD.",
+            "good_vs_bad": "Cao = pricing power tốt + lạm phát sản xuất, hỗ trợ doanh thu xuất khẩu nhưng cũng là tín hiệu lạm phát rộng hơn (hawkish nhẹ). Thấp/âm = cầu ngoài yếu hoặc USD mạnh bào mòn sức cạnh tranh → cảnh báo cho nhóm xuất khẩu.",
+            "market_reaction": "Đọc cùng Import Price Index để gauge terms-of-trade (xuất/nhập). Export prices mạnh nhờ nông sản → tốt cho agribusiness/materials (XLB). USD mạnh kéo export prices xuống = headwind cho công nghiệp xuất khẩu (XLI) và đa quốc gia. Minor mover nhưng bổ sung bức tranh lạm phát + thương mại.",
+            "release_aliases": [
+              "export price index",
+              "export prices",
+              "export price index (mom)",
+              "export price index (yoy)"
+            ]
           }
         ]
       },
@@ -55978,6 +56688,24 @@ window.MACRO_DATA = {
             "primary_link": "https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yield",
             "news_release_link": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
             "deep_dive_link": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+          },
+          {
+            "id": "20Y_BOND_AUCTION",
+            "short_name": "20-Year Bond Auction",
+            "full_name": "20-Year Treasury Bond Auction (Đấu thầu trái phiếu Kho bạc kỳ hạn 20 năm)",
+            "frequency": "Hàng tháng (định kỳ theo lịch Treasury)",
+            "link": "https://www.treasurydirect.gov/auctions/auction-query/",
+            "description": "Phiên đấu thầu trái phiếu Kho bạc Mỹ kỳ hạn 20 năm. Đo mức lãi suất trúng thầu (high yield) và lực cầu thực tế đối với nợ dài hạn Mỹ. Chỉ báo khẩu vị nhà đầu tư với duration dài và sức khoẻ cầu trái phiếu chính phủ.",
+            "expectation_meaning": "Theo dõi 3 thước đo: (1) Bid-to-Cover ratio (cầu/cung — cao = cầu mạnh); (2) High yield so với 'when-issued' (trúng thầu thấp hơn WI = 'stop-through' tốt, cao hơn = 'tail' yếu); (3) Indirect bidders (% nước ngoài/foreign demand). Kỳ hạn 20Y vốn kém thanh khoản, dễ tail.",
+            "good_vs_bad": "Đấu thầu mạnh (BtC cao, stop-through, indirect tốt) = cầu nợ Mỹ vững → yields hạ, dovish-friendly, tốt cho risk assets. Đấu thầu yếu (tail, BtC thấp) = cảnh báo cầu trái phiếu suy yếu/lo ngại nợ công → yields dài tăng vọt, áp lực lên equities (đặc biệt nhóm long-duration: tech, REITs).",
+            "market_reaction": "Là 'real-time' stress test cầu trái phiếu dài hạn. Tail xấu đẩy 10Y/20Y/30Y yields lên ngay → risk-off cho equities, áp lực XLK/XLRE/utilities nhạy lãi suất; tốt cho USD ngắn hạn. Auction mạnh hạ yields = relief rally. Pros theo sát khi lo ngại thâm hụt ngân sách/term premium gia tăng.",
+            "release_aliases": [
+              "20-year bond auction",
+              "20-year bond auction high yield",
+              "20-year bond auction bid-to-cover",
+              "20-year treasury bond auction",
+              "us 20-year bond auction"
+            ]
           }
         ]
       },
@@ -56712,7 +57440,7 @@ window.MACRO_DATA = {
     ]
   },
   "fred_history": {
-    "updated_at": "2026-06-15T20:04:13.941453+00:00",
+    "updated_at": "2026-06-16T16:24:30.499264+00:00",
     "fred_snapshot": {
       "CPIAUCSL": {
         "label": "CPI All Items",
@@ -77073,16 +77801,16 @@ window.MACRO_DATA = {
         "label": "Atlanta Fed GDPNow",
         "latest": {
           "date": "2026-04-01",
-          "value": 3.2906
+          "value": 2.8314
         },
         "previous": {
           "date": "2026-01-01",
           "value": 1.2392
         },
-        "change_pct": 165.542,
+        "change_pct": 128.486,
         "frequency": "quarterly",
-        "mom_pct": 165.542,
-        "yoy_pct": 13.39,
+        "mom_pct": 128.486,
+        "yoy_pct": -2.43,
         "history": [
           {
             "date": "2011-07-01",
@@ -77322,7 +78050,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-04-01",
-            "value": 3.2906
+            "value": 2.8314
           }
         ]
       },
@@ -78823,23 +79551,19 @@ window.MACRO_DATA = {
       "HOUST": {
         "label": "Housing Starts",
         "latest": {
-          "date": "2026-04-01",
-          "value": 1465.0
+          "date": "2026-05-01",
+          "value": 1177.0
         },
         "previous": {
-          "date": "2026-03-01",
-          "value": 1507.0
+          "date": "2026-04-01",
+          "value": 1392.0
         },
-        "change_pct": -2.787,
+        "change_pct": -15.445,
         "frequency": "monthly",
-        "mom_pct": -2.787,
-        "yoy_pct": 4.64,
-        "mo3_annualized_pct": 25.18,
+        "mom_pct": -15.445,
+        "yoy_pct": -8.69,
+        "mo3_annualized_pct": -41.53,
         "history": [
-          {
-            "date": "2016-05-01",
-            "value": 1148.0
-          },
           {
             "date": "2016-06-01",
             "value": 1203.0
@@ -79310,11 +80034,15 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-03-01",
-            "value": 1507.0
+            "value": 1522.0
           },
           {
             "date": "2026-04-01",
-            "value": 1465.0
+            "value": 1392.0
+          },
+          {
+            "date": "2026-05-01",
+            "value": 1177.0
           }
         ]
       },
@@ -79889,21 +80617,17 @@ window.MACRO_DATA = {
       "DFF": {
         "label": "Fed Funds Rate",
         "latest": {
-          "date": "2026-06-11",
+          "date": "2026-06-12",
           "value": 3.62
         },
         "previous": {
-          "date": "2026-06-10",
+          "date": "2026-06-11",
           "value": 3.62
         },
         "change_pct": 0.0,
         "frequency": "daily",
         "mom_pct": 0.0,
         "history": [
-          {
-            "date": "2026-02-12",
-            "value": 3.64
-          },
           {
             "date": "2026-02-13",
             "value": 3.64
@@ -80379,27 +81103,27 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-11",
             "value": 3.62
+          },
+          {
+            "date": "2026-06-12",
+            "value": 3.62
           }
         ]
       },
       "DGS10": {
         "label": "10Y Treasury Yield",
         "latest": {
+          "date": "2026-06-12",
+          "value": 4.48
+        },
+        "previous": {
           "date": "2026-06-11",
           "value": 4.45
         },
-        "previous": {
-          "date": "2026-06-10",
-          "value": 4.55
-        },
-        "change_pct": -2.198,
+        "change_pct": 0.674,
         "frequency": "daily",
-        "mom_pct": -2.198,
+        "mom_pct": 0.674,
         "history": [
-          {
-            "date": "2025-12-26",
-            "value": 4.14
-          },
           {
             "date": "2025-12-29",
             "value": 4.12
@@ -80859,27 +81583,27 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-11",
             "value": 4.45
+          },
+          {
+            "date": "2026-06-12",
+            "value": 4.48
           }
         ]
       },
       "DGS2": {
         "label": "2Y Treasury Yield",
         "latest": {
+          "date": "2026-06-12",
+          "value": 4.09
+        },
+        "previous": {
           "date": "2026-06-11",
           "value": 4.05
         },
-        "previous": {
-          "date": "2026-06-10",
-          "value": 4.13
-        },
-        "change_pct": -1.937,
+        "change_pct": 0.988,
         "frequency": "daily",
-        "mom_pct": -1.937,
+        "mom_pct": 0.988,
         "history": [
-          {
-            "date": "2025-12-26",
-            "value": 3.46
-          },
           {
             "date": "2025-12-29",
             "value": 3.45
@@ -81339,27 +82063,27 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-11",
             "value": 4.05
+          },
+          {
+            "date": "2026-06-12",
+            "value": 4.09
           }
         ]
       },
       "DGS3MO": {
         "label": "3M Treasury Yield",
         "latest": {
-          "date": "2026-06-11",
+          "date": "2026-06-12",
           "value": 3.78
         },
         "previous": {
-          "date": "2026-06-10",
-          "value": 3.79
+          "date": "2026-06-11",
+          "value": 3.78
         },
-        "change_pct": -0.264,
+        "change_pct": 0.0,
         "frequency": "daily",
-        "mom_pct": -0.264,
+        "mom_pct": 0.0,
         "history": [
-          {
-            "date": "2025-12-26",
-            "value": 3.64
-          },
           {
             "date": "2025-12-29",
             "value": 3.68
@@ -81819,27 +82543,27 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-11",
             "value": 3.78
+          },
+          {
+            "date": "2026-06-12",
+            "value": 3.78
           }
         ]
       },
       "DGS6MO": {
         "label": "6M Treasury Yield",
         "latest": {
+          "date": "2026-06-12",
+          "value": 3.82
+        },
+        "previous": {
           "date": "2026-06-11",
           "value": 3.81
         },
-        "previous": {
-          "date": "2026-06-10",
-          "value": 3.82
-        },
-        "change_pct": -0.262,
+        "change_pct": 0.262,
         "frequency": "daily",
-        "mom_pct": -0.262,
+        "mom_pct": 0.262,
         "history": [
-          {
-            "date": "2025-12-26",
-            "value": 3.58
-          },
           {
             "date": "2025-12-29",
             "value": 3.59
@@ -82299,27 +83023,27 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-11",
             "value": 3.81
+          },
+          {
+            "date": "2026-06-12",
+            "value": 3.82
           }
         ]
       },
       "T10Y2Y": {
         "label": "10Y-2Y Spread",
         "latest": {
+          "date": "2026-06-15",
+          "value": 0.4
+        },
+        "previous": {
           "date": "2026-06-12",
           "value": 0.39
         },
-        "previous": {
-          "date": "2026-06-11",
-          "value": 0.4
-        },
-        "change_pct": -2.5,
+        "change_pct": 2.564,
         "frequency": "daily",
-        "mom_pct": -2.5,
+        "mom_pct": 2.564,
         "history": [
-          {
-            "date": "2025-12-29",
-            "value": 0.67
-          },
           {
             "date": "2025-12-30",
             "value": 0.69
@@ -82779,39 +83503,27 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-12",
             "value": 0.39
+          },
+          {
+            "date": "2026-06-15",
+            "value": 0.4
           }
         ]
       },
       "DTWEXBGS": {
         "label": "USD Index (Broad)",
         "latest": {
-          "date": "2026-06-05",
-          "value": 120.0831
+          "date": "2026-06-12",
+          "value": 119.5073
         },
         "previous": {
-          "date": "2026-06-04",
-          "value": 119.3615
+          "date": "2026-06-11",
+          "value": 120.1174
         },
-        "change_pct": 0.605,
+        "change_pct": -0.508,
         "frequency": "daily",
-        "mom_pct": 0.605,
+        "mom_pct": -0.508,
         "history": [
-          {
-            "date": "2025-12-22",
-            "value": 119.9912
-          },
-          {
-            "date": "2025-12-23",
-            "value": 119.7057
-          },
-          {
-            "date": "2025-12-24",
-            "value": 119.4372
-          },
-          {
-            "date": "2025-12-26",
-            "value": 119.4723
-          },
           {
             "date": "2025-12-29",
             "value": 119.5899
@@ -83255,27 +83967,43 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-05",
             "value": 120.0831
+          },
+          {
+            "date": "2026-06-08",
+            "value": 120.034
+          },
+          {
+            "date": "2026-06-09",
+            "value": 119.9617
+          },
+          {
+            "date": "2026-06-10",
+            "value": 119.9134
+          },
+          {
+            "date": "2026-06-11",
+            "value": 120.1174
+          },
+          {
+            "date": "2026-06-12",
+            "value": 119.5073
           }
         ]
       },
       "VIXCLS": {
         "label": "VIX (Volatility Index)",
         "latest": {
+          "date": "2026-06-15",
+          "value": 16.2
+        },
+        "previous": {
           "date": "2026-06-12",
           "value": 17.68
         },
-        "previous": {
-          "date": "2026-06-11",
-          "value": 19.44
-        },
-        "change_pct": -9.053,
+        "change_pct": -8.371,
         "frequency": "daily",
-        "mom_pct": -9.053,
+        "mom_pct": -8.371,
         "history": [
-          {
-            "date": "2025-12-29",
-            "value": 14.2
-          },
           {
             "date": "2025-12-30",
             "value": 14.33
@@ -83743,6 +84471,10 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-12",
             "value": 17.68
+          },
+          {
+            "date": "2026-06-15",
+            "value": 16.2
           }
         ]
       },
@@ -84221,16 +84953,16 @@ window.MACRO_DATA = {
       "BAMLH0A0HYM2": {
         "label": "High-Yield Credit Spread (HY OAS)",
         "latest": {
+          "date": "2026-06-15",
+          "value": 2.66
+        },
+        "previous": {
           "date": "2026-06-12",
           "value": 2.71
         },
-        "previous": {
-          "date": "2026-06-11",
-          "value": 2.78
-        },
-        "change_pct": -2.518,
+        "change_pct": -1.845,
         "frequency": "daily",
-        "mom_pct": -2.518,
+        "mom_pct": -1.845,
         "history": [
           {
             "date": "2026-01-02",
@@ -84707,22 +85439,26 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-12",
             "value": 2.71
+          },
+          {
+            "date": "2026-06-15",
+            "value": 2.66
           }
         ]
       },
       "BAMLC0A0CM": {
         "label": "Investment-Grade Credit Spread (IG OAS)",
         "latest": {
+          "date": "2026-06-15",
+          "value": 0.73
+        },
+        "previous": {
           "date": "2026-06-12",
           "value": 0.74
         },
-        "previous": {
-          "date": "2026-06-11",
-          "value": 0.75
-        },
-        "change_pct": -1.333,
+        "change_pct": -1.351,
         "frequency": "daily",
-        "mom_pct": -1.333,
+        "mom_pct": -1.351,
         "history": [
           {
             "date": "2026-01-02",
@@ -85199,27 +85935,27 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-12",
             "value": 0.74
+          },
+          {
+            "date": "2026-06-15",
+            "value": 0.73
           }
         ]
       },
       "T10YIE": {
         "label": "10Y Inflation Breakeven",
         "latest": {
+          "date": "2026-06-15",
+          "value": 2.32
+        },
+        "previous": {
           "date": "2026-06-12",
           "value": 2.31
         },
-        "previous": {
-          "date": "2026-06-11",
-          "value": 2.29
-        },
-        "change_pct": 0.873,
+        "change_pct": 0.433,
         "frequency": "daily",
-        "mom_pct": 0.873,
+        "mom_pct": 0.433,
         "history": [
-          {
-            "date": "2025-12-29",
-            "value": 2.22
-          },
           {
             "date": "2025-12-30",
             "value": 2.24
@@ -85679,20 +86415,24 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-12",
             "value": 2.31
+          },
+          {
+            "date": "2026-06-15",
+            "value": 2.32
           }
         ]
       }
     }
   },
   "latest_daily": {
-    "file": "2026-06-15.md",
-    "date": "2026-06-15",
+    "file": "2026-06-16.md",
+    "date": "2026-06-16",
     "schema_version": "1.1",
-    "surprise_count": "0",
-    "regime_signal": "risk-on",
-    "key_takeaway": "Không có release macro nào hôm nay (investing.com bị chặn 403); cross-asset giữ nguyên tông risk-on sau chuỗi CPI/PPI dovish — VIX 17.68, HY OAS 271bp, đường cong normal +0.39 — nhưng hard data lạm phát nền vẫn nóng (CPI YoY 4.27%, Core PCE YoY 3.29%), bức tranh vĩ mô là \"risk-on thận trọng\" chứ không phải dovish hẳn.",
-    "body_preview": "# Vĩ mô Mỹ — 2026-06-15",
-    "body": "# Vĩ mô Mỹ — 2026-06-15\n\n## Tóm tắt\n\nKhông có chỉ số macro lớn nào được công bố hôm nay từ investing.com (nguồn bị block 403). Phiên hôm nay là ngày consolidation sau chuỗi catalyst dày đặc 10-12/6 (CPI miss, Core PPI miss, Michigan Sentiment beat). Cross-asset giữ tông risk-on: VIX 17.68 (dưới ngưỡng caution 20), HY OAS thu hẹp về 271bp, đường cong 2s10s bình thường +0.39. Tuy nhiên, cần nhấn mạnh: hard data lạm phát nền vẫn nóng — CPI YoY 4.27%, Core PCE YoY 3.29%, PPI Final Demand YoY 6.46% — khiến \"risk-on\" hiện tại vẫn mang tính thận trọng, phụ thuộc nhiều vào kỳ vọng và soft data hơn là xác nhận bền vững từ hard data. Chưa thể tuyên bố disinflation hẳn hay Fed dovish dứt khoát.\n\n## Chi tiết chỉ số được công bố hôm nay\n\nKhông có chỉ số macro lớn công bố hôm nay (investing.com bị block 403, `groups_present` rỗng). Phần dưới trình bày bức tranh FRED context phục vụ Market Pulse và định vị tuần tới.\n\n## Market Pulse\n\n**Yields & Đường cong lãi suất:**\n- 10Y: 4.45% (-10 bp so với 4.55% ngày 10/6) | 2Y: 4.05% (-8 bp) | 3M: 3.78% | Spread 2Y-10Y: +0.39 — normal, đang duy trì dốc nhẹ dương lần đầu sau nhiều tháng\n- Fed Funds hiệu dụng: 3.62% (đã cắt từ đỉnh) — gap 10Y vs Fed Funds = 83bp, phản ánh thị trường đang kỳ vọng thêm cuts\n- Breakeven 10Y: 2.31% — tăng nhẹ 2bp so với phiên trước (+0.87%); thị trường kỳ vọng lạm phát dài hạn vẫn trên target 2.0% nhưng không tăng tốc\n\n**USD & Cross-asset:**\n- USD Index (Broad, DTWEXBGS): 120.08 (+0.61% so với 119.36 ngày 04/6 — dữ liệu mới nhất có sẵn); người dùng cung cấp context DXY ~99.65, hàm ý USD yếu hơn nhiều so với tháng 4, hỗ trợ EM và commodities ngắn hạn\n- VIX: 17.68 (giảm mạnh từ 22.22 ngày 10/6 xuống 17.68 ngày 12/6, -9.1%) — vùng risk-on rõ ràng (<20), nhưng chưa trở về mức calm cực đoan (<15)\n- WTI Crude: $95.00/bbl (dữ liệu FRED 08/6); người dùng cung cấp WTI ~81.35 (-19.6% 1M) — mức thấp hơn đáng kể so với đỉnh tuần qua, áp lực giảm WTI là tín hiệu hai chiều: giảm energy cost pressure (tốt cho lạm phát) nhưng cũng phản ánh demand concerns (rủi ro cho XLE và growth narrative)\n\n**Credit Spreads:**\n- HY OAS: 271bp (-7bp so với 278bp ngày 11/6) | IG OAS: 74bp (-1bp)\n- Spreads thu hẹp liên tục từ đỉnh 280bp (10/6) — credit market đang đồng thuận với risk-on; HY OAS dưới 300bp = risk appetite bình thường, không có stress credit\n\n**Vị trí chu kỳ (từ `cycle_context`):**\n- Sahm Rule: +0.10pp — chưa kích hoạt (ngưỡng 0.50). Thất nghiệp 3mo-avg 4.3% vs đáy 12 tháng 4.2%. Thị trường lao động vẫn trong vùng an toàn, không có tín hiệu suy thoái từ labor\n- Đường cong: regime normal (2s10s +0.39, 116 phiên liên tục) — đây là tín hiệu tích cực so với giai đoạn inverted trước. 10Y-3M: +0.67. Chú ý: đường cong đang dis-invert sau giai đoạn inverted — về lý thuyết đây là giai đoạn cảnh báo suy thoái cận hơn, nhưng với Sahm +0.10 còn an toàn, tín hiệu nhìn chung vẫn ổn\n\n**Economic Surprise Index (từ `data/surprise_index.json`):**\n- Growth surprise 1M: +3.74 (beating mạnh, xu hướng rising) | Inflation surprise 1M: -6.74 (missing mạnh — tức là lạm phát thực tế thấp hơn dự báo, tốt cho thị trường)\n- Diễn giải: Data tháng qua đang vượt kỳ vọng về tăng trưởng đồng thời lạm phát thực tế miss forecast (về phía thấp hơn) — đây là combo risk-on tailwind lý tưởng. Tuy nhiên lưu ý \"inflation miss vs forecast\" KHÔNG đồng nghĩa lạm phát thấp trong tuyệt đối (CPI YoY 4.27% vẫn cao hơn target 2% đáng kể)\n\n**Tổng đánh giá cross-asset:** Risk-on được duy trì — VIX dưới 20, HY OAS thu hẹp, đường cong dương, Sahm an toàn — nhưng đây là risk-on mang tính kỳ vọng (dovish Fed expectations từ soft data) hơn là xác nhận từ hard data. Không có catalyst mới hôm nay, thị trường đang \"tiêu hóa\" dữ liệu 10-12/6.\n\n## Bối cảnh xu hướng (so với 30 ngày qua)\n\n### 1. Bản đồ regime 22/5 → 15/6: ba giai đoạn rõ ràng\n\nNhìn lại 16 reports kể từ 22/5, thị trường đã đi qua ba giai đoạn riêng biệt:\n\n| Giai đoạn | Thời gian | Regime | Đặc điểm |\n|---|---|---|---|\n| **A — Narrow risk-on** | 22/5 → 03/6 | risk-on (XLK độc dẫn) | XLK +20%+ 1M, defensives bị bán, ISM Mfg+Svc beat, goldilocks growth narrative |\n| **B — Rotation + Vol spike** | 04/6 → 08/6 | rotation-confirmed | Tech leadership crack, NFP +265k hawkish beat, AVGO disappoint, VIX spike +40% lên 21.51, yields jump +9-12bp |\n| **C — Relief rally + Consolidation** | 10/6 → 15/6 | bounce-relief / risk-on | Core CPI miss (-0.1pp vs fcst), Core PPI miss (-0.5pp vs fcst), Michigan 5Y inflation exp rơi về 3.4%, VIX hạ về 17.68, yields rút -10bp |\n\nNgày hôm nay (15/6) là ngày đầu tiên sau khi giai đoạn C ổn định — không có catalyst mới, cross-asset giữ tông risk-on nhưng chưa có xung lực mới để broaden tiếp.\n\n### 2. Ba ngày turning point quan trọng nhất\n\n**Turning point 1 — 2026-06-04: \"XLK Peak & Rotation Begins\"**\n\nĐây là ngày regime shift lớn nhất kể từ khi hệ thống hoạt động. Trước đó 2 tuần, XLK độc dẫn với 1M return +21.09% (close 3/6), breadth thị trường chỉ 3/11 sectors xanh. Ngày 4/6, cụm ba dữ liệu lao động cùng lúc đảo narrative:\n- Initial Jobless Claims 225K — lần đầu vượt ngưỡng 220K kể từ 2025, phá range 200-220K bền vững\n- Challenger Job Cuts YoY đảo chiều khổng lồ: từ -20.9% (improving) sang +3.4% (deteriorating) trong 1 tháng\n- Nonfarm Productivity Q1 sụp từ +1.8% xuống +0.3% — margin headwind doanh nghiệp\n\nKết quả: XLK -1.56%, 1M giảm 4.5pp xuống +16.63%. Nhưng SPY vẫn +0.38% nhờ 9/11 sectors xanh — XLV +3.07% (biggest 1D sector move), XLF +2.59%, XLI +1.21%. Conviction chuyển từ \"XLK overweight\" sang \"trim 30-40% → Neutral\", XLV từ \"UW→Neutral\" lên \"Overweight\".\n\n**Turning point 2 — 2026-06-08: \"Major Inflection Point Sealed\"**\n\nSau khi AVGO disappoint (inferred từ XLK -5.92% tuần) và NFP T5 in ra +265k (STRONG beat vs ~150k consensus), thị trường xác nhận inflection. Chuỗi diễn biến:\n- 10Y yield jump +9bp lên 4.55%, 2Y +12bp lên 4.17% — front-end re-price hawkish\n- VIX spike +39.7% từ 16.06 lên 21.51 — first major vol event 6+ tuần\n- XLK 1M de-rate từ +16.63% (4/6) xuống +8.54% (8/6) — giảm thêm 8pp trong 4 phiên\n\nDù NFP strong (labor chưa break), CB Employment Trends Index tháng 5 giảm -0.81 điểm (leading indicator đã đi trước lagging NFP) cộng NY Fed 1Y inflation expectations hạ về 3.5% — setup binary hoàn hảo cho CPI 11/6. Conviction lúc đó: XLV OW confirmed, XLE upgrade nhẹ lên Light OW, XLRE/XLU downgrade UW do yields jump.\n\n**Turning point 3 — 2026-06-10: \"CPI Miss — Risk-on Rekindled\"**\n\nCore CPI MoM tháng 5 in ra 0.2% (vs fcst 0.3%, vs prev 0.4%) — lần đầu tiên từ đầu năm Core CPI MoM về vùng \"in-line với target path\". Headline YoY đúng 4.2% (in-line). Phản ứng thị trường tức thì:\n- 10Y yield -10bp về 4.45% (từ đỉnh 4.55%)\n- VIX hạ từ 22.22 xuống 19.4 (-9.1%)\n- HY OAS thu hẹp về 280bp → tiếp tục về 271bp đến hôm nay\n- XLK bid lại (stalking), XLRE/XLU được nâng từ UW lên Watch\n\nNgày 11/6 tiếp tục được xác nhận bởi Core PPI YoY 4.9% (vs fcst 5.4%, -0.5pp miss) và Claims 229K xác nhận labor cooling đang tiếp diễn. Michigan 12/6 thêm dovish: kỳ vọng lạm phát 5Y về 3.4% (shock below).\n\n### 3. Momentum thay đổi theo từng nhóm chỉ số\n\n**Lạm phát — xu hướng: giảm tốc nhưng từ nền cao**\n\nCore CPI MoM đã đi từ +0.4% (T3/2026) → +0.3% (T4/2026) → +0.2% (T5/2026) — ba tháng giảm liên tiếp, mỗi tháng -0.1pp. Đây là tín hiệu disinflation MoM rõ ràng nhất. Tuy nhiên YoY vẫn ở 2.96% và Core PCE YoY ở 3.29% — còn cách target 2% của Fed khoảng 1.0-1.3pp. Inflation Surprise Index 1M âm -6.74 (lạm phát thực tế đang miss dự báo về phía thấp) là dấu hiệu market consensus đang điều chỉnh expectations tốt hơn thực tế — combo lý tưởng cho tâm lý thị trường nhưng chưa đủ cho Fed cut mạnh.\n\n**Lao động — xu hướng: late-cycle cooling, chưa crack**\n\nInitial Claims đi từ đáy 212K (23/5) lên 229K (06/6) — drift tăng 17K trong 2 tuần. Challenger Job Cuts YoY đảo chiều từ -20.9% sang +3.4%. Nhưng NFP T5 +265k và Continuing Claims 1,777K chưa bật — pattern điển hình late-cycle: leading indicators (Claims, Challenger) đã quay đầu trong khi lagging (NFP, Continuing Claims) vẫn mạnh. Sahm Rule +0.10 (ngưỡng 0.50) — còn xa vùng nguy hiểm nhưng UNRATE đã lên 4.3% từ đáy 3.x%. Kịch bản base là \"labor softening có kiểm soát\" không phải \"crack\" — phù hợp với soft-landing.\n\n**Tăng trưởng — xu hướng: mạnh trên bề mặt, có dấu hỏi chất lượng**\n\nISM Mfg 54.0 (1/6) và ISM Services 54.5 (3/6) đều beat — cả hai expansion accelerating. Factory Orders +4.8% beat. GDPNow Q2 tracking 3.29% (so với Q1 actual 1.6%) — nếu xác nhận sẽ là acceleration đáng kể. Nhưng GDPNow bị cắt từ 3.8% → 3.0% ngay trong ngày 1/6 (batch update), cho thấy underlying details yếu hơn headline. Growth Surprise Index 1M +3.74 (beating expectations) nhưng cần phân biệt \"beating low bar\" vs \"thực sự strong\".\n\n**Fed stance — xu hướng: \"kẹt\" giữa inflation nóng và labor cooling**\n\nFed Funds hiệu dụng 3.62% — đã cắt từ đỉnh nhưng gap với CPI YoY 4.27% là âm (real rate âm). Market pricing thêm cuts (gap 10Y vs Fed Funds = 83bp), nhưng với Core PCE 3.29% và CPI 3M ann 8.2% (bị energy kéo), Fed rất khó cắt aggressive. Thông điệp từ cluster Fed speakers 4/6 (Barkin, Bowman x2, Daly x2) không đủ dovish để đảo kỳ vọng thị trường. Base case: Fed giữ nguyên hoặc cut tối đa 1 lần trong Q3, phụ thuộc chuỗi CPI/PCE tháng 6-7.\n\n### 4. Sector leadership map: hành trình và vị trí hiện tại\n\n| Sector | Giai đoạn A (22/5-3/6) | Giai đoạn B (4-8/6) | Giai đoạn C (10-15/6) | Conviction hôm nay |\n|---|---|---|---|---|\n| XLK Tech | **OW — độc dẫn** (+21% 1M peak) | Crack (-8pp 1M trong 4 phiên) | Stalking / Light OW (yields drop hỗ trợ) | **Neutral-to-Stalking** — chờ xác nhận thêm |\n| XLV Healthcare | UW → Neutral | **Overweight** (defensive bid) | OW confirmed (+5.65% 1M dẫn đầu) | **Overweight** — core defensive holding |\n| XLI Industrials | Watch → Neutral-Mid | Neutral (GDPNow cut đè) | Light OW (relief rally +3.24% ngày 11/6) | **Light OW** — capex cycle on |\n| XLF Financials | Avoid → Neutral (cautious) | Neutral (yields jump + NIM ambiguous) | Neutral (yields drop = NIM headwind again) | **Neutral** — tín hiệu hỗn hợp |\n| XLE Energy | UW → Neutral | Light OW (comeback) | Neutral (XLE -1.94% ngày 11/6, WTI yếu) | **Neutral** — WTI ~81 giảm từ đỉnh $97 |\n| XLRE Real Estate | UW | UW (yields jump punish) | Watch (yields drop -10bp tailwind) | **Watch** — chờ Housing Starts xác nhận |\n| XLU Utilities | UW | UW confirmed (-3.55% 1M) | UW confirmed (laggard dù yields drop) | **Underweight** |\n| XLP Staples | UW → Neutral | Neutral up | Neutral up (defensive bid ổn định) | **Neutral** |\n| XLY Discretionary | Neutral | UW (-3.75% 1M) | Neutral-cautious (Michigan 48.9 thấp) | **Neutral-cautious** |\n| XLC Communications | UW | UW strongest (-5.36% 1M) | UW (không có recovery signal) | **Underweight** |\n| XLB Materials | Neutral | UW (-2.80% 1M) | Neutral (relief rally theo XLI) | **Neutral** |\n\n### 5. Tổng hợp và điều chỉnh conviction\n\n**Điều chỉnh tự sửa quan trọng:**\n- Ngày 1/6: dự báo nếu ISM beat sẽ upgrade XLI → đã SAI (ISM 54.0 beat nhưng XLI -0.27% do GDPNow cut). Bài học: ISM PMI không đủ override GDPNow revision.\n- Ngày 3/6: dự báo crude draw -7.97M sẽ dẫn XLE lên OW → đã SAI (WTI đảo chiều -5.27% ngay 4/6). Bài học: supply draw bullish 1 phiên, demand narrative thắng dài hạn.\n- Ngày 4/6: cảnh báo đúng \"peak signal XLK đã trigger\" → XLK thực sự crack -8pp trong tuần tiếp.\n- Ngày 8/6: cảnh báo đúng \"CPI 11/6 là binary\" → Core CPI miss xác nhận, yields drop, relief rally.\n\n**Regime hiện tại (15/6): Risk-on thận trọng, giai đoạn tiêu hóa**\n\nChu kỳ Sahm +0.10 (an toàn) + đường cong normal +0.39 + VIX 17.68 + HY OAS 271bp = các tín hiệu chu kỳ chưa kích hoạt bear regime. Tuy nhiên ba rủi ro chưa giải quyết: (1) hard data lạm phát vẫn nóng (Core PCE 3.29%, CPI YoY 4.27%), (2) labor leading indicators đang cooling (Claims trending up, Challenger YoY đảo chiều), (3) AI capex narrative bị challenged sau AVGO. Đây không phải môi trường để tăng beta đồng loạt — phân hóa sector vẫn là chiến thuật tối ưu.\n\n**Top 3 conviction hiện tại:**\n1. **XLV Overweight** — defensive core với labor cooling, yields drop, RS 1M dẫn đầu; không có catalyst tiêu cực\n2. **XLI Light OW** — capex cycle xác nhận (ISM Mfg+Svc+Factory Orders đều beat), relief rally 11/6 xác nhận sức mạnh\n3. **XLK Neutral-to-Stalking** — disinflation MoM narrative hỗ trợ DCF, nhưng AVGO overhang + hard data lạm phát cao cản việc re-enter OW; chờ Core CPI MoM thêm 1 tháng <0.2% để upgrade\n\n## Cảnh báo & catalyst sắp tới\n\n**Đối chiếu hard data vs soft data (BẮT BUỘC — `hard_data_hot = true`):**\n\nTrong khi soft data và kỳ vọng tuần qua (Michigan Sentiment beat 48.9, kỳ vọng lạm phát 5Y hạ về 3.4%, Inflation Surprise Index -6.74) tạo tông dovish tích cực, hard data lạm phát thực tế vẫn nóng đáng kể:\n\n| Chỉ số | Giá trị mới nhất | YoY / Tham chiếu | Tín hiệu |\n|---|---|---|---|\n| CPI Headline YoY | 4.27% (T5/2026) | +4.27% vs target 2% | Nóng — cao hơn target 2pp |\n| CPI 3-mo annualized | 8.2% | Tăng tốc ngắn hạn rất cao | Cảnh báo — spike energy kéo |\n| Core CPI YoY | 2.96% | 3-mo ann: 3.17% | Cao hơn target nhưng đang giảm |\n| Core PCE YoY | 3.29% (T4/2026) | 3-mo ann: 3.78% | Fed's target 2% — còn khoảng cách 1.3pp |\n| PPI Final Demand YoY | 6.46% (T5/2026) | 3-mo ann: 13.2% | Pipeline áp lực cao — chưa truyền hết vào CPI |\n| Energy CPI YoY | 22.1% | 3-mo ann: 104.4% | Đây là nguồn chính kéo CPI lên; volatile nhưng thực |\n\nKéo lạm phát LÊN mạnh nhất hiện tại là Energy (3-mo annualized 104.38% — mức spike cực cao, một phần là volatility nhưng vẫn phản ánh áp lực thực từ WTI cao). Kéo xuống mạnh nhất là Core Goods (3-mo ann chỉ 0.11%, yoy 1.03%) — phản ánh disinflation goods đang tiếp diễn. Shelter (3-mo ann 4.87%) và Core Services (4.16%) vẫn sticky trên mức target.\n\n**Kết luận:** Tín hiệu mới nhất là \"risk-on nhẹ / cần xác nhận thêm\", không phải \"xác nhận disinflation bền vững\". Fed sẽ cần thêm 2-3 tháng CPI/PCE hạ nhiệt về hướng 2% trước khi cuts thêm.\n\n**Ngày mai (2026-06-16):**\nKhông có catalyst lớn ngày mai (không có macro release, earnings high-importance, hay Fed speaker high/medium impact trong lịch).\n\n**Tuần này (đến 2026-06-22):**\n- **17/6 — FOMC Meeting (Fed rate decision):** Catalyst lớn nhất trong tuần. Với CPI YoY 4.27% và Core PCE 3.29%, không gian để Fed cắt thêm còn hạn chế dù kỳ vọng thị trường đang dovish.\n- **17/6 — Durable Goods Orders:** Theo dõi Nondefense Capital Goods ex-Aircraft (proxy CAPEX) — xác nhận hay phủ nhận capex cycle đang hỗ trợ XLI.\n- **19/6 — Consumer Confidence (Conference Board):** Đối chiếu với Michigan Sentiment (48.9, dưới 50) — xem khảo sát niềm tin có đồng pha không.\n- **22/6 — PPI:** Theo dõi pipeline pressure tiếp tục truyền vào CPI hay không, đặc biệt sau Core PPI miss tuần trước.\n\n**Theo dõi đặc biệt:** FOMC 17/6 là catalyst quan trọng nhất — với hard data lạm phát còn nóng (CPI YoY 4.27%, Core PCE 3.29%) nhưng thị trường đang định giá dovish, đây là điểm có thể gây bất ngờ (hawkish surprise) nếu Fed giữ nguyên thay vì tín hiệu cắt thêm.\n\n**Các điểm khác cần theo dõi (ngoài lịch lookahead 7 ngày):**\n- **Jobless Claims tuần tới (thứ Năm):** Initial Claims hiện 229K (tuần kết thúc 06/6), đang drift lên từ đáy 212K (23/5). Ngưỡng lo ngại: bền vững >250K.\n- **Housing Starts / Building Permits (tháng 5):** HOUST T4 giảm xuống 1,465K từ 1,507K — theo dõi xem yield giảm 10-12/6 có kích cầu xây dựng chưa.\n- **GDPNow Q2 update:** Atlanta Fed hiện track Q2 ở 3.29% (vs Q1 actual 1.6%) — nếu xác nhận sẽ là acceleration đáng kể.\n- **Michigan Sentiment Final (cuối tháng 6):** Preliminary 48.9 — vẫn dưới 50 (vùng yếu lịch sử) dù beat forecast."
+    "surprise_count": "2",
+    "regime_signal": "hawkish",
+    "key_takeaway": "Housing Starts sụp -15.4% MoM và GDPNow hạ về 2.8% cho thấy tăng trưởng hạ nhiệt, nhưng giá nhập khẩu/xuất khẩu vọt mạnh cùng hard-data lạm phát còn nóng (CPI YoY 4.27%, Core PCE 3.29%) giữ áp lực hawkish trước thềm FOMC ngày mai.",
+    "body_preview": "# Vĩ mô Mỹ — 2026-06-16",
+    "body": "# Vĩ mô Mỹ — 2026-06-16\n\n## Tóm tắt\nNgày trước FOMC, dữ liệu phát đi tín hiệu hỗn hợp lệch về stagflation nhẹ: tăng trưởng có dấu hiệu hạ nhiệt (Housing Starts sốc -15.4% MoM, Building Permits âm, Atlanta Fed GDPNow Q2 hạ từ 3.3% xuống 2.8%), nhưng áp lực giá phía nhập khẩu lại nóng bất ngờ — Import Price Index +1.9% MoM (gấp đôi forecast 0.9%) và Export Price Index +1.3%. Kết hợp với hard-data lạm phát vẫn cao (CPI YoY 4.27%, Core PCE YoY 3.29%, Energy CPI 3mo annualized 104%), bức tranh KHÔNG ủng hộ luận điểm \"disinflation đã xác nhận\" hay \"Fed sắp dovish hẳn\". Net: hơi hawkish cho Fed (lạm phát nhập khẩu chưa cho phép nới), nhưng growth chậm lại tạo rủi ro hai chiều cho equities — risk appetite vẫn được giữ nhờ VIX giảm về 16.2 và credit spreads thu hẹp.\n\n## Chi tiết chỉ số được công bố hôm nay\n\n### Housing Starts & Building Permits — MISS (shock-below)\n**Housing Starts (May):** Actual: 1.177M | Forecast: 1.430M | Previous: 1.392M (z = -3.54, shock-below)\n**Housing Starts MoM:** -15.4% (previous -8.5%) — tháng giảm thứ hai liên tiếp, tốc độ rơi sâu hơn\n**Building Permits (May):** 1.413M | Forecast: 1.420M | Previous: 1.423M (in-line, z = -0.1)\n**Building Permits MoM:** -0.7% (previous +4.4%)\n\n**Đánh giá:** Housing Starts là cú sốc lớn nhất trong ngày — hụt 253K so với kỳ vọng, mức -15.4% MoM là một trong những tháng tệ nhất chu kỳ. FRED `HOUST` xác nhận: 1.522M (T3) → 1.392M (T4) → 1.177M (T5), 3mo annualized -41.5%, YoY -8.69%. Đáng chú ý, Building Permits (chỉ báo dẫn dắt khởi công tương lai) chỉ giảm nhẹ -0.7% và sát forecast — nghĩa là cú sụp khởi công có thể mang tính nhiễu tháng đơn lẻ (thời tiết/điều chỉnh) hơn là sụp đổ cấu trúc, vì pipeline giấy phép chưa vỡ.\n\n**Bối cảnh nhà ở:** Tín hiệu trái chiều trong nhóm housing — Existing Home Sales (FRED `EXHOSLUSM495S`) lại tăng +3.2% MoM lên 4.17M và Case-Shiller giá nhà vẫn +0.67% YoY. Tức là nguồn cung MỚI co lại (starts giảm) trong khi giao dịch nhà cũ ấm lên → áp lực giá nhà khó giảm nhanh, gián tiếp giữ Shelter CPI sticky (Shelter 3mo annualized vẫn 4.87%).\n\n**Hàm ý thị trường:** Tiêu cực cho homebuilders (ITB/XHB) và vật liệu xây dựng (XLB) trong ngắn hạn; nhưng lãi suất 10Y ở 4.48% là thủ phạm chính — nếu FOMC ngày mai mở đường giảm lãi suất, nhóm này có thể đảo chiều. Construction payrolls (FRED `USCONS`) vẫn +0.2% MoM nên chưa thấy sa thải lan từ khởi công yếu.\n\n### Giá Xuất/Nhập khẩu & GDPNow (nhóm \"other\") — Import Prices SHOCK-ABOVE\n**Import Price Index MoM (May):** 1.9% | Forecast: 0.9% | Previous: 2.0% (shock-above)\n**Import Price Index YoY:** 6.7% (previous 4.2%) — tăng tốc mạnh\n**Export Price Index MoM:** 1.3% | Forecast: 1.2% | Previous: 3.5% (shock-above nhẹ)\n**Export Price Index YoY:** 11.2% (previous 8.8%)\n**Atlanta Fed GDPNow (Q2):** 2.8% | Forecast: 3.3% | Previous: 3.3% (shock-below, z = -3.03)\n\n**Đánh giá:** Đây là phần đáng lo nhất cho Fed. Giá nhập khẩu +1.9% MoM gấp đôi dự báo và YoY nhảy từ 4.2% lên 6.7% — áp lực giá đầu vào từ bên ngoài (có thể do USD và/hoặc tác động thuế quan/giá năng lượng) đang truyền vào chuỗi cung ứng nội địa. Điều này khớp với CPI Energy nóng (mom +3.88%, 3mo annualized 104%) và PPI Final Demand YoY 6.46% trong FRED. Trong khi đó GDPNow hạ 0.5pp về 2.8% cho thấy momentum tăng trưởng Q2 đang yếu đi.\n\n**Đối chiếu soft-data vs hard-data (BẮT BUỘC — `hard_data_hot = true`):** GDPNow hạ và Housing yếu KHÔNG cho phép kết luận \"tăng trưởng sụp → Fed phải cắt → risk-on bền\". Lý do: hard-data lạm phát VẪN NÓNG — CPI YoY 4.27% (3mo annualized 8.2%), Core CPI YoY 2.96%, Core PCE YoY 3.29% (3mo annualized 3.78%), tất cả còn xa mục tiêu 2%. Cộng thêm giá nhập khẩu vừa shock-above, pipeline lạm phát đang được tiếp thêm nhiên liệu chứ không hạ nhiệt. Đây là cấu hình stagflation-lite: growth chậm + giá cao đồng thời — vị thế khó nhất cho Fed. Tín hiệu đúng là \"hawkish thận trọng, chưa có cửa dovish rõ\", không phải \"dovish hẳn\".\n\n**Hàm ý Fed:** Trước FOMC ngày mai, dữ liệu hôm nay làm giảm khả năng Fed phát tín hiệu cắt mạnh — lạm phát nhập khẩu nóng buộc Fed giữ giọng thận trọng dù growth chậm. Kịch bản nền: giữ nguyên lãi suất (DFF 3.62%), nhấn mạnh \"data-dependent\", chưa cam kết lộ trình cắt.\n\n**Hàm ý thị trường:** Áp lực biên lợi nhuận lên doanh nghiệp nhập khẩu hàng (XLY, XLP) khi input cost tăng; hỗ trợ năng lượng (XLE) khi giá năng lượng đẩy import prices. USD yếu nhẹ hôm nay (-0.5%) lại càng làm hàng nhập đắt thêm — vòng xoáy cần theo dõi.\n\n### ADP Employment Change Weekly — không có forecast\n**Actual:** +25.5K | Previous: +29.0K (vs_previous: -3.5K, down)\n\nChỉ số việc làm tuần của ADP giảm nhẹ về +25.5K từ +29.0K, không có forecast nên không tính surprise. Đây là tín hiệu tần suất cao cho thấy đà tuyển dụng khu vực tư hạ nhiệt biên độ nhỏ — phù hợp với bức tranh labor đang nguội dần (FRED: Initial Claims nhích lên 229K, NFP MoM chỉ +0.11%). Chưa đủ tạo lo ngại về thị trường lao động nhưng củng cố hướng đi chậm lại của tăng trưởng.\n\n*Các chỉ số nhiễu (`is_noise`): Redbook YoY +9.4% (doanh số bán lẻ chuỗi vẫn mạnh, nhất quán với Retail Sales YoY 4.87%); 20-Year Bond Auction (previous yield 5.122%) và API Weekly Crude Oil Stock (forecast -4.5M) — không có actual, không phân tích.*\n\n## Market Pulse\n\n**Yields & Đường cong lãi suất:**\n- 10Y: 4.48% (+3 bp) | 2Y: 4.09% (+4 bp) | Spread 2Y-10Y (`T10Y2Y`): +0.40 → đường cong dốc lên bình thường, vừa steepen nhẹ\n- Breakeven 10Y (`T10YIE`): 2.32% (+1 bp) → kỳ vọng lạm phát thị trường nhích trên mục tiêu Fed 2%, nhất quán với import prices nóng\n\n**USD & Cross-asset:**\n- USD Index (Broad): 119.51 (-0.5%) → USD yếu nhẹ — hỗ trợ EM/commodities nhưng làm hàng nhập đắt hơn, đối nghịch nỗ lực hạ lạm phát nhập khẩu\n- VIX: 16.2 (-8.4%) → risk-on (<20), thị trường bình thản trước FOMC\n- WTI: $95.0/bbl (+0.7%) → giá dầu cao neo áp lực CPI Energy; hỗ trợ XLE, rủi ro lạm phát\n\n**Credit Spreads:**\n- HY OAS: 266 bp (-5 bp) | IG OAS: 73 bp (-1 bp)\n- Spreads thu hẹp → credit stress thấp, risk appetite vẫn lành mạnh, không có dấu hiệu căng thẳng tài chính\n\n**Vị trí chu kỳ (từ `cycle_context`):**\n- Sahm Rule: +0.10 (AN TOÀN) — thất nghiệp 3mo-avg 4.3% vs đáy 12 tháng 4.2%, chưa kích hoạt (ngưỡng 0.50)\n- Đường cong: regime \"normal\" (2s10s +0.40, 10Y-3M +0.70) — dương bình thường 116 phiên, chưa từng đảo trong cửa sổ dữ liệu; không có tín hiệu suy thoái cận kề\n\n**Tổng đánh giá cross-asset:** Risk-on thận trọng — VIX thấp, credit spreads thu hẹp, đường cong bình thường và Sahm an toàn cho thấy thị trường không định giá suy thoái. Tuy nhiên yields nhích lên + breakeven tăng + import prices nóng phản ánh lo ngại lạm phát chưa tan; tất cả chờ FOMC ngày mai làm chất xúc tác chính.\n\n## Bối cảnh xu hướng (so với 30 ngày qua)\n\n### 1. Cung đường regime trong 30 ngày — bốn nhịp chuyển rõ rệt\nTháng qua thị trường đi qua bốn chế độ liên tiếp, không phải một xu hướng đơn điệu:\n\n- **22-25/5 — stagflation-lite / risk-on hẹp:** CPI YoY 3.8%, PPI nóng, Michigan sụp về 53.3, đường cong dẹt. Dòng tiền chỉ trú vào tech/duration (XLK +15-20% 1M), mọi thứ khác underperform.\n- **29/5-3/6 — goldilocks → rotation broadening:** Cụm ISM Mfg 54.0 + ISM Services 54.5 + Factory Orders beat xác nhận growth lan ra cyclicals; ISM Prices Paid 82.1 miss làm dịu nỗi sợ lạm phát. Breadth bắt đầu mở ra cyclical + defensive twin bid.\n- **4-8/6 — MAJOR INFLECTION (tech leadership CRACK):** Tech 1M de-rate khổng lồ từ +16.6% xuống +8.5% trong 4 phiên (AVGO disappoint + NFP +172k strong → price out cuts → yields jump +9-12bp). VIX spike +39.7% lên 21.5. XLV/XLE lên dẫn dắt, rate-sensitive (XLRE/XLU) bị punish. Đây là **regime shift bền nhất tháng**, không phải nhiễu.\n- **10-13/6 — disinflation relief rally:** Core CPI 0.2% MoM miss + Core PPI 4.9% YoY miss + Michigan inflation expectations rơi sâu → yields lao về 4.45%, VIX hạ về 19.4. Tech/Industrials bùng nổ (XLK +3.73%, XLI +3.24% ngày 11/6), XLE bị bỏ lại.\n\n**Hôm nay (16/6) là nhịp thứ năm — re-test giả thuyết disinflation và THẤT BẠI một phần.** Import Prices shock-above + GDPNow cut đảo ngược phần nào sự lạc quan của tuần 10-13/6. Regime quay về **stagflation-lite / hawkish thận trọng** — gần với tông 22/5 hơn là tông relief rally 11/6. Điểm khác biệt quan trọng: lần này cross-asset (VIX 16.2, HY OAS 266bp) vẫn bình thản, nên đây là cảnh báo trên dữ liệu hơn là stress thị trường thực — bản lề là FOMC ngày mai.\n\n### 2. Xu hướng các trục macro nền (hard data, không phải soft data)\n- **Lạm phát — chưa quay đầu bền.** Bức tranh hai tốc độ rõ rệt: Core Goods deflation (3mo ann +0.11%) kéo xuống, nhưng Energy (104%), Shelter (4.87%), Core Services (4.16%) giữ nền sticky. Headline CPI 3mo annualized 8.2% và PCE 3mo ann 6.0% cho thấy momentum gần đây thực chất ĐANG NÓNG LÊN, mâu thuẫn với narrative relief rally tuần trước. Import Prices YoY nhảy 4.2% → 6.7% là pipeline mới đáng lo.\n- **Tăng trưởng — hạ nhiệt nhưng chưa gãy.** GDPNow Q2 trượt dốc 3.8% (1/6) → 3.3% → 2.8% (16/6). Housing đầu chu kỳ yếu (Starts -15.4%), nhưng Durable Goods +8% MoM, Retail Sales YoY +4.9%, Industrial Production +0.1% MoM cho thấy phần hard-economy cốt lõi vẫn dương. Đầu tàu GDP là Private Investment (+1.19pp), drag lớn nhất là Net Exports (-1.25pp).\n- **Lao động — nguội dần, chưa cracking.** Initial Claims trend lên 212k → 225k → 229k; NFP MoM chỉ +0.11%; ADP weekly hạ về +25.5k. Nhưng UNRATE đứng 4.3% ba tháng liền và Sahm +0.10 còn xa ngưỡng 0.50. JOLTS vọt lên 7.62M (T4) vẫn báo cầu lao động chưa đổ.\n- **Đường cong & vị thế chu kỳ — không cảnh báo suy thoái.** 2s10s dương bình thường +0.40 suốt 116 phiên, 10Y-3M +0.70. Đây là bối cảnh CHO PHÉP ưu tiên cyclicals hơn defensives theo khung chu kỳ (Sahm chưa kích hoạt + curve normal → chưa đến lúc phòng thủ hẳn).\n\n### 3. Hàm ý ngành (sector-level, từ rotation engine + macro trend)\n\nEngine rotation tất định hôm nay (`sector_rotation_latest.json`) xếp hạng dẫn dắt **XLY → XLI → XLK**, fading **XLV**, early **XLRE**. Đối chiếu với macro trend 30 ngày:\n\n| Sector | Stance | Macro driver (định lượng) |\n|---|---|---|\n| **Industrials (XLI)** | **Overweight** | Phù hợp nhất với bối cảnh: curve normal + Sahm an toàn ưu ái cyclicals; Durable Goods +8% MoM, ISM Mfg 54.0, Copper +4.2% 1M. Engine: rotation rank #2, LEADING, RS slope +1.5, breadth +33pp. Là leader bền nhất qua cả ba regime gần đây. |\n| **Consumer Discretionary (XLY)** | **Neutral → Light OW** | Engine xếp #1 (RISK +1.275, breadth +50pp) nhờ risk-on + WTI ổn định. NHƯNG cảnh báo: import prices nóng siết biên retail, Michigan sentiment 49.8 vẫn dưới 50. OW có điều kiện, không full. |\n| **Technology (XLK)** | **Neutral** | Hai mặt: disinflation Core Goods + yields ổn là tailwind DCF, nhưng momentum 1M đã de-rate mạnh sau AVGO + breadth thrust -16.7 (yếu nhất nhóm leading). Import prices nóng → nếu yields bật lại sau FOMC, tech chịu áp lực định giá đầu tiên. Không re-up OW trước FOMC. |\n| **Materials (XLB)** | **Neutral** | Copper +4.2% 1M + USD yếu hỗ trợ, nhưng Housing Starts sụp -15.4% là headwind trực tiếp cho vật liệu xây dựng; import prices nóng có thể là cả cost-push lẫn pricing power. Tín hiệu hỗn hợp. |\n| **Financials (XLF)** | **Neutral (cautious)** | Curve chỉ +0.40 vẫn flat → NIM chưa cải thiện mạnh. Inflation cooling surprise là negative nhẹ cho XLF (engine I-driver -0.674). Nếu FOMC hawkish giữ 2Y cao + labor không cracking → tactical hỗ trợ. RS slope +1.4 đang cải thiện. |\n| **Real Estate (XLRE)** | **Watch (early)** | Engine đánh dấu EARLY (vĩ mô hậu thuẫn nhưng giá chưa căng). 10Y 4.48% vẫn là trần; chỉ upgrade nếu FOMC mở cửa dovish kéo 10Y về <4.30%. Housing Starts yếu là cảnh báo demand đầu chu kỳ. |\n| **Energy (XLE)** | **Neutral/UW** | Engine xếp BÉT (rank #11, macro_tilt z -2.29) do WTI -28.7% 1M kéo momentum. NHƯNG import prices/CPI Energy nóng (104% 3mo ann) là counter-thesis cấp macro — nếu giá năng lượng tiếp tục đẩy lạm phát nhập khẩu, XLE có hedge value. Không bottom-fish nhưng giữ làm hedge lạm phát. |\n| **Healthcare (XLV)** | **Neutral (downgrade từ OW)** | Engine: FADING — RS slope -2.4, thrust -8pp. Defensive bid của regime 4-8/6 đang rút khi risk-on quay lại (VIX 16.2). Giảm khỏi OW đã giữ từ 4/6. |\n| **Staples (XLP)** | **Neutral/UW** | Risk-on penalize defensives (RISK -0.85). Import prices nóng siết input cost. Không catalyst tích cực. |\n| **Utilities (XLU)** | **Underweight** | Lagging defensive, macro_tilt z -0.76 (gần bét). Yields chưa giảm đủ để là duration play, risk-on rút bid phòng thủ. |\n| **Communication Services (XLC)** | **Underweight** | Dưới MA200 (sector duy nhất), RS 1M -5.29% tệ nhất, breadth thrust 0. Mega-cap mean-reversion sau AVGO chưa kết thúc. |\n\n**Top 3 conviction calls (sector-level, KHÔNG mã cụ thể):**\n1. **Industrials (XLI) Overweight** — leader bền nhất qua cả ba regime, được khung chu kỳ (curve normal + Sahm an toàn) hậu thuẫn, hard data capex (Durable Goods +8%) xác nhận. Conviction cao nhất.\n2. **Defensive rotation đảo chiều: hạ XLV/XLP/XLU** — VIX về 16.2 + credit spreads thu hẹp rút bid phòng thủ; XLV chuyển từ leader (4-8/6) sang FADING. Đây là thay đổi quan trọng nhất so với 2 tuần trước.\n3. **XLK Neutral, KHÔNG chase** — disinflation Core Goods là tailwind nhưng import prices nóng + momentum de-rate + FOMC binary là ba rủi ro. Chờ FOMC định hình yields trước khi re-rate.\n\n**Rủi ro chính cho khung sector:** FOMC ngày mai là binary. Nếu Fed hawkish (nhấn import-price inflation) → yields bật → đảo ngược lợi thế cyclical/duration, ưu ái Financials/Energy hơn Tech/REITs. Nếu Fed dovish bất ngờ (ưu tiên growth slowdown) → tech/REITs/discretionary hưởng lợi, nhưng mâu thuẫn với hard-data lạm phát còn nóng. Bộ đôi PPI (22/6) + PCE (23/6) cuối tuần sẽ xác nhận hay bác bỏ; nếu PCE > 3% → đẩy lùi kỳ vọng cắt, củng cố tông hawkish hôm nay.\n\n## Cảnh báo & catalyst sắp tới\n\n**Ngày mai (2026-06-17):**\n- FOMC Meeting (Fed rate decision) — sự kiện trọng tâm tuần\n- Durable Goods Orders (ước tính)\n\n**Tuần này (đến 2026-06-23):**\n- 2026-06-17: FOMC Meeting (Fed rate decision); Durable Goods Orders\n- 2026-06-19: Consumer Confidence (Conference Board)\n- 2026-06-22: Producer Price Index (PPI)\n- 2026-06-23: Personal Income & Outlays (PCE)\n\n**Theo dõi đặc biệt:** FOMC ngày mai là tâm điểm tuyệt đối. Dữ liệu hôm nay đặt Fed vào thế khó: growth hạ nhiệt (GDPNow 2.8%, Housing sụp) gọi cho dovish, nhưng import prices shock-above + hard-data lạm phát còn nóng (Core PCE 3.29%) chặn cửa cắt nhanh. Thị trường sẽ săm soi từ ngữ về lạm phát nhập khẩu và dot-plot — bất kỳ tín hiệu lo ngại lạm phát nào sẽ đẩy yields lên và gây áp lực growth/tech. Cuối tuần, bộ đôi PPI (22/6) và PCE (23/6) sẽ xác nhận hay bác bỏ luận điểm lạm phát còn nóng — nếu PCE tiếp tục trên 3%, kỳ vọng cắt lãi suất sẽ bị đẩy lùi."
   },
   "latest_monthly": {
     "file": "scorecard.md",

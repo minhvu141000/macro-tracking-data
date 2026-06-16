@@ -185,6 +185,40 @@
           ],
           "primary_link": "https://www.bls.gov/news.release/realer.htm",
           "deep_dive_link": "https://www.bls.gov/news.release/realer.htm"
+        },
+        {
+          "id": "IR",
+          "short_name": "Import Price Index",
+          "full_name": "Import Price Index (Chỉ số giá nhập khẩu)",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/IR",
+          "description": "Đo thay đổi giá hàng hoá/dịch vụ Mỹ nhập khẩu từ nước ngoài (BLS). Loại trừ thuế nhập khẩu — phản ánh giá gốc tại cửa khẩu. Là kênh truyền dẫn lạm phát nhập khẩu (imported inflation) vào CPI/PPI.",
+          "expectation_meaning": "MoM dương = chi phí hàng nhập tăng → áp lực lạm phát đầu vào. Chịu chi phối lớn bởi giá dầu/năng lượng và biến động USD: USD mạnh thường kéo import prices xuống (hàng nhập rẻ hơn tính theo USD).",
+          "good_vs_bad": "Cao hơn dự báo = hawkish, imported inflation truyền vào PPI/CPI 1-2 tháng sau → xấu cho equities (đặc biệt growth/tech). Thấp/âm = disinflation đầu vào, dovish-friendly. Ex-petroleum là thước đo lõi sạch hơn.",
+          "market_reaction": "Niche so với CPI nhưng pros theo dõi như leading indicator cho lạm phát hàng hoá. Tăng do dầu → áp lực XLE-positive nhưng squeeze margin nhóm tiêu dùng (XLY, XLP) và công nghiệp (XLI) phụ thuộc input nhập khẩu. USD mạnh + import prices giảm = tailwind cho importers/retailers.",
+          "release_aliases": [
+            "import price index",
+            "import prices",
+            "import price index (mom)",
+            "import price index (yoy)"
+          ]
+        },
+        {
+          "id": "IQ",
+          "short_name": "Export Price Index",
+          "full_name": "Export Price Index (Chỉ số giá xuất khẩu)",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/IQ",
+          "description": "Đo thay đổi giá hàng hoá/dịch vụ Mỹ bán ra nước ngoài (BLS). Phản ánh sức cạnh tranh và power định giá của nhà xuất khẩu Mỹ, đồng thời là tín hiệu lạm phát sản xuất nội địa truyền ra thị trường ngoài.",
+          "expectation_meaning": "MoM dương = nhà xuất khẩu Mỹ có pricing power tăng (cầu ngoài mạnh hoặc chi phí sản xuất lên). Nông sản và năng lượng chi phối mạnh phần biến động. USD yếu thường nâng đỡ giá xuất khẩu tính theo USD.",
+          "good_vs_bad": "Cao = pricing power tốt + lạm phát sản xuất, hỗ trợ doanh thu xuất khẩu nhưng cũng là tín hiệu lạm phát rộng hơn (hawkish nhẹ). Thấp/âm = cầu ngoài yếu hoặc USD mạnh bào mòn sức cạnh tranh → cảnh báo cho nhóm xuất khẩu.",
+          "market_reaction": "Đọc cùng Import Price Index để gauge terms-of-trade (xuất/nhập). Export prices mạnh nhờ nông sản → tốt cho agribusiness/materials (XLB). USD mạnh kéo export prices xuống = headwind cho công nghiệp xuất khẩu (XLI) và đa quốc gia. Minor mover nhưng bổ sung bức tranh lạm phát + thương mại.",
+          "release_aliases": [
+            "export price index",
+            "export prices",
+            "export price index (mom)",
+            "export price index (yoy)"
+          ]
         }
       ]
     },
@@ -1805,6 +1839,24 @@
           "primary_link": "https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yield",
           "news_release_link": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
           "deep_dive_link": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+        },
+        {
+          "id": "20Y_BOND_AUCTION",
+          "short_name": "20-Year Bond Auction",
+          "full_name": "20-Year Treasury Bond Auction (Đấu thầu trái phiếu Kho bạc kỳ hạn 20 năm)",
+          "frequency": "Hàng tháng (định kỳ theo lịch Treasury)",
+          "link": "https://www.treasurydirect.gov/auctions/auction-query/",
+          "description": "Phiên đấu thầu trái phiếu Kho bạc Mỹ kỳ hạn 20 năm. Đo mức lãi suất trúng thầu (high yield) và lực cầu thực tế đối với nợ dài hạn Mỹ. Chỉ báo khẩu vị nhà đầu tư với duration dài và sức khoẻ cầu trái phiếu chính phủ.",
+          "expectation_meaning": "Theo dõi 3 thước đo: (1) Bid-to-Cover ratio (cầu/cung — cao = cầu mạnh); (2) High yield so với 'when-issued' (trúng thầu thấp hơn WI = 'stop-through' tốt, cao hơn = 'tail' yếu); (3) Indirect bidders (% nước ngoài/foreign demand). Kỳ hạn 20Y vốn kém thanh khoản, dễ tail.",
+          "good_vs_bad": "Đấu thầu mạnh (BtC cao, stop-through, indirect tốt) = cầu nợ Mỹ vững → yields hạ, dovish-friendly, tốt cho risk assets. Đấu thầu yếu (tail, BtC thấp) = cảnh báo cầu trái phiếu suy yếu/lo ngại nợ công → yields dài tăng vọt, áp lực lên equities (đặc biệt nhóm long-duration: tech, REITs).",
+          "market_reaction": "Là 'real-time' stress test cầu trái phiếu dài hạn. Tail xấu đẩy 10Y/20Y/30Y yields lên ngay → risk-off cho equities, áp lực XLK/XLRE/utilities nhạy lãi suất; tốt cho USD ngắn hạn. Auction mạnh hạ yields = relief rally. Pros theo sát khi lo ngại thâm hụt ngân sách/term premium gia tăng.",
+          "release_aliases": [
+            "20-year bond auction",
+            "20-year bond auction high yield",
+            "20-year bond auction bid-to-cover",
+            "20-year treasury bond auction",
+            "us 20-year bond auction"
+          ]
         }
       ]
     },

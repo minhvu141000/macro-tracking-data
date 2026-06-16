@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-16T06:16:34.075614+00:00",
-  "as_of": "2026-06-12",
+  "generated_at": "2026-06-16T16:26:26.839565+00:00",
+  "as_of": "2026-06-16",
   "method": "deterministic sensitivity matrix (sector×factor); see scripts/build_sector_rotation.py",
-  "regime_summary": "Tăng trưởng vượt kỳ vọng, lạm phát nguội hơn kỳ vọng, lãi suất đi ngang, risk-on. Chu kỳ: đường cong normal.",
+  "regime_summary": "Tăng trưởng đúng kỳ vọng, lạm phát nguội hơn kỳ vọng, lãi suất đi ngang, risk-on. Chu kỳ: đường cong normal.",
   "macro_factors": {
     "G": {
-      "value": 0.748,
-      "raw": 3.74,
+      "value": 0.148,
+      "raw": 0.74,
       "source": "surprise_index.growth_1m",
       "label": "Tăng trưởng (surprise)"
     },
@@ -18,8 +18,8 @@
       "label": "Lạm phát (surprise, +=nóng)"
     },
     "R": {
-      "value": 0.032,
-      "raw": 0.008,
+      "value": -0.124,
+      "raw": -0.031,
       "source": "cross_asset.^TNX Δyield(pp,1m)",
       "label": "Lãi suất 10Y (+=tăng)"
     },
@@ -32,48 +32,50 @@
       "label": "Nhu cầu phòng thủ (late-cycle/recession)"
     },
     "USD": {
-      "value": 0.39,
-      "raw": 0.78,
+      "value": 0.305,
+      "raw": 0.61,
       "source": "cross_asset.DXY ret_1m",
       "label": "USD (+=mạnh)"
     },
     "OIL": {
       "value": -1.5,
-      "raw": -19.59,
+      "raw": -28.69,
       "source": "cross_asset.WTI ret_1m",
       "label": "Dầu WTI (+=tăng)"
     },
     "CU": {
-      "value": -0.121,
-      "raw": -0.97,
+      "value": 0.521,
+      "raw": 4.17,
       "source": "cross_asset.Copper ret_1m",
       "label": "Đồng (+=tăng)"
     },
     "RISK": {
-      "value": 0.827,
-      "raw": 0.83,
+      "value": 0.85,
+      "raw": 0.85,
       "source": "cross_asset.VIX level+Δ",
-      "vix": 16.04,
+      "vix": 15.9,
       "label": "Khẩu vị rủi ro (+=risk-on)"
     }
   },
   "ranked": [
     "XLY",
+    "XLI",
     "XLK",
     "XLB",
-    "XLI",
     "XLF",
-    "XLC",
     "XLRE",
-    "XLP",
+    "XLC",
     "XLU",
+    "XLP",
     "XLV",
     "XLE"
   ],
-  "leading": [],
-  "early_candidates": [
+  "leading": [
     "XLY",
     "XLI"
+  ],
+  "early_candidates": [
+    "XLRE"
   ],
   "fading": [
     "XLV"
@@ -82,15 +84,15 @@
     "XLK": {
       "name": "Technology",
       "phase": "NEUTRAL",
-      "rotation_score": 0.524,
-      "rotation_rank": 2,
-      "macro_tilt": 3.393,
-      "macro_tilt_z": 1.19,
+      "rotation_score": 0.557,
+      "rotation_rank": 3,
+      "macro_tilt": 3.105,
+      "macro_tilt_z": 1.21,
       "macro_tilt_rank": 2,
-      "price_momentum_z": -0.29,
-      "rs_1m": 4.57,
-      "rs_slope": 0.83,
-      "breadth_thrust": -41.7,
+      "price_momentum_z": -0.24,
+      "rs_1m": 4.44,
+      "rs_slope": -0.5,
+      "breadth_thrust": -16.7,
       "above_ma200": true,
       "top_drivers": [
         {
@@ -101,12 +103,12 @@
         {
           "factor": "RISK",
           "label": "Khẩu vị rủi ro (+=risk-on)",
-          "contribution": 1.24
+          "contribution": 1.275
         },
         {
-          "factor": "G",
-          "label": "Tăng trưởng (surprise)",
-          "contribution": 0.748
+          "factor": "DEF",
+          "label": "Nhu cầu phòng thủ (late-cycle/recession)",
+          "contribution": 0.3
         }
       ],
       "rationale": "Tín hiệu hỗn hợp. Driver: Lạm phát (surprise, +=nóng) (+1.348)."
@@ -114,22 +116,17 @@
     "XLF": {
       "name": "Financials",
       "phase": "NEUTRAL",
-      "rotation_score": 0.265,
+      "rotation_score": 0.212,
       "rotation_rank": 5,
-      "macro_tilt": 1.102,
-      "macro_tilt_z": 0.26,
-      "macro_tilt_rank": 5,
-      "price_momentum_z": 0.27,
-      "rs_1m": 4.69,
-      "rs_slope": 0.29,
-      "breadth_thrust": 16.6,
+      "macro_tilt": 0.254,
+      "macro_tilt_z": -0.08,
+      "macro_tilt_rank": 7,
+      "price_momentum_z": 0.57,
+      "rs_1m": 5.25,
+      "rs_slope": 1.38,
+      "breadth_thrust": 25.0,
       "above_ma200": true,
       "top_drivers": [
-        {
-          "factor": "G",
-          "label": "Tăng trưởng (surprise)",
-          "contribution": 0.748
-        },
         {
           "factor": "I",
           "label": "Lạm phát (surprise, +=nóng)",
@@ -139,22 +136,27 @@
           "factor": "DEF",
           "label": "Nhu cầu phòng thủ (late-cycle/recession)",
           "contribution": 0.45
+        },
+        {
+          "factor": "RISK",
+          "label": "Khẩu vị rủi ro (+=risk-on)",
+          "contribution": 0.425
         }
       ],
-      "rationale": "Tín hiệu hỗn hợp. Driver: Tăng trưởng (surprise) (+0.748)."
+      "rationale": "Tín hiệu hỗn hợp. Driver: Lạm phát (surprise, +=nóng) (-0.674)."
     },
     "XLE": {
       "name": "Energy",
       "phase": "NEUTRAL",
-      "rotation_score": -1.528,
+      "rotation_score": -2.259,
       "rotation_rank": 11,
-      "macro_tilt": -4.531,
-      "macro_tilt_z": -2.01,
+      "macro_tilt": -4.636,
+      "macro_tilt_z": -2.29,
       "macro_tilt_rank": 11,
-      "price_momentum_z": -0.94,
-      "rs_1m": -0.06,
-      "rs_slope": -0.76,
-      "breadth_thrust": -8.3,
+      "price_momentum_z": -2.22,
+      "rs_1m": -5.55,
+      "rs_slope": -5.77,
+      "breadth_thrust": -50.0,
       "above_ma200": true,
       "top_drivers": [
         {
@@ -168,9 +170,9 @@
           "contribution": -2.022
         },
         {
-          "factor": "G",
-          "label": "Tăng trưởng (surprise)",
-          "contribution": 0.374
+          "factor": "RISK",
+          "label": "Khẩu vị rủi ro (+=risk-on)",
+          "contribution": 0.255
         }
       ],
       "rationale": "Tín hiệu hỗn hợp. Driver: Dầu WTI (+=tăng) (-3.0)."
@@ -178,15 +180,15 @@
     "XLV": {
       "name": "Healthcare",
       "phase": "FADING",
-      "rotation_score": -0.647,
+      "rotation_score": -0.595,
       "rotation_rank": 10,
-      "macro_tilt": -1.097,
-      "macro_tilt_z": -0.62,
+      "macro_tilt": -0.882,
+      "macro_tilt_z": -0.59,
       "macro_tilt_rank": 8,
-      "price_momentum_z": -0.68,
-      "rs_1m": 4.92,
-      "rs_slope": -1.22,
-      "breadth_thrust": 0.0,
+      "price_momentum_z": -0.6,
+      "rs_1m": 3.75,
+      "rs_slope": -2.42,
+      "breadth_thrust": -8.3,
       "above_ma200": true,
       "top_drivers": [
         {
@@ -197,231 +199,39 @@
         {
           "factor": "RISK",
           "label": "Khẩu vị rủi ro (+=risk-on)",
-          "contribution": -0.413
+          "contribution": -0.425
         },
         {
           "factor": "G",
           "label": "Tăng trưởng (surprise)",
-          "contribution": -0.224
+          "contribution": -0.044
         }
       ],
-      "rationale": "Giá còn cao nhưng vĩ mô quay đầu và dòng tiền yếu đi (slope -1.2, thrust +0pp) — rotation rời đi. Driver: Nhu cầu phòng thủ (late-cycle/recession) (-0.45)."
+      "rationale": "Giá còn cao nhưng vĩ mô quay đầu và dòng tiền yếu đi (slope -2.4, thrust -8pp) — rotation rời đi. Driver: Nhu cầu phòng thủ (late-cycle/recession) (-0.45)."
     },
     "XLY": {
       "name": "Consumer Discretionary",
-      "phase": "EARLY",
-      "rotation_score": 1.138,
+      "phase": "LEADING",
+      "rotation_score": 0.949,
       "rotation_rank": 1,
-      "macro_tilt": 4.204,
-      "macro_tilt_z": 1.52,
+      "macro_tilt": 3.495,
+      "macro_tilt_z": 1.39,
       "macro_tilt_rank": 1,
-      "price_momentum_z": 0.67,
-      "rs_1m": -1.71,
-      "rs_slope": 1.35,
-      "breadth_thrust": 41.7,
-      "above_ma200": false,
+      "price_momentum_z": 0.41,
+      "rs_1m": -0.61,
+      "rs_slope": 1.14,
+      "breadth_thrust": 50.0,
+      "above_ma200": true,
       "top_drivers": [
         {
           "factor": "RISK",
           "label": "Khẩu vị rủi ro (+=risk-on)",
-          "contribution": 1.24
-        },
-        {
-          "factor": "G",
-          "label": "Tăng trưởng (surprise)",
-          "contribution": 1.122
+          "contribution": 1.275
         },
         {
           "factor": "OIL",
           "label": "Dầu WTI (+=tăng)",
           "contribution": 0.75
-        }
-      ],
-      "rationale": "Vĩ mô hậu thuẫn nhưng giá CHƯA căng (RS -1.7%, breadth thrust +42pp) — rotation có thể đang tới. Driver: Khẩu vị rủi ro (+=risk-on) (+1.24)."
-    },
-    "XLP": {
-      "name": "Consumer Staples",
-      "phase": "NEUTRAL",
-      "rotation_score": -0.132,
-      "rotation_rank": 8,
-      "macro_tilt": -1.575,
-      "macro_tilt_z": -0.82,
-      "macro_tilt_rank": 9,
-      "price_momentum_z": 0.71,
-      "rs_1m": 1.37,
-      "rs_slope": 1.94,
-      "breadth_thrust": 8.3,
-      "above_ma200": true,
-      "top_drivers": [
-        {
-          "factor": "RISK",
-          "label": "Khẩu vị rủi ro (+=risk-on)",
-          "contribution": -0.827
-        },
-        {
-          "factor": "G",
-          "label": "Tăng trưởng (surprise)",
-          "contribution": -0.748
-        },
-        {
-          "factor": "DEF",
-          "label": "Nhu cầu phòng thủ (late-cycle/recession)",
-          "contribution": -0.45
-        }
-      ],
-      "rationale": "Tín hiệu hỗn hợp. Driver: Khẩu vị rủi ro (+=risk-on) (-0.827)."
-    },
-    "XLI": {
-      "name": "Industrials",
-      "phase": "EARLY",
-      "rotation_score": 0.309,
-      "rotation_rank": 4,
-      "macro_tilt": 2.083,
-      "macro_tilt_z": 0.66,
-      "macro_tilt_rank": 4,
-      "price_momentum_z": -0.12,
-      "rs_1m": 1.55,
-      "rs_slope": 0.21,
-      "breadth_thrust": 8.3,
-      "above_ma200": true,
-      "top_drivers": [
-        {
-          "factor": "G",
-          "label": "Tăng trưởng (surprise)",
-          "contribution": 1.122
-        },
-        {
-          "factor": "RISK",
-          "label": "Khẩu vị rủi ro (+=risk-on)",
-          "contribution": 0.827
-        },
-        {
-          "factor": "DEF",
-          "label": "Nhu cầu phòng thủ (late-cycle/recession)",
-          "contribution": 0.45
-        }
-      ],
-      "rationale": "Vĩ mô hậu thuẫn nhưng giá CHƯA căng (RS +1.6%, breadth thrust +8pp) — rotation có thể đang tới. Driver: Tăng trưởng (surprise) (+1.122)."
-    },
-    "XLB": {
-      "name": "Materials",
-      "phase": "NEUTRAL",
-      "rotation_score": 0.484,
-      "rotation_rank": 3,
-      "macro_tilt": 0.18,
-      "macro_tilt_z": -0.11,
-      "macro_tilt_rank": 7,
-      "price_momentum_z": 1.21,
-      "rs_1m": 0.31,
-      "rs_slope": 2.41,
-      "breadth_thrust": 33.4,
-      "above_ma200": true,
-      "top_drivers": [
-        {
-          "factor": "RISK",
-          "label": "Khẩu vị rủi ro (+=risk-on)",
-          "contribution": 0.827
-        },
-        {
-          "factor": "G",
-          "label": "Tăng trưởng (surprise)",
-          "contribution": 0.748
-        },
-        {
-          "factor": "I",
-          "label": "Lạm phát (surprise, +=nóng)",
-          "contribution": -0.674
-        }
-      ],
-      "rationale": "Tín hiệu hỗn hợp. Driver: Khẩu vị rủi ro (+=risk-on) (+0.827)."
-    },
-    "XLU": {
-      "name": "Utilities",
-      "phase": "NEUTRAL",
-      "rotation_score": -0.638,
-      "rotation_rank": 9,
-      "macro_tilt": -2.073,
-      "macro_tilt_z": -1.02,
-      "macro_tilt_rank": 10,
-      "price_momentum_z": -0.17,
-      "rs_1m": -0.24,
-      "rs_slope": -0.1,
-      "breadth_thrust": 25.0,
-      "above_ma200": true,
-      "top_drivers": [
-        {
-          "factor": "RISK",
-          "label": "Khẩu vị rủi ro (+=risk-on)",
-          "contribution": -0.827
-        },
-        {
-          "factor": "G",
-          "label": "Tăng trưởng (surprise)",
-          "contribution": -0.748
-        },
-        {
-          "factor": "DEF",
-          "label": "Nhu cầu phòng thủ (late-cycle/recession)",
-          "contribution": -0.45
-        }
-      ],
-      "rationale": "Tín hiệu hỗn hợp. Driver: Khẩu vị rủi ro (+=risk-on) (-0.827)."
-    },
-    "XLRE": {
-      "name": "Real Estate",
-      "phase": "NEUTRAL",
-      "rotation_score": 0.03,
-      "rotation_rank": 7,
-      "macro_tilt": 0.843,
-      "macro_tilt_z": 0.16,
-      "macro_tilt_rank": 6,
-      "price_momentum_z": -0.13,
-      "rs_1m": 2.68,
-      "rs_slope": 0.26,
-      "breadth_thrust": 0.0,
-      "above_ma200": true,
-      "top_drivers": [
-        {
-          "factor": "RISK",
-          "label": "Khẩu vị rủi ro (+=risk-on)",
-          "contribution": 0.413
-        },
-        {
-          "factor": "I",
-          "label": "Lạm phát (surprise, +=nóng)",
-          "contribution": 0.404
-        },
-        {
-          "factor": "DEF",
-          "label": "Nhu cầu phòng thủ (late-cycle/recession)",
-          "contribution": 0.09
-        }
-      ],
-      "rationale": "Tín hiệu hỗn hợp. Driver: Khẩu vị rủi ro (+=risk-on) (+0.413)."
-    },
-    "XLC": {
-      "name": "Communication Services",
-      "phase": "NEUTRAL",
-      "rotation_score": 0.186,
-      "rotation_rank": 6,
-      "macro_tilt": 2.383,
-      "macro_tilt_z": 0.78,
-      "macro_tilt_rank": 3,
-      "price_momentum_z": -0.54,
-      "rs_1m": -4.3,
-      "rs_slope": 0.44,
-      "breadth_thrust": 0.0,
-      "above_ma200": false,
-      "top_drivers": [
-        {
-          "factor": "RISK",
-          "label": "Khẩu vị rủi ro (+=risk-on)",
-          "contribution": 0.827
-        },
-        {
-          "factor": "G",
-          "label": "Tăng trưởng (surprise)",
-          "contribution": 0.748
         },
         {
           "factor": "I",
@@ -429,7 +239,199 @@
           "contribution": 0.674
         }
       ],
-      "rationale": "Tín hiệu hỗn hợp. Driver: Khẩu vị rủi ro (+=risk-on) (+0.827)."
+      "rationale": "Vĩ mô hậu thuẫn + dòng tiền đã vào (RS -0.6%, slope +1.1), trên MA200 — dẫn dắt. Driver: Khẩu vị rủi ro (+=risk-on) (+1.275)."
+    },
+    "XLP": {
+      "name": "Consumer Staples",
+      "phase": "NEUTRAL",
+      "rotation_score": -0.258,
+      "rotation_rank": 9,
+      "macro_tilt": -0.998,
+      "macro_tilt_z": -0.64,
+      "macro_tilt_rank": 9,
+      "price_momentum_z": 0.21,
+      "rs_1m": 0.36,
+      "rs_slope": 1.35,
+      "breadth_thrust": 16.7,
+      "above_ma200": true,
+      "top_drivers": [
+        {
+          "factor": "RISK",
+          "label": "Khẩu vị rủi ro (+=risk-on)",
+          "contribution": -0.85
+        },
+        {
+          "factor": "DEF",
+          "label": "Nhu cầu phòng thủ (late-cycle/recession)",
+          "contribution": -0.45
+        },
+        {
+          "factor": "OIL",
+          "label": "Dầu WTI (+=tăng)",
+          "contribution": 0.45
+        }
+      ],
+      "rationale": "Tín hiệu hỗn hợp. Driver: Khẩu vị rủi ro (+=risk-on) (-0.85)."
+    },
+    "XLI": {
+      "name": "Industrials",
+      "phase": "LEADING",
+      "rotation_score": 0.606,
+      "rotation_rank": 2,
+      "macro_tilt": 1.891,
+      "macro_tilt_z": 0.66,
+      "macro_tilt_rank": 3,
+      "price_momentum_z": 0.54,
+      "rs_1m": 2.95,
+      "rs_slope": 1.53,
+      "breadth_thrust": 33.3,
+      "above_ma200": true,
+      "top_drivers": [
+        {
+          "factor": "RISK",
+          "label": "Khẩu vị rủi ro (+=risk-on)",
+          "contribution": 0.85
+        },
+        {
+          "factor": "CU",
+          "label": "Đồng (+=tăng)",
+          "contribution": 0.521
+        },
+        {
+          "factor": "DEF",
+          "label": "Nhu cầu phòng thủ (late-cycle/recession)",
+          "contribution": 0.45
+        }
+      ],
+      "rationale": "Vĩ mô hậu thuẫn + dòng tiền đã vào (RS +3.0%, slope +1.5), trên MA200 — dẫn dắt. Driver: Khẩu vị rủi ro (+=risk-on) (+0.85)."
+    },
+    "XLB": {
+      "name": "Materials",
+      "phase": "NEUTRAL",
+      "rotation_score": 0.487,
+      "rotation_rank": 4,
+      "macro_tilt": 0.651,
+      "macro_tilt_z": 0.1,
+      "macro_tilt_rank": 6,
+      "price_momentum_z": 0.96,
+      "rs_1m": 1.7,
+      "rs_slope": 3.53,
+      "breadth_thrust": 41.7,
+      "above_ma200": true,
+      "top_drivers": [
+        {
+          "factor": "RISK",
+          "label": "Khẩu vị rủi ro (+=risk-on)",
+          "contribution": 0.85
+        },
+        {
+          "factor": "CU",
+          "label": "Đồng (+=tăng)",
+          "contribution": 0.782
+        },
+        {
+          "factor": "I",
+          "label": "Lạm phát (surprise, +=nóng)",
+          "contribution": -0.674
+        }
+      ],
+      "rationale": "Tín hiệu hỗn hợp. Driver: Khẩu vị rủi ro (+=risk-on) (+0.85)."
+    },
+    "XLU": {
+      "name": "Utilities",
+      "phase": "NEUTRAL",
+      "rotation_score": 0.009,
+      "rotation_rank": 8,
+      "macro_tilt": -1.262,
+      "macro_tilt_z": -0.76,
+      "macro_tilt_rank": 10,
+      "price_momentum_z": 0.95,
+      "rs_1m": 0.51,
+      "rs_slope": 2.33,
+      "breadth_thrust": 75.0,
+      "above_ma200": true,
+      "top_drivers": [
+        {
+          "factor": "RISK",
+          "label": "Khẩu vị rủi ro (+=risk-on)",
+          "contribution": -0.85
+        },
+        {
+          "factor": "DEF",
+          "label": "Nhu cầu phòng thủ (late-cycle/recession)",
+          "contribution": -0.45
+        },
+        {
+          "factor": "R",
+          "label": "Lãi suất 10Y (+=tăng)",
+          "contribution": 0.186
+        }
+      ],
+      "rationale": "Tín hiệu hỗn hợp. Driver: Khẩu vị rủi ro (+=risk-on) (-0.85)."
+    },
+    "XLRE": {
+      "name": "Real Estate",
+      "phase": "EARLY",
+      "rotation_score": 0.192,
+      "rotation_rank": 6,
+      "macro_tilt": 1.167,
+      "macro_tilt_z": 0.34,
+      "macro_tilt_rank": 5,
+      "price_momentum_z": 0.01,
+      "rs_1m": 2.27,
+      "rs_slope": 0.23,
+      "breadth_thrust": 8.4,
+      "above_ma200": true,
+      "top_drivers": [
+        {
+          "factor": "RISK",
+          "label": "Khẩu vị rủi ro (+=risk-on)",
+          "contribution": 0.425
+        },
+        {
+          "factor": "I",
+          "label": "Lạm phát (surprise, +=nóng)",
+          "contribution": 0.404
+        },
+        {
+          "factor": "R",
+          "label": "Lãi suất 10Y (+=tăng)",
+          "contribution": 0.248
+        }
+      ],
+      "rationale": "Vĩ mô hậu thuẫn nhưng giá CHƯA căng (RS +2.3%, breadth thrust +8pp) — rotation có thể đang tới. Driver: Khẩu vị rủi ro (+=risk-on) (+0.425)."
+    },
+    "XLC": {
+      "name": "Communication Services",
+      "phase": "NEUTRAL",
+      "rotation_score": 0.107,
+      "rotation_rank": 7,
+      "macro_tilt": 1.884,
+      "macro_tilt_z": 0.66,
+      "macro_tilt_rank": 4,
+      "price_momentum_z": -0.57,
+      "rs_1m": -5.29,
+      "rs_slope": -0.09,
+      "breadth_thrust": 0.0,
+      "above_ma200": false,
+      "top_drivers": [
+        {
+          "factor": "RISK",
+          "label": "Khẩu vị rủi ro (+=risk-on)",
+          "contribution": 0.85
+        },
+        {
+          "factor": "I",
+          "label": "Lạm phát (surprise, +=nóng)",
+          "contribution": 0.674
+        },
+        {
+          "factor": "DEF",
+          "label": "Nhu cầu phòng thủ (late-cycle/recession)",
+          "contribution": 0.15
+        }
+      ],
+      "rationale": "Tín hiệu hỗn hợp. Driver: Khẩu vị rủi ro (+=risk-on) (+0.85)."
     }
   },
   "tier": "daily-snapshot",

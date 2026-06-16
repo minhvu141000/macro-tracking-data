@@ -1,18 +1,18 @@
 {
   "schema_version": "1.1",
-  "fetched_at": "2026-06-16T05:22:32.650703+00:00",
+  "fetched_at": "2026-06-16T16:25:02.073869+00:00",
   "benchmark": {
-    "latest": 741.75,
-    "latest_date": "2026-06-12",
-    "ret_1d": 0.54,
-    "ret_1w": 0.57,
-    "ret_1m": -0.08,
-    "ret_3m": 12.3,
-    "ret_6m": 8.49,
-    "ret_1y": 24.76,
-    "ret_ytd": 8.87,
-    "ma50": 722.8,
-    "ma200": 684.07,
+    "latest": 753.51,
+    "latest_date": "2026-06-16",
+    "ret_1d": 1.59,
+    "ret_1w": 1.93,
+    "ret_1m": 0.71,
+    "ret_3m": 12.93,
+    "ret_6m": 9.96,
+    "ret_1y": 26.24,
+    "ret_ytd": 10.6,
+    "ma50": 724.75,
+    "ma200": 684.63,
     "above_ma50": true,
     "above_ma200": true,
     "golden_cross": true,
@@ -21,36 +21,32 @@
   },
   "sectors": {
     "XLK": {
-      "latest": 184.8,
-      "latest_date": "2026-06-12",
-      "ret_1d": 0.87,
-      "ret_1w": 2.5,
-      "ret_1m": 4.5,
-      "ret_3m": 35.26,
-      "ret_6m": 24.6,
-      "ret_1y": 54.66,
-      "ret_ytd": 28.23,
-      "ma50": 168.04,
-      "ma200": 147.94,
+      "latest": 188.8,
+      "latest_date": "2026-06-16",
+      "ret_1d": 2.16,
+      "ret_1w": 2.51,
+      "ret_1m": 5.18,
+      "ret_3m": 36.21,
+      "ret_6m": 27.95,
+      "ret_1y": 56.56,
+      "ret_ytd": 31.0,
+      "ma50": 169.1,
+      "ma200": 148.22,
       "above_ma50": true,
       "above_ma200": true,
       "golden_cross": true,
       "name": "Technology",
       "ticker": "XLK",
       "breadth": {
-        "pct_above_ma50": 33.3,
+        "pct_above_ma50": 50.0,
         "pct_above_ma200": 50.0,
-        "breadth_flag": "narrow",
+        "breadth_flag": "healthy",
         "holdings_checked": 12,
-        "holdings_above_ma50": 4,
+        "holdings_above_ma50": 6,
         "holdings_above_ma200": 6,
-        "breadth_thrust": -41.7
+        "breadth_thrust": -16.7
       },
       "rs_history": [
-        {
-          "date": "2025-06-12",
-          "value": 94.56
-        },
         {
           "date": "2025-06-13",
           "value": 94.29
@@ -1054,27 +1050,31 @@
         {
           "date": "2026-06-12",
           "value": 116.61
+        },
+        {
+          "date": "2026-06-16",
+          "value": 117.28
         }
       ],
-      "rs_1w": 1.92,
-      "rs_1m": 4.57,
-      "rs_3m": 20.44,
-      "rs_6m": 14.84,
-      "rs_1y": 23.97,
-      "rs_ytd": 17.78,
-      "rs_slope": 0.83
+      "rs_1w": 0.56,
+      "rs_1m": 4.44,
+      "rs_3m": 20.61,
+      "rs_6m": 16.36,
+      "rs_1y": 24.02,
+      "rs_ytd": 18.45,
+      "rs_slope": -0.5
     },
     "XLF": {
-      "latest": 53.34,
-      "latest_date": "2026-06-12",
-      "ret_1d": 1.37,
-      "ret_1w": 1.99,
-      "ret_1m": 4.61,
-      "ret_3m": 9.66,
-      "ret_6m": -0.16,
-      "ret_1y": 6.2,
-      "ret_ytd": -2.4,
-      "ma50": 51.63,
+      "latest": 54.37,
+      "latest_date": "2026-06-16",
+      "ret_1d": 1.93,
+      "ret_1w": 4.62,
+      "ret_1m": 6.0,
+      "ret_3m": 10.85,
+      "ret_6m": -0.05,
+      "ret_1y": 8.25,
+      "ret_ytd": -0.51,
+      "ma50": 51.73,
       "ma200": 52.27,
       "above_ma50": true,
       "above_ma200": true,
@@ -1082,19 +1082,15 @@
       "name": "Financials",
       "ticker": "XLF",
       "breadth": {
-        "pct_above_ma50": 83.3,
-        "pct_above_ma200": 58.3,
+        "pct_above_ma50": 91.7,
+        "pct_above_ma200": 75.0,
         "breadth_flag": "broad",
         "holdings_checked": 12,
-        "holdings_above_ma50": 10,
-        "holdings_above_ma200": 7,
-        "breadth_thrust": 16.6
+        "holdings_above_ma50": 11,
+        "holdings_above_ma200": 9,
+        "breadth_thrust": 25.0
       },
       "rs_history": [
-        {
-          "date": "2025-06-12",
-          "value": 113.01
-        },
         {
           "date": "2025-06-13",
           "value": 111.95
@@ -2098,47 +2094,47 @@
         {
           "date": "2026-06-12",
           "value": 96.58
+        },
+        {
+          "date": "2026-06-16",
+          "value": 96.91
         }
       ],
-      "rs_1w": 1.41,
-      "rs_1m": 4.69,
-      "rs_3m": -2.35,
-      "rs_6m": -7.98,
-      "rs_1y": -14.87,
-      "rs_ytd": -10.35,
-      "rs_slope": 0.29
+      "rs_1w": 2.63,
+      "rs_1m": 5.25,
+      "rs_3m": -1.85,
+      "rs_6m": -9.11,
+      "rs_1y": -14.24,
+      "rs_ytd": -10.04,
+      "rs_slope": 1.38
     },
     "XLE": {
-      "latest": 57.55,
-      "latest_date": "2026-06-12",
-      "ret_1d": 0.75,
-      "ret_1w": -0.21,
-      "ret_1m": -0.14,
-      "ret_3m": 0.39,
-      "ret_6m": 26.5,
-      "ret_1y": 37.67,
-      "ret_ytd": 26.89,
-      "ma50": 57.8,
-      "ma200": 50.31,
+      "latest": 55.24,
+      "latest_date": "2026-06-16",
+      "ret_1d": -4.01,
+      "ret_1w": -5.3,
+      "ret_1m": -4.87,
+      "ret_3m": -3.97,
+      "ret_6m": 22.01,
+      "ret_1y": 31.69,
+      "ret_ytd": 21.8,
+      "ma50": 57.72,
+      "ma200": 50.37,
       "above_ma50": false,
       "above_ma200": true,
       "golden_cross": true,
       "name": "Energy",
       "ticker": "XLE",
       "breadth": {
-        "pct_above_ma50": 41.7,
+        "pct_above_ma50": 8.3,
         "pct_above_ma200": 100.0,
-        "breadth_flag": "healthy",
+        "breadth_flag": "narrow",
         "holdings_checked": 12,
-        "holdings_above_ma50": 5,
+        "holdings_above_ma50": 1,
         "holdings_above_ma200": 12,
-        "breadth_thrust": -8.3
+        "breadth_thrust": -50.0
       },
       "rs_history": [
-        {
-          "date": "2025-06-12",
-          "value": 90.66
-        },
         {
           "date": "2025-06-13",
           "value": 93.28
@@ -3142,47 +3138,47 @@
         {
           "date": "2026-06-12",
           "value": 100.09
+        },
+        {
+          "date": "2026-06-16",
+          "value": 94.58
         }
       ],
-      "rs_1w": -0.77,
-      "rs_1m": -0.06,
-      "rs_3m": -10.61,
-      "rs_6m": 16.6,
-      "rs_1y": 10.35,
-      "rs_ytd": 16.55,
-      "rs_slope": -0.76
+      "rs_1w": -7.09,
+      "rs_1m": -5.55,
+      "rs_3m": -14.97,
+      "rs_6m": 10.96,
+      "rs_1y": 4.32,
+      "rs_ytd": 10.13,
+      "rs_slope": -5.77
     },
     "XLV": {
-      "latest": 153.81,
-      "latest_date": "2026-06-12",
-      "ret_1d": -0.18,
-      "ret_1w": 0.52,
-      "ret_1m": 4.84,
-      "ret_3m": 3.11,
-      "ret_6m": 1.95,
-      "ret_1y": 15.32,
-      "ret_ytd": -0.69,
-      "ma50": 147.58,
-      "ma200": 148.33,
+      "latest": 153.22,
+      "latest_date": "2026-06-16",
+      "ret_1d": -0.38,
+      "ret_1w": 0.37,
+      "ret_1m": 4.49,
+      "ret_3m": 1.88,
+      "ret_6m": 0.6,
+      "ret_1y": 13.99,
+      "ret_ytd": -1.07,
+      "ma50": 147.71,
+      "ma200": 148.42,
       "above_ma50": true,
       "above_ma200": true,
       "golden_cross": false,
       "name": "Healthcare",
       "ticker": "XLV",
       "breadth": {
-        "pct_above_ma50": 58.3,
+        "pct_above_ma50": 50.0,
         "pct_above_ma200": 66.7,
         "breadth_flag": "healthy",
         "holdings_checked": 12,
-        "holdings_above_ma50": 7,
+        "holdings_above_ma50": 6,
         "holdings_above_ma200": 8,
-        "breadth_thrust": 0.0
+        "breadth_thrust": -8.3
       },
       "rs_history": [
-        {
-          "date": "2025-06-12",
-          "value": 85.36
-        },
         {
           "date": "2025-06-13",
           "value": 85.89
@@ -4186,47 +4182,47 @@
         {
           "date": "2026-06-12",
           "value": 78.6
+        },
+        {
+          "date": "2026-06-16",
+          "value": 77.08
         }
       ],
-      "rs_1w": -0.05,
-      "rs_1m": 4.92,
-      "rs_3m": -8.19,
-      "rs_6m": -6.04,
-      "rs_1y": -7.56,
-      "rs_ytd": -8.78,
-      "rs_slope": -1.22
+      "rs_1w": -1.53,
+      "rs_1m": 3.75,
+      "rs_3m": -9.79,
+      "rs_6m": -8.51,
+      "rs_1y": -9.7,
+      "rs_ytd": -10.55,
+      "rs_slope": -2.42
     },
     "XLY": {
-      "latest": 116.6,
-      "latest_date": "2026-06-12",
-      "ret_1d": 0.26,
-      "ret_1w": 1.51,
-      "ret_1m": -1.79,
-      "ret_3m": 5.39,
-      "ret_6m": -2.21,
-      "ret_1y": 9.46,
-      "ret_ytd": -1.28,
-      "ma50": 117.03,
-      "ma200": 117.34,
-      "above_ma50": false,
-      "above_ma200": false,
+      "latest": 118.79,
+      "latest_date": "2026-06-16",
+      "ret_1d": 1.88,
+      "ret_1w": 2.95,
+      "ret_1m": 0.1,
+      "ret_3m": 6.09,
+      "ret_6m": -0.76,
+      "ret_1y": 12.05,
+      "ret_ytd": 0.57,
+      "ma50": 117.24,
+      "ma200": 117.36,
+      "above_ma50": true,
+      "above_ma200": true,
       "golden_cross": false,
       "name": "Consumer Discretionary",
       "ticker": "XLY",
       "breadth": {
-        "pct_above_ma50": 66.7,
+        "pct_above_ma50": 83.3,
         "pct_above_ma200": 50.0,
         "breadth_flag": "broad",
         "holdings_checked": 12,
-        "holdings_above_ma50": 8,
+        "holdings_above_ma50": 10,
         "holdings_above_ma200": 6,
-        "breadth_thrust": 41.7
+        "breadth_thrust": 50.0
       },
       "rs_history": [
-        {
-          "date": "2025-06-12",
-          "value": 106.32
-        },
         {
           "date": "2025-06-13",
           "value": 106.53
@@ -4573,7 +4569,7 @@
         },
         {
           "date": "2025-10-16",
-          "value": 105.48
+          "value": 105.47
         },
         {
           "date": "2025-10-17",
@@ -4589,7 +4585,7 @@
         },
         {
           "date": "2025-10-22",
-          "value": 106.54
+          "value": 106.53
         },
         {
           "date": "2025-10-23",
@@ -5230,28 +5226,32 @@
         {
           "date": "2026-06-12",
           "value": 94.1
+        },
+        {
+          "date": "2026-06-16",
+          "value": 94.37
         }
       ],
-      "rs_1w": 0.94,
-      "rs_1m": -1.71,
-      "rs_3m": -6.16,
-      "rs_6m": -9.87,
-      "rs_1y": -12.26,
-      "rs_ytd": -9.32,
-      "rs_slope": 1.35
+      "rs_1w": 0.99,
+      "rs_1m": -0.61,
+      "rs_3m": -6.06,
+      "rs_6m": -9.75,
+      "rs_1y": -11.24,
+      "rs_ytd": -9.06,
+      "rs_slope": 1.14
     },
     "XLP": {
-      "latest": 85.82,
-      "latest_date": "2026-06-12",
-      "ret_1d": 0.65,
-      "ret_1w": 2.85,
-      "ret_1m": 1.3,
-      "ret_3m": 1.84,
-      "ret_6m": 11.22,
-      "ret_1y": 8.24,
-      "ret_ytd": 11.09,
-      "ma50": 83.44,
-      "ma200": 80.87,
+      "latest": 85.89,
+      "latest_date": "2026-06-16",
+      "ret_1d": 0.09,
+      "ret_1w": 3.4,
+      "ret_1m": 1.08,
+      "ret_3m": 1.65,
+      "ret_6m": 10.5,
+      "ret_1y": 7.7,
+      "ret_ytd": 11.18,
+      "ma50": 83.52,
+      "ma200": 80.91,
       "above_ma50": true,
       "above_ma200": true,
       "golden_cross": true,
@@ -5259,18 +5259,14 @@
       "ticker": "XLP",
       "breadth": {
         "pct_above_ma50": 75.0,
-        "pct_above_ma200": 83.3,
+        "pct_above_ma200": 91.7,
         "breadth_flag": "broad",
         "holdings_checked": 12,
         "holdings_above_ma50": 9,
-        "holdings_above_ma200": 10,
-        "breadth_thrust": 8.3
+        "holdings_above_ma200": 11,
+        "breadth_thrust": 16.7
       },
       "rs_history": [
-        {
-          "date": "2025-06-12",
-          "value": 96.86
-        },
         {
           "date": "2025-06-13",
           "value": 96.76
@@ -6274,47 +6270,47 @@
         {
           "date": "2026-06-12",
           "value": 83.88
+        },
+        {
+          "date": "2026-06-16",
+          "value": 82.64
         }
       ],
-      "rs_1w": 2.27,
-      "rs_1m": 1.37,
-      "rs_3m": -9.31,
-      "rs_6m": 2.51,
-      "rs_1y": -13.24,
-      "rs_ytd": 2.03,
-      "rs_slope": 1.94
+      "rs_1w": 1.44,
+      "rs_1m": 0.36,
+      "rs_3m": -10.0,
+      "rs_6m": 0.49,
+      "rs_1y": -14.68,
+      "rs_ytd": 0.53,
+      "rs_slope": 1.35
     },
     "XLI": {
-      "latest": 176.18,
-      "latest_date": "2026-06-12",
-      "ret_1d": 0.59,
-      "ret_1w": 1.15,
-      "ret_1m": 1.47,
-      "ret_3m": 7.3,
-      "ret_6m": 13.6,
-      "ret_1y": 23.79,
-      "ret_ytd": 11.83,
-      "ma50": 172.35,
-      "ma200": 162.0,
+      "latest": 180.94,
+      "latest_date": "2026-06-16",
+      "ret_1d": 2.7,
+      "ret_1w": 4.21,
+      "ret_1m": 3.68,
+      "ret_3m": 9.27,
+      "ret_6m": 15.43,
+      "ret_1y": 27.47,
+      "ret_ytd": 14.86,
+      "ma50": 172.69,
+      "ma200": 162.15,
       "above_ma50": true,
       "above_ma200": true,
       "golden_cross": true,
       "name": "Industrials",
       "ticker": "XLI",
       "breadth": {
-        "pct_above_ma50": 50.0,
+        "pct_above_ma50": 83.3,
         "pct_above_ma200": 75.0,
-        "breadth_flag": "healthy",
+        "breadth_flag": "broad",
         "holdings_checked": 12,
-        "holdings_above_ma50": 6,
+        "holdings_above_ma50": 10,
         "holdings_above_ma200": 9,
-        "breadth_thrust": 8.3
+        "breadth_thrust": 33.3
       },
       "rs_history": [
-        {
-          "date": "2025-06-12",
-          "value": 106.65
-        },
         {
           "date": "2025-06-13",
           "value": 106.95
@@ -7318,47 +7314,47 @@
         {
           "date": "2026-06-12",
           "value": 106.52
+        },
+        {
+          "date": "2026-06-16",
+          "value": 107.69
         }
       ],
-      "rs_1w": 0.58,
-      "rs_1m": 1.55,
-      "rs_3m": -4.45,
-      "rs_6m": 4.7,
-      "rs_1y": -0.78,
-      "rs_ytd": 2.72,
-      "rs_slope": 0.21
+      "rs_1w": 2.23,
+      "rs_1m": 2.95,
+      "rs_3m": -3.25,
+      "rs_6m": 4.98,
+      "rs_1y": 0.98,
+      "rs_ytd": 3.85,
+      "rs_slope": 1.53
     },
     "XLB": {
-      "latest": 52.18,
-      "latest_date": "2026-06-12",
-      "ret_1d": 1.87,
-      "ret_1w": 3.06,
-      "ret_1m": 0.23,
-      "ret_3m": 6.55,
-      "ret_6m": 19.08,
-      "ret_1y": 20.86,
-      "ret_ytd": 13.64,
-      "ma50": 51.24,
-      "ma200": 47.69,
+      "latest": 52.92,
+      "latest_date": "2026-06-16",
+      "ret_1d": 1.43,
+      "ret_1w": 5.93,
+      "ret_1m": 2.43,
+      "ret_3m": 7.61,
+      "ret_6m": 18.43,
+      "ret_1y": 22.07,
+      "ret_ytd": 15.27,
+      "ma50": 51.29,
+      "ma200": 47.73,
       "above_ma50": true,
       "above_ma200": true,
       "golden_cross": true,
       "name": "Materials",
       "ticker": "XLB",
       "breadth": {
-        "pct_above_ma50": 66.7,
-        "pct_above_ma200": 58.3,
+        "pct_above_ma50": 75.0,
+        "pct_above_ma200": 83.3,
         "breadth_flag": "broad",
         "holdings_checked": 12,
-        "holdings_above_ma50": 8,
-        "holdings_above_ma200": 7,
-        "breadth_thrust": 33.4
+        "holdings_above_ma50": 9,
+        "holdings_above_ma200": 10,
+        "breadth_thrust": 41.7
       },
       "rs_history": [
-        {
-          "date": "2025-06-12",
-          "value": 89.96
-        },
         {
           "date": "2025-06-13",
           "value": 89.92
@@ -8362,47 +8358,47 @@
         {
           "date": "2026-06-12",
           "value": 87.13
+        },
+        {
+          "date": "2026-06-16",
+          "value": 86.99
         }
       ],
-      "rs_1w": 2.48,
-      "rs_1m": 0.31,
-      "rs_3m": -5.12,
-      "rs_6m": 9.76,
-      "rs_1y": -3.13,
-      "rs_ytd": 4.38,
-      "rs_slope": 2.41
+      "rs_1w": 3.93,
+      "rs_1m": 1.7,
+      "rs_3m": -4.71,
+      "rs_6m": 7.7,
+      "rs_1y": -3.3,
+      "rs_ytd": 4.22,
+      "rs_slope": 3.53
     },
     "XLU": {
-      "latest": 44.53,
-      "latest_date": "2026-06-12",
-      "ret_1d": 1.09,
-      "ret_1w": 0.41,
-      "ret_1m": -0.31,
-      "ret_3m": -4.51,
-      "ret_6m": 5.73,
-      "ret_1y": 13.21,
-      "ret_ytd": 3.85,
-      "ma50": 45.28,
-      "ma200": 44.13,
-      "above_ma50": false,
+      "latest": 45.45,
+      "latest_date": "2026-06-16",
+      "ret_1d": 2.07,
+      "ret_1w": 4.43,
+      "ret_1m": 1.22,
+      "ret_3m": -3.16,
+      "ret_6m": 7.13,
+      "ret_1y": 14.16,
+      "ret_ytd": 5.99,
+      "ma50": 45.27,
+      "ma200": 44.15,
+      "above_ma50": true,
       "above_ma200": true,
       "golden_cross": true,
       "name": "Utilities",
       "ticker": "XLU",
       "breadth": {
-        "pct_above_ma50": 41.7,
+        "pct_above_ma50": 83.3,
         "pct_above_ma200": 91.7,
-        "breadth_flag": "healthy",
+        "breadth_flag": "broad",
         "holdings_checked": 12,
-        "holdings_above_ma50": 5,
+        "holdings_above_ma50": 10,
         "holdings_above_ma200": 11,
-        "breadth_thrust": 25.0
+        "breadth_thrust": 75.0
       },
       "rs_history": [
-        {
-          "date": "2025-06-12",
-          "value": 109.17
-        },
         {
           "date": "2025-06-13",
           "value": 109.77
@@ -9406,47 +9402,47 @@
         {
           "date": "2026-06-12",
           "value": 98.26
+        },
+        {
+          "date": "2026-06-16",
+          "value": 98.73
         }
       ],
-      "rs_1w": -0.16,
-      "rs_1m": -0.24,
-      "rs_3m": -14.97,
-      "rs_6m": -2.55,
-      "rs_1y": -9.26,
-      "rs_ytd": -4.61,
-      "rs_slope": -0.1
+      "rs_1w": 2.45,
+      "rs_1m": 0.51,
+      "rs_3m": -14.25,
+      "rs_6m": -2.57,
+      "rs_1y": -9.56,
+      "rs_ytd": -4.16,
+      "rs_slope": 2.33
     },
     "XLRE": {
-      "latest": 44.99,
-      "latest_date": "2026-06-15",
-      "ret_1d": -0.82,
-      "ret_1w": 2.18,
-      "ret_1m": 2.46,
-      "ret_3m": 6.37,
-      "ret_6m": 12.22,
-      "ret_1y": 10.24,
-      "ret_ytd": 12.17,
-      "ma50": 43.98,
-      "ma200": 41.78,
+      "latest": 45.23,
+      "latest_date": "2026-06-16",
+      "ret_1d": 0.53,
+      "ret_1w": 0.57,
+      "ret_1m": 4.62,
+      "ret_3m": 6.58,
+      "ret_6m": 12.95,
+      "ret_1y": 11.72,
+      "ret_ytd": 12.76,
+      "ma50": 44.05,
+      "ma200": 41.81,
       "above_ma50": true,
       "above_ma200": true,
       "golden_cross": true,
       "name": "Real Estate",
       "ticker": "XLRE",
       "breadth": {
-        "pct_above_ma50": 58.3,
+        "pct_above_ma50": 66.7,
         "pct_above_ma200": 83.3,
-        "breadth_flag": "healthy",
+        "breadth_flag": "broad",
         "holdings_checked": 12,
-        "holdings_above_ma50": 7,
+        "holdings_above_ma50": 8,
         "holdings_above_ma200": 10,
-        "breadth_thrust": 0.0
+        "breadth_thrust": 8.4
       },
       "rs_history": [
-        {
-          "date": "2025-06-12",
-          "value": 102.01
-        },
         {
           "date": "2025-06-13",
           "value": 102.33
@@ -10450,28 +10446,32 @@
         {
           "date": "2026-06-12",
           "value": 91.24
+        },
+        {
+          "date": "2026-06-16",
+          "value": 89.55
         }
       ],
-      "rs_1w": 0.9,
-      "rs_1m": 2.68,
-      "rs_3m": -3.76,
-      "rs_6m": 4.85,
-      "rs_1y": -10.42,
-      "rs_ytd": 3.87,
-      "rs_slope": 0.26
+      "rs_1w": 0.77,
+      "rs_1m": 2.27,
+      "rs_3m": -5.32,
+      "rs_6m": 2.6,
+      "rs_1y": -12.21,
+      "rs_ytd": 1.95,
+      "rs_slope": 0.23
     },
     "XLC": {
-      "latest": 112.19,
-      "latest_date": "2026-06-15",
-      "ret_1d": 0.48,
-      "ret_1w": 0.99,
-      "ret_1m": -4.2,
-      "ret_3m": -2.41,
-      "ret_6m": -3.34,
-      "ret_1y": 9.6,
-      "ret_ytd": -3.72,
+      "latest": 111.71,
+      "latest_date": "2026-06-16",
+      "ret_1d": -0.43,
+      "ret_1w": 0.2,
+      "ret_1m": -3.77,
+      "ret_3m": -2.87,
+      "ret_6m": -3.54,
+      "ret_1y": 10.25,
+      "ret_ytd": -4.14,
       "ma50": 115.28,
-      "ma200": 115.01,
+      "ma200": 115.02,
       "above_ma50": false,
       "above_ma200": false,
       "golden_cross": true,
@@ -10487,10 +10487,6 @@
         "breadth_thrust": 0.0
       },
       "rs_history": [
-        {
-          "date": "2025-06-12",
-          "value": 110.93
-        },
         {
           "date": "2025-06-13",
           "value": 111.05
@@ -11181,7 +11177,7 @@
         },
         {
           "date": "2026-02-20",
-          "value": 109.55
+          "value": 109.54
         },
         {
           "date": "2026-02-23",
@@ -11494,15 +11490,19 @@
         {
           "date": "2026-06-12",
           "value": 97.37
+        },
+        {
+          "date": "2026-06-16",
+          "value": 95.9
         }
       ],
-      "rs_1w": -0.58,
-      "rs_1m": -4.3,
-      "rs_3m": -12.86,
-      "rs_6m": -11.53,
-      "rs_1y": -13.28,
-      "rs_ytd": -11.99,
-      "rs_slope": 0.44
+      "rs_1w": -1.35,
+      "rs_1m": -5.29,
+      "rs_3m": -13.96,
+      "rs_6m": -12.47,
+      "rs_1y": -13.55,
+      "rs_ytd": -13.32,
+      "rs_slope": -0.09
     }
   }
 }
