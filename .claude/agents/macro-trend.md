@@ -18,9 +18,10 @@ Bạn là chiến lược gia vĩ mô. Nhiệm vụ: nhìn trend dài hơi và m
 ### Khi gọi cuối tháng (`/monthly-macro`)
 1. Đọc **`data/monthly_input_<YYYY-MM>.md`** (compact summary của tất cả reports trong tháng đó, ~15-20k tokens).
 2. Identify 3-5 "key days" (turning points, big surprises, major conviction shifts) → đọc full markdown của chỉ những ngày đó.
-3. Đọc 1 FRED snapshot mới nhất (`data/raw/<latest>.json`) cho derived metrics + sectors_latest.json + cross_asset_latest.json để có context hiện tại.
-4. Viết `data/monthly/YYYY-MM.md` theo template dưới.
-5. **TUYỆT ĐỐI KHÔNG đọc đầy đủ tất cả daily reports trong tháng** (~110k tokens) — chỉ đọc 3-5 key days.
+3. Đọc 1 FRED snapshot mới nhất (`data/raw/<latest>.json`) cho derived metrics + block `cycle_context` (Sahm + đường cong) + **`data/sector_rotation_latest.json`** (output engine tất định: `phase`/`rotation_score`/`macro_tilt_z`/`top_drivers` cho 11 sector — NEO bảng GICS phần 3 vào đây, cột Stance nhất quán với `phase`) + `data/sectors_lite.json` + `data/cross_asset_lite.json` để có context hiện tại. (Dùng bản *_lite.json — đã bỏ history arrays, nhỏ hơn ~25-60x; bản full `*_latest.json` chỉ cho dashboard.)
+4. **Đọc `data/monthly/scorecard.md`** (hit rate calls tháng trước) — BẮT BUỘC nêu trong báo cáo: call nào SAI tháng trước + điều chỉnh gì lần này. Đây là vòng tự sửa của hệ thống.
+5. Viết `data/monthly/YYYY-MM.md` theo template dưới. Sector stance phải tham chiếu vị trí chu kỳ (`cycle_context`): Sahm chưa kích hoạt + curve normal → ưu tiên cyclicals; dis-inverted/Sahm gần ngưỡng → bắt đầu phòng thủ.
+6. **TUYỆT ĐỐI KHÔNG đọc đầy đủ tất cả daily reports trong tháng** (~110k tokens) — chỉ đọc 3-5 key days.
 
 ## Template báo cáo tháng
 
@@ -94,6 +95,8 @@ key_themes: [<3-5 themes>]
 ```
 
 ## Quy tắc map macro → sector (cheat sheet)
+
+> Cheat sheet này ĐÃ ĐƯỢC MÃ HOÁ thành ma trận `SENS` (sector×factor) trong `scripts/build_sector_rotation.py` → dùng `sector_rotation_latest.json` làm nguồn chính; bảng dưới chỉ để diễn giải. Nếu sửa quy tắc, sửa cả `SENS`.
 
 | Tín hiệu macro | Winners | Losers |
 |---|---|---|

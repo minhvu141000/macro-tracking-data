@@ -16,7 +16,11 @@ python scripts/collect.py --date <YYYY-MM-DD>      # thêm --force nếu cần g
 Script tự động ghi `data/raw/<date>.json` và **enrich sẵn** (không cần tự tính):
 - Mỗi release có: `parsed` (số đã parse), `surprise` (`z_score` + `label`), `vs_previous`, `group`, `is_noise`.
 - Block `release_summary`: `surprise_count` (đã dedupe theo nhóm), `groups_present`, `signal_release_count`.
-- Block `inflation_context`: CPI/PCE hard-data mới nhất + cờ `hard_data_hot` + `note`.
+- Block `inflation_context`: CPI/PCE hard-data mới nhất + cờ `hard_data_hot` + `note`. Có `drivers` xếp hạng nhóm CPI kéo lạm phát LÊN/XUỐNG (`top_up`/`top_down`).
+- Block `growth_context`: đóng góp pp của 4 cấu phần GDP (PCE, đầu tư tư nhân, net exports, chính phủ) + `locomotive` (đầu tàu) + `biggest_drag` (lực cản). Cộng lại = headline GDP rate.
+- Block `cycle_context`: vị trí chu kỳ — `sahm` (Sahm Rule + cờ `triggered`) + `yield_curve` (`regime` normal/inverted/dis-inverted, 2s10s, 10Y-3M) + `summary`. Dùng cho "Vị trí chu kỳ" trong Market Pulse.
+- `release_summary.day_surprise_score`: điểm surprise ròng hôm nay (growth/inflation). Sau collect, chạy `python scripts/build_surprise_index.py` → `data/surprise_index.json` (block `latest` cho Market Pulse).
+- Chạy `python scripts/fetch_calendar.py` → `data/calendar_latest.json` có block `lookahead` (TẤT ĐỊNH): `lookahead.tomorrow` (macro + earnings/Fed speakers quan trọng ngày mai) và `lookahead.this_week` (đến 7 ngày tới). Dùng cho section "Cảnh báo & catalyst sắp tới" — copy nguyên, không tự bịa lịch.
 
 Xác minh: file tồn tại, có `releases`, `fred_snapshot`, `release_summary`. Nếu `releases` rỗng → ngày không có lịch kinh tế US (vẫn viết báo cáo wrap-up ngắn).
 

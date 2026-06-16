@@ -19,11 +19,29 @@ source .venv/bin/activate && \
   python scripts/fetch_cross_asset.py && \
   python scripts/fetch_calendar.py
 ```
-- `fetch_sectors.py`: 11 SPDR sectors + SPY benchmark
-- `fetch_cross_asset.py`: Gold, Copper, BTC (DXY/VIX/WTI/spreads/breakeven đã trong FRED)
+- `fetch_sectors.py`: 11 SPDR sectors + SPY benchmark (ghi cả `sectors_lite.json` cho agents)
+- `fetch_cross_asset.py`: Gold, Copper, BTC (DXY/VIX/WTI/spreads/breakeven đã trong FRED) (+ `cross_asset_lite.json`)
 - `fetch_calendar.py`: earnings 55 stocks + macro release projections 21 ngày tới
 
 Nếu Yahoo fail → cảnh báo nhưng tiếp tục flow.
+
+## Bước 1c: Cập nhật Economic Surprise Index
+Sau khi collect xong (raw hôm nay đã có `day_surprise_score`), build lại index từ toàn bộ raw files:
+```
+cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && source .venv/bin/activate && \
+  python scripts/build_surprise_index.py
+```
+Ghi `data/surprise_index.json` — analyst sẽ đọc block `latest` cho Market Pulse. Không chặn flow nếu lỗi.
+
+## Bước 1d: Sector Rotation — tầng DAILY (radar + tích lũy bằng chứng)
+Sau khi raw hôm nay (có `cycle_context`), `surprise_index.json`, `sectors_lite.json`, `cross_asset_lite.json` đã sẵn, chạy:
+```
+cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && source .venv/bin/activate && \
+  python scripts/build_sector_rotation.py
+```
+- Ghi `data/sector_rotation_latest.json` (SNAPSHOT 1 phiên, là radar — KHÔNG phải verdict) + **append vào `data/sector_rotation_history.json`** (chuỗi bằng chứng để tầng weekly xác nhận persistence).
+- Engine tách 2 trục `macro_tilt_z` (vĩ mô hậu thuẫn?) vs `price_momentum_z` (tiền đã vào chưa: rs_slope + breadth_thrust) qua ma trận sector×factor.
+- **Verdict thật (đã lọc persistence nhiều phiên) sinh ở flow tuần** (`build_rotation_confirm.py` → `sector_rotation_confirmed.json`), KHÔNG phán quyết rotation từ daily. Không chặn flow nếu lỗi.
 
 ## Bước 2: Phân tích
 Dùng Agent tool với `subagent_type: macro-analyst`. Truyền vào prompt: "Phân tích raw data cho ngày <date>, viết báo cáo vào data/daily/<date>.md".

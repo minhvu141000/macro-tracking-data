@@ -18,20 +18,41 @@ data/daily/YYYY-MM-DD.md        # phân tích trong ngày
 data/monthly/YYYY-MM.md         # tổng kết tháng
 dashboard/index.html            # dashboard
 dashboard/data.js               # dữ liệu cho Chart.js
-scripts/collect.py              # scraper + FRED client
-scripts/analyze.py              # tiện ích cho analyst
+scripts/collect.py              # scraper + FRED client + Census trade + cycle_context
+scripts/enrich_releases.py      # logic tất định: surprise, groups, inflation/growth/cycle context
+scripts/build_surprise_index.py # Economic Surprise Index từ raw files → surprise_index.json
+scripts/build_scorecard.py      # chấm calls tháng trước vs RS thực tế → monthly/scorecard.md
+scripts/build_sector_rotation.py # TẦNG DAILY: engine macro→sector tất định → snapshot + append history
+scripts/build_rotation_confirm.py # TẦNG WEEKLY: lọc persistence từ history → verdict confirmed
 scripts/build_dashboard.py      # build data.js
-.claude/agents/                 # 4 sub-agents
+.claude/agents/                 # sub-agents
 .claude/commands/               # slash commands
+
+data/surprise_index.json        # ESI time series (growth/inflation surprise rolling)
+data/monthly/scorecard.md       # self-correcting: hit rate sector calls
+data/sector_rotation_latest.json # SNAPSHOT/radar daily (1 phiên) — KHÔNG phải verdict
+data/sector_rotation_history.json # chuỗi daily snapshot (~90 ngày) — bằng chứng cho tầng weekly
+data/sector_rotation_confirmed.json # VERDICT tuần đã lọc persistence — handoff cho stock-picker
+data/sector_holdings_latest.json # universe cổ phiếu/sector (rs_1m, above_ma50) cho agent lọc cổ phiếu
+data/sectors_lite.json          # sectors KHÔNG history (+rs_slope, breadth_thrust) — cho agents (~25x nhỏ hơn _latest)
+data/cross_asset_lite.json      # cross-asset KHÔNG history — cho agents (~60x nhỏ hơn)
 ```
+
+> **File lite vs full:** agents (trend/weekly) đọc `*_lite.json` (đã bỏ history arrays); dashboard đọc `*_latest.json` (full history cho charts). `fred_snapshot` trong raw chỉ giữ 3 obs; full ở `data/fred_history.json`.
 
 ## Workflow
 
 ### Hàng ngày: `/daily-macro`
 1. `macro-collector` chạy `scripts/collect.py` → lưu `data/raw/<date>.json`.
-2. `macro-analyst` đọc raw → viết `data/daily/<date>.md` (phân tích từng chỉ số).
-3. `macro-trend` đọc 30 ngày gần nhất → cập nhật trend signals.
-4. `macro-dashboard` chạy `scripts/build_dashboard.py` → cập nhật `dashboard/data.js`.
+2. `fetch_sectors/cross_asset/calendar` + `build_surprise_index.py` + **`build_sector_rotation.py`** → `sector_rotation_latest.json`.
+3. `macro-analyst` đọc raw → viết `data/daily/<date>.md` (phân tích từng chỉ số).
+4. `macro-trend` đọc 30 ngày gần nhất → cập nhật trend signals.
+5. `macro-dashboard` chạy `scripts/build_dashboard.py` → cập nhật `dashboard/data.js`.
+
+> **Nhiệm vụ #1 — Sector rotation (tất định, 2 TẦNG):** Luân chuyển dòng tiền là hiện tượng NHIỀU PHIÊN — 1 ngày là nhiễu. Nên tách:
+> - **Tầng DAILY (`build_sector_rotation.py`)** = *bằng chứng/radar*. Biến trạng thái vĩ mô hôm nay (ESI growth/inflation, `cycle_context` Sahm+đường cong, cross-asset rates/USD/oil/copper/VIX) thành điểm 11 GICS sector qua **ma trận nhạy cảm sector×factor**, tách 2 trục `macro_tilt_z` (vĩ mô hậu thuẫn?) vs `price_momentum_z` (tiền đã vào chưa: rs_slope + breadth_thrust). Mỗi ngày *append* vào `sector_rotation_history.json`. KHÔNG phải verdict.
+> - **Tầng WEEKLY (`build_rotation_confirm.py`)** = *verdict*. Đọc history ~10 phiên, chỉ giữ tín hiệu BỀN: `confirmed_phase` = CONFIRMED_IN (vĩ mô+dòng tiền bền) / EARLY_FORMING (vĩ mô bền, tiền đang vào) / FADING / AVOID / NEUTRAL, kèm `confidence` + persistence (macro_pos_days, mom_pos_days, trend). Đây mới là input cho agent lọc cổ phiếu.
+> - Agent lọc cổ phiếu đọc `sector_rotation_confirmed.json` (verdict sector) + `sector_holdings_latest.json` (universe). Logic ở code, KHÔNG để LLM tự suy → nhất quán & chấm điểm được.
 
 ### Cuối tháng: `/monthly-macro`
 - Đọc 30 daily reports → viết `data/monthly/<YYYY-MM>.md` với:

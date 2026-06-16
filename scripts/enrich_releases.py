@@ -258,14 +258,266 @@ def build_inflation_context(fred_snapshot: dict[str, Any]) -> dict[str, Any]:
     return ctx
 
 
+# CPI sub-component FRED series → label, ranked to show what pulls inflation up/down.
+CPI_DRIVER_SERIES = {
+    "CUSR0000SAH1": "Shelter (Nhà ở)",
+    "CPIUFDSL": "Food (Thực phẩm)",
+    "CPIENGSL": "Energy (Năng lượng)",
+    "CUSR0000SACL1E": "Core Goods (Hàng hoá lõi)",
+    "CUSR0000SASLE": "Core Services (Dịch vụ lõi)",
+}
+
+# GDP contribution FRED series (pp at annual rate) → label. These sum to GDP rate.
+GDP_CONTRIB_SERIES = {
+    "DPCERY2Q224SBEA": "Tiêu dùng (PCE)",
+    "A006RY2Q224SBEA": "Đầu tư tư nhân",
+    "A019RY2Q224SBEA": "Xuất khẩu ròng (Net Exports)",
+    "A822RY2Q224SBEA": "Chi tiêu chính phủ",
+}
+
+
+def build_inflation_drivers(fred_snapshot: dict[str, Any]) -> dict[str, Any] | None:
+    """Rank CPI sub-components by momentum so the report can name which group is
+    pulling inflation UP vs DOWN — deterministically, not LLM guesswork.
+
+    Momentum = 3-mo annualized % (smoother) with MoM% fallback. Highest = top
+    up-driver; lowest (often negative) = top disinflationary driver.
+    """
+    drivers = []
+    for sid, label in CPI_DRIVER_SERIES.items():
+        s = fred_snapshot.get(sid) or {}
+        mom, yoy, mo3 = s.get("mom_pct"), s.get("yoy_pct"), s.get("mo3_annualized_pct")
+        if mom is None and yoy is None:
+            continue
+        drivers.append({
+            "component": label, "series_id": sid,
+            "mom_pct": mom, "yoy_pct": yoy, "mo3_annualized_pct": mo3,
+        })
+    if not drivers:
+        return None
+
+    def momentum(d):
+        return d["mo3_annualized_pct"] if d["mo3_annualized_pct"] is not None else (d["mom_pct"] or 0.0)
+
+    ranked = sorted(drivers, key=momentum, reverse=True)
+    return {
+        "ranked_by_momentum": ranked,
+        "top_up": ranked[0]["component"],
+        "top_down": ranked[-1]["component"],
+        "note": (
+            f"Kéo lạm phát LÊN mạnh nhất: {ranked[0]['component']} "
+            f"(3mo ann {momentum(ranked[0])}%). "
+            f"Kéo XUỐNG/giảm áp lực nhất: {ranked[-1]['component']} "
+            f"(3mo ann {momentum(ranked[-1])}%)."
+        ),
+    }
+
+
+def build_growth_context(fred_snapshot: dict[str, Any]) -> dict[str, Any] | None:
+    """Read the 4 GDP contribution series (pp) — they sum to the headline GDP rate —
+    and rank to surface the locomotive (đầu tàu) vs the biggest drag (lực cản).
+    """
+    def value(sid: str) -> float | None:
+        s = fred_snapshot.get(sid) or {}
+        latest = s.get("latest") or {}
+        v = latest.get("value") if isinstance(latest, dict) else None
+        return round(v, 2) if isinstance(v, (int, float)) else None
+
+    contribs = []
+    for sid, label in GDP_CONTRIB_SERIES.items():
+        v = value(sid)
+        if v is None:
+            continue
+        contribs.append({"component": label, "series_id": sid, "contribution_pp": v})
+    if not contribs:
+        return None
+
+    ranked = sorted(contribs, key=lambda d: d["contribution_pp"], reverse=True)
+    gdp_rate = value("A191RL1Q225SBEA")
+    return {
+        "gdp_growth_pct": gdp_rate,
+        "ranked_by_contribution": ranked,
+        "locomotive": ranked[0]["component"],
+        "biggest_drag": ranked[-1]["component"],
+        "note": (
+            f"Đầu tàu kéo GDP: {ranked[0]['component']} (+{ranked[0]['contribution_pp']}pp). "
+            f"Lực cản lớn nhất: {ranked[-1]['component']} ({ranked[-1]['contribution_pp']:+}pp). "
+            f"Tổng tăng trưởng GDP QoQ ann. = {gdp_rate}%."
+        ),
+    }
+
+
+# Polarity for the Economic Surprise Index: does "above forecast" mean a STRONGER
+# economy (+1) or weaker (-1)? Inflation groups are tracked on a SEPARATE axis.
+GROWTH_POLARITY: dict[str, int] = {
+    "jobs_report": +1, "gdp": +1, "ism_manufacturing": +1, "ism_services": +1,
+    "spglobal_pmi": +1, "retail_sales": +1, "durable_goods": +1,
+    "industrial_production": +1, "income_spending": +1, "confidence": +1,
+    "home_sales": +1, "housing_starts": +1, "jolts": +1, "adp": +1,
+    "vehicle_sales": +1, "construction": +1, "regional_fed": +1,
+    "jobless_claims": -1, "challenger": -1,  # higher = weaker labor
+}
+INFLATION_GROUPS = {"cpi", "ppi", "pce_inflation", "michigan_sentiment"}
+
+
+def day_surprise_score(releases: list[dict[str, Any]]) -> dict[str, Any]:
+    """Net signed surprise for one day → feeds the Economic Surprise Index.
+
+    growth_score = Σ (polarity × z_score) over growth/labor releases (deduped by
+    group, capped at ±3σ per release to stop one shock dominating). Positive =
+    data beating expectations on the strong-economy side → risk-on tailwind.
+    inflation_score = Σ z_score over inflation releases (positive = hotter than
+    expected → hawkish). Kept on a separate axis so growth & price surprises
+    don't cancel.
+    """
+    seen_growth: dict[str, float] = {}
+    seen_infl: dict[str, float] = {}
+    for r in releases:
+        if r.get("is_noise") or not r.get("surprise"):
+            continue
+        g = r.get("group", "other")
+        z = max(-3.0, min(3.0, r["surprise"]["z_score"]))
+        if g in GROWTH_POLARITY:
+            # keep the largest-magnitude print per group for the day
+            signed = GROWTH_POLARITY[g] * z
+            if abs(signed) > abs(seen_growth.get(g, 0.0)):
+                seen_growth[g] = signed
+        elif g in INFLATION_GROUPS:
+            if abs(z) > abs(seen_infl.get(g, 0.0)):
+                seen_infl[g] = z
+    return {
+        "growth_score": round(sum(seen_growth.values()), 2),
+        "inflation_score": round(sum(seen_infl.values()), 2),
+        "n_growth": len(seen_growth),
+        "n_inflation": len(seen_infl),
+    }
+
+
+def build_cycle_context(fred_snapshot: dict[str, Any]) -> dict[str, Any] | None:
+    """Deterministic 'where in the cycle' gauge — the #1 driver of sector rotation.
+
+    Two battle-tested recession signals computed from data we already pull:
+      - Sahm Rule (from UNRATE): 3-mo avg unemployment minus its trailing-12mo low.
+        ≥ 0.50 pp = recession has likely already started. Real-time, rarely false.
+      - Yield curve (T10Y2Y, + 10Y-3M from DGS10/DGS3MO): inversion = classic
+        12-18mo recession lead; the *un-inversion* (re-steepening after inversion)
+        is the more imminent warning — recessions usually start AFTER it re-steepens.
+
+    Needs full-ish history (UNRATE monthly ≥15 obs; T10Y2Y daily). Pass the FULL
+    snapshot (fred_history.json), not the 3-obs trimmed daily snapshot.
+    Returns None if neither signal is computable.
+    """
+    out: dict[str, Any] = {}
+
+    # --- Sahm Rule from UNRATE (monthly) ---
+    unrate = (fred_snapshot.get("UNRATE") or {}).get("history") or []
+    if len(unrate) >= 15:
+        vals = [h["value"] for h in unrate]
+        ma3 = [round(sum(vals[i - 2 : i + 1]) / 3, 2) for i in range(2, len(vals))]
+        current_ma3 = ma3[-1]
+        # Trailing 12-month low of the 3-mo avg (months prior to current)
+        window = ma3[-13:-1] if len(ma3) >= 13 else ma3[:-1]
+        trailing_min = min(window) if window else current_ma3
+        sahm = round(current_ma3 - trailing_min, 2)
+        out["sahm"] = {
+            "value": sahm,
+            "triggered": sahm >= 0.50,
+            "current_3mo_avg_unemp": current_ma3,
+            "trailing_12mo_low": round(trailing_min, 2),
+            "note": (
+                f"Sahm {sahm:+.2f}pp — "
+                + ("ĐÃ KÍCH HOẠT (≥0.50): suy thoái nhiều khả năng đã bắt đầu."
+                   if sahm >= 0.50 else
+                   f"chưa kích hoạt (ngưỡng 0.50). Thất nghiệp 3mo-avg {current_ma3}% "
+                   f"vs đáy 12 tháng {round(trailing_min,2)}%.")
+            ),
+        }
+
+    # --- Yield curve ---
+    t10y2y_hist = (fred_snapshot.get("T10Y2Y") or {}).get("history") or []
+    dgs10 = ((fred_snapshot.get("DGS10") or {}).get("latest") or {}).get("value")
+    dgs3mo = ((fred_snapshot.get("DGS3MO") or {}).get("latest") or {}).get("value")
+    if t10y2y_hist:
+        cur = t10y2y_hist[-1]["value"]
+        inverted = cur < 0
+        # How long since the curve last had the opposite sign → duration of current regime
+        days_in_regime = 0
+        for h in reversed(t10y2y_hist):
+            if (h["value"] < 0) == inverted:
+                days_in_regime += 1
+            else:
+                break
+        # Did it dis-invert recently? (was negative anywhere in window, now positive)
+        was_inverted = any(h["value"] < 0 for h in t10y2y_hist)
+        dis_inverted = (not inverted) and was_inverted
+        spread_10y3m = (
+            round(dgs10 - dgs3mo, 2) if dgs10 is not None and dgs3mo is not None else None
+        )
+        if inverted:
+            regime = "inverted"
+            curve_note = (
+                f"2s10s ĐẢO NGƯỢC {cur:+.2f} ({days_in_regime} phiên) — "
+                "tín hiệu suy thoái cổ điển (thường dẫn trước 12-18 tháng)."
+            )
+        elif dis_inverted:
+            regime = "dis-inverted"
+            curve_note = (
+                f"2s10s đã DỐC LẠI {cur:+.2f} sau giai đoạn đảo ngược ({days_in_regime} phiên dương) — "
+                "CẢNH BÁO: suy thoái thường khởi phát SAU khi đường cong dốc lại, không phải lúc đảo ngược."
+            )
+        else:
+            regime = "normal"
+            curve_note = f"2s10s dương bình thường {cur:+.2f} ({days_in_regime} phiên), chưa từng đảo trong cửa sổ dữ liệu."
+        out["yield_curve"] = {
+            "spread_2s10s": cur,
+            "spread_10y3m": spread_10y3m,
+            "regime": regime,
+            "days_in_regime": days_in_regime,
+            "note": curve_note,
+        }
+
+    if not out:
+        return None
+
+    # One-line composite for the report's Market Pulse
+    bits = []
+    if "sahm" in out:
+        s = out["sahm"]
+        bits.append(f"Sahm {s['value']:+.2f} ({'KÍCH HOẠT' if s['triggered'] else 'an toàn'})")
+    if "yield_curve" in out:
+        bits.append(f"Đường cong: {out['yield_curve']['regime']} ({out['yield_curve']['spread_2s10s']:+.2f})")
+    out["summary"] = " | ".join(bits)
+    return out
+
+
+def _load_full_fred_history() -> dict[str, Any]:
+    """The trimmed snapshot in raw files only has 3 obs — too few for Sahm/curve.
+    Fall back to the full-history file (overwritten daily) for cycle_context backfill.
+    """
+    fh = ROOT / "data" / "fred_history.json"
+    if fh.exists():
+        try:
+            return json.loads(fh.read_text()).get("fred_snapshot", {})
+        except Exception:
+            return {}
+    return {}
+
+
 def enrich_file(path: Path) -> dict[str, Any]:
     data = json.loads(path.read_text())
     releases = data.get("releases", [])
     summary = enrich_releases(releases)
+    summary["day_surprise_score"] = day_surprise_score(releases)
     data["releases"] = releases
     data["release_summary"] = summary
-    if data.get("fred_snapshot"):
-        data["inflation_context"] = build_inflation_context(data["fred_snapshot"])
+    snap = data.get("fred_snapshot")
+    if snap:
+        ctx = build_inflation_context(snap)
+        ctx["drivers"] = build_inflation_drivers(snap)
+        data["inflation_context"] = ctx
+        data["growth_context"] = build_growth_context(snap)
+        # Cycle gauge needs deep history → use full-history file, not the 3-obs trim.
+        data["cycle_context"] = build_cycle_context(_load_full_fred_history() or snap)
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False))
     return summary
 

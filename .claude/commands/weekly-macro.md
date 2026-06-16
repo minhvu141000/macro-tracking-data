@@ -26,11 +26,21 @@ source .venv/bin/activate && \
 
 Nếu data fresh → skip.
 
+## Bước 1b: Xác nhận rotation (persistence — TẦNG VERDICT)
+
+Chạy engine xác nhận: đọc daily evidence (`sector_rotation_history.json`) qua ~10 phiên, lọc tín hiệu BỀN → verdict tất định cho stock-picker:
+```
+cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && source .venv/bin/activate && \
+  python scripts/build_rotation_confirm.py
+```
+- Ghi `data/sector_rotation_confirmed.json`: `confirmed_phase` (CONFIRMED_IN / EARLY_FORMING / FADING / AVOID / NEUTRAL) + `confidence` + `persistence` (macro_pos_days, mom_pos_days, trend) cho 11 sector.
+- Nếu in ra `INSUFFICIENT_HISTORY` (chưa đủ ~4 phiên daily snapshot) → báo cho user, weekly vẫn chạy nhưng nêu rõ rotation chưa đủ lịch sử để xác nhận. Không chặn flow.
+
 ## Bước 2: Generate weekly report
 
 Dùng Agent tool với `subagent_type: macro-weekly`. Prompt:
 
-"Tạo weekly macro report cho Chủ Nhật <date>. Working directory: /Users/tranquangminhvu/Vĩ mô Mỹ Tracking. Đọc data từ: data/daily_summaries.md, data/sectors_latest.json, data/cross_asset_latest.json, data/calendar_latest.json. Viết 2 file: data/weekly/<date>.md (archive) và data/weekly/current.md (pointer)."
+"Tạo weekly macro report cho Chủ Nhật <date>. Working directory: /Users/tranquangminhvu/Vĩ mô Mỹ Tracking. NGUỒN CHÍNH cho rotation verdict: data/sector_rotation_confirmed.json (đã lọc persistence). Đọc thêm: data/daily_summaries.md, data/sectors_lite.json, data/cross_asset_lite.json, data/calendar_latest.json (dùng bản *_lite.json — đã bỏ history arrays). Neo cột Stance theo confirmed_phase; section Rotation Focus lấy từ confirmed_in/early_forming/fading. Viết 2 file: data/weekly/<date>.md (archive) và data/weekly/current.md (pointer)."
 
 Đợi agent hoàn thành. Xác nhận 2 file tồn tại.
 
@@ -44,7 +54,7 @@ source .venv/bin/activate && python scripts/build_dashboard.py
 ## Bước 4: Backup lên GitHub
 
 ```
-git add data/weekly/ dashboard/data.js && \
+git add data/weekly/ data/sector_rotation_confirmed.json dashboard/data.js && \
   git diff --cached --quiet || \
   (git -c user.email="minhvu141000@gmail.com" -c user.name="minhvu141000" \
     commit -m "Weekly macro <date>" && git push origin main)

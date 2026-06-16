@@ -1,16 +1,9 @@
 {
   "schema_version": "1.1",
-  "fetched_at": "2026-06-15T20:06:24.293233+00:00",
+  "fetched_at": "2026-06-16T05:12:59.959340+00:00",
   "window_start": "2026-06-15",
   "window_end": "2026-07-06",
   "macro": [
-    {
-      "date": "2026-06-15",
-      "name": "Producer Price Index (PPI)",
-      "release_id": 17,
-      "type": "macro",
-      "estimated": true
-    },
     {
       "date": "2026-06-17",
       "name": "FOMC Meeting (Fed rate decision)",
@@ -93,6 +86,13 @@
       "release_id": 97,
       "type": "macro",
       "estimated": true
+    },
+    {
+      "date": "2026-07-06",
+      "name": "Producer Price Index (PPI)",
+      "release_id": 17,
+      "type": "macro",
+      "estimated": true
     }
   ],
   "earnings": [
@@ -119,5 +119,47 @@
       "type": "earnings"
     }
   ],
-  "fed_speakers": []
+  "fed_speakers": [],
+  "lookahead": {
+    "tomorrow_date": "2026-06-16",
+    "week_end_date": "2026-06-22",
+    "tomorrow": {
+      "macro": [],
+      "earnings": [],
+      "fed_speakers": []
+    },
+    "this_week": {
+      "macro": [
+        {
+          "date": "2026-06-17",
+          "name": "FOMC Meeting (Fed rate decision)",
+          "release_id": 8,
+          "type": "macro"
+        },
+        {
+          "date": "2026-06-17",
+          "name": "Durable Goods Orders",
+          "release_id": 326,
+          "type": "macro",
+          "estimated": true
+        },
+        {
+          "date": "2026-06-19",
+          "name": "Consumer Confidence (Conference Board)",
+          "release_id": 91,
+          "type": "macro",
+          "estimated": true
+        },
+        {
+          "date": "2026-06-22",
+          "name": "Producer Price Index (PPI)",
+          "release_id": 17,
+          "type": "macro",
+          "estimated": true
+        }
+      ],
+      "earnings": [],
+      "fed_speakers": []
+    }
+  }
 }

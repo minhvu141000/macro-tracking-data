@@ -16,7 +16,8 @@ from pathlib import Path
 import yfinance as yf
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "data" / "cross_asset_latest.json"
+OUT = ROOT / "data" / "cross_asset_latest.json"     # full (with history) — for dashboard charts
+OUT_LITE = ROOT / "data" / "cross_asset_lite.json"  # no history — for LLM agents (~30x smaller)
 
 SCHEMA_VERSION = "1.1"  # bump when payload structure changes
 
@@ -64,6 +65,17 @@ def compute_returns(closes):
     return out
 
 
+def make_lite(payload: dict) -> dict:
+    """Strip the large per-asset history array — agents only read latest + ret_*.
+    Cuts the file ~30x (~35K → ~1K tokens) with no signal loss for agents.
+    """
+    lite = {k: v for k, v in payload.items() if k != "assets"}
+    lite["assets"] = {}
+    for ticker, info in payload.get("assets", {}).items():
+        lite["assets"][ticker] = {k: v for k, v in info.items() if k != "history"}
+    return lite
+
+
 def main() -> int:
     print(f"Fetching {len(ASSETS)} cross-asset tickers from Yahoo...")
     payload = {
@@ -87,7 +99,9 @@ def main() -> int:
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False))
+    OUT_LITE.write_text(json.dumps(make_lite(payload), indent=2, ensure_ascii=False))
     print(f"Wrote {OUT}")
+    print(f"Wrote {OUT_LITE} (no history — for agents)")
     print(f"  {len(payload['assets'])} assets")
     for t, a in payload["assets"].items():
         print(f"    {t}: ${a.get('latest')} ({a.get('ret_1m')}% 1M)")

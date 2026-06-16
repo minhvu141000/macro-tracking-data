@@ -1,0 +1,1476 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-06-16T16:21:55.456215+00:00",
+  "series": [
+    {
+      "date": "2026-05-26",
+      "regime_summary": "(backfill — DEF/cycle giữ hằng số, breadth_thrust=None)",
+      "sectors": {
+        "XLK": {
+          "macro_tilt_z": -0.28,
+          "price_momentum_z": 1.01,
+          "rotation_score": 0.3,
+          "breadth_thrust": null,
+          "rs_slope": 2.13,
+          "rs_1m": 9.91,
+          "above_ma200": null
+        },
+        "XLF": {
+          "macro_tilt_z": 1.55,
+          "price_momentum_z": -0.17,
+          "rotation_score": 0.776,
+          "breadth_thrust": null,
+          "rs_slope": -0.41,
+          "rs_1m": -4.08,
+          "above_ma200": null
+        },
+        "XLE": {
+          "macro_tilt_z": 0.28,
+          "price_momentum_z": -1.12,
+          "rotation_score": -0.35,
+          "breadth_thrust": null,
+          "rs_slope": -5.25,
+          "rs_1m": -3.24,
+          "above_ma200": null
+        },
+        "XLV": {
+          "macro_tilt_z": -0.81,
+          "price_momentum_z": 0.17,
+          "rotation_score": -0.369,
+          "breadth_thrust": null,
+          "rs_slope": 0.77,
+          "rs_1m": -2.02,
+          "above_ma200": null
+        },
+        "XLY": {
+          "macro_tilt_z": 0.33,
+          "price_momentum_z": 0.34,
+          "rotation_score": 0.335,
+          "breadth_thrust": null,
+          "rs_slope": 2.07,
+          "rs_1m": -4.28,
+          "above_ma200": null
+        },
+        "XLP": {
+          "macro_tilt_z": -0.82,
+          "price_momentum_z": -0.75,
+          "rotation_score": -0.788,
+          "breadth_thrust": null,
+          "rs_slope": -3.15,
+          "rs_1m": -4.43,
+          "above_ma200": null
+        },
+        "XLI": {
+          "macro_tilt_z": 1.19,
+          "price_momentum_z": 0.21,
+          "rotation_score": 0.749,
+          "breadth_thrust": null,
+          "rs_slope": 1.38,
+          "rs_1m": -3.87,
+          "above_ma200": null
+        },
+        "XLB": {
+          "macro_tilt_z": 1.18,
+          "price_momentum_z": 0.11,
+          "rotation_score": 0.699,
+          "breadth_thrust": null,
+          "rs_slope": 1.49,
+          "rs_1m": -6.58,
+          "above_ma200": null
+        },
+        "XLU": {
+          "macro_tilt_z": -1.76,
+          "price_momentum_z": 0.44,
+          "rotation_score": -0.77,
+          "breadth_thrust": null,
+          "rs_slope": 3.1,
+          "rs_1m": -6.63,
+          "above_ma200": null
+        },
+        "XLRE": {
+          "macro_tilt_z": -1.03,
+          "price_momentum_z": 0.23,
+          "rotation_score": -0.463,
+          "breadth_thrust": null,
+          "rs_slope": 1.28,
+          "rs_1m": -2.98,
+          "above_ma200": null
+        },
+        "XLC": {
+          "macro_tilt_z": 0.17,
+          "price_momentum_z": -0.46,
+          "rotation_score": -0.114,
+          "breadth_thrust": null,
+          "rs_slope": -1.63,
+          "rs_1m": -4.87,
+          "above_ma200": null
+        }
+      }
+    },
+    {
+      "date": "2026-05-27",
+      "regime_summary": "(backfill — DEF/cycle giữ hằng số, breadth_thrust=None)",
+      "sectors": {
+        "XLK": {
+          "macro_tilt_z": 0.32,
+          "price_momentum_z": 0.89,
+          "rotation_score": 0.577,
+          "breadth_thrust": null,
+          "rs_slope": 1.84,
+          "rs_1m": 9.46,
+          "above_ma200": null
+        },
+        "XLF": {
+          "macro_tilt_z": 1.15,
+          "price_momentum_z": -0.16,
+          "rotation_score": 0.56,
+          "breadth_thrust": null,
+          "rs_slope": -0.33,
+          "rs_1m": -5.43,
+          "above_ma200": null
+        },
+        "XLE": {
+          "macro_tilt_z": -0.68,
+          "price_momentum_z": -1.32,
+          "rotation_score": -0.968,
+          "breadth_thrust": null,
+          "rs_slope": -8.06,
+          "rs_1m": -4.34,
+          "above_ma200": null
+        },
+        "XLV": {
+          "macro_tilt_z": -0.9,
+          "price_momentum_z": -0.06,
+          "rotation_score": -0.522,
+          "breadth_thrust": null,
+          "rs_slope": -0.98,
+          "rs_1m": -1.17,
+          "above_ma200": null
+        },
+        "XLY": {
+          "macro_tilt_z": 1.08,
+          "price_momentum_z": 0.65,
+          "rotation_score": 0.887,
+          "breadth_thrust": null,
+          "rs_slope": 3.7,
+          "rs_1m": -1.7,
+          "above_ma200": null
+        },
+        "XLP": {
+          "macro_tilt_z": -1.12,
+          "price_momentum_z": -0.49,
+          "rotation_score": -0.837,
+          "breadth_thrust": null,
+          "rs_slope": -3.45,
+          "rs_1m": -2.12,
+          "above_ma200": null
+        },
+        "XLI": {
+          "macro_tilt_z": 1.21,
+          "price_momentum_z": 0.26,
+          "rotation_score": 0.782,
+          "breadth_thrust": null,
+          "rs_slope": 1.88,
+          "rs_1m": -3.72,
+          "above_ma200": null
+        },
+        "XLB": {
+          "macro_tilt_z": 0.86,
+          "price_momentum_z": 0.4,
+          "rotation_score": 0.653,
+          "breadth_thrust": null,
+          "rs_slope": 3.41,
+          "rs_1m": -5.81,
+          "above_ma200": null
+        },
+        "XLU": {
+          "macro_tilt_z": -1.75,
+          "price_momentum_z": 0.0,
+          "rotation_score": -0.963,
+          "breadth_thrust": null,
+          "rs_slope": 1.17,
+          "rs_1m": -6.87,
+          "above_ma200": null
+        },
+        "XLRE": {
+          "macro_tilt_z": -0.63,
+          "price_momentum_z": 0.02,
+          "rotation_score": -0.338,
+          "breadth_thrust": null,
+          "rs_slope": -0.17,
+          "rs_1m": -2.2,
+          "above_ma200": null
+        },
+        "XLC": {
+          "macro_tilt_z": 0.46,
+          "price_momentum_z": -0.19,
+          "rotation_score": 0.168,
+          "breadth_thrust": null,
+          "rs_slope": -0.85,
+          "rs_1m": -4.33,
+          "above_ma200": null
+        }
+      }
+    },
+    {
+      "date": "2026-05-28",
+      "regime_summary": "(backfill — DEF/cycle giữ hằng số, breadth_thrust=None)",
+      "sectors": {
+        "XLK": {
+          "macro_tilt_z": 0.64,
+          "price_momentum_z": 0.79,
+          "rotation_score": 0.708,
+          "breadth_thrust": null,
+          "rs_slope": 0.84,
+          "rs_1m": 11.65,
+          "above_ma200": null
+        },
+        "XLF": {
+          "macro_tilt_z": 0.42,
+          "price_momentum_z": -0.35,
+          "rotation_score": 0.074,
+          "breadth_thrust": null,
+          "rs_slope": -0.9,
+          "rs_1m": -6.75,
+          "above_ma200": null
+        },
+        "XLE": {
+          "macro_tilt_z": -2.53,
+          "price_momentum_z": -1.34,
+          "rotation_score": -1.994,
+          "breadth_thrust": null,
+          "rs_slope": -4.81,
+          "rs_1m": -6.93,
+          "above_ma200": null
+        },
+        "XLV": {
+          "macro_tilt_z": -0.63,
+          "price_momentum_z": 0.34,
+          "rotation_score": -0.194,
+          "breadth_thrust": null,
+          "rs_slope": 0.98,
+          "rs_1m": -1.07,
+          "above_ma200": null
+        },
+        "XLY": {
+          "macro_tilt_z": 0.89,
+          "price_momentum_z": 0.59,
+          "rotation_score": 0.755,
+          "breadth_thrust": null,
+          "rs_slope": 2.06,
+          "rs_1m": -1.62,
+          "above_ma200": null
+        },
+        "XLP": {
+          "macro_tilt_z": -0.06,
+          "price_momentum_z": -0.54,
+          "rotation_score": -0.276,
+          "breadth_thrust": null,
+          "rs_slope": -2.03,
+          "rs_1m": -4.16,
+          "above_ma200": null
+        },
+        "XLI": {
+          "macro_tilt_z": 0.94,
+          "price_momentum_z": 0.22,
+          "rotation_score": 0.616,
+          "breadth_thrust": null,
+          "rs_slope": 0.98,
+          "rs_1m": -4.14,
+          "above_ma200": null
+        },
+        "XLB": {
+          "macro_tilt_z": 1.0,
+          "price_momentum_z": 0.63,
+          "rotation_score": 0.834,
+          "breadth_thrust": null,
+          "rs_slope": 2.85,
+          "rs_1m": -5.76,
+          "above_ma200": null
+        },
+        "XLU": {
+          "macro_tilt_z": -0.92,
+          "price_momentum_z": -0.05,
+          "rotation_score": -0.529,
+          "breadth_thrust": null,
+          "rs_slope": 0.63,
+          "rs_1m": -8.99,
+          "above_ma200": null
+        },
+        "XLRE": {
+          "macro_tilt_z": -0.04,
+          "price_momentum_z": -0.22,
+          "rotation_score": -0.121,
+          "breadth_thrust": null,
+          "rs_slope": -0.71,
+          "rs_1m": -4.61,
+          "above_ma200": null
+        },
+        "XLC": {
+          "macro_tilt_z": 0.3,
+          "price_momentum_z": -0.08,
+          "rotation_score": 0.129,
+          "breadth_thrust": null,
+          "rs_slope": -0.11,
+          "rs_1m": -4.93,
+          "above_ma200": null
+        }
+      }
+    },
+    {
+      "date": "2026-05-29",
+      "regime_summary": "(backfill — DEF/cycle giữ hằng số, breadth_thrust=None)",
+      "sectors": {
+        "XLK": {
+          "macro_tilt_z": 0.85,
+          "price_momentum_z": 1.31,
+          "rotation_score": 1.057,
+          "breadth_thrust": null,
+          "rs_slope": 1.93,
+          "rs_1m": 12.93,
+          "above_ma200": null
+        },
+        "XLF": {
+          "macro_tilt_z": -0.1,
+          "price_momentum_z": -0.08,
+          "rotation_score": -0.091,
+          "breadth_thrust": null,
+          "rs_slope": -0.54,
+          "rs_1m": -6.55,
+          "above_ma200": null
+        },
+        "XLE": {
+          "macro_tilt_z": -2.7,
+          "price_momentum_z": -1.25,
+          "rotation_score": -2.048,
+          "breadth_thrust": null,
+          "rs_slope": -4.09,
+          "rs_1m": -10.31,
+          "above_ma200": null
+        },
+        "XLV": {
+          "macro_tilt_z": -0.55,
+          "price_momentum_z": 0.08,
+          "rotation_score": -0.267,
+          "breadth_thrust": null,
+          "rs_slope": -0.57,
+          "rs_1m": -1.56,
+          "above_ma200": null
+        },
+        "XLY": {
+          "macro_tilt_z": 1.02,
+          "price_momentum_z": 0.39,
+          "rotation_score": 0.737,
+          "breadth_thrust": null,
+          "rs_slope": 0.61,
+          "rs_1m": -2.7,
+          "above_ma200": null
+        },
+        "XLP": {
+          "macro_tilt_z": -0.09,
+          "price_momentum_z": -0.61,
+          "rotation_score": -0.324,
+          "breadth_thrust": null,
+          "rs_slope": -2.43,
+          "rs_1m": -5.95,
+          "above_ma200": null
+        },
+        "XLI": {
+          "macro_tilt_z": 0.75,
+          "price_momentum_z": 0.36,
+          "rotation_score": 0.575,
+          "breadth_thrust": null,
+          "rs_slope": 0.67,
+          "rs_1m": -4.16,
+          "above_ma200": null
+        },
+        "XLB": {
+          "macro_tilt_z": 0.78,
+          "price_momentum_z": 0.62,
+          "rotation_score": 0.708,
+          "breadth_thrust": null,
+          "rs_slope": 1.73,
+          "rs_1m": -5.59,
+          "above_ma200": null
+        },
+        "XLU": {
+          "macro_tilt_z": -0.55,
+          "price_momentum_z": -0.3,
+          "rotation_score": -0.438,
+          "breadth_thrust": null,
+          "rs_slope": -1.06,
+          "rs_1m": -8.54,
+          "above_ma200": null
+        },
+        "XLRE": {
+          "macro_tilt_z": 0.31,
+          "price_momentum_z": -0.38,
+          "rotation_score": -0.001,
+          "breadth_thrust": null,
+          "rs_slope": -1.71,
+          "rs_1m": -5.18,
+          "above_ma200": null
+        },
+        "XLC": {
+          "macro_tilt_z": 0.27,
+          "price_momentum_z": -0.13,
+          "rotation_score": 0.09,
+          "breadth_thrust": null,
+          "rs_slope": -0.83,
+          "rs_1m": -5.61,
+          "above_ma200": null
+        }
+      }
+    },
+    {
+      "date": "2026-06-01",
+      "regime_summary": "(backfill — DEF/cycle giữ hằng số, breadth_thrust=None)",
+      "sectors": {
+        "XLK": {
+          "macro_tilt_z": 0.46,
+          "price_momentum_z": 1.65,
+          "rotation_score": 0.996,
+          "breadth_thrust": null,
+          "rs_slope": 2.8,
+          "rs_1m": 16.29,
+          "above_ma200": null
+        },
+        "XLF": {
+          "macro_tilt_z": 0.53,
+          "price_momentum_z": -0.03,
+          "rotation_score": 0.278,
+          "breadth_thrust": null,
+          "rs_slope": -1.12,
+          "rs_1m": -6.53,
+          "above_ma200": null
+        },
+        "XLE": {
+          "macro_tilt_z": -2.49,
+          "price_momentum_z": -0.64,
+          "rotation_score": -1.658,
+          "breadth_thrust": null,
+          "rs_slope": -3.18,
+          "rs_1m": -8.99,
+          "above_ma200": null
+        },
+        "XLV": {
+          "macro_tilt_z": -0.59,
+          "price_momentum_z": -0.21,
+          "rotation_score": -0.419,
+          "breadth_thrust": null,
+          "rs_slope": -2.08,
+          "rs_1m": -4.05,
+          "above_ma200": null
+        },
+        "XLY": {
+          "macro_tilt_z": 1.02,
+          "price_momentum_z": -0.03,
+          "rotation_score": 0.548,
+          "breadth_thrust": null,
+          "rs_slope": -1.24,
+          "rs_1m": -5.39,
+          "above_ma200": null
+        },
+        "XLP": {
+          "macro_tilt_z": -0.22,
+          "price_momentum_z": -0.57,
+          "rotation_score": -0.378,
+          "breadth_thrust": null,
+          "rs_slope": -3.05,
+          "rs_1m": -7.82,
+          "above_ma200": null
+        },
+        "XLI": {
+          "macro_tilt_z": 1.07,
+          "price_momentum_z": 0.32,
+          "rotation_score": 0.733,
+          "breadth_thrust": null,
+          "rs_slope": 0.18,
+          "rs_1m": -6.44,
+          "above_ma200": null
+        },
+        "XLB": {
+          "macro_tilt_z": 0.86,
+          "price_momentum_z": 0.55,
+          "rotation_score": 0.721,
+          "breadth_thrust": null,
+          "rs_slope": 1.02,
+          "rs_1m": -6.27,
+          "above_ma200": null
+        },
+        "XLU": {
+          "macro_tilt_z": -0.91,
+          "price_momentum_z": -0.83,
+          "rotation_score": -0.874,
+          "breadth_thrust": null,
+          "rs_slope": -3.52,
+          "rs_1m": -12.84,
+          "above_ma200": null
+        },
+        "XLRE": {
+          "macro_tilt_z": -0.08,
+          "price_momentum_z": -0.47,
+          "rotation_score": -0.256,
+          "breadth_thrust": null,
+          "rs_slope": -2.71,
+          "rs_1m": -7.67,
+          "above_ma200": null
+        },
+        "XLC": {
+          "macro_tilt_z": 0.35,
+          "price_momentum_z": 0.25,
+          "rotation_score": 0.305,
+          "breadth_thrust": null,
+          "rs_slope": -0.14,
+          "rs_1m": -5.99,
+          "above_ma200": null
+        }
+      }
+    },
+    {
+      "date": "2026-06-02",
+      "regime_summary": "(backfill — DEF/cycle giữ hằng số, breadth_thrust=None)",
+      "sectors": {
+        "XLK": {
+          "macro_tilt_z": 0.64,
+          "price_momentum_z": 1.64,
+          "rotation_score": 1.09,
+          "breadth_thrust": null,
+          "rs_slope": 1.94,
+          "rs_1m": 16.18,
+          "above_ma200": null
+        },
+        "XLF": {
+          "macro_tilt_z": 0.4,
+          "price_momentum_z": -0.01,
+          "rotation_score": 0.216,
+          "breadth_thrust": null,
+          "rs_slope": -0.51,
+          "rs_1m": -5.96,
+          "above_ma200": null
+        },
+        "XLE": {
+          "macro_tilt_z": -1.59,
+          "price_momentum_z": 0.41,
+          "rotation_score": -0.69,
+          "breadth_thrust": null,
+          "rs_slope": 0.56,
+          "rs_1m": -6.56,
+          "above_ma200": null
+        },
+        "XLV": {
+          "macro_tilt_z": -0.91,
+          "price_momentum_z": -0.38,
+          "rotation_score": -0.672,
+          "breadth_thrust": null,
+          "rs_slope": -1.56,
+          "rs_1m": -4.31,
+          "above_ma200": null
+        },
+        "XLY": {
+          "macro_tilt_z": 1.03,
+          "price_momentum_z": -0.33,
+          "rotation_score": 0.418,
+          "breadth_thrust": null,
+          "rs_slope": -1.3,
+          "rs_1m": -5.96,
+          "above_ma200": null
+        },
+        "XLP": {
+          "macro_tilt_z": -0.92,
+          "price_momentum_z": -0.44,
+          "rotation_score": -0.704,
+          "breadth_thrust": null,
+          "rs_slope": -1.46,
+          "rs_1m": -7.76,
+          "above_ma200": null
+        },
+        "XLI": {
+          "macro_tilt_z": 1.29,
+          "price_momentum_z": 0.17,
+          "rotation_score": 0.786,
+          "breadth_thrust": null,
+          "rs_slope": -0.19,
+          "rs_1m": -4.45,
+          "above_ma200": null
+        },
+        "XLB": {
+          "macro_tilt_z": 1.2,
+          "price_momentum_z": 0.63,
+          "rotation_score": 0.944,
+          "breadth_thrust": null,
+          "rs_slope": 0.99,
+          "rs_1m": -4.8,
+          "above_ma200": null
+        },
+        "XLU": {
+          "macro_tilt_z": -1.37,
+          "price_momentum_z": -0.66,
+          "rotation_score": -1.051,
+          "breadth_thrust": null,
+          "rs_slope": -1.79,
+          "rs_1m": -10.53,
+          "above_ma200": null
+        },
+        "XLRE": {
+          "macro_tilt_z": -0.2,
+          "price_momentum_z": -0.73,
+          "rotation_score": -0.439,
+          "breadth_thrust": null,
+          "rs_slope": -2.23,
+          "rs_1m": -6.9,
+          "above_ma200": null
+        },
+        "XLC": {
+          "macro_tilt_z": 0.41,
+          "price_momentum_z": -0.28,
+          "rotation_score": 0.099,
+          "breadth_thrust": null,
+          "rs_slope": -1.05,
+          "rs_1m": -7.69,
+          "above_ma200": null
+        }
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "regime_summary": "(backfill — DEF/cycle giữ hằng số, breadth_thrust=None)",
+      "sectors": {
+        "XLK": {
+          "macro_tilt_z": 0.68,
+          "price_momentum_z": 1.24,
+          "rotation_score": 0.932,
+          "breadth_thrust": null,
+          "rs_slope": 2.23,
+          "rs_1m": 15.28,
+          "above_ma200": null
+        },
+        "XLF": {
+          "macro_tilt_z": 0.38,
+          "price_momentum_z": -0.02,
+          "rotation_score": 0.2,
+          "breadth_thrust": null,
+          "rs_slope": -0.1,
+          "rs_1m": -6.12,
+          "above_ma200": null
+        },
+        "XLE": {
+          "macro_tilt_z": -1.5,
+          "price_momentum_z": 1.01,
+          "rotation_score": -0.371,
+          "breadth_thrust": null,
+          "rs_slope": 3.9,
+          "rs_1m": -5.89,
+          "above_ma200": null
+        },
+        "XLV": {
+          "macro_tilt_z": -0.89,
+          "price_momentum_z": -0.06,
+          "rotation_score": -0.517,
+          "breadth_thrust": null,
+          "rs_slope": -0.63,
+          "rs_1m": -2.96,
+          "above_ma200": null
+        },
+        "XLY": {
+          "macro_tilt_z": 1.17,
+          "price_momentum_z": -0.78,
+          "rotation_score": 0.292,
+          "breadth_thrust": null,
+          "rs_slope": -3.12,
+          "rs_1m": -5.6,
+          "above_ma200": null
+        },
+        "XLP": {
+          "macro_tilt_z": -1.07,
+          "price_momentum_z": -0.47,
+          "rotation_score": -0.8,
+          "breadth_thrust": null,
+          "rs_slope": -1.82,
+          "rs_1m": -6.38,
+          "above_ma200": null
+        },
+        "XLI": {
+          "macro_tilt_z": 1.29,
+          "price_momentum_z": 0.12,
+          "rotation_score": 0.764,
+          "breadth_thrust": null,
+          "rs_slope": 0.1,
+          "rs_1m": -3.1,
+          "above_ma200": null
+        },
+        "XLB": {
+          "macro_tilt_z": 1.02,
+          "price_momentum_z": 0.38,
+          "rotation_score": 0.732,
+          "breadth_thrust": null,
+          "rs_slope": 1.08,
+          "rs_1m": -2.96,
+          "above_ma200": null
+        },
+        "XLU": {
+          "macro_tilt_z": -1.36,
+          "price_momentum_z": -0.43,
+          "rotation_score": -0.942,
+          "breadth_thrust": null,
+          "rs_slope": -1.21,
+          "rs_1m": -10.26,
+          "above_ma200": null
+        },
+        "XLRE": {
+          "macro_tilt_z": -0.19,
+          "price_momentum_z": -0.39,
+          "rotation_score": -0.28,
+          "breadth_thrust": null,
+          "rs_slope": -1.56,
+          "rs_1m": -6.04,
+          "above_ma200": null
+        },
+        "XLC": {
+          "macro_tilt_z": 0.47,
+          "price_momentum_z": -0.6,
+          "rotation_score": -0.012,
+          "breadth_thrust": null,
+          "rs_slope": -2.15,
+          "rs_1m": -8.1,
+          "above_ma200": null
+        }
+      }
+    },
+    {
+      "date": "2026-06-04",
+      "regime_summary": "(backfill — DEF/cycle giữ hằng số, breadth_thrust=None)",
+      "sectors": {
+        "XLK": {
+          "macro_tilt_z": 0.77,
+          "price_momentum_z": 0.54,
+          "rotation_score": 0.667,
+          "breadth_thrust": null,
+          "rs_slope": 0.31,
+          "rs_1m": 11.5,
+          "above_ma200": null
+        },
+        "XLF": {
+          "macro_tilt_z": 0.44,
+          "price_momentum_z": 0.48,
+          "rotation_score": 0.458,
+          "breadth_thrust": null,
+          "rs_slope": 2.24,
+          "rs_1m": -3.29,
+          "above_ma200": null
+        },
+        "XLE": {
+          "macro_tilt_z": -1.45,
+          "price_momentum_z": 0.89,
+          "rotation_score": -0.397,
+          "breadth_thrust": null,
+          "rs_slope": 4.14,
+          "rs_1m": -5.53,
+          "above_ma200": null
+        },
+        "XLV": {
+          "macro_tilt_z": -0.92,
+          "price_momentum_z": 0.14,
+          "rotation_score": -0.443,
+          "breadth_thrust": null,
+          "rs_slope": 0.45,
+          "rs_1m": 0.05,
+          "above_ma200": null
+        },
+        "XLY": {
+          "macro_tilt_z": 1.2,
+          "price_momentum_z": -0.97,
+          "rotation_score": 0.224,
+          "breadth_thrust": null,
+          "rs_slope": -3.05,
+          "rs_1m": -5.06,
+          "above_ma200": null
+        },
+        "XLP": {
+          "macro_tilt_z": -1.08,
+          "price_momentum_z": -0.64,
+          "rotation_score": -0.882,
+          "breadth_thrust": null,
+          "rs_slope": -1.54,
+          "rs_1m": -6.7,
+          "above_ma200": null
+        },
+        "XLI": {
+          "macro_tilt_z": 1.2,
+          "price_momentum_z": 0.34,
+          "rotation_score": 0.813,
+          "breadth_thrust": null,
+          "rs_slope": 1.58,
+          "rs_1m": -2.32,
+          "above_ma200": null
+        },
+        "XLB": {
+          "macro_tilt_z": 0.93,
+          "price_momentum_z": 0.16,
+          "rotation_score": 0.584,
+          "breadth_thrust": null,
+          "rs_slope": 1.18,
+          "rs_1m": -4.24,
+          "above_ma200": null
+        },
+        "XLU": {
+          "macro_tilt_z": -1.44,
+          "price_momentum_z": -0.25,
+          "rotation_score": -0.905,
+          "breadth_thrust": null,
+          "rs_slope": 0.37,
+          "rs_1m": -9.41,
+          "above_ma200": null
+        },
+        "XLRE": {
+          "macro_tilt_z": -0.18,
+          "price_momentum_z": 0.02,
+          "rotation_score": -0.09,
+          "breadth_thrust": null,
+          "rs_slope": 0.58,
+          "rs_1m": -3.9,
+          "above_ma200": null
+        },
+        "XLC": {
+          "macro_tilt_z": 0.52,
+          "price_momentum_z": -0.71,
+          "rotation_score": -0.033,
+          "breadth_thrust": null,
+          "rs_slope": -1.83,
+          "rs_1m": -6.48,
+          "above_ma200": null
+        }
+      }
+    },
+    {
+      "date": "2026-06-05",
+      "regime_summary": "(backfill — DEF/cycle giữ hằng số, breadth_thrust=None)",
+      "sectors": {
+        "XLK": {
+          "macro_tilt_z": -0.92,
+          "price_momentum_z": -0.83,
+          "rotation_score": -0.88,
+          "breadth_thrust": null,
+          "rs_slope": -4.5,
+          "rs_1m": 5.5,
+          "above_ma200": null
+        },
+        "XLF": {
+          "macro_tilt_z": 2.29,
+          "price_momentum_z": 0.38,
+          "rotation_score": 1.431,
+          "breadth_thrust": null,
+          "rs_slope": 3.91,
+          "rs_1m": 0.38,
+          "above_ma200": null
+        },
+        "XLE": {
+          "macro_tilt_z": -1.26,
+          "price_momentum_z": 0.58,
+          "rotation_score": -0.432,
+          "breadth_thrust": null,
+          "rs_slope": 4.92,
+          "rs_1m": 0.66,
+          "above_ma200": null
+        },
+        "XLV": {
+          "macro_tilt_z": 0.16,
+          "price_momentum_z": 0.63,
+          "rotation_score": 0.372,
+          "breadth_thrust": null,
+          "rs_slope": 3.87,
+          "rs_1m": 4.7,
+          "above_ma200": null
+        },
+        "XLY": {
+          "macro_tilt_z": 0.4,
+          "price_momentum_z": -0.88,
+          "rotation_score": -0.176,
+          "breadth_thrust": null,
+          "rs_slope": -1.42,
+          "rs_1m": -4.66,
+          "above_ma200": null
+        },
+        "XLP": {
+          "macro_tilt_z": 0.46,
+          "price_momentum_z": 0.21,
+          "rotation_score": 0.348,
+          "breadth_thrust": null,
+          "rs_slope": 3.57,
+          "rs_1m": -1.45,
+          "above_ma200": null
+        },
+        "XLI": {
+          "macro_tilt_z": 0.85,
+          "price_momentum_z": 0.2,
+          "rotation_score": 0.557,
+          "breadth_thrust": null,
+          "rs_slope": 3.67,
+          "rs_1m": -2.02,
+          "above_ma200": null
+        },
+        "XLB": {
+          "macro_tilt_z": -0.48,
+          "price_momentum_z": -0.13,
+          "rotation_score": -0.323,
+          "breadth_thrust": null,
+          "rs_slope": 2.45,
+          "rs_1m": -3.88,
+          "above_ma200": null
+        },
+        "XLU": {
+          "macro_tilt_z": -0.73,
+          "price_momentum_z": 0.03,
+          "rotation_score": -0.388,
+          "breadth_thrust": null,
+          "rs_slope": 3.23,
+          "rs_1m": -3.47,
+          "above_ma200": null
+        },
+        "XLRE": {
+          "macro_tilt_z": -1.14,
+          "price_momentum_z": 0.41,
+          "rotation_score": -0.443,
+          "breadth_thrust": null,
+          "rs_slope": 4.36,
+          "rs_1m": -0.59,
+          "above_ma200": null
+        },
+        "XLC": {
+          "macro_tilt_z": 0.36,
+          "price_momentum_z": -0.61,
+          "rotation_score": -0.077,
+          "breadth_thrust": null,
+          "rs_slope": 0.28,
+          "rs_1m": -5.32,
+          "above_ma200": null
+        }
+      }
+    },
+    {
+      "date": "2026-06-08",
+      "regime_summary": "(backfill — DEF/cycle giữ hằng số, breadth_thrust=None)",
+      "sectors": {
+        "XLK": {
+          "macro_tilt_z": -0.42,
+          "price_momentum_z": -0.93,
+          "rotation_score": -0.65,
+          "breadth_thrust": null,
+          "rs_slope": -5.22,
+          "rs_1m": 7.41,
+          "above_ma200": null
+        },
+        "XLF": {
+          "macro_tilt_z": 2.05,
+          "price_momentum_z": 0.24,
+          "rotation_score": 1.236,
+          "breadth_thrust": null,
+          "rs_slope": 3.74,
+          "rs_1m": -0.23,
+          "above_ma200": null
+        },
+        "XLE": {
+          "macro_tilt_z": -1.15,
+          "price_momentum_z": 0.41,
+          "rotation_score": -0.448,
+          "breadth_thrust": null,
+          "rs_slope": 3.7,
+          "rs_1m": 3.18,
+          "above_ma200": null
+        },
+        "XLV": {
+          "macro_tilt_z": -0.31,
+          "price_momentum_z": 0.68,
+          "rotation_score": 0.136,
+          "breadth_thrust": null,
+          "rs_slope": 4.91,
+          "rs_1m": 4.4,
+          "above_ma200": null
+        },
+        "XLY": {
+          "macro_tilt_z": 0.76,
+          "price_momentum_z": -0.4,
+          "rotation_score": 0.238,
+          "breadth_thrust": null,
+          "rs_slope": 1.31,
+          "rs_1m": -4.74,
+          "above_ma200": null
+        },
+        "XLP": {
+          "macro_tilt_z": -0.27,
+          "price_momentum_z": 0.27,
+          "rotation_score": -0.027,
+          "breadth_thrust": null,
+          "rs_slope": 4.42,
+          "rs_1m": -2.1,
+          "above_ma200": null
+        },
+        "XLI": {
+          "macro_tilt_z": 1.18,
+          "price_momentum_z": 0.18,
+          "rotation_score": 0.73,
+          "breadth_thrust": null,
+          "rs_slope": 3.65,
+          "rs_1m": -1.25,
+          "above_ma200": null
+        },
+        "XLB": {
+          "macro_tilt_z": 0.02,
+          "price_momentum_z": -0.31,
+          "rotation_score": -0.129,
+          "breadth_thrust": null,
+          "rs_slope": 1.58,
+          "rs_1m": -3.82,
+          "above_ma200": null
+        },
+        "XLU": {
+          "macro_tilt_z": -1.31,
+          "price_momentum_z": 0.19,
+          "rotation_score": -0.635,
+          "breadth_thrust": null,
+          "rs_slope": 4.69,
+          "rs_1m": -4.55,
+          "above_ma200": null
+        },
+        "XLRE": {
+          "macro_tilt_z": -1.07,
+          "price_momentum_z": 0.36,
+          "rotation_score": -0.427,
+          "breadth_thrust": null,
+          "rs_slope": 4.86,
+          "rs_1m": -1.86,
+          "above_ma200": null
+        },
+        "XLC": {
+          "macro_tilt_z": 0.52,
+          "price_momentum_z": -0.69,
+          "rotation_score": -0.024,
+          "breadth_thrust": null,
+          "rs_slope": 0.11,
+          "rs_1m": -6.33,
+          "above_ma200": null
+        }
+      }
+    },
+    {
+      "date": "2026-06-09",
+      "regime_summary": "(backfill — DEF/cycle giữ hằng số, breadth_thrust=None)",
+      "sectors": {
+        "XLK": {
+          "macro_tilt_z": -0.36,
+          "price_momentum_z": -1.23,
+          "rotation_score": -0.752,
+          "breadth_thrust": null,
+          "rs_slope": -6.74,
+          "rs_1m": 3.07,
+          "above_ma200": null
+        },
+        "XLF": {
+          "macro_tilt_z": 2.05,
+          "price_momentum_z": 0.33,
+          "rotation_score": 1.276,
+          "breadth_thrust": null,
+          "rs_slope": 4.48,
+          "rs_1m": 2.45,
+          "above_ma200": null
+        },
+        "XLE": {
+          "macro_tilt_z": -1.6,
+          "price_momentum_z": -0.08,
+          "rotation_score": -0.916,
+          "breadth_thrust": null,
+          "rs_slope": 1.3,
+          "rs_1m": 3.11,
+          "above_ma200": null
+        },
+        "XLV": {
+          "macro_tilt_z": -0.13,
+          "price_momentum_z": 1.0,
+          "rotation_score": 0.379,
+          "breadth_thrust": null,
+          "rs_slope": 6.94,
+          "rs_1m": 7.8,
+          "above_ma200": null
+        },
+        "XLY": {
+          "macro_tilt_z": 0.93,
+          "price_momentum_z": -0.33,
+          "rotation_score": 0.363,
+          "breadth_thrust": null,
+          "rs_slope": 2.38,
+          "rs_1m": -3.54,
+          "above_ma200": null
+        },
+        "XLP": {
+          "macro_tilt_z": 0.0,
+          "price_momentum_z": 0.39,
+          "rotation_score": 0.176,
+          "breadth_thrust": null,
+          "rs_slope": 5.92,
+          "rs_1m": -0.01,
+          "above_ma200": null
+        },
+        "XLI": {
+          "macro_tilt_z": 0.89,
+          "price_momentum_z": 0.13,
+          "rotation_score": 0.548,
+          "breadth_thrust": null,
+          "rs_slope": 3.54,
+          "rs_1m": 1.46,
+          "above_ma200": null
+        },
+        "XLB": {
+          "macro_tilt_z": -0.43,
+          "price_momentum_z": -0.27,
+          "rotation_score": -0.358,
+          "breadth_thrust": null,
+          "rs_slope": 1.91,
+          "rs_1m": -1.51,
+          "above_ma200": null
+        },
+        "XLU": {
+          "macro_tilt_z": -1.05,
+          "price_momentum_z": -0.03,
+          "rotation_score": -0.591,
+          "breadth_thrust": null,
+          "rs_slope": 3.63,
+          "rs_1m": -1.58,
+          "above_ma200": null
+        },
+        "XLRE": {
+          "macro_tilt_z": -0.89,
+          "price_momentum_z": 0.51,
+          "rotation_score": -0.26,
+          "breadth_thrust": null,
+          "rs_slope": 6.24,
+          "rs_1m": 1.34,
+          "above_ma200": null
+        },
+        "XLC": {
+          "macro_tilt_z": 0.58,
+          "price_momentum_z": -0.41,
+          "rotation_score": 0.135,
+          "breadth_thrust": null,
+          "rs_slope": 2.26,
+          "rs_1m": -4.59,
+          "above_ma200": null
+        }
+      }
+    },
+    {
+      "date": "2026-06-10",
+      "regime_summary": "(backfill — DEF/cycle giữ hằng số, breadth_thrust=None)",
+      "sectors": {
+        "XLK": {
+          "macro_tilt_z": -0.03,
+          "price_momentum_z": -1.31,
+          "rotation_score": -0.606,
+          "breadth_thrust": null,
+          "rs_slope": -6.7,
+          "rs_1m": 1.2,
+          "above_ma200": null
+        },
+        "XLF": {
+          "macro_tilt_z": 1.47,
+          "price_momentum_z": 0.52,
+          "rotation_score": 1.042,
+          "breadth_thrust": null,
+          "rs_slope": 5.81,
+          "rs_1m": 4.0,
+          "above_ma200": null
+        },
+        "XLE": {
+          "macro_tilt_z": -2.3,
+          "price_momentum_z": 0.03,
+          "rotation_score": -1.251,
+          "breadth_thrust": null,
+          "rs_slope": 2.25,
+          "rs_1m": 3.84,
+          "above_ma200": null
+        },
+        "XLV": {
+          "macro_tilt_z": 0.29,
+          "price_momentum_z": 0.76,
+          "rotation_score": 0.502,
+          "breadth_thrust": null,
+          "rs_slope": 5.59,
+          "rs_1m": 8.9,
+          "above_ma200": null
+        },
+        "XLY": {
+          "macro_tilt_z": 0.88,
+          "price_momentum_z": -0.4,
+          "rotation_score": 0.304,
+          "breadth_thrust": null,
+          "rs_slope": 1.83,
+          "rs_1m": -3.1,
+          "above_ma200": null
+        },
+        "XLP": {
+          "macro_tilt_z": 0.58,
+          "price_momentum_z": 0.72,
+          "rotation_score": 0.643,
+          "breadth_thrust": null,
+          "rs_slope": 7.11,
+          "rs_1m": 4.5,
+          "above_ma200": null
+        },
+        "XLI": {
+          "macro_tilt_z": 0.35,
+          "price_momentum_z": -0.32,
+          "rotation_score": 0.048,
+          "breadth_thrust": null,
+          "rs_slope": 1.64,
+          "rs_1m": -1.21,
+          "above_ma200": null
+        },
+        "XLB": {
+          "macro_tilt_z": -1.26,
+          "price_momentum_z": -0.57,
+          "rotation_score": -0.95,
+          "breadth_thrust": null,
+          "rs_slope": 0.66,
+          "rs_1m": -3.28,
+          "above_ma200": null
+        },
+        "XLU": {
+          "macro_tilt_z": -0.22,
+          "price_momentum_z": 0.13,
+          "rotation_score": -0.062,
+          "breadth_thrust": null,
+          "rs_slope": 4.82,
+          "rs_1m": -0.66,
+          "above_ma200": null
+        },
+        "XLRE": {
+          "macro_tilt_z": -0.42,
+          "price_momentum_z": 0.59,
+          "rotation_score": 0.035,
+          "breadth_thrust": null,
+          "rs_slope": 6.83,
+          "rs_1m": 2.87,
+          "above_ma200": null
+        },
+        "XLC": {
+          "macro_tilt_z": 0.65,
+          "price_momentum_z": -0.13,
+          "rotation_score": 0.299,
+          "breadth_thrust": null,
+          "rs_slope": 3.48,
+          "rs_1m": -2.12,
+          "above_ma200": null
+        }
+      }
+    },
+    {
+      "date": "2026-06-11",
+      "regime_summary": "(backfill — DEF/cycle giữ hằng số, breadth_thrust=None)",
+      "sectors": {
+        "XLK": {
+          "macro_tilt_z": 0.78,
+          "price_momentum_z": -0.94,
+          "rotation_score": 0.006,
+          "breadth_thrust": null,
+          "rs_slope": -3.77,
+          "rs_1m": 4.64,
+          "above_ma200": null
+        },
+        "XLF": {
+          "macro_tilt_z": 0.37,
+          "price_momentum_z": 0.28,
+          "rotation_score": 0.33,
+          "breadth_thrust": null,
+          "rs_slope": 2.98,
+          "rs_1m": 2.07,
+          "above_ma200": null
+        },
+        "XLE": {
+          "macro_tilt_z": -2.65,
+          "price_momentum_z": -0.56,
+          "rotation_score": -1.71,
+          "breadth_thrust": null,
+          "rs_slope": -0.06,
+          "rs_1m": -0.73,
+          "above_ma200": null
+        },
+        "XLV": {
+          "macro_tilt_z": 0.01,
+          "price_momentum_z": 0.48,
+          "rotation_score": 0.222,
+          "breadth_thrust": null,
+          "rs_slope": 2.62,
+          "rs_1m": 5.72,
+          "above_ma200": null
+        },
+        "XLY": {
+          "macro_tilt_z": 1.25,
+          "price_momentum_z": -0.16,
+          "rotation_score": 0.615,
+          "breadth_thrust": null,
+          "rs_slope": 2.17,
+          "rs_1m": -1.63,
+          "above_ma200": null
+        },
+        "XLP": {
+          "macro_tilt_z": 0.14,
+          "price_momentum_z": 0.92,
+          "rotation_score": 0.491,
+          "breadth_thrust": null,
+          "rs_slope": 6.41,
+          "rs_1m": 1.04,
+          "above_ma200": null
+        },
+        "XLI": {
+          "macro_tilt_z": 0.21,
+          "price_momentum_z": -0.06,
+          "rotation_score": 0.089,
+          "breadth_thrust": null,
+          "rs_slope": 1.91,
+          "rs_1m": 0.51,
+          "above_ma200": null
+        },
+        "XLB": {
+          "macro_tilt_z": -1.02,
+          "price_momentum_z": -0.15,
+          "rotation_score": -0.629,
+          "breadth_thrust": null,
+          "rs_slope": 2.24,
+          "rs_1m": -1.7,
+          "above_ma200": null
+        },
+        "XLU": {
+          "macro_tilt_z": -0.09,
+          "price_momentum_z": 0.05,
+          "rotation_score": -0.027,
+          "breadth_thrust": null,
+          "rs_slope": 3.46,
+          "rs_1m": -2.47,
+          "above_ma200": null
+        },
+        "XLRE": {
+          "macro_tilt_z": 0.29,
+          "price_momentum_z": 0.33,
+          "rotation_score": 0.308,
+          "breadth_thrust": null,
+          "rs_slope": 3.62,
+          "rs_1m": 0.82,
+          "above_ma200": null
+        },
+        "XLC": {
+          "macro_tilt_z": 0.7,
+          "price_momentum_z": -0.21,
+          "rotation_score": 0.29,
+          "breadth_thrust": null,
+          "rs_slope": 2.47,
+          "rs_1m": -3.17,
+          "above_ma200": null
+        }
+      }
+    },
+    {
+      "date": "2026-06-12",
+      "regime_summary": "Tăng trưởng vượt kỳ vọng, lạm phát nguội hơn kỳ vọng, lãi suất đi ngang, risk-on. Chu kỳ: đường cong normal.",
+      "sectors": {
+        "XLK": {
+          "macro_tilt_z": 1.19,
+          "price_momentum_z": -0.29,
+          "rotation_score": 0.524,
+          "breadth_thrust": -41.7,
+          "rs_slope": 0.83,
+          "rs_1m": 4.57,
+          "above_ma200": true
+        },
+        "XLF": {
+          "macro_tilt_z": 0.26,
+          "price_momentum_z": 0.27,
+          "rotation_score": 0.265,
+          "breadth_thrust": 16.6,
+          "rs_slope": 0.29,
+          "rs_1m": 4.69,
+          "above_ma200": true
+        },
+        "XLE": {
+          "macro_tilt_z": -2.01,
+          "price_momentum_z": -0.94,
+          "rotation_score": -1.528,
+          "breadth_thrust": -8.3,
+          "rs_slope": -0.76,
+          "rs_1m": -0.06,
+          "above_ma200": true
+        },
+        "XLV": {
+          "macro_tilt_z": -0.62,
+          "price_momentum_z": -0.68,
+          "rotation_score": -0.647,
+          "breadth_thrust": 0.0,
+          "rs_slope": -1.22,
+          "rs_1m": 4.92,
+          "above_ma200": true
+        },
+        "XLY": {
+          "macro_tilt_z": 1.52,
+          "price_momentum_z": 0.67,
+          "rotation_score": 1.138,
+          "breadth_thrust": 41.7,
+          "rs_slope": 1.35,
+          "rs_1m": -1.71,
+          "above_ma200": false
+        },
+        "XLP": {
+          "macro_tilt_z": -0.82,
+          "price_momentum_z": 0.71,
+          "rotation_score": -0.132,
+          "breadth_thrust": 8.3,
+          "rs_slope": 1.94,
+          "rs_1m": 1.37,
+          "above_ma200": true
+        },
+        "XLI": {
+          "macro_tilt_z": 0.66,
+          "price_momentum_z": -0.12,
+          "rotation_score": 0.309,
+          "breadth_thrust": 8.3,
+          "rs_slope": 0.21,
+          "rs_1m": 1.55,
+          "above_ma200": true
+        },
+        "XLB": {
+          "macro_tilt_z": -0.11,
+          "price_momentum_z": 1.21,
+          "rotation_score": 0.484,
+          "breadth_thrust": 33.4,
+          "rs_slope": 2.41,
+          "rs_1m": 0.31,
+          "above_ma200": true
+        },
+        "XLU": {
+          "macro_tilt_z": -1.02,
+          "price_momentum_z": -0.17,
+          "rotation_score": -0.638,
+          "breadth_thrust": 25.0,
+          "rs_slope": -0.1,
+          "rs_1m": -0.24,
+          "above_ma200": true
+        },
+        "XLRE": {
+          "macro_tilt_z": 0.16,
+          "price_momentum_z": -0.13,
+          "rotation_score": 0.03,
+          "breadth_thrust": 0.0,
+          "rs_slope": 0.26,
+          "rs_1m": 2.68,
+          "above_ma200": true
+        },
+        "XLC": {
+          "macro_tilt_z": 0.78,
+          "price_momentum_z": -0.54,
+          "rotation_score": 0.186,
+          "breadth_thrust": 0.0,
+          "rs_slope": 0.44,
+          "rs_1m": -4.3,
+          "above_ma200": false
+        }
+      }
+    }
+  ]
+}

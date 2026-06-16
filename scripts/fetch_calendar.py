@@ -409,6 +409,45 @@ def _add_earnings(out: list, ts, ticker, name, etf, start, end,
         pass
 
 
+def build_lookahead(macro: list[dict], earnings: list[dict], fed_speakers: list[dict],
+                     today: date) -> dict[str, Any]:
+    """Deterministic 'what's next' slices: tomorrow + rest of this week.
+
+    Filters earnings/Fed speakers to importance that matters for a macro report
+    (high-importance tickers, high/medium Fed impact) so the analyst doesn't have
+    to judge significance — only macro releases are kept unfiltered (all matter).
+    """
+    tomorrow = today + timedelta(days=1)
+    week_end = today + timedelta(days=7)
+
+    def _on(events: list[dict], d: date) -> list[dict]:
+        return [e for e in events if e.get("date") == d.isoformat()]
+
+    def _between(events: list[dict], start: date, end: date) -> list[dict]:
+        return [e for e in events if start.isoformat() <= e.get("date", "") <= end.isoformat()]
+
+    tomorrow_earnings = [e for e in _on(earnings, tomorrow) if e.get("importance") == "high"]
+    tomorrow_fed = [e for e in _on(fed_speakers, tomorrow) if e.get("impact") in ("high", "medium")]
+
+    week_earnings = [e for e in _between(earnings, today, week_end) if e.get("importance") == "high"]
+    week_fed = [e for e in _between(fed_speakers, today, week_end) if e.get("impact") in ("high", "medium")]
+
+    return {
+        "tomorrow_date": tomorrow.isoformat(),
+        "week_end_date": week_end.isoformat(),
+        "tomorrow": {
+            "macro": _on(macro, tomorrow),
+            "earnings": tomorrow_earnings,
+            "fed_speakers": tomorrow_fed,
+        },
+        "this_week": {
+            "macro": _between(macro, today, week_end),
+            "earnings": week_earnings,
+            "fed_speakers": week_fed,
+        },
+    }
+
+
 def main() -> int:
     today = date.today()
     end = today + timedelta(days=21)
@@ -435,6 +474,12 @@ def main() -> int:
 
     macro.sort(key=lambda x: x["date"])
 
+    lookahead = build_lookahead(macro, earnings_unique, fed_speakers, today)
+    print(f"  Lookahead: {len(lookahead['tomorrow']['macro'])} macro + "
+          f"{len(lookahead['tomorrow']['earnings'])} earnings ngày mai; "
+          f"{len(lookahead['this_week']['macro'])} macro + "
+          f"{len(lookahead['this_week']['earnings'])} earnings tuần này")
+
     payload = {
         "schema_version": SCHEMA_VERSION,
         "fetched_at": datetime.now(timezone.utc).isoformat(),
@@ -443,6 +488,7 @@ def main() -> int:
         "macro": macro,
         "earnings": earnings_unique,
         "fed_speakers": fed_speakers,
+        "lookahead": lookahead,
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False))

@@ -18,7 +18,9 @@ from pathlib import Path
 import yfinance as yf
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "data" / "sectors_latest.json"
+OUT = ROOT / "data" / "sectors_latest.json"        # full (with rs_history) — for dashboard charts
+OUT_LITE = ROOT / "data" / "sectors_lite.json"     # no rs_history — for LLM agents (~10x smaller)
+OUT_HOLDINGS = ROOT / "data" / "sector_holdings_latest.json"  # per-stock universe — rotation handoff
 
 SCHEMA_VERSION = "1.1"  # bump when payload structure changes
 
@@ -91,12 +93,34 @@ def compute_returns(closes) -> dict:
     return out
 
 
+def _pct_above_ma50_at(holdings_closes: dict, holdings: list, back: int) -> float | None:
+    """% of holdings whose close was above its trailing MA50 `back` sessions ago.
+    back=0 → today. Used to compute a self-contained breadth thrust (no persistence).
+    """
+    n_total = n_above = 0
+    for h in holdings:
+        s = holdings_closes.get(h)
+        if s is None or len(s) < 50 + back + 1:
+            continue
+        end = len(s) - back
+        latest = float(s.iloc[end - 1])
+        ma50 = float(s.iloc[end - 50:end].mean())
+        n_total += 1
+        if latest > ma50:
+            n_above += 1
+    return round(n_above / n_total * 100, 1) if n_total else None
+
+
 def compute_sector_breadth(sector_etf: str, holdings_closes: dict) -> dict:
-    """Compute % of sector ETF's holdings above MA50 and MA200, plus breadth flag.
+    """Compute % of sector ETF's holdings above MA50 and MA200, plus breadth flag
+    and a 5-session breadth THRUST (Δ pct_above_ma50) — the rotation-flow signal:
+    money entering a sector lifts its members above MA50 before the cap-weighted
+    ETF return shows it.
 
     Returns dict with:
     - pct_above_ma50, pct_above_ma200
-    - breadth_flag: 'broad' (>=70% above MA50), 'healthy' (40-70%), 'narrow' (<40%)
+    - breadth_flag: 'broad' (>65% above MA50), 'healthy' (40-65%), 'narrow' (<40%)
+    - breadth_thrust: pct_above_ma50 now minus 5 sessions ago (signed pp)
     - holdings_checked: count of holdings successfully evaluated
     """
     holdings = SECTOR_BREADTH_HOLDINGS.get(sector_etf, [])
@@ -128,7 +152,7 @@ def compute_sector_breadth(sector_etf: str, holdings_closes: dict) -> dict:
         flag = "healthy"
     else:
         flag = "narrow"
-    return {
+    out = {
         "pct_above_ma50": pct50,
         "pct_above_ma200": pct200,
         "breadth_flag": flag,
@@ -136,6 +160,34 @@ def compute_sector_breadth(sector_etf: str, holdings_closes: dict) -> dict:
         "holdings_above_ma50": n_above_ma50,
         "holdings_above_ma200": n_above_ma200,
     }
+    pct50_5d = _pct_above_ma50_at(holdings_closes, holdings, back=5)
+    if pct50_5d is not None:
+        out["breadth_thrust"] = round(pct50 - pct50_5d, 1)
+    return out
+
+
+def compute_holding_metrics(s, spy_closes) -> dict | None:
+    """Per-stock snapshot for the rotation handoff universe: enough for a
+    stock-picking agent to rank names within a sector without re-downloading.
+    """
+    if s is None or len(s) < 200:
+        return None
+    latest = float(s.iloc[-1])
+    ma50 = float(s.tail(50).mean())
+    ma200 = float(s.tail(200).mean())
+    out = {
+        "latest": round(latest, 2),
+        "ret_1m": pct(latest, float(s.iloc[-22])) if len(s) > 22 else None,
+        "ret_3m": pct(latest, float(s.iloc[-64])) if len(s) > 64 else None,
+        "above_ma50": latest > ma50,
+        "above_ma200": latest > ma200,
+    }
+    # Relative strength vs SPY = excess return (simple, good enough to rank names).
+    if spy_closes is not None and len(spy_closes) > 22:
+        spy_1m = pct(float(spy_closes.iloc[-1]), float(spy_closes.iloc[-22]))
+        if out["ret_1m"] is not None and spy_1m is not None:
+            out["rs_1m"] = round(out["ret_1m"] - spy_1m, 2)
+    return out
 
 
 def fetch_all(period: str = "2y") -> dict:
@@ -196,6 +248,10 @@ def fetch_all(period: str = "2y") -> dict:
                     cy = ratio_norm[ratio_norm.index.year == ratio_norm.index[-1].year]
                     if len(cy) > 1:
                         info["rs_ytd"] = pct(float(cy.iloc[-1]), float(cy.iloc[0]))
+                # RS slope (momentum of relative strength): is the last week of RS
+                # outpacing the monthly run-rate? >0 = RS accelerating = rotation IN.
+                if info.get("rs_1w") is not None and info.get("rs_1m") is not None:
+                    info["rs_slope"] = round(info["rs_1w"] - info["rs_1m"] * (5 / 21), 2)
 
         sectors_out[ticker] = info
 
@@ -205,19 +261,60 @@ def fetch_all(period: str = "2y") -> dict:
         benchmark_out["name"] = "S&P 500 (SPY benchmark)"
         benchmark_out["ticker"] = BENCHMARK
 
+    # Per-stock universe per sector — the candidate list a stock-picking agent
+    # filters once the rotation engine flags a sector. Data already downloaded.
+    holdings_out = {}
+    for ticker in SECTORS:
+        members = []
+        for h in SECTOR_BREADTH_HOLDINGS.get(ticker, []):
+            m = compute_holding_metrics(closes.get(h), spy_closes)
+            if m:
+                m["ticker"] = h
+                members.append(m)
+        members.sort(key=lambda x: (x.get("rs_1m") is not None, x.get("rs_1m", -999)), reverse=True)
+        if members:
+            holdings_out[ticker] = members
+
     return {
         "schema_version": SCHEMA_VERSION,
         "fetched_at": datetime.now(timezone.utc).isoformat(),
         "benchmark": benchmark_out,
         "sectors": sectors_out,
+        "holdings": holdings_out,
     }
+
+
+def make_lite(payload: dict) -> dict:
+    """Strip the large rs_history array from each sector — agents only read the
+    scalar metrics (ret_*, rs_*, above_ma200, breadth). Cuts the file ~10x
+    (~56K → ~5K tokens) while preserving every signal the agents actually use.
+    """
+    lite = {k: v for k, v in payload.items() if k not in ("sectors", "holdings")}
+    lite["sectors"] = {}
+    for ticker, info in payload.get("sectors", {}).items():
+        lite["sectors"][ticker] = {k: v for k, v in info.items() if k != "rs_history"}
+    return lite
 
 
 def main() -> int:
     payload = fetch_all()
     OUT.parent.mkdir(parents=True, exist_ok=True)
+    # Holdings universe → its own file (rotation handoff); keep it out of the
+    # dashboard/agent sector files which only need ETF-level metrics.
+    holdings = payload.pop("holdings", {})
     OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False))
+    OUT_LITE.write_text(json.dumps(make_lite(payload), indent=2, ensure_ascii=False))
+    OUT_HOLDINGS.write_text(json.dumps({
+        "schema_version": SCHEMA_VERSION,
+        "fetched_at": payload["fetched_at"],
+        "note": "Candidate universe per sector for the stock-picking agent. "
+                "Sorted by rs_1m (excess return vs SPY). Filtered downstream once "
+                "build_sector_rotation.py flags a sector.",
+        "holdings": holdings,
+    }, indent=2, ensure_ascii=False))
     print(f"Wrote {OUT}")
+    print(f"Wrote {OUT_LITE} (no rs_history — for agents)")
+    print(f"Wrote {OUT_HOLDINGS} ({sum(len(v) for v in holdings.values())} stocks across {len(holdings)} sectors)")
     print(f"  {len(payload['sectors'])} sectors collected")
     # Print quick leaderboard 1M return
     leaders = sorted(
