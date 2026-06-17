@@ -233,7 +233,52 @@ window.INDICATORS = {
       why: "Cùng với import prices tạo bức tranh terms-of-trade; agricultural exports rất nhạy với chu kỳ hàng hóa nông sản.",
       watch: "So sánh Agricultural vs Nonagricultural exports; USD mạnh thường kéo giá xuất (tính bằng USD) chịu áp lực.",
     },
+    // ===== TỒN KHO DẦU KHÍ (EIA) — không có trên FRED, lấy từ EIA API =====
+    "EIA_CRUDE": {
+      name: "Crude Oil Stocks — Tồn kho dầu thô (ex-SPR)",
+      unit: "Nghìn thùng (level)",
+      freq: "Hàng tuần (EIA, thứ Tư)",
+      source: "EIA (Cơ quan Thông tin Năng lượng Mỹ)",
+      what: "Tổng tồn kho dầu thô thương mại Mỹ (không tính Kho Dự trữ Chiến lược SPR).",
+      high_means: "Tồn kho tăng → cung dư/cầu yếu → áp lực GIẢM giá dầu. Xấu cho XLE (Energy), tốt cho nhóm nhạy chi phí năng lượng (vận tải, hàng không, hóa chất).",
+      low_means: "Tồn kho giảm mạnh (draw) → cầu mạnh/cung thắt → áp lực TĂNG giá dầu → hỗ trợ XLE, áp lực lạm phát năng lượng.",
+      why: "Số tuần EIA là một trong những catalyst giao dịch dầu lớn nhất; so với forecast & mức theo mùa quan trọng hơn level tuyệt đối.",
+      watch: "Đối chiếu với draw/build theo mùa và Cushing (điểm giao COMEX). Build bất thường mùa hè = bearish dầu.",
+    },
+    "EIA_GASOLINE": {
+      name: "Gasoline Stocks — Tồn kho xăng",
+      unit: "Nghìn thùng (level)",
+      freq: "Hàng tuần (EIA)",
+      source: "EIA",
+      what: "Tổng tồn kho xăng thành phẩm Mỹ.",
+      high_means: "Tồn kho xăng cao → biên lọc dầu (crack spread) hẹp, giá bơm có thể giảm. Tốt cho tiêu dùng, xấu cho refiner.",
+      low_means: "Tồn kho xăng thấp (đặc biệt mùa lái xe hè) → giá bơm tăng → áp lực CPI năng lượng + sức mua tiêu dùng.",
+      why: "Xăng là cầu nối giá dầu → túi tiền người tiêu dùng; mùa hè (driving season) là cao điểm.",
+      watch: "Theo dõi cùng crude + crack spread; draw mạnh trước hè = bullish refiner.",
+    },
+    "EIA_DISTILLATE": {
+      name: "Distillate Stocks — Tồn kho dầu chưng cất (diesel/heating)",
+      unit: "Nghìn thùng (level)",
+      freq: "Hàng tuần (EIA)",
+      source: "EIA",
+      what: "Tồn kho dầu chưng cất (diesel + dầu sưởi) — gắn với vận tải hàng hóa & công nghiệp.",
+      high_means: "Tồn kho cao → cầu công nghiệp/vận tải yếu → tín hiệu tăng trưởng chậm; giá diesel hạ.",
+      low_means: "Tồn kho thấp → cầu vận tải/công nghiệp mạnh hoặc cung thắt → giá diesel tăng (chi phí logistics).",
+      why: "Distillate phản ánh sức khỏe vận tải & sản xuất — proxy hữu ích cho hoạt động kinh tế thực.",
+      watch: "Đặc biệt quan trọng mùa đông (heating oil); mức thấp + lạnh = spike giá.",
+    },
     // ===== NHÀ Ở =====
+    "PENDINGHOMES": {
+      name: "Pending Home Sales Index — Chỉ số doanh số nhà chờ bán (NAR)",
+      unit: "Index 2001=100",
+      freq: "Hàng tháng (NAR)",
+      source: "National Association of Realtors",
+      what: "Số hợp đồng mua nhà cũ ĐÃ KÝ nhưng chưa hoàn tất (pending). Leading indicator cho Existing Home Sales 1-2 tháng sau.",
+      high_means: "Hợp đồng tăng → thị trường nhà ấm lên → tốt cho Real Estate, Financials (mortgage), Home improvement, Materials.",
+      low_means: "Hợp đồng giảm → cầu nhà nguội (thường do lãi suất cao) → xấu cho REITs, homebuilders, mortgage lenders.",
+      why: "Đi TRƯỚC doanh số nhà hoàn tất → tín hiệu sớm về sức khỏe thị trường nhà, vốn siêu nhạy lãi suất. (Không có trên FRED — dựng từ scrape, dày dần mỗi tháng.)",
+      watch: "Nhạy với mortgage 30Y; bật mạnh khi lãi suất hạ. So với forecast quan trọng hơn level.",
+    },
     "HOUST": {
       name: "Housing Starts — Số nhà mới khởi công",
       unit: "Nghìn căn (annualized)",
@@ -558,6 +603,11 @@ window.INDICATORS = {
     // Import/Export price indexes — map investing.com release names (gồm MoM/YoY) → FRED IR/IQ
     { match: /import price/i, useFredId: "IR" },
     { match: /export price/i, useFredId: "IQ" },
+    // Non-FRED indicators (EIA petroleum stocks + NAR pending homes)
+    { match: /pending home sales/i, useFredId: "PENDINGHOMES" },
+    { match: /crude oil inventories/i, useFredId: "EIA_CRUDE" },
+    { match: /gasoline inventories/i, useFredId: "EIA_GASOLINE" },
+    { match: /distillate/i, useFredId: "EIA_DISTILLATE" },
     // ISM Mfg series — no direct FRED (paywall), use MANEMP as employment proxy + skip PMI level
     {
       match: /ism manufacturing pmi/i,

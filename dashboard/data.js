@@ -1,5 +1,5 @@
 window.MACRO_DATA = {
-  "last_updated": "2026-06-17T19:35:21.026150+00:00",
+  "last_updated": "2026-06-17T20:26:00.815421+00:00",
   "daily_releases": {
     "date": "2026-06-17",
     "releases": [
@@ -38049,6 +38049,22 @@ window.MACRO_DATA = {
           "value": 2.29
         }
       ]
+    },
+    "PENDINGHOMES": {
+      "label": "Pending Home Sales Index (NAR)",
+      "latest": {
+        "date": "2026-06-17",
+        "value": 76.8
+      },
+      "previous": null,
+      "change_pct": null,
+      "history": [
+        {
+          "date": "2026-06-17",
+          "value": 76.8
+        }
+      ],
+      "source": "scraped"
     }
   },
   "daily_reports": [

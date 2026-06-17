@@ -56,6 +56,23 @@ def parse_daily_front_matter(path: Path, include_full_body: bool = False) -> dic
     return fm
 
 
+def _merge_extra_history(history: dict[str, dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    """Merge non-FRED series (scraped accumulator + EIA) so the dashboard charts
+    them alongside FRED. Each file holds {series: {id: {label,latest,...,history}}}.
+    """
+    for fname in ("scraped_history.json", "eia_history.json"):
+        p = ROOT / "data" / fname
+        if not p.exists():
+            continue
+        try:
+            for sid, info in (json.loads(p.read_text()).get("series", {}) or {}).items():
+                if isinstance(info, dict) and info.get("history"):
+                    history[sid] = info
+        except Exception as exc:
+            print(f"  {fname} merge failed: {exc}")
+    return history
+
+
 def build_history(raw_files: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
     """For each FRED series, build a flat time series.
 
@@ -84,7 +101,7 @@ def build_history(raw_files: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
                     "change_pct": info.get("change_pct"),
                     "history": info.get("history", []),
                 }
-            return history
+            return _merge_extra_history(history)
         except Exception as exc:
             print(f"  fred_history.json failed: {exc} — falling back to raw files")
 
@@ -102,7 +119,7 @@ def build_history(raw_files: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
             "change_pct": info.get("change_pct"),
             "history": info.get("history", []),
         }
-    return history
+    return _merge_extra_history(history)
 
 
 def build_today_releases(raw_files: list[dict[str, Any]]) -> dict[str, Any]:
