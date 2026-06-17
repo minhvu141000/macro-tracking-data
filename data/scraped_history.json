@@ -1,21 +1,4 @@
 {
   "schema_version": "1.0",
-  "series": {
-    "PENDINGHOMES": {
-      "label": "Pending Home Sales Index (NAR)",
-      "latest": {
-        "date": "2026-06-17",
-        "value": 76.8
-      },
-      "previous": null,
-      "change_pct": null,
-      "history": [
-        {
-          "date": "2026-06-17",
-          "value": 76.8
-        }
-      ],
-      "source": "scraped"
-    }
-  }
+  "series": {}
 }

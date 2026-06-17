@@ -1268,7 +1268,7 @@ function bindChartCardEvents(wrap, h) {
 // nào CÔNG BỐ HÔM NAY được gắn nhãn "MỚI" và đưa lên đầu. Nếu danh sách rỗng → hiện tất
 // cả chỉ số công bố hôm nay (fallback). DFF (Fed Funds Rate) luôn bị loại.
 const TODAY_EXCLUDE = new Set(["DFF"]);
-const TODAY_INCLUDE = ["PENDINGHOMES", "EIA_CRUDE", "EIA_GASOLINE", "EIA_DISTILLATE", "IR", "IQ"];
+const TODAY_INCLUDE = ["EXHOSLUSM495S", "EIA_CRUDE", "EIA_GASOLINE", "EIA_DISTILLATE", "IR", "IQ"];
 
 function todayReleasedIds() {
   const releases = (D.daily_releases && D.daily_releases.releases) || [];

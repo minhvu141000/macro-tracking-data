@@ -27,13 +27,10 @@ OUT = ROOT / "data" / "scraped_history.json"
 # pseudo_id → how to find its value in each raw file's releases.
 # `match` is matched (case-insensitive) against release name; the FIRST release
 # whose name matches AND has a numeric parsed.actual is used for that date.
-SCRAPED_SERIES = {
-    "PENDINGHOMES": {
-        "label": "Pending Home Sales Index (NAR)",
-        # the index LEVEL, not the MoM% — must contain "index"
-        "match": r"pending home sales index",
-    },
-}
+# Hiện rỗng. Thêm chỉ số KHÔNG có trên FRED/EIA vào đây để dựng history từ scrape.
+# (Pending Home Sales đã gỡ — thay bằng Existing Home Sales EXHOSLUSM495S vốn có trên FRED.)
+# Mẫu: "PSEUDO_ID": {"label": "...", "match": r"regex tên release (parsed.actual sẽ được dùng)"}
+SCRAPED_SERIES: dict = {}
 
 
 def _series_for(spec: dict, raw_files: list[Path]) -> list[dict]:
