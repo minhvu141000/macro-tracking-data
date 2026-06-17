@@ -69,6 +69,9 @@ FRED_SERIES = {
     "LNS13023621": "Employment: Part-Time for Economic Reasons",
     # Trade (BEA Balance of Payments basis, monthly — historical trend context)
     "BOPGSTB": "Trade Balance: Goods & Services (BOP)",
+    # Import/Export price indexes (BLS, monthly) — imported-inflation channel
+    "IR": "Import Price Index (End Use: All Commodities)",
+    "IQ": "Export Price Index (End Use: All Commodities)",
     # Growth
     # GDP: investing.com headline = QoQ annualized growth RATE (e.g. +1.6%), not the
     # level in $B. A191RL1Q225SBEA is already that rate → chart it directly (view=level).

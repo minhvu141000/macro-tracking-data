@@ -210,6 +210,29 @@ window.INDICATORS = {
       watch: "Phù hợp đo trend chậm, không nên dùng cho tín hiệu ngắn hạn.",
     },
 
+    // ===== GIÁ XUẤT NHẬP KHẨU =====
+    "IR": {
+      name: "Import Price Index — Chỉ số giá nhập khẩu",
+      unit: "Index 2000=100 (thường đọc YoY/MoM %)",
+      freq: "Hàng tháng",
+      source: "BLS (Cục Thống kê Lao động Mỹ)",
+      what: "Giá hàng hóa Mỹ nhập khẩu (theo End Use). Kênh 'imported inflation' truyền vào CPI/PPI tháng sau.",
+      high_means: "Giá nhập tăng → áp lực lạm phát nhập khẩu, đẩy chi phí đầu vào. Hawkish cho Fed; áp lực margin XLY/XLP/XLI, hưởng lợi tương đối XLE.",
+      low_means: "Giá nhập giảm → disinflation phía đầu vào, dễ thở cho margin doanh nghiệp và Fed dovish hơn.",
+      why: "Đi trước CPI/PPI một phần; nhạy với USD (USD mạnh → giá nhập rẻ hơn) và giá dầu/nông sản toàn cầu.",
+      watch: "Tách Fuel vs Nonfuel: nonfuel import prices tăng bền mới đáng lo cho lạm phát lõi. Đối chiếu DXY và WTI.",
+    },
+    "IQ": {
+      name: "Export Price Index — Chỉ số giá xuất khẩu",
+      unit: "Index 2000=100 (thường đọc YoY/MoM %)",
+      freq: "Hàng tháng",
+      source: "BLS (Cục Thống kê Lao động Mỹ)",
+      what: "Giá hàng hóa Mỹ xuất khẩu (theo End Use), gồm Agricultural vs Nonagricultural.",
+      high_means: "Giá xuất tăng → terms-of-trade cải thiện, tốt cho nhà xuất khẩu Mỹ (XLB Materials, nông nghiệp, XLE). Có thể phản ánh cầu toàn cầu mạnh.",
+      low_means: "Giá xuất giảm → biên xuất khẩu hẹp, có thể báo hiệu cầu toàn cầu yếu hoặc USD mạnh gây bất lợi cạnh tranh.",
+      why: "Cùng với import prices tạo bức tranh terms-of-trade; agricultural exports rất nhạy với chu kỳ hàng hóa nông sản.",
+      watch: "So sánh Agricultural vs Nonagricultural exports; USD mạnh thường kéo giá xuất (tính bằng USD) chịu áp lực.",
+    },
     // ===== NHÀ Ở =====
     "HOUST": {
       name: "Housing Starts — Số nhà mới khởi công",
@@ -532,6 +555,9 @@ window.INDICATORS = {
 
   // Match release names from investing.com (or any generic name) to a category
   byNamePattern: [
+    // Import/Export price indexes — map investing.com release names (gồm MoM/YoY) → FRED IR/IQ
+    { match: /import price/i, useFredId: "IR" },
+    { match: /export price/i, useFredId: "IQ" },
     // ISM Mfg series — no direct FRED (paywall), use MANEMP as employment proxy + skip PMI level
     {
       match: /ism manufacturing pmi/i,
