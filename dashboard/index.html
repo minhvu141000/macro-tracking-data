@@ -64,6 +64,40 @@
   .empty { color: var(--muted); padding: 20px; text-align: center; font-style: italic; }
   .report-link { color: var(--blue); text-decoration: none; }
   .report-link:hover { text-decoration: underline; }
+  /* Report search */
+  .report-search { position: relative; margin-bottom: 20px; }
+  .report-search-box { position: relative; display: flex; align-items: center; }
+  .report-search-box .rs-icon {
+    position: absolute; left: 14px; color: var(--muted); font-size: 14px; pointer-events: none;
+  }
+  #report-search-input {
+    width: 100%; padding: 12px 40px; background: var(--panel);
+    border: 1px solid var(--border); border-radius: 10px; color: var(--text);
+    font-family: inherit; font-size: 14px; outline: none; transition: border-color .2s;
+  }
+  #report-search-input::placeholder { color: var(--muted); }
+  #report-search-input:focus { border-color: var(--blue); }
+  #report-search-clear {
+    position: absolute; right: 10px; background: transparent; border: none;
+    color: var(--muted); cursor: pointer; font-size: 18px; line-height: 1;
+    padding: 4px 8px; border-radius: 6px;
+  }
+  #report-search-clear:hover { color: var(--text); background: var(--border); }
+  .report-search-results {
+    margin-top: 8px; background: var(--panel); border: 1px solid var(--border);
+    border-radius: 10px; overflow: hidden; display: none;
+  }
+  .report-search-results.open { display: block; }
+  .rs-result {
+    padding: 10px 14px; cursor: pointer; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  }
+  .rs-result:last-child { border-bottom: none; }
+  .rs-result:hover { background: var(--border); }
+  .rs-result .rs-date { font-weight: 600; color: var(--blue); min-width: 92px; }
+  .rs-result .rs-take { color: var(--muted); font-size: 12px; flex: 1; min-width: 0; }
+  .rs-empty { padding: 14px; color: var(--muted); text-align: center; font-style: italic; }
+  .rs-count { padding: 8px 14px; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; border-bottom: 1px solid var(--border); }
   .pill {
     display: inline-block;
     padding: 2px 8px;
@@ -134,6 +168,12 @@
   /* Today panel: "MỚI" badge cho chỉ số công bố hôm nay */
   .new-badge { display:inline-block; background:#16a34a; color:#fff; font-size:9px; font-weight:700;
     padding:1px 5px; border-radius:4px; margin:0 4px; vertical-align:middle; letter-spacing:.3px; }
+  /* Today panel: thanh chọn ngày công bố */
+  .today-controls { display:flex; align-items:center; gap:8px; margin: 4px 0 14px; }
+  .today-hint { color:var(--muted); font-size:13px; }
+  .date-select { background:var(--bg); color:var(--text); border:1px solid var(--border);
+    border-radius:6px; padding:5px 10px; font-family:inherit; font-size:13px; cursor:pointer; }
+  .date-select:hover { border-color:var(--blue); }
 
   /* Sector heatmap */
   .sector-grid {
@@ -485,6 +525,15 @@
 
 <div class="container">
 
+<div class="report-search">
+  <div class="report-search-box">
+    <span class="rs-icon">🔍</span>
+    <input type="text" id="report-search-input" placeholder="Tìm báo cáo ngày (vd: 2026-06-10, hawkish, CPI, lạm phát...)" autocomplete="off">
+    <button id="report-search-clear" title="Xoá" style="display:none;">×</button>
+  </div>
+  <div class="report-search-results" id="report-search-results"></div>
+</div>
+
 <div id="monthly-reminder"></div>
 
 <section>
@@ -507,7 +556,7 @@
 </section>
 
 <section>
-  <h2>Xu hướng các chỉ số công bố hôm nay <span style="font-size:13px;font-weight:400;color:var(--muted)">(lọc theo danh sách bạn theo dõi)</span></h2>
+  <h2>Xu hướng chỉ số công bố theo ngày <span style="font-size:13px;font-weight:400;color:var(--muted)">(chọn ngày · lọc theo danh sách bạn theo dõi)</span></h2>
   <div id="release-trends" class="grid grid-3">
     <div class="empty">Đang tải...</div>
   </div>
@@ -1284,11 +1333,10 @@ const TODAY_INCLUDE = [
   "EIA_CRUDE", "EIA_GASOLINE", "EIA_DISTILLATE",
 ];
 
-function todayReleasedIds() {
-  const releases = (D.daily_releases && D.daily_releases.releases) || [];
+function releasedIdsFor(releases) {
   const h = D.history || {};
   const set = new Set();
-  releases.forEach(rel => {
+  (releases || []).forEach(rel => {
     const info = lookupIndicator({ name: rel.name });
     if (info && info._fredId && !TODAY_EXCLUDE.has(info._fredId)
         && h[info._fredId] && (h[info._fredId].history || []).length > 0) {
@@ -1298,28 +1346,45 @@ function todayReleasedIds() {
   return set;
 }
 
+let selectedReleaseDate = null;
+
 function renderTodayPanel() {
   const el = document.getElementById("release-trends");
   if (!el) return;
   const h = D.history || {};
-  const releasedToday = todayReleasedIds();
-  const releases = (D.daily_releases && D.daily_releases.releases) || [];
+  const relHist = D.releases_history || {};
+  // Mọi ngày có raw → chọn được; mặc định ngày mới nhất.
+  const dates = Object.keys(relHist).sort().reverse();
+  if (!selectedReleaseDate || !relHist[selectedReleaseDate]) {
+    selectedReleaseDate = (D.daily_releases && D.daily_releases.date) || dates[0];
+  }
+  const releases = relHist[selectedReleaseDate] || [];
+  const releasedThatDay = releasedIdsFor(releases);
 
-  // CHỈ hiện chỉ số VỪA CÔNG BỐ HÔM NAY và nằm trong danh sách theo dõi (TODAY_INCLUDE).
-  // → ngày không công bố thì không hiện (tránh loãng khi theo dõi nhiều chỉ số).
-  // Danh sách rỗng → hiện tất cả chỉ số công bố hôm nay (fallback).
+  // Thanh chọn ngày (gắn panel với NGÀY được chọn, không phải luôn ngày mới nhất)
+  let bar = document.getElementById("release-date-bar");
+  if (!bar) {
+    bar = document.createElement("div");
+    bar.id = "release-date-bar";
+    bar.className = "today-controls";
+    el.parentNode.insertBefore(bar, el);
+  }
+  bar.innerHTML = `<label class="today-hint" for="release-date-picker">Ngày công bố:</label>
+    <select id="release-date-picker" class="date-select">
+      ${dates.map(d => `<option value="${d}" ${d === selectedReleaseDate ? "selected" : ""}>${d}${d === dates[0] ? " (mới nhất)" : ""}</option>`).join("")}
+    </select>`;
+  document.getElementById("release-date-picker").addEventListener("change", e => {
+    selectedReleaseDate = e.target.value;
+    renderTodayPanel();
+  });
+
+  // CHỈ hiện chỉ số công bố ĐÚNG NGÀY ĐÓ và nằm trong danh sách theo dõi.
   let ids = TODAY_INCLUDE.length
-    ? TODAY_INCLUDE.filter(fid => releasedToday.has(fid))
-    : Array.from(releasedToday);
+    ? TODAY_INCLUDE.filter(fid => releasedThatDay.has(fid))
+    : Array.from(releasedThatDay);
 
   if (!ids.length) {
-    if (!releasedToday.size) {
-      el.innerHTML = !releases.length
-        ? `<div class="empty">Không có chỉ số nào công bố hôm nay.</div>`
-        : `<div class="empty">${releases.length} releases hôm nay nhưng không có chart tương ứng (Fed speakers, auctions, CFTC…).</div>`;
-    } else {
-      el.innerHTML = `<div class="empty">Hôm nay không có chỉ số nào trong danh sách theo dõi của bạn được công bố.</div>`;
-    }
+    el.innerHTML = `<div class="empty">Ngày ${selectedReleaseDate} không có chỉ số nào trong danh sách theo dõi của bạn được công bố.</div>`;
     return;
   }
 
@@ -1877,6 +1942,78 @@ window.selectDashboardReport = function(kind, file) {
     <span style="color: var(--muted)"> · ${r.key_takeaway || ""}</span>
   </div>`).join("");
   el.innerHTML = html;
+})();
+
+// === Report search (top of page) — searches ALL daily reports ===
+(function reportSearch() {
+  const input = document.getElementById("report-search-input");
+  const clearBtn = document.getElementById("report-search-clear");
+  const resultsEl = document.getElementById("report-search-results");
+  if (!input || !resultsEl) return;
+
+  const allDaily = (D.daily_reports || []).slice().reverse(); // mới nhất trước
+
+  // Bỏ dấu tiếng Việt + lowercase → gõ "lam phat" vẫn khớp "Lạm Phát"
+  const normalize = (s) => (s || "").toString().normalize("NFD")
+    .replace(/[̀-ͯ]/g, "").replace(/[đĐ]/g, "d").toLowerCase().trim();
+
+  // Gom text search được của mỗi báo cáo (ngày + regime + takeaway + body)
+  const indexed = allDaily.map(r => ({
+    report: r,
+    hay: normalize([r.date, r.regime_signal, r.key_takeaway, r.body_preview, r.body].filter(Boolean).join(" ")),
+  }));
+
+  const esc = (s) => (s || "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+  function render(q) {
+    const nq = normalize(q);
+    if (!nq) { resultsEl.classList.remove("open"); resultsEl.innerHTML = ""; return; }
+    const hits = indexed.filter(x => x.hay.includes(nq)).slice(0, 25);
+    if (!hits.length) {
+      resultsEl.innerHTML = `<div class="rs-empty">Không tìm thấy báo cáo nào khớp "<strong>${esc(q)}</strong>".</div>`;
+      resultsEl.classList.add("open");
+      return;
+    }
+    let html = `<div class="rs-count">${hits.length} kết quả${hits.length === 25 ? "+" : ""}</div>`;
+    html += hits.map(x => {
+      const r = x.report;
+      const pill = r.regime_signal ? `<span class="pill ${r.regime_signal}">${r.regime_signal}</span>` : "";
+      return `<div class="rs-result" data-file="${esc(r.file)}">
+        <span class="rs-date">${esc(r.date)}</span>
+        ${pill}
+        <span class="rs-take">${esc(r.key_takeaway || r.body_preview || "")}</span>
+      </div>`;
+    }).join("");
+    resultsEl.innerHTML = html;
+    resultsEl.classList.add("open");
+
+    resultsEl.querySelectorAll(".rs-result").forEach(elr => {
+      elr.addEventListener("click", () => {
+        window.selectDashboardReport("daily", elr.dataset.file);
+        resultsEl.classList.remove("open");
+      });
+    });
+  }
+
+  input.addEventListener("input", (e) => {
+    clearBtn.style.display = e.target.value ? "block" : "none";
+    render(e.target.value);
+  });
+  clearBtn.addEventListener("click", () => {
+    input.value = ""; clearBtn.style.display = "none";
+    resultsEl.classList.remove("open"); resultsEl.innerHTML = ""; input.focus();
+  });
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      input.value = ""; clearBtn.style.display = "none";
+      resultsEl.classList.remove("open"); resultsEl.innerHTML = "";
+    }
+  });
+  // Click ra ngoài thì đóng kết quả
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".report-search")) resultsEl.classList.remove("open");
+  });
+  input.addEventListener("focus", () => { if (input.value) render(input.value); });
 })();
 </script>
 </body>
