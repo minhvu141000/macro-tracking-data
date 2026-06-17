@@ -131,6 +131,17 @@
     color: white;
   }
 
+  /* Today panel: watchlist controls + pin star */
+  .today-controls { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin: 4px 0 14px; }
+  .today-mode { display:flex; gap:2px; background:var(--bg); border:1px solid var(--border); border-radius:6px; padding:2px; }
+  .today-mode-btn { background:transparent; border:none; color:var(--muted); font-size:12px; padding:5px 12px; border-radius:4px; cursor:pointer; font-family:inherit; font-weight:600; transition:background .15s,color .15s; }
+  .today-mode-btn:hover { color:var(--text); }
+  .today-mode-btn.active { background:var(--blue); color:white; }
+  .today-hint { color:var(--muted); font-size:12px; }
+  .pin-btn { background:transparent; border:none; cursor:pointer; font-size:15px; line-height:1; padding:2px 5px; color:var(--muted); transition:color .15s, transform .1s; }
+  .pin-btn:hover { transform:scale(1.25); color:var(--text); }
+  .pin-btn.pinned { color:#f5b301; }
+
   /* Sector heatmap */
   .sector-grid {
     display: grid;
@@ -1224,13 +1235,20 @@ function buildToggleButtons(fredId, currentView) {
 }
 
 // Helper: build a chart card with label + toggle. Shared by Daily releases section and Monthly full view.
-function buildChartCard(fredId, h) {
+function buildChartCard(fredId, h, opts) {
+  opts = opts || {};
   const defaultView = DEFAULT_VIEW[fredId] || "level";
+  const pin = opts.pinnable
+    ? `<button class="pin-btn ${opts.pinned ? "pinned" : ""}" data-pin="${fredId}" title="${opts.pinned ? "Bỏ khỏi danh sách của tôi" : "Thêm vào danh sách của tôi"}">${opts.pinned ? "★" : "☆"}</button>`
+    : "";
   return `
     <div class="card" data-fred-id="${fredId}">
       <div class="card-header">
         <div class="kpi-label clickable-label" data-fred-id="${fredId}">${(h[fredId] && h[fredId].label) || fredId} <span class="info-icon" title="Xem giải thích">i</span></div>
-        <div class="view-toggle" data-fred-id="${fredId}">${buildToggleButtons(fredId, defaultView)}</div>
+        <div style="display:flex; align-items:center; gap:4px;">
+          ${pin}
+          <div class="view-toggle" data-fred-id="${fredId}">${buildToggleButtons(fredId, defaultView)}</div>
+        </div>
       </div>
       <div class="chart-box"><canvas id="chart-${fredId}"></canvas></div>
     </div>`;
@@ -1257,48 +1275,100 @@ function bindChartCardEvents(wrap, h) {
 }
 
 // === Daily release trends — dynamic, based on today's releases ===
-(function renderReleaseTrends() {
-  const el = document.getElementById("release-trends");
-  if (!el) return;
+// Người dùng tự xây "watchlist" (lưu localStorage): mỗi ngày xem các chỉ số công bố,
+// bấm ☆ để ghim cái quan tâm. Chế độ "Chỉ chỉ số tôi chọn" lọc panel còn watchlist;
+// lần sau bất kỳ chỉ số đã ghim nào được công bố sẽ tự hiện.
+const TODAY_EXCLUDE = new Set(["DFF"]);  // Fed Funds Rate — không hiện ở panel này
+const WATCH_KEY = "macroTodayWatchlist";
+const MODE_KEY = "macroTodayMode";
+
+function getWatchlist() {
+  try { return new Set(JSON.parse(localStorage.getItem(WATCH_KEY) || "[]")); }
+  catch (e) { return new Set(); }
+}
+function setWatchlist(set) {
+  localStorage.setItem(WATCH_KEY, JSON.stringify(Array.from(set)));
+}
+function getTodayMode() { return localStorage.getItem(MODE_KEY) || "all"; }
+function setTodayMode(m) { localStorage.setItem(MODE_KEY, m); }
+
+function todayEligible() {
+  // fredId -> displayName cho mọi chỉ số công bố HÔM NAY có history để chart.
   const releases = (D.daily_releases && D.daily_releases.releases) || [];
   const h = D.history || {};
-
-  // Map each release → FRED ID via byNamePattern; dedupe
-  // EXCLUDE: chỉ số KHÔNG hiện ở mục "công bố hôm nay" dù release map vào (vd Fed
-  // Funds Rate — FOMC days kéo nó vào nhưng người dùng không muốn nó ở đây).
-  const EXCLUDE_TODAY = new Set(["DFF"]);
-  const fredMap = new Map();  // fredId -> { name, releaseNames[] }
+  const map = new Map();
   releases.forEach(rel => {
     const info = lookupIndicator({ name: rel.name });
-    if (info && info._fredId && !EXCLUDE_TODAY.has(info._fredId)
+    if (info && info._fredId && !TODAY_EXCLUDE.has(info._fredId)
         && h[info._fredId] && (h[info._fredId].history || []).length > 0) {
-      const fid = info._fredId;
-      if (!fredMap.has(fid)) {
-        fredMap.set(fid, { fredId: fid, displayName: info.name || rel.name, releaseNames: [] });
-      }
-      fredMap.get(fid).releaseNames.push(rel.name);
+      if (!map.has(info._fredId)) map.set(info._fredId, info.name || rel.name);
     }
   });
+  return map;
+}
 
-  if (!fredMap.size) {
-    if (!releases.length) {
-      el.innerHTML = `<div class="empty">Không có chỉ số nào công bố hôm nay. Xem chart xu hướng đầy đủ trong tab "Tháng" của Insights, hoặc click trên KPI cards trên đầu trang.</div>`;
+function renderTodayPanel() {
+  const el = document.getElementById("release-trends");
+  if (!el) return;
+  const h = D.history || {};
+  const releases = (D.daily_releases && D.daily_releases.releases) || [];
+  const eligible = todayEligible();
+  const watch = getWatchlist();
+  const mode = getTodayMode();
+
+  // Control bar (chèn ngay trước grid; tạo lại mỗi lần render)
+  const oldBar = document.getElementById("today-controls");
+  if (oldBar) oldBar.remove();
+  if (eligible.size) {
+    const bar = document.createElement("div");
+    bar.id = "today-controls";
+    bar.className = "today-controls";
+    bar.innerHTML = `
+      <div class="today-mode">
+        <button class="today-mode-btn ${mode === "all" ? "active" : ""}" data-mode="all">Tất cả hôm nay (${eligible.size})</button>
+        <button class="today-mode-btn ${mode === "selected" ? "active" : ""}" data-mode="selected">Chỉ chỉ số tôi chọn (${watch.size})</button>
+      </div>
+      <span class="today-hint">${mode === "all" ? "Bấm ☆ trên chart để thêm vào danh sách của bạn." : "Đang lọc theo danh sách bạn đã ghim."}</span>`;
+    el.parentNode.insertBefore(bar, el);
+    bar.querySelectorAll(".today-mode-btn").forEach(btn => {
+      btn.addEventListener("click", () => { setTodayMode(btn.dataset.mode); renderTodayPanel(); });
+    });
+  }
+
+  // Chọn chỉ số hiển thị theo chế độ
+  let ids = Array.from(eligible.keys());
+  if (mode === "selected") ids = ids.filter(fid => watch.has(fid));
+
+  // Empty states
+  if (!ids.length) {
+    if (!eligible.size) {
+      el.innerHTML = !releases.length
+        ? `<div class="empty">Không có chỉ số nào công bố hôm nay. Xem chart đầy đủ trong tab "Tháng".</div>`
+        : `<div class="empty">${releases.length} releases hôm nay nhưng không có chart tương ứng (Fed speakers, auctions, CFTC…).</div>`;
+    } else if (!watch.size) {
+      el.innerHTML = `<div class="empty">Bạn chưa ghim chỉ số nào. Chuyển sang "Tất cả hôm nay" rồi bấm ☆ trên chart để xây danh sách của bạn.</div>`;
     } else {
-      el.innerHTML = `<div class="empty">${releases.length} releases hôm nay nhưng không có chart xu hướng FRED tương ứng (chủ yếu là Fed speakers, auctions, CFTC positioning). Xem trong tab "Tháng" cho chart đầy đủ.</div>`;
+      el.innerHTML = `<div class="empty">Hôm nay không có chỉ số nào trong danh sách của bạn được công bố. Xem "Tất cả hôm nay" để thêm cái mới.</div>`;
     }
     return;
   }
 
-  // Render cards
-  const cards = Array.from(fredMap.values()).map(item => buildChartCard(item.fredId, h)).join("");
-  el.innerHTML = cards;
+  // Render cards (có nút ghim)
+  el.innerHTML = ids.map(fid => buildChartCard(fid, h, { pinnable: true, pinned: watch.has(fid) })).join("");
   bindChartCardEvents(el, h);
-
-  // Initial render
-  fredMap.forEach((item, fredId) => {
-    renderChart(fredId, DEFAULT_VIEW[fredId] || "level");
+  el.querySelectorAll(".pin-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const fid = btn.dataset.pin;
+      const w = getWatchlist();
+      w.has(fid) ? w.delete(fid) : w.add(fid);
+      setWatchlist(w);
+      renderTodayPanel();
+    });
   });
-})();
+  ids.forEach(fid => renderChart(fid, DEFAULT_VIEW[fid] || "level"));
+}
+
+renderTodayPanel();
 
 // === Monthly full view — lazy renders when Tháng tab clicked ===
 function renderMonthlyFullCharts(container) {
