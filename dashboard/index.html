@@ -507,7 +507,7 @@
 </section>
 
 <section>
-  <h2>Xu hướng các chỉ số theo dõi <span style="font-size:13px;font-weight:400;color:var(--muted)">(nhãn <span class="new-badge">MỚI</span> = công bố hôm nay)</span></h2>
+  <h2>Xu hướng các chỉ số công bố hôm nay <span style="font-size:13px;font-weight:400;color:var(--muted)">(lọc theo danh sách bạn theo dõi)</span></h2>
   <div id="release-trends" class="grid grid-3">
     <div class="empty">Đang tải...</div>
   </div>
@@ -1263,10 +1263,10 @@ function bindChartCardEvents(wrap, h) {
 }
 
 // === Daily release trends panel ===
-// Danh sách chỉ số trong panel này do người dùng chỉ định (báo Claude để thêm/bớt vào
-// TODAY_INCLUDE). LUÔN hiện chart các chỉ số trong danh sách với dữ liệu mới nhất; cái
-// nào CÔNG BỐ HÔM NAY được gắn nhãn "MỚI" và đưa lên đầu. Nếu danh sách rỗng → hiện tất
-// cả chỉ số công bố hôm nay (fallback). DFF (Fed Funds Rate) luôn bị loại.
+// TODAY_INCLUDE = danh sách chỉ số người dùng THEO DÕI (báo Claude để thêm/bớt). Panel
+// CHỈ hiện chart của chỉ số nào VỪA CÔNG BỐ HÔM NAY và nằm trong danh sách này → ngày
+// không công bố thì không hiện (tránh loãng khi theo dõi nhiều chỉ số). Rỗng → hiện tất
+// cả công bố hôm nay (fallback). DFF (Fed Funds Rate) luôn bị loại.
 const TODAY_EXCLUDE = new Set(["DFF"]);
 const TODAY_INCLUDE = ["EXHOSLUSM495S", "EIA_CRUDE", "EIA_GASOLINE", "EIA_DISTILLATE", "IR", "IQ"];
 
@@ -1289,21 +1289,27 @@ function renderTodayPanel() {
   if (!el) return;
   const h = D.history || {};
   const releasedToday = todayReleasedIds();
+  const releases = (D.daily_releases && D.daily_releases.releases) || [];
 
-  let ids;
-  if (TODAY_INCLUDE.length) {
-    ids = TODAY_INCLUDE.filter(fid => h[fid] && (h[fid].history || []).length);
-    ids.sort((a, b) => (releasedToday.has(b) ? 1 : 0) - (releasedToday.has(a) ? 1 : 0));
-  } else {
-    ids = Array.from(releasedToday);
-  }
+  // CHỈ hiện chỉ số VỪA CÔNG BỐ HÔM NAY và nằm trong danh sách theo dõi (TODAY_INCLUDE).
+  // → ngày không công bố thì không hiện (tránh loãng khi theo dõi nhiều chỉ số).
+  // Danh sách rỗng → hiện tất cả chỉ số công bố hôm nay (fallback).
+  let ids = TODAY_INCLUDE.length
+    ? TODAY_INCLUDE.filter(fid => releasedToday.has(fid))
+    : Array.from(releasedToday);
 
   if (!ids.length) {
-    el.innerHTML = `<div class="empty">Chưa có chỉ số nào trong panel. Báo Claude chỉ số bạn muốn theo dõi để thêm vào.</div>`;
+    if (!releasedToday.size) {
+      el.innerHTML = !releases.length
+        ? `<div class="empty">Không có chỉ số nào công bố hôm nay.</div>`
+        : `<div class="empty">${releases.length} releases hôm nay nhưng không có chart tương ứng (Fed speakers, auctions, CFTC…).</div>`;
+    } else {
+      el.innerHTML = `<div class="empty">Hôm nay không có chỉ số nào trong danh sách theo dõi của bạn được công bố.</div>`;
+    }
     return;
   }
 
-  el.innerHTML = ids.map(fid => buildChartCard(fid, h, { isNew: releasedToday.has(fid) })).join("");
+  el.innerHTML = ids.map(fid => buildChartCard(fid, h)).join("");
   bindChartCardEvents(el, h);
   ids.forEach(fid => renderChart(fid, DEFAULT_VIEW[fid] || "level"));
 }
