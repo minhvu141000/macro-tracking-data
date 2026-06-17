@@ -1268,7 +1268,21 @@ function bindChartCardEvents(wrap, h) {
 // không công bố thì không hiện (tránh loãng khi theo dõi nhiều chỉ số). Rỗng → hiện tất
 // cả công bố hôm nay (fallback). DFF (Fed Funds Rate) luôn bị loại.
 const TODAY_EXCLUDE = new Set(["DFF"]);
-const TODAY_INCLUDE = ["EXHOSLUSM495S", "EIA_CRUDE", "EIA_GASOLINE", "EIA_DISTILLATE", "IR", "IQ"];
+const TODAY_INCLUDE = [
+  // Lạm phát / giá
+  "CPIAUCSL", "PCEPI", "PPIFID", "IR", "IQ",
+  // Lao động
+  "PAYEMS", "UNRATE", "ICSA", "CCSA", "CES0500000003", "AWHAETP", "OPHNFB", "ULCNFB",
+  // Tăng trưởng / tiêu dùng / sản xuất
+  "RSAFS", "RETAILIMSA", "WHLSLRIMSA", "AMTMNO", "DGORDER", "TTLCONS",
+  "PI", "PCE", "TOTALSA", "BOPGTB",
+  // Niềm tin
+  "CSCICP03USM665S",
+  // Nhà ở
+  "HOUST", "PERMIT", "HSN1F", "EXHOSLUSM495S",
+  // Năng lượng (EIA)
+  "EIA_CRUDE", "EIA_GASOLINE", "EIA_DISTILLATE",
+];
 
 function todayReleasedIds() {
   const releases = (D.daily_releases && D.daily_releases.releases) || [];

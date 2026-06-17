@@ -99,6 +99,21 @@ FRED_SERIES = {
     "HOUST": "Housing Starts",
     "EXHOSLUSM495S": "Existing Home Sales",
     "CSUSHPINSA": "Case-Shiller Home Price",
+    "PERMIT": "Building Permits",
+    "HSN1F": "New Home Sales",
+    # Labor (thêm — watchlist)
+    "CCSA": "Continuing Jobless Claims",
+    "AWHAETP": "Average Weekly Hours",
+    "OPHNFB": "Nonfarm Productivity",
+    "ULCNFB": "Unit Labor Costs",
+    # Growth / spending (thêm — watchlist)
+    "AMTMNO": "Factory Orders",
+    "PI": "Personal Income",
+    "PCE": "Personal Spending (PCE level)",
+    "TOTALSA": "Total Vehicle Sales",
+    "WHLSLRIMSA": "Wholesale Inventories",
+    "RETAILIMSA": "Retail Inventories",
+    "BOPGTB": "Goods Trade Balance (BOP)",
     # Fed / rates
     "DFF": "Fed Funds Rate",
     "DGS10": "10Y Treasury Yield",
