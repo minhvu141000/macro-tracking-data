@@ -25,7 +25,7 @@
             "MICH1Y"
           ],
           "primary_link": "https://www.bls.gov/cpi/",
-          "deep_dive_link": "https://www.bls.gov/news.release/cpi.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/CPIAUCSL"
         },
         {
           "id": "CPILFESL",
@@ -46,7 +46,7 @@
             "MEDCPIM158SFRBCLE"
           ],
           "primary_link": "https://www.bls.gov/cpi/",
-          "deep_dive_link": "https://www.bls.gov/news.release/cpi.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/CPILFESL"
         },
         {
           "id": "PCEPI",
@@ -68,7 +68,7 @@
             "PCE"
           ],
           "primary_link": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
-          "deep_dive_link": "https://apps.bea.gov/iTable/?ReqID=19&step=4&isuri=1&categories=survey&nipa_table_list=71"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/PCEPI"
         },
         {
           "id": "PCEPILFE",
@@ -90,7 +90,7 @@
             "AHE"
           ],
           "primary_link": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
-          "deep_dive_link": "https://apps.bea.gov/iTable/?ReqID=19&step=4&isuri=1&categories=survey&nipa_table_list=71"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/PCEPILFE"
         },
         {
           "id": "PPIFID",
@@ -111,7 +111,7 @@
             "ISMMFGPRICES"
           ],
           "primary_link": "https://www.bls.gov/ppi/",
-          "deep_dive_link": "https://www.bls.gov/news.release/ppi.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/PPIFID"
         },
         {
           "id": "PPIFES",
@@ -137,7 +137,7 @@
             "CPILFESL"
           ],
           "primary_link": "https://www.bls.gov/ppi/",
-          "deep_dive_link": "https://www.bls.gov/news.release/ppi.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/PPIFES"
         },
         {
           "id": "MEDCPIM158SFRBCLE",
@@ -160,7 +160,7 @@
             "CPIAUCSL"
           ],
           "primary_link": "https://www.clevelandfed.org/our-research/indicators-and-data/median-cpi-methodology.aspx",
-          "deep_dive_link": "https://www.clevelandfed.org/our-research/indicators-and-data/median-cpi"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/MEDCPIM158SFRBCLE"
         },
         {
           "id": "REALEARN",
@@ -203,7 +203,7 @@
             "import price index (yoy)"
           ],
           "primary_link": "https://www.bls.gov/mxp/",
-          "deep_dive_link": "https://www.bls.gov/news.release/ximpim.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/IR"
         },
         {
           "id": "IQ",
@@ -222,7 +222,7 @@
             "export price index (yoy)"
           ],
           "primary_link": "https://www.bls.gov/mxp/",
-          "deep_dive_link": "https://www.bls.gov/news.release/ximpim.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/IQ"
         }
       ]
     },
@@ -251,7 +251,7 @@
             "ADPMNUSNERNSA"
           ],
           "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm",
-          "deep_dive_link": "https://www.bls.gov/news.release/empsit.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/PAYEMS"
         },
         {
           "id": "UNRATE",
@@ -273,7 +273,7 @@
             "ICSA"
           ],
           "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm",
-          "deep_dive_link": "https://www.bls.gov/news.release/empsit.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/UNRATE"
         },
         {
           "id": "ICSA",
@@ -295,7 +295,7 @@
             "PAYEMS"
           ],
           "primary_link": "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases",
-          "deep_dive_link": "https://oui.doleta.gov/unemploy/claims.asp"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/ICSA"
         },
         {
           "id": "CES0500000003",
@@ -316,7 +316,7 @@
             "PCEPILFE"
           ],
           "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm",
-          "deep_dive_link": "https://www.bls.gov/news.release/empsit.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/CES0500000003"
         },
         {
           "id": "JTSJOL",
@@ -337,7 +337,7 @@
             "CHALLENGER"
           ],
           "primary_link": "https://www.bls.gov/jlt/",
-          "deep_dive_link": "https://www.bls.gov/news.release/jolts.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/JTSJOL"
         },
         {
           "id": "CCSA",
@@ -361,7 +361,7 @@
             "PAYEMS"
           ],
           "primary_link": "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases",
-          "deep_dive_link": "https://oui.doleta.gov/unemploy/claims.asp"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/CCSA"
         },
         {
           "id": "IC4WSA",
@@ -385,7 +385,7 @@
             "ICSA"
           ],
           "primary_link": "https://www.dol.gov/agencies/eta/unemployment-insurance/weekly-releases",
-          "deep_dive_link": "https://oui.doleta.gov/unemploy/claims.asp"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/IC4WSA"
         },
         {
           "id": "ADPMNUSNERNSA",
@@ -456,7 +456,7 @@
             "GDPC1"
           ],
           "primary_link": "https://www.bls.gov/lpc/",
-          "deep_dive_link": "https://www.bls.gov/news.release/prod2.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/OPHNFB"
         },
         {
           "id": "ULCNFB",
@@ -480,7 +480,7 @@
             "ICSA"
           ],
           "primary_link": "https://www.bls.gov/lpc/",
-          "deep_dive_link": "https://www.bls.gov/news.release/prod2.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/ULCNFB"
         },
         {
           "id": "CIVPART",
@@ -504,7 +504,7 @@
             "ICSA"
           ],
           "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm",
-          "deep_dive_link": "https://www.bls.gov/news.release/empsit.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/CIVPART"
         },
         {
           "id": "U6RATE",
@@ -528,7 +528,7 @@
             "ICSA"
           ],
           "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm",
-          "deep_dive_link": "https://www.bls.gov/news.release/empsit.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/U6RATE"
         },
         {
           "id": "AWHAETP",
@@ -552,7 +552,7 @@
             "ICSA"
           ],
           "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm",
-          "deep_dive_link": "https://www.bls.gov/news.release/empsit.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/AWHAETP"
         },
         {
           "id": "CES9091000001",
@@ -576,7 +576,7 @@
             "ICSA"
           ],
           "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm",
-          "deep_dive_link": "https://www.bls.gov/news.release/empsit.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/USGOVT"
         },
         {
           "id": "MANEMP",
@@ -600,7 +600,7 @@
             "ICSA"
           ],
           "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm",
-          "deep_dive_link": "https://www.bls.gov/news.release/empsit.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/MANEMP"
         },
         {
           "id": "CES0500000008",
@@ -702,7 +702,7 @@
             "RSAFS"
           ],
           "primary_link": "https://www.bea.gov/data/gdp/gross-domestic-product",
-          "deep_dive_link": "https://apps.bea.gov/iTable/?ReqID=19&step=4&isuri=1&categories=survey&nipa_table_list=1"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/A191RL1Q225SBEA"
         },
         {
           "id": "RSAFS",
@@ -725,7 +725,7 @@
           ],
           "primary_link": "https://www.census.gov/retail/marts/index.html",
           "news_release_link": "https://www.census.gov/economic-indicators/",
-          "deep_dive_link": "https://www.census.gov/retail/index.html"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/RSAFS"
         },
         {
           "id": "NAPM",
@@ -990,7 +990,7 @@
           ],
           "primary_link": "https://www.census.gov/manufacturing/m3/index.html",
           "news_release_link": "https://www.census.gov/economic-indicators/",
-          "deep_dive_link": "https://www.census.gov/manufacturing/m3/index.html"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/NEWORDER"
         },
         {
           "id": "DGORDER",
@@ -1019,7 +1019,7 @@
           ],
           "primary_link": "https://www.census.gov/manufacturing/m3/index.html",
           "news_release_link": "https://www.census.gov/economic-indicators/",
-          "deep_dive_link": "https://www.census.gov/manufacturing/m3/index.html"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/DGORDER"
         },
         {
           "id": "TTLCONS",
@@ -1044,7 +1044,7 @@
           ],
           "primary_link": "https://www.census.gov/construction/c30/index.html",
           "news_release_link": "https://www.census.gov/economic-indicators/",
-          "deep_dive_link": "https://www.census.gov/construction/c30/c30index.html"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/TTLCONS"
         },
         {
           "id": "INDPRO",
@@ -1070,7 +1070,7 @@
           ],
           "primary_link": "https://www.federalreserve.gov/releases/g17/current/default.htm",
           "news_release_link": "https://www.federalreserve.gov/releases/g17/current/default.htm",
-          "deep_dive_link": "https://www.federalreserve.gov/releases/g17/current/default.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/INDPRO"
         },
         {
           "id": "PI",
@@ -1094,7 +1094,7 @@
             "REALEARN"
           ],
           "primary_link": "https://www.bea.gov/data/income-saving/personal-income",
-          "deep_dive_link": "https://apps.bea.gov/iTable/?ReqID=19&step=4&isuri=1&categories=survey&nipa_table_list=58"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/PI"
         },
         {
           "id": "PCE",
@@ -1121,7 +1121,7 @@
             "PCEPI"
           ],
           "primary_link": "https://www.bea.gov/data/personal-consumption-expenditures",
-          "deep_dive_link": "https://apps.bea.gov/iTable/?ReqID=19&step=4&isuri=1&categories=survey&nipa_table_list=58"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/PCE"
         },
         {
           "id": "TOTALSA",
@@ -1147,7 +1147,7 @@
             "INDPRO"
           ],
           "primary_link": "https://www.bea.gov/data/special-topics/motor-vehicles",
-          "deep_dive_link": "https://www.bea.gov/data/consumer-spending/main"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/TOTALSA"
         },
         {
           "id": "WHLSLRIMSA",
@@ -1173,7 +1173,7 @@
           ],
           "primary_link": "https://www.census.gov/wholesale/index.html",
           "news_release_link": "https://www.census.gov/economic-indicators/",
-          "deep_dive_link": "https://www.census.gov/wholesale/index.html"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/WHLSLRIMSA"
         },
         {
           "id": "RETAILINV",
@@ -1377,7 +1377,7 @@
           ],
           "primary_link": "https://www.conference-board.org/data/consumerconfidence.cfm",
           "news_release_link": "https://www.conference-board.org/topics/consumer-confidence",
-          "deep_dive_link": "https://www.conference-board.org/topics/consumer-confidence"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/CSCICP03USM665S"
         },
         {
           "id": "UMCSENT",
@@ -1400,7 +1400,7 @@
           ],
           "primary_link": "http://www.sca.isr.umich.edu/",
           "news_release_link": "https://data.sca.isr.umich.edu/charts.html",
-          "deep_dive_link": "https://data.sca.isr.umich.edu/charts.html"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/UMCSENT"
         },
         {
           "id": "MICHCURR",
@@ -1596,7 +1596,7 @@
           ],
           "primary_link": "https://www.census.gov/construction/nrc/index.html",
           "news_release_link": "https://www.census.gov/economic-indicators/",
-          "deep_dive_link": "https://www.census.gov/construction/nrc/index.html"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/HOUST"
         },
         {
           "id": "EXHOSLUSM495S",
@@ -1618,7 +1618,7 @@
           ],
           "primary_link": "https://www.nar.realtor/research-and-statistics/housing-statistics/existing-home-sales",
           "news_release_link": "https://www.nar.realtor/research-and-statistics/housing-statistics/existing-home-sales",
-          "deep_dive_link": "https://www.nar.realtor/research-and-statistics/housing-statistics/existing-home-sales"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/EXHOSLUSM495S"
         },
         {
           "id": "PERMIT",
@@ -1643,7 +1643,7 @@
           ],
           "primary_link": "https://www.census.gov/construction/nrc/index.html",
           "news_release_link": "https://www.census.gov/economic-indicators/",
-          "deep_dive_link": "https://www.census.gov/construction/nrc/index.html"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/PERMIT"
         },
         {
           "id": "HSN1F",
@@ -1668,7 +1668,7 @@
           ],
           "primary_link": "https://www.census.gov/construction/nrs/index.html",
           "news_release_link": "https://www.census.gov/economic-indicators/",
-          "deep_dive_link": "https://www.census.gov/construction/nrs/index.html"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/HSN1F"
         },
         {
           "id": "USSTHPI",
@@ -1693,7 +1693,7 @@
           ],
           "primary_link": "https://www.fhfa.gov/DataTools/Downloads/Pages/House-Price-Index.aspx",
           "news_release_link": "https://www.fhfa.gov/DataTools/Downloads/Pages/House-Price-Index.aspx",
-          "deep_dive_link": "https://www.fhfa.gov/DataTools/Downloads/Pages/House-Price-Index.aspx"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/USSTHPI"
         },
         {
           "id": "CSCH20",
@@ -1797,7 +1797,7 @@
           ],
           "primary_link": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
           "news_release_link": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-          "deep_dive_link": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/DFF"
         },
         {
           "id": "DGS10",
@@ -1820,7 +1820,7 @@
           ],
           "primary_link": "https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yield",
           "news_release_link": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
-          "deep_dive_link": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/DGS10"
         },
         {
           "id": "DGS2",
@@ -1842,7 +1842,7 @@
           ],
           "primary_link": "https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yield",
           "news_release_link": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
-          "deep_dive_link": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/DGS2"
         },
         {
           "id": "20Y_BOND_AUCTION",
@@ -1889,7 +1889,7 @@
             "GOODSTRADE"
           ],
           "primary_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services",
-          "deep_dive_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/BOPGSTB"
         },
         {
           "id": "EXPGS",
@@ -1912,7 +1912,7 @@
             "GOODSTRADE"
           ],
           "primary_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services",
-          "deep_dive_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/EXPGS"
         },
         {
           "id": "IMPGS",
@@ -1935,7 +1935,7 @@
             "GOODSTRADE"
           ],
           "primary_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services",
-          "deep_dive_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/IMPGS"
         }
       ]
     },
@@ -1965,7 +1965,7 @@
           ],
           "primary_link": "https://www.federalreserve.gov/releases/h6/current/default.htm",
           "news_release_link": "https://www.federalreserve.gov/releases/h6/current/default.htm",
-          "deep_dive_link": "https://www.federalreserve.gov/releases/h6/current/default.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/M2SL"
         },
         {
           "id": "WALCL",
@@ -1989,7 +1989,7 @@
           ],
           "primary_link": "https://www.federalreserve.gov/releases/h41/current/default.htm",
           "news_release_link": "https://www.federalreserve.gov/releases/h41/current/default.htm",
-          "deep_dive_link": "https://www.federalreserve.gov/releases/h41/current/default.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/WALCL"
         },
         {
           "id": "WRESBAL",
@@ -2013,7 +2013,7 @@
           ],
           "primary_link": "https://www.federalreserve.gov/releases/h41/current/default.htm",
           "news_release_link": "https://www.federalreserve.gov/releases/h41/current/default.htm",
-          "deep_dive_link": "https://www.federalreserve.gov/releases/h41/current/default.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/WRESBAL"
         },
         {
           "id": "TOTALSL",
@@ -2037,7 +2037,7 @@
           ],
           "primary_link": "https://www.federalreserve.gov/releases/g19/current/default.htm",
           "news_release_link": "https://www.federalreserve.gov/releases/g19/current/default.htm",
-          "deep_dive_link": "https://www.federalreserve.gov/releases/g19/current/default.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/TOTALSL"
         },
         {
           "id": "MTSDS",
@@ -2061,7 +2061,7 @@
           ],
           "primary_link": "https://www.fiscal.treasury.gov/reports-statements/mts/",
           "news_release_link": "https://www.fiscal.treasury.gov/reports-statements/mts/",
-          "deep_dive_link": "https://www.fiscal.treasury.gov/reports-statements/mts/"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/MTSDS133FMS"
         },
         {
           "id": "REDBOOK",
