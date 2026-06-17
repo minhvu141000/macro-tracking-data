@@ -36,6 +36,16 @@ cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && source .venv/bin/activate &
 - Ghi `data/sector_rotation_confirmed.json`: `confirmed_phase` (CONFIRMED_IN / EARLY_FORMING / FADING / AVOID / NEUTRAL) + `confidence` + `persistence` (macro_pos_days, mom_pos_days, trend) cho 11 sector.
 - Nếu in ra `INSUFFICIENT_HISTORY` (chưa đủ ~4 phiên daily snapshot) → báo cho user, weekly vẫn chạy nhưng nêu rõ rotation chưa đủ lịch sử để xác nhận. Không chặn flow.
 
+## Bước 1c: Chấm điểm engine (vòng phản hồi)
+
+Backtest tự kiểm: forward RS sau khi engine chấm điểm → engine có thực sự bắt rotation đúng không?
+```
+cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && source .venv/bin/activate && \
+  python scripts/build_rotation_scorecard.py
+```
+- Ghi `data/monthly/rotation_engine_scorecard.md` + `data/rotation_engine_scorecard.json`: hit rate hướng + **edge** (top3−bottom3 forward RS) ở 5/10 phiên.
+- Đọc `edge`: dương = thứ hạng engine có giá trị; âm = engine đang anti-predictive (cần thêm dữ liệu thật hoặc hiệu chỉnh). Nêu 1 dòng trong Narrative weekly. Không chặn flow.
+
 ## Bước 2: Generate weekly report
 
 Dùng Agent tool với `subagent_type: macro-weekly`. Prompt:
@@ -54,7 +64,7 @@ source .venv/bin/activate && python scripts/build_dashboard.py
 ## Bước 4: Backup lên GitHub
 
 ```
-git add data/weekly/ data/sector_rotation_confirmed.json dashboard/data.js && \
+git add data/weekly/ data/sector_rotation_confirmed.json data/monthly/rotation_engine_scorecard.md data/rotation_engine_scorecard.json dashboard/data.js && \
   git diff --cached --quiet || \
   (git -c user.email="minhvu141000@gmail.com" -c user.name="minhvu141000" \
     commit -m "Weekly macro <date>" && git push origin main)

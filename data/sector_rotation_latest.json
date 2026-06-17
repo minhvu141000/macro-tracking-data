@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-16T16:26:26.839565+00:00",
+  "generated_at": "2026-06-17T07:52:24.914187+00:00",
   "as_of": "2026-06-16",
   "method": "deterministic sensitivity matrix (sector×factor); see scripts/build_sector_rotation.py",
   "regime_summary": "Tăng trưởng đúng kỳ vọng, lạm phát nguội hơn kỳ vọng, lãi suất đi ngang, risk-on. Chu kỳ: đường cong normal.",

@@ -24,6 +24,7 @@ scripts/build_surprise_index.py # Economic Surprise Index từ raw files → sur
 scripts/build_scorecard.py      # chấm calls tháng trước vs RS thực tế → monthly/scorecard.md
 scripts/build_sector_rotation.py # TẦNG DAILY: engine macro→sector tất định → snapshot + append history
 scripts/build_rotation_confirm.py # TẦNG WEEKLY: lọc persistence từ history → verdict confirmed
+scripts/build_rotation_scorecard.py # vòng phản hồi: forward RS chấm điểm engine → hit rate + edge
 scripts/build_dashboard.py      # build data.js
 .claude/agents/                 # sub-agents
 .claude/commands/               # slash commands

@@ -1,41 +1,42 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-16T16:21:55.484291+00:00",
+  "generated_at": "2026-06-17T07:52:25.003196+00:00",
   "tier": "weekly-confirmed",
   "window_days": 10,
-  "as_of_latest": "2026-06-12",
-  "as_of_oldest": "2026-06-01",
+  "as_of_latest": "2026-06-16",
+  "as_of_oldest": "2026-06-02",
   "params": {
     "WINDOW": 10,
     "MACRO_THR": 0.3,
     "MACRO_POS_FRAC": 0.6,
     "MOM_POS_FRAC": 0.5
   },
-  "regime_summary": "Tăng trưởng vượt kỳ vọng, lạm phát nguội hơn kỳ vọng, lãi suất đi ngang, risk-on. Chu kỳ: đường cong normal.",
+  "regime_summary": "Tăng trưởng đúng kỳ vọng, lạm phát nguội hơn kỳ vọng, lãi suất đi ngang, risk-on. Chu kỳ: đường cong normal.",
   "insufficient_history": false,
   "ranked": [
-    "XLF",
     "XLY",
     "XLC",
     "XLI",
+    "XLF",
     "XLK",
     "XLB",
     "XLP",
+    "XLRE",
     "XLE",
     "XLV",
-    "XLRE",
     "XLU"
   ],
-  "confirmed_in": [
-    "XLF"
-  ],
+  "confirmed_in": [],
   "early_forming": [
     "XLY",
     "XLC",
     "XLI",
+    "XLF",
     "XLK"
   ],
-  "fading": [],
+  "fading": [
+    "XLV"
+  ],
   "avoid": [
     "XLU"
   ],
@@ -47,36 +48,36 @@
       "persistence": {
         "n_days": 10,
         "macro_pos_days": 6,
-        "mom_pos_days": 4,
-        "tilt_trend": 0.05,
-        "mom_trend": -2.36,
-        "thrust_mean": -41.7
+        "mom_pos_days": 3,
+        "tilt_trend": 0.36,
+        "mom_trend": -1.63,
+        "thrust_mean": -29.2
       },
       "latest": {
-        "rs_1m": 4.57,
-        "breadth_thrust": -41.7,
+        "rs_1m": 4.44,
+        "breadth_thrust": -16.7,
         "above_ma200": true
       },
-      "rationale": "Vĩ mô hậu thuẫn bền (6/10) nhưng dòng tiền mới 4/10 (mom trend -2.36) — đang HÌNH THÀNH, ưu tiên theo dõi/săn sớm."
+      "rationale": "Vĩ mô hậu thuẫn bền (6/10) nhưng dòng tiền mới 3/10 (mom trend -1.63) — đang HÌNH THÀNH, ưu tiên theo dõi/săn sớm."
     },
     "XLF": {
       "name": "Financials",
-      "confirmed_phase": "CONFIRMED_IN",
-      "confidence": "HIGH",
+      "confirmed_phase": "EARLY_FORMING",
+      "confidence": "MED",
       "persistence": {
         "n_days": 10,
-        "macro_pos_days": 9,
-        "mom_pos_days": 7,
-        "tilt_trend": 0.26,
-        "mom_trend": 0.38,
-        "thrust_mean": 16.6
+        "macro_pos_days": 8,
+        "mom_pos_days": 8,
+        "tilt_trend": -0.22,
+        "mom_trend": 0.22,
+        "thrust_mean": 20.8
       },
       "latest": {
-        "rs_1m": 4.69,
-        "breadth_thrust": 16.6,
+        "rs_1m": 5.25,
+        "breadth_thrust": 25.0,
         "above_ma200": true
       },
-      "rationale": "Vĩ mô hậu thuẫn 9/10 phiên + dòng tiền vào 7/10, xu hướng còn lên (tilt +0.26, mom +0.38) — rotation đã XÁC NHẬN."
+      "rationale": "Vĩ mô hậu thuẫn bền (8/10) nhưng dòng tiền mới 8/10 (mom trend +0.22) — đang HÌNH THÀNH, ưu tiên theo dõi/săn sớm."
     },
     "XLE": {
       "name": "Energy",
@@ -86,35 +87,35 @@
         "n_days": 10,
         "macro_pos_days": 0,
         "mom_pos_days": 6,
-        "tilt_trend": -0.46,
-        "mom_trend": -0.75,
-        "thrust_mean": -8.3
+        "tilt_trend": -0.8,
+        "mom_trend": -2.01,
+        "thrust_mean": -29.1
       },
       "latest": {
-        "rs_1m": -0.06,
-        "breadth_thrust": -8.3,
+        "rs_1m": -5.55,
+        "breadth_thrust": -50.0,
         "above_ma200": true
       },
       "rationale": "Không có lợi thế bền (macro 0/10, mom 6/10)."
     },
     "XLV": {
       "name": "Healthcare",
-      "confirmed_phase": "NEUTRAL",
-      "confidence": "LOW",
+      "confirmed_phase": "FADING",
+      "confidence": "MED",
       "persistence": {
         "n_days": 10,
         "macro_pos_days": 0,
         "mom_pos_days": 6,
-        "tilt_trend": 0.69,
-        "mom_trend": 0.4,
-        "thrust_mean": 0.0
+        "tilt_trend": 0.51,
+        "mom_trend": -0.17,
+        "thrust_mean": -4.2
       },
       "latest": {
-        "rs_1m": 4.92,
-        "breadth_thrust": 0.0,
+        "rs_1m": 3.75,
+        "breadth_thrust": -8.3,
         "above_ma200": true
       },
-      "rationale": "Không có lợi thế bền (macro 0/10, mom 6/10)."
+      "rationale": "Vĩ mô chỉ còn 0/10 phiên, giá vẫn cao (RS +3.8%) nhưng momentum lăn xuống (-0.17) — rotation RỜI ĐI."
     },
     "XLY": {
       "name": "Consumer Discretionary",
@@ -123,17 +124,17 @@
       "persistence": {
         "n_days": 10,
         "macro_pos_days": 10,
-        "mom_pos_days": 1,
-        "tilt_trend": 0.14,
-        "mom_trend": 0.42,
-        "thrust_mean": 41.7
+        "mom_pos_days": 2,
+        "tilt_trend": 0.25,
+        "mom_trend": 1.0,
+        "thrust_mean": 45.9
       },
       "latest": {
-        "rs_1m": -1.71,
-        "breadth_thrust": 41.7,
-        "above_ma200": false
+        "rs_1m": -0.61,
+        "breadth_thrust": 50.0,
+        "above_ma200": true
       },
-      "rationale": "Vĩ mô hậu thuẫn bền (10/10) nhưng dòng tiền mới 1/10 (mom trend +0.42) — đang HÌNH THÀNH, ưu tiên theo dõi/săn sớm."
+      "rationale": "Vĩ mô hậu thuẫn bền (10/10) nhưng dòng tiền mới 2/10 (mom trend +1.0) — đang HÌNH THÀNH, ưu tiên theo dõi/săn sớm."
     },
     "XLP": {
       "name": "Consumer Staples",
@@ -142,17 +143,17 @@
       "persistence": {
         "n_days": 10,
         "macro_pos_days": 2,
-        "mom_pos_days": 6,
-        "tilt_trend": 0.7,
-        "mom_trend": 1.28,
-        "thrust_mean": 8.3
+        "mom_pos_days": 7,
+        "tilt_trend": 0.58,
+        "mom_trend": 1.13,
+        "thrust_mean": 12.5
       },
       "latest": {
-        "rs_1m": 1.37,
-        "breadth_thrust": 8.3,
+        "rs_1m": 0.36,
+        "breadth_thrust": 16.7,
         "above_ma200": true
       },
-      "rationale": "Không có lợi thế bền (macro 2/10, mom 6/10)."
+      "rationale": "Không có lợi thế bền (macro 2/10, mom 7/10)."
     },
     "XLI": {
       "name": "Industrials",
@@ -162,16 +163,16 @@
         "n_days": 10,
         "macro_pos_days": 9,
         "mom_pos_days": 7,
-        "tilt_trend": -0.81,
-        "mom_trend": -0.37,
-        "thrust_mean": 8.3
+        "tilt_trend": -0.75,
+        "mom_trend": -0.09,
+        "thrust_mean": 20.8
       },
       "latest": {
-        "rs_1m": 1.55,
-        "breadth_thrust": 8.3,
+        "rs_1m": 2.95,
+        "breadth_thrust": 33.3,
         "above_ma200": true
       },
-      "rationale": "Vĩ mô hậu thuẫn bền (9/10) nhưng dòng tiền mới 7/10 (mom trend -0.37) — đang HÌNH THÀNH, ưu tiên theo dõi/săn sớm."
+      "rationale": "Vĩ mô hậu thuẫn bền (9/10) nhưng dòng tiền mới 7/10 (mom trend -0.09) — đang HÌNH THÀNH, ưu tiên theo dõi/săn sớm."
     },
     "XLB": {
       "name": "Materials",
@@ -179,18 +180,18 @@
       "confidence": "LOW",
       "persistence": {
         "n_days": 10,
-        "macro_pos_days": 4,
+        "macro_pos_days": 3,
         "mom_pos_days": 5,
-        "tilt_trend": -1.82,
-        "mom_trend": -0.36,
-        "thrust_mean": 33.4
+        "tilt_trend": -1.39,
+        "mom_trend": 0.28,
+        "thrust_mean": 37.5
       },
       "latest": {
-        "rs_1m": 0.31,
-        "breadth_thrust": 33.4,
+        "rs_1m": 1.7,
+        "breadth_thrust": 41.7,
         "above_ma200": true
       },
-      "rationale": "Không có lợi thế bền (macro 4/10, mom 5/10)."
+      "rationale": "Không có lợi thế bền (macro 3/10, mom 5/10)."
     },
     "XLU": {
       "name": "Utilities",
@@ -199,17 +200,17 @@
       "persistence": {
         "n_days": 10,
         "macro_pos_days": 0,
-        "mom_pos_days": 4,
+        "mom_pos_days": 5,
         "tilt_trend": 0.77,
-        "mom_trend": 0.64,
-        "thrust_mean": 25.0
+        "mom_trend": 0.72,
+        "thrust_mean": 50.0
       },
       "latest": {
-        "rs_1m": -0.24,
-        "breadth_thrust": 25.0,
+        "rs_1m": 0.51,
+        "breadth_thrust": 75.0,
         "above_ma200": true
       },
-      "rationale": "Vĩ mô yếu (0/10) + dòng tiền yếu (4/10) bền — tránh."
+      "rationale": "Vĩ mô yếu (0/10) + dòng tiền yếu (5/10) bền — tránh."
     },
     "XLRE": {
       "name": "Real Estate",
@@ -217,37 +218,37 @@
       "confidence": "LOW",
       "persistence": {
         "n_days": 10,
-        "macro_pos_days": 0,
-        "mom_pos_days": 6,
-        "tilt_trend": 0.17,
-        "mom_trend": 0.79,
-        "thrust_mean": 0.0
+        "macro_pos_days": 1,
+        "mom_pos_days": 7,
+        "tilt_trend": 0.45,
+        "mom_trend": 0.44,
+        "thrust_mean": 4.2
       },
       "latest": {
-        "rs_1m": 2.68,
-        "breadth_thrust": 0.0,
+        "rs_1m": 2.27,
+        "breadth_thrust": 8.4,
         "above_ma200": true
       },
-      "rationale": "Không có lợi thế bền (macro 0/10, mom 6/10)."
+      "rationale": "Không có lợi thế bền (macro 1/10, mom 7/10)."
     },
     "XLC": {
       "name": "Communication Services",
       "confirmed_phase": "EARLY_FORMING",
-      "confidence": "LOW",
+      "confidence": "MED",
       "persistence": {
         "n_days": 10,
         "macro_pos_days": 10,
-        "mom_pos_days": 1,
-        "tilt_trend": 0.3,
-        "mom_trend": -0.08,
+        "mom_pos_days": 0,
+        "tilt_trend": 0.25,
+        "mom_trend": 0.09,
         "thrust_mean": 0.0
       },
       "latest": {
-        "rs_1m": -4.3,
+        "rs_1m": -5.29,
         "breadth_thrust": 0.0,
         "above_ma200": false
       },
-      "rationale": "Vĩ mô hậu thuẫn bền (10/10) nhưng dòng tiền mới 1/10 (mom trend -0.08) — đang HÌNH THÀNH, ưu tiên theo dõi/săn sớm."
+      "rationale": "Vĩ mô hậu thuẫn bền (10/10) nhưng dòng tiền mới 0/10 (mom trend +0.09) — đang HÌNH THÀNH, ưu tiên theo dõi/săn sớm."
     }
   },
   "handoff": {
