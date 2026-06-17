@@ -624,7 +624,7 @@
             "ICSA"
           ],
           "primary_link": "https://www.bls.gov/news.release/empsit.toc.htm",
-          "deep_dive_link": "https://www.bls.gov/news.release/empsit.htm"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/CES0500000001"
         },
         {
           "id": "CETI",
@@ -746,7 +746,7 @@
             "INDPRO"
           ],
           "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/",
-          "deep_dive_link": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/NAPM"
         },
         {
           "id": "NAPMNMI",
@@ -767,7 +767,7 @@
             "INDPRO"
           ],
           "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/",
-          "deep_dive_link": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"
+          "deep_dive_link": "https://fred.stlouisfed.org/series/NAPMNMI"
         },
         {
           "id": "GDPNOW",
@@ -1351,6 +1351,39 @@
           ],
           "primary_link": "https://www.ismworld.org/supply-management-news-and-reports/reports-for-business/",
           "deep_dive_link": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"
+        },
+        {
+          "id": "RETAILCONTROL",
+          "short_name": "Retail Control Group",
+          "full_name": "Retail Sales Control Group (ex Auto, Gas, Building, Food Svc)",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/RSCCASN",
+          "description": "Nhóm 'control' của Retail Sales: loại bỏ ô tô, xăng dầu, vật liệu xây dựng và dịch vụ ăn uống — những cấu phần biến động mạnh do giá. Phần còn lại được đưa thẳng vào tính toán PCE hàng hoá trong GDP, nên đây là dòng quan trọng NHẤT trong báo cáo Retail Sales đối với forecasters.",
+          "expectation_meaning": "Control Group mạnh hơn headline = nhu cầu tiêu dùng thực (real demand) khoẻ, không phải do giá xăng/xe. Là input trực tiếp cho nowcast GDP của Atlanta Fed. Beat = nâng kỳ vọng GDP quý; miss = hạ.",
+          "good_vs_bad": "Tăng vững (~+0.3-0.5% MoM) = consumer engine khoẻ, bull cho discretionary. Âm liên tiếp = chi tiêu cốt lõi yếu → cảnh báo tăng trưởng, dovish cho Fed. Lưu ý: quá nóng + lạm phát cao = Fed có thể giữ lãi suất lâu hơn.",
+          "market_reaction": "Pros chú ý Control Group HƠN headline Retail Sales vì nó lọc nhiễu và feed thẳng vào GDP. Beat mạnh → yields tăng, USD tăng, tốt cho XLY (Amazon, retailers), restaurants. Miss → dovish, tốt cho duration/tech, xấu cho consumer cyclicals.",
+          "release_aliases": [
+            "retail control",
+            "retail sales control group",
+            "retail control group"
+          ],
+          "deep_dive_link": "https://fred.stlouisfed.org/series/RSCCASN"
+        },
+        {
+          "id": "BUSINV",
+          "short_name": "Business Inventories",
+          "full_name": "Total Business Inventories (MoM)",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/BUSINV",
+          "description": "Tổng tồn kho của nhà sản xuất, bán buôn và bán lẻ Mỹ. Phản ánh hàng hoá doanh nghiệp đang giữ. Thay đổi tồn kho (inventory change) là một cấu phần trực tiếp của GDP và là nguồn biến động lớn giữa các quý.",
+          "expectation_meaning": "Tồn kho tăng có thể tốt (doanh nghiệp lạc quan, dự trữ cho cầu tương lai) HOẶC xấu (hàng ế, cầu yếu hơn dự kiến → cắt sản xuất sau). Phải đọc cùng tỷ lệ Inventory/Sales: tỷ lệ tăng = hàng tồn so doanh số đang phình → cảnh báo cắt giảm production.",
+          "good_vs_bad": "Inventory/Sales ratio ổn định, tồn kho tăng nhẹ cùng doanh số = lành mạnh. Ratio tăng vọt (sales chậm, hàng chất đống) = báo trước đợt destocking → kéo GDP và sản xuất xuống các quý tới. Restocking (tồn kho thấp, bắt đầu tích lại) = tailwind cho industrials.",
+          "market_reaction": "Mover thấp, ít gây sốc nhưng quan trọng cho GDP nowcast. Inventory build mạnh ngoài ý muốn → cảnh báo cho XLI, XLB (cắt đơn hàng), suppliers. Destocking kết thúc → bullish cho manufacturing cycle (XLI), semis, materials.",
+          "release_aliases": [
+            "business inventories",
+            "total business inventories"
+          ],
+          "deep_dive_link": "https://fred.stlouisfed.org/series/BUSINV"
         }
       ]
     },
@@ -1770,6 +1803,36 @@
           ],
           "primary_link": "https://www.mba.org/news-and-research/research-and-economics/single-family-research/mortgage-bankers-weekly-applications-survey",
           "deep_dive_link": "https://www.mba.org/news-and-research/research-and-economics"
+        },
+        {
+          "id": "PENDINGHOMES",
+          "short_name": "Pending Home Sales",
+          "full_name": "Pending Home Sales (MoM)",
+          "frequency": "Hàng tháng",
+          "link": "https://www.nar.realtor/research-and-statistics/housing-statistics/pending-home-sales",
+          "description": "Số hợp đồng mua nhà đã ký nhưng chưa hoàn tất (chưa closing), do National Association of Realtors (NAR) công bố. Vì đo lúc KÝ hợp đồng, đây là chỉ báo SỚM (leading) cho Existing Home Sales, dẫn trước ~1-2 tháng.",
+          "expectation_meaning": "Pending tăng = sẽ có nhiều giao dịch closing trong 1-2 tháng tới → housing momentum lên. Nhạy cảm cao với lãi suất thế chấp 30 năm: mortgage rate giảm → pending bật lên; rate tăng → người mua rút lui.",
+          "good_vs_bad": "Tăng = cầu nhà ở khoẻ, tốt cho homebuilders và toàn chuỗi housing. Giảm liên tiếp = thị trường nhà đóng băng do lãi suất cao → cảnh báo cho builders, đồ nội thất, vật liệu. Vì là leading nên dùng để đón đầu Existing Home Sales.",
+          "market_reaction": "Mover trung bình cho rate-sensitive sectors. Beat → bullish homebuilders (XHB: DHI, LEN, PHM), mortgage REITs, home improvement (HD, LOW), furniture. Miss → áp lực lên cùng nhóm, củng cố thesis Fed cần cắt lãi suất để cứu housing.",
+          "release_aliases": [
+            "pending home sales",
+            "pending home sales (mom)"
+          ]
+        },
+        {
+          "id": "PENDINGHOMES_IDX",
+          "short_name": "Pending Home Sales Index",
+          "full_name": "NAR Pending Home Sales Index (Level)",
+          "frequency": "Hàng tháng",
+          "link": "https://www.nar.realtor/research-and-statistics/housing-statistics/pending-home-sales",
+          "description": "Mức tuyệt đối của chỉ số Pending Home Sales (NAR), chuẩn hoá 2001 = 100. Cùng dữ liệu với Pending Home Sales nhưng thể hiện ở dạng index level thay vì % thay đổi MoM — giúp so sánh sức khoẻ thị trường nhà với các năm trước.",
+          "expectation_meaning": "Index ~100 = mức hoạt động ký hợp đồng 'bình thường' của năm 2001. Đọc level cho biết thị trường đang ở vùng cao hay đáy lịch sử (vd quanh 70-75 là rất yếu, gần đáy nhiều thập kỷ). Trend của level > một con số MoM đơn lẻ.",
+          "good_vs_bad": "Level cao và đi lên = cầu nhà phục hồi, tốt cho cả chuỗi housing. Level ở vùng đáy lịch sử (lãi suất thế chấp cao đè cầu) = thị trường đóng băng, xấu cho builders nhưng củng cố kỳ vọng Fed nới lỏng.",
+          "market_reaction": "Đi cặp với Pending Home Sales (MoM) — pros nhìn level để định vị chu kỳ housing, nhìn MoM để bắt momentum. Hưởng lợi/áp lực giống Pending Home Sales: XHB, mortgage REITs, HD/LOW, building materials.",
+          "release_aliases": [
+            "pending home sales index",
+            "nar pending home sales index"
+          ]
         }
       ]
     },
@@ -1860,6 +1923,83 @@
             "20-year bond auction bid-to-cover",
             "20-year treasury bond auction",
             "us 20-year bond auction"
+          ]
+        },
+        {
+          "id": "DOTS_CURRENT",
+          "short_name": "Dot Plot — Năm hiện tại",
+          "full_name": "FOMC Interest Rate Projection — Current Year (Dot Plot)",
+          "frequency": "Hàng quý (SEP: Mar, Jun, Sep, Dec)",
+          "link": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "description": "Một dòng trong 'dot plot' (Summary of Economic Projections) — kỳ vọng trung vị của các thành viên FOMC về lãi suất Fed Funds vào CUỐI năm hiện tại. Cho thấy còn bao nhiêu lần cắt/tăng lãi suất Fed dự kiến trong năm nay.",
+          "expectation_meaning": "Dot năm hiện tại được hạ so với SEP lần trước = Fed nghiêng dovish hơn (báo hiệu thêm cắt giảm trong năm). Được nâng = hawkish (ít cắt hơn / có thể tăng). Thị trường so sánh dot với định giá hiện tại của Fed Funds futures (CME FedWatch).",
+          "good_vs_bad": "Dot thấp hơn kỳ vọng (dovish surprise) = tốt cho equities, đặc biệt growth/tech, REITs; USD và yields giảm. Dot cao hơn (hawkish surprise) = xấu cho duration assets, USD tăng.",
+          "market_reaction": "Cùng với họp báo của Chủ tịch Fed, đây là tâm điểm của ngày FOMC có SEP. Dovish shift → risk-on, XLK/XLY/XLRE chạy; hawkish shift → risk-off, financials (XLF) có thể hưởng lợi từ yields cao. Đọc cùng các dot 1st/2nd yr/longer để thấy toàn bộ lộ trình.",
+          "release_aliases": [
+            "interest rate projection - current",
+            "fed interest rate projection current"
+          ]
+        },
+        {
+          "id": "DOTS_1YR",
+          "short_name": "Dot Plot — Năm thứ 1",
+          "full_name": "FOMC Interest Rate Projection — Year 1 Ahead (Dot Plot)",
+          "frequency": "Hàng quý (SEP: Mar, Jun, Sep, Dec)",
+          "link": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "description": "Dot trung vị FOMC cho lãi suất Fed Funds vào cuối năm SAU (one year ahead). Thể hiện lộ trình lãi suất kỳ vọng trong trung hạn — Fed dự kiến đưa lãi suất về đâu trong 12-24 tháng tới.",
+          "expectation_meaning": "Chênh lệch giữa dot năm hiện tại và năm thứ 1 cho biết tốc độ nới lỏng/thắt chặt dự kiến. Dot năm 1 hạ mạnh = Fed thấy cần cắt nhiều hơn năm tới (dovish cho trung hạn). Nâng = lãi suất sẽ cao lâu hơn (higher-for-longer).",
+          "good_vs_bad": "Lộ trình hạ rõ ràng (dot năm 1 thấp) = tốt cho equities định giá theo duration, củng cố soft-landing narrative. Lộ trình higher-for-longer = áp lực lên valuations, lợi cho cash/short-duration.",
+          "market_reaction": "Định hình kỳ vọng đường cong lãi suất 2s10s. Dovish path → đường cong dốc lên (bull steepening), tốt cho XLF NIM dài hạn và growth. Hawkish path → flatten/inversion kéo dài. Đọc cùng dot current + longer để dựng toàn lộ trình.",
+          "release_aliases": [
+            "interest rate projection - 1st yr",
+            "fed interest rate projection 1st year"
+          ]
+        },
+        {
+          "id": "DOTS_2YR",
+          "short_name": "Dot Plot — Năm thứ 2",
+          "full_name": "FOMC Interest Rate Projection — Year 2 Ahead (Dot Plot)",
+          "frequency": "Hàng quý (SEP: Mar, Jun, Sep, Dec)",
+          "link": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "description": "Dot trung vị FOMC cho lãi suất Fed Funds vào cuối năm thứ hai phía trước (two years ahead). Cho cái nhìn xa hơn về điểm cuối của chu kỳ lãi suất — Fed kỳ vọng lãi suất ổn định ở đâu khi kinh tế bình thường hoá.",
+          "expectation_meaning": "Dot năm 2 thường tiến gần về mức 'longer-run' (lãi suất trung lập). Nếu dot năm 2 vẫn cao hơn longer-run rõ rệt = Fed cho rằng cần giữ chính sách hạn chế lâu hơn. Tiệm cận longer-run = chu kỳ nới lỏng gần hoàn tất.",
+          "good_vs_bad": "Dot năm 2 về sát mức trung lập = thị trường thấy đích đến rõ ràng, giảm bất định → tốt cho định giá dài hạn. Vẫn cao = higher-for-longer kéo dài, áp lực lên long-duration assets.",
+          "market_reaction": "Mover thấp hơn dot current/1yr (vì xa và bất định cao) nhưng định hình kỳ vọng terminal rate. Ảnh hưởng phần dài của đường cong (10Y+) và valuations dài hạn của tech, REITs, utilities.",
+          "release_aliases": [
+            "interest rate projection - 2nd yr",
+            "fed interest rate projection 2nd year"
+          ]
+        },
+        {
+          "id": "DOTS_LONGER",
+          "short_name": "Dot Plot — Dài hạn (Neutral)",
+          "full_name": "FOMC Interest Rate Projection — Longer Run / Neutral Rate (Dot Plot)",
+          "frequency": "Hàng quý (SEP: Mar, Jun, Sep, Dec)",
+          "link": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "description": "Dot trung vị 'longer run' — ước tính của FOMC về lãi suất trung lập (neutral / r*), tức mức lãi suất không kích thích cũng không kìm hãm kinh tế khi đã cân bằng dài hạn. Là điểm neo cho toàn bộ kỳ vọng chính sách.",
+          "expectation_meaning": "Longer-run dot được nâng (vd từ 2.5% lên 3.0%) = Fed cho rằng nền kinh tế chịu được lãi suất cao hơn về cấu trúc (neutral rate cao hơn) → hawkish dài hạn, ngụ ý lãi suất nền sẽ cao hơn mãi mãi. Hạ = ngược lại.",
+          "good_vs_bad": "Nâng neutral rate = repricing toàn đường cong lên, áp lực lên valuations equities (discount rate cao hơn) và bonds dài hạn. Giữ/hạ = neo dovish, hỗ trợ định giá dài hạn.",
+          "market_reaction": "Một thay đổi nhỏ ở longer-run dot có sức nặng lớn vì nó dịch chuyển toàn bộ đường cong và khung định giá. Nâng → yields 10Y/30Y lên, áp lực XLK/XLRE/XLU; tốt tương đối cho XLF, value. Là dot được giới macro chiến lược theo dõi sát nhất cho góc nhìn cấu trúc.",
+          "release_aliases": [
+            "interest rate projection - longer",
+            "fed interest rate projection longer run",
+            "neutral rate dot"
+          ]
+        },
+        {
+          "id": "FED_RATE_DECISION",
+          "short_name": "Fed Rate Decision",
+          "full_name": "Fed Interest Rate Decision (FOMC)",
+          "frequency": "8 lần/năm (lịch FOMC)",
+          "link": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+          "description": "Quyết định lãi suất chính sách của Ủy ban Thị trường Mở Liên bang (FOMC) — biên độ mục tiêu Fed Funds Rate. Đây là sự kiện macro QUAN TRỌNG NHẤT đối với thị trường tài chính toàn cầu, định giá mọi tài sản qua chi phí vốn.",
+          "expectation_meaning": "Bản thân con số thường được dự đoán trước (xem CME FedWatch). Điều thị trường giao dịch là: (1) bất ngờ so kỳ vọng (hiếm), (2) statement language thay đổi gì, (3) dot plot kèm theo (nếu là họp SEP), (4) tone họp báo của Chủ tịch Fed. 'Hawkish cut' / 'dovish hold' là các kịch bản phổ biến hơn surprise số.",
+          "good_vs_bad": "Cắt lãi suất / hướng dẫn dovish = giảm chi phí vốn → tốt cho equities (đặc biệt growth/tech, REITs), bonds tăng giá, USD yếu. Tăng / hawkish = ngược lại — tốt tương đối cho XLF (NIM), áp lực lên duration assets. 'Tốt/xấu' phụ thuộc bối cảnh: cắt vì lạm phát hạ = tốt; cắt vì kinh tế sụp = risk-off.",
+          "market_reaction": "Mover lớn nhất trong lịch macro — biến động cực mạnh ở yields, USD, vàng, equities trong và sau họp báo. Toàn bộ 11 sectors phản ứng: dovish → XLK/XLY/XLRE dẫn dắt risk-on; hawkish → defensives (XLP, XLU) và XLF tương đối tốt hơn. Đọc cùng dot plot và SEP để có bức tranh đầy đủ.",
+          "release_aliases": [
+            "fed interest rate decision",
+            "fomc rate decision",
+            "federal funds rate decision"
           ]
         }
       ]
@@ -2326,6 +2466,21 @@
             "DCOILWTICO"
           ],
           "deep_dive_link": "https://www.eia.gov/outlooks/steo/"
+        },
+        {
+          "id": "IEA_MONTHLY",
+          "short_name": "IEA Monthly Report",
+          "full_name": "IEA Oil Market Report (Monthly)",
+          "frequency": "Hàng tháng",
+          "link": "https://www.iea.org/topics/oil-market-report",
+          "description": "Báo cáo thị trường dầu hàng tháng của International Energy Agency (Paris) — đại diện cho phía tiêu thụ (các nước OECD nhập khẩu dầu). Đưa ra dự báo cầu dầu toàn cầu, cung ngoài-OPEC, tồn kho và cân bằng cung-cầu 12-24 tháng tới.",
+          "expectation_meaning": "IEA thường thiên về phía cầu (consumer bias), ngược với OPEC Monthly (producer bias). Khi IEA hạ dự báo tăng trưởng cầu dầu → bearish WTI/Brent. Nâng dự báo cầu hoặc cảnh báo thị trường thắt chặt (tồn kho giảm) → bullish.",
+          "good_vs_bad": "Đối với XLE: IEA dự báo thị trường 'tighter' (cung thiếu so cầu) = bullish dầu = tốt cho energy. IEA cảnh báo 'oversupply' / cắt dự báo cầu = bearish dầu, áp lực lên energy stocks.",
+          "market_reaction": "Mover trung bình cho dầu — ít gây sốc tức thời như EIA weekly nhưng định hình narrative tháng. Đọc song song OPEC Monthly + EIA STEO để dựng global oil balance view. Hưởng lợi/áp lực: XLE (XOM, CVX), refiners (VLO, MPC), oil services (SLB, HAL); gián tiếp tới CPI Energy và transport costs.",
+          "release_aliases": [
+            "iea monthly report",
+            "iea oil market report"
+          ]
         }
       ]
     },

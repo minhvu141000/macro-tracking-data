@@ -423,7 +423,13 @@ def _census_get(flow: str, params: dict[str, str]) -> list[list] | None:
             print(f"  Census {flow}: HTTP {r.status_code}", file=sys.stderr)
             return None
         data = r.json()
-        return data if data and len(data) > 1 else None
+        # Census returns a JSON dict (catalog/metadata) instead of a list-of-lists
+        # when the requested period isn't published yet — guard against that.
+        if not isinstance(data, list) or not data or len(data) <= 1:
+            if isinstance(data, dict):
+                print(f"  Census {flow}: no tabular data for requested period (got catalog response) — skipping", file=sys.stderr)
+            return None
+        return data
     except Exception as exc:
         print(f"  Census {flow} error: {exc}", file=sys.stderr)
         return None

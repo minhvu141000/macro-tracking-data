@@ -1,21 +1,14 @@
 {
   "schema_version": "1.1",
-  "fetched_at": "2026-06-16T16:26:26.724715+00:00",
-  "window_start": "2026-06-16",
-  "window_end": "2026-07-07",
+  "fetched_at": "2026-06-17T19:26:49.526424+00:00",
+  "window_start": "2026-06-17",
+  "window_end": "2026-07-08",
   "macro": [
     {
       "date": "2026-06-17",
       "name": "FOMC Meeting (Fed rate decision)",
       "release_id": 8,
       "type": "macro"
-    },
-    {
-      "date": "2026-06-17",
-      "name": "Durable Goods Orders",
-      "release_id": 326,
-      "type": "macro",
-      "estimated": true
     },
     {
       "date": "2026-06-19",
@@ -56,13 +49,6 @@
       "date": "2026-06-29",
       "name": "Producer Price Index (PPI)",
       "release_id": 17,
-      "type": "macro",
-      "estimated": true
-    },
-    {
-      "date": "2026-07-01",
-      "name": "Retail Sales",
-      "release_id": 25,
       "type": "macro",
       "estimated": true
     },
@@ -119,26 +105,23 @@
       "type": "earnings"
     }
   ],
-  "fed_speakers": [],
+  "fed_speakers": [
+    {
+      "date": "2026-06-17",
+      "time": "10:45",
+      "speaker": "Unknown",
+      "topic": "U.S. President Trump Speaks",
+      "venue": "",
+      "impact": "low",
+      "source": "investing.com (historical)",
+      "event_url": "https://www.investing.com/economic-calendar/u.s.-president-trump-speaks-1694"
+    }
+  ],
   "lookahead": {
-    "tomorrow_date": "2026-06-17",
-    "week_end_date": "2026-06-23",
+    "tomorrow_date": "2026-06-18",
+    "week_end_date": "2026-06-24",
     "tomorrow": {
-      "macro": [
-        {
-          "date": "2026-06-17",
-          "name": "FOMC Meeting (Fed rate decision)",
-          "release_id": 8,
-          "type": "macro"
-        },
-        {
-          "date": "2026-06-17",
-          "name": "Durable Goods Orders",
-          "release_id": 326,
-          "type": "macro",
-          "estimated": true
-        }
-      ],
+      "macro": [],
       "earnings": [],
       "fed_speakers": []
     },
@@ -149,13 +132,6 @@
           "name": "FOMC Meeting (Fed rate decision)",
           "release_id": 8,
           "type": "macro"
-        },
-        {
-          "date": "2026-06-17",
-          "name": "Durable Goods Orders",
-          "release_id": 326,
-          "type": "macro",
-          "estimated": true
         },
         {
           "date": "2026-06-19",
@@ -175,6 +151,13 @@
           "date": "2026-06-23",
           "name": "Personal Income & Outlays (PCE)",
           "release_id": 21,
+          "type": "macro",
+          "estimated": true
+        },
+        {
+          "date": "2026-06-24",
+          "name": "Job Openings & Labor Turnover (JOLTS)",
+          "release_id": 53,
           "type": "macro",
           "estimated": true
         }
