@@ -1264,10 +1264,14 @@ function bindChartCardEvents(wrap, h) {
   const h = D.history || {};
 
   // Map each release → FRED ID via byNamePattern; dedupe
+  // EXCLUDE: chỉ số KHÔNG hiện ở mục "công bố hôm nay" dù release map vào (vd Fed
+  // Funds Rate — FOMC days kéo nó vào nhưng người dùng không muốn nó ở đây).
+  const EXCLUDE_TODAY = new Set(["DFF"]);
   const fredMap = new Map();  // fredId -> { name, releaseNames[] }
   releases.forEach(rel => {
     const info = lookupIndicator({ name: rel.name });
-    if (info && info._fredId && h[info._fredId] && (h[info._fredId].history || []).length > 0) {
+    if (info && info._fredId && !EXCLUDE_TODAY.has(info._fredId)
+        && h[info._fredId] && (h[info._fredId].history || []).length > 0) {
       const fid = info._fredId;
       if (!fredMap.has(fid)) {
         fredMap.set(fid, { fredId: fid, displayName: info.name || rel.name, releaseNames: [] });
