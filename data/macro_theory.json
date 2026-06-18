@@ -1384,6 +1384,174 @@
             "total business inventories"
           ],
           "deep_dive_link": "https://fred.stlouisfed.org/series/BUSINV"
+        },
+        {
+          "id": "GACDISA066MSFRBPHI",
+          "short_name": "Philly Fed Mfg",
+          "full_name": "Philadelphia Fed Manufacturing Business Outlook Survey (Headline)",
+          "frequency": "Hàng tháng (giữa tháng)",
+          "link": "https://fred.stlouisfed.org/series/GACDISA066MSFRBPHI",
+          "description": "Chỉ số khuếch tán (diffusion index) đo điều kiện kinh doanh hiện tại của các nhà sản xuất vùng Philadelphia Fed (Third District). Là một trong những regional Fed survey sớm nhất, leading cho ISM Manufacturing PMI.",
+          "expectation_meaning": "Diffusion index: 0 = phân chia (số tăng = số giảm). > 0 = mở rộng, < 0 = thu hẹp. Forecast thường dao động -10 đến +15. Vượt trên = sản xuất khu vực khoẻ hơn kỳ vọng.",
+          "good_vs_bad": "Dương và tăng = sản xuất phục hồi → tốt cho cyclicals (XLI, XLB). Âm sâu (< -20) = manufacturing recession khu vực → cảnh báo cho ISM Mfg + INDPRO tháng sau.",
+          "market_reaction": "Là chỉ báo sớm cho ISM Mfg PMI (công bố đầu tháng sau). Bật mạnh trên 0 → cyclicals/industrials/materials rally, bond yields nhích lên. Rơi sâu → defensive bid (XLU/XLV), dovish lean cho Fed. Volatile theo tháng → đọc trend 3 tháng.",
+          "release_aliases": [
+            "philadelphia fed manufacturing index"
+          ],
+          "read_format": "**Diffusion index** (0 = neutral) · so với forecast/previous",
+          "watch_thresholds": "<-20 contraction sâu / -20..0 yếu / 0..+15 mở rộng / >+20 bùng nổ (rare)",
+          "release_pattern": "Hàng tháng, ~ngày 15-20 (giữa tháng tham chiếu), trước ISM Mfg",
+          "related_indicators": [
+            "NAPM",
+            "INDPRO",
+            "GDPNOW"
+          ],
+          "primary_link": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/manufacturing-business-outlook-survey",
+          "deep_dive_link": "https://fred.stlouisfed.org/series/GACDISA066MSFRBPHI"
+        },
+        {
+          "id": "PHILLYFED_FUTURE",
+          "short_name": "Philly Fed Future",
+          "full_name": "Philadelphia Fed Business Conditions Index (6-Month Future Outlook)",
+          "frequency": "Hàng tháng (giữa tháng)",
+          "link": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/manufacturing-business-outlook-survey",
+          "description": "Chỉ số kỳ vọng điều kiện kinh doanh 6 tháng tới của nhà sản xuất Philadelphia Fed. Đo niềm tin về tương lai (forward-looking) chứ không phải hiện tại.",
+          "expectation_meaning": "Diffusion index về kỳ vọng tương lai. > 0 = doanh nghiệp lạc quan 6 tháng tới. Spread giữa Future vs Current cho biết momentum sắp tới.",
+          "good_vs_bad": "Future cao trong khi Current yếu = doanh nghiệp tin chu kỳ đang đáy → leading bullish. Future sụp = mất niềm tin → capex/hiring cắt giảm sắp tới.",
+          "market_reaction": "Future Conditions là leading của leading. Tăng mạnh → tín hiệu phục hồi sớm cho XLI/XLB. Sụp đột ngột → warning trước khi hard data xấu. Đọc cùng Capex Index để xác nhận ý định đầu tư.",
+          "release_aliases": [
+            "philly fed business conditions"
+          ],
+          "read_format": "**Diffusion index** (kỳ vọng 6 tháng) · spread vs current",
+          "watch_thresholds": "<0 bi quan / 0..+20 lạc quan vừa / >+30 rất lạc quan",
+          "release_pattern": "Hàng tháng, kèm headline Philly Fed Mfg (giữa tháng)",
+          "related_indicators": [
+            "GACDISA066MSFRBPHI",
+            "USSLIND",
+            "NAPM"
+          ],
+          "primary_link": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/manufacturing-business-outlook-survey",
+          "deep_dive_link": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/manufacturing-business-outlook-survey"
+        },
+        {
+          "id": "PHILLYFED_CAPEX",
+          "short_name": "Philly Fed Capex",
+          "full_name": "Philadelphia Fed Capital Expenditures Index (Future)",
+          "frequency": "Hàng tháng (giữa tháng)",
+          "link": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/manufacturing-business-outlook-survey",
+          "description": "Chỉ số đo kế hoạch chi tiêu đầu tư vốn (capital expenditures) của nhà sản xuất Philadelphia Fed trong 6 tháng tới. Proxy cho business investment cycle.",
+          "expectation_meaning": "Diffusion index về ý định capex. Cao = doanh nghiệp dự định mở rộng nhà máy/thiết bị → leading cho Durable Goods (Nondefense ex-Aircraft) và GDP đầu tư tư nhân.",
+          "good_vs_bad": "Capex Index tăng = chu kỳ đầu tư mở rộng → tốt cho industrials, machinery, semis (capex equipment). Sụp = doanh nghiệp thận trọng → đầu tư tư nhân kéo GDP xuống.",
+          "market_reaction": "Leading cho business CAPEX → XLI (Caterpillar, Deere), XLK (semicap equipment). Tăng bền → đầu tàu GDP đầu tư mạnh lên. Yếu → cảnh báo capex recession.",
+          "release_aliases": [
+            "philly fed capex index"
+          ],
+          "read_format": "**Diffusion index** (ý định capex 6 tháng) · trend 3 tháng",
+          "watch_thresholds": "<0 cắt giảm capex / 0..+15 mở rộng vừa / >+20 capex boom",
+          "release_pattern": "Hàng tháng, kèm Philly Fed survey (giữa tháng)",
+          "related_indicators": [
+            "DGORDER",
+            "GDPNOW",
+            "GACDISA066MSFRBPHI"
+          ],
+          "primary_link": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/manufacturing-business-outlook-survey",
+          "deep_dive_link": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/manufacturing-business-outlook-survey"
+        },
+        {
+          "id": "PHILLYFED_EMPLOYMENT",
+          "short_name": "Philly Fed Employment",
+          "full_name": "Philadelphia Fed Manufacturing Employment Index",
+          "frequency": "Hàng tháng (giữa tháng)",
+          "link": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/manufacturing-business-outlook-survey",
+          "description": "Sub-component của Philly Fed survey đo số nhà sản xuất tăng vs giảm nhân sự. Leading cho Manufacturing Payrolls (MANEMP) trong NFP.",
+          "expectation_meaning": "Diffusion index về tuyển dụng. > 0 = ròng tuyển thêm. < 0 = sa thải ròng trong manufacturing khu vực.",
+          "good_vs_bad": "Dương = nhà máy tuyển thêm → tốt cho Mfg Payrolls + labor cyclical. Âm bền = manufacturing layoffs → kéo NFP manufacturing xuống → dovish lean.",
+          "market_reaction": "Leading cho MANEMP trong NFP. Âm sâu = warning cho việc làm sản xuất. Đọc cùng ISM Mfg Employment để cross-check labor demand công nghiệp.",
+          "release_aliases": [
+            "philly fed employment"
+          ],
+          "read_format": "**Diffusion index** (tuyển dụng ròng) · so previous",
+          "watch_thresholds": "<-10 sa thải mạnh / -10..0 yếu / 0..+15 tuyển ròng / >+15 hiring mạnh",
+          "release_pattern": "Hàng tháng, kèm Philly Fed survey (giữa tháng)",
+          "related_indicators": [
+            "MANEMP",
+            "PAYEMS",
+            "GACDISA066MSFRBPHI"
+          ],
+          "primary_link": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/manufacturing-business-outlook-survey",
+          "deep_dive_link": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/manufacturing-business-outlook-survey"
+        },
+        {
+          "id": "PHILLYFED_NEWORDERS",
+          "short_name": "Philly Fed New Orders",
+          "full_name": "Philadelphia Fed Manufacturing New Orders Index",
+          "frequency": "Hàng tháng (giữa tháng)",
+          "link": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/manufacturing-business-outlook-survey",
+          "description": "Sub-component quan trọng nhất của Philly Fed survey — đo đơn hàng mới của nhà sản xuất. Leading nhất cho production và ISM Mfg New Orders.",
+          "expectation_meaning": "Diffusion index về đơn hàng mới. > 0 = đơn hàng tăng ròng → sản xuất sẽ mạnh lên 1-2 tháng tới. Đây là forward demand signal.",
+          "good_vs_bad": "New Orders cao = nhu cầu cuối tăng → production + employment sẽ theo sau. Sụp = demand suy yếu → cảnh báo sớm cho cả chu kỳ công nghiệp.",
+          "market_reaction": "New Orders là leading-of-leading. Bật mạnh → cyclicals/materials/copper rally. Spread New Orders vs Inventories cho biết expansion có lành mạnh không. Sụp → defensive rotation.",
+          "release_aliases": [
+            "philly fed new orders"
+          ],
+          "read_format": "**Diffusion index** (đơn hàng mới) · spread vs inventories",
+          "watch_thresholds": "<-15 demand sụp / -15..0 yếu / 0..+20 demand khoẻ / >+25 bùng nổ",
+          "release_pattern": "Hàng tháng, kèm Philly Fed survey (giữa tháng)",
+          "related_indicators": [
+            "NAPM",
+            "GACDISA066MSFRBPHI",
+            "DGORDER"
+          ],
+          "primary_link": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/manufacturing-business-outlook-survey",
+          "deep_dive_link": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/manufacturing-business-outlook-survey"
+        },
+        {
+          "id": "PHILLYFED_PRICESPAID",
+          "short_name": "Philly Fed Prices Paid",
+          "full_name": "Philadelphia Fed Manufacturing Prices Paid Index",
+          "frequency": "Hàng tháng (giữa tháng)",
+          "link": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/manufacturing-business-outlook-survey",
+          "description": "Sub-component đo áp lực giá đầu vào của nhà sản xuất Philadelphia Fed. Leading sớm cho PPI và phần goods của CPI/Core PCE.",
+          "expectation_meaning": "Diffusion index về giá đầu vào. Cao = chi phí nguyên vật liệu tăng → áp lực truyền vào PPI → CPI. Là một trong những regional price gauge sớm nhất.",
+          "good_vs_bad": "Cao = input cost inflation → margin doanh nghiệp bị ép + Fed hawkish lean. Thấp/giảm = disinflation pipeline → tốt cho equities + margin mở rộng.",
+          "market_reaction": "Prices Paid tăng vọt → cảnh báo PPI/CPI nóng sắp tới → bond yields lên, USD mạnh, XLK/XLY chịu áp lực. Giảm rõ → dovish, duration assets (XLRE/XLU/Tech) hưởng lợi. Cross-check với ISM Mfg Prices.",
+          "release_aliases": [
+            "philly fed prices paid"
+          ],
+          "read_format": "**Diffusion index** (giá đầu vào) · leading PPI/CPI goods",
+          "watch_thresholds": "<10 áp lực giá thấp / 10-30 vừa / 30-50 nóng / >50 inflation spike",
+          "release_pattern": "Hàng tháng, kèm Philly Fed survey (giữa tháng)",
+          "related_indicators": [
+            "PPIFID",
+            "CPIAUCSL",
+            "NAPM"
+          ],
+          "primary_link": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/manufacturing-business-outlook-survey",
+          "deep_dive_link": "https://www.philadelphiafed.org/surveys-and-data/regional-economic-analysis/manufacturing-business-outlook-survey"
+        },
+        {
+          "id": "USSLIND",
+          "short_name": "Leading Index",
+          "full_name": "Conference Board Leading Economic Index (LEI)",
+          "frequency": "Hàng tháng",
+          "link": "https://fred.stlouisfed.org/series/USSLIND",
+          "description": "Chỉ số kinh tế dẫn dắt (LEI) của Conference Board — tổng hợp 10 thành phần leading (jobless claims, new orders ISM, building permits, đường cong lãi suất, stock prices, consumer expectations...) để dự báo điểm ngoặt chu kỳ kinh tế.",
+          "expectation_meaning": "Đọc theo MoM %. LEI giảm 6 tháng liên tiếp + giảm > 4% (6m annualized) theo lịch sử báo hiệu recession. Tăng = chu kỳ mở rộng tiếp diễn.",
+          "good_vs_bad": "Tăng = momentum kinh tế tích cực 3-6 tháng tới → tốt cho cyclicals. Giảm bền = warning recession → defensive rotation, Fed sẽ buộc dovish.",
+          "market_reaction": "LEI là composite leading được theo dõi rộng. Chuỗi giảm dài → recession watch → XLU/XLV/Bonds bid, yield curve dis-invert. Đảo chiều tăng từ đáy → confirm soft-landing/recovery → cyclicals (XLI/XLF/XLB) dẫn dắt.",
+          "release_aliases": [
+            "us leading index"
+          ],
+          "read_format": "**MoM %** primary · 6-month diffusion + 6m growth rate",
+          "watch_thresholds": "6 tháng giảm liên tiếp = recession watch / 6m growth <-4% = recession signal",
+          "release_pattern": "Hàng tháng, ~3 tuần sau tháng tham chiếu (Conference Board)",
+          "related_indicators": [
+            "GDPNOW",
+            "GACDISA066MSFRBPHI",
+            "ICSA"
+          ],
+          "primary_link": "https://www.conference-board.org/topics/us-leading-indicators",
+          "deep_dive_link": "https://fred.stlouisfed.org/series/USSLIND"
         }
       ]
     },
@@ -2076,6 +2244,102 @@
           ],
           "primary_link": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services",
           "deep_dive_link": "https://fred.stlouisfed.org/series/IMPGS"
+        },
+        {
+          "id": "TIC_FOREIGN_TBONDS",
+          "short_name": "Foreign Buying T-Bonds",
+          "full_name": "TIC Foreign Net Purchases of U.S. Treasury Bonds & Notes",
+          "frequency": "Hàng tháng (trễ ~6 tuần)",
+          "link": "https://home.treasury.gov/data/treasury-international-capital-tic-system",
+          "description": "Lượng mua ròng trái phiếu kho bạc Mỹ (T-bonds & notes) của nhà đầu tư nước ngoài, từ hệ thống TIC (Treasury International Capital) của Bộ Tài chính Mỹ.",
+          "expectation_meaning": "Đọc theo level $B. Dương lớn = nước ngoài (Nhật, Trung Quốc, châu Âu) mua mạnh UST → hỗ trợ giá trái phiếu, ghìm yields. Âm = bán ròng → áp lực lên yields + USD.",
+          "good_vs_bad": "Mua ròng mạnh = cầu ngoại đối với nợ Mỹ khoẻ → ghìm long-end yields, hỗ trợ USD. Bán ròng bền (đặc biệt Trung Quốc) = de-dollarization lo ngại → yields lên, USD áp lực dài hạn.",
+          "market_reaction": "Dữ liệu trễ nên ít market-moving tức thời, nhưng quan trọng cho thesis cấu trúc về cầu UST. Bán ròng lớn từ official holders → câu chuyện 'ai tài trợ thâm hụt Mỹ' → áp lực term premium → XLRE/Tech (duration) nhạy cảm.",
+          "release_aliases": [
+            "us foreign buying, t-bonds"
+          ],
+          "read_format": "**Net level (B USD)** · breakdown theo official vs private holders",
+          "watch_thresholds": "Bán ròng bền từ official sector (TQ/Nhật) = cấu trúc bearish UST/USD",
+          "release_pattern": "Hàng tháng, ~ngày 15-18, dữ liệu trễ 6 tuần (TIC Treasury)",
+          "related_indicators": [
+            "TIC_NET_LT",
+            "TIC_OVERALL",
+            "DGS10"
+          ],
+          "primary_link": "https://home.treasury.gov/data/treasury-international-capital-tic-system",
+          "deep_dive_link": "https://home.treasury.gov/data/treasury-international-capital-tic-system-home-page/tic-forms-instructions/securities-b-portfolio-holdings-of-us-and-foreign-securities"
+        },
+        {
+          "id": "TIC_OVERALL",
+          "short_name": "Net Capital Flow",
+          "full_name": "TIC Overall Net Capital Flow",
+          "frequency": "Hàng tháng (trễ ~6 tuần)",
+          "link": "https://home.treasury.gov/data/treasury-international-capital-tic-system",
+          "description": "Tổng dòng vốn ròng vào/ra Mỹ (bao gồm cả chứng khoán dài hạn, ngắn hạn và dòng tiền ngân hàng) từ hệ thống TIC. Đo khả năng Mỹ tài trợ thâm hụt tài khoản vãng lai.",
+          "expectation_meaning": "Đọc theo level $B. Dòng vào ròng dương = thế giới rót vốn vào tài sản Mỹ → hỗ trợ USD. Dòng ra ròng = vốn rút khỏi Mỹ → áp lực USD.",
+          "good_vs_bad": "Dòng vào mạnh = nhu cầu tài sản Mỹ cao → USD support, dễ tài trợ thâm hụt. Dòng ra lớn = mất niềm tin/risk-off toàn cầu → USD áp lực hoặc safe-haven tuỳ bối cảnh.",
+          "market_reaction": "Headline TIC tổng hợp. Là check cấu trúc về sức hút của tài sản Mỹ. Dòng ra bền + thâm hụt rộng = câu chuyện USD yếu dài hạn → tốt cho commodities/EM. Ít market-moving tức thời vì trễ.",
+          "release_aliases": [
+            "overall net capital flow"
+          ],
+          "read_format": "**Net level (B USD)** · gồm cả banking flows + short-term",
+          "watch_thresholds": "Dòng ra ròng lớn bền = áp lực tài trợ thâm hụt + USD",
+          "release_pattern": "Hàng tháng, ~ngày 15-18, dữ liệu trễ 6 tuần (TIC Treasury)",
+          "related_indicators": [
+            "TIC_NET_LT",
+            "TIC_FOREIGN_TBONDS",
+            "DTWEXBGS"
+          ],
+          "primary_link": "https://home.treasury.gov/data/treasury-international-capital-tic-system",
+          "deep_dive_link": "https://home.treasury.gov/data/treasury-international-capital-tic-system-home-page/tic-press-releases"
+        },
+        {
+          "id": "TIC_NET_LT",
+          "short_name": "TIC Net Long-Term",
+          "full_name": "TIC Net Long-Term Securities Transactions",
+          "frequency": "Hàng tháng (trễ ~6 tuần)",
+          "link": "https://home.treasury.gov/data/treasury-international-capital-tic-system",
+          "description": "Giao dịch ròng chứng khoán dài hạn (Treasuries, agency bonds, corporate bonds, equities) giữa Mỹ và nước ngoài. Là headline number được theo dõi nhất trong báo cáo TIC.",
+          "expectation_meaning": "Đọc theo level $B. Dương = nước ngoài mua ròng tài sản dài hạn Mỹ (hoặc Mỹ bán bớt tài sản ngoại) → dòng vốn vào. Âm = dòng ra.",
+          "good_vs_bad": "Mua ròng dài hạn mạnh = cầu bền với UST/equities Mỹ → hỗ trợ giá tài sản + USD. Âm = vốn rút khỏi tài sản dài hạn → yields lên, áp lực USD.",
+          "market_reaction": "Long-term flows là chỉ báo cầu cấu trúc 'sticky' (khác hot money ngắn hạn). Mua ròng bền → ghìm long-end yields, tốt cho duration. Bán ròng → term premium lên, XLRE/Tech chịu áp lực. Quan trọng cho thesis dài hạn hơn là phản ứng phiên.",
+          "release_aliases": [
+            "tic net long-term transactions"
+          ],
+          "read_format": "**Net level (B USD)** · gồm UST + agency + corp + equities",
+          "watch_thresholds": "Dương bền = cầu cấu trúc khoẻ; âm bền = de-dollarization watch",
+          "release_pattern": "Hàng tháng, ~ngày 15-18, dữ liệu trễ 6 tuần (TIC Treasury)",
+          "related_indicators": [
+            "TIC_NET_LT_SWAPS",
+            "TIC_FOREIGN_TBONDS",
+            "DGS10"
+          ],
+          "primary_link": "https://home.treasury.gov/data/treasury-international-capital-tic-system",
+          "deep_dive_link": "https://home.treasury.gov/data/treasury-international-capital-tic-system-home-page/tic-press-releases"
+        },
+        {
+          "id": "TIC_NET_LT_SWAPS",
+          "short_name": "TIC Net LT incl. Swaps",
+          "full_name": "TIC Net Long-Term Transactions Including Stock Swaps & Other Adjustments",
+          "frequency": "Hàng tháng (trễ ~6 tuần)",
+          "link": "https://home.treasury.gov/data/treasury-international-capital-tic-system",
+          "description": "Phiên bản điều chỉnh của TIC Net Long-Term — bao gồm cả stock swaps và các điều chỉnh khác (không phản ánh dòng tiền thực). Cho con số 'sạch' hơn về dòng vốn dài hạn thực chất.",
+          "expectation_meaning": "Đọc theo level $B. So sánh với bản 'không gồm swaps' để loại các giao dịch kỹ thuật (M&A bằng cổ phiếu) không phải dòng tiền thật.",
+          "good_vs_bad": "Sau khi loại swaps, con số này phản ánh dòng vốn dài hạn thực chất hơn. Dương = cầu thực với tài sản Mỹ. Âm = dòng ra thực.",
+          "market_reaction": "Pros so sánh bản có-swaps vs không-swaps: chênh lệch lớn = có giao dịch M&A/stock swap kỹ thuật méo headline. Dùng để đọc dòng vốn 'thật' cho thesis USD/UST. Ít market-moving tức thời (trễ + kỹ thuật).",
+          "release_aliases": [
+            "tic net long-term transactions including swaps"
+          ],
+          "read_format": "**Net level (B USD)** đã điều chỉnh · so với bản không-swaps",
+          "watch_thresholds": "Chênh lớn vs bản không-swaps = méo bởi M&A stock swaps",
+          "release_pattern": "Hàng tháng, ~ngày 15-18, dữ liệu trễ 6 tuần (TIC Treasury)",
+          "related_indicators": [
+            "TIC_NET_LT",
+            "TIC_OVERALL",
+            "DTWEXBGS"
+          ],
+          "primary_link": "https://home.treasury.gov/data/treasury-international-capital-tic-system",
+          "deep_dive_link": "https://home.treasury.gov/data/treasury-international-capital-tic-system-home-page/tic-press-releases"
         }
       ]
     },

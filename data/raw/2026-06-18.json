@@ -1,0 +1,2809 @@
+{
+  "date": "2026-06-18",
+  "collected_at": "2026-06-18T19:58:05.926361+00:00",
+  "release_summary": {
+    "signal_release_count": 14,
+    "noise_release_count": 7,
+    "surprise_count": 1,
+    "groups_present": [
+      "jobless_claims",
+      "other",
+      "regional_fed"
+    ],
+    "surprised_groups": [
+      "regional_fed"
+    ],
+    "day_surprise_score": {
+      "growth_score": 0.91,
+      "inflation_score": 0,
+      "n_growth": 2,
+      "n_inflation": 0
+    }
+  },
+  "inflation_context": {
+    "cpi_yoy": 4.27,
+    "cpi_3mo_ann": 8.2,
+    "core_cpi_yoy": 2.96,
+    "core_cpi_3mo_ann": 3.17,
+    "pce_yoy": 3.77,
+    "core_pce_yoy": 3.29,
+    "core_pce_3mo_ann": 3.78,
+    "hard_data_hot": true,
+    "note": "Hard-data lạm phát VẪN NÓNG (Core PCE YoY 3.29%, CPI YoY 4.27%). Soft-data/khảo sát dovish CHƯA đủ xác nhận disinflation — báo cáo phải đối chiếu, không tuyên bố 'risk-on bền/dovish hẳn' một chiều.",
+    "drivers": {
+      "ranked_by_momentum": [
+        {
+          "component": "Energy (Năng lượng)",
+          "series_id": "CPIENGSL",
+          "mom_pct": 3.884,
+          "yoy_pct": 22.1,
+          "mo3_annualized_pct": 104.38
+        },
+        {
+          "component": "Shelter (Nhà ở)",
+          "series_id": "CUSR0000SAH1",
+          "mom_pct": 0.318,
+          "yoy_pct": 3.62,
+          "mo3_annualized_pct": 4.87
+        },
+        {
+          "component": "Core Services (Dịch vụ lõi)",
+          "series_id": "CUSR0000SASLE",
+          "mom_pct": 0.295,
+          "yoy_pct": 3.56,
+          "mo3_annualized_pct": 4.16
+        },
+        {
+          "component": "Food (Thực phẩm)",
+          "series_id": "CPIUFDSL",
+          "mom_pct": 0.156,
+          "yoy_pct": 3.38,
+          "mo3_annualized_pct": 2.65
+        },
+        {
+          "component": "Core Goods (Hàng hoá lõi)",
+          "series_id": "CUSR0000SACL1E",
+          "mom_pct": -0.114,
+          "yoy_pct": 1.03,
+          "mo3_annualized_pct": 0.11
+        }
+      ],
+      "top_up": "Energy (Năng lượng)",
+      "top_down": "Core Goods (Hàng hoá lõi)",
+      "note": "Kéo lạm phát LÊN mạnh nhất: Energy (Năng lượng) (3mo ann 104.38%). Kéo XUỐNG/giảm áp lực nhất: Core Goods (Hàng hoá lõi) (3mo ann 0.11%)."
+    }
+  },
+  "growth_context": {
+    "gdp_growth_pct": 1.6,
+    "ranked_by_contribution": [
+      {
+        "component": "Đầu tư tư nhân",
+        "series_id": "A006RY2Q224SBEA",
+        "contribution_pp": 1.19
+      },
+      {
+        "component": "Tiêu dùng (PCE)",
+        "series_id": "DPCERY2Q224SBEA",
+        "contribution_pp": 0.95
+      },
+      {
+        "component": "Chi tiêu chính phủ",
+        "series_id": "A822RY2Q224SBEA",
+        "contribution_pp": 0.73
+      },
+      {
+        "component": "Xuất khẩu ròng (Net Exports)",
+        "series_id": "A019RY2Q224SBEA",
+        "contribution_pp": -1.25
+      }
+    ],
+    "locomotive": "Đầu tư tư nhân",
+    "biggest_drag": "Xuất khẩu ròng (Net Exports)",
+    "note": "Đầu tàu kéo GDP: Đầu tư tư nhân (+1.19pp). Lực cản lớn nhất: Xuất khẩu ròng (Net Exports) (-1.25pp). Tổng tăng trưởng GDP QoQ ann. = 1.6%."
+  },
+  "cycle_context": {
+    "sahm": {
+      "value": 0.1,
+      "triggered": false,
+      "current_3mo_avg_unemp": 4.3,
+      "trailing_12mo_low": 4.2,
+      "note": "Sahm +0.10pp — chưa kích hoạt (ngưỡng 0.50). Thất nghiệp 3mo-avg 4.3% vs đáy 12 tháng 4.2%."
+    },
+    "yield_curve": {
+      "spread_2s10s": 0.29,
+      "spread_10y3m": 0.64,
+      "regime": "normal",
+      "days_in_regime": 116,
+      "note": "2s10s dương bình thường +0.29 (116 phiên), chưa từng đảo trong cửa sổ dữ liệu."
+    },
+    "summary": "Sahm +0.10 (an toàn) | Đường cong: normal (+0.29)"
+  },
+  "trade_detail": {},
+  "releases": [
+    {
+      "name": "Continuing Jobless Claims",
+      "time": "2026/06/18 08:30:00",
+      "importance": "bull2",
+      "actual": "1,810K",
+      "forecast": "1,800K",
+      "previous": "1,786K",
+      "event_url": "https://www.investing.com/economic-calendar/continuing-jobless-claims-522",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1810.0,
+        "forecast": 1800.0,
+        "previous": 1786.0
+      },
+      "surprise": {
+        "deviation": 10.0,
+        "z_score": 0.11,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": 24.0,
+        "direction": "up"
+      },
+      "group": "jobless_claims",
+      "is_noise": false
+    },
+    {
+      "name": "Initial Jobless Claims",
+      "time": "2026/06/18 08:30:00",
+      "importance": "bull3",
+      "actual": "226K",
+      "forecast": "225K",
+      "previous": "230K",
+      "event_url": "https://www.investing.com/economic-calendar/initial-jobless-claims-294",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 226.0,
+        "forecast": 225.0,
+        "previous": 230.0
+      },
+      "surprise": {
+        "deviation": 1.0,
+        "z_score": 0.09,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": -4.0,
+        "direction": "down"
+      },
+      "group": "jobless_claims",
+      "is_noise": false
+    },
+    {
+      "name": "Jobless Claims 4-Week Avg.",
+      "time": "2026/06/18 08:30:00",
+      "importance": "bull1",
+      "actual": "223.25K",
+      "forecast": null,
+      "previous": "219.25K",
+      "event_url": "https://www.investing.com/economic-calendar/jobless-claims-4-week-avg.-1041",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 223.25,
+        "forecast": null,
+        "previous": 219.25
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 4.0,
+        "direction": "up"
+      },
+      "group": "jobless_claims",
+      "is_noise": false
+    },
+    {
+      "name": "Philadelphia Fed Manufacturing Index  (Jun)",
+      "time": "2026/06/18 08:30:00",
+      "importance": "bull3",
+      "actual": "10.3",
+      "forecast": "9.8",
+      "previous": "-0.4",
+      "event_url": "https://www.investing.com/economic-calendar/philadelphia-fed-manufacturing-index-236",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 10.3,
+        "forecast": 9.8,
+        "previous": -0.4
+      },
+      "surprise": {
+        "deviation": 0.5,
+        "z_score": 1.02,
+        "label": "above-forecast"
+      },
+      "vs_previous": {
+        "delta": 10.7,
+        "direction": "up"
+      },
+      "group": "regional_fed",
+      "is_noise": false
+    },
+    {
+      "name": "Philly Fed Business Conditions  (Jun)",
+      "time": "2026/06/18 08:30:00",
+      "importance": "bull1",
+      "actual": "50.2",
+      "forecast": null,
+      "previous": "53.2",
+      "event_url": "https://www.investing.com/economic-calendar/philly-fed-business-conditions-907",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 50.2,
+        "forecast": null,
+        "previous": 53.2
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -3.0,
+        "direction": "down"
+      },
+      "group": "other",
+      "is_noise": false
+    },
+    {
+      "name": "Philly Fed CAPEX Index  (Jun)",
+      "time": "2026/06/18 08:30:00",
+      "importance": "bull1",
+      "actual": "41.20",
+      "forecast": null,
+      "previous": "30.90",
+      "event_url": "https://www.investing.com/economic-calendar/philly-fed-capex-index-1501",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 41.2,
+        "forecast": null,
+        "previous": 30.9
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 10.3,
+        "direction": "up"
+      },
+      "group": "other",
+      "is_noise": false
+    },
+    {
+      "name": "Philly Fed Employment  (Jun)",
+      "time": "2026/06/18 08:30:00",
+      "importance": "bull2",
+      "actual": "7.9",
+      "forecast": null,
+      "previous": "-2.8",
+      "event_url": "https://www.investing.com/economic-calendar/philly-fed-employment-908",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 7.9,
+        "forecast": null,
+        "previous": -2.8
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 10.7,
+        "direction": "up"
+      },
+      "group": "other",
+      "is_noise": false
+    },
+    {
+      "name": "Philly Fed New Orders  (Jun)",
+      "time": "2026/06/18 08:30:00",
+      "importance": "bull1",
+      "actual": "27.3",
+      "forecast": null,
+      "previous": "-1.7",
+      "event_url": "https://www.investing.com/economic-calendar/philly-fed-new-orders-1502",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 27.3,
+        "forecast": null,
+        "previous": -1.7
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 29.0,
+        "direction": "up"
+      },
+      "group": "other",
+      "is_noise": false
+    },
+    {
+      "name": "Philly Fed Prices Paid  (Jun)",
+      "time": "2026/06/18 08:30:00",
+      "importance": "bull1",
+      "actual": "53.20",
+      "forecast": null,
+      "previous": "47.90",
+      "event_url": "https://www.investing.com/economic-calendar/philly-fed-prices-paid-1503",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 53.2,
+        "forecast": null,
+        "previous": 47.9
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 5.3,
+        "direction": "up"
+      },
+      "group": "other",
+      "is_noise": false
+    },
+    {
+      "name": "US Leading Index (MoM)  (May)",
+      "time": "2026/06/18 10:00:00",
+      "importance": "bull2",
+      "actual": "0.1%",
+      "forecast": "0.1%",
+      "previous": "0.2%",
+      "event_url": "https://www.investing.com/economic-calendar/us-leading-index-1968",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.1,
+        "forecast": 0.1,
+        "previous": 0.2
+      },
+      "surprise": {
+        "deviation": 0.0,
+        "z_score": 0.0,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": -0.1,
+        "direction": "down"
+      },
+      "group": "other",
+      "is_noise": false
+    },
+    {
+      "name": "Natural Gas Storage",
+      "time": "2026/06/18 10:30:00",
+      "importance": "bull1",
+      "actual": "73B",
+      "forecast": "82B",
+      "previous": "108B",
+      "event_url": "https://www.investing.com/economic-calendar/natural-gas-storage-386",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 73.0,
+        "forecast": 82.0,
+        "previous": 108.0
+      },
+      "surprise": {
+        "deviation": -9.0,
+        "z_score": -2.2,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -35.0,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
+    },
+    {
+      "name": "4-Week Bill Auction",
+      "time": "2026/06/18 11:30:00",
+      "importance": "bull1",
+      "actual": "3.580%",
+      "forecast": null,
+      "previous": "3.595%",
+      "event_url": "https://www.investing.com/economic-calendar/4-week-bill-auction-567",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.58,
+        "forecast": null,
+        "previous": 3.595
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.015,
+        "direction": "down"
+      },
+      "group": "auctions",
+      "is_noise": true
+    },
+    {
+      "name": "8-Week Bill Auction",
+      "time": "2026/06/18 11:30:00",
+      "importance": "bull1",
+      "actual": "3.640%",
+      "forecast": null,
+      "previous": "3.610%",
+      "event_url": "https://www.investing.com/economic-calendar/8-week-bill-auction-1801",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 3.64,
+        "forecast": null,
+        "previous": 3.61
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.03,
+        "direction": "up"
+      },
+      "group": "auctions",
+      "is_noise": true
+    },
+    {
+      "name": "U.S. Baker Hughes Oil Rig Count",
+      "time": "2026/06/18 13:00:00",
+      "importance": "bull2",
+      "actual": "433",
+      "forecast": null,
+      "previous": "433",
+      "event_url": "https://www.investing.com/economic-calendar/baker-hughes-u.s.-rig-count-1652",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 433.0,
+        "forecast": null,
+        "previous": 433.0
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.0,
+        "direction": "flat"
+      },
+      "group": "rig_count",
+      "is_noise": true
+    },
+    {
+      "name": "U.S. Baker Hughes Total Rig Count",
+      "time": "2026/06/18 13:00:00",
+      "importance": "bull2",
+      "actual": "563",
+      "forecast": null,
+      "previous": "562",
+      "event_url": "https://www.investing.com/economic-calendar/u.s.-baker-hughes-total-rig-count-1810",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 563.0,
+        "forecast": null,
+        "previous": 562.0
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 1.0,
+        "direction": "up"
+      },
+      "group": "rig_count",
+      "is_noise": true
+    },
+    {
+      "name": "US Foreign Buying, T-bonds  (Apr)",
+      "time": "2026/06/18 16:00:00",
+      "importance": "bull1",
+      "actual": null,
+      "forecast": null,
+      "previous": "13.50B",
+      "event_url": "https://www.investing.com/economic-calendar/foreign-buying,-t-bonds-654",
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": 13.5
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "other",
+      "is_noise": false
+    },
+    {
+      "name": "Overall Net Capital Flow  (Apr)",
+      "time": "2026/06/18 16:00:00",
+      "importance": "bull1",
+      "actual": null,
+      "forecast": null,
+      "previous": "150.70B",
+      "event_url": "https://www.investing.com/economic-calendar/overall-net-capital-flow-663",
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": 150.7
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "other",
+      "is_noise": false
+    },
+    {
+      "name": "TIC Net Long-Term Transactions  (Apr)",
+      "time": "2026/06/18 16:00:00",
+      "importance": "bull2",
+      "actual": null,
+      "forecast": "72.5B",
+      "previous": "81.3B",
+      "event_url": "https://www.investing.com/economic-calendar/tic-net-long-term-transactions-283",
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": 72.5,
+        "previous": 81.3
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "other",
+      "is_noise": false
+    },
+    {
+      "name": "TIC Net Long-Term Transactions including Swaps  (Apr)",
+      "time": "2026/06/18 16:00:00",
+      "importance": "bull1",
+      "actual": null,
+      "forecast": null,
+      "previous": "81.30B",
+      "event_url": "https://www.investing.com/economic-calendar/tic-net-long-term-transactions-including-swaps-903",
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": 81.3
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "other",
+      "is_noise": false
+    },
+    {
+      "name": "Fed's Balance Sheet",
+      "time": "2026/06/18 16:30:00",
+      "importance": "bull2",
+      "actual": null,
+      "forecast": null,
+      "previous": "6,725B",
+      "event_url": "https://www.investing.com/economic-calendar/fed's-balance-sheet-2145",
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": 6725.0
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed_plumbing",
+      "is_noise": true
+    },
+    {
+      "name": "Reserve Balances with Federal Reserve Banks",
+      "time": "2026/06/18 16:30:00",
+      "importance": "bull1",
+      "actual": null,
+      "forecast": null,
+      "previous": "3.111T",
+      "event_url": "https://www.investing.com/economic-calendar/reserve-balances-with-federal-reserve-banks-2120",
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": 3.111
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed_plumbing",
+      "is_noise": true
+    }
+  ],
+  "fred_snapshot": {
+    "CPIAUCSL": {
+      "label": "CPI All Items",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 333.979
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 332.407
+      },
+      "change_pct": 0.473,
+      "frequency": "monthly",
+      "mom_pct": 0.473,
+      "yoy_pct": 4.27,
+      "mo3_annualized_pct": 8.2,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 330.293
+        },
+        {
+          "date": "2026-04-01",
+          "value": 332.407
+        },
+        {
+          "date": "2026-05-01",
+          "value": 333.979
+        }
+      ]
+    },
+    "CPILFESL": {
+      "label": "Core CPI",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 336.121
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 335.423
+      },
+      "change_pct": 0.208,
+      "frequency": "monthly",
+      "mom_pct": 0.208,
+      "yoy_pct": 2.96,
+      "mo3_annualized_pct": 3.17,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 334.165
+        },
+        {
+          "date": "2026-04-01",
+          "value": 335.423
+        },
+        {
+          "date": "2026-05-01",
+          "value": 336.121
+        }
+      ]
+    },
+    "PCEPI": {
+      "label": "PCE Price Index",
+      "latest": {
+        "date": "2026-04-01",
+        "value": 130.902
+      },
+      "previous": {
+        "date": "2026-03-01",
+        "value": 130.381
+      },
+      "change_pct": 0.4,
+      "frequency": "monthly",
+      "mom_pct": 0.4,
+      "yoy_pct": 3.77,
+      "mo3_annualized_pct": 6.02,
+      "history": [
+        {
+          "date": "2026-02-01",
+          "value": 129.52
+        },
+        {
+          "date": "2026-03-01",
+          "value": 130.381
+        },
+        {
+          "date": "2026-04-01",
+          "value": 130.902
+        }
+      ]
+    },
+    "PCEPILFE": {
+      "label": "Core PCE",
+      "latest": {
+        "date": "2026-04-01",
+        "value": 129.63
+      },
+      "previous": {
+        "date": "2026-03-01",
+        "value": 129.321
+      },
+      "change_pct": 0.239,
+      "frequency": "monthly",
+      "mom_pct": 0.239,
+      "yoy_pct": 3.29,
+      "mo3_annualized_pct": 3.78,
+      "history": [
+        {
+          "date": "2026-02-01",
+          "value": 128.94
+        },
+        {
+          "date": "2026-03-01",
+          "value": 129.321
+        },
+        {
+          "date": "2026-04-01",
+          "value": 129.63
+        }
+      ]
+    },
+    "PPIFID": {
+      "label": "PPI Final Demand",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 158.012
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 156.395
+      },
+      "change_pct": 1.034,
+      "frequency": "monthly",
+      "mom_pct": 1.034,
+      "yoy_pct": 6.46,
+      "mo3_annualized_pct": 13.2,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 154.664
+        },
+        {
+          "date": "2026-04-01",
+          "value": 156.395
+        },
+        {
+          "date": "2026-05-01",
+          "value": 158.012
+        }
+      ]
+    },
+    "PPIFES": {
+      "label": "Core PPI (Final Demand ex Food & Energy)",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 154.147
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 153.508
+      },
+      "change_pct": 0.416,
+      "frequency": "monthly",
+      "mom_pct": 0.416,
+      "yoy_pct": 4.9,
+      "mo3_annualized_pct": 5.6,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 152.458
+        },
+        {
+          "date": "2026-04-01",
+          "value": 153.508
+        },
+        {
+          "date": "2026-05-01",
+          "value": 154.147
+        }
+      ]
+    },
+    "CUSR0000SAH1": {
+      "label": "CPI Shelter",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 427.998
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 426.642
+      },
+      "change_pct": 0.318,
+      "frequency": "monthly",
+      "mom_pct": 0.318,
+      "yoy_pct": 3.62,
+      "mo3_annualized_pct": 4.87,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 424.069
+        },
+        {
+          "date": "2026-04-01",
+          "value": 426.642
+        },
+        {
+          "date": "2026-05-01",
+          "value": 427.998
+        }
+      ]
+    },
+    "CPIUFDSL": {
+      "label": "CPI Food",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 348.892
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 348.349
+      },
+      "change_pct": 0.156,
+      "frequency": "monthly",
+      "mom_pct": 0.156,
+      "yoy_pct": 3.38,
+      "mo3_annualized_pct": 2.65,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 346.603
+        },
+        {
+          "date": "2026-04-01",
+          "value": 348.349
+        },
+        {
+          "date": "2026-05-01",
+          "value": 348.892
+        }
+      ]
+    },
+    "CPIENGSL": {
+      "label": "CPI Energy",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 338.639
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 325.978
+      },
+      "change_pct": 3.884,
+      "frequency": "monthly",
+      "mom_pct": 3.884,
+      "yoy_pct": 22.1,
+      "mo3_annualized_pct": 104.38,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 314.019
+        },
+        {
+          "date": "2026-04-01",
+          "value": 325.978
+        },
+        {
+          "date": "2026-05-01",
+          "value": 338.639
+        }
+      ]
+    },
+    "CUSR0000SACL1E": {
+      "label": "CPI Core Goods (ex Food & Energy)",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 167.575
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 167.767
+      },
+      "change_pct": -0.114,
+      "frequency": "monthly",
+      "mom_pct": -0.114,
+      "yoy_pct": 1.03,
+      "mo3_annualized_pct": 0.11,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 167.71
+        },
+        {
+          "date": "2026-04-01",
+          "value": 167.767
+        },
+        {
+          "date": "2026-05-01",
+          "value": 167.575
+        }
+      ]
+    },
+    "CUSR0000SASLE": {
+      "label": "CPI Core Services (ex Energy)",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 444.46
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 443.154
+      },
+      "change_pct": 0.295,
+      "frequency": "monthly",
+      "mom_pct": 0.295,
+      "yoy_pct": 3.56,
+      "mo3_annualized_pct": 4.16,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 440.951
+        },
+        {
+          "date": "2026-04-01",
+          "value": 443.154
+        },
+        {
+          "date": "2026-05-01",
+          "value": 444.46
+        }
+      ]
+    },
+    "PAYEMS": {
+      "label": "Nonfarm Payrolls",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 159001.0
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 158829.0
+      },
+      "change_pct": 0.108,
+      "frequency": "monthly",
+      "mom_pct": 0.108,
+      "yoy_pct": 0.32,
+      "mo3_annualized_pct": 1.43,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 158650.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 158829.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 159001.0
+        }
+      ]
+    },
+    "UNRATE": {
+      "label": "Unemployment Rate",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 4.3
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 4.3
+      },
+      "change_pct": 0.0,
+      "frequency": "monthly",
+      "mom_pct": 0.0,
+      "yoy_pct": 2.38,
+      "mo3_annualized_pct": -8.79,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 4.3
+        },
+        {
+          "date": "2026-04-01",
+          "value": 4.3
+        },
+        {
+          "date": "2026-05-01",
+          "value": 4.3
+        }
+      ]
+    },
+    "ICSA": {
+      "label": "Initial Jobless Claims",
+      "latest": {
+        "date": "2026-06-13",
+        "value": 226000.0
+      },
+      "previous": {
+        "date": "2026-06-06",
+        "value": 230000.0
+      },
+      "change_pct": -1.739,
+      "frequency": "daily",
+      "mom_pct": -1.739,
+      "history": [
+        {
+          "date": "2026-05-30",
+          "value": 225000.0
+        },
+        {
+          "date": "2026-06-06",
+          "value": 230000.0
+        },
+        {
+          "date": "2026-06-13",
+          "value": 226000.0
+        }
+      ]
+    },
+    "CES0500000003": {
+      "label": "Avg Hourly Earnings",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 37.53
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 37.41
+      },
+      "change_pct": 0.321,
+      "frequency": "monthly",
+      "mom_pct": 0.321,
+      "yoy_pct": 3.45,
+      "mo3_annualized_pct": 2.82,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 37.35
+        },
+        {
+          "date": "2026-04-01",
+          "value": 37.41
+        },
+        {
+          "date": "2026-05-01",
+          "value": 37.53
+        }
+      ]
+    },
+    "JTSJOL": {
+      "label": "Job Openings (JOLTS)",
+      "latest": {
+        "date": "2026-04-01",
+        "value": 7618.0
+      },
+      "previous": {
+        "date": "2026-03-01",
+        "value": 6887.0
+      },
+      "change_pct": 10.614,
+      "frequency": "monthly",
+      "mom_pct": 10.614,
+      "yoy_pct": 7.33,
+      "mo3_annualized_pct": 22.58,
+      "history": [
+        {
+          "date": "2026-02-01",
+          "value": 6922.0
+        },
+        {
+          "date": "2026-03-01",
+          "value": 6887.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 7618.0
+        }
+      ]
+    },
+    "USCONS": {
+      "label": "Payrolls: Construction",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 8337.0
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 8320.0
+      },
+      "change_pct": 0.204,
+      "frequency": "monthly",
+      "mom_pct": 0.204,
+      "yoy_pct": 0.82,
+      "mo3_annualized_pct": 1.99,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 8311.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 8320.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 8337.0
+        }
+      ]
+    },
+    "USFIRE": {
+      "label": "Payrolls: Financial Activities",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 9104.0
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 9126.0
+      },
+      "change_pct": -0.241,
+      "frequency": "monthly",
+      "mom_pct": -0.241,
+      "yoy_pct": -1.16,
+      "mo3_annualized_pct": -1.95,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 9132.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 9126.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 9104.0
+        }
+      ]
+    },
+    "USLAH": {
+      "label": "Payrolls: Leisure and Hospitality",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 17079.0
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 17009.0
+      },
+      "change_pct": 0.412,
+      "frequency": "monthly",
+      "mom_pct": 0.412,
+      "yoy_pct": 1.43,
+      "mo3_annualized_pct": 3.44,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 16979.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 17009.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 17079.0
+        }
+      ]
+    },
+    "USPBS": {
+      "label": "Payrolls: Professional and Business Services",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 22468.0
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 22462.0
+      },
+      "change_pct": 0.027,
+      "frequency": "monthly",
+      "mom_pct": 0.027,
+      "yoy_pct": 0.08,
+      "mo3_annualized_pct": 1.0,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 22440.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 22462.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 22468.0
+        }
+      ]
+    },
+    "USEHS": {
+      "label": "Payrolls: Education and Health Services",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 27886.0
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 27846.0
+      },
+      "change_pct": 0.144,
+      "frequency": "monthly",
+      "mom_pct": 0.144,
+      "yoy_pct": 2.24,
+      "mo3_annualized_pct": 2.76,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 27792.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 27846.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 27886.0
+        }
+      ]
+    },
+    "USTRADE": {
+      "label": "Payrolls: Retail Trade",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 15457.9
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 15459.0
+      },
+      "change_pct": -0.007,
+      "frequency": "monthly",
+      "mom_pct": -0.007,
+      "yoy_pct": 0.12,
+      "mo3_annualized_pct": 0.83,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 15435.5
+        },
+        {
+          "date": "2026-04-01",
+          "value": 15459.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 15457.9
+        }
+      ]
+    },
+    "USINFO": {
+      "label": "Payrolls: Information",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 2783.0
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 2785.0
+      },
+      "change_pct": -0.072,
+      "frequency": "monthly",
+      "mom_pct": -0.072,
+      "yoy_pct": -2.83,
+      "mo3_annualized_pct": -1.28,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 2793.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 2785.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 2783.0
+        }
+      ]
+    },
+    "LNS14000003": {
+      "label": "Unemployment Rate: White",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 3.8
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 3.7
+      },
+      "change_pct": 2.703,
+      "frequency": "monthly",
+      "mom_pct": 2.703,
+      "yoy_pct": 0.0,
+      "mo3_annualized_pct": 11.26,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 3.6
+        },
+        {
+          "date": "2026-04-01",
+          "value": 3.7
+        },
+        {
+          "date": "2026-05-01",
+          "value": 3.8
+        }
+      ]
+    },
+    "LNS14000006": {
+      "label": "Unemployment Rate: Black or African American",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 6.6
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 7.3
+      },
+      "change_pct": -9.589,
+      "frequency": "monthly",
+      "mom_pct": -9.589,
+      "yoy_pct": 3.12,
+      "mo3_annualized_pct": -46.02,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 7.1
+        },
+        {
+          "date": "2026-04-01",
+          "value": 7.3
+        },
+        {
+          "date": "2026-05-01",
+          "value": 6.6
+        }
+      ]
+    },
+    "LNS14000009": {
+      "label": "Unemployment Rate: Hispanic or Latino",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 5.0
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 5.0
+      },
+      "change_pct": 0.0,
+      "frequency": "monthly",
+      "mom_pct": 0.0,
+      "yoy_pct": -3.85,
+      "mo3_annualized_pct": -14.52,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 4.8
+        },
+        {
+          "date": "2026-04-01",
+          "value": 5.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 5.0
+        }
+      ]
+    },
+    "LNS14032183": {
+      "label": "Unemployment Rate: Asian",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 3.8
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 3.3
+      },
+      "change_pct": 15.152,
+      "frequency": "monthly",
+      "mom_pct": 15.152,
+      "yoy_pct": 22.58,
+      "mo3_annualized_pct": -60.72,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 3.7
+        },
+        {
+          "date": "2026-04-01",
+          "value": 3.3
+        },
+        {
+          "date": "2026-05-01",
+          "value": 3.8
+        }
+      ]
+    },
+    "LNS12500000": {
+      "label": "Employment: Usually Work Full Time",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 134173.0
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 134252.0
+      },
+      "change_pct": -0.059,
+      "frequency": "monthly",
+      "mom_pct": -0.059,
+      "yoy_pct": -0.87,
+      "mo3_annualized_pct": -0.5,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 134676.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 134252.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 134173.0
+        }
+      ]
+    },
+    "LNS13023621": {
+      "label": "Employment: Part-Time for Economic Reasons",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 3385.0
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 3511.0
+      },
+      "change_pct": -3.589,
+      "frequency": "monthly",
+      "mom_pct": -3.589,
+      "yoy_pct": -2.03,
+      "mo3_annualized_pct": -23.55,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 3403.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 3511.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 3385.0
+        }
+      ]
+    },
+    "BOPGSTB": {
+      "label": "Trade Balance: Goods & Services (BOP)",
+      "latest": {
+        "date": "2026-04-01",
+        "value": -55881.0
+      },
+      "previous": {
+        "date": "2026-03-01",
+        "value": -56585.0
+      },
+      "change_pct": -1.244,
+      "frequency": "monthly",
+      "mom_pct": -1.244,
+      "yoy_pct": -7.39,
+      "mo3_annualized_pct": 13.12,
+      "history": [
+        {
+          "date": "2026-02-01",
+          "value": -54980.0
+        },
+        {
+          "date": "2026-03-01",
+          "value": -56585.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": -55881.0
+        }
+      ]
+    },
+    "IR": {
+      "label": "Import Price Index (End Use: All Commodities)",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 150.5
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 147.7
+      },
+      "change_pct": 1.896,
+      "frequency": "monthly",
+      "mom_pct": 1.896,
+      "yoy_pct": 6.21,
+      "mo3_annualized_pct": 20.99,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 144.8
+        },
+        {
+          "date": "2026-04-01",
+          "value": 147.7
+        },
+        {
+          "date": "2026-05-01",
+          "value": 150.5
+        }
+      ]
+    },
+    "IQ": {
+      "label": "Export Price Index (End Use: All Commodities)",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 168.6
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 166.5
+      },
+      "change_pct": 1.261,
+      "frequency": "monthly",
+      "mom_pct": 1.261,
+      "yoy_pct": 10.48,
+      "mo3_annualized_pct": 28.35,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 160.9
+        },
+        {
+          "date": "2026-04-01",
+          "value": 166.5
+        },
+        {
+          "date": "2026-05-01",
+          "value": 168.6
+        }
+      ]
+    },
+    "A191RL1Q225SBEA": {
+      "label": "Real GDP Growth (QoQ ann.)",
+      "latest": {
+        "date": "2026-01-01",
+        "value": 1.6
+      },
+      "previous": {
+        "date": "2025-10-01",
+        "value": 0.5
+      },
+      "change_pct": 220.0,
+      "frequency": "quarterly",
+      "mom_pct": 220.0,
+      "yoy_pct": -366.67,
+      "history": [
+        {
+          "date": "2025-07-01",
+          "value": 4.4
+        },
+        {
+          "date": "2025-10-01",
+          "value": 0.5
+        },
+        {
+          "date": "2026-01-01",
+          "value": 1.6
+        }
+      ]
+    },
+    "DPCERY2Q224SBEA": {
+      "label": "GDP Contribution: Consumer Spending (PCE)",
+      "latest": {
+        "date": "2026-01-01",
+        "value": 0.95
+      },
+      "previous": {
+        "date": "2025-10-01",
+        "value": 1.3
+      },
+      "change_pct": -26.923,
+      "frequency": "quarterly",
+      "mom_pct": -26.923,
+      "yoy_pct": 126.19,
+      "history": [
+        {
+          "date": "2025-07-01",
+          "value": 2.34
+        },
+        {
+          "date": "2025-10-01",
+          "value": 1.3
+        },
+        {
+          "date": "2026-01-01",
+          "value": 0.95
+        }
+      ]
+    },
+    "A006RY2Q224SBEA": {
+      "label": "GDP Contribution: Private Investment",
+      "latest": {
+        "date": "2026-01-01",
+        "value": 1.19
+      },
+      "previous": {
+        "date": "2025-10-01",
+        "value": 0.4
+      },
+      "change_pct": 197.5,
+      "frequency": "quarterly",
+      "mom_pct": 197.5,
+      "yoy_pct": -68.6,
+      "history": [
+        {
+          "date": "2025-07-01",
+          "value": 0.03
+        },
+        {
+          "date": "2025-10-01",
+          "value": 0.4
+        },
+        {
+          "date": "2026-01-01",
+          "value": 1.19
+        }
+      ]
+    },
+    "A019RY2Q224SBEA": {
+      "label": "GDP Contribution: Net Exports",
+      "latest": {
+        "date": "2026-01-01",
+        "value": -1.25
+      },
+      "previous": {
+        "date": "2025-10-01",
+        "value": -0.22
+      },
+      "change_pct": 468.182,
+      "frequency": "quarterly",
+      "mom_pct": 468.182,
+      "yoy_pct": -73.29,
+      "history": [
+        {
+          "date": "2025-07-01",
+          "value": 1.62
+        },
+        {
+          "date": "2025-10-01",
+          "value": -0.22
+        },
+        {
+          "date": "2026-01-01",
+          "value": -1.25
+        }
+      ]
+    },
+    "A822RY2Q224SBEA": {
+      "label": "GDP Contribution: Government",
+      "latest": {
+        "date": "2026-01-01",
+        "value": 0.73
+      },
+      "previous": {
+        "date": "2025-10-01",
+        "value": -0.99
+      },
+      "change_pct": -173.737,
+      "frequency": "quarterly",
+      "mom_pct": -173.737,
+      "yoy_pct": -529.41,
+      "history": [
+        {
+          "date": "2025-07-01",
+          "value": 0.38
+        },
+        {
+          "date": "2025-10-01",
+          "value": -0.99
+        },
+        {
+          "date": "2026-01-01",
+          "value": 0.73
+        }
+      ]
+    },
+    "RSAFS": {
+      "label": "Retail Sales",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 763705.0
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 757036.0
+      },
+      "change_pct": 0.881,
+      "frequency": "monthly",
+      "mom_pct": 0.881,
+      "yoy_pct": 6.88,
+      "mo3_annualized_pct": 12.66,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 754013.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 757036.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 763705.0
+        }
+      ]
+    },
+    "RSFSXMV": {
+      "label": "Retail Sales ex-Motor Vehicles",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 623444.0
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 618378.0
+      },
+      "change_pct": 0.819,
+      "frequency": "monthly",
+      "mom_pct": 0.819,
+      "yoy_pct": 7.45,
+      "mo3_annualized_pct": 14.83,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 614158.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 618378.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 623444.0
+        }
+      ]
+    },
+    "INDPRO": {
+      "label": "Industrial Production",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 102.6475
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 102.509
+      },
+      "change_pct": 0.135,
+      "frequency": "monthly",
+      "mom_pct": 0.135,
+      "yoy_pct": 1.67,
+      "mo3_annualized_pct": 2.77,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 101.6273
+        },
+        {
+          "date": "2026-04-01",
+          "value": 102.509
+        },
+        {
+          "date": "2026-05-01",
+          "value": 102.6475
+        }
+      ]
+    },
+    "MANEMP": {
+      "label": "Manufacturing Employment",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 12605.0
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 12598.0
+      },
+      "change_pct": 0.056,
+      "frequency": "monthly",
+      "mom_pct": 0.056,
+      "yoy_pct": -0.36,
+      "mo3_annualized_pct": 0.7,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 12598.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 12598.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 12605.0
+        }
+      ]
+    },
+    "BSCICP03USM665S": {
+      "label": "Business Confidence",
+      "latest": {
+        "date": "2024-01-01",
+        "value": 98.96989
+      },
+      "previous": {
+        "date": "2023-12-01",
+        "value": 98.76071
+      },
+      "change_pct": 0.212,
+      "frequency": "monthly",
+      "mom_pct": 0.212,
+      "yoy_pct": 0.2,
+      "mo3_annualized_pct": 1.14,
+      "history": [
+        {
+          "date": "2023-11-01",
+          "value": 98.66783
+        },
+        {
+          "date": "2023-12-01",
+          "value": 98.76071
+        },
+        {
+          "date": "2024-01-01",
+          "value": 98.96989
+        }
+      ]
+    },
+    "TTLCONS": {
+      "label": "Total Construction Spending",
+      "latest": {
+        "date": "2026-04-01",
+        "value": 2172397.0
+      },
+      "previous": {
+        "date": "2026-03-01",
+        "value": 2164474.0
+      },
+      "change_pct": 0.366,
+      "frequency": "monthly",
+      "mom_pct": 0.366,
+      "yoy_pct": 0.88,
+      "mo3_annualized_pct": -1.04,
+      "history": [
+        {
+          "date": "2026-02-01",
+          "value": 2160663.0
+        },
+        {
+          "date": "2026-03-01",
+          "value": 2164474.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 2172397.0
+        }
+      ]
+    },
+    "GDPNOW": {
+      "label": "Atlanta Fed GDPNow",
+      "latest": {
+        "date": "2026-04-01",
+        "value": 3.0377
+      },
+      "previous": {
+        "date": "2026-01-01",
+        "value": 1.2392
+      },
+      "change_pct": 145.134,
+      "frequency": "quarterly",
+      "mom_pct": 145.134,
+      "yoy_pct": 4.68,
+      "history": [
+        {
+          "date": "2025-10-01",
+          "value": 4.2373
+        },
+        {
+          "date": "2026-01-01",
+          "value": 1.2392
+        },
+        {
+          "date": "2026-04-01",
+          "value": 3.0377
+        }
+      ]
+    },
+    "DGORDER": {
+      "label": "Durable Goods Orders",
+      "latest": {
+        "date": "2026-04-01",
+        "value": 346182.0
+      },
+      "previous": {
+        "date": "2026-03-01",
+        "value": 320485.0
+      },
+      "change_pct": 8.018,
+      "frequency": "monthly",
+      "mom_pct": 8.018,
+      "yoy_pct": 17.26,
+      "mo3_annualized_pct": 37.01,
+      "history": [
+        {
+          "date": "2026-02-01",
+          "value": 316233.0
+        },
+        {
+          "date": "2026-03-01",
+          "value": 320485.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 346182.0
+        }
+      ]
+    },
+    "UMCSENT": {
+      "label": "Michigan Consumer Sentiment",
+      "latest": {
+        "date": "2026-04-01",
+        "value": 49.8
+      },
+      "previous": {
+        "date": "2026-03-01",
+        "value": 53.3
+      },
+      "change_pct": -6.567,
+      "frequency": "monthly",
+      "mom_pct": -6.567,
+      "yoy_pct": -4.6,
+      "mo3_annualized_pct": -39.21,
+      "history": [
+        {
+          "date": "2026-02-01",
+          "value": 56.6
+        },
+        {
+          "date": "2026-03-01",
+          "value": 53.3
+        },
+        {
+          "date": "2026-04-01",
+          "value": 49.8
+        }
+      ]
+    },
+    "CSCICP03USM665S": {
+      "label": "Consumer Confidence",
+      "latest": {
+        "date": "2024-01-01",
+        "value": 98.91297
+      },
+      "previous": {
+        "date": "2023-12-01",
+        "value": 98.1097
+      },
+      "change_pct": 0.819,
+      "frequency": "monthly",
+      "mom_pct": 0.819,
+      "yoy_pct": 1.6,
+      "mo3_annualized_pct": 5.87,
+      "history": [
+        {
+          "date": "2023-11-01",
+          "value": 97.56221
+        },
+        {
+          "date": "2023-12-01",
+          "value": 98.1097
+        },
+        {
+          "date": "2024-01-01",
+          "value": 98.91297
+        }
+      ]
+    },
+    "HOUST": {
+      "label": "Housing Starts",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 1177.0
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 1392.0
+      },
+      "change_pct": -15.445,
+      "frequency": "monthly",
+      "mom_pct": -15.445,
+      "yoy_pct": -8.69,
+      "mo3_annualized_pct": -41.53,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 1522.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 1392.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 1177.0
+        }
+      ]
+    },
+    "EXHOSLUSM495S": {
+      "label": "Existing Home Sales",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 4170000.0
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 4040000.0
+      },
+      "change_pct": 3.218,
+      "frequency": "monthly",
+      "mom_pct": 3.218,
+      "yoy_pct": 3.22,
+      "mo3_annualized_pct": 3.93,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 4010000.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 4040000.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 4170000.0
+        }
+      ]
+    },
+    "CSUSHPINSA": {
+      "label": "Case-Shiller Home Price",
+      "latest": {
+        "date": "2026-03-01",
+        "value": 329.938
+      },
+      "previous": {
+        "date": "2026-02-01",
+        "value": 327.592
+      },
+      "change_pct": 0.716,
+      "frequency": "monthly",
+      "mom_pct": 0.716,
+      "yoy_pct": 0.67,
+      "mo3_annualized_pct": 3.68,
+      "history": [
+        {
+          "date": "2026-01-01",
+          "value": 326.481
+        },
+        {
+          "date": "2026-02-01",
+          "value": 327.592
+        },
+        {
+          "date": "2026-03-01",
+          "value": 329.938
+        }
+      ]
+    },
+    "PERMIT": {
+      "label": "Building Permits",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 1413.0
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 1423.0
+      },
+      "change_pct": -0.703,
+      "frequency": "monthly",
+      "mom_pct": -0.703,
+      "yoy_pct": -0.21,
+      "mo3_annualized_pct": -29.13,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 1363.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 1423.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 1413.0
+        }
+      ]
+    },
+    "HSN1F": {
+      "label": "New Home Sales",
+      "latest": {
+        "date": "2026-04-01",
+        "value": 622.0
+      },
+      "previous": {
+        "date": "2026-03-01",
+        "value": 663.0
+      },
+      "change_pct": -6.184,
+      "frequency": "monthly",
+      "mom_pct": -6.184,
+      "yoy_pct": -11.27,
+      "mo3_annualized_pct": 35.98,
+      "history": [
+        {
+          "date": "2026-02-01",
+          "value": 641.0
+        },
+        {
+          "date": "2026-03-01",
+          "value": 663.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 622.0
+        }
+      ]
+    },
+    "CCSA": {
+      "label": "Continuing Jobless Claims",
+      "latest": {
+        "date": "2026-06-06",
+        "value": 1810000.0
+      },
+      "previous": {
+        "date": "2026-05-30",
+        "value": 1786000.0
+      },
+      "change_pct": 1.344,
+      "frequency": "daily",
+      "mom_pct": 1.344,
+      "history": [
+        {
+          "date": "2026-05-23",
+          "value": 1771000.0
+        },
+        {
+          "date": "2026-05-30",
+          "value": 1786000.0
+        },
+        {
+          "date": "2026-06-06",
+          "value": 1810000.0
+        }
+      ]
+    },
+    "AWHAETP": {
+      "label": "Average Weekly Hours",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 34.3
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 34.3
+      },
+      "change_pct": 0.0,
+      "frequency": "monthly",
+      "mom_pct": 0.0,
+      "yoy_pct": 0.29,
+      "mo3_annualized_pct": 0.0,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 34.2
+        },
+        {
+          "date": "2026-04-01",
+          "value": 34.3
+        },
+        {
+          "date": "2026-05-01",
+          "value": 34.3
+        }
+      ]
+    },
+    "OPHNFB": {
+      "label": "Nonfarm Productivity",
+      "latest": {
+        "date": "2026-01-01",
+        "value": 119.437
+      },
+      "previous": {
+        "date": "2025-10-01",
+        "value": 119.35
+      },
+      "change_pct": 0.073,
+      "frequency": "quarterly",
+      "mom_pct": 0.073,
+      "yoy_pct": 2.8,
+      "history": [
+        {
+          "date": "2025-07-01",
+          "value": 118.884
+        },
+        {
+          "date": "2025-10-01",
+          "value": 119.35
+        },
+        {
+          "date": "2026-01-01",
+          "value": 119.437
+        }
+      ]
+    },
+    "ULCNFB": {
+      "label": "Unit Labor Costs",
+      "latest": {
+        "date": "2026-01-01",
+        "value": 123.777
+      },
+      "previous": {
+        "date": "2025-10-01",
+        "value": 123.216
+      },
+      "change_pct": 0.455,
+      "frequency": "quarterly",
+      "mom_pct": 0.455,
+      "yoy_pct": 0.49,
+      "history": [
+        {
+          "date": "2025-07-01",
+          "value": 122.57
+        },
+        {
+          "date": "2025-10-01",
+          "value": 123.216
+        },
+        {
+          "date": "2026-01-01",
+          "value": 123.777
+        }
+      ]
+    },
+    "AMTMNO": {
+      "label": "Factory Orders",
+      "latest": {
+        "date": "2026-04-01",
+        "value": 662728.0
+      },
+      "previous": {
+        "date": "2026-03-01",
+        "value": 632650.0
+      },
+      "change_pct": 4.754,
+      "frequency": "monthly",
+      "mom_pct": 4.754,
+      "yoy_pct": 11.66,
+      "mo3_annualized_pct": 31.1,
+      "history": [
+        {
+          "date": "2026-02-01",
+          "value": 621304.0
+        },
+        {
+          "date": "2026-03-01",
+          "value": 632650.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 662728.0
+        }
+      ]
+    },
+    "PI": {
+      "label": "Personal Income",
+      "latest": {
+        "date": "2026-04-01",
+        "value": 26722.5
+      },
+      "previous": {
+        "date": "2026-03-01",
+        "value": 26722.5
+      },
+      "change_pct": 0.0,
+      "frequency": "monthly",
+      "mom_pct": 0.0,
+      "yoy_pct": 2.54,
+      "mo3_annualized_pct": 1.8,
+      "history": [
+        {
+          "date": "2026-02-01",
+          "value": 26590.3
+        },
+        {
+          "date": "2026-03-01",
+          "value": 26722.5
+        },
+        {
+          "date": "2026-04-01",
+          "value": 26722.5
+        }
+      ]
+    },
+    "PCE": {
+      "label": "Personal Spending (PCE level)",
+      "latest": {
+        "date": "2026-04-01",
+        "value": 21979.4
+      },
+      "previous": {
+        "date": "2026-03-01",
+        "value": 21868.3
+      },
+      "change_pct": 0.508,
+      "frequency": "monthly",
+      "mom_pct": 0.508,
+      "yoy_pct": 5.94,
+      "mo3_annualized_pct": 9.04,
+      "history": [
+        {
+          "date": "2026-02-01",
+          "value": 21655.8
+        },
+        {
+          "date": "2026-03-01",
+          "value": 21868.3
+        },
+        {
+          "date": "2026-04-01",
+          "value": 21979.4
+        }
+      ]
+    },
+    "TOTALSA": {
+      "label": "Total Vehicle Sales",
+      "latest": {
+        "date": "2026-05-01",
+        "value": 16.485
+      },
+      "previous": {
+        "date": "2026-04-01",
+        "value": 16.395
+      },
+      "change_pct": 0.549,
+      "frequency": "monthly",
+      "mom_pct": 0.549,
+      "yoy_pct": 2.76,
+      "mo3_annualized_pct": 16.1,
+      "history": [
+        {
+          "date": "2026-03-01",
+          "value": 16.537
+        },
+        {
+          "date": "2026-04-01",
+          "value": 16.395
+        },
+        {
+          "date": "2026-05-01",
+          "value": 16.485
+        }
+      ]
+    },
+    "WHLSLRIMSA": {
+      "label": "Wholesale Inventories",
+      "latest": {
+        "date": "2026-04-01",
+        "value": 940294.0
+      },
+      "previous": {
+        "date": "2026-03-01",
+        "value": 934572.0
+      },
+      "change_pct": 0.612,
+      "frequency": "monthly",
+      "mom_pct": 0.612,
+      "yoy_pct": 3.56,
+      "mo3_annualized_pct": 13.05,
+      "history": [
+        {
+          "date": "2026-02-01",
+          "value": 920443.0
+        },
+        {
+          "date": "2026-03-01",
+          "value": 934572.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 940294.0
+        }
+      ]
+    },
+    "RETAILIMSA": {
+      "label": "Retail Inventories",
+      "latest": {
+        "date": "2026-04-01",
+        "value": 827169.0
+      },
+      "previous": {
+        "date": "2026-03-01",
+        "value": 821654.0
+      },
+      "change_pct": 0.671,
+      "frequency": "monthly",
+      "mom_pct": 0.671,
+      "yoy_pct": 2.97,
+      "mo3_annualized_pct": 5.93,
+      "history": [
+        {
+          "date": "2026-02-01",
+          "value": 815418.0
+        },
+        {
+          "date": "2026-03-01",
+          "value": 821654.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": 827169.0
+        }
+      ]
+    },
+    "BOPGTB": {
+      "label": "Goods Trade Balance (BOP)",
+      "latest": {
+        "date": "2026-04-01",
+        "value": -83687.0
+      },
+      "previous": {
+        "date": "2026-03-01",
+        "value": -86077.0
+      },
+      "change_pct": -2.777,
+      "frequency": "monthly",
+      "mom_pct": -2.777,
+      "yoy_pct": -3.35,
+      "mo3_annualized_pct": 7.11,
+      "history": [
+        {
+          "date": "2026-02-01",
+          "value": -82520.0
+        },
+        {
+          "date": "2026-03-01",
+          "value": -86077.0
+        },
+        {
+          "date": "2026-04-01",
+          "value": -83687.0
+        }
+      ]
+    },
+    "DFF": {
+      "label": "Fed Funds Rate",
+      "latest": {
+        "date": "2026-06-16",
+        "value": 3.63
+      },
+      "previous": {
+        "date": "2026-06-15",
+        "value": 3.63
+      },
+      "change_pct": 0.0,
+      "frequency": "daily",
+      "mom_pct": 0.0,
+      "history": [
+        {
+          "date": "2026-06-14",
+          "value": 3.62
+        },
+        {
+          "date": "2026-06-15",
+          "value": 3.63
+        },
+        {
+          "date": "2026-06-16",
+          "value": 3.63
+        }
+      ]
+    },
+    "DGS10": {
+      "label": "10Y Treasury Yield",
+      "latest": {
+        "date": "2026-06-16",
+        "value": 4.43
+      },
+      "previous": {
+        "date": "2026-06-15",
+        "value": 4.47
+      },
+      "change_pct": -0.895,
+      "frequency": "daily",
+      "mom_pct": -0.895,
+      "history": [
+        {
+          "date": "2026-06-12",
+          "value": 4.48
+        },
+        {
+          "date": "2026-06-15",
+          "value": 4.47
+        },
+        {
+          "date": "2026-06-16",
+          "value": 4.43
+        }
+      ]
+    },
+    "DGS2": {
+      "label": "2Y Treasury Yield",
+      "latest": {
+        "date": "2026-06-16",
+        "value": 4.05
+      },
+      "previous": {
+        "date": "2026-06-15",
+        "value": 4.07
+      },
+      "change_pct": -0.491,
+      "frequency": "daily",
+      "mom_pct": -0.491,
+      "history": [
+        {
+          "date": "2026-06-12",
+          "value": 4.09
+        },
+        {
+          "date": "2026-06-15",
+          "value": 4.07
+        },
+        {
+          "date": "2026-06-16",
+          "value": 4.05
+        }
+      ]
+    },
+    "DGS3MO": {
+      "label": "3M Treasury Yield",
+      "latest": {
+        "date": "2026-06-16",
+        "value": 3.79
+      },
+      "previous": {
+        "date": "2026-06-15",
+        "value": 3.79
+      },
+      "change_pct": 0.0,
+      "frequency": "daily",
+      "mom_pct": 0.0,
+      "history": [
+        {
+          "date": "2026-06-12",
+          "value": 3.78
+        },
+        {
+          "date": "2026-06-15",
+          "value": 3.79
+        },
+        {
+          "date": "2026-06-16",
+          "value": 3.79
+        }
+      ]
+    },
+    "DGS6MO": {
+      "label": "6M Treasury Yield",
+      "latest": {
+        "date": "2026-06-16",
+        "value": 3.81
+      },
+      "previous": {
+        "date": "2026-06-15",
+        "value": 3.81
+      },
+      "change_pct": 0.0,
+      "frequency": "daily",
+      "mom_pct": 0.0,
+      "history": [
+        {
+          "date": "2026-06-12",
+          "value": 3.82
+        },
+        {
+          "date": "2026-06-15",
+          "value": 3.81
+        },
+        {
+          "date": "2026-06-16",
+          "value": 3.81
+        }
+      ]
+    },
+    "T10Y2Y": {
+      "label": "10Y-2Y Spread",
+      "latest": {
+        "date": "2026-06-17",
+        "value": 0.29
+      },
+      "previous": {
+        "date": "2026-06-16",
+        "value": 0.38
+      },
+      "change_pct": -23.684,
+      "frequency": "daily",
+      "mom_pct": -23.684,
+      "history": [
+        {
+          "date": "2026-06-15",
+          "value": 0.4
+        },
+        {
+          "date": "2026-06-16",
+          "value": 0.38
+        },
+        {
+          "date": "2026-06-17",
+          "value": 0.29
+        }
+      ]
+    },
+    "DTWEXBGS": {
+      "label": "USD Index (Broad)",
+      "latest": {
+        "date": "2026-06-12",
+        "value": 119.5073
+      },
+      "previous": {
+        "date": "2026-06-11",
+        "value": 120.1174
+      },
+      "change_pct": -0.508,
+      "frequency": "daily",
+      "mom_pct": -0.508,
+      "history": [
+        {
+          "date": "2026-06-10",
+          "value": 119.9134
+        },
+        {
+          "date": "2026-06-11",
+          "value": 120.1174
+        },
+        {
+          "date": "2026-06-12",
+          "value": 119.5073
+        }
+      ]
+    },
+    "VIXCLS": {
+      "label": "VIX (Volatility Index)",
+      "latest": {
+        "date": "2026-06-17",
+        "value": 18.44
+      },
+      "previous": {
+        "date": "2026-06-16",
+        "value": 16.41
+      },
+      "change_pct": 12.371,
+      "frequency": "daily",
+      "mom_pct": 12.371,
+      "history": [
+        {
+          "date": "2026-06-15",
+          "value": 16.2
+        },
+        {
+          "date": "2026-06-16",
+          "value": 16.41
+        },
+        {
+          "date": "2026-06-17",
+          "value": 18.44
+        }
+      ]
+    },
+    "DCOILWTICO": {
+      "label": "WTI Crude Oil",
+      "latest": {
+        "date": "2026-06-15",
+        "value": 84.65
+      },
+      "previous": {
+        "date": "2026-06-12",
+        "value": 88.62
+      },
+      "change_pct": -4.48,
+      "frequency": "daily",
+      "mom_pct": -4.48,
+      "history": [
+        {
+          "date": "2026-06-11",
+          "value": 91.58
+        },
+        {
+          "date": "2026-06-12",
+          "value": 88.62
+        },
+        {
+          "date": "2026-06-15",
+          "value": 84.65
+        }
+      ]
+    },
+    "BAMLH0A0HYM2": {
+      "label": "High-Yield Credit Spread (HY OAS)",
+      "latest": {
+        "date": "2026-06-17",
+        "value": 2.63
+      },
+      "previous": {
+        "date": "2026-06-16",
+        "value": 2.71
+      },
+      "change_pct": -2.952,
+      "frequency": "daily",
+      "mom_pct": -2.952,
+      "history": [
+        {
+          "date": "2026-06-15",
+          "value": 2.66
+        },
+        {
+          "date": "2026-06-16",
+          "value": 2.71
+        },
+        {
+          "date": "2026-06-17",
+          "value": 2.63
+        }
+      ]
+    },
+    "BAMLC0A0CM": {
+      "label": "Investment-Grade Credit Spread (IG OAS)",
+      "latest": {
+        "date": "2026-06-17",
+        "value": 0.74
+      },
+      "previous": {
+        "date": "2026-06-16",
+        "value": 0.75
+      },
+      "change_pct": -1.333,
+      "frequency": "daily",
+      "mom_pct": -1.333,
+      "history": [
+        {
+          "date": "2026-06-15",
+          "value": 0.73
+        },
+        {
+          "date": "2026-06-16",
+          "value": 0.75
+        },
+        {
+          "date": "2026-06-17",
+          "value": 0.74
+        }
+      ]
+    },
+    "T10YIE": {
+      "label": "10Y Inflation Breakeven",
+      "latest": {
+        "date": "2026-06-17",
+        "value": 2.26
+      },
+      "previous": {
+        "date": "2026-06-16",
+        "value": 2.29
+      },
+      "change_pct": -1.31,
+      "frequency": "daily",
+      "mom_pct": -1.31,
+      "history": [
+        {
+          "date": "2026-06-15",
+          "value": 2.32
+        },
+        {
+          "date": "2026-06-16",
+          "value": 2.29
+        },
+        {
+          "date": "2026-06-17",
+          "value": 2.26
+        }
+      ]
+    }
+  },
+  "sources": {
+    "investing.com": true,
+    "fred": true,
+    "census_trade": false
+  }
+}

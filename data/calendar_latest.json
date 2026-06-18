@@ -1,15 +1,9 @@
 {
   "schema_version": "1.1",
-  "fetched_at": "2026-06-17T19:26:49.526424+00:00",
-  "window_start": "2026-06-17",
-  "window_end": "2026-07-08",
+  "fetched_at": "2026-06-18T20:00:16.785616+00:00",
+  "window_start": "2026-06-18",
+  "window_end": "2026-07-09",
   "macro": [
-    {
-      "date": "2026-06-17",
-      "name": "FOMC Meeting (Fed rate decision)",
-      "release_id": 8,
-      "type": "macro"
-    },
     {
       "date": "2026-06-19",
       "name": "Consumer Confidence (Conference Board)",
@@ -79,6 +73,13 @@
       "release_id": 17,
       "type": "macro",
       "estimated": true
+    },
+    {
+      "date": "2026-07-09",
+      "name": "Initial Jobless Claims",
+      "release_id": 100,
+      "type": "macro",
+      "estimated": true
     }
   ],
   "earnings": [
@@ -103,36 +104,38 @@
       "revenue_estimate_b": null,
       "importance": "medium",
       "type": "earnings"
-    }
-  ],
-  "fed_speakers": [
+    },
     {
-      "date": "2026-06-17",
-      "time": "10:45",
-      "speaker": "Unknown",
-      "topic": "U.S. President Trump Speaks",
-      "venue": "",
-      "impact": "low",
-      "source": "investing.com (historical)",
-      "event_url": "https://www.investing.com/economic-calendar/u.s.-president-trump-speaks-1694"
+      "date": "2026-07-09",
+      "ticker": "PEP",
+      "name": "PepsiCo",
+      "sector_etf": "XLP",
+      "time": "BMO",
+      "eps_estimate": 2.23,
+      "revenue_estimate_b": null,
+      "importance": "medium",
+      "type": "earnings"
     }
   ],
+  "fed_speakers": [],
   "lookahead": {
-    "tomorrow_date": "2026-06-18",
-    "week_end_date": "2026-06-24",
+    "tomorrow_date": "2026-06-19",
+    "week_end_date": "2026-06-25",
     "tomorrow": {
-      "macro": [],
+      "macro": [
+        {
+          "date": "2026-06-19",
+          "name": "Consumer Confidence (Conference Board)",
+          "release_id": 91,
+          "type": "macro",
+          "estimated": true
+        }
+      ],
       "earnings": [],
       "fed_speakers": []
     },
     "this_week": {
       "macro": [
-        {
-          "date": "2026-06-17",
-          "name": "FOMC Meeting (Fed rate decision)",
-          "release_id": 8,
-          "type": "macro"
-        },
         {
           "date": "2026-06-19",
           "name": "Consumer Confidence (Conference Board)",
@@ -158,6 +161,13 @@
           "date": "2026-06-24",
           "name": "Job Openings & Labor Turnover (JOLTS)",
           "release_id": 53,
+          "type": "macro",
+          "estimated": true
+        },
+        {
+          "date": "2026-06-25",
+          "name": "Initial Jobless Claims",
+          "release_id": 100,
           "type": "macro",
           "estimated": true
         }
