@@ -128,6 +128,11 @@ FRED_SERIES = {
     "BAMLH0A0HYM2": "High-Yield Credit Spread (HY OAS)",
     "BAMLC0A0CM": "Investment-Grade Credit Spread (IG OAS)",
     "T10YIE": "10Y Inflation Breakeven",
+    # Fed vùng — chỉ số/nhận định định lượng (Cách A)
+    "CFNAI": "Chicago Fed National Activity Index",        # tháng; <-0.7 = suy thoái
+    "NFCI": "Chicago Fed Financial Conditions (NFCI)",     # tuần; >0 = thắt chặt
+    "ANFCI": "Chicago Fed Adjusted Financial Conditions",  # tuần; loại bỏ chu kỳ KT
+    "WEI": "NY Fed Weekly Economic Index",                 # tuần; ~ GDP YoY nowcast
 }
 
 INVESTING_AJAX = "https://www.investing.com/economic-calendar/Service/getCalendarFilteredData"

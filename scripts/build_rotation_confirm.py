@@ -38,6 +38,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 HISTORY = DATA / "sector_rotation_history.json"
 OUT = DATA / "sector_rotation_confirmed.json"
+SECTORS_LITE = DATA / "sectors_lite.json"
 
 # --- Tunable persistence parameters ---
 WINDOW = 10          # trailing sessions to judge (~2 weeks)
@@ -172,6 +173,59 @@ def confirm(series: list[dict]) -> dict:
     }
 
 
+def _load_money_flow() -> dict[str, dict]:
+    """Load money_flow block from sectors_lite.json for each SPDR ETF.
+    Returns {ticker: money_flow_dict} or {} if file missing/stale.
+    """
+    if not SECTORS_LITE.exists():
+        return {}
+    try:
+        data = json.loads(SECTORS_LITE.read_text())
+        out = {}
+        for tk, info in data.get("sectors", {}).items():
+            mf = info.get("money_flow")
+            if mf:
+                out[tk] = mf
+        return out
+    except Exception:
+        return {}
+
+
+def _composite_signal(confirmed_phase: str, flow_signal: str | None) -> str:
+    """Combine macro-persistence verdict with volume flow signal.
+
+    Rules (deterministic, no LLM):
+    - CONFIRMED_IN + STRONG_INFLOW/INFLOW → RIDE (highest conviction)
+    - CONFIRMED_IN + NEUTRAL              → HOLD
+    - CONFIRMED_IN + OUTFLOW/STRONG_OUTFLOW → MONITOR (rotation possibly peaking)
+    - EARLY_FORMING + STRONG_INFLOW/INFLOW  → ACCUMULATE (macro forming + flow confirming)
+    - EARLY_FORMING + NEUTRAL/OUTFLOW       → WATCH
+    - FADING + OUTFLOW/STRONG_OUTFLOW       → EXIT (double confirmation to sell)
+    - AVOID + any                           → AVOID
+    - NEUTRAL + STRONG_INFLOW               → WATCH_FLOW (price not confirmed yet)
+    - everything else                       → HOLD
+    """
+    if confirmed_phase == "AVOID":
+        return "AVOID"
+    if confirmed_phase == "CONFIRMED_IN":
+        if flow_signal in ("STRONG_INFLOW", "INFLOW"):
+            return "RIDE"
+        if flow_signal in ("OUTFLOW", "STRONG_OUTFLOW"):
+            return "MONITOR"
+        return "HOLD"
+    if confirmed_phase == "EARLY_FORMING":
+        if flow_signal in ("STRONG_INFLOW", "INFLOW"):
+            return "ACCUMULATE"
+        return "WATCH"
+    if confirmed_phase == "FADING":
+        if flow_signal in ("OUTFLOW", "STRONG_OUTFLOW"):
+            return "EXIT"
+        return "REDUCE"
+    if confirmed_phase == "NEUTRAL" and flow_signal == "STRONG_INFLOW":
+        return "WATCH_FLOW"
+    return "HOLD"
+
+
 def main() -> int:
     if not HISTORY.exists():
         print(f"No {HISTORY.name} yet — chạy build_sector_rotation.py (daily) trước để tích lũy.")
@@ -179,6 +233,32 @@ def main() -> int:
     series = json.loads(HISTORY.read_text()).get("series", [])
     series.sort(key=lambda e: e["date"])
     out = confirm(series)
+
+    # Merge volume money flow from sectors_lite.json (current week snapshot)
+    mf_data = _load_money_flow()
+    if mf_data:
+        out["money_flow_as_of"] = json.loads(SECTORS_LITE.read_text()).get("fetched_at", "")[:10]
+        for tk, sector in out.get("sectors", {}).items():
+            mf = mf_data.get(tk, {})
+            if mf:
+                sector["money_flow"] = mf
+                sector["composite_signal"] = _composite_signal(
+                    sector["confirmed_phase"], mf.get("flow_signal")
+                )
+
+    # Print money flow summary
+    if mf_data:
+        print("\n  Money Flow (MFI 5D vs SPY):")
+        ranked_mf = sorted(
+            [(tk, mf_data[tk]) for tk in mf_data],
+            key=lambda x: x[1].get("mfi_vs_spy", 0), reverse=True
+        )
+        for tk, mf in ranked_mf:
+            sig = mf.get("flow_signal", "?")
+            vs = mf.get("mfi_vs_spy", 0)
+            comp = out["sectors"].get(tk, {}).get("composite_signal", "?")
+            print(f"    {tk:5} MFI_vs_SPY={vs:+5.1f}  {sig:18}  → {comp}")
+
     OUT.write_text(json.dumps(out, indent=2, ensure_ascii=False))
     print(f"Wrote {OUT}  (window={out['window_days']} phiên: {out['as_of_oldest']} → {out['as_of_latest']})")
     if out["insufficient_history"]:

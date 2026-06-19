@@ -9,13 +9,17 @@ Tổng hợp tháng vĩ mô Mỹ. Tháng target: $ARGUMENTS (nếu rỗng → th
 - Liệt kê `data/daily/<YYYY-MM>-*.md` để đảm bảo có ≥15 daily reports cho tháng đó.
 - Nếu thiếu → cảnh báo user nhưng vẫn tiếp tục với data có sẵn.
 
-## Bước 1b: Generate compact summary index
-Tạo file tóm tắt cho tháng target (loại bỏ noise, giữ regime + conviction):
+## Bước 1b: Generate compact inputs cho agent
+Chạy 2 script song song:
 ```
 cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && source .venv/bin/activate && \
-  python scripts/summarize_reports.py --month <YYYY-MM> --out data/monthly_input_<YYYY-MM>.md
+  python scripts/summarize_reports.py --month <YYYY-MM> --out data/monthly_input_<YYYY-MM>.md && \
+  python scripts/build_monthly_releases.py <YYYY-MM>
 ```
-File này ~600 tokens/ngày × N ngày = ~15-20k tokens cho cả tháng, **thay vì ~110k tokens** nếu agent đọc full reports.
+- `monthly_input_<YYYY-MM>.md`: front-matter + tóm tắt + conviction mỗi ngày (~15-20k tokens)
+- `monthly_releases_<YYYY-MM>.md`: **bảng dữ liệu đã điền sẵn** — actual/forecast/surprise cho TẤT CẢ releases trong tháng, nhóm theo 6 category. Agent chỉ cần thêm verdict + kết luận 2 câu.
+
+Verify: cả 2 file tồn tại và không rỗng.
 
 ## Bước 1c: Chấm điểm calls tháng trước (self-correcting feedback)
 Trước khi viết calls mới, chấm calls của báo cáo tháng gần nhất với realized RS:
@@ -27,16 +31,27 @@ Ghi/cập nhật `data/monthly/scorecard.md` (hit rate + HIT/MISS từng sector)
 
 ## Bước 2: Tổng hợp tháng
 Dùng Agent tool với `subagent_type: macro-trend`. Prompt:
-"Viết báo cáo tháng cho <YYYY-MM>. 
+"Viết báo cáo tháng cho <YYYY-MM>.
+
+**FORMAT MỚI — DATA TABLE FIRST, TEXT MINIMAL:**
+Báo cáo tháng dùng format bảng dữ liệu (xem template trong agent definition). KHÔNG viết prose narrative dài. Mỗi nhóm = 1 bảng liệt kê TẤT CẢ releases + 2 câu kết luận. Tối đa bảng, tối thiểu chữ.
 
 **WORKFLOW TỐI ƯU TOKEN:**
-1. Đọc **data/monthly_input_<YYYY-MM>.md** trước (compact summary của all reports tháng đó với front-matter + Tóm tắt + Conviction calls)
-2. Đọc latest FRED snapshot tại data/raw/<latest>.json (chỉ 1 file, ~9k tokens với derived metrics đã pre-compute)
-3. Nếu cần context sâu hơn cho 3-5 ngày 'turning point' (regime shift, big surprise, conviction change), đọc full markdown của những ngày đó tại data/daily/<date>.md
-4. **KHÔNG đọc đầy đủ tất cả daily reports** — sẽ tốn 100k+ tokens không cần thiết
-5. Đọc **data/monthly/scorecard.md** (hit rate calls tháng trước) + **data/raw/<latest>.json** block `cycle_context` (Sahm + đường cong lợi suất). Nêu rõ trong báo cáo: tháng trước call nào SAI và điều chỉnh gì lần này; chu kỳ đang ở đâu (Sahm/curve).
+1. Đọc **data/monthly_input_<YYYY-MM>.md** trước (compact summary — có actual/forecast/surprise cho mỗi release)
+2. Đọc latest FRED snapshot tại data/raw/<latest>.json cho derived metrics (yoy, mom, mo3) + block `cycle_context`
+3. Đọc **data/sectors_lite.json** (RS 1M, RS 3M, above_ma50 cho bảng sector) + **data/cross_asset_lite.json**
+4. Đọc **data/monthly/scorecard.md** (hit rate calls tháng trước) — ghi vào dòng 'Scorecard' trong Cycle context của bảng sector
+5. Nếu cần context turning point, đọc full markdown 2-3 ngày key tại data/daily/<date>.md
+6. **KHÔNG đọc đầy đủ tất cả daily reports** — sẽ tốn 100k+ tokens
 
-Output vào data/monthly/<YYYY-MM>.md theo template trong agent definition. Đặc biệt chú ý phần 11 GICS sector stance — phải có lý do định lượng (RS, MA cross, sector reaction tới các catalyst trong tháng)."
+**ĐIỀN BẢNG:**
+- Nhóm 1-5: **COPY nguyên bảng từ `data/monthly_releases_<YYYY-MM>.md`** (đã điền sẵn actual/forecast/surprise). Chỉ thêm [VERDICT] vào header và viết kết luận 2 câu.
+- Nhóm 6 (Fed): bảng releases đã có trong monthly_releases, thêm bảng rates đầu/cuối tháng từ FRED snapshot (DFF, DGS10, DGS2, T10Y2Y, VIXCLS, BAMLH0A0HYM2, T10YIE).
+- Sector table: RS 1M/3M từ sectors_lite.json (field `rs_1m`, `rs_slope`), above_ma50 field cho vs MA50 column.
+- Cross-asset: từ cross_asset_lite.json (price, ret_1m fields).
+- Scorecard row trong Cycle context: đọc từ data/monthly/scorecard.md.
+
+Output vào data/monthly/<YYYY-MM>.md theo template trong agent definition."
 
 ## Bước 3: Rebuild dashboard
 Dùng Agent tool với `subagent_type: macro-dashboard`. Prompt: "Rebuild dashboard để hiển thị monthly report mới."

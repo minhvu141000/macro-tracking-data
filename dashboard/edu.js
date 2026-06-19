@@ -39,6 +39,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let activeItem = null;
   let currentDate = availableDates.length > 0 ? availableDates[0] : null;
+  let searchQuery = '';
+
+  // Bỏ dấu tiếng Việt + lowercase → gõ "lam phat" vẫn khớp "Lạm Phát"
+  function normalize(str) {
+    return (str || '')
+      .toString()
+      .normalize('NFD')
+      .replace(/[̀-ͯ]/g, '')
+      .replace(/[đĐ]/g, 'd')
+      .toLowerCase()
+      .trim();
+  }
+
+  // Gom mọi text có thể search của 1 indicator (tên, mô tả, alias, id, nhóm)
+  function indicatorSearchText(indicator, categoryName) {
+    const parts = [
+      indicator.short_name,
+      indicator.full_name,
+      indicator.id,
+      indicator.description,
+      indicator.expectation_meaning,
+      categoryName,
+      ...(indicator.release_aliases || []),
+      ...(indicator.related_indicators || []),
+    ];
+    return normalize(parts.filter(Boolean).join(' '));
+  }
 
   // Initialize Date Selector
   if (availableDates.length > 0) {
@@ -64,6 +91,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   } else {
     dateSelector.parentElement.style.display = 'none';
+  }
+
+  // Search box wiring
+  const searchInput = document.getElementById('indicator-search');
+  const searchClear = document.getElementById('search-clear');
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value;
+      searchClear.style.display = searchQuery ? 'block' : 'none';
+      renderSidebar();
+    });
+    searchClear.addEventListener('click', () => {
+      searchQuery = '';
+      searchInput.value = '';
+      searchClear.style.display = 'none';
+      renderSidebar();
+      searchInput.focus();
+    });
+    // Esc để xoá nhanh
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && searchQuery) {
+        searchQuery = '';
+        searchInput.value = '';
+        searchClear.style.display = 'none';
+        renderSidebar();
+      }
+    });
   }
 
   function findIndicatorById(id) {
@@ -98,8 +152,18 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderSidebar() {
     sidebar.innerHTML = '';
     const currentReleases = releasesHistory[currentDate] || [];
+    const q = normalize(searchQuery);
+    let totalMatches = 0;
 
     theoryData.categories.forEach(category => {
+      // Lọc indicators theo query (khớp tên/mô tả/alias/id, bỏ dấu)
+      const matchedIndicators = q
+        ? category.indicators.filter(ind => indicatorSearchText(ind, category.name).includes(q))
+        : category.indicators;
+
+      if (matchedIndicators.length === 0) return; // ẩn cả nhóm nếu không khớp gì
+      totalMatches += matchedIndicators.length;
+
       const catDiv = document.createElement('div');
       catDiv.className = 'category';
 
@@ -111,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const indList = document.createElement('div');
       indList.className = 'indicator-list';
 
-      category.indicators.forEach(indicator => {
+      matchedIndicators.forEach(indicator => {
         const itemDiv = document.createElement('div');
         itemDiv.className = 'indicator-item';
         itemDiv.dataset.id = indicator.id;
@@ -160,6 +224,13 @@ document.addEventListener('DOMContentLoaded', () => {
       catDiv.appendChild(indList);
       sidebar.appendChild(catDiv);
     });
+
+    if (q && totalMatches === 0) {
+      const noRes = document.createElement('div');
+      noRes.className = 'search-no-results';
+      noRes.innerHTML = `<i class="fa-solid fa-magnifying-glass"></i><br>Không tìm thấy chỉ số nào khớp "<strong>${searchQuery}</strong>".`;
+      sidebar.appendChild(noRes);
+    }
   }
 
   function classifySurprise(actualStr, forecastStr) {

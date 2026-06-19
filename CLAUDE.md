@@ -25,7 +25,8 @@ scripts/build_scorecard.py      # chấm calls tháng trước vs RS thực tế
 scripts/build_sector_rotation.py # TẦNG DAILY: engine macro→sector tất định → snapshot + append history
 scripts/build_rotation_confirm.py # TẦNG WEEKLY: lọc persistence từ history → verdict confirmed
 scripts/build_rotation_scorecard.py # vòng phản hồi: forward RS chấm điểm engine → hit rate + edge
-scripts/build_dashboard.py      # build data.js
+scripts/fetch_fed_forecasts.py  # DỰ BÁO Fed vùng (SPF GDP+CPI, ADS, r-star, SCE) từ Excel Philly/NY → fed_forecasts_history.json
+scripts/build_dashboard.py      # build data.js (merge fred + eia + scraped + fed_forecasts vào history)
 .claude/agents/                 # sub-agents
 .claude/commands/               # slash commands
 
@@ -73,6 +74,8 @@ data/cross_asset_lite.json      # cross-asset KHÔNG history — cho agents (~60
 | Niềm tin | Consumer Conf (CSCICP03USM665S), Michigan (UMCSENT) |
 | Nhà ở | Housing Starts (HOUST), Existing Home Sales (EXHOSLUSM495S), Case-Shiller (CSUSHPINSA) |
 | Fed | Fed Funds Rate (DFF), 10Y Yield (DGS10), 2Y Yield (DGS2) |
+| Fed vùng — hiện trạng | CFNAI (Chicago, hoạt động KT), NFCI + ANFCI (Chicago, điều kiện tài chính), WEI (NY, nowcast tuần) — qua FRED |
+| Fed vùng — dự báo | SPF_GDP + SPF_CPI (Philly SPF), ADS (Philly), NYFED_RSTAR (NY r*), SCE_INFL_1Y (NY SCE) — `fetch_fed_forecasts.py`, hiện ở section "Theo dõi Fed vùng" trên dashboard |
 
 ## Viết daily report bằng BẤT KỲ agent nào (kể cả agent ngoài)
 

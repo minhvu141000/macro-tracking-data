@@ -340,6 +340,13 @@
     border-radius: 8px;
     padding: 20px 24px;
   }
+  .report-datelabel {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--blue);
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+  }
   .insights-header {
     display: flex;
     align-items: center;
@@ -376,6 +383,38 @@
     border-radius: 4px;
     margin-bottom: 16px;
   }
+  /* Kết luận tự sinh từ dữ liệu (tất định) */
+  .auto-concl { margin-bottom: 16px; }
+  .auto-concl-title { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 6px; }
+  .auto-concl ul { margin: 0; padding-left: 18px; }
+  .auto-concl li { font-size: 13px; line-height: 1.75; color: var(--text); }
+  /* Cảnh báo & catalyst — mục riêng, luôn hiện */
+  .catalyst-block {
+    margin: 4px 0 14px;
+    padding: 12px 16px;
+    background: rgba(251, 191, 36, 0.07);
+    border: 1px solid rgba(251, 191, 36, 0.25);
+    border-left: 3px solid #fbbf24;
+    border-radius: 6px;
+  }
+  .catalyst-block h2, .catalyst-block h3 { margin: 0 0 6px; font-size: 14px; color: #fcd34d; }
+  .catalyst-block ul { margin: 6px 0; padding-left: 18px; }
+  .catalyst-block p, .catalyst-block li { font-size: 13px; line-height: 1.65; }
+  /* Phân tích chi tiết thu gọn */
+  details.analysis-details { margin: 4px 0 12px; border-top: 1px solid var(--border); padding-top: 10px; }
+  details.analysis-details > summary { cursor: pointer; color: var(--muted); font-size: 13px; list-style: none; user-select: none; }
+  details.analysis-details > summary::-webkit-details-marker { display: none; }
+  details.analysis-details > summary:hover { color: var(--text); }
+  details.analysis-details[open] > summary { color: var(--text); margin-bottom: 8px; }
+  /* Stat badges dưới mỗi biểu đồ */
+  .stat-context { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; margin-top: 8px; }
+  .stat-context .sc-value { font-size: 13px; font-weight: 700; color: var(--text); margin-right: 4px; }
+  .sc-badge { font-size: 11px; padding: 2px 7px; border-radius: 999px; white-space: nowrap; }
+  .sc-badge.sc-high { background: rgba(251,191,36,0.18); color: #fcd34d; }
+  .sc-badge.sc-low { background: rgba(96,165,250,0.16); color: #93c5fd; }
+  .sc-badge.sc-up { background: rgba(74,222,128,0.15); color: #86efac; }
+  .sc-badge.sc-down { background: rgba(251,146,60,0.18); color: #fdba74; }
+  .sc-badge.sc-neutral { background: var(--border); color: var(--muted); }
   .tabs {
     display: flex;
     gap: 4px;
@@ -563,6 +602,13 @@
 </section>
 
 <section>
+  <h2>Theo dõi Fed vùng <span style="font-size:13px;font-weight:400;color:var(--muted)">(Chicago · New York — chỉ số & nhận định định lượng, tự cập nhật)</span></h2>
+  <div id="fed-regional" class="grid grid-3">
+    <div class="empty">Đang tải...</div>
+  </div>
+</section>
+
+<section>
   <h2>Market Context — Cross-Asset</h2>
   <div id="cross-asset-section">
     <div class="empty">Đang tải cross-asset data...</div>
@@ -581,11 +627,6 @@
   <div id="calendar-section">
     <div class="empty">Đang tải calendar...</div>
   </div>
-</section>
-
-<section>
-  <h2>Báo cáo gần đây</h2>
-  <div id="reports-list" class="card"></div>
 </section>
 
 </div>
@@ -856,11 +897,26 @@ window.badgesForReport = function(report) {
 };
 
 window.currentDailyReport = D.latest_daily;
+window.currentWeeklyReport = D.latest_weekly;
 window.currentMonthlyReport = D.latest_monthly;
 let monthlyChartsRendered = false;
 
+const REPORT_KIND_META = {
+  daily:   { label: "📅 Báo cáo ngày",  dir: "daily",   date: r => r.date },
+  weekly:  { label: "📅 Báo cáo tuần",  dir: "weekly",  date: r => r.date },
+  monthly: { label: "📅 Báo cáo tháng", dir: "monthly", date: r => r.month || r.date },
+};
+function reportRef(kind) {
+  return kind === "daily" ? window.currentDailyReport
+       : kind === "weekly" ? window.currentWeeklyReport
+       : window.currentMonthlyReport;
+}
+
 window.showReportInDashboard = function(report, kind) {
   if (!report) return;
+  const km = REPORT_KIND_META[kind] || REPORT_KIND_META.daily;
+  const dateEl = document.getElementById("insights-datelabel");
+  if (dateEl) dateEl.textContent = `${km.label} · ${km.date(report)}`;
   const headerEl = document.getElementById("insights-header");
   const takeawayEl = document.getElementById("insights-takeaway");
   const bodyEl = document.getElementById("insights-body");
@@ -870,22 +926,46 @@ window.showReportInDashboard = function(report, kind) {
   if (headerEl) headerEl.innerHTML = window.badgesForReport(report);
   if (takeawayEl) takeawayEl.innerHTML = report.key_takeaway ? `<div class="key-takeaway">${report.key_takeaway}</div>` : "";
 
-  // Render markdown body
+  // Điểm chính từ dữ liệu (tự tính) — chỉ cho daily
+  const conclEl = document.getElementById("insights-conclusions");
+  if (conclEl) {
+    const bullets = kind === "daily" ? autoConclusionBullets(report.date) : [];
+    conclEl.innerHTML = bullets.length
+      ? `<div class="auto-concl"><div class="auto-concl-title">📊 Điểm chính từ dữ liệu (tự tính theo lịch sử)</div><ul>${bullets.join("")}</ul></div>`
+      : "";
+  }
+
+  // Tách phần "Cảnh báo & catalyst sắp tới" thành mục riêng (luôn hiện, ngoài <details>)
+  let bodyMd = report.body || "";
+  let catalystMd = "";
+  const cm = bodyMd.match(/\n#{1,3}\s*Cảnh báo[^\n]*/i);
+  if (cm) {
+    catalystMd = bodyMd.slice(cm.index);
+    bodyMd = bodyMd.slice(0, cm.index);
+  }
+  const catEl = document.getElementById("insights-catalysts");
+  if (catEl) {
+    catEl.innerHTML = (catalystMd && window.marked)
+      ? `<div class="catalyst-block markdown-body">${marked.parse(catalystMd)}</div>`
+      : "";
+  }
+
+  // Render markdown body (đã bỏ phần catalyst)
   if (bodyEl) {
-    if (report.body && window.marked) {
+    if (bodyMd && window.marked) {
       try {
-        bodyEl.innerHTML = marked.parse(report.body);
+        bodyEl.innerHTML = marked.parse(bodyMd);
       } catch (e) {
-        bodyEl.textContent = report.body;
+        bodyEl.textContent = bodyMd;
       }
-    } else if (report.body) {
-      bodyEl.innerText = report.body;
+    } else if (bodyMd) {
+      bodyEl.innerText = bodyMd;
     } else {
       bodyEl.innerHTML = `<div class="empty">Báo cáo này chưa có nội dung.</div>`;
     }
   }
 
-  if (metaEl) metaEl.textContent = `Nguồn: data/${kind === "daily" ? "daily" : "monthly"}/${report.file}`;
+  if (metaEl) metaEl.textContent = `Nguồn: data/${km.dir}/${report.file}`;
 
   // Show/hide full FRED charts for monthly tab
   if (fullChartsEl) {
@@ -899,39 +979,52 @@ window.showReportInDashboard = function(report, kind) {
       fullChartsEl.style.display = "none";
     }
   }
+
+  // Báo cáo THÁNG là góc nhìn dài hạn → ẩn các section mang tính NGÀY:
+  // chỉ số công bố trong ngày, panel xu hướng theo ngày, và catalyst 21 ngày tới.
+  // Daily/Tuần thì hiện lại bình thường.
+  const dailyOnly = ["today-releases", "release-trends", "calendar-section"];
+  dailyOnly.forEach(id => {
+    const node = document.getElementById(id);
+    const sec = node && node.closest("section");
+    if (sec) sec.style.display = (kind === "monthly") ? "none" : "";
+  });
 };
 
 window.initInsights = function() {
   const el = document.getElementById("insights-section");
-  const daily = window.currentDailyReport;
-  const monthly = window.currentMonthlyReport;
 
-  if (!daily && !monthly) return; // keep placeholder
+  // Tab cho từng loại báo cáo có sẵn: ngày / tuần / tháng
+  const TAB_LABEL = {
+    daily:   r => `Ngày — ${r.date}`,
+    weekly:  r => `Tuần — ${r.date}`,
+    monthly: r => `Tháng — ${r.month || r.date}`,
+  };
+  const available = ["daily", "weekly", "monthly"].filter(k => reportRef(k));
+  if (!available.length) return; // keep placeholder
 
-  const hasDaily = !!daily;
-  const hasMonthly = !!monthly;
-
-  // Tab buttons (only show if both exist)
-  let tabsHtml = "";
-  if (hasDaily && hasMonthly) {
-    tabsHtml = `
+  const tabsHtml = available.length >= 2 ? `
       <div class="tabs">
-        <button class="tab active" data-tab="daily">Daily — ${daily.date}</button>
-        <button class="tab" data-tab="monthly">Tháng — ${monthly.month || monthly.date}</button>
-      </div>`;
-  }
+        ${available.map((k, i) => `<button class="tab${i === 0 ? " active" : ""}" data-tab="${k}">${TAB_LABEL[k](reportRef(k))}</button>`).join("")}
+      </div>` : "";
 
-  const initial = hasDaily ? daily : monthly;
-  const initialKind = hasDaily ? "daily" : "monthly";
+  const initialKind = available[0];
+  const initial = reportRef(initialKind);
 
   el.innerHTML = `
     <div class="insights-card">
+      <div class="report-datelabel" id="insights-datelabel"></div>
       <div class="insights-header" id="insights-header">
         ${window.badgesForReport(initial)}
       </div>
       ${initial.key_takeaway ? `<div class="key-takeaway" id="insights-takeaway">${initial.key_takeaway}</div>` : `<div id="insights-takeaway"></div>`}
       ${tabsHtml}
-      <div class="markdown-body" id="insights-body"></div>
+      <div id="insights-conclusions"></div>
+      <div id="insights-catalysts"></div>
+      <details class="analysis-details">
+        <summary>▸ Xem phân tích đầy đủ</summary>
+        <div class="markdown-body" id="insights-body"></div>
+      </details>
       <div class="monthly-full-charts" id="monthly-full-charts" style="display:none;"></div>
       <div class="report-meta" id="insights-meta"></div>
     </div>
@@ -940,19 +1033,18 @@ window.initInsights = function() {
   window.showReportInDashboard(initial, initialKind);
 
   // Tab handlers
-  if (hasDaily && hasMonthly) {
-    el.querySelectorAll(".tab").forEach(btn => {
-      btn.addEventListener("click", () => {
-        el.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        const kind = btn.dataset.tab;
-        window.showReportInDashboard(kind === "daily" ? window.currentDailyReport : window.currentMonthlyReport, kind);
-      });
+  el.querySelectorAll(".tab").forEach(btn => {
+    btn.addEventListener("click", () => {
+      el.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      const kind = btn.dataset.tab;
+      window.showReportInDashboard(reportRef(kind), kind);
     });
-  }
+  });
 };
 
-window.initInsights();
+// initInsights() được gọi cuối file — sau khi TODAY_INCLUDE / DEFAULT_VIEW /
+// computeStatContext (const) đã khởi tạo, vì auto-conclusions phụ thuộc chúng.
 
 // === Today's releases ===
 window.renderReleases = function(dateStr) {
@@ -1067,9 +1159,9 @@ const KPI_KEYS = ["DFF", "DGS10", "DGS2", "T10Y2Y", "UNRATE", "CPIAUCSL", "CPILF
 // Groups used ONLY for "full monthly view" (when user clicks Tháng tab).
 // Daily dashboard shows dynamic trends for today's releases instead.
 const GROUPS = {
-  "Lạm phát": ["CPIAUCSL", "CPILFESL", "PCEPI", "PCEPILFE", "PPIACO"],
+  "Lạm phát": ["CPIAUCSL", "CPILFESL", "PCEPI", "PCEPILFE", "PPIFID"],
   "Lao động": ["PAYEMS", "UNRATE", "ICSA", "CES0500000003", "JTSJOL"],
-  "Tăng trưởng & PMI": ["GDPC1", "RSAFS", "INDPRO", "MANEMP", "UMCSENT", "TTLCONS", "DGORDER", "GDPNOW"],
+  "Tăng trưởng & PMI": ["A191RL1Q225SBEA", "RSAFS", "INDPRO", "MANEMP", "UMCSENT", "TTLCONS", "DGORDER", "GDPNOW"],
   "Lãi suất & Yield Curve": ["DFF", "DGS10", "DGS2", "DGS3MO", "DGS6MO", "T10Y2Y"],
   "Cross-asset (FRED)": ["DTWEXBGS", "VIXCLS", "DCOILWTICO", "BAMLH0A0HYM2", "BAMLC0A0CM", "T10YIE"],
 };
@@ -1098,6 +1190,10 @@ const DEFAULT_VIEW = {
   HOUST: "yoy", EXHOSLUSM495S: "yoy", CSUSHPINSA: "yoy",
   // Rates → already %, just level
   DFF: "level", DGS10: "level", DGS2: "level", DGS3MO: "level", T10Y2Y: "level",
+  // Fed vùng — chỉ số/index (có thể âm) → chỉ xem level
+  CFNAI: "level", NFCI: "level", ANFCI: "level", WEI: "level",
+  // Fed vùng — dự báo & kỳ vọng (Cách B)
+  SPF_GDP: "level", SPF_CPI: "level", ADS: "level", NYFED_RSTAR: "level", SCE_INFL_1Y: "level",
 };
 
 // Reference lines per series + view combo
@@ -1114,6 +1210,24 @@ function getReferenceLines(fredId, view) {
   // Recession line 0 on T10Y2Y spread
   if (fredId === "T10Y2Y") {
     lines.push({ value: 0, label: "Yield curve inversion", color: "#f87171" });
+  }
+  // Fed vùng — ngưỡng diễn giải
+  if (fredId === "CFNAI") {
+    lines.push({ value: 0, label: "Trend tăng trưởng", color: "#fbbf24" });
+    lines.push({ value: -0.7, label: "Ngưỡng suy thoái", color: "#f87171" });
+  }
+  if (fredId === "NFCI" || fredId === "ANFCI") {
+    lines.push({ value: 0, label: "0 = TB lịch sử (>0 thắt chặt)", color: "#fbbf24" });
+  }
+  if (fredId === "WEI") {
+    lines.push({ value: 2, label: "Trend ~2%", color: "#fbbf24" });
+  }
+  // Dự báo lạm phát so với mục tiêu Fed 2%
+  if (fredId === "SPF_CPI" || fredId === "SCE_INFL_1Y") {
+    lines.push({ value: 2, label: "Fed target 2%", color: "#fbbf24" });
+  }
+  if (fredId === "ADS") {
+    lines.push({ value: 0, label: "0 = điều kiện TB", color: "#fbbf24" });
   }
   return lines;
 }
@@ -1185,6 +1299,113 @@ function tailWindow(labels, values) {
 
 const chartInstances = {};
 
+// === Kết luận tự sinh (tất định) từ lịch sử mỗi chỉ số ===
+// Tính trên ĐÚNG metric đang vẽ (view) để câu chữ khớp với đường trên biểu đồ.
+// Không để LLM tự phán — toàn bộ là so sánh số học với chính lịch sử của chỉ số.
+function _freqOf(labels) {
+  if (labels.length < 2) return { unit: "kỳ" };
+  const n = labels.length, gaps = [];
+  for (let i = Math.max(1, n - 6); i < n; i++) gaps.push((new Date(labels[i]) - new Date(labels[i - 1])) / 86400000);
+  gaps.sort((a, b) => a - b);
+  const g = gaps[Math.floor(gaps.length / 2)] || 30;
+  if (g < 4) return { unit: "ngày", days: 1 };
+  if (g < 12) return { unit: "tuần", days: 7 };
+  if (g < 45) return { unit: "tháng", days: 30 };
+  if (g < 100) return { unit: "quý", days: 90 };
+  return { unit: "năm", days: 365 };
+}
+// Đổi số kỳ → cụm thời gian thân thiện ("14 tháng", "2 năm"...)
+function _spanLabel(periods, freq) {
+  if (freq.unit === "tháng") {
+    if (periods >= 12) { const y = periods / 12; return (Math.round(y * 10) / 10) + " năm"; }
+    return periods + " tháng";
+  }
+  if (freq.unit === "tuần") {
+    if (periods >= 13) { const m = Math.round(periods / 4.33); return m + " tháng"; }
+    return periods + " tuần";
+  }
+  return periods + " " + freq.unit;
+}
+function computeStatContext(fredId, view) {
+  const s = (D.history || {})[fredId];
+  if (!s || !s.history || s.history.length < 4) return null;
+  const t = transformSeries(s.history, view);
+  const pts = [];
+  for (let i = 0; i < t.values.length; i++) {
+    const v = t.values[i];
+    if (v != null && isFinite(v)) pts.push({ d: t.labels[i], v: v });
+  }
+  if (pts.length < 4) return null;
+  const vals = pts.map(p => p.v), labels = pts.map(p => p.d), n = vals.length;
+  const latest = vals[n - 1], freq = _freqOf(labels);
+  const unit = (t.unitSuffix || "").trim();
+  const fmtv = x => fmt(x, Math.abs(x) >= 100 ? 0 : (Math.abs(x) >= 10 ? 1 : 2));
+  const badges = [];
+
+  // 1) Vị trí so với toàn lịch sử (percentile)
+  const below = vals.slice(0, n - 1).filter(v => v < latest).length;
+  const pct = Math.round(below / (n - 1) * 100);
+  let band, tone;
+  if (pct >= 80) { band = "vùng CAO"; tone = "high"; }
+  else if (pct >= 60) { band = "hơi cao"; tone = "high"; }
+  else if (pct > 40) { band = "mức trung bình"; tone = "neutral"; }
+  else if (pct > 20) { band = "hơi thấp"; tone = "low"; }
+  else { band = "vùng THẤP"; tone = "low"; }
+  badges.push({ text: `${band} — cao hơn ${pct}% lịch sử`, tone });
+
+  // 2) Đỉnh / đáy trong K kỳ (record streak)
+  let kHigh = 0; for (let i = n - 2; i >= 0; i--) { if (vals[i] < latest) kHigh++; else break; }
+  let kLow = 0; for (let i = n - 2; i >= 0; i--) { if (vals[i] > latest) kLow++; else break; }
+  if (kHigh >= 3 && kHigh >= kLow) {
+    const span = kHigh >= n - 1 ? "toàn lịch sử" : "trong " + _spanLabel(kHigh + 1, freq);
+    badges.push({ text: `Cao nhất ${span}`, tone: "high" });
+  } else if (kLow >= 3 && kLow > kHigh) {
+    const span = kLow >= n - 1 ? "toàn lịch sử" : "trong " + _spanLabel(kLow + 1, freq);
+    badges.push({ text: `Thấp nhất ${span}`, tone: "low" });
+  }
+
+  // 3) Lệch bất thường so với TB ~12 kỳ gần đây (z-score)
+  const w = Math.min(12, n - 1), recent = vals.slice(n - 1 - w, n - 1);
+  if (recent.length >= 4) {
+    const mean = recent.reduce((a, b) => a + b, 0) / recent.length;
+    const sd = Math.sqrt(recent.reduce((a, b) => a + (b - mean) * (b - mean), 0) / recent.length);
+    if (sd > 0) {
+      const z = (latest - mean) / sd;
+      if (z >= 1.5) badges.push({ text: `Cao bất thường vs TB gần đây (+${z.toFixed(1)}σ)`, tone: "high" });
+      else if (z <= -1.5) badges.push({ text: `Thấp bất thường vs TB gần đây (${z.toFixed(1)}σ)`, tone: "low" });
+    }
+  }
+
+  // 4) Xu hướng (chuỗi cùng chiều từ cuối, hoặc so với 3 kỳ trước)
+  let dir = 0, streak = 0;
+  for (let i = n - 1; i >= 1; i--) {
+    const ch = vals[i] - vals[i - 1], sgn = ch > 0 ? 1 : (ch < 0 ? -1 : 0);
+    if (i === n - 1) { dir = sgn; streak = sgn !== 0 ? 1 : 0; }
+    else if (sgn === dir && sgn !== 0) streak++;
+    else break;
+  }
+  if (streak >= 2 && dir > 0) badges.push({ text: `Đang tăng (${streak} kỳ liên tiếp)`, tone: "up" });
+  else if (streak >= 2 && dir < 0) badges.push({ text: `Đang giảm (${streak} kỳ liên tiếp)`, tone: "down" });
+  else {
+    const k = Math.min(3, n - 1), prev = vals[n - 1 - k], chg = latest - prev;
+    const rel = prev !== 0 ? Math.abs(chg / prev) : 1;
+    if (rel < 0.005) badges.push({ text: "Đi ngang", tone: "neutral" });
+    else if (chg > 0) badges.push({ text: "Xu hướng tăng", tone: "up" });
+    else badges.push({ text: "Xu hướng giảm", tone: "down" });
+  }
+
+  return { badges: badges.slice(0, 3), valueLine: `${fmtv(latest)}${unit ? " " + unit : ""}`, label: s.label || fredId };
+}
+const _TONE_CLS = { high: "sc-high", low: "sc-low", up: "sc-up", down: "sc-down", neutral: "sc-neutral" };
+function updateStatContext(fredId, view) {
+  const box = document.getElementById("stat-" + fredId);
+  if (!box) return;
+  const sc = computeStatContext(fredId, view);
+  if (!sc) { box.innerHTML = ""; return; }
+  box.innerHTML = `<span class="sc-value">${sc.valueLine}</span>` +
+    sc.badges.map(b => `<span class="sc-badge ${_TONE_CLS[b.tone] || "sc-neutral"}">${b.text}</span>`).join("");
+}
+
 function renderChart(fredId, view) {
   const s = (D.history || {})[fredId];
   if (!s || !s.history) return;
@@ -1246,6 +1467,7 @@ function renderChart(fredId, view) {
       },
     },
   });
+  updateStatContext(fredId, view);   // kết luận tự sinh khớp đúng metric đang vẽ
 }
 
 const VIEW_LABELS = {
@@ -1257,7 +1479,8 @@ const VIEW_LABELS = {
 };
 
 // Series that are already a rate/%; MoM/YoY transforms are meaningless → level only
-const LEVEL_ONLY = new Set(["A191RL1Q225SBEA"]);
+const LEVEL_ONLY = new Set(["A191RL1Q225SBEA", "CFNAI", "NFCI", "ANFCI", "WEI",
+  "SPF_GDP", "SPF_CPI", "ADS", "NYFED_RSTAR", "SCE_INFL_1Y"]);
 
 function buildToggleButtons(fredId, currentView) {
   if (LEVEL_ONLY.has(fredId)) {
@@ -1288,6 +1511,7 @@ function buildChartCard(fredId, h, opts) {
         <div class="view-toggle" data-fred-id="${fredId}">${buildToggleButtons(fredId, defaultView)}</div>
       </div>
       <div class="chart-box"><canvas id="chart-${fredId}"></canvas></div>
+      ${opts.showStats ? `<div class="stat-context" id="stat-${fredId}"></div>` : ""}
     </div>`;
 }
 
@@ -1388,25 +1612,83 @@ function renderTodayPanel() {
     return;
   }
 
-  el.innerHTML = ids.map(fid => buildChartCard(fid, h)).join("");
+  el.innerHTML = ids.map(fid => buildChartCard(fid, h, { showStats: true })).join("");
   bindChartCardEvents(el, h);
   ids.forEach(fid => renderChart(fid, DEFAULT_VIEW[fid] || "level"));
 }
 
 renderTodayPanel();
 
+// === Theo dõi Fed vùng — luôn hiện (tự cập nhật, kèm stat-context) ===
+// Không gate theo release-day vì các Fed vùng tự công bố (không nằm trên lịch investing.com).
+// 2 nhóm: hiện trạng (chỉ số FRED) vs dự báo/kỳ vọng (SPF/ADS/r*/SCE — fetch_fed_forecasts.py).
+const FED_GROUPS = [
+  { title: "Hiện trạng kinh tế & tài chính", ids: ["CFNAI", "NFCI", "ANFCI", "WEI", "ADS"] },
+  { title: "Dự báo & kỳ vọng", ids: ["SPF_GDP", "SPF_CPI", "NYFED_RSTAR", "SCE_INFL_1Y"] },
+];
+function renderFedRegional() {
+  const el = document.getElementById("fed-regional");
+  if (!el) return;
+  const h = D.history || {};
+  el.classList.remove("grid", "grid-3"); // dùng layout nhóm thay vì grid phẳng
+  let html = "", all = [];
+  FED_GROUPS.forEach(g => {
+    const ids = g.ids.filter(fid => h[fid] && (h[fid].history || []).length > 0);
+    if (!ids.length) return;
+    all = all.concat(ids);
+    html += `<h4 style="color:var(--blue);margin:6px 0 10px;">${g.title}</h4>
+      <div class="grid grid-3" style="margin-bottom:18px;">${ids.map(fid => buildChartCard(fid, h, { showStats: true })).join("")}</div>`;
+  });
+  if (!all.length) { el.innerHTML = `<div class="empty">Chưa có dữ liệu Fed vùng.</div>`; return; }
+  el.innerHTML = html;
+  bindChartCardEvents(el, h);
+  all.forEach(fid => renderChart(fid, DEFAULT_VIEW[fid] || "level"));
+}
+renderFedRegional();
+
+// Bullets "Điểm chính" cho insights card — tất định từ stat context của các chỉ số
+// trong watchlist công bố đúng ngày của báo cáo. 1 dòng/chỉ số (vị trí + đỉnh/đáy).
+function autoConclusionBullets(date) {
+  const relHist = D.releases_history || {};
+  let releases = relHist[date];
+  if (!releases && D.daily_releases && D.daily_releases.date === date) releases = D.daily_releases.releases;
+  releases = releases || [];
+  const ids = [], seen = new Set();
+  releases.forEach(rel => {
+    const info = lookupIndicator({ name: rel.name });
+    if (info && info._fredId && !TODAY_EXCLUDE.has(info._fredId)
+        && TODAY_INCLUDE.includes(info._fredId) && !seen.has(info._fredId)) {
+      seen.add(info._fredId); ids.push(info._fredId);
+    }
+  });
+  const lines = [];
+  ids.forEach(fid => {
+    const sc = computeStatContext(fid, DEFAULT_VIEW[fid] || "level");
+    if (!sc || !sc.badges.length) return;
+    const main = sc.badges[0].text;
+    const rec = sc.badges.find((b, i) => i > 0 && (/^Cao nhất|^Thấp nhất|bất thường/.test(b.text)));
+    const extra = rec && rec.text !== main ? "; " + rec.text : "";
+    lines.push(`<li><strong>${sc.label}</strong>: ${sc.valueLine} — ${main}${extra}</li>`);
+  });
+  return lines;
+}
+
+window.initInsights();   // gọi sau khi mọi const (TODAY_INCLUDE, DEFAULT_VIEW...) đã sẵn
+
 // === Monthly full view — lazy renders when Tháng tab clicked ===
 function renderMonthlyFullCharts(container) {
   const h = D.history || {};
-  container.innerHTML = `<h4>Xu hướng đầy đủ 35 chỉ số FRED</h4>` +
+  // Báo cáo tháng = TOÀN BỘ biểu đồ ở format stat-badge (vùng cao/thấp · đỉnh/đáy ·
+  // xu hướng), KHÔNG có panel "chỉ số công bố trong ngày" (đó là khái niệm báo cáo ngày).
+  container.innerHTML = `<h4>Xu hướng đầy đủ các chỉ số FRED (kèm kết luận tự tính)</h4>` +
     Object.entries(GROUPS).map(([groupName, keys]) => `
       <div style="margin-top: 16px;">
         <h4 style="color: var(--blue);">${groupName}</h4>
-        <div class="grid grid-3">${keys.map(k => buildChartCard(k, h)).join("")}</div>
+        <div class="grid grid-3">${keys.map(k => buildChartCard(k, h, { showStats: true })).join("")}</div>
       </div>
     `).join("");
   bindChartCardEvents(container, h);
-  // Initial render for all
+  // Initial render for all (renderChart tự gọi updateStatContext → badge xuất hiện)
   Object.values(GROUPS).flat().forEach(k => renderChart(k, DEFAULT_VIEW[k] || "level"));
 }
 
@@ -1917,32 +2199,6 @@ window.selectDashboardReport = function(kind, file) {
     insightsSection.scrollIntoView({ behavior: 'smooth' });
   }
 };
-
-(function renderReports() {
-  const el = document.getElementById("reports-list");
-  const daily = (D.daily_reports || []).slice(-14).reverse();
-  const monthly = (D.monthly_reports || []).slice().reverse();
-  if (!daily.length && !monthly.length) {
-    el.innerHTML = `<div class="empty">Chưa có báo cáo nào.</div>`;
-    return;
-  }
-  let html = "";
-  if (monthly.length) {
-    html += `<div style="color: var(--muted); font-size: 12px; margin-bottom: 8px;">Báo cáo tháng</div>`;
-    html += monthly.map(r => `<div style="padding: 6px 0;">
-      <a class="report-link" href="#" onclick="selectDashboardReport('monthly', '${r.file}'); return false;">${r.file}</a>
-      ${r.regime ? `<span class="pill ${(r.fed_stance||"neutral")}">${r.regime}</span>` : ""}
-      <div style="color: var(--muted); font-size: 12px;">${r.body_preview || ""}</div>
-    </div>`).join("");
-  }
-  html += `<div style="color: var(--muted); font-size: 12px; margin: 16px 0 8px;">Báo cáo ngày (14 gần nhất)</div>`;
-  html += daily.map(r => `<div style="padding: 6px 0;">
-    <a class="report-link" href="#" onclick="selectDashboardReport('daily', '${r.file}'); return false;">${r.date}</a>
-    ${r.regime_signal ? `<span class="pill ${r.regime_signal}">${r.regime_signal}</span>` : ""}
-    <span style="color: var(--muted)"> · ${r.key_takeaway || ""}</span>
-  </div>`).join("");
-  el.innerHTML = html;
-})();
 
 // === Report search (top of page) — searches ALL daily reports ===
 (function reportSearch() {

@@ -63,6 +63,67 @@ def pct(a: float, b: float) -> float | None:
     return round((a - b) / b * 100, 2)
 
 
+def compute_weekly_mf(closes, highs, lows, volumes) -> dict:
+    """Compute volume-weighted Money Flow Index (MFI) over 5 and 14 trading days.
+
+    MFI = positive_money_flow / total_money_flow × 100
+    positive day: typical_price > prev_typical_price
+
+    Returns flow_signal: STRONG_INFLOW (≥65) / INFLOW (55-65) / NEUTRAL (45-55)
+                         / OUTFLOW (35-45) / STRONG_OUTFLOW (<35)
+    """
+    try:
+        n = min(len(closes), len(highs), len(lows), len(volumes))
+        if n < 6:
+            return {}
+        cl = closes.iloc[-n:]
+        hi = highs.iloc[-n:]
+        lo = lows.iloc[-n:]
+        vo = volumes.iloc[-n:]
+        typical = (hi + lo + cl) / 3
+        raw_flow = typical * vo
+
+        def _mfi(window: int) -> float | None:
+            pos = neg = 0.0
+            start = max(1, n - window)
+            for i in range(start, n):
+                if float(typical.iloc[i]) > float(typical.iloc[i - 1]):
+                    pos += float(raw_flow.iloc[i])
+                elif float(typical.iloc[i]) < float(typical.iloc[i - 1]):
+                    neg += float(raw_flow.iloc[i])
+            total = pos + neg
+            return round(pos / total * 100, 1) if total > 0 else None
+
+        mfi_5 = _mfi(5)
+        mfi_14 = _mfi(14)
+        out: dict = {}
+        if mfi_5 is not None:
+            out["mfi_5d"] = mfi_5
+        if mfi_14 is not None:
+            out["mfi_14d"] = mfi_14
+
+        # Dollar volume participation (5-day, in billions)
+        dv = float((typical.tail(5) * vo.tail(5)).sum())
+        if dv > 0:
+            out["dollar_vol_5d_bn"] = round(dv / 1e9, 2)
+
+        # Signal label
+        if mfi_5 is not None:
+            if mfi_5 >= 65:
+                out["flow_signal"] = "STRONG_INFLOW"
+            elif mfi_5 >= 55:
+                out["flow_signal"] = "INFLOW"
+            elif mfi_5 >= 45:
+                out["flow_signal"] = "NEUTRAL"
+            elif mfi_5 >= 35:
+                out["flow_signal"] = "OUTFLOW"
+            else:
+                out["flow_signal"] = "STRONG_OUTFLOW"
+        return out
+    except Exception:
+        return {}
+
+
 def compute_returns(closes) -> dict:
     """Given a pandas Series of closes (Date index, ascending), compute period returns."""
     if closes is None or len(closes) == 0:
@@ -198,20 +259,37 @@ def fetch_all(period: str = "2y") -> dict:
           f"({len(SECTORS)} sectors + {len(breadth_tickers)} holdings for breadth)...")
     data = yf.download(tickers, period=period, auto_adjust=True, progress=False, group_by="ticker")
 
-    # Result: dict per ticker
+    # Result: dict per ticker (close + OHLV for sector ETFs + benchmark)
     closes = {}
+    highs: dict = {}
+    lows: dict = {}
+    volumes: dict = {}
+    sector_and_bench = list(SECTORS.keys()) + [BENCHMARK]
     for t in tickers:
         try:
             s = data[t]["Close"].dropna()
             if len(s) == 0:
                 continue
             closes[t] = s
+            if t in sector_and_bench:
+                highs[t] = data[t]["High"].dropna()
+                lows[t] = data[t]["Low"].dropna()
+                volumes[t] = data[t]["Volume"].dropna()
         except Exception:
             pass
 
     spy_closes = closes.get(BENCHMARK)
     if spy_closes is None:
         print("  ERROR: SPY benchmark missing — RS will not be computed")
+
+    # Compute SPY money flow baseline (used for relative MFI)
+    spy_mf = compute_weekly_mf(
+        spy_closes,
+        highs.get(BENCHMARK),
+        lows.get(BENCHMARK),
+        volumes.get(BENCHMARK),
+    ) if spy_closes is not None else {}
+    spy_mfi_5 = spy_mf.get("mfi_5d")
 
     sectors_out = {}
     for ticker, name in SECTORS.items():
@@ -252,6 +330,16 @@ def fetch_all(period: str = "2y") -> dict:
                 # outpacing the monthly run-rate? >0 = RS accelerating = rotation IN.
                 if info.get("rs_1w") is not None and info.get("rs_1m") is not None:
                     info["rs_slope"] = round(info["rs_1w"] - info["rs_1m"] * (5 / 21), 2)
+
+        # Volume-based money flow (ETF level)
+        mf = compute_weekly_mf(
+            s, highs.get(ticker), lows.get(ticker), volumes.get(ticker)
+        )
+        if mf:
+            # Relative MFI vs SPY: positive = sector getting more inflow than market
+            if "mfi_5d" in mf and spy_mfi_5 is not None:
+                mf["mfi_vs_spy"] = round(mf["mfi_5d"] - spy_mfi_5, 1)
+            info["money_flow"] = mf
 
         sectors_out[ticker] = info
 

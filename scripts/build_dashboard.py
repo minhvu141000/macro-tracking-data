@@ -60,7 +60,7 @@ def _merge_extra_history(history: dict[str, dict[str, Any]]) -> dict[str, dict[s
     """Merge non-FRED series (scraped accumulator + EIA) so the dashboard charts
     them alongside FRED. Each file holds {series: {id: {label,latest,...,history}}}.
     """
-    for fname in ("scraped_history.json", "eia_history.json"):
+    for fname in ("scraped_history.json", "eia_history.json", "fed_forecasts_history.json"):
         p = ROOT / "data" / fname
         if not p.exists():
             continue
@@ -149,7 +149,8 @@ def build_releases_history(raw_files: list[dict[str, Any]]) -> dict[str, list[di
 def build() -> None:
     raw_files = load_raw_files()
     daily_files = sorted(DAILY_DIR.glob("*.md"))
-    monthly_files = sorted(MONTHLY_DIR.glob("*.md"))
+    # Chỉ giữ báo cáo tháng dạng YYYY-MM.md — loại scorecard.md, rotation_engine_scorecard.md...
+    monthly_files = sorted(f for f in MONTHLY_DIR.glob("*.md") if re.fullmatch(r"\d{4}-\d{2}", f.stem))
 
     daily_reports = [parse_daily_front_matter(f, include_full_body=True) for f in daily_files]
     monthly_reports = [parse_daily_front_matter(f, include_full_body=True) for f in monthly_files]

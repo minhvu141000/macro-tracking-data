@@ -82,6 +82,27 @@ generated_at: <ISO timestamp>
 
 # Weekly Macro — <YYYY-MM-DD>
 
+## Dòng tiền tuần (Money Flow Radar)
+> Nguồn: `sector_rotation_confirmed.json` → `money_flow` (MFI 5D từ ETF volume) + `composite_signal` (tổng hợp macro persistence + volume).
+
+| Sector | ETF | Composite | MFI 5D | vs SPY | Flow Signal | 1M RS |
+|--------|-----|-----------|--------|--------|-------------|-------|
+| Industrials | XLI | **ACCUMULATE** | XX.X | +XX.X | 🟢 STRONG_INFLOW | +X.X% |
+| Technology | XLK | **ACCUMULATE** | XX.X | +XX.X | 🟢 INFLOW | +X.X% |
+| Financials | XLF | **ACCUMULATE** | XX.X | +XX.X | 🟢 STRONG_INFLOW | +X.X% |
+| Consumer Disc | XLY | WATCH | XX.X | +X.X | 🟡 INFLOW | -X.X% |
+| Utilities | XLU | WATCH_FLOW | XX.X | +XX.X | 🟢 STRONG_INFLOW | -X.X% |
+| Consumer Stap | XLP | HOLD | XX.X | -X.X | 🟡 NEUTRAL | -X.X% |
+| Comm Services | XLC | WATCH | XX.X | -X.X | 🟡 NEUTRAL | -X.X% |
+| Materials | XLB | HOLD | XX.X | -X.X | 🟡 INFLOW | +X.X% |
+| Real Estate | XLRE | HOLD | XX.X | -XX.X | 🔴 STRONG_OUTFLOW | +X.X% |
+| Healthcare | XLV | HOLD | XX.X | -XX.X | 🔴 STRONG_OUTFLOW | -X.X% |
+| Energy | XLE | **AVOID** | X.X | -XX.X | 🔴 STRONG_OUTFLOW | -XX.X% |
+
+**Composite signal legend:** RIDE=xác nhận 2 chiều (macro+flow) · ACCUMULATE=macro bền + dòng tiền vào · WATCH=đang hình thành · HOLD=trung tính · REDUCE/EXIT=macro+flow yếu · AVOID=tránh
+
+**Cảnh báo phân kỳ:** Nếu WATCH_FLOW (flow mạnh nhưng macro chưa xác nhận) → ghi 1 câu giải thích (vd: "XLU STRONG_INFLOW nhưng macro neutral — có thể là defensive rotation sớm, chưa phải ACCUMULATE").
+
 ## Sector Stances
 | Sector | ETF | Stance | Direction | 1M RS | Ghi chú |
 |--------|-----|--------|-----------|-------|---------|
@@ -98,14 +119,14 @@ generated_at: <ISO timestamp>
 | Comm Services | XLC | <stance> | <↑↓→> | <±X.X%> | <10-15 từ> |
 
 ## Rotation Focus
-> Handoff cho agent lọc cổ phiếu. Lấy thẳng từ `sector_rotation_confirmed.json` (VERDICT đã lọc persistence, không phải radar daily).
+> Handoff cho agent lọc cổ phiếu — combine `composite_signal` (flow + macro) + `confirmed_phase`.
 
 - **Regime:** <field `regime_summary`> · cửa sổ xác nhận: <`window_days`> phiên
-- **CONFIRMED_IN (rotation đã xác nhận — đu theo):** <list `confirmed_in` + confidence + macro_pos_days/mom_pos_days mỗi sector>
-- **EARLY_FORMING (đang hình thành — ưu tiên săn sớm):** <list `early_forming` + 1 câu rationale>
-- **FADING (rotation rời — giảm tỷ trọng):** <list `fading`>
-- **Universe cổ phiếu:** `data/sector_holdings_latest.json` — với mỗi sector confirmed_in/early_forming, agent lọc holdings theo `rs_1m` (excess vs SPY) + `above_ma50`.
-- Nếu `insufficient_history=true`: ghi "⚠ Chưa đủ lịch sử daily để xác nhận rotation (mới <n> phiên)".
+- **RIDE/ACCUMULATE (săn cổ phiếu ngay):** <list các sector có composite=RIDE hoặc ACCUMULATE + MFI_vs_SPY + rationale ngắn>
+- **WATCH/WATCH_FLOW (chuẩn bị entry):** <list + lý do chờ thêm xác nhận>
+- **EXIT/REDUCE/AVOID (giảm/thoát):** <list>
+- **Universe cổ phiếu:** `data/sector_holdings_latest.json` — lọc holdings trong sector RIDE/ACCUMULATE theo `rs_1m > 0` + `above_ma50 = true`.
+- Nếu `insufficient_history=true`: ghi "⚠ Chưa đủ lịch sử daily để xác nhận rotation".
 
 ## Calendar Next 7 Days
 | Date | Event | Forecast | Previous | Impact |
@@ -113,11 +134,13 @@ generated_at: <ISO timestamp>
 <mỗi event 1 dòng>
 
 ## Narrative
-<3-5 câu tiếng Việt: (1) regime hiện tại là gì, (2) catalyst chính tuần qua, (3) catalyst/rủi ro chính tuần tới, (4) positioning bias tổng thể>
+<3-5 câu tiếng Việt: (1) regime + dòng tiền tuần qua vào đâu (dựa vào Money Flow Radar), (2) catalyst chính tuần qua, (3) catalyst/rủi ro chính tuần tới, (4) positioning bias tổng thể — sector nào cần ưu tiên attention>
 ```
 
 ## Ràng buộc
 - Viết 2 file giống hệt nhau: archive `data/weekly/<date>.md` và `data/weekly/current.md`.
-- Chỉ gồm 4 section bắt buộc (Sector Stances, Rotation Focus, Calendar Next 7 Days, Narrative) — không thêm section khác.
+- Chỉ gồm 4 section bắt buộc (Dòng tiền tuần, Sector Stances, Rotation Focus, Calendar Next 7 Days, Narrative) — không thêm section khác.
 - `generated_at` dùng ISO timestamp UTC hiện tại (lấy từ `date` shell command nếu cần).
 - Nếu cross-asset data cũ hơn 3 ngày → thêm cảnh báo `[DATA STALE: X days]` vào frontmatter.
+- **Thứ tự bảng Money Flow Radar:** sort giảm dần theo `mfi_vs_spy` (SPY-relative inflow cao nhất lên trên).
+- **Emoji flow_signal:** 🟢 STRONG_INFLOW/INFLOW · 🟡 NEUTRAL · 🔴 OUTFLOW/STRONG_OUTFLOW.

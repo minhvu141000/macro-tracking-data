@@ -223,6 +223,32 @@
           ],
           "primary_link": "https://www.bls.gov/mxp/",
           "deep_dive_link": "https://fred.stlouisfed.org/series/IQ"
+        },
+        {
+          "id": "SPF_CPI",
+          "short_name": "SPF Dự báo CPI",
+          "full_name": "Survey of Professional Forecasters — Median CPI Inflation (Philly Fed)",
+          "frequency": "Hàng quý",
+          "link": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/survey-of-professional-forecasters",
+          "description": "Dự báo median của giới dự báo chuyên nghiệp về lạm phát CPI trung bình năm tới. Đại diện kỳ vọng lạm phát của chuyên gia (khác kỳ vọng hộ gia đình ở SCE/Michigan).",
+          "expectation_meaning": "Đơn vị % YoY. Mục tiêu Fed hàm ý ~2.3-2.5% CPI (tương đương 2% PCE). Trên 2.5% kéo dài = kỳ vọng lạm phát dai dẳng.",
+          "good_vs_bad": "Dự báo về gần 2% = kỳ vọng disinflation → Fed dễ dovish → tốt cho equities, tech/REITs. Trên 2.5% và bị nâng = Fed phải hawkish lâu hơn → áp lực lên bonds & growth.",
+          "market_reaction": "Kỳ vọng lạm phát của chuyên gia ảnh hưởng định giá trái phiếu & Fed path. Khi SPF + SCE + Michigan cùng giảm = tín hiệu de-risk lạm phát mạnh cho FOMC.",
+          "release_aliases": [
+            "survey of professional forecasters cpi",
+            "spf cpi inflation"
+          ],
+          "read_format": "**Level (%)** dự báo YoY · so với mục tiêu Fed 2% và SCE/Michigan",
+          "watch_thresholds": "<2.5% về mục tiêu / >3% kỳ vọng cao dai dẳng; so với SCE_INFL_1Y",
+          "release_pattern": "Hàng quý cùng SPF GDP",
+          "related_indicators": [
+            "CPIAUCSL",
+            "PCEPI",
+            "NYFED1YINFL"
+          ],
+          "primary_link": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/survey-of-professional-forecasters",
+          "news_release_link": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/survey-of-professional-forecasters",
+          "deep_dive_link": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/survey-of-professional-forecasters"
         }
       ]
     },
@@ -1552,6 +1578,84 @@
           ],
           "primary_link": "https://www.conference-board.org/topics/us-leading-indicators",
           "deep_dive_link": "https://fred.stlouisfed.org/series/USSLIND"
+        },
+        {
+          "id": "WEI",
+          "short_name": "NY Fed WEI",
+          "full_name": "Weekly Economic Index (Lewis-Mertens-Stock, NY Fed)",
+          "frequency": "Hàng tuần",
+          "link": "https://fred.stlouisfed.org/series/WEI",
+          "description": "Nowcast tần suất TUẦN từ 10 chuỗi dữ liệu hàng tuần (jobless claims, doanh số bán lẻ, sản xuất điện, sản lượng thép, niềm tin tiêu dùng, thuế khấu trừ…), được scale về đơn vị tăng trưởng GDP YoY. Đọc 'nhịp' kinh tế gần thời gian thực.",
+          "expectation_meaning": "Đơn vị ≈ % tăng trưởng GDP YoY. WEI ~2-3% = tăng trưởng quanh xu hướng; giảm nhanh/âm = hoạt động co lại theo thời gian thực.",
+          "good_vs_bad": "WEI cao & ổn định = tăng trưởng thực mạnh → risk-on, cyclicals hưởng lợi. WEI giảm dốc = cảnh báo SỚM suy yếu trước khi dữ liệu tháng/quý chính thức (vốn có độ trễ) xác nhận.",
+          "market_reaction": "Bắt bước ngoặt sớm hơn nhiều dữ liệu official — đặc biệt giá trị quanh các cú sốc (COVID, khủng hoảng ngân hàng). Macro pro dùng để hiệu chỉnh kỳ vọng GDP giữa các kỳ công bố.",
+          "release_aliases": [
+            "weekly economic index",
+            "ny fed wei"
+          ],
+          "read_format": "**Level (%)** ≈ GDP YoY · đọc xu hướng 4-13 tuần, không phải tuần đơn",
+          "watch_thresholds": "So với GDPNow (Atlanta) để đối chiếu nowcast; giảm dốc nhiều tuần = cảnh báo",
+          "release_pattern": "Hàng tuần (cập nhật thứ Năm, dữ liệu đến thứ Bảy trước)",
+          "related_indicators": [
+            "GDPNOW",
+            "GDPC1",
+            "ICSA"
+          ],
+          "primary_link": "https://fred.stlouisfed.org/series/WEI",
+          "news_release_link": "https://www.newyorkfed.org/research/policy/weekly-economic-index",
+          "deep_dive_link": "https://www.newyorkfed.org/research/policy/weekly-economic-index"
+        },
+        {
+          "id": "ADS",
+          "short_name": "Philly Fed ADS",
+          "full_name": "Aruoba-Diebold-Scotti Business Conditions Index (Philly Fed)",
+          "frequency": "Tần suất ngày (business-day)",
+          "link": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/ads",
+          "description": "Chỉ số điều kiện kinh doanh tần suất NGÀY của Philadelphia Fed, tổng hợp nhiều chỉ báo ở các tần suất khác nhau (jobless claims tuần, payroll/sản xuất/doanh số tháng, GDP quý). Đo trạng thái kinh tế cập nhật liên tục.",
+          "expectation_meaning": "Chuẩn hoá quanh 0 = điều kiện kinh doanh trung bình. Dương = trên trung bình; âm = dưới trung bình. Càng âm sâu càng yếu.",
+          "good_vs_bad": "ADS dương và tăng = đà kinh tế khoẻ → risk-on. ADS rơi âm sâu = suy yếu lan rộng → phòng thủ. Vì cập nhật hằng ngày, ADS bắt chuyển biến nhanh nhất trong các chỉ số tổng hợp.",
+          "market_reaction": "Niche nhưng mạnh — dùng để xác nhận/đi trước các chỉ số tổng hợp tháng (CFNAI). Cập nhật ngày → hữu ích khi theo dõi cú sốc đang diễn ra.",
+          "release_aliases": [
+            "aruoba-diebold-scotti",
+            "ads business conditions"
+          ],
+          "read_format": "**Level** (index chuẩn hoá quanh 0, có thể âm) · đọc xu hướng nhiều tuần",
+          "watch_thresholds": "0 = điều kiện trung bình; âm sâu = yếu rõ; so với CFNAI",
+          "release_pattern": "Cập nhật liên tục (business-day) khi có dữ liệu đầu vào mới",
+          "related_indicators": [
+            "CFNAI",
+            "WEI",
+            "GDPNOW"
+          ],
+          "primary_link": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/ads",
+          "news_release_link": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/ads",
+          "deep_dive_link": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/ads"
+        },
+        {
+          "id": "SPF_GDP",
+          "short_name": "SPF Dự báo GDP",
+          "full_name": "Survey of Professional Forecasters — Median Real GDP Growth (Philly Fed)",
+          "frequency": "Hàng quý",
+          "link": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/survey-of-professional-forecasters",
+          "description": "Dự báo median của giới dự báo chuyên nghiệp về tốc độ tăng GDP thực (annualized) các quý tới. Hệ thống theo dõi trung bình dự báo 4 quý phía trước → đại diện kỳ vọng đồng thuận về tăng trưởng.",
+          "expectation_meaning": "Đơn vị % annualized. Phản ánh giới chuyên gia kỳ vọng kinh tế tăng nhanh hay chậm. Điều chỉnh giảm liên tiếp nhiều quý = tín hiệu chu kỳ chậm lại.",
+          "good_vs_bad": "Dự báo tăng trưởng cao/được nâng = kỳ vọng kinh tế khoẻ → hỗ trợ cyclicals (XLI, XLY, XLB), risk-on. Dự báo bị hạ = lo tăng trưởng yếu → phòng thủ, rủi ro suy thoái.",
+          "market_reaction": "SPF là khảo sát dự báo lâu đời & uy tín nhất (từ 1968). Quan trọng là HƯỚNG điều chỉnh qua các kỳ, không phải mức tuyệt đối. Đối chiếu GDPNow (nowcast) và WEI.",
+          "release_aliases": [
+            "survey of professional forecasters gdp",
+            "spf real gdp"
+          ],
+          "read_format": "**Level (%)** dự báo annualized · đọc chuỗi điều chỉnh qua các quý",
+          "watch_thresholds": "Hạ dự báo nhiều quý liên tiếp = cảnh báo chu kỳ; so với GDPNow/WEI",
+          "release_pattern": "Hàng quý (giữa Q1/Q2/Q3/Q4)",
+          "related_indicators": [
+            "GDPC1",
+            "GDPNOW",
+            "WEI"
+          ],
+          "primary_link": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/survey-of-professional-forecasters",
+          "news_release_link": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/survey-of-professional-forecasters",
+          "deep_dive_link": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/survey-of-professional-forecasters"
         }
       ]
     },
@@ -2169,6 +2273,85 @@
             "fomc rate decision",
             "federal funds rate decision"
           ]
+        },
+        {
+          "id": "NFCI",
+          "short_name": "Chicago Fed NFCI",
+          "full_name": "Chicago Fed National Financial Conditions Index",
+          "frequency": "Hàng tuần (thứ Tư)",
+          "link": "https://fred.stlouisfed.org/series/NFCI",
+          "description": "Chỉ số tổng hợp 105 chỉ báo về thị trường tiền tệ, trái phiếu, cổ phiếu và hệ thống ngân hàng (truyền thống + shadow banking). Đo độ chặt/lỏng tổng thể của điều kiện tài chính Mỹ trong một con số.",
+          "expectation_meaning": "Chuẩn hoá quanh 0 = trung bình lịch sử. > 0 = điều kiện tài chính THẮT CHẶT hơn trung bình (spreads rộng, đòn bẩy giảm, biến động cao); < 0 = NỚI LỎNG hơn trung bình.",
+          "good_vs_bad": "Dưới 0 (nới lỏng) = thanh khoản dồi dào, spreads hẹp → môi trường risk-on, hỗ trợ equities & credit. Trên 0 và tăng nhanh = stress tài chính (vd khủng hoảng ngân hàng khu vực 3/2023) → risk-off.",
+          "market_reaction": "Leading cho tăng trưởng & chu kỳ tín dụng 2-4 quý tới. Thắt chặt đột ngột → Fed có thể buộc dovish để giảm áp lực. Dân macro chuyên nghiệp dùng để đọc mức độ truyền dẫn chính sách tiền tệ vào nền kinh tế thực.",
+          "release_aliases": [
+            "chicago fed national financial conditions",
+            "nfci"
+          ],
+          "read_format": "**Level** (index chuẩn hoá, có thể âm) · đọc hướng & tốc độ thay đổi quan trọng hơn mức tuyệt đối",
+          "watch_thresholds": ">0 thắt chặt / <0 nới lỏng / tăng nhanh nhiều tuần = cảnh báo stress tài chính",
+          "release_pattern": "Hàng tuần, công bố thứ Tư (dữ liệu đến thứ Sáu tuần trước)",
+          "related_indicators": [
+            "ANFCI",
+            "BAMLH0A0HYM2",
+            "DFF"
+          ],
+          "primary_link": "https://fred.stlouisfed.org/series/NFCI",
+          "news_release_link": "https://www.chicagofed.org/research/data/nfci/current-data",
+          "deep_dive_link": "https://www.chicagofed.org/research/data/nfci/current-data"
+        },
+        {
+          "id": "ANFCI",
+          "short_name": "Chicago Fed ANFCI",
+          "full_name": "Chicago Fed Adjusted National Financial Conditions Index",
+          "frequency": "Hàng tuần (thứ Tư)",
+          "link": "https://fred.stlouisfed.org/series/ANFCI",
+          "description": "NFCI sau khi loại bỏ phần biến động giải thích được bởi chu kỳ kinh tế và lạm phát. Cho biết điều kiện tài chính lỏng/chặt hơn so với mức 'đáng lẽ' ở trạng thái kinh tế hiện tại.",
+          "expectation_meaning": "Chuẩn hoá quanh 0. > 0 = tài chính chặt hơn mức kinh tế biện minh (có thể là stress thực sự); < 0 = lỏng hơn mức đáng lẽ (điều kiện hỗ trợ vượt mức, có thể nuôi rủi ro).",
+          "good_vs_bad": "ANFCI > 0 đáng lo hơn NFCI > 0 vì đã trừ ảnh hưởng chu kỳ → phản ánh stress 'thuần tài chính'. ANFCI << 0 kéo dài = điều kiện quá dễ dãi, rủi ro bong bóng/đòn bẩy.",
+          "market_reaction": "Phân kỳ giữa ANFCI và NFCI là tín hiệu đáng chú ý: nếu NFCI nới nhưng ANFCI thắt → stress ẩn dưới bề mặt. Hữu ích để đánh giá Fed có đang mất kiểm soát truyền dẫn không.",
+          "release_aliases": [
+            "chicago fed adjusted national financial conditions",
+            "anfci"
+          ],
+          "read_format": "**Level** (index chuẩn hoá, có thể âm) · so sánh phân kỳ với NFCI",
+          "watch_thresholds": ">0 chặt hơn mức đáng lẽ / <0 lỏng hơn / phân kỳ với NFCI = chú ý",
+          "release_pattern": "Hàng tuần, công bố thứ Tư cùng NFCI",
+          "related_indicators": [
+            "NFCI",
+            "BAMLH0A0HYM2",
+            "DFF"
+          ],
+          "primary_link": "https://fred.stlouisfed.org/series/ANFCI",
+          "news_release_link": "https://www.chicagofed.org/research/data/nfci/current-data",
+          "deep_dive_link": "https://www.chicagofed.org/research/data/nfci/current-data"
+        },
+        {
+          "id": "NYFED_RSTAR",
+          "short_name": "NY Fed r* (HLW)",
+          "full_name": "Natural Rate of Interest (Holston-Laubach-Williams, US)",
+          "frequency": "Hàng quý",
+          "link": "https://www.newyorkfed.org/research/policy/rstar",
+          "description": "Ước lượng lãi suất thực trung tính (neutral real rate) — mức lãi suất thực mà ở đó chính sách tiền tệ không kích thích cũng không thắt chặt, nền kinh tế cân bằng ở toàn dụng + lạm phát mục tiêu trong dài hạn.",
+          "expectation_meaning": "Đơn vị %. Là 'mỏ neo' cho terminal rate của Fed: Fed Funds thực trên r* = chính sách thắt chặt; dưới r* = nới lỏng. Hậu-COVID r* được tranh luận là đã tăng.",
+          "good_vs_bad": "r* tăng → Fed có thể giữ lãi suất cao hơn mà vẫn 'trung tính' → trần định giá thấp hơn cho tài sản dài hạn (growth, bonds, REITs). r* thấp → môi trường lãi suất thấp cấu trúc → hỗ trợ định giá cao.",
+          "market_reaction": "Quyết định cho luận điểm 'higher for longer'. Khi thị trường tin r* tăng → bán tháo trái phiếu dài hạn, áp lực lên tech. Ước lượng có sai số lớn & hay điều chỉnh → xem xu hướng nhiều quý.",
+          "release_aliases": [
+            "natural rate of interest",
+            "r-star",
+            "r* hlw"
+          ],
+          "read_format": "**Level (%)** · so với Fed Funds thực (DFF − lạm phát) để biết chính sách chặt/lỏng",
+          "watch_thresholds": "So sánh với Fed Funds thực: trên r* = thắt chặt, dưới = nới lỏng",
+          "release_pattern": "Hàng quý (cập nhật sau số GDP), tạm dừng/khôi phục theo NY Fed",
+          "related_indicators": [
+            "DFF",
+            "DGS10",
+            "GDPC1"
+          ],
+          "primary_link": "https://www.newyorkfed.org/research/policy/rstar",
+          "news_release_link": "https://www.newyorkfed.org/research/policy/rstar",
+          "deep_dive_link": "https://www.newyorkfed.org/research/policy/rstar"
         }
       ]
     },
