@@ -6,4 +6,5 @@ venv/
 .DS_Store
 
 # Auto-run logs (launchd daily macro)
-data/automation_logs/
+data/automation_logs/*.log
+data/automation_logs/.run.lock
