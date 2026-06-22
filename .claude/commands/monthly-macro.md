@@ -29,6 +29,19 @@ cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && source .venv/bin/activate &
 ```
 Ghi/cập nhật `data/monthly/scorecard.md` (hit rate + HIT/MISS từng sector). Agent PHẢI đọc file này để rút kinh nghiệm trước khi ra calls mới. Không chặn flow nếu chưa có monthly report nào.
 
+## Bước 1d: Dự báo luân chuyển dòng tiền THÁNG TỚI (engine tất định)
+```
+cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && source .venv/bin/activate && \
+  python scripts/build_monthly_rotation.py
+```
+Engine horizon ~21 phiên (đọc `sector_rotation_history.json` + `sector_rotation_confirmed.json` + `sector_holdings_latest.json`). Ghi **2 nhóm đầu ra TÁCH BIỆT**:
+- **DASHBOARD (chỉ biểu đồ):** `data/monthly_rotation_forecast_latest.json` → `build_dashboard.py` render bar chart "Dự báo luân chuyển dòng tiền" trong tab Tháng. KHÔNG prose.
+- **AGENT (phân tích sâu, KHÔNG lên dashboard):** `data/monthly/rotation_forecast_<tháng tới>.json` + `.md` — đầu vào cho `fundamental-stock-picker` (forecast_phase INFLOW_LIKELY/FORMING + `stock_universe` mỗi sector). File `.md` này KHÔNG bị dashboard nhặt (chỉ `YYYY-MM.md` mới là monthly report).
+
+Không chặn flow nếu rotation_history chưa đủ phiên (engine vẫn chạy, conviction bị cap + ghi data_quality).
+
+> **Handoff:** sau monthly, gọi agent `fundamental-stock-picker` (xem `.claude/agents/fundamental-stock-picker.md`) với input chính là `data/monthly/rotation_forecast_<tháng>.json`.
+
 ## Bước 2: Tổng hợp tháng
 Dùng Agent tool với `subagent_type: macro-trend`. Prompt:
 "Viết báo cáo tháng cho <YYYY-MM>.
@@ -62,7 +75,7 @@ Chạy Bash:
 git add data/ dashboard/data.js && \
   git diff --cached --quiet || \
   (git -c user.email="minhvu141000@gmail.com" -c user.name="minhvu141000" \
-    commit -m "Monthly macro <YYYY-MM>" && git push origin main)
+    commit -m "Monthly macro <YYYY-MM> + rotation forecast" && git push origin main)
 ```
 
 ## Bước 4: Báo cáo cho user

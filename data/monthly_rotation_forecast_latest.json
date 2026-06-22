@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "target_month": "2026-07",
+  "generated_at": "2026-06-22T06:55:14.262281+00:00",
+  "as_of": "2026-06-18",
+  "n_sessions": 17,
+  "regime_summary": "Tăng trưởng vượt kỳ vọng, lạm phát nguội hơn kỳ vọng, lãi suất đi ngang, risk-on. Chu kỳ: đường cong normal.",
+  "items": [
+    {
+      "ticker": "XLI",
+      "name": "Industrials",
+      "forecast_score": 0.877,
+      "phase": "INFLOW_LIKELY",
+      "color": "#4ade80",
+      "confidence": "HIGH"
+    },
+    {
+      "ticker": "XLF",
+      "name": "Financials",
+      "forecast_score": 0.739,
+      "phase": "INFLOW_LIKELY",
+      "color": "#4ade80",
+      "confidence": "HIGH"
+    },
+    {
+      "ticker": "XLY",
+      "name": "Consumer Discretionary",
+      "forecast_score": 0.715,
+      "phase": "INFLOW_LIKELY",
+      "color": "#4ade80",
+      "confidence": "MED"
+    },
+    {
+      "ticker": "XLK",
+      "name": "Technology",
+      "forecast_score": 0.385,
+      "phase": "INFLOW_LIKELY",
+      "color": "#4ade80",
+      "confidence": "HIGH"
+    },
+    {
+      "ticker": "XLC",
+      "name": "Communication Services",
+      "forecast_score": 0.03,
+      "phase": "FORMING",
+      "color": "#2dd4bf",
+      "confidence": "MED"
+    },
+    {
+      "ticker": "XLB",
+      "name": "Materials",
+      "forecast_score": 0.126,
+      "phase": "NEUTRAL",
+      "color": "#8b96a3",
+      "confidence": "MED"
+    },
+    {
+      "ticker": "XLRE",
+      "name": "Real Estate",
+      "forecast_score": -0.324,
+      "phase": "NEUTRAL",
+      "color": "#8b96a3",
+      "confidence": "MED"
+    },
+    {
+      "ticker": "XLP",
+      "name": "Consumer Staples",
+      "forecast_score": -0.385,
+      "phase": "NEUTRAL",
+      "color": "#8b96a3",
+      "confidence": "MED"
+    },
+    {
+      "ticker": "XLU",
+      "name": "Utilities",
+      "forecast_score": -0.261,
+      "phase": "OUTFLOW_LIKELY",
+      "color": "#fbbf24",
+      "confidence": "MED"
+    },
+    {
+      "ticker": "XLV",
+      "name": "Healthcare",
+      "forecast_score": -0.579,
+      "phase": "AVOID",
+      "color": "#f87171",
+      "confidence": "HIGH"
+    },
+    {
+      "ticker": "XLE",
+      "name": "Energy",
+      "forecast_score": -1.764,
+      "phase": "AVOID",
+      "color": "#f87171",
+      "confidence": "HIGH"
+    }
+  ]
+}

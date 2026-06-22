@@ -1,5 +1,5 @@
 window.MACRO_DATA = {
-  "last_updated": "2026-06-22T06:25:41.740828+00:00",
+  "last_updated": "2026-06-22T06:57:04.786567+00:00",
   "daily_releases": {
     "date": "2026-06-18",
     "releases": [
@@ -114984,5 +114984,103 @@ window.MACRO_DATA = {
     "generated_at": "2026-06-22T06:24:45+00:00",
     "body_preview": "# Weekly Macro — 2026-06-21",
     "body": "# Weekly Macro — 2026-06-21\n\n## Dòng tiền tuần (Money Flow Radar)\n> Nguồn: `sector_rotation_confirmed.json` → `money_flow` (MFI 5D từ ETF volume) + `composite_signal` (macro persistence + volume). Sort theo MFI vs SPY giảm dần.\n\n| Sector | ETF | Composite | MFI 5D | vs SPY | Flow Signal | 1M RS |\n|--------|-----|-----------|--------|--------|-------------|-------|\n| Industrials | XLI | **ACCUMULATE** | 100.0 | +43.6 | 🟢 STRONG_INFLOW | +5.1% |\n| Financials | XLF | **ACCUMULATE** | 82.3 | +25.9 | 🟢 STRONG_INFLOW | +2.7% |\n| Utilities | XLU | WATCH_FLOW | 80.2 | +23.8 | 🟢 STRONG_INFLOW | -1.1% |\n| Technology | XLK | **ACCUMULATE** | 62.3 | +5.9 | 🟢 INFLOW | +8.3% |\n| Consumer Disc | XLY | **ACCUMULATE** | 60.3 | +3.9 | 🟢 INFLOW | -0.2% |\n| Materials | XLB | HOLD | 57.9 | +1.5 | 🟢 INFLOW | +3.5% |\n| Comm Services | XLC | WATCH | 32.8 | -23.6 | 🔴 STRONG_OUTFLOW | -7.4% |\n| Consumer Stap | XLP | HOLD | 32.5 | -23.9 | 🔴 STRONG_OUTFLOW | -5.2% |\n| Real Estate | XLRE | HOLD | 26.6 | -29.8 | 🔴 STRONG_OUTFLOW | -2.2% |\n| Healthcare | XLV | HOLD | 18.8 | -37.6 | 🔴 STRONG_OUTFLOW | -0.6% |\n| Energy | XLE | **AVOID** | 0.0 | -56.4 | 🔴 STRONG_OUTFLOW | -14.0% |\n\n**Composite signal legend:** RIDE=xác nhận 2 chiều (macro+flow) · ACCUMULATE=macro bền + dòng tiền vào · WATCH=đang hình thành · HOLD=trung tính · REDUCE/EXIT=macro+flow yếu · AVOID=tránh\n\n**Cảnh báo phân kỳ:** XLU STRONG_INFLOW (MFI vs SPY +23.8) nhưng macro 0/10 → composite chỉ WATCH_FLOW, KHÔNG phải ACCUMULATE: nhiều khả năng là dòng tiền phòng thủ/đi tìm yield khi yields hạ, chưa được vĩ mô hậu thuẫn → không nâng stance.\n\n## Sector Stances\n| Sector | ETF | Stance | Direction | 1M RS | Ghi chú |\n|--------|-----|--------|-----------|-------|---------|\n| Technology | XLK | Light OW | ↑ | +8.3% | EARLY_FORMING, RS dẫn đầu + thrust +8.4, INFLOW; macro mới 6/10 nên chưa OW |\n| Healthcare | XLV | Light UW | ↓ | -0.6% | NEUTRAL nhưng STRONG_OUTFLOW + rs_slope −4.31 (xấu nhanh nhất bảng) |\n| Financials | XLF | Light OW | ↑ | +2.7% | EARLY_FORMING, STRONG_INFLOW vs SPY +25.9, mom 10/10 — dòng tiền bền |\n| Energy | XLE | Avoid | ↓ | -14.0% | AVOID, WTI −23% 1M, MFI 0/STRONG_OUTFLOW vs SPY −56.4 |\n| Consumer Disc | XLY | Stalking | ↑ | -0.2% | EARLY_FORMING macro 10/10 nhưng dưới MA200 + RS phẳng → chờ giá xác nhận |\n| Consumer Stap | XLP | Light UW | ↓ | -5.2% | NEUTRAL + RS −5.2 + STRONG_OUTFLOW — defensive bị rút tiền |\n| Industrials | XLI | Light OW | ↑ | +5.1% | EARLY_FORMING dẫn đầu: macro 9/10, MFI 100 vs SPY +43.6 — combo mạnh nhất |\n| Materials | XLB | Neutral | → | +3.5% | RS dương + thrust +25 nhưng macro 1/10 + rs_slope âm → momentum thiếu nền vĩ mô |\n| Utilities | XLU | Neutral | → | -1.1% | WATCH_FLOW: inflow mạnh nhưng macro 0/10 — phân kỳ, chưa nâng |\n| Real Estate | XLRE | Light UW | ↓ | -2.2% | NEUTRAL + STRONG_OUTFLOW + rs_slope −3.26 đi xuống |\n| Comm Services | XLC | Stalking | → | -7.4% | EARLY_FORMING macro 10/10 nhưng dưới MA200, RS −7.4 + OUTFLOW — giá chưa theo |\n\n## Rotation Focus\n> Handoff cho agent lọc cổ phiếu — combine `composite_signal` (flow + macro) + `confirmed_phase`.\n\n- **Regime:** Tăng trưởng vượt kỳ vọng, lạm phát nguội hơn kỳ vọng, lãi suất đi ngang, risk-on; chu kỳ đường cong normal · cửa sổ xác nhận: **10 phiên** (2026-06-04 → 06-18)\n- **RIDE/ACCUMULATE (săn cổ phiếu ngay):** **XLI** (MFI vs SPY +43.6, macro 9/10), **XLF** (+25.9, mom 10/10), **XLK** (+5.9, RS dẫn đầu +8.3), **XLY** (+3.9, macro 10/10 — nhưng còn dưới MA200) — đều EARLY_FORMING + dòng tiền vào.\n- **WATCH/WATCH_FLOW (chuẩn bị entry):** **XLC** (macro 10/10 nhưng giá/flow chưa theo — chờ vượt MA200), **XLU** (inflow mạnh nhưng macro chưa xác nhận — phân kỳ phòng thủ).\n- **EXIT/REDUCE/AVOID (giảm/thoát):** **XLE** (Avoid), **XLV / XLP / XLRE** (STRONG_OUTFLOW, defensive bị rút).\n- **Universe cổ phiếu:** `data/sector_holdings_latest.json` — lọc holdings trong XLI/XLF/XLK/XLY theo `rs_1m > 0` + `above_ma50 = true`.\n- **⚠ Chưa sector nào CONFIRMED_IN** (chưa đủ persistence 2 chiều bền) → giữ conviction ở mức Light OW/Stalking, chưa Overweight tuyệt đối.\n\n## Calendar Next 7 Days\n| Date | Event | Forecast | Previous | Impact |\n|------|-------|----------|----------|--------|\n| 2026-06-22 | Producer Price Index (PPI) | — | — | MEDIUM |\n| 2026-06-23 | Personal Income & Outlays (Core PCE) | — | — | HIGH |\n| 2026-06-24 | Job Openings & Labor Turnover (JOLTS) | — | — | MEDIUM |\n| 2026-06-25 | Initial Jobless Claims | — | — | LOW |\n\n## Narrative\nTuần qua xác nhận nhịp **risk-on dẫn dắt bởi cyclicals**: VIX rơi về 16.4, SPY +9.1% trên MA200, và dòng tiền (MFI 5D) chảy mạnh vào **XLI, XLF, XLK** trong khi rút khỏi toàn bộ nhóm phòng thủ (XLV, XLP, XLRE) và **XLE** (WTI −23% 1M kéo Energy thành điểm yếu rõ nhất). Catalyst chi phối là **FOMC hawkish-hold 17/6** (giữ lãi suất, dot plot dịch lên) — nghịch lý là thị trường vẫn risk-on vì growth beat (Philly Fed, Retail Sales) lấn át, nhưng đó là risk-on *chiến thuật* khi hard-data lạm phát (CPI YoY ~4.3%, Core PCE ~3.3%) còn nóng. Tuần tới tâm điểm là **Core PCE 23/6** (thước đo #1 của Fed) và **PPI 22/6**: một bản nóng có thể đảo nhịp risk-on và thử thách các stance Light OW. Positioning: ưu tiên attention vào **XLI/XLF/XLK** (dòng tiền + EARLY_FORMING), stalk **XLY/XLC** chờ vượt MA200, tránh **XLE**. **Lưu ý độ tin cậy engine:** rotation scorecard hiện cho **edge ÂM** (5d −1.55%, hit 42%; 10d −1.56%) trên mẫu phần lớn là backfill — thứ hạng engine CHƯA chứng minh được khả năng dự báo, cần tích lũy thêm daily snapshot thật trước khi tăng conviction."
+  },
+  "rotation_forecast": {
+    "schema_version": "1.0",
+    "target_month": "2026-07",
+    "generated_at": "2026-06-22T06:55:14.262281+00:00",
+    "as_of": "2026-06-18",
+    "n_sessions": 17,
+    "regime_summary": "Tăng trưởng vượt kỳ vọng, lạm phát nguội hơn kỳ vọng, lãi suất đi ngang, risk-on. Chu kỳ: đường cong normal.",
+    "items": [
+      {
+        "ticker": "XLI",
+        "name": "Industrials",
+        "forecast_score": 0.877,
+        "phase": "INFLOW_LIKELY",
+        "color": "#4ade80",
+        "confidence": "HIGH"
+      },
+      {
+        "ticker": "XLF",
+        "name": "Financials",
+        "forecast_score": 0.739,
+        "phase": "INFLOW_LIKELY",
+        "color": "#4ade80",
+        "confidence": "HIGH"
+      },
+      {
+        "ticker": "XLY",
+        "name": "Consumer Discretionary",
+        "forecast_score": 0.715,
+        "phase": "INFLOW_LIKELY",
+        "color": "#4ade80",
+        "confidence": "MED"
+      },
+      {
+        "ticker": "XLK",
+        "name": "Technology",
+        "forecast_score": 0.385,
+        "phase": "INFLOW_LIKELY",
+        "color": "#4ade80",
+        "confidence": "HIGH"
+      },
+      {
+        "ticker": "XLC",
+        "name": "Communication Services",
+        "forecast_score": 0.03,
+        "phase": "FORMING",
+        "color": "#2dd4bf",
+        "confidence": "MED"
+      },
+      {
+        "ticker": "XLB",
+        "name": "Materials",
+        "forecast_score": 0.126,
+        "phase": "NEUTRAL",
+        "color": "#8b96a3",
+        "confidence": "MED"
+      },
+      {
+        "ticker": "XLRE",
+        "name": "Real Estate",
+        "forecast_score": -0.324,
+        "phase": "NEUTRAL",
+        "color": "#8b96a3",
+        "confidence": "MED"
+      },
+      {
+        "ticker": "XLP",
+        "name": "Consumer Staples",
+        "forecast_score": -0.385,
+        "phase": "NEUTRAL",
+        "color": "#8b96a3",
+        "confidence": "MED"
+      },
+      {
+        "ticker": "XLU",
+        "name": "Utilities",
+        "forecast_score": -0.261,
+        "phase": "OUTFLOW_LIKELY",
+        "color": "#fbbf24",
+        "confidence": "MED"
+      },
+      {
+        "ticker": "XLV",
+        "name": "Healthcare",
+        "forecast_score": -0.579,
+        "phase": "AVOID",
+        "color": "#f87171",
+        "confidence": "HIGH"
+      },
+      {
+        "ticker": "XLE",
+        "name": "Energy",
+        "forecast_score": -1.764,
+        "phase": "AVOID",
+        "color": "#f87171",
+        "confidence": "HIGH"
+      }
+    ]
   }
 };

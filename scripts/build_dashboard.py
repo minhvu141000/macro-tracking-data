@@ -168,6 +168,7 @@ def build() -> None:
             print(f"  Skipping {label}: {exc}")
             return {}
 
+    rotation_forecast = _load(ROOT / "data" / "monthly_rotation_forecast_latest.json", "rotation_forecast")
     sectors_payload = _load(SECTORS_FILE, "sectors")
     cross_asset_payload = _load(CROSS_ASSET_FILE, "cross_asset")
     calendar_payload = _load(CALENDAR_FILE, "calendar")
@@ -198,6 +199,7 @@ def build() -> None:
         "latest_daily": latest_daily,
         "latest_monthly": latest_monthly,
         "latest_weekly": latest_weekly,
+        "rotation_forecast": rotation_forecast,
     }
 
     OUT.parent.mkdir(parents=True, exist_ok=True)

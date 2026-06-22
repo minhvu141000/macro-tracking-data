@@ -1,0 +1,529 @@
+{
+  "schema_version": "1.0",
+  "horizon": "monthly",
+  "target_month": "2026-07",
+  "generated_at": "2026-06-22T06:55:14.261199+00:00",
+  "window_sessions": 17,
+  "as_of": "2026-06-18",
+  "window_from": "2026-05-26",
+  "regime_summary": "Tăng trưởng vượt kỳ vọng, lạm phát nguội hơn kỳ vọng, lãi suất đi ngang, risk-on. Chu kỳ: đường cong normal.",
+  "params": {
+    "MONTH_WINDOW": 21,
+    "MACRO_THR": 0.3,
+    "POS_FRAC": 0.6,
+    "weights": {
+      "base": 1.0,
+      "trend": 0.4,
+      "flow": 0.2
+    }
+  },
+  "data_quality": {
+    "n_sessions": 17,
+    "full_month_window": 21,
+    "note": "Độ tin tăng dần theo số phiên DAILY thật. Tham chiếu data/monthly/rotation_engine_scorecard.md để biết edge dự báo hiện tại (hiện còn nhỏ/backfill → coi như giả thuyết, chưa phải kết luận)."
+  },
+  "ranked": [
+    "XLI",
+    "XLF",
+    "XLY",
+    "XLK",
+    "XLC",
+    "XLB",
+    "XLRE",
+    "XLP",
+    "XLU",
+    "XLV",
+    "XLE"
+  ],
+  "buckets": {
+    "inflow_likely": [
+      "XLI",
+      "XLF",
+      "XLY",
+      "XLK"
+    ],
+    "forming": [
+      "XLC"
+    ],
+    "neutral": [
+      "XLB",
+      "XLRE",
+      "XLP"
+    ],
+    "outflow_likely": [
+      "XLU"
+    ],
+    "avoid": [
+      "XLV",
+      "XLE"
+    ]
+  },
+  "sectors": {
+    "XLK": {
+      "name": "Technology",
+      "forecast_phase": "INFLOW_LIKELY",
+      "confidence": "HIGH",
+      "forecast_score": 0.385,
+      "axes": {
+        "macro": {
+          "pos_days": 12,
+          "neg_days": 3,
+          "n": 17,
+          "tilt_trend": 0.64,
+          "strong": true
+        },
+        "flow": {
+          "mfi_vs_spy": 5.9,
+          "flow_signal": "INFLOW"
+        },
+        "price": {
+          "rs_1m": 8.55,
+          "above_ma200": true,
+          "mom_pos_days": 10,
+          "mom_trend": -1.01
+        }
+      },
+      "avg_rotation_score": 0.386,
+      "score_trend": -0.1,
+      "rationale": "Vĩ mô hậu thuẫn bền 12/17 phiên + dòng tiền/giá xác nhận (mom 10/17, MFI vs SPY +5.9, trend -0.1) → KHẢ NĂNG NHẬN dòng tiền tháng tới. Sector để fundamental agent săn cổ phiếu.",
+      "stock_universe": [
+        {
+          "ticker": "AMD",
+          "rs_1m": 27.74,
+          "ret_1m": 29.78,
+          "above_ma200": true
+        },
+        {
+          "ticker": "TXN",
+          "rs_1m": 4.76,
+          "ret_1m": 6.8,
+          "above_ma200": true
+        },
+        {
+          "ticker": "CSCO",
+          "rs_1m": 1.57,
+          "ret_1m": 3.61,
+          "above_ma200": true
+        }
+      ]
+    },
+    "XLF": {
+      "name": "Financials",
+      "forecast_phase": "INFLOW_LIKELY",
+      "confidence": "HIGH",
+      "forecast_score": 0.739,
+      "axes": {
+        "macro": {
+          "pos_days": 14,
+          "neg_days": 0,
+          "n": 17,
+          "tilt_trend": -0.46,
+          "strong": true
+        },
+        "flow": {
+          "mfi_vs_spy": 25.9,
+          "flow_signal": "STRONG_INFLOW"
+        },
+        "price": {
+          "rs_1m": 2.89,
+          "above_ma200": true,
+          "mom_pos_days": 10,
+          "mom_trend": 0.66
+        }
+      },
+      "avg_rotation_score": 0.546,
+      "score_trend": 0.05,
+      "rationale": "Vĩ mô hậu thuẫn bền 14/17 phiên + dòng tiền/giá xác nhận (mom 10/17, MFI vs SPY +25.9, trend +0.05) → KHẢ NĂNG NHẬN dòng tiền tháng tới. Sector để fundamental agent săn cổ phiếu.",
+      "stock_universe": [
+        {
+          "ticker": "C",
+          "rs_1m": 17.21,
+          "ret_1m": 19.25,
+          "above_ma200": true
+        },
+        {
+          "ticker": "GS",
+          "rs_1m": 16.55,
+          "ret_1m": 18.59,
+          "above_ma200": true
+        },
+        {
+          "ticker": "MS",
+          "rs_1m": 15.68,
+          "ret_1m": 17.72,
+          "above_ma200": true
+        },
+        {
+          "ticker": "BAC",
+          "rs_1m": 9.38,
+          "ret_1m": 11.42,
+          "above_ma200": true
+        },
+        {
+          "ticker": "WFC",
+          "rs_1m": 8.22,
+          "ret_1m": 10.26,
+          "above_ma200": false
+        },
+        {
+          "ticker": "JPM",
+          "rs_1m": 7.94,
+          "ret_1m": 9.98,
+          "above_ma200": true
+        },
+        {
+          "ticker": "AXP",
+          "rs_1m": 7.24,
+          "ret_1m": 9.28,
+          "above_ma200": true
+        }
+      ]
+    },
+    "XLE": {
+      "name": "Energy",
+      "forecast_phase": "AVOID",
+      "confidence": "HIGH",
+      "forecast_score": -1.764,
+      "axes": {
+        "macro": {
+          "pos_days": 0,
+          "neg_days": 16,
+          "n": 17,
+          "tilt_trend": -0.54,
+          "strong": false
+        },
+        "flow": {
+          "mfi_vs_spy": -56.4,
+          "flow_signal": "STRONG_OUTFLOW"
+        },
+        "price": {
+          "rs_1m": -14.01,
+          "above_ma200": true,
+          "mom_pos_days": 6,
+          "mom_trend": -0.29
+        }
+      },
+      "avg_rotation_score": -1.216,
+      "score_trend": -0.43,
+      "rationale": "Vĩ mô yếu bền + dòng tiền ra + RS âm (-14.0%) → tránh.",
+      "stock_universe": []
+    },
+    "XLV": {
+      "name": "Healthcare",
+      "forecast_phase": "AVOID",
+      "confidence": "HIGH",
+      "forecast_score": -0.579,
+      "axes": {
+        "macro": {
+          "pos_days": 0,
+          "neg_days": 13,
+          "n": 17,
+          "tilt_trend": 0.2,
+          "strong": false
+        },
+        "flow": {
+          "mfi_vs_spy": -37.6,
+          "flow_signal": "STRONG_OUTFLOW"
+        },
+        "price": {
+          "rs_1m": -0.41,
+          "above_ma200": true,
+          "mom_pos_days": 9,
+          "mom_trend": -0.58
+        }
+      },
+      "avg_rotation_score": -0.268,
+      "score_trend": -0.15,
+      "rationale": "Vĩ mô yếu bền + dòng tiền ra + RS âm (-0.4%) → tránh.",
+      "stock_universe": []
+    },
+    "XLY": {
+      "name": "Consumer Discretionary",
+      "forecast_phase": "INFLOW_LIKELY",
+      "confidence": "MED",
+      "forecast_score": 0.715,
+      "axes": {
+        "macro": {
+          "pos_days": 17,
+          "neg_days": 0,
+          "n": 17,
+          "tilt_trend": 0.57,
+          "strong": true
+        },
+        "flow": {
+          "mfi_vs_spy": 3.9,
+          "flow_signal": "INFLOW"
+        },
+        "price": {
+          "rs_1m": 0.01,
+          "above_ma200": false,
+          "mom_pos_days": 8,
+          "mom_trend": -0.04
+        }
+      },
+      "avg_rotation_score": 0.569,
+      "score_trend": 0.3,
+      "rationale": "Vĩ mô hậu thuẫn bền 17/17 phiên + dòng tiền/giá xác nhận (mom 8/17, MFI vs SPY +3.9, trend +0.3) → KHẢ NĂNG NHẬN dòng tiền tháng tới. Sector để fundamental agent săn cổ phiếu.",
+      "stock_universe": [
+        {
+          "ticker": "BKNG",
+          "rs_1m": 9.4,
+          "ret_1m": 11.44,
+          "above_ma200": false
+        },
+        {
+          "ticker": "HD",
+          "rs_1m": 9.32,
+          "ret_1m": 11.36,
+          "above_ma200": false
+        },
+        {
+          "ticker": "MAR",
+          "rs_1m": 8.64,
+          "ret_1m": 10.68,
+          "above_ma200": true
+        },
+        {
+          "ticker": "GM",
+          "rs_1m": 7.37,
+          "ret_1m": 9.41,
+          "above_ma200": true
+        },
+        {
+          "ticker": "TJX",
+          "rs_1m": 6.67,
+          "ret_1m": 8.71,
+          "above_ma200": true
+        },
+        {
+          "ticker": "ABNB",
+          "rs_1m": 6.54,
+          "ret_1m": 8.58,
+          "above_ma200": true
+        },
+        {
+          "ticker": "NKE",
+          "rs_1m": 5.47,
+          "ret_1m": 7.51,
+          "above_ma200": false
+        }
+      ]
+    },
+    "XLP": {
+      "name": "Consumer Staples",
+      "forecast_phase": "NEUTRAL",
+      "confidence": "MED",
+      "forecast_score": -0.385,
+      "axes": {
+        "macro": {
+          "pos_days": 2,
+          "neg_days": 9,
+          "n": 17,
+          "tilt_trend": -0.17,
+          "strong": false
+        },
+        "flow": {
+          "mfi_vs_spy": -23.9,
+          "flow_signal": "STRONG_OUTFLOW"
+        },
+        "price": {
+          "rs_1m": -4.96,
+          "above_ma200": true,
+          "mom_pos_days": 7,
+          "mom_trend": 0.71
+        }
+      },
+      "avg_rotation_score": -0.314,
+      "score_trend": 0.22,
+      "rationale": "Không có lợi thế/bất lợi bền (macro 2/17, mom 7/17).",
+      "stock_universe": []
+    },
+    "XLI": {
+      "name": "Industrials",
+      "forecast_phase": "INFLOW_LIKELY",
+      "confidence": "HIGH",
+      "forecast_score": 0.877,
+      "axes": {
+        "macro": {
+          "pos_days": 16,
+          "neg_days": 0,
+          "n": 17,
+          "tilt_trend": -0.37,
+          "strong": true
+        },
+        "flow": {
+          "mfi_vs_spy": 43.6,
+          "flow_signal": "STRONG_INFLOW"
+        },
+        "price": {
+          "rs_1m": 5.43,
+          "above_ma200": true,
+          "mom_pos_days": 14,
+          "mom_trend": 0.22
+        }
+      },
+      "avg_rotation_score": 0.626,
+      "score_trend": -0.1,
+      "rationale": "Vĩ mô hậu thuẫn bền 16/17 phiên + dòng tiền/giá xác nhận (mom 14/17, MFI vs SPY +43.6, trend -0.1) → KHẢ NĂNG NHẬN dòng tiền tháng tới. Sector để fundamental agent săn cổ phiếu.",
+      "stock_universe": [
+        {
+          "ticker": "GE",
+          "rs_1m": 23.32,
+          "ret_1m": 25.36,
+          "above_ma200": true
+        },
+        {
+          "ticker": "CAT",
+          "rs_1m": 12.57,
+          "ret_1m": 14.61,
+          "above_ma200": true
+        },
+        {
+          "ticker": "ETN",
+          "rs_1m": 11.38,
+          "ret_1m": 13.42,
+          "above_ma200": true
+        },
+        {
+          "ticker": "RTX",
+          "rs_1m": 4.77,
+          "ret_1m": 6.81,
+          "above_ma200": true
+        },
+        {
+          "ticker": "DE",
+          "rs_1m": 3.55,
+          "ret_1m": 5.59,
+          "above_ma200": true
+        },
+        {
+          "ticker": "HON",
+          "rs_1m": 3.42,
+          "ret_1m": 5.46,
+          "above_ma200": true
+        }
+      ]
+    },
+    "XLB": {
+      "name": "Materials",
+      "forecast_phase": "NEUTRAL",
+      "confidence": "MED",
+      "forecast_score": 0.126,
+      "axes": {
+        "macro": {
+          "pos_days": 8,
+          "neg_days": 4,
+          "n": 17,
+          "tilt_trend": -1.12,
+          "strong": false
+        },
+        "flow": {
+          "mfi_vs_spy": 1.5,
+          "flow_signal": "INFLOW"
+        },
+        "price": {
+          "rs_1m": 3.76,
+          "above_ma200": true,
+          "mom_pos_days": 12,
+          "mom_trend": 0.29
+        }
+      },
+      "avg_rotation_score": 0.312,
+      "score_trend": -0.49,
+      "rationale": "Không có lợi thế/bất lợi bền (macro 8/17, mom 12/17).",
+      "stock_universe": []
+    },
+    "XLU": {
+      "name": "Utilities",
+      "forecast_phase": "OUTFLOW_LIKELY",
+      "confidence": "MED",
+      "forecast_score": -0.261,
+      "axes": {
+        "macro": {
+          "pos_days": 0,
+          "neg_days": 15,
+          "n": 17,
+          "tilt_trend": 0.37,
+          "strong": false
+        },
+        "flow": {
+          "mfi_vs_spy": 23.8,
+          "flow_signal": "STRONG_INFLOW"
+        },
+        "price": {
+          "rs_1m": -0.99,
+          "above_ma200": true,
+          "mom_pos_days": 7,
+          "mom_trend": 0.41
+        }
+      },
+      "avg_rotation_score": -0.576,
+      "score_trend": 0.39,
+      "rationale": "Vĩ mô yếu (0/17) + dòng tiền/giá yếu (mom 7/17, MFI vs SPY +23.8) → có khả năng RA tiền.",
+      "stock_universe": []
+    },
+    "XLRE": {
+      "name": "Real Estate",
+      "forecast_phase": "NEUTRAL",
+      "confidence": "MED",
+      "forecast_score": -0.324,
+      "axes": {
+        "macro": {
+          "pos_days": 2,
+          "neg_days": 6,
+          "n": 17,
+          "tilt_trend": 0.46,
+          "strong": false
+        },
+        "flow": {
+          "mfi_vs_spy": -29.8,
+          "flow_signal": "STRONG_OUTFLOW"
+        },
+        "price": {
+          "rs_1m": -1.99,
+          "above_ma200": true,
+          "mom_pos_days": 9,
+          "mom_trend": -0.16
+        }
+      },
+      "avg_rotation_score": -0.197,
+      "score_trend": 0.18,
+      "rationale": "Không có lợi thế/bất lợi bền (macro 2/17, mom 9/17).",
+      "stock_universe": []
+    },
+    "XLC": {
+      "name": "Communication Services",
+      "forecast_phase": "FORMING",
+      "confidence": "MED",
+      "forecast_score": 0.03,
+      "axes": {
+        "macro": {
+          "pos_days": 14,
+          "neg_days": 0,
+          "n": 17,
+          "tilt_trend": 0.42,
+          "strong": true
+        },
+        "flow": {
+          "mfi_vs_spy": -23.6,
+          "flow_signal": "STRONG_OUTFLOW"
+        },
+        "price": {
+          "rs_1m": -7.19,
+          "above_ma200": false,
+          "mom_pos_days": 2,
+          "mom_trend": -0.21
+        }
+      },
+      "avg_rotation_score": 0.131,
+      "score_trend": 0.14,
+      "rationale": "Vĩ mô bền (14/17) nhưng dòng tiền/giá chưa theo (mom 2/17, MFI vs SPY -23.6) → ĐANG HÌNH THÀNH, canh vào sớm khi giá vượt MA / dòng tiền chuyển dương.",
+      "stock_universe": []
+    }
+  },
+  "handoff": {
+    "consumer": "fundamental-stock-picker agent",
+    "instruction": "Săn cổ phiếu trong sector forecast_phase = INFLOW_LIKELY (ưu tiên) và FORMING (vào sớm). Lấy danh sách ở sectors[<tk>].stock_universe (đã lọc rs_1m>0 + above_ma50), rồi chấm fundamental (tăng trưởng EPS/doanh thu, định giá, biên LN, FCF, nợ). BỎ QUA OUTFLOW_LIKELY/AVOID. Tôn trọng confidence: HIGH = vào mạnh, MED = thăm dò, LOW = chỉ watchlist.",
+    "universe_file": "data/sector_holdings_latest.json"
+  }
+}

@@ -25,6 +25,7 @@ scripts/build_scorecard.py      # chấm calls tháng trước vs RS thực tế
 scripts/build_sector_rotation.py # TẦNG DAILY: engine macro→sector tất định → snapshot + append history
 scripts/build_rotation_confirm.py # TẦNG WEEKLY: lọc persistence từ history → verdict confirmed
 scripts/build_rotation_scorecard.py # vòng phản hồi: forward RS chấm điểm engine → hit rate + edge
+scripts/build_monthly_rotation.py # TẦNG MONTHLY: dự báo rotation tháng tới (21 phiên) → forecast cho fundamental agent + chart dashboard
 scripts/fetch_fed_forecasts.py  # DỰ BÁO Fed vùng (SPF GDP+CPI, ADS, r-star, SCE) từ Excel Philly/NY → fed_forecasts_history.json
 scripts/build_dashboard.py      # build data.js (merge fred + eia + scraped + fed_forecasts vào history)
 .claude/agents/                 # sub-agents
@@ -36,6 +37,8 @@ data/sector_rotation_latest.json # SNAPSHOT/radar daily (1 phiên) — KHÔNG ph
 data/sector_rotation_history.json # chuỗi daily snapshot (~90 ngày) — bằng chứng cho tầng weekly
 data/sector_rotation_confirmed.json # VERDICT tuần đã lọc persistence — handoff cho stock-picker
 data/sector_holdings_latest.json # universe cổ phiếu/sector (rs_1m, above_ma50) cho agent lọc cổ phiếu
+data/monthly/rotation_forecast_<YYYY-MM>.{json,md} # DỰ BÁO rotation tháng tới — file SÂU cho fundamental-stock-picker agent (KHÔNG lên dashboard)
+data/monthly_rotation_forecast_latest.json # bản gọn cho dashboard render bar chart (chart-only) trong tab Tháng
 data/sectors_lite.json          # sectors KHÔNG history (+rs_slope, breadth_thrust) — cho agents (~25x nhỏ hơn _latest)
 data/cross_asset_lite.json      # cross-asset KHÔNG history — cho agents (~60x nhỏ hơn)
 ```

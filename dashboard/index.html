@@ -1676,11 +1676,54 @@ function autoConclusionBullets(date) {
 window.initInsights();   // gọi sau khi mọi const (TODAY_INCLUDE, DEFAULT_VIEW...) đã sẵn
 
 // === Monthly full view — lazy renders when Tháng tab clicked ===
+// Bar chart "Dự báo luân chuyển dòng tiền tháng tới" — CHỈ biểu đồ (phân tích sâu
+// nằm ở file agent data/monthly/rotation_forecast_<month>.md, KHÔNG đưa lên dashboard).
+function rotationForecastBlockHtml() {
+  const fc = D.rotation_forecast;
+  if (!fc || !(fc.items || []).length) return "";
+  return `
+    <div class="card" style="margin-bottom:18px;">
+      <div class="card-header"><div class="kpi-label">🔮 Dự báo luân chuyển dòng tiền — tháng ${fc.target_month || ""}
+        <span style="font-weight:400;color:var(--muted);font-size:11px;">(forecast_score · 🟢 nhận tiền · 🟡 hình thành/ra · 🔴 né)</span></div></div>
+      <div class="chart-box" style="height:320px;"><canvas id="chart-rotation-forecast"></canvas></div>
+      <div class="today-hint" style="margin-top:6px;">Regime: ${fc.regime_summary || ""} · ${fc.n_sessions || 0} phiên · as-of ${fc.as_of || ""}.</div>
+    </div>`;
+}
+function renderRotationForecastChart() {
+  const fc = D.rotation_forecast;
+  const ctx = document.getElementById("chart-rotation-forecast");
+  if (!fc || !ctx || !(fc.items || []).length) return;
+  const items = fc.items;
+  if (chartInstances["rotation-forecast"]) chartInstances["rotation-forecast"].destroy();
+  chartInstances["rotation-forecast"] = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: items.map(i => `${i.ticker}`),
+      datasets: [{ data: items.map(i => i.forecast_score), backgroundColor: items.map(i => i.color), borderWidth: 0 }],
+    },
+    options: {
+      indexAxis: "y", responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: (c) => {
+          const it = items[c.dataIndex];
+          return `${it.name}: ${it.phase} (${it.confidence}) · score ${c.parsed.x >= 0 ? "+" : ""}${c.parsed.x}`;
+        } } },
+      },
+      scales: {
+        x: { ticks: { color: "#8b96a3", font: { size: 10 } }, grid: { color: "rgba(255,255,255,0.05)" } },
+        y: { ticks: { color: "#cbd5e1", font: { size: 11 } }, grid: { display: false } },
+      },
+    },
+  });
+}
+
 function renderMonthlyFullCharts(container) {
   const h = D.history || {};
-  // Báo cáo tháng = TOÀN BỘ biểu đồ ở format stat-badge (vùng cao/thấp · đỉnh/đáy ·
-  // xu hướng), KHÔNG có panel "chỉ số công bố trong ngày" (đó là khái niệm báo cáo ngày).
-  container.innerHTML = `<h4>Xu hướng đầy đủ các chỉ số FRED (kèm kết luận tự tính)</h4>` +
+  // Báo cáo tháng = forecast rotation + TOÀN BỘ biểu đồ ở format stat-badge (vùng cao/thấp
+  // · đỉnh/đáy · xu hướng), KHÔNG có panel "chỉ số công bố trong ngày" (đó là báo cáo ngày).
+  container.innerHTML = rotationForecastBlockHtml() +
+    `<h4>Xu hướng đầy đủ các chỉ số FRED (kèm kết luận tự tính)</h4>` +
     Object.entries(GROUPS).map(([groupName, keys]) => `
       <div style="margin-top: 16px;">
         <h4 style="color: var(--blue);">${groupName}</h4>
@@ -1688,6 +1731,7 @@ function renderMonthlyFullCharts(container) {
       </div>
     `).join("");
   bindChartCardEvents(container, h);
+  renderRotationForecastChart();
   // Initial render for all (renderChart tự gọi updateStatContext → badge xuất hiện)
   Object.values(GROUPS).flat().forEach(k => renderChart(k, DEFAULT_VIEW[k] || "level"));
 }
