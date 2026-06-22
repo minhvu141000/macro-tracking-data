@@ -68,7 +68,7 @@ Viết chính xác format sau (Tactical Agent parse bằng YAML frontmatter + ma
 ---
 date: <YYYY-MM-DD sunday>
 week: <YYYY-WNN>
-regime_signal: <risk-on | risk-off | hawkish | dovish | neutral>
+regime_signal: <risk-on | neutral | risk-off>
 regime_label: "<1-4 từ mô tả>"
 key_takeaway: "<1 câu tóm tắt tuần>"
 vix: <số thực>
@@ -138,6 +138,8 @@ generated_at: <ISO timestamp>
 ```
 
 ## Ràng buộc
+- **`regime_signal` CHỈ nhận đúng 3 giá trị: `risk-on` | `neutral` | `risk-off`.** Hệ thống giao dịch tự động đọc field này để bật/tắt risk — sai enum (vd `hawkish`/`dovish`) → hệ thống TỪ CHỐI file. Sắc thái hawkish/dovish để ở `regime_label` + Narrative, KHÔNG để ở `regime_signal`.
+- **Freshness:** hệ thống từ chối đọc `current.md` nếu `date` cũ hơn 7 ngày → phải cập nhật mỗi cuối tuần (Friday close hoặc Sunday). Số liệu frontmatter (vix/us10y/dxy/wti/gold/spy_vs_ma200_pct) lấy theo Friday close, KHÔNG làm tròn — hệ thống đọc trực tiếp để hiển thị.
 - Viết 2 file giống hệt nhau: archive `data/weekly/<date>.md` và `data/weekly/current.md`.
 - Chỉ gồm 4 section bắt buộc (Dòng tiền tuần, Sector Stances, Rotation Focus, Calendar Next 7 Days, Narrative) — không thêm section khác.
 - `generated_at` dùng ISO timestamp UTC hiện tại (lấy từ `date` shell command nếu cần).

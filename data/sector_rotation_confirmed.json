@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-19T19:58:36.572617+00:00",
+  "generated_at": "2026-06-22T06:15:49.403048+00:00",
   "tier": "weekly-confirmed",
   "window_days": 10,
   "as_of_latest": "2026-06-18",
@@ -166,11 +166,11 @@
       },
       "rationale": "Vĩ mô hậu thuẫn bền (10/10) nhưng dòng tiền mới 4/10 (mom trend +1.17) — đang HÌNH THÀNH, ưu tiên theo dõi/săn sớm.",
       "money_flow": {
-        "mfi_5d": 60.1,
-        "mfi_14d": 34.2,
-        "dollar_vol_5d_bn": 3.44,
+        "mfi_5d": 60.3,
+        "mfi_14d": 42.0,
+        "dollar_vol_5d_bn": 4.46,
         "flow_signal": "INFLOW",
-        "mfi_vs_spy": 3.7
+        "mfi_vs_spy": 3.9
       },
       "composite_signal": "ACCUMULATE"
     },
@@ -193,11 +193,11 @@
       },
       "rationale": "Không có lợi thế bền (macro 2/10, mom 7/10).",
       "money_flow": {
-        "mfi_5d": 56.2,
-        "mfi_14d": 55.1,
-        "dollar_vol_5d_bn": 4.06,
-        "flow_signal": "INFLOW",
-        "mfi_vs_spy": -0.2
+        "mfi_5d": 32.5,
+        "mfi_14d": 55.9,
+        "dollar_vol_5d_bn": 4.93,
+        "flow_signal": "STRONG_OUTFLOW",
+        "mfi_vs_spy": -23.9
       },
       "composite_signal": "HOLD"
     },
@@ -301,11 +301,11 @@
       },
       "rationale": "Không có lợi thế bền (macro 1/10, mom 7/10).",
       "money_flow": {
-        "mfi_5d": 26.7,
-        "mfi_14d": 42.7,
-        "dollar_vol_5d_bn": 1.11,
+        "mfi_5d": 26.6,
+        "mfi_14d": 43.2,
+        "dollar_vol_5d_bn": 1.36,
         "flow_signal": "STRONG_OUTFLOW",
-        "mfi_vs_spy": -29.7
+        "mfi_vs_spy": -29.8
       },
       "composite_signal": "HOLD"
     },
@@ -328,11 +328,11 @@
       },
       "rationale": "Vĩ mô hậu thuẫn bền (10/10) nhưng dòng tiền mới 1/10 (mom trend +0.36) — đang HÌNH THÀNH, ưu tiên theo dõi/săn sớm.",
       "money_flow": {
-        "mfi_5d": 53.5,
-        "mfi_14d": 39.1,
-        "dollar_vol_5d_bn": 3.52,
-        "flow_signal": "NEUTRAL",
-        "mfi_vs_spy": -2.9
+        "mfi_5d": 32.8,
+        "mfi_14d": 37.0,
+        "dollar_vol_5d_bn": 4.79,
+        "flow_signal": "STRONG_OUTFLOW",
+        "mfi_vs_spy": -23.6
       },
       "composite_signal": "WATCH"
     }
@@ -341,5 +341,5 @@
     "universe_file": "data/sector_holdings_latest.json",
     "note": "VERDICT cho agent lọc cổ phiếu. Săn cổ phiếu trong sector confirmed_in (đu theo) + early_forming (vào sớm); lấy holdings sector đó trong universe_file, lọc theo rs_1m + above_ma50. Bỏ qua fading/avoid."
   },
-  "money_flow_as_of": "2026-06-19"
+  "money_flow_as_of": "2026-06-22"
 }

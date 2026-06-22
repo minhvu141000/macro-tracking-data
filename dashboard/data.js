@@ -1,5 +1,5 @@
 window.MACRO_DATA = {
-  "last_updated": "2026-06-20T00:16:36.022441+00:00",
+  "last_updated": "2026-06-22T06:25:41.740828+00:00",
   "daily_releases": {
     "date": "2026-06-18",
     "releases": [
@@ -54352,6 +54352,23 @@ window.MACRO_DATA = {
       "generated_at": "2026-06-14T04:21:14Z",
       "body_preview": "# Weekly Macro — 2026-06-15",
       "body": "# Weekly Macro — 2026-06-15\n\n## Sector Stances\n| Sector | ETF | Stance | Direction | 1M RS | Ghi chú |\n|--------|-----|--------|-----------|-------|---------|\n| Technology | XLK | Light OW | ↑ | +4.6% | Rate relief + disinflation = định giá được hỗ trợ; nhưng AI capex narrative chưa phục hồi hoàn toàn |\n| Healthcare | XLV | Overweight | ↑ | +4.9% | Conviction hold: dẫn đầu RS 1M, hưởng lợi mọi regime — soft landing lẫn defensive |\n| Financials | XLF | Light OW | ↑ | +4.7% | Yield curve đang normalize, soft landing = NIM ổn định, loan quality tốt |\n| Energy | XLE | Neutral | → | -0.1% | WTI -16% 1M — supply pressure OPEC; chờ $80 support hoặc demand inflection |\n| Consumer Disc | XLY | Light UW | ↓ | -1.7% | Dưới MA200, real wage âm, consumer bắt đầu trade-down; tránh trước khi Retail Sales xác nhận |\n| Consumer Stap | XLP | Neutral | → | +1.4% | Defensive nhưng risk-on giảm appeal; giữ nhỏ như hedge lạm phát nếu WTI bật |\n| Industrials | XLI | Light OW | ↑ | +1.6% | Soft landing = capex cycle phục hồi; ISM Mfg turning point cần xác nhận thêm |\n| Materials | XLB | Neutral | → | +0.3% | RS phẳng, đồng (Copper) -3% 1M; chờ tín hiệu từ China demand hoặc ISM recovery |\n| Utilities | XLU | Stalking | → | -0.2% | RS gần 0 nhưng nếu FOMC dovish + yields tiếp tục giảm → rate-cut play sẽ kích hoạt |\n| Real Estate | XLRE | Stalking | ↑ | +2.7% | Above MA200, RS tích cực, nhạy cảm rate-cut narrative — accumulate nếu 10Y về <4.3% |\n| Comm Services | XLC | Underweight | ↓ | -4.3% | Dưới MA200, RS tệ nhất 11 sector; AI ad-spend narrative bị đặt câu hỏi sau AVGO disappointment |\n\n## Calendar Next 7 Days\n| Date | Event | Forecast | Previous | Impact |\n|------|-------|----------|----------|--------|\n| 2026-06-17 | FOMC Meeting — Fed Rate Decision | Hold 4.25–4.50% | 4.25–4.50% | HIGH |\n| 2026-06-17 | FOMC Press Conference (Powell) | — | — | HIGH |\n| 2026-06-17 | Durable Goods Orders (May) | — | — | MEDIUM |\n| 2026-06-19 | Consumer Confidence — Conference Board (Jun) | — | — | MEDIUM |\n\n## Narrative\nTuần 9–13/6 đánh dấu sự chuyển hướng rõ rệt: sau VIX spike +39.7% và NFP shock +265K (tuần 4–8/6), bộ ba dữ liệu liên tiếp — Core CPI MoM +0.21% (vs forecast +0.3%), Core PPI YoY 4.9% (vs 5.4%), và Michigan 5Y inflation expectations giảm về 3.4% — đã xác nhận disinflation đang quay lại, tạo ra narrative Goldilocks hoàn chỉnh. Phản ứng thị trường tích cực: 10Y yield rút từ đỉnh 4.55% về 4.45%, VIX hạ từ 22.22 xuống 17.68, HY OAS thu hẹp về 2.78% — credit market xác nhận risk-on. Tuần tới, **FOMC 17/6 là sự kiện trung tâm**: thị trường pricing \"hold\" nhưng dot plot và tone Powell có thể là catalyst mạnh — dovish surprise (hint 2+ cuts 2026) sẽ đẩy 2Y yield về ~3.9% và kích hoạt XLRE/XLU/XLK; hawkish surprise (ít cut hơn) sẽ tái tạo yield pressure và punish rate-sensitive names. Rủi ro thứ hai cần theo dõi: WTI bật mạnh từ vùng $84 lên $90+ có thể đảo ngược narrative disinflation và phức tạp hóa FOMC messaging. Positioning bias tuần tới: giữ vững XLV (conviction), duy trì light OW XLK + XLF + XLI, stalking XLRE nếu FOMC dovish, và tránh XLC cho đến khi AI capex narrative phục hồi."
+    },
+    {
+      "file": "2026-06-21.md",
+      "date": "2026-06-21",
+      "week": "2026-W25",
+      "regime_signal": "risk-on",
+      "regime_label": "Growth-led risk-on (cyclicals dẫn dắt)",
+      "key_takeaway": "Risk-on dẫn dắt bởi cyclicals — XLI/XLF/XLK hút dòng tiền mạnh (EARLY_FORMING), XLE bị bán tháo theo dầu −23% 1M; chưa sector nào CONFIRMED_IN nên giữ Light OW, chờ PCE 23/6 xác nhận.",
+      "vix": "16.4",
+      "us10y": "4.45",
+      "dxy": "100.93",
+      "wti": "75.21",
+      "gold": "4210.5",
+      "spy_vs_ma200_pct": "+9.09",
+      "generated_at": "2026-06-22T06:24:45+00:00",
+      "body_preview": "# Weekly Macro — 2026-06-21",
+      "body": "# Weekly Macro — 2026-06-21\n\n## Dòng tiền tuần (Money Flow Radar)\n> Nguồn: `sector_rotation_confirmed.json` → `money_flow` (MFI 5D từ ETF volume) + `composite_signal` (macro persistence + volume). Sort theo MFI vs SPY giảm dần.\n\n| Sector | ETF | Composite | MFI 5D | vs SPY | Flow Signal | 1M RS |\n|--------|-----|-----------|--------|--------|-------------|-------|\n| Industrials | XLI | **ACCUMULATE** | 100.0 | +43.6 | 🟢 STRONG_INFLOW | +5.1% |\n| Financials | XLF | **ACCUMULATE** | 82.3 | +25.9 | 🟢 STRONG_INFLOW | +2.7% |\n| Utilities | XLU | WATCH_FLOW | 80.2 | +23.8 | 🟢 STRONG_INFLOW | -1.1% |\n| Technology | XLK | **ACCUMULATE** | 62.3 | +5.9 | 🟢 INFLOW | +8.3% |\n| Consumer Disc | XLY | **ACCUMULATE** | 60.3 | +3.9 | 🟢 INFLOW | -0.2% |\n| Materials | XLB | HOLD | 57.9 | +1.5 | 🟢 INFLOW | +3.5% |\n| Comm Services | XLC | WATCH | 32.8 | -23.6 | 🔴 STRONG_OUTFLOW | -7.4% |\n| Consumer Stap | XLP | HOLD | 32.5 | -23.9 | 🔴 STRONG_OUTFLOW | -5.2% |\n| Real Estate | XLRE | HOLD | 26.6 | -29.8 | 🔴 STRONG_OUTFLOW | -2.2% |\n| Healthcare | XLV | HOLD | 18.8 | -37.6 | 🔴 STRONG_OUTFLOW | -0.6% |\n| Energy | XLE | **AVOID** | 0.0 | -56.4 | 🔴 STRONG_OUTFLOW | -14.0% |\n\n**Composite signal legend:** RIDE=xác nhận 2 chiều (macro+flow) · ACCUMULATE=macro bền + dòng tiền vào · WATCH=đang hình thành · HOLD=trung tính · REDUCE/EXIT=macro+flow yếu · AVOID=tránh\n\n**Cảnh báo phân kỳ:** XLU STRONG_INFLOW (MFI vs SPY +23.8) nhưng macro 0/10 → composite chỉ WATCH_FLOW, KHÔNG phải ACCUMULATE: nhiều khả năng là dòng tiền phòng thủ/đi tìm yield khi yields hạ, chưa được vĩ mô hậu thuẫn → không nâng stance.\n\n## Sector Stances\n| Sector | ETF | Stance | Direction | 1M RS | Ghi chú |\n|--------|-----|--------|-----------|-------|---------|\n| Technology | XLK | Light OW | ↑ | +8.3% | EARLY_FORMING, RS dẫn đầu + thrust +8.4, INFLOW; macro mới 6/10 nên chưa OW |\n| Healthcare | XLV | Light UW | ↓ | -0.6% | NEUTRAL nhưng STRONG_OUTFLOW + rs_slope −4.31 (xấu nhanh nhất bảng) |\n| Financials | XLF | Light OW | ↑ | +2.7% | EARLY_FORMING, STRONG_INFLOW vs SPY +25.9, mom 10/10 — dòng tiền bền |\n| Energy | XLE | Avoid | ↓ | -14.0% | AVOID, WTI −23% 1M, MFI 0/STRONG_OUTFLOW vs SPY −56.4 |\n| Consumer Disc | XLY | Stalking | ↑ | -0.2% | EARLY_FORMING macro 10/10 nhưng dưới MA200 + RS phẳng → chờ giá xác nhận |\n| Consumer Stap | XLP | Light UW | ↓ | -5.2% | NEUTRAL + RS −5.2 + STRONG_OUTFLOW — defensive bị rút tiền |\n| Industrials | XLI | Light OW | ↑ | +5.1% | EARLY_FORMING dẫn đầu: macro 9/10, MFI 100 vs SPY +43.6 — combo mạnh nhất |\n| Materials | XLB | Neutral | → | +3.5% | RS dương + thrust +25 nhưng macro 1/10 + rs_slope âm → momentum thiếu nền vĩ mô |\n| Utilities | XLU | Neutral | → | -1.1% | WATCH_FLOW: inflow mạnh nhưng macro 0/10 — phân kỳ, chưa nâng |\n| Real Estate | XLRE | Light UW | ↓ | -2.2% | NEUTRAL + STRONG_OUTFLOW + rs_slope −3.26 đi xuống |\n| Comm Services | XLC | Stalking | → | -7.4% | EARLY_FORMING macro 10/10 nhưng dưới MA200, RS −7.4 + OUTFLOW — giá chưa theo |\n\n## Rotation Focus\n> Handoff cho agent lọc cổ phiếu — combine `composite_signal` (flow + macro) + `confirmed_phase`.\n\n- **Regime:** Tăng trưởng vượt kỳ vọng, lạm phát nguội hơn kỳ vọng, lãi suất đi ngang, risk-on; chu kỳ đường cong normal · cửa sổ xác nhận: **10 phiên** (2026-06-04 → 06-18)\n- **RIDE/ACCUMULATE (săn cổ phiếu ngay):** **XLI** (MFI vs SPY +43.6, macro 9/10), **XLF** (+25.9, mom 10/10), **XLK** (+5.9, RS dẫn đầu +8.3), **XLY** (+3.9, macro 10/10 — nhưng còn dưới MA200) — đều EARLY_FORMING + dòng tiền vào.\n- **WATCH/WATCH_FLOW (chuẩn bị entry):** **XLC** (macro 10/10 nhưng giá/flow chưa theo — chờ vượt MA200), **XLU** (inflow mạnh nhưng macro chưa xác nhận — phân kỳ phòng thủ).\n- **EXIT/REDUCE/AVOID (giảm/thoát):** **XLE** (Avoid), **XLV / XLP / XLRE** (STRONG_OUTFLOW, defensive bị rút).\n- **Universe cổ phiếu:** `data/sector_holdings_latest.json` — lọc holdings trong XLI/XLF/XLK/XLY theo `rs_1m > 0` + `above_ma50 = true`.\n- **⚠ Chưa sector nào CONFIRMED_IN** (chưa đủ persistence 2 chiều bền) → giữ conviction ở mức Light OW/Stalking, chưa Overweight tuyệt đối.\n\n## Calendar Next 7 Days\n| Date | Event | Forecast | Previous | Impact |\n|------|-------|----------|----------|--------|\n| 2026-06-22 | Producer Price Index (PPI) | — | — | MEDIUM |\n| 2026-06-23 | Personal Income & Outlays (Core PCE) | — | — | HIGH |\n| 2026-06-24 | Job Openings & Labor Turnover (JOLTS) | — | — | MEDIUM |\n| 2026-06-25 | Initial Jobless Claims | — | — | LOW |\n\n## Narrative\nTuần qua xác nhận nhịp **risk-on dẫn dắt bởi cyclicals**: VIX rơi về 16.4, SPY +9.1% trên MA200, và dòng tiền (MFI 5D) chảy mạnh vào **XLI, XLF, XLK** trong khi rút khỏi toàn bộ nhóm phòng thủ (XLV, XLP, XLRE) và **XLE** (WTI −23% 1M kéo Energy thành điểm yếu rõ nhất). Catalyst chi phối là **FOMC hawkish-hold 17/6** (giữ lãi suất, dot plot dịch lên) — nghịch lý là thị trường vẫn risk-on vì growth beat (Philly Fed, Retail Sales) lấn át, nhưng đó là risk-on *chiến thuật* khi hard-data lạm phát (CPI YoY ~4.3%, Core PCE ~3.3%) còn nóng. Tuần tới tâm điểm là **Core PCE 23/6** (thước đo #1 của Fed) và **PPI 22/6**: một bản nóng có thể đảo nhịp risk-on và thử thách các stance Light OW. Positioning: ưu tiên attention vào **XLI/XLF/XLK** (dòng tiền + EARLY_FORMING), stalk **XLY/XLC** chờ vượt MA200, tránh **XLE**. **Lưu ý độ tin cậy engine:** rotation scorecard hiện cho **edge ÂM** (5d −1.55%, hit 42%; 10d −1.56%) trên mẫu phần lớn là backfill — thứ hạng engine CHƯA chứng minh được khả năng dự báo, cần tích lũy thêm daily snapshot thật trước khi tăng conviction."
     }
   ],
   "raw_dates": [
@@ -54381,7 +54398,7 @@ window.MACRO_DATA = {
   ],
   "sectors": {
     "schema_version": "1.1",
-    "fetched_at": "2026-06-19T19:57:39.687818+00:00",
+    "fetched_at": "2026-06-22T06:14:14.687697+00:00",
     "benchmark": {
       "latest": 746.74,
       "latest_date": "2026-06-18",
@@ -56521,13 +56538,13 @@ window.MACRO_DATA = {
         "name": "Energy",
         "ticker": "XLE",
         "breadth": {
-          "pct_above_ma50": 16.7,
+          "pct_above_ma50": 8.3,
           "pct_above_ma200": 100.0,
           "breadth_flag": "narrow",
           "holdings_checked": 12,
-          "holdings_above_ma50": 2,
+          "holdings_above_ma50": 1,
           "holdings_above_ma200": 12,
-          "breadth_thrust": -25.0
+          "breadth_thrust": -33.4
         },
         "rs_history": [
           {
@@ -56592,7 +56609,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-07-11",
-            "value": 88.78
+            "value": 88.79
           },
           {
             "date": "2025-07-14",
@@ -57578,7 +57595,7 @@ window.MACRO_DATA = {
           "holdings_checked": 12,
           "holdings_above_ma50": 3,
           "holdings_above_ma200": 6,
-          "breadth_thrust": -41.7
+          "breadth_thrust": -25.0
         },
         "rs_history": [
           {
@@ -58606,17 +58623,17 @@ window.MACRO_DATA = {
         }
       },
       "XLY": {
-        "latest": 115.49,
-        "latest_date": "2026-06-17",
-        "ret_1d": -2.51,
-        "ret_1w": 1.76,
-        "ret_1m": -0.71,
-        "ret_3m": 4.66,
-        "ret_6m": -4.75,
-        "ret_1y": 8.78,
-        "ret_ytd": -2.22,
-        "ma50": 117.58,
-        "ma200": 117.37,
+        "latest": 117.16,
+        "latest_date": "2026-06-18",
+        "ret_1d": 1.45,
+        "ret_1w": 0.74,
+        "ret_1m": 1.85,
+        "ret_3m": 7.01,
+        "ret_6m": -3.53,
+        "ret_1y": 12.29,
+        "ret_ytd": -0.81,
+        "ma50": 117.71,
+        "ma200": 117.38,
         "above_ma50": false,
         "above_ma200": false,
         "golden_cross": true,
@@ -58632,10 +58649,6 @@ window.MACRO_DATA = {
           "breadth_thrust": 0.0
         },
         "rs_history": [
-          {
-            "date": "2025-06-17",
-            "value": 105.93
-          },
           {
             "date": "2025-06-18",
             "value": 105.99
@@ -59639,54 +59652,54 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-17",
             "value": 93.48
+          },
+          {
+            "date": "2026-06-18",
+            "value": 93.86
           }
         ],
-        "rs_1w": -0.37,
-        "rs_1m": -1.02,
-        "rs_3m": -6.83,
-        "rs_6m": -12.99,
-        "rs_1y": -12.53,
-        "rs_ytd": -10.09,
-        "rs_slope": -0.13,
+        "rs_1w": -0.73,
+        "rs_1m": -0.18,
+        "rs_3m": -5.94,
+        "rs_6m": -13.02,
+        "rs_1y": -11.4,
+        "rs_ytd": -9.73,
+        "rs_slope": -0.69,
         "money_flow": {
-          "mfi_5d": 60.1,
-          "mfi_14d": 34.2,
-          "dollar_vol_5d_bn": 3.44,
+          "mfi_5d": 60.3,
+          "mfi_14d": 42.0,
+          "dollar_vol_5d_bn": 4.46,
           "flow_signal": "INFLOW",
-          "mfi_vs_spy": 3.7
+          "mfi_vs_spy": 3.9
         }
       },
       "XLP": {
-        "latest": 83.68,
-        "latest_date": "2026-06-17",
-        "ret_1d": -2.23,
-        "ret_1w": -2.12,
-        "ret_1m": -2.58,
-        "ret_3m": 1.83,
+        "latest": 83.3,
+        "latest_date": "2026-06-18",
+        "ret_1d": -0.45,
+        "ret_1w": -2.31,
+        "ret_1m": -3.24,
+        "ret_3m": 2.19,
         "ret_6m": 6.51,
-        "ret_1y": 5.88,
-        "ret_ytd": 8.32,
-        "ma50": 83.62,
-        "ma200": 80.96,
-        "above_ma50": true,
+        "ret_1y": 6.3,
+        "ret_ytd": 7.82,
+        "ma50": 83.63,
+        "ma200": 80.98,
+        "above_ma50": false,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Consumer Staples",
         "ticker": "XLP",
         "breadth": {
-          "pct_above_ma50": 75.0,
+          "pct_above_ma50": 66.7,
           "pct_above_ma200": 75.0,
           "breadth_flag": "broad",
           "holdings_checked": 12,
-          "holdings_above_ma50": 9,
+          "holdings_above_ma50": 8,
           "holdings_above_ma200": 9,
-          "breadth_thrust": 0.0
+          "breadth_thrust": -8.3
         },
         "rs_history": [
-          {
-            "date": "2025-06-17",
-            "value": 96.23
-          },
           {
             "date": "2025-06-18",
             "value": 96.13
@@ -59861,7 +59874,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-08-20",
-            "value": 93.48
+            "value": 93.49
           },
           {
             "date": "2025-08-21",
@@ -60690,21 +60703,25 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-17",
             "value": 81.93
+          },
+          {
+            "date": "2026-06-18",
+            "value": 80.72
           }
         ],
-        "rs_1w": -4.17,
-        "rs_1m": -2.89,
-        "rs_3m": -9.35,
-        "rs_6m": -2.7,
-        "rs_1y": -14.86,
-        "rs_ytd": -0.4,
-        "rs_slope": -3.48,
+        "rs_1w": -3.73,
+        "rs_1m": -5.17,
+        "rs_3m": -10.18,
+        "rs_6m": -3.97,
+        "rs_1y": -16.12,
+        "rs_ytd": -1.88,
+        "rs_slope": -2.5,
         "money_flow": {
-          "mfi_5d": 56.2,
-          "mfi_14d": 55.1,
-          "dollar_vol_5d_bn": 4.06,
-          "flow_signal": "INFLOW",
-          "mfi_vs_spy": -0.2
+          "mfi_5d": 32.5,
+          "mfi_14d": 55.9,
+          "dollar_vol_5d_bn": 4.93,
+          "flow_signal": "STRONG_OUTFLOW",
+          "mfi_vs_spy": -23.9
         }
       },
       "XLI": {
@@ -60731,7 +60748,7 @@ window.MACRO_DATA = {
           "holdings_checked": 12,
           "holdings_above_ma50": 7,
           "holdings_above_ma200": 8,
-          "breadth_thrust": 0.0
+          "breadth_thrust": 8.3
         },
         "rs_history": [
           {
@@ -62827,13 +62844,13 @@ window.MACRO_DATA = {
         "name": "Utilities",
         "ticker": "XLU",
         "breadth": {
-          "pct_above_ma50": 8.3,
-          "pct_above_ma200": 83.3,
+          "pct_above_ma50": 16.7,
+          "pct_above_ma200": 91.7,
           "breadth_flag": "narrow",
           "holdings_checked": 12,
-          "holdings_above_ma50": 1,
-          "holdings_above_ma200": 10,
-          "breadth_thrust": -16.7
+          "holdings_above_ma50": 2,
+          "holdings_above_ma200": 11,
+          "breadth_thrust": 8.4
         },
         "rs_history": [
           {
@@ -63861,36 +63878,32 @@ window.MACRO_DATA = {
         }
       },
       "XLRE": {
-        "latest": 43.97,
-        "latest_date": "2026-06-17",
-        "ret_1d": -2.51,
-        "ret_1w": -2.27,
-        "ret_1m": 0.5,
-        "ret_3m": 5.34,
-        "ret_6m": 9.38,
-        "ret_1y": 8.51,
-        "ret_ytd": 9.62,
-        "ma50": 44.09,
-        "ma200": 41.82,
+        "latest": 43.86,
+        "latest_date": "2026-06-18",
+        "ret_1d": -0.25,
+        "ret_1w": -2.36,
+        "ret_1m": -0.18,
+        "ret_3m": 5.33,
+        "ret_6m": 10.08,
+        "ret_1y": 8.68,
+        "ret_ytd": 9.35,
+        "ma50": 44.12,
+        "ma200": 41.84,
         "above_ma50": false,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Real Estate",
         "ticker": "XLRE",
         "breadth": {
-          "pct_above_ma50": 41.7,
-          "pct_above_ma200": 75.0,
-          "breadth_flag": "healthy",
+          "pct_above_ma50": 33.3,
+          "pct_above_ma200": 66.7,
+          "breadth_flag": "narrow",
           "holdings_checked": 12,
-          "holdings_above_ma50": 5,
-          "holdings_above_ma200": 9,
-          "breadth_thrust": -16.6
+          "holdings_above_ma50": 4,
+          "holdings_above_ma200": 8,
+          "breadth_thrust": -25.0
         },
         "rs_history": [
-          {
-            "date": "2025-06-17",
-            "value": 101.77
-          },
           {
             "date": "2025-06-18",
             "value": 101.98
@@ -64894,35 +64907,39 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-17",
             "value": 88.41
+          },
+          {
+            "date": "2026-06-18",
+            "value": 87.28
           }
         ],
-        "rs_1w": -4.32,
-        "rs_1m": 0.19,
-        "rs_3m": -6.22,
-        "rs_6m": -0.08,
-        "rs_1y": -12.74,
-        "rs_ytd": 0.8,
-        "rs_slope": -4.37,
+        "rs_1w": -3.78,
+        "rs_1m": -2.17,
+        "rs_3m": -7.42,
+        "rs_6m": -0.75,
+        "rs_1y": -14.24,
+        "rs_ytd": -0.49,
+        "rs_slope": -3.26,
         "money_flow": {
-          "mfi_5d": 26.7,
-          "mfi_14d": 42.7,
-          "dollar_vol_5d_bn": 1.11,
+          "mfi_5d": 26.6,
+          "mfi_14d": 43.2,
+          "dollar_vol_5d_bn": 1.36,
           "flow_signal": "STRONG_OUTFLOW",
-          "mfi_vs_spy": -29.7
+          "mfi_vs_spy": -29.8
         }
       },
       "XLC": {
-        "latest": 109.2,
-        "latest_date": "2026-06-17",
-        "ret_1d": -2.78,
-        "ret_1w": -1.63,
-        "ret_1m": -6.65,
-        "ret_3m": -3.62,
-        "ret_6m": -5.72,
-        "ret_1y": 5.96,
-        "ret_ytd": -6.29,
-        "ma50": 115.24,
-        "ma200": 115.02,
+        "latest": 109.45,
+        "latest_date": "2026-06-18",
+        "ret_1d": 0.23,
+        "ret_1w": -2.38,
+        "ret_1m": -5.52,
+        "ret_3m": -2.95,
+        "ret_6m": -5.57,
+        "ret_1y": 7.14,
+        "ret_ytd": -6.07,
+        "ma50": 115.15,
+        "ma200": 115.01,
         "above_ma50": false,
         "above_ma200": false,
         "golden_cross": true,
@@ -64938,10 +64955,6 @@ window.MACRO_DATA = {
           "breadth_thrust": 25.0
         },
         "rs_history": [
-          {
-            "date": "2025-06-17",
-            "value": 112.03
-          },
           {
             "date": "2025-06-18",
             "value": 112.1
@@ -65945,39 +65958,43 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-17",
             "value": 95.48
+          },
+          {
+            "date": "2026-06-18",
+            "value": 94.71
           }
         ],
-        "rs_1w": -3.69,
-        "rs_1m": -6.94,
-        "rs_3m": -14.2,
-        "rs_6m": -13.87,
-        "rs_1y": -14.79,
-        "rs_ytd": -13.83,
+        "rs_1w": -3.8,
+        "rs_1m": -7.41,
+        "rs_3m": -14.7,
+        "rs_6m": -14.86,
+        "rs_1y": -15.46,
+        "rs_ytd": -14.52,
         "rs_slope": -2.04,
         "money_flow": {
-          "mfi_5d": 53.5,
-          "mfi_14d": 39.1,
-          "dollar_vol_5d_bn": 3.52,
-          "flow_signal": "NEUTRAL",
-          "mfi_vs_spy": -2.9
+          "mfi_5d": 32.8,
+          "mfi_14d": 37.0,
+          "dollar_vol_5d_bn": 4.79,
+          "flow_signal": "STRONG_OUTFLOW",
+          "mfi_vs_spy": -23.6
         }
       }
     }
   },
   "cross_asset": {
     "schema_version": "1.1",
-    "fetched_at": "2026-06-18T19:58:52.087948+00:00",
+    "fetched_at": "2026-06-22T06:14:15.131773+00:00",
     "assets": {
       "^VIX": {
-        "latest": 16.54,
+        "latest": 16.4,
         "latest_date": "2026-06-18",
-        "ret_1d": -10.3,
-        "ret_1w": -14.92,
-        "ret_1m": -5.16,
-        "ret_3m": -38.24,
-        "ret_6m": -6.13,
-        "ret_1y": -17.87,
-        "ret_ytd": 13.99,
+        "ret_1d": -11.06,
+        "ret_1w": -15.64,
+        "ret_1m": -5.96,
+        "ret_3m": -38.76,
+        "ret_6m": -6.92,
+        "ret_1y": -18.57,
+        "ret_ytd": 13.03,
         "history": [
           {
             "date": "2025-06-20",
@@ -66985,7 +67002,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-18",
-            "value": 16.54
+            "value": 16.4
           }
         ],
         "ticker": "^VIX",
@@ -66994,26 +67011,14 @@ window.MACRO_DATA = {
       "^TNX": {
         "latest": 4.45,
         "latest_date": "2026-06-18",
-        "ret_1d": -0.8,
-        "ret_1w": -2.22,
-        "ret_1m": -0.22,
-        "ret_3m": 5.47,
-        "ret_6m": 7.49,
-        "ret_1y": 2.16,
+        "ret_1d": -0.27,
+        "ret_1w": -0.27,
+        "ret_1m": -4.63,
+        "ret_3m": 3.97,
+        "ret_6m": 7.28,
+        "ret_1y": 1.32,
         "ret_ytd": 6.31,
         "history": [
-          {
-            "date": "2025-06-13",
-            "value": 4.42
-          },
-          {
-            "date": "2025-06-16",
-            "value": 4.45
-          },
-          {
-            "date": "2025-06-17",
-            "value": 4.39
-          },
           {
             "date": "2025-06-18",
             "value": 4.4
@@ -68007,6 +68012,18 @@ window.MACRO_DATA = {
             "value": 4.49
           },
           {
+            "date": "2026-06-15",
+            "value": 4.47
+          },
+          {
+            "date": "2026-06-16",
+            "value": 4.43
+          },
+          {
+            "date": "2026-06-17",
+            "value": 4.46
+          },
+          {
             "date": "2026-06-18",
             "value": 4.45
           }
@@ -68015,20 +68032,16 @@ window.MACRO_DATA = {
         "label": "10Y Treasury Yield (^TNX)"
       },
       "DX-Y.NYB": {
-        "latest": 100.82,
-        "latest_date": "2026-06-18",
-        "ret_1d": 0.73,
-        "ret_1w": 0.96,
-        "ret_1m": 1.53,
-        "ret_3m": 1.6,
-        "ret_6m": 2.72,
-        "ret_1y": 2.02,
-        "ret_ytd": 2.44,
+        "latest": 100.93,
+        "latest_date": "2026-06-22",
+        "ret_1d": 0.08,
+        "ret_1w": 1.18,
+        "ret_1m": 1.84,
+        "ret_3m": 1.28,
+        "ret_6m": 2.6,
+        "ret_1y": 2.04,
+        "ret_ytd": 2.55,
         "history": [
-          {
-            "date": "2025-06-18",
-            "value": 98.91
-          },
           {
             "date": "2025-06-20",
             "value": 98.71
@@ -69031,27 +69044,27 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-18",
-            "value": 100.82
+            "value": 100.85
+          },
+          {
+            "date": "2026-06-22",
+            "value": 100.93
           }
         ],
         "ticker": "DX-Y.NYB",
         "label": "DXY US Dollar Index"
       },
       "CL=F": {
-        "latest": 75.62,
-        "latest_date": "2026-06-18",
-        "ret_1d": -1.52,
-        "ret_1w": -13.78,
-        "ret_1m": -29.83,
-        "ret_3m": -21.34,
-        "ret_6m": 36.82,
-        "ret_1y": 0.64,
-        "ret_ytd": 31.93,
+        "latest": 75.21,
+        "latest_date": "2026-06-22",
+        "ret_1d": -1.81,
+        "ret_1w": -11.39,
+        "ret_1m": -23.46,
+        "ret_3m": -23.5,
+        "ret_6m": 34.45,
+        "ret_1y": 0.37,
+        "ret_ytd": 31.21,
         "history": [
-          {
-            "date": "2025-06-20",
-            "value": 74.93
-          },
           {
             "date": "2025-06-23",
             "value": 68.51
@@ -70054,27 +70067,27 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-18",
-            "value": 75.62
+            "value": 76.6
+          },
+          {
+            "date": "2026-06-22",
+            "value": 75.21
           }
         ],
         "ticker": "CL=F",
         "label": "WTI Crude Oil Futures"
       },
       "GC=F": {
-        "latest": 4233.7,
-        "latest_date": "2026-06-18",
-        "ret_1d": -2.87,
-        "ret_1w": 3.51,
-        "ret_1m": -6.05,
-        "ret_3m": -7.98,
-        "ret_6m": -1.64,
-        "ret_1y": 24.9,
-        "ret_ytd": -1.87,
+        "latest": 4210.5,
+        "latest_date": "2026-06-22",
+        "ret_1d": -0.32,
+        "ret_1w": -0.11,
+        "ret_1m": -7.08,
+        "ret_3m": -7.87,
+        "ret_6m": -3.15,
+        "ret_1y": 25.01,
+        "ret_ytd": -2.41,
         "history": [
-          {
-            "date": "2025-06-20",
-            "value": 3368.1
-          },
           {
             "date": "2025-06-23",
             "value": 3377.7
@@ -71077,27 +71090,27 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-18",
-            "value": 4233.7
+            "value": 4224.1
+          },
+          {
+            "date": "2026-06-22",
+            "value": 4210.5
           }
         ],
         "ticker": "GC=F",
         "label": "Gold Futures"
       },
       "HG=F": {
-        "latest": 6.38,
-        "latest_date": "2026-06-18",
-        "ret_1d": -1.55,
-        "ret_1w": 1.95,
-        "ret_1m": 3.5,
-        "ret_3m": 17.45,
-        "ret_6m": 20.69,
-        "ret_1y": 31.7,
-        "ret_ytd": 13.14,
+        "latest": 6.34,
+        "latest_date": "2026-06-22",
+        "ret_1d": -0.53,
+        "ret_1w": -1.4,
+        "ret_1m": 0.79,
+        "ret_3m": 18.68,
+        "ret_6m": 18.22,
+        "ret_1y": 31.38,
+        "ret_ytd": 12.42,
         "history": [
-          {
-            "date": "2025-06-20",
-            "value": 4.83
-          },
           {
             "date": "2025-06-23",
             "value": 4.84
@@ -72100,35 +72113,27 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-18",
-            "value": 6.38
+            "value": 6.37
+          },
+          {
+            "date": "2026-06-22",
+            "value": 6.34
           }
         ],
         "ticker": "HG=F",
         "label": "Copper Futures"
       },
       "BTC-USD": {
-        "latest": 62911.42,
-        "latest_date": "2026-06-18",
-        "ret_1d": -2.34,
-        "ret_1w": -2.34,
-        "ret_1m": -14.45,
-        "ret_3m": -16.29,
-        "ret_6m": -5.0,
-        "ret_1y": -48.31,
-        "ret_ytd": -29.1,
+        "latest": 64153.99,
+        "latest_date": "2026-06-22",
+        "ret_1d": -0.13,
+        "ret_1w": -2.21,
+        "ret_1m": -12.81,
+        "ret_3m": -13.14,
+        "ret_6m": -6.74,
+        "ret_1y": -44.3,
+        "ret_ytd": -27.7,
         "history": [
-          {
-            "date": "2025-10-10",
-            "value": 113214.37
-          },
-          {
-            "date": "2025-10-11",
-            "value": 110807.88
-          },
-          {
-            "date": "2025-10-12",
-            "value": 115169.77
-          },
           {
             "date": "2025-10-13",
             "value": 115271.08
@@ -73123,7 +73128,19 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-18",
-            "value": 62911.42
+            "value": 62896.47
+          },
+          {
+            "date": "2026-06-19",
+            "value": 63540.84
+          },
+          {
+            "date": "2026-06-20",
+            "value": 64239.68
+          },
+          {
+            "date": "2026-06-22",
+            "value": 64153.99
           }
         ],
         "ticker": "BTC-USD",
@@ -73133,17 +73150,10 @@ window.MACRO_DATA = {
   },
   "calendar": {
     "schema_version": "1.1",
-    "fetched_at": "2026-06-18T20:00:16.785616+00:00",
-    "window_start": "2026-06-18",
-    "window_end": "2026-07-09",
+    "fetched_at": "2026-06-22T06:15:42.154702+00:00",
+    "window_start": "2026-06-21",
+    "window_end": "2026-07-12",
     "macro": [
-      {
-        "date": "2026-06-19",
-        "name": "Consumer Confidence (Conference Board)",
-        "release_id": 91,
-        "type": "macro",
-        "estimated": true
-      },
       {
         "date": "2026-06-22",
         "name": "Producer Price Index (PPI)",
@@ -73213,20 +73223,23 @@ window.MACRO_DATA = {
         "release_id": 100,
         "type": "macro",
         "estimated": true
+      },
+      {
+        "date": "2026-07-10",
+        "name": "Consumer Price Index (CPI)",
+        "release_id": 10,
+        "type": "macro",
+        "estimated": true
+      },
+      {
+        "date": "2026-07-11",
+        "name": "Retail Sales",
+        "release_id": 25,
+        "type": "macro",
+        "estimated": true
       }
     ],
     "earnings": [
-      {
-        "date": "2026-06-18",
-        "ticker": "ACN",
-        "name": "Accenture",
-        "sector_etf": "XLK",
-        "time": "BMO",
-        "eps_estimate": 3.71,
-        "revenue_estimate_b": null,
-        "importance": "medium",
-        "type": "earnings"
-      },
       {
         "date": "2026-06-30",
         "ticker": "NKE",
@@ -73252,14 +73265,14 @@ window.MACRO_DATA = {
     ],
     "fed_speakers": [],
     "lookahead": {
-      "tomorrow_date": "2026-06-19",
-      "week_end_date": "2026-06-25",
+      "tomorrow_date": "2026-06-22",
+      "week_end_date": "2026-06-28",
       "tomorrow": {
         "macro": [
           {
-            "date": "2026-06-19",
-            "name": "Consumer Confidence (Conference Board)",
-            "release_id": 91,
+            "date": "2026-06-22",
+            "name": "Producer Price Index (PPI)",
+            "release_id": 17,
             "type": "macro",
             "estimated": true
           }
@@ -73269,13 +73282,6 @@ window.MACRO_DATA = {
       },
       "this_week": {
         "macro": [
-          {
-            "date": "2026-06-19",
-            "name": "Consumer Confidence (Conference Board)",
-            "release_id": 91,
-            "type": "macro",
-            "estimated": true
-          },
           {
             "date": "2026-06-22",
             "name": "Producer Price Index (PPI)",
@@ -114963,20 +114969,20 @@ window.MACRO_DATA = {
     "body": "# Vĩ mô Mỹ — Tháng 2026-05\n\n> **Lưu ý coverage:** Đây là tháng đầu tiên hệ thống tracking vận hành. Daily reports chỉ có 4 ngày (22/5, 25/5, 29/5, 31/5) — phần \"phân tích trong tháng\" buộc phải dựa vào FRED snapshot lịch sử + sector/cross-asset tracking đầy đủ. Các tháng sau khi có 20+ daily reports sẽ cho narrative dày hơn và backtested.\n\n## 1. Bức tranh tổng quan\n\nTháng 5/2026 mở màn với **stagflation-lite** rõ rệt (báo cáo 22/5): CPI YoY +3.78% và PPI YoY +9.82% (3-mo annualized +34%) chạy nhanh hơn target Fed trong khi Michigan Sentiment lao xuống 53.3 (đáy 2022) và NFP chỉ tăng +115k (YoY +0.16%). Đến 25/5, snapshot 2Y bật lên 4.08% kéo spread T10Y2Y từ +0.49 → +0.43 (flatten thêm) cùng WTI nhảy lên $112 — narrative repricing pivot-late vẫn còn nguyên. **Cú đảo chiều xảy ra cuối tuần 4 sau khi Core PCE T4 ra +0.24% MoM (YoY 3.18%) — cool hơn lo ngại**: 10Y giảm từ 4.67% → 4.48% (-19bp tháng), WTI sập từ $112 → $97.63 trong 4 phiên (-13%), Wholesale Inventories MoM cool từ +1.5% → +0.5%, Goods Trade beat (-$82.40B vs forecast -$86.70B). Tổng kết tháng (31/5): **regime chốt risk-on broader nhưng leadership cực hẹp** — XLK +20.06% 1M (RS +12.9 vs SPY) kéo cả benchmark, trong khi XLE -4.77% 1W, XLF dưới MA200, defensives (XLV/XLU/XLP/XLRE) đều RS âm. Chu kỳ vẫn nghiêng **stagflation chuyển dần sang slowdown-có-điều-kiện**: lạm phát nóng + lao động chậm + tiêu dùng nominal ổn nhưng real chỉ ~+1.1%.\n\n## 2. Phân tích theo nhóm\n\n### Lạm phát — sticky, nhưng forward đang bớt áp lực\n\n- **CPI All Items (T4/2026):** 332.407, MoM +0.64%, **YoY +3.78%**. 3-month annualized lên **+7.32%** — headline đang re-acceleration.\n- **Core CPI:** YoY **+2.74%**, 3-mo annualized +3.20% — ổn định gần 2% nhưng chưa giảm thêm.\n- **PCE (T3/2026):** YoY **+3.50%**, 3-mo annualized +5.61%.\n- **Core PCE (T3):** YoY **+3.20%**; **Core PCE T4 cool về YoY ~3.18%, MoM +0.24%** — đây là điểm pivot quan trọng nhất tháng.\n- **PPI All Commodities (T4):** YoY **+9.82%**, MoM +2.66%, 3-mo annualized **+34.4%** — áp lực thượng nguồn cực mạnh, chưa truyền dẫn hết vào CPI.\n- **Disinflation tailwind:** WTI từ $112 (22/5) → $97.63 (29/5) **-13% trong 1 tuần** + Wholesale Inv MoM cool từ +1.5% → +0.5% = destocking thượng nguồn xác nhận → CPI/Core PCE T5 và T6 có dư địa hạ nhiệt.\n- **So với mục tiêu 2% Fed:** Headline còn cách +1.78%, Core PCE còn cách +1.18% — không gần. Đường về 2% phụ thuộc 100% vào việc PPI residual có truyền dẫn hay không.\n\n### Thị trường lao động — cooling but not breaking\n\n- **NFP T4:** +115k, MoM +0.07%, **YoY chỉ +0.16%** — tốc độ tạo việc rất chậm so với 150-200k/tháng năm 2024.\n- **UNRATE:** **4.3%** đi ngang T4, đã nhích từ 4.0-4.1% 12 tháng trước.\n- **Initial Jobless Claims:** mặt bằng 209-215k tuần T5, nhích lên cuối tháng nhưng chưa breakout >230k.\n- **JOLTS (T3):** **6,866k**, đã giảm 5% trong 2 tháng (từ 7,240k → 6,922k → 6,866k); openings/unemployed sát 1.0x.\n- **AHE:** $37.41, **YoY +3.57%** — wage growth vẫn nhanh hơn năng suất, nuôi sticky inflation services.\n- **Đánh giá: cooling, chưa breaking.** Sahm rule chưa trigger (UNRATE 3-mo avg vs đáy 12 tháng còn dưới 0.5%). Nếu ICSA breakout >230k hoặc NFP T5 <100k kèm UNRATE >4.4% → kích hoạt hard-landing watch.\n\n### Tăng trưởng — soft landing đang được pricing\n\n- **Real GDP Q1/2026:** 24,174.5 tỷ USD, QoQ +0.49% (**~+2.0% annualized**) — dương nhưng đã giảm tốc.\n- **Retail Sales (T4):** YoY **+4.87%** nominal, sau khi trừ CPI YoY 3.78% thì **real chỉ ~+1.1%** — tiêu dùng thực yếu.\n- **Industrial Production (T4):** 102.50, MoM **+0.68%**, YoY +1.35% — phục hồi nhẹ sau khi giảm T3.\n- **MANEMP:** 12,596k đi ngang, giảm liên tục từ 12,650 đầu 2025.\n- **Goods Trade Balance T4:** **-$82.40B beat forecast -$86.70B** (deficit thu hẹp $2.9B MoM) — net export đóng góp dương Q2.\n- **Wholesale Inventories T4:** **MoM cool từ +1.5% → +0.5%** — destocking cycle xác nhận, ngắn hạn trừ ~0.2-0.3% GDP Q2 nhưng setup restocking cuối Q3.\n- **ISM Mfg PMI:** chưa có actual T5 lúc viết báo cáo này (1/6 — đầu tháng tới); tham chiếu T4 ~49 vùng contraction.\n- **Net effect Q2 nowcast:** đang dao động vùng +2.0-2.5% annualized — không phải boom, cũng không phải recession.\n\n### Niềm tin & nhà ở — bi quan extreme, BĐS đóng băng\n\n- **Michigan Sentiment (T3 last update):** **53.3** (-5.83% MoM từ 56.6) — mức tương đương đáy 2022, người tiêu dùng rất bi quan. UMCSENT T5 update 49.8 trong report 29/5 cảnh báo càng sâu hơn.\n- **Housing Starts (T4):** 1,465k, MoM **-2.79%**, YoY +4.64% (so với đáy T4/2025).\n- **Existing Home Sales (T4):** 4.02M units — gần **đáy đa năm**.\n- **Case-Shiller (T3):** 329.94, MoM +0.72% bật trở lại sau nhiều tháng đi ngang; **YoY chỉ +0.67%** — giá nhà gần như đứng yên do mortgage rate cao.\n- **Đánh giá:** BĐS bị siết bởi rates, chưa thấy phục hồi rõ. Sentiment crash chưa transmit vào hard data tiêu dùng (Retail Inventories Ex Auto +0.6% T4 — retailers vẫn re-stock bình thường) → mismatch quan trọng cần watch cho T6.\n\n### Fed & lãi suất — neutral với bias dovish-leaning\n\n- **Fed Funds (DFF):** **3.62%** đi ngang tháng — không có động thái mới.\n- **10Y Treasury:** từ 4.67% (đầu tháng) → **4.48%** (cuối tháng) = **-19bp** trong tháng. Duration rally rõ.\n- **2Y Treasury:** 4.04% → 4.00% = -4bp. 2Y giảm chậm hơn 10Y → 2Y phản ánh kỳ vọng cut path còn dè dặt.\n- **Spread T10Y2Y:** từ +0.54 → +0.46 (**flatten thêm 8bp**) — curve dương nhưng đang phẳng dần, thường đi cùng giai đoạn cuối chu kỳ nới lỏng/đầu suy thoái.\n- **10Y Breakeven (T10YIE):** **2.39-2.40%** — anchored, lạm phát kỳ vọng dài hạn chưa unanchor.\n- **VIX:** **16.29** cuối tháng (đáy đa tháng) → complacency, không stress.\n- **HY OAS:** **2.71%**, IG OAS 0.75% — credit cực hẹp, chưa có dấu hiệu stress nào dù macro bi quan.\n- **Fed speakers:** cluster 29/5 (Kashkari/Bowman/Daly) + Waller 31/5 → tone tổng quan neutral-dovish, base case pricing 2 cuts H2.\n- **Đánh giá:** **Fed stance neutral** (rate đứng yên + chưa có speech hawkish dissent đủ mạnh để repricing path), nhưng bias đang nghiêng dovish sau Core PCE T4 cool. Market đang giá Fed cut tiếp trong H2 — đặc biệt sau NFP 5/6 và CPI 11/6 confirm cool.\n\n## 3. Sector winners/losers (11 GICS)\n\nDữ liệu sector lấy từ `data/sectors_latest.json` (close 29/5/2026, SPY 756.48, golden cross active, ret_1m +6.31%, YTD +11.03%).\n\n| Sector | Stance | Lý do (macro driver + RS data) |\n|---|---|---|\n| **Technology (XLK)** | **Overweight** | 1M **+20.06%**, RS 1M **+12.9**, 3M +37.83%, golden cross active, MA50 157 / MA200 145, giá 191. 10Y -19bp tháng = DCF tailwind; CFTC Nasdaq net short -1.4K = contrarian bullish. |\n| Communication Services (XLC) | Neutral | Bị tụt khi XLK ripping; rate-sensitive components (META/GOOG ad budget) hưởng lợi rate giảm nhưng RS 3M âm — chưa break out. |\n| Consumer Discretionary (XLY) | Neutral | 1M +3.45%, Retail Inv Ex Auto chưa stress nhưng UMCSENT 49.8 cảnh báo. Real Retail Sales chỉ ~+1.1%. |\n| Healthcare (XLV) | Underweight | +5.33% 1M là bounce defensive cuối, RS -1.0% xác nhận underperform khi regime risk-on broader rút dòng tiền khỏi defensive. |\n| Consumer Staples (XLP) | Underweight | Defensive bị bán cùng XLV/XLU. RS 1M âm. |\n| Industrials (XLI) | Watch (Neutral) | 1M +1.88%, RS -4.2 (hồi từ -6.24). Tín hiệu hỗn hợp: Wholesale destocking ngắn hạn xấu, nhưng Goods Trade beat + Copper +8.88% positive. ISM Mfg PMI 1/6 là gating. |\n| **Financials (XLF)** | **Underweight/Avoid** | YTD **-5.62%**, dưới MA200 (52.28 vs giá 51.58), RS 1M **-6.55**, RS YTD **-14.99**. Curve T10Y2Y +0.46 flat siết NIM; credit hẹp nhưng nếu ICSA breakout >230k sẽ stress. |\n| Materials (XLB) | Neutral | Copper futures +8.88% 1M (HG=F 6.45), Goods Trade beat hỗ trợ. USD broad 119+ là drag. Chicago/ISM PMI gating. |\n| Utilities (XLU) | Underweight | Defensive rút khi risk-on. Bounce ngắn hạn nhưng cấu trúc trung hạn yếu. |\n| Real Estate (XLRE) | Underweight | Same logic XLU — rate-sensitive nên giảm 10Y có hỗ trợ technical, nhưng dòng tiền risk-on rời defensive khiến không catch leadership. |\n| **Energy (XLE)** | **Underweight** | 1W **-4.80%**, 1M -4.64%, dưới MA50 (58.32 vs giá 56.29), trên MA200. YTD +24.11% tốt nhưng momentum đã gãy sau WTI sập từ $112 → $97.63 (-13%). Rig count prev 425 chưa capitulate → demand-side bearish cấu trúc. |\n\n**Top 3 conviction calls:**\n\n1. **XLK Technology — OVERWEIGHT**: 1M absolute +20.06%, RS vs SPY +12.93%, 10Y giảm -19bp trong tháng = DCF tailwind, AI capex secular intact, CFTC Nasdaq net short -1.4K + S&P -140.6K = contrarian setup short squeeze. Catalyst AVGO earnings 4/6 và ORCL 11/6 là asymmetric upside nếu beat. Rủi ro: AVGO miss → single-point regime crack.\n2. **XLF Financials — UNDERWEIGHT/AVOID**: YTD -5.62%, dưới MA200, RS YTD -14.99%. Curve T10Y2Y +0.46 (flat) + 10Y giảm -19bp tháng = NIM bị siết hai chiều. Credit spread hẹp nhưng nếu Jobless Claims breakout >230k hoặc UNRATE >4.4% sẽ stress credit. Không có catalyst hồi trong T6.\n3. **XLE Energy — UNDERWEIGHT**: WTI -13% trong 4 phiên cuối tháng, Wholesale Inv destocking xác nhận demand cooling, rig count 425 chưa capitulate → supply chưa cắt. CFTC Crude long crowded +172.6K = còn dư địa unwind. Không bottom-fish cho đến khi rig count <400 hoặc OPEC+ cắt quota thực sự.\n\n## 4. Risks & Catalysts tháng 6 sắp tới\n\n**Catalyst lớn 5 ngày đầu tháng 6 (cluster tuần 1-5/6):**\n- **ISM Manufacturing PMI T5 (1/6 — hôm nay):** prev 49.2, fcst ~50. Beat >51 → upgrade XLI/XLB sang OW + confirm Copper +8.88% đúng + restocking incoming. Miss <48 → combo growth scare với Chicago PMI, duration rally tiếp.\n- **JOLTS T4 (2/6):** prev 6,866k. <6,700k = dovish labor cooling tiếp tục; >7,000k = hawkish.\n- **ADP Employment T5 (3/6):** leading NFP. <80k dovish, >180k hawkish.\n- **AVGO earnings (4/6 after-close):** **single-point risk lớn nhất cho XLK** vì RS +12.9% rất crowded long; setup squeeze hai chiều với CFTC Nasdaq net short -1.4K.\n- **NFP T5 (5/6) — biggest:** prev +115k, UNRATE 4.3%, AHE YoY +3.57%. Scenario quan trọng nhất là C: NFP <+100k + UNRATE >4.4% → Sahm watch trigger → initial dovish rally có thể đảo thành hard-landing repricing.\n\n**Catalyst tuần 2 (8-12/6):**\n- **CPI T5 (11/6) — catalyst tháng:** PPI residual nóng (+9.82% YoY) chưa truyền hết — risk hot print vẫn còn dù WTI crash giúp giảm áp lực. Hot Core MoM >+0.35% sẽ đảo regime risk-on; cool Core MoM <+0.25% confirm soft landing trọn vẹn → everything rally + breadth mở rộng.\n- **ORCL earnings (11/6):** bellwether tech enterprise cross-check AVGO.\n\n**Tail risks:**\n- **PPI residual truyền dẫn vào CPI**: PPI All Commodities 3-mo annualized +34.4% là bất thường lịch sử; chưa rõ bao nhiêu đã consume bởi margin compression và bao nhiêu sẽ vào CPI T5/T6.\n- **Jobless Claims breakout >230k**: kết hợp với UMCSENT 49.8 sẽ accelerate consumer slowdown rolling vào XLY/XLF.\n- **AVGO miss guide 4/6**: XLK gánh leadership; nếu first crack thì cascade rotation có thể peak tech tháng này.\n- **Geopolitical oil shock đảo WTI**: WTI từ $97.63 bounce trên $105 sẽ tái khơi gợi CPI risk + cứu XLE → đảo conviction.\n- **Curve T10Y2Y co dưới +0.30**: nếu 2Y bật mạnh sau NFP beat hoặc CPI hot, spread đẩy về vùng pre-inversion → tái khơi recession watch.\n\n**Cần theo dõi đặc biệt:**\n- **Chicago PMI actual (đã ra sau giờ scrape 29/5):** cross-check ISM Mfg PMI 1/6 — nếu cả hai miss = growth scare combo.\n- **CFTC positioning extreme:** S&P -140.6K (net short heavy) + Nasdaq -1.4K = contrarian bullish nếu data tốt → setup pain trade higher. Crude +172.6K long crowded = bearish unwind tiếp.\n- **BTC divergence:** BTC -10.68% 1M trong khi SPY +6.31%, XLK +20% — crypto weakness là cấu trúc (regulatory? ETF flow?), KHÔNG nên đọc thành risk-off broader.\n- **Copper vs XLI/XLB:** Copper +8.88% 1M ngược chiều sector RS âm — nếu ISM Mfg PMI >51 thì copper đúng, sector phải catch-up.\n\n## 5. Tóm tắt 1 câu\n\nTháng 5/2026 chốt lại regime **risk-on broader sau khởi điểm stagflation-lite** — Core PCE T4 cool về +0.24% MoM + WTI sập -13% + 10Y -19bp đã đảo narrative; Fed dovish-leaning, Tech (XLK +20.06%) áp đảo leadership trong khi Energy/Financials/defensives là laggards — setup chính cho T6 là cluster catalyst 1-5/6 (ISM/JOLTS/ADP/AVGO/NFP) quyết định breadth có mở rộng được hay XLK tiếp tục gánh một mình.\n\n---\n*Nguồn: 4 daily reports tháng 5 (22, 25, 29, 31); FRED snapshot 2026-05-31 (31 series); `data/sectors_latest.json` (11 ETFs); `data/cross_asset_latest.json` (Gold/Copper/BTC). Coverage limited — tháng đầu hệ thống vận hành.*"
   },
   "latest_weekly": {
-    "file": "2026-06-15.md",
-    "date": "2026-06-15",
-    "week": "2026-W24",
+    "file": "2026-06-21.md",
+    "date": "2026-06-21",
+    "week": "2026-W25",
     "regime_signal": "risk-on",
-    "regime_label": "Goldilocks / Soft Landing",
-    "key_takeaway": "Bộ ba disinflation (CPI cool + PPI miss + Michigan expectations giảm) xác nhận soft-landing narrative, yields rút về 4.45%, VIX xuống 17.68 — risk-on regime tiếp tục nhưng FOMC 17/6 là test lớn nhất tuần tới.",
-    "vix": "17.68",
-    "us10y": "4.49",
-    "dxy": "99.75",
-    "wti": "84.88",
-    "gold": "4215.0",
-    "spy_vs_ma200_pct": "+8.4",
-    "generated_at": "2026-06-14T04:21:14Z",
-    "body_preview": "# Weekly Macro — 2026-06-15",
-    "body": "# Weekly Macro — 2026-06-15\n\n## Sector Stances\n| Sector | ETF | Stance | Direction | 1M RS | Ghi chú |\n|--------|-----|--------|-----------|-------|---------|\n| Technology | XLK | Light OW | ↑ | +4.6% | Rate relief + disinflation = định giá được hỗ trợ; nhưng AI capex narrative chưa phục hồi hoàn toàn |\n| Healthcare | XLV | Overweight | ↑ | +4.9% | Conviction hold: dẫn đầu RS 1M, hưởng lợi mọi regime — soft landing lẫn defensive |\n| Financials | XLF | Light OW | ↑ | +4.7% | Yield curve đang normalize, soft landing = NIM ổn định, loan quality tốt |\n| Energy | XLE | Neutral | → | -0.1% | WTI -16% 1M — supply pressure OPEC; chờ $80 support hoặc demand inflection |\n| Consumer Disc | XLY | Light UW | ↓ | -1.7% | Dưới MA200, real wage âm, consumer bắt đầu trade-down; tránh trước khi Retail Sales xác nhận |\n| Consumer Stap | XLP | Neutral | → | +1.4% | Defensive nhưng risk-on giảm appeal; giữ nhỏ như hedge lạm phát nếu WTI bật |\n| Industrials | XLI | Light OW | ↑ | +1.6% | Soft landing = capex cycle phục hồi; ISM Mfg turning point cần xác nhận thêm |\n| Materials | XLB | Neutral | → | +0.3% | RS phẳng, đồng (Copper) -3% 1M; chờ tín hiệu từ China demand hoặc ISM recovery |\n| Utilities | XLU | Stalking | → | -0.2% | RS gần 0 nhưng nếu FOMC dovish + yields tiếp tục giảm → rate-cut play sẽ kích hoạt |\n| Real Estate | XLRE | Stalking | ↑ | +2.7% | Above MA200, RS tích cực, nhạy cảm rate-cut narrative — accumulate nếu 10Y về <4.3% |\n| Comm Services | XLC | Underweight | ↓ | -4.3% | Dưới MA200, RS tệ nhất 11 sector; AI ad-spend narrative bị đặt câu hỏi sau AVGO disappointment |\n\n## Calendar Next 7 Days\n| Date | Event | Forecast | Previous | Impact |\n|------|-------|----------|----------|--------|\n| 2026-06-17 | FOMC Meeting — Fed Rate Decision | Hold 4.25–4.50% | 4.25–4.50% | HIGH |\n| 2026-06-17 | FOMC Press Conference (Powell) | — | — | HIGH |\n| 2026-06-17 | Durable Goods Orders (May) | — | — | MEDIUM |\n| 2026-06-19 | Consumer Confidence — Conference Board (Jun) | — | — | MEDIUM |\n\n## Narrative\nTuần 9–13/6 đánh dấu sự chuyển hướng rõ rệt: sau VIX spike +39.7% và NFP shock +265K (tuần 4–8/6), bộ ba dữ liệu liên tiếp — Core CPI MoM +0.21% (vs forecast +0.3%), Core PPI YoY 4.9% (vs 5.4%), và Michigan 5Y inflation expectations giảm về 3.4% — đã xác nhận disinflation đang quay lại, tạo ra narrative Goldilocks hoàn chỉnh. Phản ứng thị trường tích cực: 10Y yield rút từ đỉnh 4.55% về 4.45%, VIX hạ từ 22.22 xuống 17.68, HY OAS thu hẹp về 2.78% — credit market xác nhận risk-on. Tuần tới, **FOMC 17/6 là sự kiện trung tâm**: thị trường pricing \"hold\" nhưng dot plot và tone Powell có thể là catalyst mạnh — dovish surprise (hint 2+ cuts 2026) sẽ đẩy 2Y yield về ~3.9% và kích hoạt XLRE/XLU/XLK; hawkish surprise (ít cut hơn) sẽ tái tạo yield pressure và punish rate-sensitive names. Rủi ro thứ hai cần theo dõi: WTI bật mạnh từ vùng $84 lên $90+ có thể đảo ngược narrative disinflation và phức tạp hóa FOMC messaging. Positioning bias tuần tới: giữ vững XLV (conviction), duy trì light OW XLK + XLF + XLI, stalking XLRE nếu FOMC dovish, và tránh XLC cho đến khi AI capex narrative phục hồi."
+    "regime_label": "Growth-led risk-on (cyclicals dẫn dắt)",
+    "key_takeaway": "Risk-on dẫn dắt bởi cyclicals — XLI/XLF/XLK hút dòng tiền mạnh (EARLY_FORMING), XLE bị bán tháo theo dầu −23% 1M; chưa sector nào CONFIRMED_IN nên giữ Light OW, chờ PCE 23/6 xác nhận.",
+    "vix": "16.4",
+    "us10y": "4.45",
+    "dxy": "100.93",
+    "wti": "75.21",
+    "gold": "4210.5",
+    "spy_vs_ma200_pct": "+9.09",
+    "generated_at": "2026-06-22T06:24:45+00:00",
+    "body_preview": "# Weekly Macro — 2026-06-21",
+    "body": "# Weekly Macro — 2026-06-21\n\n## Dòng tiền tuần (Money Flow Radar)\n> Nguồn: `sector_rotation_confirmed.json` → `money_flow` (MFI 5D từ ETF volume) + `composite_signal` (macro persistence + volume). Sort theo MFI vs SPY giảm dần.\n\n| Sector | ETF | Composite | MFI 5D | vs SPY | Flow Signal | 1M RS |\n|--------|-----|-----------|--------|--------|-------------|-------|\n| Industrials | XLI | **ACCUMULATE** | 100.0 | +43.6 | 🟢 STRONG_INFLOW | +5.1% |\n| Financials | XLF | **ACCUMULATE** | 82.3 | +25.9 | 🟢 STRONG_INFLOW | +2.7% |\n| Utilities | XLU | WATCH_FLOW | 80.2 | +23.8 | 🟢 STRONG_INFLOW | -1.1% |\n| Technology | XLK | **ACCUMULATE** | 62.3 | +5.9 | 🟢 INFLOW | +8.3% |\n| Consumer Disc | XLY | **ACCUMULATE** | 60.3 | +3.9 | 🟢 INFLOW | -0.2% |\n| Materials | XLB | HOLD | 57.9 | +1.5 | 🟢 INFLOW | +3.5% |\n| Comm Services | XLC | WATCH | 32.8 | -23.6 | 🔴 STRONG_OUTFLOW | -7.4% |\n| Consumer Stap | XLP | HOLD | 32.5 | -23.9 | 🔴 STRONG_OUTFLOW | -5.2% |\n| Real Estate | XLRE | HOLD | 26.6 | -29.8 | 🔴 STRONG_OUTFLOW | -2.2% |\n| Healthcare | XLV | HOLD | 18.8 | -37.6 | 🔴 STRONG_OUTFLOW | -0.6% |\n| Energy | XLE | **AVOID** | 0.0 | -56.4 | 🔴 STRONG_OUTFLOW | -14.0% |\n\n**Composite signal legend:** RIDE=xác nhận 2 chiều (macro+flow) · ACCUMULATE=macro bền + dòng tiền vào · WATCH=đang hình thành · HOLD=trung tính · REDUCE/EXIT=macro+flow yếu · AVOID=tránh\n\n**Cảnh báo phân kỳ:** XLU STRONG_INFLOW (MFI vs SPY +23.8) nhưng macro 0/10 → composite chỉ WATCH_FLOW, KHÔNG phải ACCUMULATE: nhiều khả năng là dòng tiền phòng thủ/đi tìm yield khi yields hạ, chưa được vĩ mô hậu thuẫn → không nâng stance.\n\n## Sector Stances\n| Sector | ETF | Stance | Direction | 1M RS | Ghi chú |\n|--------|-----|--------|-----------|-------|---------|\n| Technology | XLK | Light OW | ↑ | +8.3% | EARLY_FORMING, RS dẫn đầu + thrust +8.4, INFLOW; macro mới 6/10 nên chưa OW |\n| Healthcare | XLV | Light UW | ↓ | -0.6% | NEUTRAL nhưng STRONG_OUTFLOW + rs_slope −4.31 (xấu nhanh nhất bảng) |\n| Financials | XLF | Light OW | ↑ | +2.7% | EARLY_FORMING, STRONG_INFLOW vs SPY +25.9, mom 10/10 — dòng tiền bền |\n| Energy | XLE | Avoid | ↓ | -14.0% | AVOID, WTI −23% 1M, MFI 0/STRONG_OUTFLOW vs SPY −56.4 |\n| Consumer Disc | XLY | Stalking | ↑ | -0.2% | EARLY_FORMING macro 10/10 nhưng dưới MA200 + RS phẳng → chờ giá xác nhận |\n| Consumer Stap | XLP | Light UW | ↓ | -5.2% | NEUTRAL + RS −5.2 + STRONG_OUTFLOW — defensive bị rút tiền |\n| Industrials | XLI | Light OW | ↑ | +5.1% | EARLY_FORMING dẫn đầu: macro 9/10, MFI 100 vs SPY +43.6 — combo mạnh nhất |\n| Materials | XLB | Neutral | → | +3.5% | RS dương + thrust +25 nhưng macro 1/10 + rs_slope âm → momentum thiếu nền vĩ mô |\n| Utilities | XLU | Neutral | → | -1.1% | WATCH_FLOW: inflow mạnh nhưng macro 0/10 — phân kỳ, chưa nâng |\n| Real Estate | XLRE | Light UW | ↓ | -2.2% | NEUTRAL + STRONG_OUTFLOW + rs_slope −3.26 đi xuống |\n| Comm Services | XLC | Stalking | → | -7.4% | EARLY_FORMING macro 10/10 nhưng dưới MA200, RS −7.4 + OUTFLOW — giá chưa theo |\n\n## Rotation Focus\n> Handoff cho agent lọc cổ phiếu — combine `composite_signal` (flow + macro) + `confirmed_phase`.\n\n- **Regime:** Tăng trưởng vượt kỳ vọng, lạm phát nguội hơn kỳ vọng, lãi suất đi ngang, risk-on; chu kỳ đường cong normal · cửa sổ xác nhận: **10 phiên** (2026-06-04 → 06-18)\n- **RIDE/ACCUMULATE (săn cổ phiếu ngay):** **XLI** (MFI vs SPY +43.6, macro 9/10), **XLF** (+25.9, mom 10/10), **XLK** (+5.9, RS dẫn đầu +8.3), **XLY** (+3.9, macro 10/10 — nhưng còn dưới MA200) — đều EARLY_FORMING + dòng tiền vào.\n- **WATCH/WATCH_FLOW (chuẩn bị entry):** **XLC** (macro 10/10 nhưng giá/flow chưa theo — chờ vượt MA200), **XLU** (inflow mạnh nhưng macro chưa xác nhận — phân kỳ phòng thủ).\n- **EXIT/REDUCE/AVOID (giảm/thoát):** **XLE** (Avoid), **XLV / XLP / XLRE** (STRONG_OUTFLOW, defensive bị rút).\n- **Universe cổ phiếu:** `data/sector_holdings_latest.json` — lọc holdings trong XLI/XLF/XLK/XLY theo `rs_1m > 0` + `above_ma50 = true`.\n- **⚠ Chưa sector nào CONFIRMED_IN** (chưa đủ persistence 2 chiều bền) → giữ conviction ở mức Light OW/Stalking, chưa Overweight tuyệt đối.\n\n## Calendar Next 7 Days\n| Date | Event | Forecast | Previous | Impact |\n|------|-------|----------|----------|--------|\n| 2026-06-22 | Producer Price Index (PPI) | — | — | MEDIUM |\n| 2026-06-23 | Personal Income & Outlays (Core PCE) | — | — | HIGH |\n| 2026-06-24 | Job Openings & Labor Turnover (JOLTS) | — | — | MEDIUM |\n| 2026-06-25 | Initial Jobless Claims | — | — | LOW |\n\n## Narrative\nTuần qua xác nhận nhịp **risk-on dẫn dắt bởi cyclicals**: VIX rơi về 16.4, SPY +9.1% trên MA200, và dòng tiền (MFI 5D) chảy mạnh vào **XLI, XLF, XLK** trong khi rút khỏi toàn bộ nhóm phòng thủ (XLV, XLP, XLRE) và **XLE** (WTI −23% 1M kéo Energy thành điểm yếu rõ nhất). Catalyst chi phối là **FOMC hawkish-hold 17/6** (giữ lãi suất, dot plot dịch lên) — nghịch lý là thị trường vẫn risk-on vì growth beat (Philly Fed, Retail Sales) lấn át, nhưng đó là risk-on *chiến thuật* khi hard-data lạm phát (CPI YoY ~4.3%, Core PCE ~3.3%) còn nóng. Tuần tới tâm điểm là **Core PCE 23/6** (thước đo #1 của Fed) và **PPI 22/6**: một bản nóng có thể đảo nhịp risk-on và thử thách các stance Light OW. Positioning: ưu tiên attention vào **XLI/XLF/XLK** (dòng tiền + EARLY_FORMING), stalk **XLY/XLC** chờ vượt MA200, tránh **XLE**. **Lưu ý độ tin cậy engine:** rotation scorecard hiện cho **edge ÂM** (5d −1.55%, hit 42%; 10d −1.56%) trên mẫu phần lớn là backfill — thứ hạng engine CHƯA chứng minh được khả năng dự báo, cần tích lũy thêm daily snapshot thật trước khi tăng conviction."
   }
 };

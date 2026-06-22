@@ -80,7 +80,7 @@ ISM Mfg PMI 54.0 (vs fcst 53.3, prev 52.7) **beat ~+1σ** xác nhận Mfg expans
 
 ---
 
-## 2026-06-02 — regime: `risk-off` · surprises: 1
+## 2026-06-02 — regime: `risk-off` · surprises: 2
 
 **Key takeaway:** Báo cáo JOLTS tháng 4 cho thấy số lượng cơ hội việc làm đạt 7.618 triệu, cao hơn đáng kể so với dự báo 6.860 triệu. Nhu cầu lao động vẫn duy trì sự thắt chặt, lợi suất tăng.
 
@@ -216,7 +216,7 @@ Tuần này (06-04 → 06-08) là **MAJOR INFLECTION POINT** của thị trườ
 
 ---
 
-## 2026-06-09 — regime: `neutral` · surprises: 1
+## 2026-06-09 — regime: `neutral` · surprises: 2
 
 **Key takeaway:** Chỉ số lạc quan doanh nghiệp nhỏ NFIB giảm nhẹ xuống 95.3. Cán cân thương mại thu hẹp thâm hụt. Thị trường giao dịch cẩn trọng trước thềm công bố CPI vào ngày mai.
 
@@ -258,7 +258,7 @@ Dữ liệu lạm phát cốt lõi hạ nhiệt đã trở thành liều thuốc
 
 ---
 
-## 2026-06-11 — regime: `rotation-confirmed` · surprises: 3
+## 2026-06-11 — regime: `rotation-confirmed` · surprises: 2
 
 **Key takeaway:** Hôm nay 11/06 là PHIÊN CỨU CÁNH — Core PPI tháng 5 hạ nhiệt cực mạnh xuống +4.9% YoY (vs 5.4% dự báo) và Initial Claims tăng lên 229k (xác nhận labor cooling) đã lập tức kéo xịt yields (-9bp xuống 4.46%) và VIX (xuống 19.4). Thị trường phản ứng bằng phiên bùng nổ relief rally cực mạnh, dẫn đầu bởi Tech (XLK +3.73%) và Industrials (XLI +3.24%), trong khi Energy (XLE -1.94%) bị đè nặng do oil yếu và dòng tiền xoay vòng về tăng trưởng.
 

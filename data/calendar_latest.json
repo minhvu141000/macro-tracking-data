@@ -1,16 +1,9 @@
 {
   "schema_version": "1.1",
-  "fetched_at": "2026-06-18T20:00:16.785616+00:00",
-  "window_start": "2026-06-18",
-  "window_end": "2026-07-09",
+  "fetched_at": "2026-06-22T06:15:42.154702+00:00",
+  "window_start": "2026-06-21",
+  "window_end": "2026-07-12",
   "macro": [
-    {
-      "date": "2026-06-19",
-      "name": "Consumer Confidence (Conference Board)",
-      "release_id": 91,
-      "type": "macro",
-      "estimated": true
-    },
     {
       "date": "2026-06-22",
       "name": "Producer Price Index (PPI)",
@@ -80,20 +73,23 @@
       "release_id": 100,
       "type": "macro",
       "estimated": true
+    },
+    {
+      "date": "2026-07-10",
+      "name": "Consumer Price Index (CPI)",
+      "release_id": 10,
+      "type": "macro",
+      "estimated": true
+    },
+    {
+      "date": "2026-07-11",
+      "name": "Retail Sales",
+      "release_id": 25,
+      "type": "macro",
+      "estimated": true
     }
   ],
   "earnings": [
-    {
-      "date": "2026-06-18",
-      "ticker": "ACN",
-      "name": "Accenture",
-      "sector_etf": "XLK",
-      "time": "BMO",
-      "eps_estimate": 3.71,
-      "revenue_estimate_b": null,
-      "importance": "medium",
-      "type": "earnings"
-    },
     {
       "date": "2026-06-30",
       "ticker": "NKE",
@@ -119,14 +115,14 @@
   ],
   "fed_speakers": [],
   "lookahead": {
-    "tomorrow_date": "2026-06-19",
-    "week_end_date": "2026-06-25",
+    "tomorrow_date": "2026-06-22",
+    "week_end_date": "2026-06-28",
     "tomorrow": {
       "macro": [
         {
-          "date": "2026-06-19",
-          "name": "Consumer Confidence (Conference Board)",
-          "release_id": 91,
+          "date": "2026-06-22",
+          "name": "Producer Price Index (PPI)",
+          "release_id": 17,
           "type": "macro",
           "estimated": true
         }
@@ -136,13 +132,6 @@
     },
     "this_week": {
       "macro": [
-        {
-          "date": "2026-06-19",
-          "name": "Consumer Confidence (Conference Board)",
-          "release_id": 91,
-          "type": "macro",
-          "estimated": true
-        },
         {
           "date": "2026-06-22",
           "name": "Producer Price Index (PPI)",
