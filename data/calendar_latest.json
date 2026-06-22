@@ -1,16 +1,9 @@
 {
   "schema_version": "1.1",
-  "fetched_at": "2026-06-22T06:15:42.154702+00:00",
-  "window_start": "2026-06-21",
-  "window_end": "2026-07-12",
+  "fetched_at": "2026-06-22T21:15:30.484341+00:00",
+  "window_start": "2026-06-22",
+  "window_end": "2026-07-13",
   "macro": [
-    {
-      "date": "2026-06-22",
-      "name": "Producer Price Index (PPI)",
-      "release_id": 17,
-      "type": "macro",
-      "estimated": true
-    },
     {
       "date": "2026-06-23",
       "name": "Personal Income & Outlays (PCE)",
@@ -87,6 +80,13 @@
       "release_id": 25,
       "type": "macro",
       "estimated": true
+    },
+    {
+      "date": "2026-07-13",
+      "name": "Producer Price Index (PPI)",
+      "release_id": 17,
+      "type": "macro",
+      "estimated": true
     }
   ],
   "earnings": [
@@ -113,16 +113,27 @@
       "type": "earnings"
     }
   ],
-  "fed_speakers": [],
+  "fed_speakers": [
+    {
+      "date": "2026-06-22",
+      "time": "09:00",
+      "speaker": "Waller",
+      "topic": "Fed Waller Speaks",
+      "venue": "",
+      "impact": "high",
+      "source": "investing.com (historical)",
+      "event_url": "https://www.investing.com/economic-calendar/fed-waller-speaks-1997"
+    }
+  ],
   "lookahead": {
-    "tomorrow_date": "2026-06-22",
-    "week_end_date": "2026-06-28",
+    "tomorrow_date": "2026-06-23",
+    "week_end_date": "2026-06-29",
     "tomorrow": {
       "macro": [
         {
-          "date": "2026-06-22",
-          "name": "Producer Price Index (PPI)",
-          "release_id": 17,
+          "date": "2026-06-23",
+          "name": "Personal Income & Outlays (PCE)",
+          "release_id": 21,
           "type": "macro",
           "estimated": true
         }
@@ -132,13 +143,6 @@
     },
     "this_week": {
       "macro": [
-        {
-          "date": "2026-06-22",
-          "name": "Producer Price Index (PPI)",
-          "release_id": 17,
-          "type": "macro",
-          "estimated": true
-        },
         {
           "date": "2026-06-23",
           "name": "Personal Income & Outlays (PCE)",
@@ -159,10 +163,28 @@
           "release_id": 100,
           "type": "macro",
           "estimated": true
+        },
+        {
+          "date": "2026-06-29",
+          "name": "Producer Price Index (PPI)",
+          "release_id": 17,
+          "type": "macro",
+          "estimated": true
         }
       ],
       "earnings": [],
-      "fed_speakers": []
+      "fed_speakers": [
+        {
+          "date": "2026-06-22",
+          "time": "09:00",
+          "speaker": "Waller",
+          "topic": "Fed Waller Speaks",
+          "venue": "",
+          "impact": "high",
+          "source": "investing.com (historical)",
+          "event_url": "https://www.investing.com/economic-calendar/fed-waller-speaks-1997"
+        }
+      ]
     }
   }
 }
