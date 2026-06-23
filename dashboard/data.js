@@ -1,5 +1,5 @@
 window.MACRO_DATA = {
-  "last_updated": "2026-06-23T16:44:05.428542+00:00",
+  "last_updated": "2026-06-23T16:46:11.748836+00:00",
   "daily_releases": {
     "date": "2026-06-22",
     "releases": [

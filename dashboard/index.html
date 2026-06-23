@@ -2187,7 +2187,7 @@ function openSectorModal(ticker) {
             return `<div class="cal-event macro">
               <span class="cal-tag">Macro</span>
               <span>${e.name}</span>
-              ${e.estimated ? '<span class="cal-est">(est)</span>' : ""}
+              ${e.estimated ? '<span class="cal-est" title="Chưa có nguồn lịch chính thức">(ước tính)</span>' : ""}
             </div>`;
           }).join("")}
         </div>

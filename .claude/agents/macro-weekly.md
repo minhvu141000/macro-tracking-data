@@ -55,10 +55,13 @@ Dùng `confidence` + `persistence` (macro_pos_days/mom_pos_days) + `rs_slope`, `
 ## Calendar formatting
 
 Từ `data/calendar_latest.json`, field `macro` (list), field `earnings`:
-- Filter: date ≤ (window_start + 7 ngày)
-- Bao gồm earnings quan trọng (importance = "high") nếu trong 7 ngày
-- Impact field: HIGH nếu FOMC/CPI/NFP/GDP; MEDIUM nếu ISM/Retail/PPI/Housing; LOW cho còn lại
-- Nếu impact và forecast không có sẵn → dùng `—`
+- **NGUỒN NGÀY = investing.com (ưu tiên, chuẩn nhất).** Mỗi mục đã có sẵn `date`, `name`,
+  `impact` (HIGH/MEDIUM/LOW), `forecast`, `previous`, và cờ `confirmed`/`estimated` + `source`.
+  **DÙNG TRỰC TIẾP các field này — KHÔNG tự suy/ngoại suy ngày** (ngày tự bịa dễ sai, vd PCE).
+- Filter: date ≤ (window_start + 7 ngày). Ưu tiên hiển thị mục `impact` HIGH/MEDIUM.
+- **Gắn nhãn rõ:** mục `estimated:true` (không có nguồn lịch chính thức) → thêm "(ước tính)"
+  vào tên; mục `confirmed:true` để bình thường. KHÔNG trình bày ngày ước tính như chắc chắn.
+- Nếu forecast/previous trống → dùng `—`.
 
 ## Output format
 
