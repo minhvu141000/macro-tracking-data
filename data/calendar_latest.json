@@ -1,8 +1,8 @@
 {
   "schema_version": "1.1",
-  "fetched_at": "2026-06-22T21:15:30.484341+00:00",
-  "window_start": "2026-06-22",
-  "window_end": "2026-07-13",
+  "fetched_at": "2026-06-23T07:04:44.419921+00:00",
+  "window_start": "2026-06-23",
+  "window_end": "2026-07-14",
   "macro": [
     {
       "date": "2026-06-23",
@@ -111,29 +111,73 @@
       "revenue_estimate_b": null,
       "importance": "medium",
       "type": "earnings"
-    }
-  ],
-  "fed_speakers": [
+    },
     {
-      "date": "2026-06-22",
-      "time": "09:00",
-      "speaker": "Waller",
-      "topic": "Fed Waller Speaks",
-      "venue": "",
-      "impact": "high",
-      "source": "investing.com (historical)",
-      "event_url": "https://www.investing.com/economic-calendar/fed-waller-speaks-1997"
+      "date": "2026-07-14",
+      "ticker": "JPM",
+      "name": "JPMorgan",
+      "sector_etf": "XLF",
+      "time": "BMO",
+      "eps_estimate": 5.41,
+      "revenue_estimate_b": null,
+      "importance": "high",
+      "type": "earnings"
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "BAC",
+      "name": "Bank of America",
+      "sector_etf": "XLF",
+      "time": "BMO",
+      "eps_estimate": 1.1,
+      "revenue_estimate_b": null,
+      "importance": "high",
+      "type": "earnings"
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "WFC",
+      "name": "Wells Fargo",
+      "sector_etf": "XLF",
+      "time": "BMO",
+      "eps_estimate": 1.7,
+      "revenue_estimate_b": null,
+      "importance": "high",
+      "type": "earnings"
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "GS",
+      "name": "Goldman Sachs",
+      "sector_etf": "XLF",
+      "time": "BMO",
+      "eps_estimate": 13.78,
+      "revenue_estimate_b": null,
+      "importance": "medium",
+      "type": "earnings"
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "C",
+      "name": "Citigroup",
+      "sector_etf": "XLF",
+      "time": "BMO",
+      "eps_estimate": 2.62,
+      "revenue_estimate_b": null,
+      "importance": "medium",
+      "type": "earnings"
     }
   ],
+  "fed_speakers": [],
   "lookahead": {
-    "tomorrow_date": "2026-06-23",
-    "week_end_date": "2026-06-29",
+    "tomorrow_date": "2026-06-24",
+    "week_end_date": "2026-06-30",
     "tomorrow": {
       "macro": [
         {
-          "date": "2026-06-23",
-          "name": "Personal Income & Outlays (PCE)",
-          "release_id": 21,
+          "date": "2026-06-24",
+          "name": "Job Openings & Labor Turnover (JOLTS)",
+          "release_id": 53,
           "type": "macro",
           "estimated": true
         }
@@ -173,18 +217,7 @@
         }
       ],
       "earnings": [],
-      "fed_speakers": [
-        {
-          "date": "2026-06-22",
-          "time": "09:00",
-          "speaker": "Waller",
-          "topic": "Fed Waller Speaks",
-          "venue": "",
-          "impact": "high",
-          "source": "investing.com (historical)",
-          "event_url": "https://www.investing.com/economic-calendar/fed-waller-speaks-1997"
-        }
-      ]
+      "fed_speakers": []
     }
   }
 }

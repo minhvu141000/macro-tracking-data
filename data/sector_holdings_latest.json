@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "fetched_at": "2026-06-22T21:13:54.557738+00:00",
+  "fetched_at": "2026-06-23T07:03:19.965836+00:00",
   "note": "Candidate universe per sector for the stock-picking agent. Sorted by rs_1m (excess return vs SPY). Filtered downstream once build_sector_rotation.py flags a sector.",
   "holdings": {
     "XLK": [
@@ -42,11 +42,11 @@
       },
       {
         "latest": 392.13,
-        "ret_1m": -6.14,
-        "ret_3m": 26.55,
+        "ret_1m": -5.99,
+        "ret_3m": 26.75,
         "above_ma50": false,
         "above_ma200": true,
-        "rs_1m": -6.82,
+        "rs_1m": -6.67,
         "ticker": "AVGO"
       },
       {
@@ -851,7 +851,7 @@
         "ret_1m": 1.99,
         "ret_3m": 14.0,
         "above_ma50": true,
-        "above_ma200": true,
+        "above_ma200": false,
         "rs_1m": 1.31,
         "ticker": "DD"
       },
