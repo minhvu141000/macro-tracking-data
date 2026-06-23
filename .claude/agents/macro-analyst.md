@@ -122,11 +122,16 @@ key_takeaway: <1 câu tóm tắt>
 
 ## Cảnh báo & catalyst sắp tới
 
+> **NGÀY công bố lấy TRỰC TIẾP từ `calendar_latest.json` (nguồn investing.com — chuẩn nhất).
+> TUYỆT ĐỐI KHÔNG tự suy/đoán ngày công bố** (đoán sai ngày, vd PCE, ảnh hưởng quyết định đầu tư).
+> Mỗi mục macro có cờ `confirmed`/`estimated` + `impact`: mục `estimated:true` PHẢI ghi thêm
+> "(ước tính)" sau tên; mục `confirmed` để bình thường.
+
 **Ngày mai (`calendar_latest.json` → `lookahead.tomorrow_date`):**
-<Liệt kê TẤT ĐỊNH từ block `lookahead.tomorrow` (macro + earnings high-importance + Fed speakers high/medium impact). Copy nguyên tên + ngày — KHÔNG tự thêm sự kiện không có trong block. Nếu cả 3 mảng rỗng: "Không có catalyst lớn ngày mai.">
+<Liệt kê TẤT ĐỊNH từ block `lookahead.tomorrow` (macro + earnings high-importance + Fed speakers high/medium impact). Copy nguyên tên + ngày từ block — KHÔNG tự thêm/sửa ngày. Gắn "(ước tính)" cho mục `estimated`. Nếu cả 3 mảng rỗng: "Không có catalyst lớn ngày mai.">
 
 **Tuần này (đến `lookahead.week_end_date`):**
-<Liệt kê TẤT ĐỊNH từ block `lookahead.this_week`, gộp theo ngày. Nếu rỗng: "Không có catalyst lớn trong tuần.">
+<Liệt kê TẤT ĐỊNH từ block `lookahead.this_week`, gộp theo ngày, ưu tiên `impact` HIGH/MEDIUM. Gắn "(ước tính)" cho mục `estimated`. Nếu rỗng: "Không có catalyst lớn trong tuần.">
 
 **Theo dõi đặc biệt:**
 <1-2 câu định tính: vì sao 1-2 sự kiện trên (nếu có) quan trọng nhất, liên kết với chủ đề phân tích hôm nay. Không liệt kê lại những gì đã phân tích ở trên.>

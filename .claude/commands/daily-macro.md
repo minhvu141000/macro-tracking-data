@@ -24,7 +24,7 @@ source .venv/bin/activate && \
 ```
 - `fetch_sectors.py`: 11 SPDR sectors + SPY benchmark (ghi cả `sectors_lite.json` cho agents)
 - `fetch_cross_asset.py`: Gold, Copper, BTC (DXY/VIX/WTI/spreads/breakeven đã trong FRED) (+ `cross_asset_lite.json`)
-- `fetch_calendar.py`: earnings 55 stocks + macro release projections 21 ngày tới
+- `fetch_calendar.py`: earnings 55 stocks + **lịch macro 21 ngày tới từ investing.com** (nguồn chuẩn nhất cho NGÀY công bố) + FOMC. Mỗi mục có cờ `confirmed` (investing.com/FOMC) vs `estimated` (fallback FRED khi investing.com fail) — KHÔNG ngoại suy ngày tự bịa.
 - `fetch_eia.py`: tồn kho dầu/xăng/distillate tuần (EIA — KHÔNG có trên FRED). Cần `EIA_API_KEY`; thiếu key thì skip non-blocking.
 - `fetch_fed_forecasts.py`: DỰ BÁO Fed vùng (SPF GDP+CPI, ADS, r-star, SCE 1y) — tải Excel Philly/NY Fed, KHÔNG cần API key → `fed_forecasts_history.json`. Cần `openpyxl`. Lỗi mạng/parse thì skip non-blocking. (Chỉ số hiện trạng CFNAI/NFCI/ANFCI/WEI tự vào qua FRED trong `collect.py`.)
 - `build_scraped_history.py`: dựng history cho chỉ số không-FRED (Pending Home Sales) từ raw đã scrape → `scraped_history.json`. Tất cả được merge vào chart qua `build_dashboard.py`.
