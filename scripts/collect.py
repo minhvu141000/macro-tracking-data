@@ -425,6 +425,89 @@ def _parse_calendar_rows(html_fragment: str, target: date) -> list[dict[str, Any
     return out
 
 
+def scrape_investing_calendar_range(start: date, end: date,
+                                    importances: tuple[str, ...] = ("1", "2", "3")) -> list[dict[str, Any]]:
+    """Scrape lịch kinh tế US của investing.com cho một KHOẢNG NGÀY (lịch forward).
+
+    Giống scrape_investing_calendar nhưng dateFrom/dateTo là khoảng → lấy ngày công bố
+    SẮP TỚI. investing.com là nguồn chuẩn nhất cho NGÀY công bố. Mỗi dòng tự mang ngày
+    (data-event-datetime). Trả [{date, name, importance, forecast, previous}].
+    """
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        print("  playwright not installed", file=sys.stderr)
+        return []
+    from urllib.parse import urlencode
+    body_form = {
+        "country[]": "5",                       # 5 = United States
+        "importance[]": list(importances),
+        "timeZone": "8",
+        "timeFilter": "timeRemain",
+        "currentTab": "custom",
+        "dateFrom": start.isoformat(),
+        "dateTo": end.isoformat(),
+        "limit_from": "0",
+    }
+    form_string = urlencode(body_form, doseq=True)
+    html_fragment = ""
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(user_agent=USER_AGENT,
+                                          viewport={"width": 1366, "height": 800}, locale="en-US")
+            page = context.new_page()
+            page.goto(INVESTING_PAGE, wait_until="domcontentloaded", timeout=30000)
+            page.wait_for_timeout(2500)
+            resp = context.request.post(
+                INVESTING_AJAX,
+                headers={"Accept": "*/*", "Accept-Language": "en-US,en;q=0.9",
+                         "Content-Type": "application/x-www-form-urlencoded",
+                         "Referer": INVESTING_PAGE, "X-Requested-With": "XMLHttpRequest",
+                         "Origin": "https://www.investing.com"},
+                data=form_string, timeout=25000)
+            if resp.status != 200:
+                print(f"  investing.com range POST HTTP {resp.status}", file=sys.stderr)
+                browser.close()
+                return []
+            try:
+                html_fragment = resp.json().get("data", "")
+            except Exception:
+                html_fragment = resp.text()
+            browser.close()
+    except Exception as exc:
+        print(f"  Playwright range scrape failed: {exc}", file=sys.stderr)
+        return []
+
+    try:
+        from bs4 import BeautifulSoup
+    except ImportError:
+        return []
+    soup = BeautifulSoup(html_fragment, "html.parser")
+
+    def _t(el: Any) -> str | None:
+        if not el:
+            return None
+        t = el.get_text(strip=True)
+        return t if t and t != "\xa0" else None
+
+    out = []
+    for row in soup.select("tr.js-event-item"):
+        dt_iso = row.get("data-event-datetime", "").replace("/", "-").split(" ")[0]
+        if not dt_iso:
+            continue
+        name_a = row.select_one(".event a")
+        imp = row.select_one(".sentiment")
+        out.append({
+            "date": dt_iso,
+            "name": _t(name_a or row.select_one(".event")),
+            "importance": imp.get("data-img_key") if imp else None,
+            "forecast": _t(row.select_one(".fore")),
+            "previous": _t(row.select_one(".prev")),
+        })
+    return out
+
+
 CENSUS_TRADE_URL = "https://api.census.gov/data/timeseries/intltrade"
 
 

@@ -3,7 +3,7 @@ date: 2026-06-21
 week: 2026-W25
 regime_signal: risk-on
 regime_label: "Growth-led risk-on (cyclicals dẫn dắt)"
-key_takeaway: "Risk-on dẫn dắt bởi cyclicals — XLI/XLF/XLK hút dòng tiền mạnh (EARLY_FORMING), XLE bị bán tháo theo dầu −23% 1M; chưa sector nào CONFIRMED_IN nên giữ Light OW, chờ PCE 23/6 xác nhận."
+key_takeaway: "Risk-on dẫn dắt bởi cyclicals — XLI/XLF/XLK hút dòng tiền mạnh (EARLY_FORMING), XLE bị bán tháo theo dầu −23% 1M; chưa sector nào CONFIRMED_IN nên giữ Light OW, chờ Core PCE 25/6 xác nhận."
 vix: 16.4
 us10y: 4.45
 dxy: 100.93
@@ -62,12 +62,16 @@ generated_at: 2026-06-22T06:24:45+00:00
 - **⚠ Chưa sector nào CONFIRMED_IN** (chưa đủ persistence 2 chiều bền) → giữ conviction ở mức Light OW/Stalking, chưa Overweight tuyệt đối.
 
 ## Calendar Next 7 Days
+> Nguồn: investing.com economic calendar (ngày đã lên lịch — confirmed).
+
 | Date | Event | Forecast | Previous | Impact |
 |------|-------|----------|----------|--------|
-| 2026-06-22 | Producer Price Index (PPI) | — | — | MEDIUM |
-| 2026-06-23 | Personal Income & Outlays (Core PCE) | — | — | HIGH |
-| 2026-06-24 | Job Openings & Labor Turnover (JOLTS) | — | — | MEDIUM |
-| 2026-06-25 | Initial Jobless Claims | — | — | LOW |
+| 2026-06-23 | S&P Global Flash PMI (Mfg/Services) | 54.6 / 51.1 | 55.1 / 50.7 | HIGH |
+| 2026-06-24 | New Home Sales (May) | 638K | 622K | HIGH |
+| 2026-06-25 | **Core PCE Price Index (May)** | 0.3% MoM | 3.3% YoY | HIGH |
+| 2026-06-25 | Durable Goods Orders (May) | −4.7% | +8.0% | HIGH |
+| 2026-06-25 | GDP (Q1, final) | 1.6% | 1.6% | HIGH |
+| 2026-06-25 | Initial Jobless Claims | 226K | 226K | HIGH |
 
 ## Narrative
-Tuần qua xác nhận nhịp **risk-on dẫn dắt bởi cyclicals**: VIX rơi về 16.4, SPY +9.1% trên MA200, và dòng tiền (MFI 5D) chảy mạnh vào **XLI, XLF, XLK** trong khi rút khỏi toàn bộ nhóm phòng thủ (XLV, XLP, XLRE) và **XLE** (WTI −23% 1M kéo Energy thành điểm yếu rõ nhất). Catalyst chi phối là **FOMC hawkish-hold 17/6** (giữ lãi suất, dot plot dịch lên) — nghịch lý là thị trường vẫn risk-on vì growth beat (Philly Fed, Retail Sales) lấn át, nhưng đó là risk-on *chiến thuật* khi hard-data lạm phát (CPI YoY ~4.3%, Core PCE ~3.3%) còn nóng. Tuần tới tâm điểm là **Core PCE 23/6** (thước đo #1 của Fed) và **PPI 22/6**: một bản nóng có thể đảo nhịp risk-on và thử thách các stance Light OW. Positioning: ưu tiên attention vào **XLI/XLF/XLK** (dòng tiền + EARLY_FORMING), stalk **XLY/XLC** chờ vượt MA200, tránh **XLE**. **Lưu ý độ tin cậy engine:** rotation scorecard hiện cho **edge ÂM** (5d −1.55%, hit 42%; 10d −1.56%) trên mẫu phần lớn là backfill — thứ hạng engine CHƯA chứng minh được khả năng dự báo, cần tích lũy thêm daily snapshot thật trước khi tăng conviction.
+Tuần qua xác nhận nhịp **risk-on dẫn dắt bởi cyclicals**: VIX rơi về 16.4, SPY +9.1% trên MA200, và dòng tiền (MFI 5D) chảy mạnh vào **XLI, XLF, XLK** trong khi rút khỏi toàn bộ nhóm phòng thủ (XLV, XLP, XLRE) và **XLE** (WTI −23% 1M kéo Energy thành điểm yếu rõ nhất). Catalyst chi phối là **FOMC hawkish-hold 17/6** (giữ lãi suất, dot plot dịch lên) — nghịch lý là thị trường vẫn risk-on vì growth beat (Philly Fed, Retail Sales) lấn át, nhưng đó là risk-on *chiến thuật* khi hard-data lạm phát (CPI YoY ~4.3%, Core PCE ~3.3%) còn nóng. Tuần tới tâm điểm là **Core PCE 25/6** (thước đo #1 của Fed) cùng GDP Q1 final + Durable Goods (25/6): một bản nóng có thể đảo nhịp risk-on và thử thách các stance Light OW. Positioning: ưu tiên attention vào **XLI/XLF/XLK** (dòng tiền + EARLY_FORMING), stalk **XLY/XLC** chờ vượt MA200, tránh **XLE**. **Lưu ý độ tin cậy engine:** rotation scorecard hiện cho **edge ÂM** (5d −1.55%, hit 42%; 10d −1.56%) trên mẫu phần lớn là backfill — thứ hạng engine CHƯA chứng minh được khả năng dự báo, cần tích lũy thêm daily snapshot thật trước khi tăng conviction.

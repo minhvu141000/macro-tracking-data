@@ -110,24 +110,25 @@ FOMC_DATES_2026 = [
 
 
 def fetch_fred_release_dates(start: date, end: date) -> list[dict[str, Any]]:
-    """Estimate upcoming FRED releases by extrapolating from recent past dates.
+    """Lấy lịch công bố TƯƠNG LAI từ FRED (import lịch chính thức BLS/BEA, đăng trước).
 
-    FRED doesn't expose future schedules via API. We:
-    1. Get last 6 release dates per indicator
-    2. Compute median gap between them
-    3. Project next release = last_date + median_gap
-    4. Keep if within [start, end]
+    FRED `release/dates` với `include_release_dates_with_no_data=true` + realtime tương
+    lai TRẢ VỀ ngày đã được cơ quan lên lịch — chính xác hơn nhiều cách ngoại suy median-gap
+    cũ (vốn cho ra ngày sai như PCE lệch vài ngày). VẪN gắn `estimated: True` vì lịch tương
+    lai có thể đổi; NGUỒN XÁC NHẬN cho mỗi ngày vẫn là scrape investing.com vào đúng ngày đó.
     """
     out = []
 
-    # FOMC: use hardcoded calendar
+    # FOMC: lịch cứng (Fed công bố trước 1 năm) — đây là ngày CHẮC CHẮN
     for d_str in FOMC_DATES_2026:
         if start.isoformat() <= d_str <= end.isoformat():
-            out.append({"date": d_str, "name": "FOMC Meeting (Fed rate decision)", "release_id": 8, "type": "macro"})
+            out.append({"date": d_str, "name": "FOMC Meeting (Fed rate decision)",
+                        "release_id": 8, "type": "macro", "estimated": False})
 
     if not FRED_API_KEY:
         return out
 
+    seen = set()
     for release_id, label in FRED_RELEASES.items():
         if release_id == 8:
             continue  # FOMC handled via hardcode
@@ -136,47 +137,34 @@ def fetch_fred_release_dates(start: date, end: date) -> list[dict[str, Any]]:
             "release_id": release_id,
             "api_key": FRED_API_KEY,
             "file_type": "json",
-            "include_release_dates_with_no_data": "false",
-            "sort_order": "desc",
-            "limit": 6,
+            "include_release_dates_with_no_data": "true",   # gồm ngày tương lai đã lên lịch
+            "realtime_start": start.isoformat(),
+            "realtime_end": end.isoformat(),
+            "sort_order": "asc",
         }
         try:
             r = requests.get(url, params=params, timeout=10)
             if r.status_code != 200:
                 continue
-            past_dates = [d["date"] for d in r.json().get("release_dates", []) if d.get("date")]
-            if len(past_dates) < 2:
-                continue
-            # Compute gaps between consecutive past releases (descending order)
-            d_objs = [date.fromisoformat(d) for d in past_dates]
-            gaps = [(d_objs[i] - d_objs[i + 1]).days for i in range(len(d_objs) - 1)]
-            if not gaps:
-                continue
-            gaps.sort()
-            # Filter out tiny gaps (data revisions within same release cluster, e.g. GDP advance→2nd→final)
-            real_gaps = [g for g in gaps if g >= 7]
-            if not real_gaps:
-                # No reliable cadence — skip
-                continue
-            median_gap = real_gaps[len(real_gaps) // 2]
-            # Project next release date(s)
-            last = d_objs[0]
-            projected = last + timedelta(days=median_gap)
-            # Add up to 3 future projections (e.g. weekly Jobless Claims gives 3 in 21d)
-            for _ in range(3):
-                if projected > end:
-                    break
-                if projected >= start:
-                    out.append({
-                        "date": projected.isoformat(),
-                        "name": label,
-                        "release_id": release_id,
-                        "type": "macro",
-                        "estimated": True,
-                    })
-                projected = projected + timedelta(days=median_gap)
+            for rec in r.json().get("release_dates", []):
+                ds = rec.get("date")
+                if not ds or not (start.isoformat() <= ds <= end.isoformat()):
+                    continue
+                key = (ds, release_id)
+                if key in seen:
+                    continue
+                seen.add(key)
+                out.append({
+                    "date": ds,
+                    "name": label,
+                    "release_id": release_id,
+                    "type": "macro",
+                    "estimated": True,   # lịch tương lai = dự kiến (có thể đổi)
+                    "source": "FRED official release schedule",
+                })
         except Exception as exc:
             print(f"  FRED release {release_id} failed: {exc}", file=sys.stderr)
+    out.sort(key=lambda e: e["date"])
     return out
 
 
@@ -448,13 +436,85 @@ def build_lookahead(macro: list[dict], earnings: list[dict], fed_speakers: list[
     }
 
 
+def _inv_impact(img_key: str | None) -> str:
+    k = (img_key or "").lower()
+    if "3" in k:
+        return "HIGH"
+    if "2" in k:
+        return "MEDIUM"
+    return "LOW"
+
+
+def _norm(s: str | None) -> str:
+    return " ".join((s or "").strip().lower().split())
+
+
+def build_macro_calendar(start: date, end: date) -> list[dict[str, Any]]:
+    """Lịch macro forward — KẾT HỢP nguồn, ưu tiên investing.com (chuẩn nhất cho NGÀY).
+
+    Nguyên tắc (theo yêu cầu user):
+      • CONFIRMED (vào lịch): investing.com economic calendar forward + FOMC (Fed đăng trước).
+        Đây là ngày có nguồn lịch RÕ RÀNG.
+      • ESTIMATED (gắn nhãn ước tính): chỉ dùng FRED extrapolation khi investing.com fail
+        (geo-block/network) → đánh dấu rõ `estimated:true`, KHÔNG trộn lẫn với confirmed.
+    Mỗi mục có `confirmed`, `estimated`, `source`.
+    """
+    confirmed: list[dict[str, Any]] = []
+    seen: set = set()
+
+    # 1) investing.com forward (PRIMARY — nguồn chuẩn nhất). Lọc medium+high.
+    inv = []
+    try:
+        import collect
+        inv = collect.scrape_investing_calendar_range(start, end, importances=("2", "3"))
+    except Exception as exc:
+        print(f"  investing.com forward scrape lỗi: {exc}", file=sys.stderr)
+    inv_ok = len(inv) > 0
+    for r in inv:
+        nm = (r.get("name") or "").strip()
+        d = r.get("date")
+        if not nm or not d or not (start.isoformat() <= d <= end.isoformat()):
+            continue
+        key = (d, _norm(nm))
+        if key in seen:
+            continue
+        seen.add(key)
+        confirmed.append({
+            "date": d, "name": nm, "type": "macro",
+            "impact": _inv_impact(r.get("importance")),
+            "forecast": r.get("forecast"), "previous": r.get("previous"),
+            "confirmed": True, "estimated": False, "source": "investing.com",
+        })
+
+    # 2) FOMC (Fed công bố trước 1 năm → CHẮC CHẮN)
+    for d_str in FOMC_DATES_2026:
+        if start.isoformat() <= d_str <= end.isoformat() and (d_str, "fomc") not in seen:
+            seen.add((d_str, "fomc"))
+            confirmed.append({"date": d_str, "name": "FOMC Meeting (Fed rate decision)",
+                              "release_id": 8, "type": "macro", "impact": "HIGH",
+                              "confirmed": True, "estimated": False, "source": "Fed schedule"})
+
+    if inv_ok:
+        confirmed.sort(key=lambda x: x["date"])
+        print(f"  CONFIRMED từ investing.com+FOMC: {len(confirmed)} mục")
+        return confirmed
+
+    # 3) Fallback: investing.com fail → FRED extrapolation, TẤT CẢ là ƯỚC TÍNH (gắn nhãn rõ)
+    print("  ⚠ investing.com forward không lấy được → dùng FRED extrapolation (ƯỚC TÍNH)", file=sys.stderr)
+    est = [{**e, "confirmed": False, "estimated": True} for e in fetch_fred_release_dates(start, end)]
+    out = confirmed + est
+    out.sort(key=lambda x: x["date"])
+    return out
+
+
 def main() -> int:
     today = date.today()
     end = today + timedelta(days=21)
     print(f"Fetching catalysts {today} → {end}...")
 
-    macro = fetch_fred_release_dates(today, end)
-    print(f"  {len(macro)} macro releases scheduled")
+    macro = build_macro_calendar(today, end)
+    n_conf = sum(1 for m in macro if m.get("confirmed"))
+    print(f"  {len(macro)} macro ({n_conf} confirmed, {len(macro)-n_conf} ước tính)")
 
     earnings = fetch_earnings_dates(today, end)
     # Deduplicate by (ticker, date)
