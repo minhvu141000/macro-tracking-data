@@ -41,27 +41,32 @@ run() {  # chạy 1 lệnh, log, không dừng cả script nếu lỗi non-criti
   # 1) Thu thập dữ liệu hôm nay (raw + FRED + cycle_context) — cần để quyết định + làm snapshot
   run python scripts/collect.py || { echo "collect FAIL → dừng"; exit 1; }
 
-  # 2) Có chỉ số US 'signal' công bố hôm nay không?
+  # 2) Đã có KẾT QUẢ THỰC (actual) cho phiên hôm nay chưa?
+  #    Đếm release signal có actual != None — KHÔNG dùng signal_release_count (chỉ là
+  #    lịch công bố, vẫn >0 cả khi phiên CHƯA đóng → tránh viết báo cáo rỗng lúc chạy bù
+  #    ngoài giờ, vd nửa đêm trước khi US mở cửa).
   SIG="$(python - <<'PY'
 import json, glob
 fs = sorted(glob.glob("data/raw/[0-9]*.json"))
 try:
     d = json.loads(open(fs[-1]).read())
-    print(int((d.get("release_summary") or {}).get("signal_release_count", 0)))
+    n = sum(1 for r in d.get("releases", [])
+            if not r.get("is_noise") and (r.get("parsed") or {}).get("actual") is not None)
+    print(n)
 except Exception:
     print(-1)
 PY
 )"
-  echo "signal_release_count hôm nay = $SIG"
+  echo "Số chỉ số US ĐÃ CÓ kết quả thực (actual) hôm nay = $SIG"
 
   if [ "$SIG" -gt 0 ]; then
-    # ----- NGÀY CÓ CÔNG BỐ → full /daily-macro (gồm báo cáo LLM, dashboard, push, Chrome) -----
-    echo "--- Có $SIG chỉ số → chạy /daily-macro đầy đủ (headless) ---"
+    # ----- ĐÃ CÓ kết quả thực → full /daily-macro (báo cáo LLM, dashboard, push, Chrome) -----
+    echo "--- Có $SIG chỉ số đã công bố → chạy /daily-macro đầy đủ (headless) ---"
     claude -p "/daily-macro" --dangerously-skip-permissions
     echo "--- /daily-macro exit=$? ---"
   else
-    # ----- NGÀY KHÔNG CÔNG BỐ → chỉ cập nhật rotation snapshot + dashboard + push -----
-    echo "--- Không có chỉ số US → chỉ lưu rotation snapshot, BỎ báo cáo LLM & Chrome ---"
+    # ----- Chưa có kết quả thực (phiên chưa đóng / ngày trống) → chỉ snapshot, BỎ báo cáo LLM -----
+    echo "--- Chưa có actual nào (phiên chưa đóng hoặc ngày trống) → chỉ lưu rotation snapshot, BỎ báo cáo LLM & Chrome ---"
     run python scripts/fetch_sectors.py
     run python scripts/fetch_cross_asset.py
     run python scripts/build_surprise_index.py

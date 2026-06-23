@@ -1,227 +1,320 @@
 window.MACRO_DATA = {
-  "last_updated": "2026-06-23T07:11:08.505695+00:00",
+  "last_updated": "2026-06-23T07:24:51.669579+00:00",
   "daily_releases": {
-    "date": "2026-06-23",
+    "date": "2026-06-22",
     "releases": [
       {
-        "name": "ADP Employment Change Weekly",
-        "time": "2026/06/23 08:15:00",
+        "name": "Fed Waller Speaks",
+        "time": "2026/06/22 09:00:00",
         "importance": "bull2",
         "actual": null,
         "forecast": null,
-        "previous": "25.50K",
-        "event_url": "https://www.investing.com/economic-calendar/adp-employment-change-weekly-2295",
+        "previous": null,
+        "event_url": "https://www.investing.com/economic-calendar/fed-waller-speaks-1997",
         "source": "investing.com",
         "parsed": {
           "actual": null,
           "forecast": null,
-          "previous": 25.5
+          "previous": null
         },
         "surprise": null,
         "vs_previous": null,
-        "group": "adp",
+        "group": "fed",
         "is_noise": false
       },
       {
-        "name": "Redbook (YoY)",
-        "time": "2026/06/23 08:55:00",
+        "name": "3-Month Bill Auction",
+        "time": "2026/06/22 11:30:00",
         "importance": "bull1",
-        "actual": null,
+        "actual": "3.695%",
         "forecast": null,
-        "previous": "9.4%",
-        "event_url": "https://www.investing.com/economic-calendar/redbook-911",
+        "previous": "3.640%",
+        "event_url": "https://www.investing.com/economic-calendar/3-month-bill-auction-568",
         "source": "investing.com",
         "parsed": {
-          "actual": null,
+          "actual": 3.695,
           "forecast": null,
-          "previous": 9.4
+          "previous": 3.64
         },
         "surprise": null,
-        "vs_previous": null,
-        "group": "fed_plumbing",
-        "is_noise": true
-      },
-      {
-        "name": "S&P Global Manufacturing PMI  (Jun)",
-        "time": "2026/06/23 09:45:00",
-        "importance": "bull3",
-        "actual": null,
-        "forecast": "54.6",
-        "previous": "55.1",
-        "event_url": "https://www.investing.com/economic-calendar/manufacturing-pmi-829",
-        "source": "investing.com",
-        "parsed": {
-          "actual": null,
-          "forecast": 54.6,
-          "previous": 55.1
+        "vs_previous": {
+          "delta": 0.055,
+          "direction": "up"
         },
-        "surprise": null,
-        "vs_previous": null,
-        "group": "spglobal_pmi",
-        "is_noise": false
-      },
-      {
-        "name": "S&P Global Composite PMI  (Jun)",
-        "time": "2026/06/23 09:45:00",
-        "importance": "bull2",
-        "actual": null,
-        "forecast": null,
-        "previous": "51.5",
-        "event_url": "https://www.investing.com/economic-calendar/s-p-global-composite-pmi-1492",
-        "source": "investing.com",
-        "parsed": {
-          "actual": null,
-          "forecast": null,
-          "previous": 51.5
-        },
-        "surprise": null,
-        "vs_previous": null,
-        "group": "spglobal_pmi",
-        "is_noise": false
-      },
-      {
-        "name": "S&P Global Services PMI  (Jun)",
-        "time": "2026/06/23 09:45:00",
-        "importance": "bull3",
-        "actual": null,
-        "forecast": "51.1",
-        "previous": "50.7",
-        "event_url": "https://www.investing.com/economic-calendar/services-pmi-1062",
-        "source": "investing.com",
-        "parsed": {
-          "actual": null,
-          "forecast": 51.1,
-          "previous": 50.7
-        },
-        "surprise": null,
-        "vs_previous": null,
-        "group": "spglobal_pmi",
-        "is_noise": false
-      },
-      {
-        "name": "Richmond Manufacturing Index  (Jun)",
-        "time": "2026/06/23 10:00:00",
-        "importance": "bull1",
-        "actual": null,
-        "forecast": "8",
-        "previous": "13",
-        "event_url": "https://www.investing.com/economic-calendar/richmond-manufacturing-index-263",
-        "source": "investing.com",
-        "parsed": {
-          "actual": null,
-          "forecast": 8.0,
-          "previous": 13.0
-        },
-        "surprise": null,
-        "vs_previous": null,
-        "group": "regional_fed",
-        "is_noise": false
-      },
-      {
-        "name": "Richmond Manufacturing Shipments  (Jun)",
-        "time": "2026/06/23 10:00:00",
-        "importance": "bull1",
-        "actual": null,
-        "forecast": null,
-        "previous": "16",
-        "event_url": "https://www.investing.com/economic-calendar/richmond-manufacturing-shipments-1510",
-        "source": "investing.com",
-        "parsed": {
-          "actual": null,
-          "forecast": null,
-          "previous": 16.0
-        },
-        "surprise": null,
-        "vs_previous": null,
-        "group": "regional_fed",
-        "is_noise": false
-      },
-      {
-        "name": "Richmond Services Index  (Jun)",
-        "time": "2026/06/23 10:00:00",
-        "importance": "bull1",
-        "actual": null,
-        "forecast": null,
-        "previous": "14",
-        "event_url": "https://www.investing.com/economic-calendar/richmond-services-index-1511",
-        "source": "investing.com",
-        "parsed": {
-          "actual": null,
-          "forecast": null,
-          "previous": 14.0
-        },
-        "surprise": null,
-        "vs_previous": null,
-        "group": "regional_fed",
-        "is_noise": false
-      },
-      {
-        "name": "2-Year Note Auction",
-        "time": "2026/06/23 13:00:00",
-        "importance": "bull2",
-        "actual": null,
-        "forecast": null,
-        "previous": "4.071%",
-        "event_url": "https://www.investing.com/economic-calendar/2-year-note-auction-569",
-        "source": "investing.com",
-        "parsed": {
-          "actual": null,
-          "forecast": null,
-          "previous": 4.071
-        },
-        "surprise": null,
-        "vs_previous": null,
         "group": "auctions",
         "is_noise": true
       },
       {
-        "name": "M2 Money Supply (MoM)  (May)",
-        "time": "2026/06/23 13:00:00",
+        "name": "6-Month Bill Auction",
+        "time": "2026/06/22 11:30:00",
         "importance": "bull1",
-        "actual": null,
+        "actual": "3.840%",
         "forecast": null,
-        "previous": "22.80T",
-        "event_url": "https://www.investing.com/economic-calendar/us-m2-money-supply-1999",
+        "previous": "3.680%",
+        "event_url": "https://www.investing.com/economic-calendar/6-month-bill-auction-679",
         "source": "investing.com",
         "parsed": {
-          "actual": null,
+          "actual": 3.84,
           "forecast": null,
-          "previous": 22.8
+          "previous": 3.68
         },
         "surprise": null,
-        "vs_previous": null,
-        "group": "money_credit",
-        "is_noise": false
+        "vs_previous": {
+          "delta": 0.16,
+          "direction": "up"
+        },
+        "group": "auctions",
+        "is_noise": true
       },
       {
-        "name": "API Weekly Crude Oil Stock",
-        "time": "2026/06/23 16:30:00",
-        "importance": "bull2",
-        "actual": null,
+        "name": "CFTC Aluminium speculative net positions",
+        "time": "2026/06/22 15:30:00",
+        "importance": "bull1",
+        "actual": "0.1K",
         "forecast": null,
-        "previous": "-8.330M",
-        "event_url": "https://www.investing.com/economic-calendar/api-weekly-crude-stock-656",
+        "previous": "0.4K",
+        "event_url": "https://www.investing.com/economic-calendar/cftc-aluminium-speculative-net-positions-1821",
         "source": "investing.com",
         "parsed": {
-          "actual": null,
+          "actual": 0.1,
           "forecast": null,
-          "previous": -8.33
+          "previous": 0.4
         },
         "surprise": null,
-        "vs_previous": null,
-        "group": "energy_inventory",
+        "vs_previous": {
+          "delta": -0.3,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
+      },
+      {
+        "name": "CFTC Copper speculative net positions",
+        "time": "2026/06/22 15:30:00",
+        "importance": "bull1",
+        "actual": "75.3K",
+        "forecast": null,
+        "previous": "74.5K",
+        "event_url": "https://www.investing.com/economic-calendar/cftc-copper-speculative-positions-1620",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 75.3,
+          "forecast": null,
+          "previous": 74.5
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.8,
+          "direction": "up"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
+      },
+      {
+        "name": "CFTC Corn speculative net positions",
+        "time": "2026/06/22 15:30:00",
+        "importance": "bull1",
+        "actual": "77.8K",
+        "forecast": null,
+        "previous": "103.6K",
+        "event_url": "https://www.investing.com/economic-calendar/cftc-corn-speculative-positions-1813",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 77.8,
+          "forecast": null,
+          "previous": 103.6
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -25.8,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
+      },
+      {
+        "name": "CFTC Crude Oil speculative net positions",
+        "time": "2026/06/22 15:30:00",
+        "importance": "bull2",
+        "actual": "124.5K",
+        "forecast": null,
+        "previous": "130.3K",
+        "event_url": "https://www.investing.com/economic-calendar/cftc-crude-oil-speculative-positions-1653",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 124.5,
+          "forecast": null,
+          "previous": 130.3
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -5.8,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
+      },
+      {
+        "name": "CFTC Gold speculative net positions",
+        "time": "2026/06/22 15:30:00",
+        "importance": "bull2",
+        "actual": "180.2K",
+        "forecast": null,
+        "previous": "173.8K",
+        "event_url": "https://www.investing.com/economic-calendar/cftc-gold-speculative-positions-1618",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 180.2,
+          "forecast": null,
+          "previous": 173.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 6.4,
+          "direction": "up"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
+      },
+      {
+        "name": "CFTC Nasdaq 100 speculative net positions",
+        "time": "2026/06/22 15:30:00",
+        "importance": "bull2",
+        "actual": "-8.9K",
+        "forecast": null,
+        "previous": "-1.3K",
+        "event_url": "https://www.investing.com/economic-calendar/cftc-nasdaq-100-speculative-positions-1959",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -8.9,
+          "forecast": null,
+          "previous": -1.3
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -7.6,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
+      },
+      {
+        "name": "CFTC Natural Gas speculative net positions",
+        "time": "2026/06/22 15:30:00",
+        "importance": "bull1",
+        "actual": "-173.5K",
+        "forecast": null,
+        "previous": "-194.0K",
+        "event_url": "https://www.investing.com/economic-calendar/cftc-natural-gas-speculative-positions-1820",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -173.5,
+          "forecast": null,
+          "previous": -194.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 20.5,
+          "direction": "up"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
+      },
+      {
+        "name": "CFTC S&P 500 speculative net positions",
+        "time": "2026/06/22 15:30:00",
+        "importance": "bull2",
+        "actual": "-194.0K",
+        "forecast": null,
+        "previous": "-205.6K",
+        "event_url": "https://www.investing.com/economic-calendar/cftc-s-p-500-speculative-positions-1619",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -194.0,
+          "forecast": null,
+          "previous": -205.6
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 11.6,
+          "direction": "up"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
+      },
+      {
+        "name": "CFTC Silver speculative net positions",
+        "time": "2026/06/22 15:30:00",
+        "importance": "bull1",
+        "actual": "24.5K",
+        "forecast": null,
+        "previous": "22.2K",
+        "event_url": "https://www.investing.com/economic-calendar/cftc-silver-speculative-positions-1621",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 24.5,
+          "forecast": null,
+          "previous": 22.2
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 2.3,
+          "direction": "up"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
+      },
+      {
+        "name": "CFTC Soybeans speculative net positions",
+        "time": "2026/06/22 15:30:00",
+        "importance": "bull1",
+        "actual": "117.6K",
+        "forecast": null,
+        "previous": "150.5K",
+        "event_url": "https://www.investing.com/economic-calendar/cftc-soybeans-speculative-positions-1811",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 117.6,
+          "forecast": null,
+          "previous": 150.5
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -32.9,
+          "direction": "down"
+        },
+        "group": "cftc_positions",
+        "is_noise": true
+      },
+      {
+        "name": "CFTC Wheat speculative net positions",
+        "time": "2026/06/22 15:30:00",
+        "importance": "bull1",
+        "actual": "-50.8K",
+        "forecast": null,
+        "previous": "-57.9K",
+        "event_url": "https://www.investing.com/economic-calendar/cftc-wheat-speculative-positions-1812",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -50.8,
+          "forecast": null,
+          "previous": -57.9
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 7.1,
+          "direction": "up"
+        },
+        "group": "cftc_positions",
         "is_noise": true
       }
     ],
     "release_summary": {
-      "signal_release_count": 8,
-      "noise_release_count": 3,
+      "signal_release_count": 1,
+      "noise_release_count": 13,
       "surprise_count": 0,
       "groups_present": [
-        "adp",
-        "money_credit",
-        "regional_fed",
-        "spglobal_pmi"
+        "fed"
       ],
       "surprised_groups": [],
       "day_surprise_score": {
@@ -8469,217 +8562,6 @@ window.MACRO_DATA = {
           "direction": "up"
         },
         "group": "cftc_positions",
-        "is_noise": true
-      }
-    ],
-    "2026-06-23": [
-      {
-        "name": "ADP Employment Change Weekly",
-        "time": "2026/06/23 08:15:00",
-        "importance": "bull2",
-        "actual": null,
-        "forecast": null,
-        "previous": "25.50K",
-        "event_url": "https://www.investing.com/economic-calendar/adp-employment-change-weekly-2295",
-        "source": "investing.com",
-        "parsed": {
-          "actual": null,
-          "forecast": null,
-          "previous": 25.5
-        },
-        "surprise": null,
-        "vs_previous": null,
-        "group": "adp",
-        "is_noise": false
-      },
-      {
-        "name": "Redbook (YoY)",
-        "time": "2026/06/23 08:55:00",
-        "importance": "bull1",
-        "actual": null,
-        "forecast": null,
-        "previous": "9.4%",
-        "event_url": "https://www.investing.com/economic-calendar/redbook-911",
-        "source": "investing.com",
-        "parsed": {
-          "actual": null,
-          "forecast": null,
-          "previous": 9.4
-        },
-        "surprise": null,
-        "vs_previous": null,
-        "group": "fed_plumbing",
-        "is_noise": true
-      },
-      {
-        "name": "S&P Global Manufacturing PMI  (Jun)",
-        "time": "2026/06/23 09:45:00",
-        "importance": "bull3",
-        "actual": null,
-        "forecast": "54.6",
-        "previous": "55.1",
-        "event_url": "https://www.investing.com/economic-calendar/manufacturing-pmi-829",
-        "source": "investing.com",
-        "parsed": {
-          "actual": null,
-          "forecast": 54.6,
-          "previous": 55.1
-        },
-        "surprise": null,
-        "vs_previous": null,
-        "group": "spglobal_pmi",
-        "is_noise": false
-      },
-      {
-        "name": "S&P Global Composite PMI  (Jun)",
-        "time": "2026/06/23 09:45:00",
-        "importance": "bull2",
-        "actual": null,
-        "forecast": null,
-        "previous": "51.5",
-        "event_url": "https://www.investing.com/economic-calendar/s-p-global-composite-pmi-1492",
-        "source": "investing.com",
-        "parsed": {
-          "actual": null,
-          "forecast": null,
-          "previous": 51.5
-        },
-        "surprise": null,
-        "vs_previous": null,
-        "group": "spglobal_pmi",
-        "is_noise": false
-      },
-      {
-        "name": "S&P Global Services PMI  (Jun)",
-        "time": "2026/06/23 09:45:00",
-        "importance": "bull3",
-        "actual": null,
-        "forecast": "51.1",
-        "previous": "50.7",
-        "event_url": "https://www.investing.com/economic-calendar/services-pmi-1062",
-        "source": "investing.com",
-        "parsed": {
-          "actual": null,
-          "forecast": 51.1,
-          "previous": 50.7
-        },
-        "surprise": null,
-        "vs_previous": null,
-        "group": "spglobal_pmi",
-        "is_noise": false
-      },
-      {
-        "name": "Richmond Manufacturing Index  (Jun)",
-        "time": "2026/06/23 10:00:00",
-        "importance": "bull1",
-        "actual": null,
-        "forecast": "8",
-        "previous": "13",
-        "event_url": "https://www.investing.com/economic-calendar/richmond-manufacturing-index-263",
-        "source": "investing.com",
-        "parsed": {
-          "actual": null,
-          "forecast": 8.0,
-          "previous": 13.0
-        },
-        "surprise": null,
-        "vs_previous": null,
-        "group": "regional_fed",
-        "is_noise": false
-      },
-      {
-        "name": "Richmond Manufacturing Shipments  (Jun)",
-        "time": "2026/06/23 10:00:00",
-        "importance": "bull1",
-        "actual": null,
-        "forecast": null,
-        "previous": "16",
-        "event_url": "https://www.investing.com/economic-calendar/richmond-manufacturing-shipments-1510",
-        "source": "investing.com",
-        "parsed": {
-          "actual": null,
-          "forecast": null,
-          "previous": 16.0
-        },
-        "surprise": null,
-        "vs_previous": null,
-        "group": "regional_fed",
-        "is_noise": false
-      },
-      {
-        "name": "Richmond Services Index  (Jun)",
-        "time": "2026/06/23 10:00:00",
-        "importance": "bull1",
-        "actual": null,
-        "forecast": null,
-        "previous": "14",
-        "event_url": "https://www.investing.com/economic-calendar/richmond-services-index-1511",
-        "source": "investing.com",
-        "parsed": {
-          "actual": null,
-          "forecast": null,
-          "previous": 14.0
-        },
-        "surprise": null,
-        "vs_previous": null,
-        "group": "regional_fed",
-        "is_noise": false
-      },
-      {
-        "name": "2-Year Note Auction",
-        "time": "2026/06/23 13:00:00",
-        "importance": "bull2",
-        "actual": null,
-        "forecast": null,
-        "previous": "4.071%",
-        "event_url": "https://www.investing.com/economic-calendar/2-year-note-auction-569",
-        "source": "investing.com",
-        "parsed": {
-          "actual": null,
-          "forecast": null,
-          "previous": 4.071
-        },
-        "surprise": null,
-        "vs_previous": null,
-        "group": "auctions",
-        "is_noise": true
-      },
-      {
-        "name": "M2 Money Supply (MoM)  (May)",
-        "time": "2026/06/23 13:00:00",
-        "importance": "bull1",
-        "actual": null,
-        "forecast": null,
-        "previous": "22.80T",
-        "event_url": "https://www.investing.com/economic-calendar/us-m2-money-supply-1999",
-        "source": "investing.com",
-        "parsed": {
-          "actual": null,
-          "forecast": null,
-          "previous": 22.8
-        },
-        "surprise": null,
-        "vs_previous": null,
-        "group": "money_credit",
-        "is_noise": false
-      },
-      {
-        "name": "API Weekly Crude Oil Stock",
-        "time": "2026/06/23 16:30:00",
-        "importance": "bull2",
-        "actual": null,
-        "forecast": null,
-        "previous": "-8.330M",
-        "event_url": "https://www.investing.com/economic-calendar/api-weekly-crude-stock-656",
-        "source": "investing.com",
-        "parsed": {
-          "actual": null,
-          "forecast": null,
-          "previous": -8.33
-        },
-        "surprise": null,
-        "vs_previous": null,
-        "group": "energy_inventory",
         "is_noise": true
       }
     ]
@@ -54616,16 +54498,6 @@ window.MACRO_DATA = {
       "key_takeaway": "Ngày vắng hard-data, chỉ có Fed Waller phát biểu và các sự kiện nhiễu; cross-asset risk-on nhẹ nhưng hard-data lạm phát còn nóng (Core PCE YoY 3.29%) nên Fed chưa có lý do dovish hẳn.",
       "body_preview": "# Vĩ mô Mỹ — 2026-06-22",
       "body": "# Vĩ mô Mỹ — 2026-06-22\n\n## Tóm tắt\nHôm nay không có chỉ số hard-data nào được công bố (không CPI/PCE/NFP/ISM/Retail) — `surprise_count = 0`. Sự kiện signal duy nhất là phát biểu của Thống đốc Fed Waller; còn lại là đấu giá tín phiếu 3M/6M và 11 dòng vị thế đầu cơ CFTC (đều là noise). Cross-asset nghiêng nhẹ risk-on (VIX ~16.8, HY spread thấp, lợi suất 10Y dịu về 4.46%), nhưng đây là phiên thiếu dữ liệu nên không đổi cục diện. Quan trọng: hard-data lạm phát VẪN nóng (Core PCE YoY 3.29%, CPI YoY 4.27%, PPI YoY 6.46%) — chưa có cơ sở để tuyên bố disinflation hay Fed dovish hẳn.\n\n## Chi tiết chỉ số được công bố hôm nay\n\n### Fed (Waller phát biểu) — KHÔNG có dữ liệu định lượng\n**Sự kiện:** Fed Waller Speaks (09:00 ET) | Actual/Forecast/Previous: không áp dụng (không phải data release).\n**Đánh giá:** Đây là sự kiện high-impact theo lịch (Fed speaker) nhưng không có con số `actual` để chấm surprise — `surprise_count` của ngày = 0. Waller là một trong những giọng nói chính sách được theo dõi sát; thị trường dùng phát biểu để hiệu chỉnh kỳ vọng lộ trình lãi suất, nhưng bản thân sự kiện không tạo \"beat/miss\" định lượng.\n\n**Đối chiếu bắt buộc (soft-signal vs hard-data):** Dù bất kỳ giọng điệu dovish nào từ Fed speaker có thể hỗ trợ tâm lý risk-on, **hard-data lạm phát thực tế còn nóng**: Core PCE YoY 3.29% (3-mo annualized 3.78%), CPI YoY 4.27% (3-mo annualized tới 8.2% do Energy bùng), PPI Final Demand YoY 6.46%. Nhóm Energy đang kéo lạm phát LÊN mạnh nhất (CPI Energy YoY +22.1%), chỉ có Core Goods kéo xuống (YoY +1.03%). Vì vậy tín hiệu hợp lý là \"thận trọng/cần xác nhận\", KHÔNG phải \"dovish đã xác nhận\". Fed khó có dư địa nới lỏng rõ rệt khi lạm phát tổng còn cách xa mục tiêu 2%.\n\n**Hàm ý Fed & thị trường:** Trung lập trong ngày. Catalyst lạm phát thực sự là PCE ngày mai (23/06) — đó mới là dữ liệu định đoạt lộ trình, không phải phiên phát biểu hôm nay.\n\n**Các sự kiện nhiễu (is_noise, ghi nhận ngắn):**\n- Đấu giá tín phiếu: 3-Month Bill 3.695% (trước 3.640%, +5.5bp); 6-Month Bill 3.840% (trước 3.680%, +16bp). Lợi suất ngắn hạn nhích lên nhẹ — phản ánh kỳ vọng Fed giữ lãi suất, nhất quán với bức tranh lạm phát còn nóng.\n- Vị thế đầu cơ CFTC (tuần): S&P 500 net short thu hẹp (−194.0K so −205.6K), Nasdaq 100 chuyển âm sâu hơn (−8.9K so −1.3K); Gold tăng net long (180.2K), Crude Oil giảm net long (124.5K); Corn/Soybeans bị cắt mạnh long. Đây là dữ liệu định vị, không phải tín hiệu macro — không phân tích sâu.\n\n## Market Pulse\n\n**Yields & Đường cong lãi suất:**\n- 10Y: 4.46% (−0.67% so phiên trước) | 2Y: 4.19% (−0.24%) | Spread 2Y-10Y (T10Y2Y): +0.27 → đường cong dốc lên bình thường (không đảo).\n- Breakeven 10Y (T10YIE): 2.23% → kỳ vọng lạm phát thị trường nhỉnh trên mục tiêu 2% của Fed, đã dịu nhẹ (−0.9%).\n\n**USD & Cross-asset:**\n- DXY proxy (DTWEXBGS): 120.40 (+0.85%) → USD mạnh lên — áp lực nhẹ lên EM và commodities định giá USD.\n- VIX: 16.78 → vùng risk-on (<20), dù nhích +2.3% trong phiên.\n- WTI: $84.65/bbl (−4.48%) → dầu hạ nhiệt, giảm bớt áp lực chi phí năng lượng; tích cực cho lạm phát forward nhưng tiêu cực ngắn hạn cho XLE.\n\n**Credit Spreads:**\n- HY OAS: 2.66% (266 bp, đi ngang) | IG OAS: 0.74% (74 bp, đi ngang).\n- Spreads ở vùng hẹp, không có dấu hiệu căng thẳng tín dụng → risk appetite vẫn lành mạnh.\n\n**Vị trí chu kỳ (từ `cycle_context`):**\n- Sahm Rule: +0.10 (an toàn, chưa kích hoạt — ngưỡng 0.50). Thất nghiệp 3mo-avg 4.3% vs đáy 12 tháng 4.2%.\n- Đường cong: regime `normal` (2s10s +0.27, 10Y-3M +0.63; 116 phiên không đảo). Không có tín hiệu suy thoái cận kề.\n\n**Economic Surprise Index (từ `surprise_index.json`, as_of 2026-06-18):**\n- Growth surprise 1M: +7.65 (beating mạnh, xu hướng rising) | Inflation surprise 1M: −6.74 (missing — lạm phát công bố thấp hơn kỳ vọng dù mức tuyệt đối vẫn cao).\n- Data đang vượt kỳ vọng tăng trưởng → risk-on tailwind; nhưng lưu ý inflation \"missing\" là so với forecast, không có nghĩa lạm phát đã về đích.\n\n**Tổng đánh giá cross-asset:** Risk-on nhẹ (VIX <20, spreads hẹp, growth surprise dương, yields dịu) — nhưng USD mạnh + hard-data lạm phát còn nóng giữ cục diện ở mức \"thận trọng tích cực\", chưa phải risk-on bền vững.\n\n## Bối cảnh xu hướng (so với 30 ngày qua)\n\n**Cung đường regime tháng 6: từ \"narrow tech\" → \"rotation\" → \"hawkish hold\" → trung tính chờ PCE.** Tháng 6 đã đi qua bốn pha rõ rệt, và phiên hôm nay là điểm nghỉ chờ catalyst:\n\n1. **Pha narrow risk-on (22/5 → 03/6):** XLK độc dẫn cực mạnh (1M có lúc +22.89% ngày 01/6), breadth fragile, defensives bị penalize. Goldilocks combo (ISM Mfg 54.0 beat + Prices Paid 82.1 shock cool) là DCF dream chỉ ưu ái duy nhất tech.\n2. **Pha rotation (04/6 → 08/6) — turning point lớn nhất tháng:** Ngày **04/6** Tech leadership CRACK (XLK 1M giảm 4.5pp chỉ trong 1 phiên xuống +16.63%) khi labor bắt đầu nứt (Claims 225K breakout + Challenger Job Cuts spike +16% MoM). Sau đó NFP T5 +172k beat mạnh (05/6) + AVGO disappoint + **VIX spike +39.7% lên 21.51** (08/6) chôn vùi narrative \"XLK độc dẫn\". Dòng tiền xoay sang XLV (defensive) và XLF/XLI (cyclical), rate-sensitive XLRE/XLU bị yields jump (10Y +9bp lên 4.55%) trừng phạt.\n3. **Pha disinflation relief (10/6 → 13/6):** Bộ ba dovish liên tiếp — Core CPI MoM +0.2% miss (10/6), Core PPI YoY 4.9% vs 5.4% fcst (11/6), Michigan inflation exp 5Y rơi về 3.4% (12/6) — kéo yields về 4.45%, VIX về 19.4, kích relief rally (XLK +3.73%, XLI +3.24% ngày 11/6). XLV giữ vững leadership 1M.\n4. **Pha hawkish hold (16/6 → 18/6) — turning point thứ hai:** **FOMC 17/6** giữ 3.75% nhưng **dot plot dịch LÊN** (median năm thứ nhất 3.1%→3.6%) — Fed bớt kỳ vọng cắt. Đồng thời hard-data tăng trưởng bùng nổ (Retail Sales +0.9%, Pending Home Sales +3.8% shock-above, Philly Fed bật lên 10.3 ngày 18/6) trong khi Import Prices +1.9% MoM nóng bất ngờ. Tổ hợp \"kinh tế quá khỏe để cắt + lạm phát nhập khẩu chưa cho nới\".\n\n**Vị trí hôm nay (22/6):** Phiên trung tính, thiếu data, nằm GIỮA FOMC hawkish hold (17/6) và PCE (23/6). Cross-asset đã dịu lại so với đỉnh căng thẳng đầu tháng — VIX từ 21.51 (08/6) về 16.78, 10Y từ 4.55% về 4.46%, HY OAS từ ~278bp về 266bp. Đây là sự bình ổn của thị trường, KHÔNG phải xác nhận dovish.\n\n**Mâu thuẫn cốt lõi xuyên suốt tháng (vẫn chưa giải quyết):** Soft-data/survey và market-implied đều nghiêng disinflation + risk-on, NHƯNG hard-data lạm phát đứng yên ở mức cao suốt cả tháng — CPI YoY 4.27% và Core PCE YoY 3.29% gần như không nhúc nhích từ 22/5 đến nay, với Energy CPI YoY +22.1% là động cơ chính. Growth surprise mạnh (+7.65) cộng Sahm an toàn (0.10) + đường cong normal (+0.27) ⇒ **regime nền vẫn là expansion/no-landing, KHÔNG phải slowdown**. Hàm ý sector nhất quán: nghiêng cyclicals/growth (XLK, XLI, XLF) hơn defensives thuần (XLU, XLP), nhưng \"higher-for-longer\" sau dot plot dịch lên giữ áp lực định giá lên duration-heavy (XLK, XLRE). PCE ngày mai là mảnh ghép quyết định liệu nghịch lý soft-vs-hard này nghiêng về bên nào cho phần còn lại của Q3.\n\n## Cảnh báo & catalyst sắp tới\n\n**Ngày mai (2026-06-23):**\n- Personal Income & Outlays (PCE) — chỉ số lạm phát Fed theo dõi số 1.\n\n**Tuần này (đến 2026-06-29):**\n- 2026-06-23: Personal Income & Outlays (PCE)\n- 2026-06-24: Job Openings & Labor Turnover (JOLTS)\n- 2026-06-25: Initial Jobless Claims\n- 2026-06-29: Producer Price Index (PPI)\n- (Fed speaker đã diễn ra: Waller 22/06)\n\n**Theo dõi đặc biệt:**\nPCE ngày mai là catalyst quan trọng nhất tuần — đây mới là hard-data định đoạt lộ trình Fed, bù cho phiên thiếu dữ liệu hôm nay. Với Core PCE YoY hiện 3.29% và 3-mo annualized 3.78% (cao hơn YoY → đà gần đây chưa hạ nhiệt), một con số PCE nóng sẽ củng cố lập trường thận trọng và phủ nhận bất kỳ kỳ vọng dovish sớm nào. JOLTS (24/06) và Jobless Claims (25/06) sẽ bổ sung góc nhìn cầu lao động."
-    },
-    {
-      "file": "2026-06-23.md",
-      "date": "2026-06-23",
-      "schema_version": "1.1",
-      "surprise_count": "0",
-      "regime_signal": "neutral",
-      "key_takeaway": "Ngày toàn soft-data (S&P Global PMI, Richmond Fed, ADP tuần, M2) không có chỉ số shock — khảo sát PMI dự báo dịch vụ ấm lên nhẹ nhưng hard-data lạm phát (Core PCE 3.3%, CPI 4.3% YoY) vẫn nóng nên chưa thể kết luận dovish một chiều.",
-      "body_preview": "# Vĩ mô Mỹ — 2026-06-23",
-      "body": "# Vĩ mô Mỹ — 2026-06-23\n\n## Tóm tắt\nPhiên 23/06 chỉ có soft-data và chỉ số phụ: bộ S&P Global Flash PMI (Mfg/Services/Composite), Richmond Fed Manufacturing/Services, ADP Employment Change tuần, và M2 Money Supply. `surprise_count = 0` — không có chỉ số nào lệch >0.5σ so với forecast (phần lớn chưa có actual tại thời điểm thu thập). Forecast cho thấy bức tranh tăng trưởng \"ổn định, hơi mềm ở biên\": Mfg PMI dự kiến hạ nhẹ về 54.6 (từ 55.1) nhưng vẫn mở rộng tốt, Services nhích lên 51.1 (từ 50.7), trong khi Richmond Fed Mfg được dự báo giảm về +8 (từ +13).\nTín hiệu chung là **neutral**: dữ liệu tăng trưởng vẫn vững (ESI growth +7.7, \"beating mạnh\") nhưng đây toàn là khảo sát mềm. Quan trọng — `hard_data_hot = true`: lạm phát thực tế còn nóng (Core PCE YoY 3.29%, CPI YoY 4.27%, 3-mo annualized CPI tới 8.2%), nên KHÔNG được đọc các khảo sát này thành \"disinflation đã xác nhận\" hay \"Fed dovish hẳn\".\n\n## Chi tiết chỉ số được công bố hôm nay\n\n### S&P Global Flash PMI (Jun) — IN-LINE (chưa có actual)\n**Manufacturing PMI:** Forecast: 54.6 | Previous: 55.1 (>50 = mở rộng)\n**Services PMI:** Forecast: 51.1 | Previous: 50.7\n**Composite PMI:** Previous: 51.5 (không có forecast)\n\n| Component | Forecast | Previous | Signal |\n|---|---|---|---|\n| Manufacturing | 54.6 | 55.1 | Mở rộng vững nhưng momentum hạ nhẹ — vẫn trên 50 rõ rệt |\n| Services | 51.1 | 50.7 | Nhích lên — dịch vụ (~80% GDP) ấm dần ở biên |\n| Composite | — | 51.5 | Cả nền kinh tế còn mở rộng, không suy thoái |\n\n**Đánh giá:** Bức tranh \"tăng trưởng ổn định\" — Manufacturing dẫn dắt (54.6) cao bất thường so với chu kỳ gần đây và đồng pha với hard-data sản xuất khoẻ (Durable Goods +8.0% MoM, Factory Orders +4.8% MoM, Industrial Production +1.7% YoY). Services chỉ vừa trên ngưỡng mở rộng (51.1) — đây là phần cần theo dõi vì dịch vụ lõi chính là nơi lạm phát còn sticky.\n**Lưu ý đối chiếu (hard_data_hot):** PMI tăng trưởng tốt KHÔNG đồng nghĩa Fed sắp nới. S&P Global PMI là khảo sát mềm; điều quyết định lộ trình Fed là hard-data giá — Core PCE YoY vẫn 3.29% (xa mục tiêu 2%), CPI YoY 4.27%, và Core Services CPI 3-mo annualized 4.16% (dịch vụ lõi = thứ Fed lo nhất). Activity ấm + lạm phát còn nóng nghiêng về kịch bản \"Fed giữ nguyên/kiên nhẫn\", không phải cắt nhanh.\n**Hàm ý thị trường:** Mfg mạnh hỗ trợ XLI/XLB; Services chỉ nhỉnh trên 50 chưa đủ tạo đột phá cho XLC/XLY. Prices-paid sub-index của PMI (nếu công bố cao) sẽ là cảnh báo cho margin doanh nghiệp.\n\n### Richmond Fed (Jun) — IN-LINE (chưa có actual)\n**Manufacturing Index:** Forecast: +8 | Previous: +13\n**Manufacturing Shipments:** Previous: +16 (không có forecast)\n**Services Index:** Previous: +14 (không có forecast)\n\n| Component | Forecast | Previous | Nhận xét |\n|---|---|---|---|\n| Manufacturing Index | +8 | +13 | Dự báo hạ nhưng vẫn dương — mở rộng chậm lại, không co rút |\n| Mfg Shipments | — | +16 | Giao hàng kỳ trước mạnh — đơn hàng đang được thực hiện |\n| Services Index | — | +14 | Dịch vụ vùng còn tích cực |\n\n**Đánh giá:** Richmond Fed là khảo sát vùng (district survey) — cùng họ soft-data với S&P Global PMI. Forecast +8 (giảm từ +13) cho tín hiệu sản xuất vùng Đông Nam Mỹ hạ nhiệt nhẹ nhưng vẫn ở vùng dương (mở rộng). Hơi lệch chiều với S&P Mfg PMI vẫn mạnh (54.6) — chênh lệch này là bình thường giữa các khảo sát khác phạm vi mẫu; không nên đọc quá sâu một district survey đơn lẻ.\n**Hàm ý:** Tín hiệu trung tính cho industrials. Theo dõi sub-index giá/việc làm của Richmond để bắt sớm áp lực chi phí đầu vào.\n\n### ADP Employment Change (tuần) — chưa có actual\n**Previous:** +25.50K (không có forecast)\nĐây là số việc làm khu vực tư nhân theo tuần của ADP — chỉ số tần suất cao, nhiễu hơn báo cáo tháng. Kỳ trước +25.5K cho thấy thị trường lao động tư nhân vẫn tạo việc làm nhưng nhịp độ khiêm tốn. Đặt cạnh hard-data: NFP tháng 5 +172K (PAYEMS +0.108% MoM), thất nghiệp giữ 4.3%, AHE YoY 3.45% — labor market vẫn \"soft-landing\", không xuất hiện vết nứt. Sahm Rule chỉ +0.10 (an toàn), chưa có tín hiệu suy thoái lao động.\n**Lưu ý:** Continuing Claims (CCSA) đang nhích lên 1.81M (+1.3%) — tốc độ tìm việc lại chậm dần là điểm cần canh, dù Initial Claims tuần mới nhất 226K vẫn thấp lành mạnh.\n\n### M2 Money Supply / Money & Credit (May) — chưa có actual\n**Previous:** 22.80T (không có forecast)\nM2 (cung tiền — nhóm money credit) ~22.8 nghìn tỷ USD. Đây là chỉ số nền (background), ít gây phản ứng thị trường trong ngày. M2 tăng trưởng dương trở lại nhiều tháng qua là một trong những lý do thanh khoản hệ thống còn dồi dào — đồng pha với điều kiện tài chính nới (NFCI −0.505, vùng lỏng). Liên hệ lạm phát: thanh khoản dồi dào + cầu còn khoẻ (Retail Sales +0.88% MoM) là lý do hard-data giá chưa hạ nhanh.\n\n> **Chỉ số nhiễu (is_noise):** Redbook YoY (kỳ trước +9.4% — doanh thu bán lẻ chuỗi lớn vẫn mạnh, ủng hộ consumer còn chi tiêu), 2-Year Note Auction (lợi suất kỳ trước 4.071%), API Weekly Crude Stock (kỳ trước −8.33M, tồn kho dầu rút mạnh). Không phân tích sâu.\n\n## Market Pulse\n\n**Yields & Đường cong lãi suất:**\n- 10Y: 4.46% (−3 bp) | 2Y: 4.19% (−1 bp) | Spread 2Y-10Y (T10Y2Y): +0.27 → đường cong dốc lên bình thường (normal, 116 phiên)\n- Breakeven 10Y: 2.23% (−2 bp) → kỳ vọng lạm phát thị trường nhích nhẹ về phía mục tiêu Fed 2%, dù vẫn trên 2% — thị trường chưa hết lo lạm phát nhưng không hoảng loạn.\n\n**USD & Cross-asset:**\n- USD Index (Broad): 120.40 (+0.85%) → USD mạnh lên — áp lực cho hàng hoá và tài sản EM, hỗ trợ giảm giá hàng nhập (lực kéo lạm phát xuống biên).\n- VIX: 16.78 → risk-on (<20), tâm lý bình ổn.\n- WTI: $84.65/bbl (−4.5%) → dầu hạ mạnh trong tuần. Tích cực cho lạm phát headline phía trước, nhưng lưu ý CPI Energy tháng 5 vẫn nóng (3-mo annualized +104%, YoY +22.1%) — nến giảm dầu gần đây CHƯA phản ánh vào số tháng 5.\n\n**Credit Spreads:**\n- HY OAS: 266 bp (0 bp) | IG OAS: 74 bp (0 bp)\n- Spreads đứng yên ở vùng hẹp → không có credit stress, risk appetite lành mạnh.\n\n**Vị trí chu kỳ (cycle_context):**\n- Sahm Rule: +0.10 (an toàn, chưa kích hoạt — ngưỡng 0.50). Thất nghiệp 3mo-avg 4.3% vs đáy 12 tháng 4.2%.\n- Đường cong: regime normal — 2s10s +0.27, 10Y-3M +0.63 (chưa từng đảo trong cửa sổ dữ liệu). Không có tín hiệu suy thoái cận kề.\n\n**Economic Surprise Index:**\n- Growth surprise 1M: +7.65 (beating mạnh, xu hướng rising) | Inflation surprise 1M: −6.74 (missing — số lạm phát ra thấp hơn kỳ vọng gần đây)\n- Data tổng thể đang vượt kỳ vọng tăng trưởng → risk-on tailwind. NHƯNG inflation surprise âm là so với kỳ vọng ngắn hạn — mức tuyệt đối hard-data lạm phát vẫn cao (Core PCE 3.29%).\n\n**Tổng đánh giá cross-asset:** Risk-on nhẹ — VIX thấp, spreads hẹp, growth surprise dương, đường cong bình thường. Nhưng USD mạnh + lạm phát hard-data còn nóng giữ cho bức tranh là \"risk-on có kiểm soát\", chưa phải tín hiệu nới lỏng dứt khoát.\n\n## Bối cảnh xu hướng (so với 30 ngày qua)\n\nTháng 5–6 vừa qua chứng kiến **ba turning point lớn** định hình regime hiện tại — phiên neutral hôm nay là điểm tạm nghỉ giữa các catalyst, không phải đảo chiều:\n\n**1. Đỉnh \"XLK độc dẫn\" → rotation crack (22/5 → 04/6).** Cuối tháng 5 thị trường là risk-on cực hẹp: XLK leo tới +22.89% 1M (01/6) khi goldilocks combo ISM Mfg 54.0 beat + Prices Paid 82.1 shock-miss tạo \"DCF dream\". Nhưng breadth luôn fragile (10/11 sector âm ngày 01/6). Đến **04/6 — ngày rotation lớn nhất kể từ khi system hoạt động** — leadership tech CRACK: XLK −1.56% với 1M de-rate 4.5pp chỉ trong 1 phiên, trong khi 9/11 sector xanh (XLV +3.07%, XLF +2.59%). Trigger là **labor cracking**: Initial Claims breakout 225K + Challenger Job Cuts YoY đảo từ −20.9% sang +3.4%. AVGO disappoint (suy ra từ XLK −5.92% tuần) + VIX spike +39.7% (16→21.5) chốt lại: kỷ nguyên tech-độc-dẫn đã kết thúc.\n\n**2. Disinflation relief rally (10/6 → 13/6).** Sau cú VIX spike đầu tháng, bộ ba **CPI (10/6) + PPI (11/6) + Michigan (12/6)** đảo chiều tâm lý: Core CPI MoM +0.2% (dưới fcst 0.3%), Core PPI YoY 4.9% (vs 5.4% fcst — shock-miss), Michigan 5Y inflation exp rơi về 3.4%. 10Y yield rút từ đỉnh 4.55% về 4.45%, VIX 22.2→19.4, SPY +1.7% ngày 11/6. Đây là đáy của giai đoạn \"disinflation đang quay lại\" — nhưng cảnh báo nhất quán: **3-mo annualized CPI vẫn 8.2%, Core PCE 3.29%** — soft data dovish chưa được hard data xác nhận.\n\n**3. Hawkish hold tại FOMC (17/6) — đảo lại narrative dovish.** Fed giữ 3.75% đúng dự báo nhưng **dot plot dịch LÊN** (median năm đầu 3.1%→3.6%), đồng thời Retail Sales +0.9% MoM + Pending Home Sales +3.8% (cả hai shock-above) → tổ hợp \"kinh tế quá khỏe để cắt nhanh\". Đây là lý do phiên 18/6 (Philly Fed bật 10.3) và hôm nay chỉ là **risk-on chiến thuật do growth beat**, KHÔNG phải xác nhận dovish.\n\n**Vị trí hôm nay trong xu hướng:** Sau ba turning point, regime đã ổn định thành **\"growth vững + lạm phát sticky + Fed kiên nhẫn\"**. Các trục dữ liệu định lượng so 30 ngày:\n- **Yields:** 10Y đi từ 4.57% (22/5) → đỉnh 4.55–4.56% (NFP 05/6) → 4.46% hôm nay; đường cong 2s10s **dẹt dần từ +0.49 (22/5) xuống +0.27** (−22bp) — flattening bền là tín hiệu thị trường vẫn price Fed giữ-lâu ở đầu ngắn.\n- **Vol & credit:** VIX từ 16.8 (22/5) → spike 21.5 (08/6) → về 16.78 hôm nay; HY OAS thu hẹp đều 278→266bp — credit chưa hề stress qua suốt biến động.\n- **Lạm phát:** hard-data đi ngang ở vùng cao (CPI YoY 3.8%→4.27%, Core PCE giữ 3.29%) trong khi inflation surprise 1M âm (−6.74) — tức số ra thấp hơn kỳ vọng nhưng mức tuyệt đối chưa về gần 2%. Đây là mâu thuẫn cốt lõi giữ Fed \"kẹt\".\n- **Tăng trưởng:** ESI growth dương bền (+7.65, rising), nhưng GDPNow Q2 đã bị cắt dần 3.8%→3.0%→2.8% — tăng trưởng vững nhưng momentum đỉnh đã qua.\n\n**Hàm ý sector (nhất quán cycle_context):** Sahm +0.10 chưa trigger + đường cong normal +0.27 → vẫn ưu tiên **cyclicals hơn defensives thuần**, nhưng dot-plot hawkish + yields đầu-ngắn cao kiềm chế re-rating mạnh cho duration. Cấu trúc leadership từ 04/6 vẫn giữ: **XLV** (defensive bid bền, RS 1M dẫn đầu), **XLI** (capex cycle on — Durable Goods +8%, ISM Mfg 54, PMI Mfg 54.6 hôm nay xác nhận) là hai trục mạnh nhất; **XLK** chuyển từ độc-dẫn sang \"stalking/light OW\" tùy disinflation; **XLU/XLRE** bị kẹp giữa yields cao đầu-ngắn và thiếu growth catalyst → laggard; **XLE** mất momentum khi WTI sập về $84.65 (−4.5%). PPI 29/6 là catalyst quyết định liệu nhánh disinflation hay nhánh hawkish thắng thế cho phần còn lại của Q3.\n\n## Cảnh báo & catalyst sắp tới\n\n**Ngày mai (2026-06-24):**\n- Job Openings & Labor Turnover (JOLTS) — đo độ tight của thị trường lao động (kỳ trước job openings vọt lên 7.62M, +10.6% MoM).\n\n**Tuần này (đến 2026-06-30):**\n- 24/06: JOLTS (Job Openings & Labor Turnover)\n- 25/06: Initial Jobless Claims\n- 29/06: Producer Price Index (PPI)\n\n**Theo dõi đặc biệt:**\nPPI ngày 29/06 là catalyst lạm phát quan trọng nhất trong tuần — PPI Final Demand đang nóng (YoY 6.46%, 3-mo annualized tới 13.2%) và là chỉ báo dẫn (pipeline) cho Core CPI 2-3 tháng tới. Trong bối cảnh `hard_data_hot = true`, một PPI nóng tiếp sẽ phủ nhận luôn các tín hiệu \"dovish\" mềm từ PMI hôm nay và đẩy kỳ vọng Fed về phía \"giữ lâu hơn\". JOLTS ngày mai bổ sung lát cắt cầu lao động: nếu job openings tiếp tục cao, áp lực lương (do đó dịch vụ lõi) còn dai dẳng."
     }
   ],
   "monthly_reports": [
@@ -54701,8 +54573,7 @@ window.MACRO_DATA = {
     "2026-06-16",
     "2026-06-17",
     "2026-06-18",
-    "2026-06-22",
-    "2026-06-23"
+    "2026-06-22"
   ],
   "sectors": {
     "schema_version": "1.1",
@@ -115335,14 +115206,14 @@ window.MACRO_DATA = {
     }
   },
   "latest_daily": {
-    "file": "2026-06-23.md",
-    "date": "2026-06-23",
+    "file": "2026-06-22.md",
+    "date": "2026-06-22",
     "schema_version": "1.1",
     "surprise_count": "0",
     "regime_signal": "neutral",
-    "key_takeaway": "Ngày toàn soft-data (S&P Global PMI, Richmond Fed, ADP tuần, M2) không có chỉ số shock — khảo sát PMI dự báo dịch vụ ấm lên nhẹ nhưng hard-data lạm phát (Core PCE 3.3%, CPI 4.3% YoY) vẫn nóng nên chưa thể kết luận dovish một chiều.",
-    "body_preview": "# Vĩ mô Mỹ — 2026-06-23",
-    "body": "# Vĩ mô Mỹ — 2026-06-23\n\n## Tóm tắt\nPhiên 23/06 chỉ có soft-data và chỉ số phụ: bộ S&P Global Flash PMI (Mfg/Services/Composite), Richmond Fed Manufacturing/Services, ADP Employment Change tuần, và M2 Money Supply. `surprise_count = 0` — không có chỉ số nào lệch >0.5σ so với forecast (phần lớn chưa có actual tại thời điểm thu thập). Forecast cho thấy bức tranh tăng trưởng \"ổn định, hơi mềm ở biên\": Mfg PMI dự kiến hạ nhẹ về 54.6 (từ 55.1) nhưng vẫn mở rộng tốt, Services nhích lên 51.1 (từ 50.7), trong khi Richmond Fed Mfg được dự báo giảm về +8 (từ +13).\nTín hiệu chung là **neutral**: dữ liệu tăng trưởng vẫn vững (ESI growth +7.7, \"beating mạnh\") nhưng đây toàn là khảo sát mềm. Quan trọng — `hard_data_hot = true`: lạm phát thực tế còn nóng (Core PCE YoY 3.29%, CPI YoY 4.27%, 3-mo annualized CPI tới 8.2%), nên KHÔNG được đọc các khảo sát này thành \"disinflation đã xác nhận\" hay \"Fed dovish hẳn\".\n\n## Chi tiết chỉ số được công bố hôm nay\n\n### S&P Global Flash PMI (Jun) — IN-LINE (chưa có actual)\n**Manufacturing PMI:** Forecast: 54.6 | Previous: 55.1 (>50 = mở rộng)\n**Services PMI:** Forecast: 51.1 | Previous: 50.7\n**Composite PMI:** Previous: 51.5 (không có forecast)\n\n| Component | Forecast | Previous | Signal |\n|---|---|---|---|\n| Manufacturing | 54.6 | 55.1 | Mở rộng vững nhưng momentum hạ nhẹ — vẫn trên 50 rõ rệt |\n| Services | 51.1 | 50.7 | Nhích lên — dịch vụ (~80% GDP) ấm dần ở biên |\n| Composite | — | 51.5 | Cả nền kinh tế còn mở rộng, không suy thoái |\n\n**Đánh giá:** Bức tranh \"tăng trưởng ổn định\" — Manufacturing dẫn dắt (54.6) cao bất thường so với chu kỳ gần đây và đồng pha với hard-data sản xuất khoẻ (Durable Goods +8.0% MoM, Factory Orders +4.8% MoM, Industrial Production +1.7% YoY). Services chỉ vừa trên ngưỡng mở rộng (51.1) — đây là phần cần theo dõi vì dịch vụ lõi chính là nơi lạm phát còn sticky.\n**Lưu ý đối chiếu (hard_data_hot):** PMI tăng trưởng tốt KHÔNG đồng nghĩa Fed sắp nới. S&P Global PMI là khảo sát mềm; điều quyết định lộ trình Fed là hard-data giá — Core PCE YoY vẫn 3.29% (xa mục tiêu 2%), CPI YoY 4.27%, và Core Services CPI 3-mo annualized 4.16% (dịch vụ lõi = thứ Fed lo nhất). Activity ấm + lạm phát còn nóng nghiêng về kịch bản \"Fed giữ nguyên/kiên nhẫn\", không phải cắt nhanh.\n**Hàm ý thị trường:** Mfg mạnh hỗ trợ XLI/XLB; Services chỉ nhỉnh trên 50 chưa đủ tạo đột phá cho XLC/XLY. Prices-paid sub-index của PMI (nếu công bố cao) sẽ là cảnh báo cho margin doanh nghiệp.\n\n### Richmond Fed (Jun) — IN-LINE (chưa có actual)\n**Manufacturing Index:** Forecast: +8 | Previous: +13\n**Manufacturing Shipments:** Previous: +16 (không có forecast)\n**Services Index:** Previous: +14 (không có forecast)\n\n| Component | Forecast | Previous | Nhận xét |\n|---|---|---|---|\n| Manufacturing Index | +8 | +13 | Dự báo hạ nhưng vẫn dương — mở rộng chậm lại, không co rút |\n| Mfg Shipments | — | +16 | Giao hàng kỳ trước mạnh — đơn hàng đang được thực hiện |\n| Services Index | — | +14 | Dịch vụ vùng còn tích cực |\n\n**Đánh giá:** Richmond Fed là khảo sát vùng (district survey) — cùng họ soft-data với S&P Global PMI. Forecast +8 (giảm từ +13) cho tín hiệu sản xuất vùng Đông Nam Mỹ hạ nhiệt nhẹ nhưng vẫn ở vùng dương (mở rộng). Hơi lệch chiều với S&P Mfg PMI vẫn mạnh (54.6) — chênh lệch này là bình thường giữa các khảo sát khác phạm vi mẫu; không nên đọc quá sâu một district survey đơn lẻ.\n**Hàm ý:** Tín hiệu trung tính cho industrials. Theo dõi sub-index giá/việc làm của Richmond để bắt sớm áp lực chi phí đầu vào.\n\n### ADP Employment Change (tuần) — chưa có actual\n**Previous:** +25.50K (không có forecast)\nĐây là số việc làm khu vực tư nhân theo tuần của ADP — chỉ số tần suất cao, nhiễu hơn báo cáo tháng. Kỳ trước +25.5K cho thấy thị trường lao động tư nhân vẫn tạo việc làm nhưng nhịp độ khiêm tốn. Đặt cạnh hard-data: NFP tháng 5 +172K (PAYEMS +0.108% MoM), thất nghiệp giữ 4.3%, AHE YoY 3.45% — labor market vẫn \"soft-landing\", không xuất hiện vết nứt. Sahm Rule chỉ +0.10 (an toàn), chưa có tín hiệu suy thoái lao động.\n**Lưu ý:** Continuing Claims (CCSA) đang nhích lên 1.81M (+1.3%) — tốc độ tìm việc lại chậm dần là điểm cần canh, dù Initial Claims tuần mới nhất 226K vẫn thấp lành mạnh.\n\n### M2 Money Supply / Money & Credit (May) — chưa có actual\n**Previous:** 22.80T (không có forecast)\nM2 (cung tiền — nhóm money credit) ~22.8 nghìn tỷ USD. Đây là chỉ số nền (background), ít gây phản ứng thị trường trong ngày. M2 tăng trưởng dương trở lại nhiều tháng qua là một trong những lý do thanh khoản hệ thống còn dồi dào — đồng pha với điều kiện tài chính nới (NFCI −0.505, vùng lỏng). Liên hệ lạm phát: thanh khoản dồi dào + cầu còn khoẻ (Retail Sales +0.88% MoM) là lý do hard-data giá chưa hạ nhanh.\n\n> **Chỉ số nhiễu (is_noise):** Redbook YoY (kỳ trước +9.4% — doanh thu bán lẻ chuỗi lớn vẫn mạnh, ủng hộ consumer còn chi tiêu), 2-Year Note Auction (lợi suất kỳ trước 4.071%), API Weekly Crude Stock (kỳ trước −8.33M, tồn kho dầu rút mạnh). Không phân tích sâu.\n\n## Market Pulse\n\n**Yields & Đường cong lãi suất:**\n- 10Y: 4.46% (−3 bp) | 2Y: 4.19% (−1 bp) | Spread 2Y-10Y (T10Y2Y): +0.27 → đường cong dốc lên bình thường (normal, 116 phiên)\n- Breakeven 10Y: 2.23% (−2 bp) → kỳ vọng lạm phát thị trường nhích nhẹ về phía mục tiêu Fed 2%, dù vẫn trên 2% — thị trường chưa hết lo lạm phát nhưng không hoảng loạn.\n\n**USD & Cross-asset:**\n- USD Index (Broad): 120.40 (+0.85%) → USD mạnh lên — áp lực cho hàng hoá và tài sản EM, hỗ trợ giảm giá hàng nhập (lực kéo lạm phát xuống biên).\n- VIX: 16.78 → risk-on (<20), tâm lý bình ổn.\n- WTI: $84.65/bbl (−4.5%) → dầu hạ mạnh trong tuần. Tích cực cho lạm phát headline phía trước, nhưng lưu ý CPI Energy tháng 5 vẫn nóng (3-mo annualized +104%, YoY +22.1%) — nến giảm dầu gần đây CHƯA phản ánh vào số tháng 5.\n\n**Credit Spreads:**\n- HY OAS: 266 bp (0 bp) | IG OAS: 74 bp (0 bp)\n- Spreads đứng yên ở vùng hẹp → không có credit stress, risk appetite lành mạnh.\n\n**Vị trí chu kỳ (cycle_context):**\n- Sahm Rule: +0.10 (an toàn, chưa kích hoạt — ngưỡng 0.50). Thất nghiệp 3mo-avg 4.3% vs đáy 12 tháng 4.2%.\n- Đường cong: regime normal — 2s10s +0.27, 10Y-3M +0.63 (chưa từng đảo trong cửa sổ dữ liệu). Không có tín hiệu suy thoái cận kề.\n\n**Economic Surprise Index:**\n- Growth surprise 1M: +7.65 (beating mạnh, xu hướng rising) | Inflation surprise 1M: −6.74 (missing — số lạm phát ra thấp hơn kỳ vọng gần đây)\n- Data tổng thể đang vượt kỳ vọng tăng trưởng → risk-on tailwind. NHƯNG inflation surprise âm là so với kỳ vọng ngắn hạn — mức tuyệt đối hard-data lạm phát vẫn cao (Core PCE 3.29%).\n\n**Tổng đánh giá cross-asset:** Risk-on nhẹ — VIX thấp, spreads hẹp, growth surprise dương, đường cong bình thường. Nhưng USD mạnh + lạm phát hard-data còn nóng giữ cho bức tranh là \"risk-on có kiểm soát\", chưa phải tín hiệu nới lỏng dứt khoát.\n\n## Bối cảnh xu hướng (so với 30 ngày qua)\n\nTháng 5–6 vừa qua chứng kiến **ba turning point lớn** định hình regime hiện tại — phiên neutral hôm nay là điểm tạm nghỉ giữa các catalyst, không phải đảo chiều:\n\n**1. Đỉnh \"XLK độc dẫn\" → rotation crack (22/5 → 04/6).** Cuối tháng 5 thị trường là risk-on cực hẹp: XLK leo tới +22.89% 1M (01/6) khi goldilocks combo ISM Mfg 54.0 beat + Prices Paid 82.1 shock-miss tạo \"DCF dream\". Nhưng breadth luôn fragile (10/11 sector âm ngày 01/6). Đến **04/6 — ngày rotation lớn nhất kể từ khi system hoạt động** — leadership tech CRACK: XLK −1.56% với 1M de-rate 4.5pp chỉ trong 1 phiên, trong khi 9/11 sector xanh (XLV +3.07%, XLF +2.59%). Trigger là **labor cracking**: Initial Claims breakout 225K + Challenger Job Cuts YoY đảo từ −20.9% sang +3.4%. AVGO disappoint (suy ra từ XLK −5.92% tuần) + VIX spike +39.7% (16→21.5) chốt lại: kỷ nguyên tech-độc-dẫn đã kết thúc.\n\n**2. Disinflation relief rally (10/6 → 13/6).** Sau cú VIX spike đầu tháng, bộ ba **CPI (10/6) + PPI (11/6) + Michigan (12/6)** đảo chiều tâm lý: Core CPI MoM +0.2% (dưới fcst 0.3%), Core PPI YoY 4.9% (vs 5.4% fcst — shock-miss), Michigan 5Y inflation exp rơi về 3.4%. 10Y yield rút từ đỉnh 4.55% về 4.45%, VIX 22.2→19.4, SPY +1.7% ngày 11/6. Đây là đáy của giai đoạn \"disinflation đang quay lại\" — nhưng cảnh báo nhất quán: **3-mo annualized CPI vẫn 8.2%, Core PCE 3.29%** — soft data dovish chưa được hard data xác nhận.\n\n**3. Hawkish hold tại FOMC (17/6) — đảo lại narrative dovish.** Fed giữ 3.75% đúng dự báo nhưng **dot plot dịch LÊN** (median năm đầu 3.1%→3.6%), đồng thời Retail Sales +0.9% MoM + Pending Home Sales +3.8% (cả hai shock-above) → tổ hợp \"kinh tế quá khỏe để cắt nhanh\". Đây là lý do phiên 18/6 (Philly Fed bật 10.3) và hôm nay chỉ là **risk-on chiến thuật do growth beat**, KHÔNG phải xác nhận dovish.\n\n**Vị trí hôm nay trong xu hướng:** Sau ba turning point, regime đã ổn định thành **\"growth vững + lạm phát sticky + Fed kiên nhẫn\"**. Các trục dữ liệu định lượng so 30 ngày:\n- **Yields:** 10Y đi từ 4.57% (22/5) → đỉnh 4.55–4.56% (NFP 05/6) → 4.46% hôm nay; đường cong 2s10s **dẹt dần từ +0.49 (22/5) xuống +0.27** (−22bp) — flattening bền là tín hiệu thị trường vẫn price Fed giữ-lâu ở đầu ngắn.\n- **Vol & credit:** VIX từ 16.8 (22/5) → spike 21.5 (08/6) → về 16.78 hôm nay; HY OAS thu hẹp đều 278→266bp — credit chưa hề stress qua suốt biến động.\n- **Lạm phát:** hard-data đi ngang ở vùng cao (CPI YoY 3.8%→4.27%, Core PCE giữ 3.29%) trong khi inflation surprise 1M âm (−6.74) — tức số ra thấp hơn kỳ vọng nhưng mức tuyệt đối chưa về gần 2%. Đây là mâu thuẫn cốt lõi giữ Fed \"kẹt\".\n- **Tăng trưởng:** ESI growth dương bền (+7.65, rising), nhưng GDPNow Q2 đã bị cắt dần 3.8%→3.0%→2.8% — tăng trưởng vững nhưng momentum đỉnh đã qua.\n\n**Hàm ý sector (nhất quán cycle_context):** Sahm +0.10 chưa trigger + đường cong normal +0.27 → vẫn ưu tiên **cyclicals hơn defensives thuần**, nhưng dot-plot hawkish + yields đầu-ngắn cao kiềm chế re-rating mạnh cho duration. Cấu trúc leadership từ 04/6 vẫn giữ: **XLV** (defensive bid bền, RS 1M dẫn đầu), **XLI** (capex cycle on — Durable Goods +8%, ISM Mfg 54, PMI Mfg 54.6 hôm nay xác nhận) là hai trục mạnh nhất; **XLK** chuyển từ độc-dẫn sang \"stalking/light OW\" tùy disinflation; **XLU/XLRE** bị kẹp giữa yields cao đầu-ngắn và thiếu growth catalyst → laggard; **XLE** mất momentum khi WTI sập về $84.65 (−4.5%). PPI 29/6 là catalyst quyết định liệu nhánh disinflation hay nhánh hawkish thắng thế cho phần còn lại của Q3.\n\n## Cảnh báo & catalyst sắp tới\n\n**Ngày mai (2026-06-24):**\n- Job Openings & Labor Turnover (JOLTS) — đo độ tight của thị trường lao động (kỳ trước job openings vọt lên 7.62M, +10.6% MoM).\n\n**Tuần này (đến 2026-06-30):**\n- 24/06: JOLTS (Job Openings & Labor Turnover)\n- 25/06: Initial Jobless Claims\n- 29/06: Producer Price Index (PPI)\n\n**Theo dõi đặc biệt:**\nPPI ngày 29/06 là catalyst lạm phát quan trọng nhất trong tuần — PPI Final Demand đang nóng (YoY 6.46%, 3-mo annualized tới 13.2%) và là chỉ báo dẫn (pipeline) cho Core CPI 2-3 tháng tới. Trong bối cảnh `hard_data_hot = true`, một PPI nóng tiếp sẽ phủ nhận luôn các tín hiệu \"dovish\" mềm từ PMI hôm nay và đẩy kỳ vọng Fed về phía \"giữ lâu hơn\". JOLTS ngày mai bổ sung lát cắt cầu lao động: nếu job openings tiếp tục cao, áp lực lương (do đó dịch vụ lõi) còn dai dẳng."
+    "key_takeaway": "Ngày vắng hard-data, chỉ có Fed Waller phát biểu và các sự kiện nhiễu; cross-asset risk-on nhẹ nhưng hard-data lạm phát còn nóng (Core PCE YoY 3.29%) nên Fed chưa có lý do dovish hẳn.",
+    "body_preview": "# Vĩ mô Mỹ — 2026-06-22",
+    "body": "# Vĩ mô Mỹ — 2026-06-22\n\n## Tóm tắt\nHôm nay không có chỉ số hard-data nào được công bố (không CPI/PCE/NFP/ISM/Retail) — `surprise_count = 0`. Sự kiện signal duy nhất là phát biểu của Thống đốc Fed Waller; còn lại là đấu giá tín phiếu 3M/6M và 11 dòng vị thế đầu cơ CFTC (đều là noise). Cross-asset nghiêng nhẹ risk-on (VIX ~16.8, HY spread thấp, lợi suất 10Y dịu về 4.46%), nhưng đây là phiên thiếu dữ liệu nên không đổi cục diện. Quan trọng: hard-data lạm phát VẪN nóng (Core PCE YoY 3.29%, CPI YoY 4.27%, PPI YoY 6.46%) — chưa có cơ sở để tuyên bố disinflation hay Fed dovish hẳn.\n\n## Chi tiết chỉ số được công bố hôm nay\n\n### Fed (Waller phát biểu) — KHÔNG có dữ liệu định lượng\n**Sự kiện:** Fed Waller Speaks (09:00 ET) | Actual/Forecast/Previous: không áp dụng (không phải data release).\n**Đánh giá:** Đây là sự kiện high-impact theo lịch (Fed speaker) nhưng không có con số `actual` để chấm surprise — `surprise_count` của ngày = 0. Waller là một trong những giọng nói chính sách được theo dõi sát; thị trường dùng phát biểu để hiệu chỉnh kỳ vọng lộ trình lãi suất, nhưng bản thân sự kiện không tạo \"beat/miss\" định lượng.\n\n**Đối chiếu bắt buộc (soft-signal vs hard-data):** Dù bất kỳ giọng điệu dovish nào từ Fed speaker có thể hỗ trợ tâm lý risk-on, **hard-data lạm phát thực tế còn nóng**: Core PCE YoY 3.29% (3-mo annualized 3.78%), CPI YoY 4.27% (3-mo annualized tới 8.2% do Energy bùng), PPI Final Demand YoY 6.46%. Nhóm Energy đang kéo lạm phát LÊN mạnh nhất (CPI Energy YoY +22.1%), chỉ có Core Goods kéo xuống (YoY +1.03%). Vì vậy tín hiệu hợp lý là \"thận trọng/cần xác nhận\", KHÔNG phải \"dovish đã xác nhận\". Fed khó có dư địa nới lỏng rõ rệt khi lạm phát tổng còn cách xa mục tiêu 2%.\n\n**Hàm ý Fed & thị trường:** Trung lập trong ngày. Catalyst lạm phát thực sự là PCE ngày mai (23/06) — đó mới là dữ liệu định đoạt lộ trình, không phải phiên phát biểu hôm nay.\n\n**Các sự kiện nhiễu (is_noise, ghi nhận ngắn):**\n- Đấu giá tín phiếu: 3-Month Bill 3.695% (trước 3.640%, +5.5bp); 6-Month Bill 3.840% (trước 3.680%, +16bp). Lợi suất ngắn hạn nhích lên nhẹ — phản ánh kỳ vọng Fed giữ lãi suất, nhất quán với bức tranh lạm phát còn nóng.\n- Vị thế đầu cơ CFTC (tuần): S&P 500 net short thu hẹp (−194.0K so −205.6K), Nasdaq 100 chuyển âm sâu hơn (−8.9K so −1.3K); Gold tăng net long (180.2K), Crude Oil giảm net long (124.5K); Corn/Soybeans bị cắt mạnh long. Đây là dữ liệu định vị, không phải tín hiệu macro — không phân tích sâu.\n\n## Market Pulse\n\n**Yields & Đường cong lãi suất:**\n- 10Y: 4.46% (−0.67% so phiên trước) | 2Y: 4.19% (−0.24%) | Spread 2Y-10Y (T10Y2Y): +0.27 → đường cong dốc lên bình thường (không đảo).\n- Breakeven 10Y (T10YIE): 2.23% → kỳ vọng lạm phát thị trường nhỉnh trên mục tiêu 2% của Fed, đã dịu nhẹ (−0.9%).\n\n**USD & Cross-asset:**\n- DXY proxy (DTWEXBGS): 120.40 (+0.85%) → USD mạnh lên — áp lực nhẹ lên EM và commodities định giá USD.\n- VIX: 16.78 → vùng risk-on (<20), dù nhích +2.3% trong phiên.\n- WTI: $84.65/bbl (−4.48%) → dầu hạ nhiệt, giảm bớt áp lực chi phí năng lượng; tích cực cho lạm phát forward nhưng tiêu cực ngắn hạn cho XLE.\n\n**Credit Spreads:**\n- HY OAS: 2.66% (266 bp, đi ngang) | IG OAS: 0.74% (74 bp, đi ngang).\n- Spreads ở vùng hẹp, không có dấu hiệu căng thẳng tín dụng → risk appetite vẫn lành mạnh.\n\n**Vị trí chu kỳ (từ `cycle_context`):**\n- Sahm Rule: +0.10 (an toàn, chưa kích hoạt — ngưỡng 0.50). Thất nghiệp 3mo-avg 4.3% vs đáy 12 tháng 4.2%.\n- Đường cong: regime `normal` (2s10s +0.27, 10Y-3M +0.63; 116 phiên không đảo). Không có tín hiệu suy thoái cận kề.\n\n**Economic Surprise Index (từ `surprise_index.json`, as_of 2026-06-18):**\n- Growth surprise 1M: +7.65 (beating mạnh, xu hướng rising) | Inflation surprise 1M: −6.74 (missing — lạm phát công bố thấp hơn kỳ vọng dù mức tuyệt đối vẫn cao).\n- Data đang vượt kỳ vọng tăng trưởng → risk-on tailwind; nhưng lưu ý inflation \"missing\" là so với forecast, không có nghĩa lạm phát đã về đích.\n\n**Tổng đánh giá cross-asset:** Risk-on nhẹ (VIX <20, spreads hẹp, growth surprise dương, yields dịu) — nhưng USD mạnh + hard-data lạm phát còn nóng giữ cục diện ở mức \"thận trọng tích cực\", chưa phải risk-on bền vững.\n\n## Bối cảnh xu hướng (so với 30 ngày qua)\n\n**Cung đường regime tháng 6: từ \"narrow tech\" → \"rotation\" → \"hawkish hold\" → trung tính chờ PCE.** Tháng 6 đã đi qua bốn pha rõ rệt, và phiên hôm nay là điểm nghỉ chờ catalyst:\n\n1. **Pha narrow risk-on (22/5 → 03/6):** XLK độc dẫn cực mạnh (1M có lúc +22.89% ngày 01/6), breadth fragile, defensives bị penalize. Goldilocks combo (ISM Mfg 54.0 beat + Prices Paid 82.1 shock cool) là DCF dream chỉ ưu ái duy nhất tech.\n2. **Pha rotation (04/6 → 08/6) — turning point lớn nhất tháng:** Ngày **04/6** Tech leadership CRACK (XLK 1M giảm 4.5pp chỉ trong 1 phiên xuống +16.63%) khi labor bắt đầu nứt (Claims 225K breakout + Challenger Job Cuts spike +16% MoM). Sau đó NFP T5 +172k beat mạnh (05/6) + AVGO disappoint + **VIX spike +39.7% lên 21.51** (08/6) chôn vùi narrative \"XLK độc dẫn\". Dòng tiền xoay sang XLV (defensive) và XLF/XLI (cyclical), rate-sensitive XLRE/XLU bị yields jump (10Y +9bp lên 4.55%) trừng phạt.\n3. **Pha disinflation relief (10/6 → 13/6):** Bộ ba dovish liên tiếp — Core CPI MoM +0.2% miss (10/6), Core PPI YoY 4.9% vs 5.4% fcst (11/6), Michigan inflation exp 5Y rơi về 3.4% (12/6) — kéo yields về 4.45%, VIX về 19.4, kích relief rally (XLK +3.73%, XLI +3.24% ngày 11/6). XLV giữ vững leadership 1M.\n4. **Pha hawkish hold (16/6 → 18/6) — turning point thứ hai:** **FOMC 17/6** giữ 3.75% nhưng **dot plot dịch LÊN** (median năm thứ nhất 3.1%→3.6%) — Fed bớt kỳ vọng cắt. Đồng thời hard-data tăng trưởng bùng nổ (Retail Sales +0.9%, Pending Home Sales +3.8% shock-above, Philly Fed bật lên 10.3 ngày 18/6) trong khi Import Prices +1.9% MoM nóng bất ngờ. Tổ hợp \"kinh tế quá khỏe để cắt + lạm phát nhập khẩu chưa cho nới\".\n\n**Vị trí hôm nay (22/6):** Phiên trung tính, thiếu data, nằm GIỮA FOMC hawkish hold (17/6) và PCE (23/6). Cross-asset đã dịu lại so với đỉnh căng thẳng đầu tháng — VIX từ 21.51 (08/6) về 16.78, 10Y từ 4.55% về 4.46%, HY OAS từ ~278bp về 266bp. Đây là sự bình ổn của thị trường, KHÔNG phải xác nhận dovish.\n\n**Mâu thuẫn cốt lõi xuyên suốt tháng (vẫn chưa giải quyết):** Soft-data/survey và market-implied đều nghiêng disinflation + risk-on, NHƯNG hard-data lạm phát đứng yên ở mức cao suốt cả tháng — CPI YoY 4.27% và Core PCE YoY 3.29% gần như không nhúc nhích từ 22/5 đến nay, với Energy CPI YoY +22.1% là động cơ chính. Growth surprise mạnh (+7.65) cộng Sahm an toàn (0.10) + đường cong normal (+0.27) ⇒ **regime nền vẫn là expansion/no-landing, KHÔNG phải slowdown**. Hàm ý sector nhất quán: nghiêng cyclicals/growth (XLK, XLI, XLF) hơn defensives thuần (XLU, XLP), nhưng \"higher-for-longer\" sau dot plot dịch lên giữ áp lực định giá lên duration-heavy (XLK, XLRE). PCE ngày mai là mảnh ghép quyết định liệu nghịch lý soft-vs-hard này nghiêng về bên nào cho phần còn lại của Q3.\n\n## Cảnh báo & catalyst sắp tới\n\n**Ngày mai (2026-06-23):**\n- Personal Income & Outlays (PCE) — chỉ số lạm phát Fed theo dõi số 1.\n\n**Tuần này (đến 2026-06-29):**\n- 2026-06-23: Personal Income & Outlays (PCE)\n- 2026-06-24: Job Openings & Labor Turnover (JOLTS)\n- 2026-06-25: Initial Jobless Claims\n- 2026-06-29: Producer Price Index (PPI)\n- (Fed speaker đã diễn ra: Waller 22/06)\n\n**Theo dõi đặc biệt:**\nPCE ngày mai là catalyst quan trọng nhất tuần — đây mới là hard-data định đoạt lộ trình Fed, bù cho phiên thiếu dữ liệu hôm nay. Với Core PCE YoY hiện 3.29% và 3-mo annualized 3.78% (cao hơn YoY → đà gần đây chưa hạ nhiệt), một con số PCE nóng sẽ củng cố lập trường thận trọng và phủ nhận bất kỳ kỳ vọng dovish sớm nào. JOLTS (24/06) và Jobless Claims (25/06) sẽ bổ sung góc nhìn cầu lao động."
   },
   "latest_monthly": {
     "file": "2026-05.md",
