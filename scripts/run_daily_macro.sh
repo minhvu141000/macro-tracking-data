@@ -38,18 +38,35 @@ run() {  # chạy 1 lệnh, log, không dừng cả script nếu lỗi non-criti
   echo "=== Auto-run $TS ($(date +%Z)) ==="
   source .venv/bin/activate 2>/dev/null
 
-  # 1) Thu thập dữ liệu hôm nay (raw + FRED + cycle_context) — cần để quyết định + làm snapshot
-  run python scripts/collect.py || { echo "collect FAIL → dừng"; exit 1; }
-
-  # 2) Đã có KẾT QUẢ THỰC (actual) cho phiên hôm nay chưa?
-  #    Đếm release signal có actual != None — KHÔNG dùng signal_release_count (chỉ là
-  #    lịch công bố, vẫn >0 cả khi phiên CHƯA đóng → tránh viết báo cáo rỗng lúc chạy bù
-  #    ngoài giờ, vd nửa đêm trước khi US mở cửa).
-  SIG="$(python - <<'PY'
-import json, glob
-fs = sorted(glob.glob("data/raw/[0-9]*.json"))
+  # 0) Tính ngày PHIÊN US ĐÓNG GẦN NHẤT (theo giờ New York). Chạy bù ban đêm vẫn lấy
+  #    đúng ngày phiên đã đóng → KHÔNG ra báo cáo rỗng cho ngày chưa giao dịch.
+  #    Quy tắc: sau 16:00 ET (US đóng) = phiên hôm nay; trước đó = phiên hôm trước; bỏ T7/CN.
+  TARGET="$(python - <<'PY'
+from datetime import datetime, timedelta
 try:
-    d = json.loads(open(fs[-1]).read())
+    from zoneinfo import ZoneInfo
+    et = datetime.now(ZoneInfo("America/New_York"))
+except Exception:
+    et = datetime.utcnow() - timedelta(hours=4)
+d = et.date()
+if et.hour < 16:            # trước 16:00 ET → phiên hôm nay chưa đóng → lùi 1 ngày
+    d -= timedelta(days=1)
+while d.weekday() >= 5:     # bỏ Thứ 7 (5) / Chủ Nhật (6)
+    d -= timedelta(days=1)
+print(d.isoformat())
+PY
+)"
+  echo "Phiên US đóng gần nhất (target) = $TARGET"
+
+  # 1) Thu thập ĐÚNG ngày phiên đã đóng (raw + FRED + cycle_context)
+  run python scripts/collect.py --date "$TARGET" || { echo "collect FAIL → dừng"; exit 1; }
+
+  # 2) Ngày $TARGET đã có KẾT QUẢ THỰC (actual) chưa? Đếm release signal có actual != None
+  #    (KHÔNG dùng signal_release_count — đó chỉ là lịch công bố, vẫn >0 khi phiên chưa đóng).
+  SIG="$(python - "$TARGET" <<'PY'
+import json, sys
+try:
+    d = json.loads(open(f"data/raw/{sys.argv[1]}.json").read())
     n = sum(1 for r in d.get("releases", [])
             if not r.get("is_noise") and (r.get("parsed") or {}).get("actual") is not None)
     print(n)
@@ -57,16 +74,16 @@ except Exception:
     print(-1)
 PY
 )"
-  echo "Số chỉ số US ĐÃ CÓ kết quả thực (actual) hôm nay = $SIG"
+  echo "Số chỉ số $TARGET đã có actual = $SIG"
 
   if [ "$SIG" -gt 0 ]; then
-    # ----- ĐÃ CÓ kết quả thực → full /daily-macro (báo cáo LLM, dashboard, push, Chrome) -----
-    echo "--- Có $SIG chỉ số đã công bố → chạy /daily-macro đầy đủ (headless) ---"
-    claude -p "/daily-macro" --dangerously-skip-permissions
+    # ----- ĐÃ CÓ kết quả thực → full /daily-macro cho ĐÚNG ngày $TARGET (báo cáo LLM, push, Chrome) -----
+    echo "--- Có $SIG chỉ số đã công bố ngày $TARGET → chạy /daily-macro $TARGET (headless) ---"
+    claude -p "/daily-macro $TARGET" --dangerously-skip-permissions
     echo "--- /daily-macro exit=$? ---"
   else
-    # ----- Chưa có kết quả thực (phiên chưa đóng / ngày trống) → chỉ snapshot, BỎ báo cáo LLM -----
-    echo "--- Chưa có actual nào (phiên chưa đóng hoặc ngày trống) → chỉ lưu rotation snapshot, BỎ báo cáo LLM & Chrome ---"
+    # ----- Chưa có kết quả thực (ngày trống / lễ) → chỉ snapshot, BỎ báo cáo LLM -----
+    echo "--- $TARGET chưa có actual nào (ngày trống/lễ) → chỉ lưu rotation snapshot, BỎ báo cáo LLM & Chrome ---"
     run python scripts/fetch_sectors.py
     run python scripts/fetch_cross_asset.py
     run python scripts/build_surprise_index.py
@@ -74,11 +91,10 @@ PY
     run python scripts/fetch_eia.py
     run python scripts/fetch_fed_forecasts.py
     run python scripts/build_dashboard.py
-    DATE="$(basename "$(ls -t data/raw/[0-9]*.json | head -1)" .json)"
     git add data/ dashboard/data.js
     if ! git diff --cached --quiet; then
-      git "${GIT_ID[@]}" commit -q -m "Auto rotation snapshot $DATE (no US releases)" && \
-      git push origin main && echo "pushed snapshot $DATE"
+      git "${GIT_ID[@]}" commit -q -m "Auto rotation snapshot $TARGET (no US releases)" && \
+      git push origin main && echo "pushed snapshot $TARGET"
     else
       echo "nothing to commit"
     fi
