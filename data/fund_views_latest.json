@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "tier": "fund-views-raw",
+  "generated_at": "2026-06-23",
+  "description": "View phân bổ ngành (sector tilt) từ các quỹ/ngân hàng đầu tư lớn ở Mỹ — báo cáo MỚI NHẤT công khai. Đây là input thô do bước nghiên cứu web thu thập mỗi quý; logic tổng hợp/đối chiếu nằm trong scripts/build_fund_consensus.py (tất định). KHÔNG trộn vào điểm rotation engine — đây là tầng đối chiếu đồng thuận tổ chức.",
+  "tilt_scale": {
+    "1": "Overweight / Positive / Favored (kỳ vọng vượt S&P 500)",
+    "0": "Neutral / Marketperform",
+    "-1": "Underweight / Negative / Less favored (kỳ vọng kém S&P 500)",
+    "null": "Không nêu rõ trong báo cáo (chưa verify)"
+  },
+  "refresh_note": "Cập nhật mỗi quý qua nghiên cứu web. Sau khi sửa file này chạy: python scripts/build_fund_consensus.py",
+  "sources": [
+    {
+      "fund": "State Street SPDR",
+      "report": "Sector Market Perspectives — Q2 2026",
+      "as_of": "2026-04-08",
+      "cadence": "quarterly",
+      "url": "https://www.ssga.com/us/en/individual/insights/sector-market-perspectives-q2-2026",
+      "verified": true,
+      "coverage": "full",
+      "views": {
+        "XLK": {"tilt": 1, "label": "Positive", "note": "AI-driven earnings rộng + định giá hấp dẫn sau nhịp chỉnh"},
+        "XLC": {"tilt": 1, "label": "Positive", "note": "Quảng cáo số tăng tốc + AI monetization"},
+        "XLI": {"tilt": 1, "label": "Positive", "note": "CapEx AI infra, chi tiêu quốc phòng, chính sách tài khoá pro-CapEx"},
+        "XLB": {"tilt": 1, "label": "Positive", "note": "Cân bằng cung-cầu hoá chất cải thiện, nhu cầu kim loại cấu trúc"},
+        "XLE": {"tilt": 1, "label": "Positive", "note": "Rủi ro gián đoạn nguồn cung kéo dài, premium địa chính trị"},
+        "XLU": {"tilt": 1, "label": "Positive", "note": "Nhu cầu điện AI, điện khí hoá, reshoring sản xuất"},
+        "XLF": {"tilt": 0, "label": "Neutral", "note": "Trì hoãn cắt lãi suất bù trừ với định giá cải thiện"},
+        "XLV": {"tilt": 0, "label": "Neutral", "note": "Tăng trưởng lợi nhuận chậm lại, ít catalyst dù định giá rẻ"},
+        "XLY": {"tilt": -1, "label": "Negative", "note": "Thu nhập thực yếu, tỷ lệ tiết kiệm thấp ép cầu hộ gia đình"},
+        "XLP": {"tilt": -1, "label": "Negative", "note": "Áp lực biên lợi nhuận, tăng trưởng lợi nhuận yếu"},
+        "XLRE": {"tilt": -1, "label": "Negative", "note": "Momentum lợi nhuận yếu + giảm kỳ vọng cắt lãi suất"}
+      }
+    },
+    {
+      "fund": "Fidelity (Denise Chisholm)",
+      "report": "Quarterly Sector & Investment Research Update — Q2 2026",
+      "as_of": "2026-04-15",
+      "cadence": "quarterly",
+      "url": "https://institutional.fidelity.com/advisors/insights/topics/market-commentary/second-quarter-2026-quarterly-sector-and-investment-research-update",
+      "verified": true,
+      "coverage": "partial",
+      "coverage_note": "Chỉ verify được headline (PDF đầy đủ cần session). Headline: 'Tech, industrials, and consumer discretionary look attractive on improving fundamentals and compelling valuations.' Các sector khác không nêu → null.",
+      "views": {
+        "XLK": {"tilt": 1, "label": "Attractive", "note": "Fundamentals cải thiện + định giá hấp dẫn"},
+        "XLI": {"tilt": 1, "label": "Attractive", "note": "Fundamentals cải thiện + định giá hấp dẫn"},
+        "XLY": {"tilt": 1, "label": "Attractive", "note": "Fundamentals cải thiện + định giá hấp dẫn"},
+        "XLC": {"tilt": null, "label": null, "note": null},
+        "XLB": {"tilt": null, "label": null, "note": null},
+        "XLE": {"tilt": null, "label": null, "note": null},
+        "XLU": {"tilt": null, "label": null, "note": null},
+        "XLF": {"tilt": null, "label": null, "note": null},
+        "XLV": {"tilt": null, "label": null, "note": null},
+        "XLP": {"tilt": null, "label": null, "note": null},
+        "XLRE": {"tilt": null, "label": null, "note": null}
+      }
+    },
+    {
+      "fund": "BlackRock Investment Institute",
+      "report": "Q2 2026 Investment Outlook / Weekly Commentary",
+      "as_of": "2026-04-14",
+      "cadence": "quarterly+weekly",
+      "url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/publications/outlook",
+      "verified": true,
+      "coverage": "partial",
+      "coverage_note": "Narrative. Overweight US equities tổng thể (đã giảm OW từ 3%→1% khi chỉ số đạt đỉnh). Lean vào AI/Tech (kỳ vọng EPS tech +43% 2026). Energy/Materials/Utilities có positive analyst revisions + tăng trưởng lợi nhuận 2 chữ số. Sector khác không nêu rõ.",
+      "views": {
+        "XLK": {"tilt": 1, "label": "Overweight", "note": "AI execution; kỳ vọng EPS tech +43% YoY 2026"},
+        "XLE": {"tilt": 1, "label": "Positive revisions", "note": "Positive analyst revisions, lợi nhuận 2 chữ số"},
+        "XLB": {"tilt": 1, "label": "Positive revisions", "note": "Positive analyst revisions, lợi nhuận 2 chữ số"},
+        "XLU": {"tilt": 1, "label": "Positive revisions", "note": "Positive analyst revisions, lợi nhuận 2 chữ số"},
+        "XLC": {"tilt": null, "label": null, "note": null},
+        "XLI": {"tilt": null, "label": null, "note": null},
+        "XLY": {"tilt": null, "label": null, "note": null},
+        "XLF": {"tilt": null, "label": null, "note": null},
+        "XLV": {"tilt": null, "label": null, "note": null},
+        "XLP": {"tilt": null, "label": null, "note": null},
+        "XLRE": {"tilt": null, "label": null, "note": null}
+      }
+    },
+    {
+      "fund": "Charles Schwab (SCFR)",
+      "report": "Monthly Stock Sector Outlook 2026",
+      "as_of": "2026-06-01",
+      "cadence": "monthly",
+      "url": "https://www.schwab.com/learn/story/stock-sector-outlook",
+      "verified": false,
+      "coverage": "partial",
+      "coverage_note": "Schwab chặn bot (403/auth) — chỉ verify được trích đoạn từ search, KHÔNG truy cập bảng rating 5 mức đầy đủ. Tilt dưới đây suy từ ngôn ngữ narrative, độ tin thấp; kiểm tra lại thủ công khi cần. Schwab dùng thang 5 mức (Most/More Favored, Neutral, Less/Least Favored) từ 03/2026.",
+      "views": {
+        "XLI": {"tilt": 1, "label": "Favored", "note": "CapEx điện, hạ tầng AI, quốc phòng, năng lượng"},
+        "XLE": {"tilt": 0, "label": "Neutral", "note": "Đã outperform mạnh; kỳ vọng lợi nhuận & định giá cao là rủi ro"},
+        "XLC": {"tilt": 0, "label": "Neutral", "note": "Fundamentals tốt nhưng định giá cao + lo AI spend/quảng cáo"},
+        "XLP": {"tilt": -1, "label": "Less favored", "note": "Tăng trưởng doanh thu yếu"},
+        "XLY": {"tilt": -1, "label": "Less favored", "note": "Doanh thu & FCF suy yếu gần đây"},
+        "XLK": {"tilt": null, "label": null, "note": null},
+        "XLB": {"tilt": null, "label": null, "note": null},
+        "XLU": {"tilt": null, "label": null, "note": null},
+        "XLF": {"tilt": null, "label": null, "note": null},
+        "XLV": {"tilt": null, "label": null, "note": null},
+        "XLRE": {"tilt": null, "label": null, "note": null}
+      }
+    }
+  ]
+}

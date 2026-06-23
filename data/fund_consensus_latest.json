@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0",
+  "tier": "fund-consensus",
+  "generated_at": "2026-06-23T16:22:44.310842+00:00",
+  "as_of_today": "2026-06-23",
+  "n_sources": 4,
+  "sources_meta": [
+    {
+      "fund": "State Street SPDR",
+      "report": "Sector Market Perspectives — Q2 2026",
+      "as_of": "2026-04-08",
+      "age_days": 76,
+      "verified": true,
+      "coverage": "full",
+      "url": "https://www.ssga.com/us/en/individual/insights/sector-market-perspectives-q2-2026"
+    },
+    {
+      "fund": "Fidelity (Denise Chisholm)",
+      "report": "Quarterly Sector & Investment Research Update — Q2 2026",
+      "as_of": "2026-04-15",
+      "age_days": 69,
+      "verified": true,
+      "coverage": "partial",
+      "url": "https://institutional.fidelity.com/advisors/insights/topics/market-commentary/second-quarter-2026-quarterly-sector-and-investment-research-update"
+    },
+    {
+      "fund": "BlackRock Investment Institute",
+      "report": "Q2 2026 Investment Outlook / Weekly Commentary",
+      "as_of": "2026-04-14",
+      "age_days": 70,
+      "verified": true,
+      "coverage": "partial",
+      "url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/publications/outlook"
+    },
+    {
+      "fund": "Charles Schwab (SCFR)",
+      "report": "Monthly Stock Sector Outlook 2026",
+      "as_of": "2026-06-01",
+      "age_days": 22,
+      "verified": false,
+      "coverage": "partial",
+      "url": "https://www.schwab.com/learn/story/stock-sector-outlook"
+    }
+  ],
+  "stale_warning": [],
+  "engine_regime": "Tăng trưởng vượt kỳ vọng, lạm phát nguội hơn kỳ vọng, lãi suất đi ngang, risk-on. Chu kỳ: đường cong normal.",
+  "ranked": [
+    "XLK",
+    "XLI",
+    "XLB",
+    "XLU",
+    "XLE",
+    "XLC",
+    "XLF",
+    "XLV",
+    "XLY",
+    "XLP",
+    "XLRE"
+  ],
+  "divergences": [
+    "XLE",
+    "XLY"
+  ],
+  "sectors": {
+    "XLK": {
+      "name": "Technology",
+      "consensus_label": "STRONG_OW",
+      "net_score": 1.0,
+      "n_funds": 3,
+      "n_overweight": 3,
+      "n_underweight": 0,
+      "engine_phase": "EARLY_FORMING",
+      "crosscheck": "AGREE",
+      "fund_views": [
+        {
+          "fund": "State Street SPDR",
+          "tilt": 1,
+          "label": "Positive",
+          "note": "AI-driven earnings rộng + định giá hấp dẫn sau nhịp chỉnh",
+          "verified": true
+        },
+        {
+          "fund": "Fidelity (Denise Chisholm)",
+          "tilt": 1,
+          "label": "Attractive",
+          "note": "Fundamentals cải thiện + định giá hấp dẫn",
+          "verified": true
+        },
+        {
+          "fund": "BlackRock Investment Institute",
+          "tilt": 1,
+          "label": "Overweight",
+          "note": "AI execution; kỳ vọng EPS tech +43% YoY 2026",
+          "verified": true
+        }
+      ]
+    },
+    "XLF": {
+      "name": "Financials",
+      "consensus_label": "N",
+      "net_score": 0.0,
+      "n_funds": 1,
+      "n_overweight": 0,
+      "n_underweight": 0,
+      "engine_phase": "EARLY_FORMING",
+      "crosscheck": "PARTIAL",
+      "fund_views": [
+        {
+          "fund": "State Street SPDR",
+          "tilt": 0,
+          "label": "Neutral",
+          "note": "Trì hoãn cắt lãi suất bù trừ với định giá cải thiện",
+          "verified": true
+        }
+      ]
+    },
+    "XLE": {
+      "name": "Energy",
+      "consensus_label": "STRONG_OW",
+      "net_score": 0.667,
+      "n_funds": 3,
+      "n_overweight": 2,
+      "n_underweight": 0,
+      "engine_phase": "AVOID",
+      "crosscheck": "DIVERGE",
+      "fund_views": [
+        {
+          "fund": "State Street SPDR",
+          "tilt": 1,
+          "label": "Positive",
+          "note": "Rủi ro gián đoạn nguồn cung kéo dài, premium địa chính trị",
+          "verified": true
+        },
+        {
+          "fund": "BlackRock Investment Institute",
+          "tilt": 1,
+          "label": "Positive revisions",
+          "note": "Positive analyst revisions, lợi nhuận 2 chữ số",
+          "verified": true
+        },
+        {
+          "fund": "Charles Schwab (SCFR)",
+          "tilt": 0,
+          "label": "Neutral",
+          "note": "Đã outperform mạnh; kỳ vọng lợi nhuận & định giá cao là rủi ro",
+          "verified": false
+        }
+      ]
+    },
+    "XLV": {
+      "name": "Healthcare",
+      "consensus_label": "N",
+      "net_score": 0.0,
+      "n_funds": 1,
+      "n_overweight": 0,
+      "n_underweight": 0,
+      "engine_phase": "NEUTRAL",
+      "crosscheck": "PARTIAL",
+      "fund_views": [
+        {
+          "fund": "State Street SPDR",
+          "tilt": 0,
+          "label": "Neutral",
+          "note": "Tăng trưởng lợi nhuận chậm lại, ít catalyst dù định giá rẻ",
+          "verified": true
+        }
+      ]
+    },
+    "XLY": {
+      "name": "Consumer Discretionary",
+      "consensus_label": "UW",
+      "net_score": -0.333,
+      "n_funds": 3,
+      "n_overweight": 1,
+      "n_underweight": 2,
+      "engine_phase": "EARLY_FORMING",
+      "crosscheck": "DIVERGE",
+      "fund_views": [
+        {
+          "fund": "State Street SPDR",
+          "tilt": -1,
+          "label": "Negative",
+          "note": "Thu nhập thực yếu, tỷ lệ tiết kiệm thấp ép cầu hộ gia đình",
+          "verified": true
+        },
+        {
+          "fund": "Fidelity (Denise Chisholm)",
+          "tilt": 1,
+          "label": "Attractive",
+          "note": "Fundamentals cải thiện + định giá hấp dẫn",
+          "verified": true
+        },
+        {
+          "fund": "Charles Schwab (SCFR)",
+          "tilt": -1,
+          "label": "Less favored",
+          "note": "Doanh thu & FCF suy yếu gần đây",
+          "verified": false
+        }
+      ]
+    },
+    "XLP": {
+      "name": "Consumer Staples",
+      "consensus_label": "STRONG_UW",
+      "net_score": -1.0,
+      "n_funds": 2,
+      "n_overweight": 0,
+      "n_underweight": 2,
+      "engine_phase": "NEUTRAL",
+      "crosscheck": "PARTIAL",
+      "fund_views": [
+        {
+          "fund": "State Street SPDR",
+          "tilt": -1,
+          "label": "Negative",
+          "note": "Áp lực biên lợi nhuận, tăng trưởng lợi nhuận yếu",
+          "verified": true
+        },
+        {
+          "fund": "Charles Schwab (SCFR)",
+          "tilt": -1,
+          "label": "Less favored",
+          "note": "Tăng trưởng doanh thu yếu",
+          "verified": false
+        }
+      ]
+    },
+    "XLI": {
+      "name": "Industrials",
+      "consensus_label": "STRONG_OW",
+      "net_score": 1.0,
+      "n_funds": 3,
+      "n_overweight": 3,
+      "n_underweight": 0,
+      "engine_phase": "EARLY_FORMING",
+      "crosscheck": "AGREE",
+      "fund_views": [
+        {
+          "fund": "State Street SPDR",
+          "tilt": 1,
+          "label": "Positive",
+          "note": "CapEx AI infra, chi tiêu quốc phòng, chính sách tài khoá pro-CapEx",
+          "verified": true
+        },
+        {
+          "fund": "Fidelity (Denise Chisholm)",
+          "tilt": 1,
+          "label": "Attractive",
+          "note": "Fundamentals cải thiện + định giá hấp dẫn",
+          "verified": true
+        },
+        {
+          "fund": "Charles Schwab (SCFR)",
+          "tilt": 1,
+          "label": "Favored",
+          "note": "CapEx điện, hạ tầng AI, quốc phòng, năng lượng",
+          "verified": false
+        }
+      ]
+    },
+    "XLB": {
+      "name": "Materials",
+      "consensus_label": "STRONG_OW",
+      "net_score": 1.0,
+      "n_funds": 2,
+      "n_overweight": 2,
+      "n_underweight": 0,
+      "engine_phase": "NEUTRAL",
+      "crosscheck": "PARTIAL",
+      "fund_views": [
+        {
+          "fund": "State Street SPDR",
+          "tilt": 1,
+          "label": "Positive",
+          "note": "Cân bằng cung-cầu hoá chất cải thiện, nhu cầu kim loại cấu trúc",
+          "verified": true
+        },
+        {
+          "fund": "BlackRock Investment Institute",
+          "tilt": 1,
+          "label": "Positive revisions",
+          "note": "Positive analyst revisions, lợi nhuận 2 chữ số",
+          "verified": true
+        }
+      ]
+    },
+    "XLU": {
+      "name": "Utilities",
+      "consensus_label": "STRONG_OW",
+      "net_score": 1.0,
+      "n_funds": 2,
+      "n_overweight": 2,
+      "n_underweight": 0,
+      "engine_phase": "NEUTRAL",
+      "crosscheck": "PARTIAL",
+      "fund_views": [
+        {
+          "fund": "State Street SPDR",
+          "tilt": 1,
+          "label": "Positive",
+          "note": "Nhu cầu điện AI, điện khí hoá, reshoring sản xuất",
+          "verified": true
+        },
+        {
+          "fund": "BlackRock Investment Institute",
+          "tilt": 1,
+          "label": "Positive revisions",
+          "note": "Positive analyst revisions, lợi nhuận 2 chữ số",
+          "verified": true
+        }
+      ]
+    },
+    "XLRE": {
+      "name": "Real Estate",
+      "consensus_label": "STRONG_UW",
+      "net_score": -1.0,
+      "n_funds": 1,
+      "n_overweight": 0,
+      "n_underweight": 1,
+      "engine_phase": "NEUTRAL",
+      "crosscheck": "PARTIAL",
+      "fund_views": [
+        {
+          "fund": "State Street SPDR",
+          "tilt": -1,
+          "label": "Negative",
+          "note": "Momentum lợi nhuận yếu + giảm kỳ vọng cắt lãi suất",
+          "verified": true
+        }
+      ]
+    },
+    "XLC": {
+      "name": "Communication Services",
+      "consensus_label": "OW",
+      "net_score": 0.5,
+      "n_funds": 2,
+      "n_overweight": 1,
+      "n_underweight": 0,
+      "engine_phase": "EARLY_FORMING",
+      "crosscheck": "AGREE",
+      "fund_views": [
+        {
+          "fund": "State Street SPDR",
+          "tilt": 1,
+          "label": "Positive",
+          "note": "Quảng cáo số tăng tốc + AI monetization",
+          "verified": true
+        },
+        {
+          "fund": "Charles Schwab (SCFR)",
+          "tilt": 0,
+          "label": "Neutral",
+          "note": "Fundamentals tốt nhưng định giá cao + lo AI spend/quảng cáo",
+          "verified": false
+        }
+      ]
+    }
+  }
+}

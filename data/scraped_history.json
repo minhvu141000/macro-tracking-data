@@ -1,4 +1,37 @@
 {
   "schema_version": "1.0",
-  "series": {}
+  "series": {
+    "ISM_MFG": {
+      "label": "ISM Manufacturing PMI",
+      "latest": {
+        "date": "2026-06-01",
+        "value": 54.0
+      },
+      "previous": null,
+      "change_pct": null,
+      "history": [
+        {
+          "date": "2026-06-01",
+          "value": 54.0
+        }
+      ],
+      "source": "scraped"
+    },
+    "ISM_SVC": {
+      "label": "ISM Services PMI",
+      "latest": {
+        "date": "2026-06-03",
+        "value": 54.5
+      },
+      "previous": null,
+      "change_pct": null,
+      "history": [
+        {
+          "date": "2026-06-03",
+          "value": 54.5
+        }
+      ],
+      "source": "scraped"
+    }
+  }
 }

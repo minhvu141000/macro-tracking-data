@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "fetched_at": "2026-06-23T16:41:55.395141+00:00",
+  "fetched_at": "2026-06-23T21:26:41.417132+00:00",
   "window_start": "2026-06-23",
   "window_end": "2026-07-14",
   "macro": [
@@ -55,6 +55,17 @@
       "impact": "MEDIUM",
       "forecast": null,
       "previous": "4.071%",
+      "confirmed": true,
+      "estimated": false,
+      "source": "investing.com"
+    },
+    {
+      "date": "2026-06-23",
+      "name": "U.S. President Trump Speaks",
+      "type": "macro",
+      "impact": "HIGH",
+      "forecast": null,
+      "previous": null,
       "confirmed": true,
       "estimated": false,
       "source": "investing.com"
@@ -927,6 +938,17 @@
       "confirmed": true,
       "estimated": false,
       "source": "investing.com"
+    },
+    {
+      "date": "2026-07-14",
+      "name": "TIC Net Long-Term Transactions  (May)",
+      "type": "macro",
+      "impact": "MEDIUM",
+      "forecast": null,
+      "previous": "103.1B",
+      "confirmed": true,
+      "estimated": false,
+      "source": "investing.com"
     }
   ],
   "earnings": [
@@ -1008,7 +1030,18 @@
       "type": "earnings"
     }
   ],
-  "fed_speakers": [],
+  "fed_speakers": [
+    {
+      "date": "2026-06-23",
+      "time": "14:05",
+      "speaker": "Unknown",
+      "topic": "U.S. President Trump Speaks",
+      "venue": "",
+      "impact": "low",
+      "source": "investing.com (historical)",
+      "event_url": "https://www.investing.com/economic-calendar/u.s.-president-trump-speaks-1694"
+    }
+  ],
   "lookahead": {
     "tomorrow_date": "2026-06-24",
     "week_end_date": "2026-06-30",
@@ -1159,6 +1192,17 @@
           "impact": "MEDIUM",
           "forecast": null,
           "previous": "4.071%",
+          "confirmed": true,
+          "estimated": false,
+          "source": "investing.com"
+        },
+        {
+          "date": "2026-06-23",
+          "name": "U.S. President Trump Speaks",
+          "type": "macro",
+          "impact": "HIGH",
+          "forecast": null,
+          "previous": null,
           "confirmed": true,
           "estimated": false,
           "source": "investing.com"

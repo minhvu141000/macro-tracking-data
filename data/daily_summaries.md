@@ -379,12 +379,11 @@ Hôm nay không có chỉ số hard-data nào được công bố (không CPI/PC
 
 ---
 
-## 2026-06-23 — regime: `neutral` · surprises: 0
+## 2026-06-23 — regime: `neutral` · surprises: 1
 
-**Key takeaway:** Ngày toàn soft-data (S&P Global PMI, Richmond Fed, ADP tuần, M2) không có chỉ số shock — khảo sát PMI dự báo dịch vụ ấm lên nhẹ nhưng hard-data lạm phát (Core PCE 3.3%, CPI 4.3% YoY) vẫn nóng nên chưa thể kết luận dovish một chiều.
+**Key takeaway:** PMI S&P Global tháng 6 mở rộng vững (Mfg 55.7, Svc 51.3) nhưng Fed vùng Richmond sụp đổ (shock-below 4 vs 8) — tín hiệu sản xuất hỗn hợp; hard-data lạm phát vẫn nóng nên chưa thể kết luận dovish trước PCE 25/6.
 
 **Tóm tắt:**
-Phiên 23/06 chỉ có soft-data và chỉ số phụ: bộ S&P Global Flash PMI (Mfg/Services/Composite), Richmond Fed Manufacturing/Services, ADP Employment Change tuần, và M2 Money Supply. `surprise_count = 0` — không có chỉ số nào lệch >0.5σ so với forecast (phần lớn chưa có actual tại thời điểm thu thập). Forecast cho thấy bức tranh tăng trưởng "ổn định, hơi mềm ở biên": Mfg PMI dự kiến hạ nhẹ về 54.6 (từ 55.1) nhưng vẫn mở rộng tốt, Services nhích lên 51.1 (từ 50.7), trong khi Richmond Fed Mfg được dự báo giảm về +8 (từ +13).
-Tín hiệu chung là **neutral**: dữ liệu tăng trưởng vẫn vững (ESI growth +7.7, "beating mạnh") nhưng đây toàn là khảo sát mềm. Quan trọng — `hard_data_hot = true`: lạm phát thực tế còn nóng (Core PCE YoY 3.29%, CPI YoY 4.27%, 3-mo annualized CPI tới 8.2%), nên KHÔNG được đọc các khảo sát này thành "disinflation đã xác nhận" hay "Fed dovish hẳn".
+Ngày dữ liệu hạng nhẹ trước "thác" số liệu cuối tuần (PCE + GDP 25/6). Khảo sát PMI S&P Global tháng 6 cho thấy hoạt động kinh tế mở rộng vững (Composite 52.2, Mfg 55.7 beat nhẹ, Svc 51.3) — nghiêng tích cực cho growth. Nhưng chỉ số sản xuất Fed vùng Richmond lao dốc gây sốc (4 so dự báo 8, từ 13), cùng Richmond Services rơi vào âm (-1) — phát đi tín hiệu sản xuất khu vực yếu, trái chiều với PMI quốc gia. Tổng thể là tín hiệu tăng trưởng hỗn hợp, KHÔNG đủ để kết luận hawkish/dovish rõ ràng; vì hard-data lạm phát vẫn nóng (Core PCE YoY 3.29%, CPI YoY 4.27%), thị trường giữ thế chờ Core PCE tháng 5 (25/6).
 
 ---
