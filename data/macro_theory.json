@@ -2352,6 +2352,25 @@
           "primary_link": "https://www.newyorkfed.org/research/policy/rstar",
           "news_release_link": "https://www.newyorkfed.org/research/policy/rstar",
           "deep_dive_link": "https://www.newyorkfed.org/research/policy/rstar"
+        },
+        {
+          "id": "FED_STRESS_TEST",
+          "short_name": "Fed Stress Test",
+          "full_name": "Fed Bank Stress Test Results (DFAST / CCAR)",
+          "frequency": "Hàng năm (thường tháng 6)",
+          "link": "https://www.federalreserve.gov/supervisionreg/dfa-stress-tests.htm",
+          "description": "Kết quả kiểm tra sức chịu đựng (Dodd-Frank Act Stress Test - DFAST) do Fed thực hiện hàng năm với các ngân hàng lớn (>$100B tài sản). Mô phỏng kịch bản 'severely adverse' (suy thoái nặng: thất nghiệp vọt, giá nhà/cổ phiếu sụp, thị trường tín dụng đóng băng) để xem vốn ngân hàng (CET1 ratio) còn trụ trên mức tối thiểu hay không. Kết quả quyết định Stress Capital Buffer (SCB) — yêu cầu vốn đệm cho năm tới — và gián tiếp dư địa chia cổ tức/mua lại cổ phiếu của ngân hàng.",
+          "expectation_meaning": "Thị trường kỳ vọng tất cả ngân hàng lớn 'pass' (CET1 vẫn trên ngưỡng ~4.5% trong kịch bản nặng). Điểm theo dõi là MỨC sụt vốn (capital depletion) và SCB từng ngân hàng: SCB thấp hơn dự kiến = ngân hàng được giải phóng vốn → tăng buyback/dividend. SCB cao bất ngờ = bị siết, phải giữ vốn lại.",
+          "good_vs_bad": "Kết quả tốt (sụt vốn ít, SCB giảm) = ngân hàng dư vốn → công bố tăng cổ tức & mua lại cổ phiếu ngay tuần sau → bullish cho cổ phiếu ngân hàng đó. Kết quả xấu (SCB tăng, hoặc một ngân hàng suýt fail) = phải giữ vốn, hạn chế trả lại cho cổ đông → bearish riêng ngân hàng đó; nếu diện rộng = lo ngại sức khoẻ hệ thống tài chính.",
+          "market_reaction": "Sự kiện lớn cho XLF (Financials), đặc biệt các big bank (JPM, BAC, C, WFC, GS, MS). Fed công bố kết quả sau giờ đóng cửa (thường cuối tháng 6); ngân hàng được công bố kế hoạch vốn (dividend/buyback) vài ngày sau → đợt repricing XLF. SCB nhẹ trên diện rộng = re-rating tăng cho banks, hỗ trợ KBE/KRE (regional banks). Kết quả cứng rắn (kịch bản giả định khắc nghiệt hơn) hoặc một tên tuổi yếu = áp lực lên cổ phiếu ngân hàng đó + lan toả lo ngại tín dụng. Đây là tin định chế (idiosyncratic theo ngân hàng) hơn là macro toàn thị trường, nhưng định hình dòng vốn vào XLF cả quý sau.",
+          "release_aliases": [
+            "fed bank stress test results",
+            "fed stress test",
+            "bank stress test",
+            "dfast",
+            "ccar",
+            "fed's bank stress test results"
+          ]
         }
       ]
     },
@@ -2523,6 +2542,23 @@
           ],
           "primary_link": "https://home.treasury.gov/data/treasury-international-capital-tic-system",
           "deep_dive_link": "https://home.treasury.gov/data/treasury-international-capital-tic-system-home-page/tic-press-releases"
+        },
+        {
+          "id": "IEABC",
+          "short_name": "Current Account",
+          "full_name": "Current Account Balance (Cán cân vãng lai)",
+          "frequency": "Hàng quý",
+          "link": "https://fred.stlouisfed.org/series/IEABC",
+          "description": "Cán cân vãng lai = thương mại hàng hoá & dịch vụ + thu nhập đầu tư ròng (primary income) + chuyển giao ròng (secondary income). Là thước đo rộng nhất giao dịch của Mỹ với phần còn lại của thế giới — bao trùm hơn Trade Balance (chỉ goods+services). Mỹ thường thâm hụt vãng lai kéo dài, được tài trợ bằng dòng vốn nước ngoài chảy vào (financial account thặng dư).",
+          "expectation_meaning": "Mỹ thường thâm hụt ~$200-300B/quý (khoảng -3% đến -4% GDP). Forecast theo dõi xu hướng % GDP: thâm hụt nới rộng quá nhanh (>4.5% GDP) = phụ thuộc vốn ngoại nhiều hơn; thu hẹp = xuất khẩu/thu nhập đầu tư cải thiện. Số quý lag ~2.5 tháng nên ít gây surprise tức thời như Trade Balance tháng.",
+          "good_vs_bad": "Thâm hụt thu hẹp = xuất khẩu mạnh hơn hoặc thu nhập đầu tư ròng từ tài sản Mỹ ở nước ngoài tăng → hỗ trợ USD và GDP (net exports đóng góp dương). Thâm hụt nới rộng = nhập khẩu mạnh (cầu nội địa tốt, risk-on) NHƯNG cũng nghĩa Mỹ cần hút thêm vốn ngoại để tài trợ → dễ tổn thương nếu dòng vốn đảo chiều (USD funding risk).",
+          "market_reaction": "Ít gây biến động intraday (data quý, lag) nhưng quan trọng về cấu trúc dài hạn cho USD. Thâm hụt vãng lai lớn + lợi suất Mỹ kém hấp dẫn = áp lực giảm giá USD theo thời gian (cần lãi suất cao hơn để hút vốn). Thâm hụt thu hẹp nhờ năng lượng/xuất khẩu = hỗ trợ XLE (Energy exporters), XLI (Industrials đa quốc gia như Caterpillar/Boeing). USD yếu do thâm hụt rộng = lợi cho US multinationals (Tech AAPL/MSFT, doanh thu ngoại) và hàng hoá định giá bằng USD (vàng, dầu).",
+          "release_aliases": [
+            "current account",
+            "current account balance",
+            "us current account",
+            "current account n.s.a."
+          ]
         }
       ]
     },

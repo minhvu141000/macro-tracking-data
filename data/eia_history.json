@@ -1,23 +1,19 @@
 {
   "schema_version": "1.0",
-  "fetched_at": "2026-06-23T21:26:43.561491+00:00",
+  "fetched_at": "2026-06-25T03:14:20.282259+00:00",
   "series": {
     "EIA_CRUDE": {
       "label": "Crude Oil Stocks (ex-SPR, EIA)",
       "latest": {
+        "date": "2026-06-19",
+        "value": 412134.0
+      },
+      "previous": {
         "date": "2026-06-12",
         "value": 418222.0
       },
-      "previous": {
-        "date": "2026-06-05",
-        "value": 426485.0
-      },
-      "change_pct": -1.937,
+      "change_pct": -1.456,
       "history": [
-        {
-          "date": "2020-09-18",
-          "value": 494406.0
-        },
         {
           "date": "2020-09-25",
           "value": 492426.0
@@ -1213,6 +1209,10 @@
         {
           "date": "2026-06-12",
           "value": 418222.0
+        },
+        {
+          "date": "2026-06-19",
+          "value": 412134.0
         }
       ],
       "source": "eia"
@@ -1220,19 +1220,15 @@
     "EIA_GASOLINE": {
       "label": "Total Gasoline Stocks (EIA)",
       "latest": {
+        "date": "2026-06-19",
+        "value": 216299.0
+      },
+      "previous": {
         "date": "2026-06-12",
         "value": 214235.0
       },
-      "previous": {
-        "date": "2026-06-05",
-        "value": 215141.0
-      },
-      "change_pct": -0.421,
+      "change_pct": 0.963,
       "history": [
-        {
-          "date": "2020-09-18",
-          "value": 227499.0
-        },
         {
           "date": "2020-09-25",
           "value": 228182.0
@@ -2428,6 +2424,10 @@
         {
           "date": "2026-06-12",
           "value": 214235.0
+        },
+        {
+          "date": "2026-06-19",
+          "value": 216299.0
         }
       ],
       "source": "eia"
@@ -2435,19 +2435,15 @@
     "EIA_DISTILLATE": {
       "label": "Distillate Fuel Stocks (EIA)",
       "latest": {
+        "date": "2026-06-19",
+        "value": 106116.0
+      },
+      "previous": {
         "date": "2026-06-12",
         "value": 103052.0
       },
-      "previous": {
-        "date": "2026-06-05",
-        "value": 102101.0
-      },
-      "change_pct": 0.931,
+      "change_pct": 2.973,
       "history": [
-        {
-          "date": "2020-09-18",
-          "value": 175942.0
-        },
         {
           "date": "2020-09-25",
           "value": 172758.0
@@ -3643,6 +3639,10 @@
         {
           "date": "2026-06-12",
           "value": 103052.0
+        },
+        {
+          "date": "2026-06-19",
+          "value": 106116.0
         }
       ],
       "source": "eia"

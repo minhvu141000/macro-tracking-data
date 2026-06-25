@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-23",
+  "updated_at": "2026-06-24",
   "latest": {
-    "as_of": "2026-06-23",
-    "growth_1m": 5.05,
-    "growth_3m": 5.05,
+    "as_of": "2026-06-24",
+    "growth_1m": 0.23,
+    "growth_3m": 0.23,
     "inflation_1m": -6.74,
     "inflation_3m": -6.74,
     "growth_trend_1m": "rising",
-    "note": "Growth surprise 1M +5.0 (beating mạnh, rising), 3M +5.0. Inflation surprise 1M -6.7 (missing mạnh). Data đang vượt kỳ vọng → risk-on tailwind."
+    "note": "Growth surprise 1M +0.2 (đúng kỳ vọng, rising), 3M +0.2. Inflation surprise 1M -6.7 (missing mạnh). Data sát kỳ vọng → ít động lực bất ngờ."
   },
   "series": [
     {
@@ -88,6 +88,11 @@
     {
       "date": "2026-06-23",
       "growth_score": -2.6,
+      "inflation_score": 0
+    },
+    {
+      "date": "2026-06-24",
+      "growth_score": -4.82,
       "inflation_score": 0
     }
   ]
