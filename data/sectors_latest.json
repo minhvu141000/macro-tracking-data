@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "fetched_at": "2026-06-25T03:12:44.209436+00:00",
+  "fetched_at": "2026-06-25T07:08:56.595861+00:00",
   "benchmark": {
     "latest": 733.24,
     "latest_date": "2026-06-24",
@@ -1064,11 +1064,11 @@
       "rs_ytd": 17.85,
       "rs_slope": -0.4,
       "money_flow": {
-        "mfi_5d": 37.2,
-        "mfi_14d": 37.9,
-        "dollar_vol_5d_bn": 12.05,
+        "mfi_5d": 37.0,
+        "mfi_14d": 37.8,
+        "dollar_vol_5d_bn": 12.13,
         "flow_signal": "OUTFLOW",
-        "mfi_vs_spy": 12.2
+        "mfi_vs_spy": 12.8
       }
     },
     "XLF": {
@@ -2115,11 +2115,11 @@
       "rs_ytd": -8.58,
       "rs_slope": -0.01,
       "money_flow": {
-        "mfi_5d": 62.1,
-        "mfi_14d": 80.8,
-        "dollar_vol_5d_bn": 9.63,
+        "mfi_5d": 61.9,
+        "mfi_14d": 80.7,
+        "dollar_vol_5d_bn": 9.67,
         "flow_signal": "INFLOW",
-        "mfi_vs_spy": 37.1
+        "mfi_vs_spy": 37.7
       }
     },
     "XLE": {
@@ -3168,9 +3168,9 @@
       "money_flow": {
         "mfi_5d": 36.6,
         "mfi_14d": 25.9,
-        "dollar_vol_5d_bn": 10.26,
+        "dollar_vol_5d_bn": 10.27,
         "flow_signal": "OUTFLOW",
-        "mfi_vs_spy": 11.6
+        "mfi_vs_spy": 12.4
       }
     },
     "XLV": {
@@ -4219,9 +4219,9 @@
       "money_flow": {
         "mfi_5d": 59.1,
         "mfi_14d": 61.4,
-        "dollar_vol_5d_bn": 8.01,
+        "dollar_vol_5d_bn": 8.02,
         "flow_signal": "INFLOW",
-        "mfi_vs_spy": 34.1
+        "mfi_vs_spy": 34.9
       }
     },
     "XLY": {
@@ -5272,7 +5272,7 @@
         "mfi_14d": 50.0,
         "dollar_vol_5d_bn": 4.95,
         "flow_signal": "OUTFLOW",
-        "mfi_vs_spy": 14.9
+        "mfi_vs_spy": 15.7
       }
     },
     "XLP": {
@@ -5644,11 +5644,11 @@
         },
         {
           "date": "2025-10-23",
-          "value": 84.53
+          "value": 84.54
         },
         {
           "date": "2025-10-24",
-          "value": 83.57
+          "value": 83.58
         },
         {
           "date": "2025-10-27",
@@ -6319,11 +6319,11 @@
       "rs_ytd": 2.0,
       "rs_slope": 1.0,
       "money_flow": {
-        "mfi_5d": 39.7,
+        "mfi_5d": 40.0,
         "mfi_14d": 66.3,
-        "dollar_vol_5d_bn": 5.47,
+        "dollar_vol_5d_bn": 5.5,
         "flow_signal": "OUTFLOW",
-        "mfi_vs_spy": 14.7
+        "mfi_vs_spy": 15.8
       }
     },
     "XLI": {
@@ -7374,7 +7374,7 @@
         "mfi_14d": 69.7,
         "dollar_vol_5d_bn": 7.53,
         "flow_signal": "STRONG_INFLOW",
-        "mfi_vs_spy": 53.8
+        "mfi_vs_spy": 54.6
       }
     },
     "XLB": {
@@ -8425,7 +8425,7 @@
         "mfi_14d": 52.0,
         "dollar_vol_5d_bn": 3.09,
         "flow_signal": "STRONG_OUTFLOW",
-        "mfi_vs_spy": -4.5
+        "mfi_vs_spy": -3.7
       }
     },
     "XLU": {
@@ -9472,11 +9472,11 @@
       "rs_ytd": -0.94,
       "rs_slope": 3.21,
       "money_flow": {
-        "mfi_5d": 81.9,
+        "mfi_5d": 82.0,
         "mfi_14d": 79.3,
-        "dollar_vol_5d_bn": 5.45,
+        "dollar_vol_5d_bn": 5.46,
         "flow_signal": "STRONG_INFLOW",
-        "mfi_vs_spy": 56.9
+        "mfi_vs_spy": 57.8
       }
     },
     "XLRE": {
@@ -10523,11 +10523,11 @@
       "rs_ytd": 3.75,
       "rs_slope": 1.1,
       "money_flow": {
-        "mfi_5d": 44.6,
+        "mfi_5d": 44.7,
         "mfi_14d": 56.4,
         "dollar_vol_5d_bn": 1.36,
         "flow_signal": "OUTFLOW",
-        "mfi_vs_spy": 19.6
+        "mfi_vs_spy": 20.5
       }
     },
     "XLC": {
@@ -11578,7 +11578,7 @@
         "mfi_14d": 35.2,
         "dollar_vol_5d_bn": 4.94,
         "flow_signal": "STRONG_OUTFLOW",
-        "mfi_vs_spy": -25.0
+        "mfi_vs_spy": -24.2
       }
     }
   }

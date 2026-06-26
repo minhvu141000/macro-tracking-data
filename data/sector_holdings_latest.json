@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "fetched_at": "2026-06-25T03:12:44.209436+00:00",
+  "fetched_at": "2026-06-25T07:08:56.595861+00:00",
   "note": "Candidate universe per sector for the stock-picking agent. Sorted by rs_1m (excess return vs SPY). Filtered downstream once build_sector_rotation.py flags a sector.",
   "holdings": {
     "XLK": [
@@ -86,12 +86,12 @@
         "ticker": "ORCL"
       },
       {
-        "latest": 262.23,
-        "ret_1m": -18.04,
+        "latest": 262.24,
+        "ret_1m": -18.03,
         "ret_3m": -39.17,
         "above_ma50": false,
         "above_ma200": false,
-        "rs_1m": -16.63,
+        "rs_1m": -16.62,
         "ticker": "INTU"
       },
       {
@@ -746,7 +746,7 @@
         "ticker": "HON"
       },
       {
-        "latest": 219.85,
+        "latest": 219.86,
         "ret_1m": -1.68,
         "ret_3m": 8.12,
         "above_ma50": true,
@@ -777,7 +777,7 @@
       {
         "latest": 137.82,
         "ret_1m": 192.3,
-        "ret_3m": 213.47,
+        "ret_3m": 215.98,
         "above_ma50": true,
         "above_ma200": true,
         "rs_1m": 193.71,

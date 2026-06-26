@@ -1,506 +1,572 @@
 window.MACRO_DATA = {
-  "last_updated": "2026-06-25T03:21:45.549564+00:00",
+  "last_updated": "2026-06-26T14:47:18.726603+00:00",
   "daily_releases": {
-    "date": "2026-06-24",
+    "date": "2026-06-25",
     "releases": [
       {
-        "name": "MBA 30-Year Mortgage Rate",
-        "time": "2026/06/24 07:00:00",
+        "name": "Chicago Fed National Activity  (May)",
+        "time": "2026/06/25 08:30:00",
         "importance": "bull1",
-        "actual": "6.59%",
+        "actual": "-0.10",
         "forecast": null,
-        "previous": "6.60%",
-        "event_url": "https://www.investing.com/economic-calendar/mba-30-year-mortgage-rate-1042",
+        "previous": "0.19",
+        "event_url": "https://www.investing.com/economic-calendar/chicago-fed-national-activity-523",
         "source": "investing.com",
         "parsed": {
-          "actual": 6.59,
+          "actual": -0.1,
           "forecast": null,
-          "previous": 6.6
+          "previous": 0.19
         },
         "surprise": null,
         "vs_previous": {
-          "delta": -0.01,
+          "delta": -0.29,
           "direction": "down"
         },
-        "group": "mortgage",
+        "group": "regional_fed",
         "is_noise": false
       },
       {
-        "name": "MBA Mortgage Applications (WoW)",
-        "time": "2026/06/24 07:00:00",
-        "importance": "bull1",
-        "actual": "1.0%",
-        "forecast": null,
-        "previous": "-3.8%",
-        "event_url": "https://www.investing.com/economic-calendar/mba-mortgage-applications-380",
-        "source": "investing.com",
-        "parsed": {
-          "actual": 1.0,
-          "forecast": null,
-          "previous": -3.8
-        },
-        "surprise": null,
-        "vs_previous": {
-          "delta": 4.8,
-          "direction": "up"
-        },
-        "group": "mortgage",
-        "is_noise": false
-      },
-      {
-        "name": "MBA Purchase Index",
-        "time": "2026/06/24 07:00:00",
-        "importance": "bull1",
-        "actual": "169.7",
-        "forecast": null,
-        "previous": "170.8",
-        "event_url": "https://www.investing.com/economic-calendar/mba-purchase-index-1494",
-        "source": "investing.com",
-        "parsed": {
-          "actual": 169.7,
-          "forecast": null,
-          "previous": 170.8
-        },
-        "surprise": null,
-        "vs_previous": {
-          "delta": -1.1,
-          "direction": "down"
-        },
-        "group": "mortgage",
-        "is_noise": false
-      },
-      {
-        "name": "Mortgage Market Index",
-        "time": "2026/06/24 07:00:00",
-        "importance": "bull1",
-        "actual": "272.1",
-        "forecast": null,
-        "previous": "269.5",
-        "event_url": "https://www.investing.com/economic-calendar/mortgage-market-index-1427",
-        "source": "investing.com",
-        "parsed": {
-          "actual": 272.1,
-          "forecast": null,
-          "previous": 269.5
-        },
-        "surprise": null,
-        "vs_previous": {
-          "delta": 2.6,
-          "direction": "up"
-        },
-        "group": "mortgage",
-        "is_noise": false
-      },
-      {
-        "name": "Mortgage Refinance Index",
-        "time": "2026/06/24 07:00:00",
-        "importance": "bull1",
-        "actual": "834.2",
-        "forecast": null,
-        "previous": "810.2",
-        "event_url": "https://www.investing.com/economic-calendar/mortgage-refinance-index-1428",
-        "source": "investing.com",
-        "parsed": {
-          "actual": 834.2,
-          "forecast": null,
-          "previous": 810.2
-        },
-        "surprise": null,
-        "vs_previous": {
-          "delta": 24.0,
-          "direction": "up"
-        },
-        "group": "mortgage",
-        "is_noise": false
-      },
-      {
-        "name": "Building Permits  (May)",
-        "time": "2026/06/24 08:30:00",
+        "name": "Continuing Jobless Claims",
+        "time": "2026/06/25 08:30:00",
         "importance": "bull2",
-        "actual": "1.410M",
-        "forecast": "1.413M",
-        "previous": "1.423M",
-        "event_url": "https://www.investing.com/economic-calendar/building-permits-25",
+        "actual": "1,821K",
+        "forecast": "1,800K",
+        "previous": "1,800K",
+        "event_url": "https://www.investing.com/economic-calendar/continuing-jobless-claims-522",
         "source": "investing.com",
         "parsed": {
-          "actual": 1.41,
-          "forecast": 1.413,
-          "previous": 1.423
+          "actual": 1821.0,
+          "forecast": 1800.0,
+          "previous": 1800.0
         },
         "surprise": {
-          "deviation": -0.003,
-          "z_score": -0.04,
+          "deviation": 21.0,
+          "z_score": 0.23,
           "label": "in-line"
         },
         "vs_previous": {
-          "delta": -0.013,
-          "direction": "down"
+          "delta": 21.0,
+          "direction": "up"
         },
-        "group": "housing_starts",
+        "group": "jobless_claims",
         "is_noise": false
       },
       {
-        "name": "Building Permits (MoM)  (May)",
-        "time": "2026/06/24 08:30:00",
-        "importance": "bull1",
-        "actual": "-0.9%",
-        "forecast": "-0.7%",
-        "previous": "4.4%",
-        "event_url": "https://www.investing.com/economic-calendar/building-permits-885",
+        "name": "Core Durable Goods Orders (MoM)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull2",
+        "actual": "1.3%",
+        "forecast": "0.5%",
+        "previous": "1.4%",
+        "event_url": "https://www.investing.com/economic-calendar/core-durable-goods-orders-59",
         "source": "investing.com",
         "parsed": {
-          "actual": -0.9,
-          "forecast": -0.7,
-          "previous": 4.4
+          "actual": 1.3,
+          "forecast": 0.5,
+          "previous": 1.4
         },
         "surprise": {
-          "deviation": -0.2,
-          "z_score": -5.71,
-          "label": "shock-below"
+          "deviation": 0.8,
+          "z_score": 32.0,
+          "label": "shock-above"
         },
         "vs_previous": {
-          "delta": -5.3,
+          "delta": -0.1,
           "direction": "down"
         },
-        "group": "housing_starts",
+        "group": "durable_goods",
         "is_noise": false
       },
       {
-        "name": "Current Account  (Q1)",
-        "time": "2026/06/24 08:30:00",
-        "importance": "bull2",
-        "actual": "-226.8B",
-        "forecast": "-212.0B",
-        "previous": "-221.1B",
-        "event_url": "https://www.investing.com/economic-calendar/current-account-81",
+        "name": "Core PCE Price Index (MoM)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull3",
+        "actual": "0.3%",
+        "forecast": "0.3%",
+        "previous": "0.3%",
+        "event_url": "https://www.investing.com/economic-calendar/core-pce-price-index-61",
         "source": "investing.com",
         "parsed": {
-          "actual": -226.8,
-          "forecast": -212.0,
-          "previous": -221.1
+          "actual": 0.3,
+          "forecast": 0.3,
+          "previous": 0.3
         },
         "surprise": {
-          "deviation": -14.8,
-          "z_score": -1.4,
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.0,
+          "direction": "flat"
+        },
+        "group": "pce_inflation",
+        "is_noise": false
+      },
+      {
+        "name": "Core PCE Price Index (YoY)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull3",
+        "actual": "3.4%",
+        "forecast": "3.4%",
+        "previous": "3.3%",
+        "event_url": "https://www.investing.com/economic-calendar/core-pce-price-index-905",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.4,
+          "forecast": 3.4,
+          "previous": 3.3
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.1,
+          "direction": "up"
+        },
+        "group": "pce_inflation",
+        "is_noise": false
+      },
+      {
+        "name": "Core PCE Prices  (Q1)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull2",
+        "actual": "4.40%",
+        "forecast": "4.40%",
+        "previous": "2.70%",
+        "event_url": "https://www.investing.com/economic-calendar/core-pce-prices-1548",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.4,
+          "forecast": 4.4,
+          "previous": 2.7
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 1.7,
+          "direction": "up"
+        },
+        "group": "pce_inflation",
+        "is_noise": false
+      },
+      {
+        "name": "Corporate Profits (QoQ)  (Q1)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "0.5%",
+        "forecast": "-0.4%",
+        "previous": "4.7%",
+        "event_url": "https://www.investing.com/economic-calendar/corporate-profits-1315",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.5,
+          "forecast": -0.4,
+          "previous": 4.7
+        },
+        "surprise": {
+          "deviation": 0.9,
+          "z_score": 45.0,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": -4.2,
+          "direction": "down"
+        },
+        "group": "gdp",
+        "is_noise": false
+      },
+      {
+        "name": "Durable Goods Orders (MoM)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull3",
+        "actual": "-4.5%",
+        "forecast": "-5.0%",
+        "previous": "8.5%",
+        "event_url": "https://www.investing.com/economic-calendar/durable-goods-orders-86",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -4.5,
+          "forecast": -5.0,
+          "previous": 8.5
+        },
+        "surprise": {
+          "deviation": 0.5,
+          "z_score": 2.0,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": -13.0,
+          "direction": "down"
+        },
+        "group": "durable_goods",
+        "is_noise": false
+      },
+      {
+        "name": "Durables Excluding Defense (MoM)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "-4.6%",
+        "forecast": null,
+        "previous": "8.4%",
+        "event_url": "https://www.investing.com/economic-calendar/durables-excluding-defense-1446",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -4.6,
+          "forecast": null,
+          "previous": 8.4
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -13.0,
+          "direction": "down"
+        },
+        "group": "durable_goods",
+        "is_noise": false
+      },
+      {
+        "name": "GDP (QoQ)  (Q1)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull3",
+        "actual": "2.1%",
+        "forecast": "1.6%",
+        "previous": "0.5%",
+        "event_url": "https://www.investing.com/economic-calendar/gdp-375",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.1,
+          "forecast": 1.6,
+          "previous": 0.5
+        },
+        "surprise": {
+          "deviation": 0.5,
+          "z_score": 6.25,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 1.6,
+          "direction": "up"
+        },
+        "group": "gdp",
+        "is_noise": false
+      },
+      {
+        "name": "GDP Price Index (QoQ)  (Q1)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull2",
+        "actual": "3.6%",
+        "forecast": "3.5%",
+        "previous": "3.7%",
+        "event_url": "https://www.investing.com/economic-calendar/gdp-price-index-343",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.6,
+          "forecast": 3.5,
+          "previous": 3.7
+        },
+        "surprise": {
+          "deviation": 0.1,
+          "z_score": 0.57,
+          "label": "above-forecast"
+        },
+        "vs_previous": {
+          "delta": -0.1,
+          "direction": "down"
+        },
+        "group": "gdp",
+        "is_noise": false
+      },
+      {
+        "name": "GDP Sales  (Q1)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "1.9%",
+        "forecast": "1.5%",
+        "previous": "0.3%",
+        "event_url": "https://www.investing.com/economic-calendar/gdp-sales-1468",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.9,
+          "forecast": 1.5,
+          "previous": 0.3
+        },
+        "surprise": {
+          "deviation": 0.4,
+          "z_score": 5.33,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 1.6,
+          "direction": "up"
+        },
+        "group": "gdp",
+        "is_noise": false
+      },
+      {
+        "name": "Goods Orders Non Defense Ex Air (MoM)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "1.6%",
+        "forecast": "0.6%",
+        "previous": "-0.7%",
+        "event_url": "https://www.investing.com/economic-calendar/goods-orders-non-defense-ex-air-1047",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.6,
+          "forecast": 0.6,
+          "previous": -0.7
+        },
+        "surprise": {
+          "deviation": 1.0,
+          "z_score": 33.33,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 2.3,
+          "direction": "up"
+        },
+        "group": "durable_goods",
+        "is_noise": false
+      },
+      {
+        "name": "Initial Jobless Claims",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull3",
+        "actual": "215K",
+        "forecast": "225K",
+        "previous": "227K",
+        "event_url": "https://www.investing.com/economic-calendar/initial-jobless-claims-294",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 215.0,
+          "forecast": 225.0,
+          "previous": 227.0
+        },
+        "surprise": {
+          "deviation": -10.0,
+          "z_score": -0.89,
           "label": "below-forecast"
         },
         "vs_previous": {
-          "delta": -5.7,
+          "delta": -12.0,
           "direction": "down"
         },
-        "group": "other",
+        "group": "jobless_claims",
         "is_noise": false
       },
       {
-        "name": "New Home Sales  (May)",
-        "time": "2026/06/24 10:00:00",
-        "importance": "bull3",
-        "actual": "580K",
-        "forecast": "638K",
-        "previous": "626K",
-        "event_url": "https://www.investing.com/economic-calendar/new-home-sales-222",
+        "name": "Jobless Claims 4-Week Avg.",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "224.25K",
+        "forecast": null,
+        "previous": "223.50K",
+        "event_url": "https://www.investing.com/economic-calendar/jobless-claims-4-week-avg.-1041",
         "source": "investing.com",
         "parsed": {
-          "actual": 580.0,
-          "forecast": 638.0,
-          "previous": 626.0
+          "actual": 224.25,
+          "forecast": null,
+          "previous": 223.5
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.75,
+          "direction": "up"
+        },
+        "group": "jobless_claims",
+        "is_noise": false
+      },
+      {
+        "name": "PCE price index (MoM)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull2",
+        "actual": "0.4%",
+        "forecast": "0.5%",
+        "previous": "0.4%",
+        "event_url": "https://www.investing.com/economic-calendar/pce-price-index-904",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.4,
+          "forecast": 0.5,
+          "previous": 0.4
         },
         "surprise": {
-          "deviation": -58.0,
-          "z_score": -1.82,
+          "deviation": -0.1,
+          "z_score": -4.0,
           "label": "shock-below"
         },
         "vs_previous": {
-          "delta": -46.0,
-          "direction": "down"
+          "delta": 0.0,
+          "direction": "flat"
         },
-        "group": "home_sales",
+        "group": "pce_inflation",
         "is_noise": false
       },
       {
-        "name": "New Home Sales (MoM)  (May)",
-        "time": "2026/06/24 10:00:00",
+        "name": "PCE Price index (YoY)  (May)",
+        "time": "2026/06/25 08:30:00",
         "importance": "bull2",
-        "actual": "-7.3%",
-        "forecast": null,
-        "previous": "-5.7%",
-        "event_url": "https://www.investing.com/economic-calendar/new-home-sales-896",
+        "actual": "4.1%",
+        "forecast": "4.1%",
+        "previous": "3.8%",
+        "event_url": "https://www.investing.com/economic-calendar/pce-price-index-906",
         "source": "investing.com",
         "parsed": {
-          "actual": -7.3,
-          "forecast": null,
-          "previous": -5.7
-        },
-        "surprise": null,
-        "vs_previous": {
-          "delta": -1.6,
-          "direction": "down"
-        },
-        "group": "home_sales",
-        "is_noise": false
-      },
-      {
-        "name": "Crude Oil Inventories",
-        "time": "2026/06/24 10:30:00",
-        "importance": "bull3",
-        "actual": "-6.088M",
-        "forecast": "-3.900M",
-        "previous": "-8.263M",
-        "event_url": "https://www.investing.com/economic-calendar/eia-crude-oil-inventories-75",
-        "source": "investing.com",
-        "parsed": {
-          "actual": -6.088,
-          "forecast": -3.9,
-          "previous": -8.263
+          "actual": 4.1,
+          "forecast": 4.1,
+          "previous": 3.8
         },
         "surprise": {
-          "deviation": -2.188,
-          "z_score": -11.22,
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.3,
+          "direction": "up"
+        },
+        "group": "pce_inflation",
+        "is_noise": false
+      },
+      {
+        "name": "PCE Prices  (Q1)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "4.6%",
+        "forecast": "4.5%",
+        "previous": "2.9%",
+        "event_url": "https://www.investing.com/economic-calendar/pce-prices-1571",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.6,
+          "forecast": 4.5,
+          "previous": 2.9
+        },
+        "surprise": {
+          "deviation": 0.1,
+          "z_score": 0.44,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 1.7,
+          "direction": "up"
+        },
+        "group": "pce_inflation",
+        "is_noise": false
+      },
+      {
+        "name": "Personal Income (MoM)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "0.7%",
+        "forecast": "0.4%",
+        "previous": "0.0%",
+        "event_url": "https://www.investing.com/economic-calendar/personal-income-234",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.7,
+          "forecast": 0.4,
+          "previous": 0.0
+        },
+        "surprise": {
+          "deviation": 0.3,
+          "z_score": 15.0,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 0.7,
+          "direction": "up"
+        },
+        "group": "income_spending",
+        "is_noise": false
+      },
+      {
+        "name": "Personal Spending (MoM)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull2",
+        "actual": "0.7%",
+        "forecast": "0.6%",
+        "previous": "0.4%",
+        "event_url": "https://www.investing.com/economic-calendar/personal-spending-235",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.7,
+          "forecast": 0.6,
+          "previous": 0.4
+        },
+        "surprise": {
+          "deviation": 0.1,
+          "z_score": 3.33,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 0.3,
+          "direction": "up"
+        },
+        "group": "income_spending",
+        "is_noise": false
+      },
+      {
+        "name": "Real Consumer Spending  (Q1)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "0.5%",
+        "forecast": "1.4%",
+        "previous": "1.9%",
+        "event_url": "https://www.investing.com/economic-calendar/real-consumer-spending-914",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.5,
+          "forecast": 1.4,
+          "previous": 1.9
+        },
+        "surprise": {
+          "deviation": -0.9,
+          "z_score": -12.86,
           "label": "shock-below"
         },
         "vs_previous": {
-          "delta": 2.175,
-          "direction": "up"
-        },
-        "group": "energy_inventory",
-        "is_noise": true
-      },
-      {
-        "name": "EIA Refinery Crude Runs  (WoW)",
-        "time": "2026/06/24 10:30:00",
-        "importance": "bull1",
-        "actual": "-0.081M",
-        "forecast": null,
-        "previous": "0.230M",
-        "event_url": "https://www.investing.com/economic-calendar/eia-refinery-crude-runs-1960",
-        "source": "investing.com",
-        "parsed": {
-          "actual": -0.081,
-          "forecast": null,
-          "previous": 0.23
-        },
-        "surprise": null,
-        "vs_previous": {
-          "delta": -0.311,
+          "delta": -1.4,
           "direction": "down"
         },
-        "group": "energy_inventory",
-        "is_noise": true
-      },
-      {
-        "name": "Crude Oil Imports",
-        "time": "2026/06/24 10:30:00",
-        "importance": "bull1",
-        "actual": "0.094M",
-        "forecast": null,
-        "previous": "-0.241M",
-        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-crude-imports-1658",
-        "source": "investing.com",
-        "parsed": {
-          "actual": 0.094,
-          "forecast": null,
-          "previous": -0.241
-        },
-        "surprise": null,
-        "vs_previous": {
-          "delta": 0.335,
-          "direction": "up"
-        },
-        "group": "trade",
+        "group": "income_spending",
         "is_noise": false
       },
       {
-        "name": "Cushing Crude Oil Inventories",
-        "time": "2026/06/24 10:30:00",
+        "name": "Real Personal Consumption (MoM)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "0.3%",
+        "forecast": null,
+        "previous": "0.0%",
+        "event_url": "https://www.investing.com/economic-calendar/real-personal-consumption-895",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.3,
+          "forecast": null,
+          "previous": 0.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.3,
+          "direction": "up"
+        },
+        "group": "income_spending",
+        "is_noise": false
+      },
+      {
+        "name": "FOMC Member Bowman Speaks",
+        "time": "2026/06/25 08:45:00",
         "importance": "bull2",
-        "actual": "-1.077M",
-        "forecast": null,
-        "previous": "-1.606M",
-        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-cushing-oil-inventories-1657",
-        "source": "investing.com",
-        "parsed": {
-          "actual": -1.077,
-          "forecast": null,
-          "previous": -1.606
-        },
-        "surprise": null,
-        "vs_previous": {
-          "delta": 0.529,
-          "direction": "up"
-        },
-        "group": "energy_inventory",
-        "is_noise": true
-      },
-      {
-        "name": "Distillate Fuel Production",
-        "time": "2026/06/24 10:30:00",
-        "importance": "bull1",
-        "actual": "0.055M",
-        "forecast": null,
-        "previous": "-0.029M",
-        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillate-fuel-production-1660",
-        "source": "investing.com",
-        "parsed": {
-          "actual": 0.055,
-          "forecast": null,
-          "previous": -0.029
-        },
-        "surprise": null,
-        "vs_previous": {
-          "delta": 0.084,
-          "direction": "up"
-        },
-        "group": "energy_inventory",
-        "is_noise": true
-      },
-      {
-        "name": "EIA Weekly Distillates Stocks",
-        "time": "2026/06/24 10:30:00",
-        "importance": "bull1",
-        "actual": "3.064M",
-        "forecast": "-0.500M",
-        "previous": "0.951M",
-        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillates-stocks-917",
-        "source": "investing.com",
-        "parsed": {
-          "actual": 3.064,
-          "forecast": -0.5,
-          "previous": 0.951
-        },
-        "surprise": {
-          "deviation": 3.564,
-          "z_score": 142.56,
-          "label": "shock-above"
-        },
-        "vs_previous": {
-          "delta": 2.113,
-          "direction": "up"
-        },
-        "group": "energy_inventory",
-        "is_noise": true
-      },
-      {
-        "name": "Gasoline Production",
-        "time": "2026/06/24 10:30:00",
-        "importance": "bull1",
-        "actual": "-0.588M",
-        "forecast": null,
-        "previous": "0.356M",
-        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-gasoline-production-1661",
-        "source": "investing.com",
-        "parsed": {
-          "actual": -0.588,
-          "forecast": null,
-          "previous": 0.356
-        },
-        "surprise": null,
-        "vs_previous": {
-          "delta": -0.944,
-          "direction": "down"
-        },
-        "group": "energy_inventory",
-        "is_noise": true
-      },
-      {
-        "name": "Heating Oil Stockpiles",
-        "time": "2026/06/24 10:30:00",
-        "importance": "bull1",
-        "actual": "0.722M",
-        "forecast": null,
-        "previous": "-0.204M",
-        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-heatoil-stock-1659",
-        "source": "investing.com",
-        "parsed": {
-          "actual": 0.722,
-          "forecast": null,
-          "previous": -0.204
-        },
-        "surprise": null,
-        "vs_previous": {
-          "delta": 0.926,
-          "direction": "up"
-        },
-        "group": "energy_inventory",
-        "is_noise": true
-      },
-      {
-        "name": "EIA Weekly Refinery Utilization Rates (WoW)",
-        "time": "2026/06/24 10:30:00",
-        "importance": "bull1",
-        "actual": "-0.6%",
-        "forecast": null,
-        "previous": "1.4%",
-        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-refinery-utilization-rates-1961",
-        "source": "investing.com",
-        "parsed": {
-          "actual": -0.6,
-          "forecast": null,
-          "previous": 1.4
-        },
-        "surprise": null,
-        "vs_previous": {
-          "delta": -2.0,
-          "direction": "down"
-        },
-        "group": "energy_inventory",
-        "is_noise": true
-      },
-      {
-        "name": "Gasoline Inventories",
-        "time": "2026/06/24 10:30:00",
-        "importance": "bull1",
-        "actual": "2.064M",
-        "forecast": "-0.600M",
-        "previous": "-0.906M",
-        "event_url": "https://www.investing.com/economic-calendar/gasoline-inventories-485",
-        "source": "investing.com",
-        "parsed": {
-          "actual": 2.064,
-          "forecast": -0.6,
-          "previous": -0.906
-        },
-        "surprise": {
-          "deviation": 2.664,
-          "z_score": 88.8,
-          "label": "shock-above"
-        },
-        "vs_previous": {
-          "delta": 2.97,
-          "direction": "up"
-        },
-        "group": "energy_inventory",
-        "is_noise": true
-      },
-      {
-        "name": "5-Year Note Auction",
-        "time": "2026/06/24 13:00:00",
-        "importance": "bull2",
-        "actual": "4.200%",
-        "forecast": null,
-        "previous": "4.182%",
-        "event_url": "https://www.investing.com/economic-calendar/5-year-note-auction-570",
-        "source": "investing.com",
-        "parsed": {
-          "actual": 4.2,
-          "forecast": null,
-          "previous": 4.182
-        },
-        "surprise": null,
-        "vs_previous": {
-          "delta": 0.018,
-          "direction": "up"
-        },
-        "group": "auctions",
-        "is_noise": true
-      },
-      {
-        "name": "Fed Governor Cook Speaks",
-        "time": "2026/06/24 14:00:00",
-        "importance": "bull1",
         "actual": null,
         "forecast": null,
         "previous": null,
-        "event_url": "https://www.investing.com/economic-calendar/fed-governor-cook-speaks-2114",
+        "event_url": "https://www.investing.com/economic-calendar/fomc-member-bowman-speaks-1835",
         "source": "investing.com",
         "parsed": {
           "actual": null,
@@ -513,32 +579,197 @@ window.MACRO_DATA = {
         "is_noise": false
       },
       {
-        "name": "Fed Bank Stress Test Results",
-        "time": "2026/06/24 16:00:00",
+        "name": "Atlanta Fed GDPNow  (Q2)",
+        "time": "2026/06/25 10:00:00",
         "importance": "bull2",
-        "actual": null,
-        "forecast": null,
-        "previous": null,
-        "event_url": "https://www.investing.com/economic-calendar/fed-bank-stress-test-results-1984",
+        "actual": "2.5%",
+        "forecast": "3.0%",
+        "previous": "3.0%",
+        "event_url": "https://www.investing.com/economic-calendar/atlanta-fed-gdpnow-2260",
         "source": "investing.com",
         "parsed": {
-          "actual": null,
-          "forecast": null,
-          "previous": null
+          "actual": 2.5,
+          "forecast": 3.0,
+          "previous": 3.0
         },
-        "surprise": null,
-        "vs_previous": null,
+        "surprise": {
+          "deviation": -0.5,
+          "z_score": -3.33,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -0.5,
+          "direction": "down"
+        },
         "group": "other",
         "is_noise": false
       },
       {
-        "name": "U.S. President Trump Speaks",
-        "time": "2026/06/24 20:30:00",
-        "importance": "bull3",
+        "name": "Natural Gas Storage",
+        "time": "2026/06/25 10:30:00",
+        "importance": "bull1",
+        "actual": "76B",
+        "forecast": "67B",
+        "previous": "73B",
+        "event_url": "https://www.investing.com/economic-calendar/natural-gas-storage-386",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 76.0,
+          "forecast": 67.0,
+          "previous": 73.0
+        },
+        "surprise": {
+          "deviation": 9.0,
+          "z_score": 2.69,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 3.0,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "KC Fed Composite Index  (Jun)",
+        "time": "2026/06/25 11:00:00",
+        "importance": "bull1",
+        "actual": "11",
+        "forecast": null,
+        "previous": "8",
+        "event_url": "https://www.investing.com/economic-calendar/kc-fed-composite-index-662",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 11.0,
+          "forecast": null,
+          "previous": 8.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 3.0,
+          "direction": "up"
+        },
+        "group": "other",
+        "is_noise": false
+      },
+      {
+        "name": "KC Fed Manufacturing Index  (Jun)",
+        "time": "2026/06/25 11:00:00",
+        "importance": "bull1",
+        "actual": "19",
+        "forecast": null,
+        "previous": "9",
+        "event_url": "https://www.investing.com/economic-calendar/kc-fed-manufacturing-index-899",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 19.0,
+          "forecast": null,
+          "previous": 9.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 10.0,
+          "direction": "up"
+        },
+        "group": "other",
+        "is_noise": false
+      },
+      {
+        "name": "Dallas Fed PCE  (May)",
+        "time": "2026/06/25 11:25:00",
+        "importance": "bull1",
+        "actual": "2.80%",
+        "forecast": null,
+        "previous": "2.40%",
+        "event_url": "https://www.investing.com/economic-calendar/dallas-fed-pce-1550",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.8,
+          "forecast": null,
+          "previous": 2.4
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.4,
+          "direction": "up"
+        },
+        "group": "regional_fed",
+        "is_noise": false
+      },
+      {
+        "name": "4-Week Bill Auction",
+        "time": "2026/06/25 11:30:00",
+        "importance": "bull1",
+        "actual": "3.610%",
+        "forecast": null,
+        "previous": "3.580%",
+        "event_url": "https://www.investing.com/economic-calendar/4-week-bill-auction-567",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.61,
+          "forecast": null,
+          "previous": 3.58
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.03,
+          "direction": "up"
+        },
+        "group": "auctions",
+        "is_noise": true
+      },
+      {
+        "name": "8-Week Bill Auction",
+        "time": "2026/06/25 11:30:00",
+        "importance": "bull1",
+        "actual": "3.660%",
+        "forecast": null,
+        "previous": "3.640%",
+        "event_url": "https://www.investing.com/economic-calendar/8-week-bill-auction-1801",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.66,
+          "forecast": null,
+          "previous": 3.64
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.02,
+          "direction": "up"
+        },
+        "group": "auctions",
+        "is_noise": true
+      },
+      {
+        "name": "7-Year Note Auction",
+        "time": "2026/06/25 13:00:00",
+        "importance": "bull2",
+        "actual": "4.260%",
+        "forecast": null,
+        "previous": "4.290%",
+        "event_url": "https://www.investing.com/economic-calendar/7-year-note-auction-682",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.26,
+          "forecast": null,
+          "previous": 4.29
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.03,
+          "direction": "down"
+        },
+        "group": "auctions",
+        "is_noise": true
+      },
+      {
+        "name": "FOMC Member Williams Speaks",
+        "time": "2026/06/25 15:40:00",
+        "importance": "bull2",
         "actual": null,
         "forecast": null,
         "previous": null,
-        "event_url": "https://www.investing.com/economic-calendar/u.s.-president-trump-speaks-1694",
+        "event_url": "https://www.investing.com/economic-calendar/fomc-member-williams-speaks-1585",
         "source": "investing.com",
         "parsed": {
           "actual": null,
@@ -547,32 +778,100 @@ window.MACRO_DATA = {
         },
         "surprise": null,
         "vs_previous": null,
-        "group": "other",
+        "group": "fed",
+        "is_noise": false
+      },
+      {
+        "name": "Fed's Balance Sheet",
+        "time": "2026/06/25 16:30:00",
+        "importance": "bull2",
+        "actual": "6,736B",
+        "forecast": null,
+        "previous": "6,736B",
+        "event_url": "https://www.investing.com/economic-calendar/fed's-balance-sheet-2145",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 6736.0,
+          "forecast": null,
+          "previous": 6736.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.0,
+          "direction": "flat"
+        },
+        "group": "fed_plumbing",
+        "is_noise": true
+      },
+      {
+        "name": "Reserve Balances with Federal Reserve Banks",
+        "time": "2026/06/25 16:30:00",
+        "importance": "bull1",
+        "actual": "2.954T",
+        "forecast": null,
+        "previous": "2.936T",
+        "event_url": "https://www.investing.com/economic-calendar/reserve-balances-with-federal-reserve-banks-2120",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.954,
+          "forecast": null,
+          "previous": 2.936
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.018,
+          "direction": "up"
+        },
+        "group": "fed_plumbing",
+        "is_noise": true
+      },
+      {
+        "name": "Fed Goolsbee Speaks",
+        "time": "2026/06/25 18:30:00",
+        "importance": "bull1",
+        "actual": null,
+        "forecast": null,
+        "previous": null,
+        "event_url": "https://www.investing.com/economic-calendar/fed-goolsbee-speaks-2211",
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
         "is_noise": false
       }
     ],
     "release_summary": {
-      "signal_release_count": 14,
-      "noise_release_count": 10,
-      "surprise_count": 3,
+      "signal_release_count": 29,
+      "noise_release_count": 6,
+      "surprise_count": 6,
       "groups_present": [
+        "durable_goods",
         "fed",
-        "home_sales",
-        "housing_starts",
-        "mortgage",
+        "gdp",
+        "income_spending",
+        "jobless_claims",
         "other",
-        "trade"
+        "pce_inflation",
+        "regional_fed"
       ],
       "surprised_groups": [
-        "home_sales",
-        "housing_starts",
-        "other"
+        "durable_goods",
+        "gdp",
+        "income_spending",
+        "jobless_claims",
+        "other",
+        "pce_inflation"
       ],
       "day_surprise_score": {
-        "growth_score": -4.82,
-        "inflation_score": 0,
-        "n_growth": 2,
-        "n_inflation": 0
+        "growth_score": 9.89,
+        "inflation_score": -3.0,
+        "n_growth": 4,
+        "n_inflation": 1
       }
     },
     "inflation_context": {
@@ -580,11 +879,11 @@ window.MACRO_DATA = {
       "cpi_3mo_ann": 8.2,
       "core_cpi_yoy": 2.96,
       "core_cpi_3mo_ann": 3.17,
-      "pce_yoy": 3.77,
-      "core_pce_yoy": 3.29,
-      "core_pce_3mo_ann": 3.78,
+      "pce_yoy": 4.07,
+      "core_pce_yoy": 3.41,
+      "core_pce_3mo_ann": 3.52,
       "hard_data_hot": true,
-      "note": "Hard-data lạm phát VẪN NÓNG (Core PCE YoY 3.29%, CPI YoY 4.27%). Soft-data/khảo sát dovish CHƯA đủ xác nhận disinflation — báo cáo phải đối chiếu, không tuyên bố 'risk-on bền/dovish hẳn' một chiều.",
+      "note": "Hard-data lạm phát VẪN NÓNG (Core PCE YoY 3.41%, CPI YoY 4.27%). Soft-data/khảo sát dovish CHƯA đủ xác nhận disinflation — báo cáo phải đối chiếu, không tuyên bố 'risk-on bền/dovish hẳn' một chiều.",
       "drivers": {
         "ranked_by_momentum": [
           {
@@ -9639,6 +9938,849 @@ window.MACRO_DATA = {
         "group": "other",
         "is_noise": false
       }
+    ],
+    "2026-06-25": [
+      {
+        "name": "Chicago Fed National Activity  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "-0.10",
+        "forecast": null,
+        "previous": "0.19",
+        "event_url": "https://www.investing.com/economic-calendar/chicago-fed-national-activity-523",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -0.1,
+          "forecast": null,
+          "previous": 0.19
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.29,
+          "direction": "down"
+        },
+        "group": "regional_fed",
+        "is_noise": false
+      },
+      {
+        "name": "Continuing Jobless Claims",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull2",
+        "actual": "1,821K",
+        "forecast": "1,800K",
+        "previous": "1,800K",
+        "event_url": "https://www.investing.com/economic-calendar/continuing-jobless-claims-522",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1821.0,
+          "forecast": 1800.0,
+          "previous": 1800.0
+        },
+        "surprise": {
+          "deviation": 21.0,
+          "z_score": 0.23,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 21.0,
+          "direction": "up"
+        },
+        "group": "jobless_claims",
+        "is_noise": false
+      },
+      {
+        "name": "Core Durable Goods Orders (MoM)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull2",
+        "actual": "1.3%",
+        "forecast": "0.5%",
+        "previous": "1.4%",
+        "event_url": "https://www.investing.com/economic-calendar/core-durable-goods-orders-59",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.3,
+          "forecast": 0.5,
+          "previous": 1.4
+        },
+        "surprise": {
+          "deviation": 0.8,
+          "z_score": 32.0,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": -0.1,
+          "direction": "down"
+        },
+        "group": "durable_goods",
+        "is_noise": false
+      },
+      {
+        "name": "Core PCE Price Index (MoM)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull3",
+        "actual": "0.3%",
+        "forecast": "0.3%",
+        "previous": "0.3%",
+        "event_url": "https://www.investing.com/economic-calendar/core-pce-price-index-61",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.3,
+          "forecast": 0.3,
+          "previous": 0.3
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.0,
+          "direction": "flat"
+        },
+        "group": "pce_inflation",
+        "is_noise": false
+      },
+      {
+        "name": "Core PCE Price Index (YoY)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull3",
+        "actual": "3.4%",
+        "forecast": "3.4%",
+        "previous": "3.3%",
+        "event_url": "https://www.investing.com/economic-calendar/core-pce-price-index-905",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.4,
+          "forecast": 3.4,
+          "previous": 3.3
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.1,
+          "direction": "up"
+        },
+        "group": "pce_inflation",
+        "is_noise": false
+      },
+      {
+        "name": "Core PCE Prices  (Q1)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull2",
+        "actual": "4.40%",
+        "forecast": "4.40%",
+        "previous": "2.70%",
+        "event_url": "https://www.investing.com/economic-calendar/core-pce-prices-1548",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.4,
+          "forecast": 4.4,
+          "previous": 2.7
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 1.7,
+          "direction": "up"
+        },
+        "group": "pce_inflation",
+        "is_noise": false
+      },
+      {
+        "name": "Corporate Profits (QoQ)  (Q1)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "0.5%",
+        "forecast": "-0.4%",
+        "previous": "4.7%",
+        "event_url": "https://www.investing.com/economic-calendar/corporate-profits-1315",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.5,
+          "forecast": -0.4,
+          "previous": 4.7
+        },
+        "surprise": {
+          "deviation": 0.9,
+          "z_score": 45.0,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": -4.2,
+          "direction": "down"
+        },
+        "group": "gdp",
+        "is_noise": false
+      },
+      {
+        "name": "Durable Goods Orders (MoM)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull3",
+        "actual": "-4.5%",
+        "forecast": "-5.0%",
+        "previous": "8.5%",
+        "event_url": "https://www.investing.com/economic-calendar/durable-goods-orders-86",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -4.5,
+          "forecast": -5.0,
+          "previous": 8.5
+        },
+        "surprise": {
+          "deviation": 0.5,
+          "z_score": 2.0,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": -13.0,
+          "direction": "down"
+        },
+        "group": "durable_goods",
+        "is_noise": false
+      },
+      {
+        "name": "Durables Excluding Defense (MoM)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "-4.6%",
+        "forecast": null,
+        "previous": "8.4%",
+        "event_url": "https://www.investing.com/economic-calendar/durables-excluding-defense-1446",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -4.6,
+          "forecast": null,
+          "previous": 8.4
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -13.0,
+          "direction": "down"
+        },
+        "group": "durable_goods",
+        "is_noise": false
+      },
+      {
+        "name": "GDP (QoQ)  (Q1)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull3",
+        "actual": "2.1%",
+        "forecast": "1.6%",
+        "previous": "0.5%",
+        "event_url": "https://www.investing.com/economic-calendar/gdp-375",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.1,
+          "forecast": 1.6,
+          "previous": 0.5
+        },
+        "surprise": {
+          "deviation": 0.5,
+          "z_score": 6.25,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 1.6,
+          "direction": "up"
+        },
+        "group": "gdp",
+        "is_noise": false
+      },
+      {
+        "name": "GDP Price Index (QoQ)  (Q1)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull2",
+        "actual": "3.6%",
+        "forecast": "3.5%",
+        "previous": "3.7%",
+        "event_url": "https://www.investing.com/economic-calendar/gdp-price-index-343",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.6,
+          "forecast": 3.5,
+          "previous": 3.7
+        },
+        "surprise": {
+          "deviation": 0.1,
+          "z_score": 0.57,
+          "label": "above-forecast"
+        },
+        "vs_previous": {
+          "delta": -0.1,
+          "direction": "down"
+        },
+        "group": "gdp",
+        "is_noise": false
+      },
+      {
+        "name": "GDP Sales  (Q1)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "1.9%",
+        "forecast": "1.5%",
+        "previous": "0.3%",
+        "event_url": "https://www.investing.com/economic-calendar/gdp-sales-1468",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.9,
+          "forecast": 1.5,
+          "previous": 0.3
+        },
+        "surprise": {
+          "deviation": 0.4,
+          "z_score": 5.33,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 1.6,
+          "direction": "up"
+        },
+        "group": "gdp",
+        "is_noise": false
+      },
+      {
+        "name": "Goods Orders Non Defense Ex Air (MoM)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "1.6%",
+        "forecast": "0.6%",
+        "previous": "-0.7%",
+        "event_url": "https://www.investing.com/economic-calendar/goods-orders-non-defense-ex-air-1047",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.6,
+          "forecast": 0.6,
+          "previous": -0.7
+        },
+        "surprise": {
+          "deviation": 1.0,
+          "z_score": 33.33,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 2.3,
+          "direction": "up"
+        },
+        "group": "durable_goods",
+        "is_noise": false
+      },
+      {
+        "name": "Initial Jobless Claims",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull3",
+        "actual": "215K",
+        "forecast": "225K",
+        "previous": "227K",
+        "event_url": "https://www.investing.com/economic-calendar/initial-jobless-claims-294",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 215.0,
+          "forecast": 225.0,
+          "previous": 227.0
+        },
+        "surprise": {
+          "deviation": -10.0,
+          "z_score": -0.89,
+          "label": "below-forecast"
+        },
+        "vs_previous": {
+          "delta": -12.0,
+          "direction": "down"
+        },
+        "group": "jobless_claims",
+        "is_noise": false
+      },
+      {
+        "name": "Jobless Claims 4-Week Avg.",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "224.25K",
+        "forecast": null,
+        "previous": "223.50K",
+        "event_url": "https://www.investing.com/economic-calendar/jobless-claims-4-week-avg.-1041",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 224.25,
+          "forecast": null,
+          "previous": 223.5
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.75,
+          "direction": "up"
+        },
+        "group": "jobless_claims",
+        "is_noise": false
+      },
+      {
+        "name": "PCE price index (MoM)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull2",
+        "actual": "0.4%",
+        "forecast": "0.5%",
+        "previous": "0.4%",
+        "event_url": "https://www.investing.com/economic-calendar/pce-price-index-904",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.4,
+          "forecast": 0.5,
+          "previous": 0.4
+        },
+        "surprise": {
+          "deviation": -0.1,
+          "z_score": -4.0,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": 0.0,
+          "direction": "flat"
+        },
+        "group": "pce_inflation",
+        "is_noise": false
+      },
+      {
+        "name": "PCE Price index (YoY)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull2",
+        "actual": "4.1%",
+        "forecast": "4.1%",
+        "previous": "3.8%",
+        "event_url": "https://www.investing.com/economic-calendar/pce-price-index-906",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.1,
+          "forecast": 4.1,
+          "previous": 3.8
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 0.3,
+          "direction": "up"
+        },
+        "group": "pce_inflation",
+        "is_noise": false
+      },
+      {
+        "name": "PCE Prices  (Q1)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "4.6%",
+        "forecast": "4.5%",
+        "previous": "2.9%",
+        "event_url": "https://www.investing.com/economic-calendar/pce-prices-1571",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.6,
+          "forecast": 4.5,
+          "previous": 2.9
+        },
+        "surprise": {
+          "deviation": 0.1,
+          "z_score": 0.44,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": 1.7,
+          "direction": "up"
+        },
+        "group": "pce_inflation",
+        "is_noise": false
+      },
+      {
+        "name": "Personal Income (MoM)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "0.7%",
+        "forecast": "0.4%",
+        "previous": "0.0%",
+        "event_url": "https://www.investing.com/economic-calendar/personal-income-234",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.7,
+          "forecast": 0.4,
+          "previous": 0.0
+        },
+        "surprise": {
+          "deviation": 0.3,
+          "z_score": 15.0,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 0.7,
+          "direction": "up"
+        },
+        "group": "income_spending",
+        "is_noise": false
+      },
+      {
+        "name": "Personal Spending (MoM)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull2",
+        "actual": "0.7%",
+        "forecast": "0.6%",
+        "previous": "0.4%",
+        "event_url": "https://www.investing.com/economic-calendar/personal-spending-235",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.7,
+          "forecast": 0.6,
+          "previous": 0.4
+        },
+        "surprise": {
+          "deviation": 0.1,
+          "z_score": 3.33,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 0.3,
+          "direction": "up"
+        },
+        "group": "income_spending",
+        "is_noise": false
+      },
+      {
+        "name": "Real Consumer Spending  (Q1)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "0.5%",
+        "forecast": "1.4%",
+        "previous": "1.9%",
+        "event_url": "https://www.investing.com/economic-calendar/real-consumer-spending-914",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.5,
+          "forecast": 1.4,
+          "previous": 1.9
+        },
+        "surprise": {
+          "deviation": -0.9,
+          "z_score": -12.86,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -1.4,
+          "direction": "down"
+        },
+        "group": "income_spending",
+        "is_noise": false
+      },
+      {
+        "name": "Real Personal Consumption (MoM)  (May)",
+        "time": "2026/06/25 08:30:00",
+        "importance": "bull1",
+        "actual": "0.3%",
+        "forecast": null,
+        "previous": "0.0%",
+        "event_url": "https://www.investing.com/economic-calendar/real-personal-consumption-895",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.3,
+          "forecast": null,
+          "previous": 0.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.3,
+          "direction": "up"
+        },
+        "group": "income_spending",
+        "is_noise": false
+      },
+      {
+        "name": "FOMC Member Bowman Speaks",
+        "time": "2026/06/25 08:45:00",
+        "importance": "bull2",
+        "actual": null,
+        "forecast": null,
+        "previous": null,
+        "event_url": "https://www.investing.com/economic-calendar/fomc-member-bowman-speaks-1835",
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
+      },
+      {
+        "name": "Atlanta Fed GDPNow  (Q2)",
+        "time": "2026/06/25 10:00:00",
+        "importance": "bull2",
+        "actual": "2.5%",
+        "forecast": "3.0%",
+        "previous": "3.0%",
+        "event_url": "https://www.investing.com/economic-calendar/atlanta-fed-gdpnow-2260",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.5,
+          "forecast": 3.0,
+          "previous": 3.0
+        },
+        "surprise": {
+          "deviation": -0.5,
+          "z_score": -3.33,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -0.5,
+          "direction": "down"
+        },
+        "group": "other",
+        "is_noise": false
+      },
+      {
+        "name": "Natural Gas Storage",
+        "time": "2026/06/25 10:30:00",
+        "importance": "bull1",
+        "actual": "76B",
+        "forecast": "67B",
+        "previous": "73B",
+        "event_url": "https://www.investing.com/economic-calendar/natural-gas-storage-386",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 76.0,
+          "forecast": 67.0,
+          "previous": 73.0
+        },
+        "surprise": {
+          "deviation": 9.0,
+          "z_score": 2.69,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 3.0,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "KC Fed Composite Index  (Jun)",
+        "time": "2026/06/25 11:00:00",
+        "importance": "bull1",
+        "actual": "11",
+        "forecast": null,
+        "previous": "8",
+        "event_url": "https://www.investing.com/economic-calendar/kc-fed-composite-index-662",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 11.0,
+          "forecast": null,
+          "previous": 8.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 3.0,
+          "direction": "up"
+        },
+        "group": "other",
+        "is_noise": false
+      },
+      {
+        "name": "KC Fed Manufacturing Index  (Jun)",
+        "time": "2026/06/25 11:00:00",
+        "importance": "bull1",
+        "actual": "19",
+        "forecast": null,
+        "previous": "9",
+        "event_url": "https://www.investing.com/economic-calendar/kc-fed-manufacturing-index-899",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 19.0,
+          "forecast": null,
+          "previous": 9.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 10.0,
+          "direction": "up"
+        },
+        "group": "other",
+        "is_noise": false
+      },
+      {
+        "name": "Dallas Fed PCE  (May)",
+        "time": "2026/06/25 11:25:00",
+        "importance": "bull1",
+        "actual": "2.80%",
+        "forecast": null,
+        "previous": "2.40%",
+        "event_url": "https://www.investing.com/economic-calendar/dallas-fed-pce-1550",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.8,
+          "forecast": null,
+          "previous": 2.4
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.4,
+          "direction": "up"
+        },
+        "group": "regional_fed",
+        "is_noise": false
+      },
+      {
+        "name": "4-Week Bill Auction",
+        "time": "2026/06/25 11:30:00",
+        "importance": "bull1",
+        "actual": "3.610%",
+        "forecast": null,
+        "previous": "3.580%",
+        "event_url": "https://www.investing.com/economic-calendar/4-week-bill-auction-567",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.61,
+          "forecast": null,
+          "previous": 3.58
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.03,
+          "direction": "up"
+        },
+        "group": "auctions",
+        "is_noise": true
+      },
+      {
+        "name": "8-Week Bill Auction",
+        "time": "2026/06/25 11:30:00",
+        "importance": "bull1",
+        "actual": "3.660%",
+        "forecast": null,
+        "previous": "3.640%",
+        "event_url": "https://www.investing.com/economic-calendar/8-week-bill-auction-1801",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 3.66,
+          "forecast": null,
+          "previous": 3.64
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.02,
+          "direction": "up"
+        },
+        "group": "auctions",
+        "is_noise": true
+      },
+      {
+        "name": "7-Year Note Auction",
+        "time": "2026/06/25 13:00:00",
+        "importance": "bull2",
+        "actual": "4.260%",
+        "forecast": null,
+        "previous": "4.290%",
+        "event_url": "https://www.investing.com/economic-calendar/7-year-note-auction-682",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 4.26,
+          "forecast": null,
+          "previous": 4.29
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.03,
+          "direction": "down"
+        },
+        "group": "auctions",
+        "is_noise": true
+      },
+      {
+        "name": "FOMC Member Williams Speaks",
+        "time": "2026/06/25 15:40:00",
+        "importance": "bull2",
+        "actual": null,
+        "forecast": null,
+        "previous": null,
+        "event_url": "https://www.investing.com/economic-calendar/fomc-member-williams-speaks-1585",
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
+      },
+      {
+        "name": "Fed's Balance Sheet",
+        "time": "2026/06/25 16:30:00",
+        "importance": "bull2",
+        "actual": "6,736B",
+        "forecast": null,
+        "previous": "6,736B",
+        "event_url": "https://www.investing.com/economic-calendar/fed's-balance-sheet-2145",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 6736.0,
+          "forecast": null,
+          "previous": 6736.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.0,
+          "direction": "flat"
+        },
+        "group": "fed_plumbing",
+        "is_noise": true
+      },
+      {
+        "name": "Reserve Balances with Federal Reserve Banks",
+        "time": "2026/06/25 16:30:00",
+        "importance": "bull1",
+        "actual": "2.954T",
+        "forecast": null,
+        "previous": "2.936T",
+        "event_url": "https://www.investing.com/economic-calendar/reserve-balances-with-federal-reserve-banks-2120",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.954,
+          "forecast": null,
+          "previous": 2.936
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.018,
+          "direction": "up"
+        },
+        "group": "fed_plumbing",
+        "is_noise": true
+      },
+      {
+        "name": "Fed Goolsbee Speaks",
+        "time": "2026/06/25 18:30:00",
+        "importance": "bull1",
+        "actual": null,
+        "forecast": null,
+        "previous": null,
+        "event_url": "https://www.investing.com/economic-calendar/fed-goolsbee-speaks-2211",
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
+      }
     ]
   },
   "history": {
@@ -10625,19 +11767,15 @@ window.MACRO_DATA = {
     "PCEPI": {
       "label": "PCE Price Index",
       "latest": {
-        "date": "2026-04-01",
-        "value": 130.902
+        "date": "2026-05-01",
+        "value": 131.527
       },
       "previous": {
-        "date": "2026-03-01",
-        "value": 130.381
+        "date": "2026-04-01",
+        "value": 130.938
       },
-      "change_pct": 0.4,
+      "change_pct": 0.45,
       "history": [
-        {
-          "date": "2016-05-01",
-          "value": 98.153
-        },
         {
           "date": "2016-06-01",
           "value": 98.325
@@ -11100,38 +12238,38 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-01-01",
-          "value": 129.002
+          "value": 129.023
         },
         {
           "date": "2026-02-01",
-          "value": 129.52
+          "value": 129.539
         },
         {
           "date": "2026-03-01",
-          "value": 130.381
+          "value": 130.403
         },
         {
           "date": "2026-04-01",
-          "value": 130.902
+          "value": 130.938
+        },
+        {
+          "date": "2026-05-01",
+          "value": 131.527
         }
       ]
     },
     "PCEPILFE": {
       "label": "Core PCE",
       "latest": {
-        "date": "2026-04-01",
-        "value": 129.63
+        "date": "2026-05-01",
+        "value": 130.082
       },
       "previous": {
-        "date": "2026-03-01",
-        "value": 129.321
+        "date": "2026-04-01",
+        "value": 129.667
       },
-      "change_pct": 0.239,
+      "change_pct": 0.32,
       "history": [
-        {
-          "date": "2016-05-01",
-          "value": 98.284
-        },
         {
           "date": "2016-06-01",
           "value": 98.386
@@ -11594,19 +12732,23 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-01-01",
-          "value": 128.432
+          "value": 128.455
         },
         {
           "date": "2026-02-01",
-          "value": 128.94
+          "value": 128.961
         },
         {
           "date": "2026-03-01",
-          "value": 129.321
+          "value": 129.343
         },
         {
           "date": "2026-04-01",
-          "value": 129.63
+          "value": 129.667
+        },
+        {
+          "date": "2026-05-01",
+          "value": 130.082
         }
       ]
     },
@@ -16035,19 +17177,15 @@ window.MACRO_DATA = {
     "ICSA": {
       "label": "Initial Jobless Claims",
       "latest": {
-        "date": "2026-06-13",
-        "value": 226000.0
+        "date": "2026-06-20",
+        "value": 215000.0
       },
       "previous": {
-        "date": "2026-06-06",
-        "value": 230000.0
+        "date": "2026-06-13",
+        "value": 227000.0
       },
-      "change_pct": -1.739,
+      "change_pct": -5.286,
       "history": [
-        {
-          "date": "2024-03-02",
-          "value": 213000.0
-        },
         {
           "date": "2024-03-09",
           "value": 213000.0
@@ -16522,7 +17660,11 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-06-13",
-          "value": 226000.0
+          "value": 227000.0
+        },
+        {
+          "date": "2026-06-20",
+          "value": 215000.0
         }
       ]
     },
@@ -25390,13 +26532,13 @@ window.MACRO_DATA = {
       "label": "Real GDP Growth (QoQ ann.)",
       "latest": {
         "date": "2026-01-01",
-        "value": 1.6
+        "value": 2.1
       },
       "previous": {
         "date": "2025-10-01",
         "value": 0.5
       },
-      "change_pct": 220.0,
+      "change_pct": 320.0,
       "history": [
         {
           "date": "1996-04-01",
@@ -25876,7 +27018,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-01-01",
-          "value": 1.6
+          "value": 2.1
         }
       ]
     },
@@ -25884,13 +27026,13 @@ window.MACRO_DATA = {
       "label": "GDP Contribution: Consumer Spending (PCE)",
       "latest": {
         "date": "2026-01-01",
-        "value": 0.95
+        "value": 0.37
       },
       "previous": {
         "date": "2025-10-01",
         "value": 1.3
       },
-      "change_pct": -26.923,
+      "change_pct": -71.538,
       "history": [
         {
           "date": "1996-04-01",
@@ -26370,7 +27512,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-01-01",
-          "value": 0.95
+          "value": 0.37
         }
       ]
     },
@@ -26378,13 +27520,13 @@ window.MACRO_DATA = {
       "label": "GDP Contribution: Private Investment",
       "latest": {
         "date": "2026-01-01",
-        "value": 1.19
+        "value": 1.35
       },
       "previous": {
         "date": "2025-10-01",
         "value": 0.4
       },
-      "change_pct": 197.5,
+      "change_pct": 237.5,
       "history": [
         {
           "date": "1996-04-01",
@@ -26864,7 +28006,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-01-01",
-          "value": 1.19
+          "value": 1.35
         }
       ]
     },
@@ -26872,13 +28014,13 @@ window.MACRO_DATA = {
       "label": "GDP Contribution: Net Exports",
       "latest": {
         "date": "2026-01-01",
-        "value": -1.25
+        "value": -0.37
       },
       "previous": {
         "date": "2025-10-01",
         "value": -0.22
       },
-      "change_pct": 468.182,
+      "change_pct": 68.182,
       "history": [
         {
           "date": "1996-04-01",
@@ -27358,7 +28500,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-01-01",
-          "value": -1.25
+          "value": -0.37
         }
       ]
     },
@@ -27366,13 +28508,13 @@ window.MACRO_DATA = {
       "label": "GDP Contribution: Government",
       "latest": {
         "date": "2026-01-01",
-        "value": 0.73
+        "value": 0.74
       },
       "previous": {
         "date": "2025-10-01",
         "value": -0.99
       },
-      "change_pct": -173.737,
+      "change_pct": -174.747,
       "history": [
         {
           "date": "1996-04-01",
@@ -27852,7 +28994,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-01-01",
-          "value": 0.73
+          "value": 0.74
         }
       ]
     },
@@ -30824,13 +31966,13 @@ window.MACRO_DATA = {
       "label": "Atlanta Fed GDPNow",
       "latest": {
         "date": "2026-04-01",
-        "value": 3.0377
+        "value": 2.5438
       },
       "previous": {
         "date": "2026-01-01",
         "value": 1.2392
       },
-      "change_pct": 145.134,
+      "change_pct": 105.278,
       "history": [
         {
           "date": "2011-07-01",
@@ -31070,26 +32212,22 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-04-01",
-          "value": 3.0377
+          "value": 2.5438
         }
       ]
     },
     "DGORDER": {
       "label": "Durable Goods Orders",
       "latest": {
-        "date": "2026-04-01",
-        "value": 346182.0
+        "date": "2026-05-01",
+        "value": 332050.0
       },
       "previous": {
-        "date": "2026-03-01",
-        "value": 320485.0
+        "date": "2026-04-01",
+        "value": 347618.0
       },
-      "change_pct": 8.018,
+      "change_pct": -4.478,
       "history": [
-        {
-          "date": "2016-05-01",
-          "value": 223117.0
-        },
         {
           "date": "2016-06-01",
           "value": 206910.0
@@ -31564,7 +32702,11 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-04-01",
-          "value": 346182.0
+          "value": 347618.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 332050.0
         }
       ]
     },
@@ -34601,19 +35743,15 @@ window.MACRO_DATA = {
     "CCSA": {
       "label": "Continuing Jobless Claims",
       "latest": {
-        "date": "2026-06-06",
-        "value": 1810000.0
+        "date": "2026-06-13",
+        "value": 1821000.0
       },
       "previous": {
-        "date": "2026-05-30",
-        "value": 1786000.0
+        "date": "2026-06-06",
+        "value": 1800000.0
       },
-      "change_pct": 1.344,
+      "change_pct": 1.167,
       "history": [
-        {
-          "date": "2024-02-24",
-          "value": 1788000.0
-        },
         {
           "date": "2024-03-02",
           "value": 1800000.0
@@ -35088,7 +36226,11 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-06-06",
-          "value": 1810000.0
+          "value": 1800000.0
+        },
+        {
+          "date": "2026-06-13",
+          "value": 1821000.0
         }
       ]
     },
@@ -37071,19 +38213,15 @@ window.MACRO_DATA = {
     "PI": {
       "label": "Personal Income",
       "latest": {
-        "date": "2026-04-01",
-        "value": 26722.5
+        "date": "2026-05-01",
+        "value": 26916.4
       },
       "previous": {
-        "date": "2026-03-01",
-        "value": 26722.5
+        "date": "2026-04-01",
+        "value": 26734.8
       },
-      "change_pct": 0.0,
+      "change_pct": 0.679,
       "history": [
-        {
-          "date": "2016-05-01",
-          "value": 15777.2
-        },
         {
           "date": "2016-06-01",
           "value": 15821.4
@@ -37546,38 +38684,38 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-01-01",
-          "value": 26603.4
+          "value": 26610.6
         },
         {
           "date": "2026-02-01",
-          "value": 26590.3
+          "value": 26597.7
         },
         {
           "date": "2026-03-01",
-          "value": 26722.5
+          "value": 26739.9
         },
         {
           "date": "2026-04-01",
-          "value": 26722.5
+          "value": 26734.8
+        },
+        {
+          "date": "2026-05-01",
+          "value": 26916.4
         }
       ]
     },
     "PCE": {
       "label": "Personal Spending (PCE level)",
       "latest": {
-        "date": "2026-04-01",
-        "value": 21979.4
+        "date": "2026-05-01",
+        "value": 22059.8
       },
       "previous": {
-        "date": "2026-03-01",
-        "value": 21868.3
+        "date": "2026-04-01",
+        "value": 21903.7
       },
-      "change_pct": 0.508,
+      "change_pct": 0.713,
       "history": [
-        {
-          "date": "2016-05-01",
-          "value": 12652.7
-        },
         {
           "date": "2016-06-01",
           "value": 12731.2
@@ -38040,19 +39178,23 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-01-01",
-          "value": 21509.1
+          "value": 21478.7
         },
         {
           "date": "2026-02-01",
-          "value": 21655.8
+          "value": 21611.4
         },
         {
           "date": "2026-03-01",
-          "value": 21868.3
+          "value": 21814.7
         },
         {
           "date": "2026-04-01",
-          "value": 21979.4
+          "value": 21903.7
+        },
+        {
+          "date": "2026-05-01",
+          "value": 22059.8
         }
       ]
     },
@@ -38060,13 +39202,13 @@ window.MACRO_DATA = {
       "label": "Total Vehicle Sales",
       "latest": {
         "date": "2026-05-01",
-        "value": 16.485
+        "value": 16.508
       },
       "previous": {
         "date": "2026-04-01",
         "value": 16.395
       },
-      "change_pct": 0.549,
+      "change_pct": 0.689,
       "history": [
         {
           "date": "2016-06-01",
@@ -38538,7 +39680,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-03-01",
-          "value": 16.537
+          "value": 16.536
         },
         {
           "date": "2026-04-01",
@@ -38546,7 +39688,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-05-01",
-          "value": 16.485
+          "value": 16.508
         }
       ]
     },
@@ -40035,19 +41177,15 @@ window.MACRO_DATA = {
     "DFF": {
       "label": "Fed Funds Rate",
       "latest": {
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "value": 3.63
       },
       "previous": {
-        "date": "2026-06-22",
+        "date": "2026-06-23",
         "value": 3.63
       },
       "change_pct": 0.0,
       "history": [
-        {
-          "date": "2026-02-24",
-          "value": 3.64
-        },
         {
           "date": "2026-02-25",
           "value": 3.64
@@ -40523,25 +41661,25 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-23",
           "value": 3.63
+        },
+        {
+          "date": "2026-06-24",
+          "value": 3.63
         }
       ]
     },
     "DGS10": {
       "label": "10Y Treasury Yield",
       "latest": {
+        "date": "2026-06-24",
+        "value": 4.41
+      },
+      "previous": {
         "date": "2026-06-23",
         "value": 4.5
       },
-      "previous": {
-        "date": "2026-06-22",
-        "value": 4.51
-      },
-      "change_pct": -0.222,
+      "change_pct": -2.0,
       "history": [
-        {
-          "date": "2026-01-07",
-          "value": 4.15
-        },
         {
           "date": "2026-01-08",
           "value": 4.19
@@ -41001,25 +42139,25 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-23",
           "value": 4.5
+        },
+        {
+          "date": "2026-06-24",
+          "value": 4.41
         }
       ]
     },
     "DGS2": {
       "label": "2Y Treasury Yield",
       "latest": {
+        "date": "2026-06-24",
+        "value": 4.11
+      },
+      "previous": {
         "date": "2026-06-23",
         "value": 4.16
       },
-      "previous": {
-        "date": "2026-06-22",
-        "value": 4.24
-      },
-      "change_pct": -1.887,
+      "change_pct": -1.202,
       "history": [
-        {
-          "date": "2026-01-07",
-          "value": 3.47
-        },
         {
           "date": "2026-01-08",
           "value": 3.49
@@ -41479,25 +42617,25 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-23",
           "value": 4.16
+        },
+        {
+          "date": "2026-06-24",
+          "value": 4.11
         }
       ]
     },
     "DGS3MO": {
       "label": "3M Treasury Yield",
       "latest": {
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "value": 3.85
       },
       "previous": {
-        "date": "2026-06-22",
+        "date": "2026-06-23",
         "value": 3.85
       },
       "change_pct": 0.0,
       "history": [
-        {
-          "date": "2026-01-07",
-          "value": 3.62
-        },
         {
           "date": "2026-01-08",
           "value": 3.62
@@ -41957,25 +43095,25 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-23",
           "value": 3.85
+        },
+        {
+          "date": "2026-06-24",
+          "value": 3.85
         }
       ]
     },
     "DGS6MO": {
       "label": "6M Treasury Yield",
       "latest": {
+        "date": "2026-06-24",
+        "value": 3.95
+      },
+      "previous": {
         "date": "2026-06-23",
         "value": 3.96
       },
-      "previous": {
-        "date": "2026-06-22",
-        "value": 3.98
-      },
-      "change_pct": -0.503,
+      "change_pct": -0.253,
       "history": [
-        {
-          "date": "2026-01-07",
-          "value": 3.56
-        },
         {
           "date": "2026-01-08",
           "value": 3.56
@@ -42435,25 +43573,25 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-23",
           "value": 3.96
+        },
+        {
+          "date": "2026-06-24",
+          "value": 3.95
         }
       ]
     },
     "T10Y2Y": {
       "label": "10Y-2Y Spread",
       "latest": {
+        "date": "2026-06-25",
+        "value": 0.31
+      },
+      "previous": {
         "date": "2026-06-24",
         "value": 0.3
       },
-      "previous": {
-        "date": "2026-06-23",
-        "value": 0.34
-      },
-      "change_pct": -11.765,
+      "change_pct": 3.333,
       "history": [
-        {
-          "date": "2026-01-08",
-          "value": 0.7
-        },
         {
           "date": "2026-01-09",
           "value": 0.64
@@ -42913,6 +44051,10 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-24",
           "value": 0.3
+        },
+        {
+          "date": "2026-06-25",
+          "value": 0.31
         }
       ]
     },
@@ -43401,19 +44543,15 @@ window.MACRO_DATA = {
     "VIXCLS": {
       "label": "VIX (Volatility Index)",
       "latest": {
+        "date": "2026-06-24",
+        "value": 18.63
+      },
+      "previous": {
         "date": "2026-06-23",
         "value": 19.49
       },
-      "previous": {
-        "date": "2026-06-22",
-        "value": 17.28
-      },
-      "change_pct": 12.789,
+      "change_pct": -4.413,
       "history": [
-        {
-          "date": "2026-01-07",
-          "value": 15.38
-        },
         {
           "date": "2026-01-08",
           "value": 15.45
@@ -43885,6 +45023,10 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-23",
           "value": 19.49
+        },
+        {
+          "date": "2026-06-24",
+          "value": 18.63
         }
       ]
     },
@@ -44365,19 +45507,15 @@ window.MACRO_DATA = {
     "BAMLH0A0HYM2": {
       "label": "High-Yield Credit Spread (HY OAS)",
       "latest": {
+        "date": "2026-06-24",
+        "value": 2.76
+      },
+      "previous": {
         "date": "2026-06-23",
         "value": 2.71
       },
-      "previous": {
-        "date": "2026-06-22",
-        "value": 2.65
-      },
-      "change_pct": 2.264,
+      "change_pct": 1.845,
       "history": [
-        {
-          "date": "2026-01-12",
-          "value": 2.74
-        },
         {
           "date": "2026-01-13",
           "value": 2.75
@@ -44853,25 +45991,25 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-23",
           "value": 2.71
+        },
+        {
+          "date": "2026-06-24",
+          "value": 2.76
         }
       ]
     },
     "BAMLC0A0CM": {
       "label": "Investment-Grade Credit Spread (IG OAS)",
       "latest": {
+        "date": "2026-06-24",
+        "value": 0.75
+      },
+      "previous": {
         "date": "2026-06-23",
         "value": 0.74
       },
-      "previous": {
-        "date": "2026-06-22",
-        "value": 0.74
-      },
-      "change_pct": 0.0,
+      "change_pct": 1.351,
       "history": [
-        {
-          "date": "2026-01-12",
-          "value": 0.78
-        },
         {
           "date": "2026-01-13",
           "value": 0.77
@@ -45347,25 +46485,25 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-23",
           "value": 0.74
+        },
+        {
+          "date": "2026-06-24",
+          "value": 0.75
         }
       ]
     },
     "T10YIE": {
       "label": "10Y Inflation Breakeven",
       "latest": {
+        "date": "2026-06-25",
+        "value": 2.21
+      },
+      "previous": {
         "date": "2026-06-24",
         "value": 2.18
       },
-      "previous": {
-        "date": "2026-06-23",
-        "value": 2.21
-      },
-      "change_pct": -1.357,
+      "change_pct": 1.376,
       "history": [
-        {
-          "date": "2026-01-08",
-          "value": 2.27
-        },
         {
           "date": "2026-01-09",
           "value": 2.28
@@ -45825,6 +46963,10 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-24",
           "value": 2.18
+        },
+        {
+          "date": "2026-06-25",
+          "value": 2.21
         }
       ]
     },
@@ -47313,19 +48455,15 @@ window.MACRO_DATA = {
     "WEI": {
       "label": "NY Fed Weekly Economic Index",
       "latest": {
+        "date": "2026-06-20",
+        "value": 2.5
+      },
+      "previous": {
         "date": "2026-06-13",
         "value": 3.1
       },
-      "previous": {
-        "date": "2026-06-06",
-        "value": 2.9
-      },
-      "change_pct": 6.897,
+      "change_pct": -19.355,
       "history": [
-        {
-          "date": "2024-03-02",
-          "value": 2.18
-        },
         {
           "date": "2024-03-09",
           "value": 1.78
@@ -47596,7 +48734,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2025-06-21",
-          "value": 2.37
+          "value": 2.36
         },
         {
           "date": "2025-06-28",
@@ -47801,6 +48939,10 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-13",
           "value": 3.1
+        },
+        {
+          "date": "2026-06-20",
+          "value": 2.5
         }
       ]
     },
@@ -55609,6 +56751,16 @@ window.MACRO_DATA = {
       "key_takeaway": "Cụm nhà ở yếu rõ — New Home Sales sốc -7.3% MoM (580K vs 638K) và Building Permits MoM âm bất ngờ — nhưng hard-data lạm phát vẫn nóng nên đây là tín hiệu growth-scare cục bộ, KHÔNG phải cơ sở để Fed dovish trước \"thác\" PCE+GDP ngày mai.",
       "body_preview": "# Vĩ mô Mỹ — 2026-06-24",
       "body": "# Vĩ mô Mỹ — 2026-06-24\n\n## Tóm tắt\nNgày tiền-\"thác dữ liệu\" (PCE + GDP công bố 25/6), trọng tâm rơi vào thị trường nhà ở và bức tranh đều yếu: New Home Sales tháng 5 lao dốc -7.3% MoM xuống 580K (sốc dưới forecast 638K, z=-1.82), Building Permits MoM âm bất ngờ (-0.9% so forecast -0.7%, z=-5.71), nối tiếp cú sụp Housing Starts -15.4% MoM tuần trước. Thâm hụt cán cân vãng lai Q1 cũng rộng hơn dự báo (-226.8B vs -212.0B). Đây là tổ hợp nghiêng **risk-off/growth-scare** cho cyclicals nhạy lãi suất (homebuilders, vật liệu, tài chính).\nTuy nhiên phải đối chiếu: `hard_data_hot = true` — lạm phát thực tế VẪN nóng (Core PCE YoY 3.29%, CPI YoY 4.27%, PPI YoY 6.46%, Energy CPI 3mo annualized 104%). Nhà ở yếu là tín hiệu cầu hạ nhiệt do lãi suất cao kéo dài, KHÔNG phải bằng chứng disinflation; do đó không thể kết luận \"Fed sắp dovish hẳn\". Net: hơi risk-off cho growth, nhưng Fed vẫn bị kẹp giữa tăng trưởng chậm và lạm phát dai dẳng — chờ Core PCE tháng 5 (25/6) làm trọng tài.\n\n## Chi tiết chỉ số được công bố hôm nay\n\n### New Home Sales (tháng 5) — MISS (shock-below)\n**Headline:** New Home Sales: 580K | Forecast: 638K | Previous: 626K (z=-1.82, shock-below)\n**MoM:** -7.3% (Previous -5.7%) — tháng giảm thứ hai liên tiếp, gia tốc xuống.\n**Đánh giá:** Hụt forecast tới 58K — cú miss lớn. FRED `HSN1F` xác nhận: -7.3% MoM, -6.75% YoY, 3mo annualized -28.2% (đà bán suy yếu nhanh). Doanh số nhà mới cực nhạy với lãi suất thế chấp — MBA 30-Year hôm nay 6.59% (gần như đứng yên ở vùng cao), khiến khả năng chi trả tiếp tục bị bóp nghẹt.\n**Hàm ý thị trường:** Tiêu cực cho homebuilders (XHB) và vật liệu xây dựng (XLB liên quan); chuỗi cung ứng nhà ở (đồ gia dụng, nội thất trong XLY) chịu áp lực. Yếu tố giảm phát tiềm năng đến từ kênh nhà ở (shelter ~33% rổ CPI) nhưng độ trễ truyền dẫn dài — chưa giúp ích cho Fed ngay.\n\n### Housing — Building Permits (tháng 5) — MISS (shock-below MoM)\n**Headline:** Building Permits: 1.410M | Forecast: 1.413M | Previous: 1.423M (z=-0.04, in-line theo mức tuyệt đối)\n**MoM:** -0.9% | Forecast: -0.7% | Previous: +4.4% (z=-5.71, shock-below)\n**Đánh giá:** Mức tuyệt đối gần như đúng dự báo, nhưng MoM đảo chiều mạnh từ +4.4% sang -0.9%, sốc so kỳ vọng. FRED `PERMIT`: -0.91% MoM, -0.42% YoY, 3mo annualized -29.7% — giấy phép (chỉ báo dẫn dắt khởi công 1-2 quý tới) đang xuống dốc. Kết hợp với Housing Starts -15.4% MoM (tuần trước), pipeline nguồn cung nhà ở mới đang co lại rõ rệt.\n**Hàm ý:** Đầu tư xây dựng nhà ở — một cấu phần của đầu tư tư nhân (đầu tàu GDP Q1 +1.19pp) — có nguy cơ trở thành lực cản trong các quý tới. Tiêu cực cho construction-linked cyclicals.\n\n### Current Account & các sự kiện khác (nhóm other) — Current Account Q1 MISS (below-forecast)\n**Headline:** Current Account: -226.8B | Forecast: -212.0B | Previous: -221.1B (z=-1.40, below-forecast)\n**Đánh giá:** Thâm hụt vãng lai Q1 rộng hơn dự báo ~15B và xấu hơn quý trước. Khớp với bức tranh `growth_context`: Xuất khẩu ròng (Net Exports) là lực cản GDP lớn nhất (-1.25pp). Nhập khẩu mạnh (có thể do front-loading trước thuế quan) + xuất khẩu chững khiến cán cân ngoại mở rộng.\n**Hàm ý:** Thâm hụt vãng lai rộng về lý thuyết gây áp lực nhẹ lên USD trong dài hạn (cần dòng vốn ngoại tài trợ), nhưng ngắn hạn USD vẫn được hỗ trợ bởi lãi suất cao. Trung lập-hơi tiêu cực cho tăng trưởng.\n\n### Trade — Crude Oil Imports (EIA tuần)\nNhập khẩu dầu thô +0.094M thùng/ngày (từ -0.241M tuần trước) — biến động tuần, ý nghĩa vĩ mô hạn chế. Bối cảnh thương mại đầy đủ chờ Goods Trade Balance (26/6) và Trade Balance tháng 5 (7/7). FRED `BOPGSTB` mới nhất (tháng 4): -55.9B, thâm hụt thu hẹp nhẹ -1.2% MoM nhưng vẫn rộng so cùng kỳ (-7.4% YoY = xấu hơn). Khối `trade_detail` (Census) trống ngày này nên không có breakdown đối tác.\n\n### Fed — Cook phát biểu & Kết quả Stress Test ngân hàng\nThống đốc Fed Lisa Cook phát biểu (impact cao theo lịch) và Fed công bố kết quả Bank Stress Test 2026 — không có số định lượng surprise, nhưng đáng theo dõi: kết quả stress test định hình dư địa trả cổ tức/mua lại cổ phiếu của ngân hàng lớn (XLF), nhất là trước mùa earnings ngân hàng giữa tháng 7 (JPM/BAC/WFC ngày 14/7). Tổng thống Trump cũng có phát biểu cuối ngày (rủi ro tin tức thuế quan/chính sách).\n\n### Mortgage (MBA tuần)\nLãi suất thế chấp 30 năm 6.59% (gần đứng yên, -0.01). Đơn xin vay thế chấp +1.0% WoW (đảo từ -3.8%), nhưng cấu trúc lệch về tái cấp vốn: Refinance Index +24.0 lên 834.2, trong khi Purchase Index -1.1 xuống 169.7 (cầu mua nhà thực vẫn yếu). Xác nhận thông điệp từ New Home Sales: lãi suất cao tiếp tục đè nhu cầu mua nhà mới.\n\n## Market Pulse\n\n**Yields & Đường cong lãi suất:**\n- 10Y: 4.50% (-1bp) | 2Y: 4.16% (-8bp) | Spread (FRED T10Y2Y, 10Y−2Y): +0.30 → đường cong dốc lên bình thường, đầu ngắn giảm nhanh hơn (kỳ vọng cắt lãi suất chớm vào giá).\n- Breakeven 10Y: 2.18% (-1.4%) → kỳ vọng lạm phát thị trường vẫn trên mục tiêu Fed 2%, nhưng đang dịu nhẹ.\n\n**USD & Cross-asset:**\n- DXY (DTWEXBGS): 120.4 (+0.8%) → USD nhích lên, áp lực nhẹ lên EM và hàng hóa.\n- VIX: 19.49 (+12.8%) → vùng caution sát ngưỡng 20; risk appetite suy giảm rõ trong phiên, khớp với tín hiệu nhà ở yếu.\n- WTI: $78.94/bbl (-1.8%) → dầu hạ nhiệt, giảm áp lực chi phí năng lượng đầu vào — tích cực biên về dài cho lạm phát nhưng ngược lại với XLE.\n\n**Credit Spreads:**\n- HY OAS: 271bp (+2.3%) | IG OAS: 74bp (đi ngang)\n- Spread HY nới nhẹ — chớm dấu hiệu credit thận trọng, đồng pha VIX tăng; chưa phải stress thực sự nhưng risk appetite đã bớt.\n\n**Vị trí chu kỳ (cycle_context):**\n- Sahm Rule: +0.10 (an toàn, chưa kích hoạt — ngưỡng 0.50). Thất nghiệp 3mo-avg 4.3% vs đáy 12 tháng 4.2%.\n- Đường cong: regime **normal** (2s10s +0.30, 10Y-3M +0.65, 116 phiên) — chưa đảo ngược, không phát tín hiệu suy thoái cận kề.\n\n**Economic Surprise Index (surprise_index.json):**\n- Growth surprise 1M: +0.23 (đúng kỳ vọng, xu hướng rising) | Inflation surprise 1M: -6.74 (missing mạnh — dữ liệu lạm phát công bố gần đây thấp hơn kỳ vọng nhưng mức tuyệt đối vẫn cao).\n- Data sát kỳ vọng tổng thể → ít động lực bất ngờ, nhưng day_surprise_score growth hôm nay -4.82 (nghiêng tiêu cực do cụm nhà ở).\n\n**Tổng đánh giá cross-asset:** Risk-off nhẹ trong phiên — VIX bật +12.8% lên gần 20, HY spread nới, USD lên, cyclicals nhà ở bị bán. Tuy nhiên chu kỳ chưa báo động (Sahm an toàn, đường cong normal), nên đây là điều chỉnh thận trọng tiền-PCE chứ chưa phải đảo chiều cấu trúc.\n\n## Bối cảnh xu hướng (so với 30 ngày qua)\n\n**Cung đường vĩ mô tháng 6 — 4 chặng rõ rệt:**\n1. **Goldilocks hẹp (1-3/6):** ISM Mfg 54.0 + Prices Paid shock cool 82.1 + ISM Services 54.5 → growth tốt, lạm phát soft-data dịu. Nhưng breadth cực hẹp, **XLK độc dẫn** (1M peak +22.9%), defensives crash.\n2. **Bước ngoặt lớn nhất (4-5/6):** Tech leadership CRACK (XLK 1M de-rate ~8pp trong 4 phiên), labor cracking lúc đầu (Claims 225K breakout, Challenger spike) rồi **NFP +172-265k BEAT** đảo thành \"no-landing\" → yields jump (+9-12bp), **AVGO disappoint** + VIX spike +40%. Dòng tiền xoay từ tech sang defensives (XLV) + cyclicals (XLF/XLI).\n3. **Relief rally disinflation (10-13/6):** Core CPI MoM +0.2% (dưới 0.3%) + Core PPI YoY 4.9% (vs 5.4%) + Michigan inflation-exp rơi sâu → yields về 4.45%, VIX hạ 19.4, relief rally rộng (XLK/XLI/XLB cùng bật).\n4. **Hawkish-hold reset (16-24/6):** FOMC giữ 3.75% nhưng **dot plot dịch LÊN** (bớt kỳ vọng cắt) + Retail Sales/Pending Home Sales shock-above. Sau đó cụm nhà ở sụp (Housing Starts -15.4% → New Home Sales -7.3% → Permits âm hôm nay). Hard-data lạm phát **vẫn nóng suốt tháng** (Core PCE YoY 3.29% đứng yên).\n\n**Hàm ý tổng hợp — regime \"stagflation-lite, hard-data-gated\":** Tháng 6 hội tụ về một thế giằng co bền: soft-data (khảo sát, inflation-exp, ISM Prices) liên tục cố gọi disinflation/dovish, nhưng hard-data lạm phát KHÔNG giảm (Core PCE YoY kẹt 3.29% cả tháng, Energy CPI 3mo annualized 104%) trong khi growth bắt đầu rạn ở kênh nhạy lãi suất (nhà ở 3 báo cáo liên tiếp âm). Đường cong normal (2s10s +0.30) + Sahm an toàn (+0.10) → **chưa phải recession**, nhưng momentum đang xấu đi. Đây là môi trường \"higher-for-longer kéo dài + growth chậm cục bộ\".\n\n**Map sang sector — leadership đã chuyển dứt khoát từ duration-tech sang cyclical chất lượng + defensive chọn lọc:**\n- **XLI (Industrials)** — leader bền nhất tháng: RS 1M +6.68, 1M +5.17%, trên MA50. Capex cycle on (ISM Mfg expansion, Durable Goods), hưởng lợi \"no-landing\". **Overweight.**\n- **XLF (Financials)** — chuyển từ Avoid sang dẫn dắt: RS 1M +5.27, 1M +3.79%, trên MA50. Đầu ngắn giảm nhanh hơn đầu dài (2Y -8bp vs 10Y -1bp) đang **steepen nhẹ đường cong** → cải thiện NIM; stress test 2026 + earnings 14/7 là catalyst. **Light OW.**\n- **XLV (Healthcare)** — defensive core thắng cuộc rotation từ 4/6: RS 1M +4.23, hưởng lợi yields dịu + an toàn khi VIX bật. **Overweight.**\n- **XLK (Technology)** — đã mất ngôi độc dẫn: 1M chỉ còn +1.6% (từ peak +22.9%), breadth \"narrow\" (chỉ 33% holdings trên MA50, breadth_thrust -8.4). Disinflation soft-data là tailwind DCF nhưng hard-data nóng + valuation đè. **Neutral (giữ, không re-up OW).**\n- **XLE (Energy)** — laggard rõ rệt: RS 1M -8.01, dưới MA50, WTI sập -28% 1M. Cú crude draw đầu tháng đã faded hoàn toàn. **Underweight.**\n- **XLC (Communication)** — yếu nhất cùng cụm mega-cap: RS 1M -6.16, dưới MA50. **Underweight.**\n- **XLY (Discretionary)** — dưới MA50, RS 1M -1.87; nhà ở yếu đè chuỗi cung ứng đồ gia dụng/nội thất + Michigan sentiment <50. **Underweight/Neutral.**\n- **XLRE (Real Estate)** — tín hiệu hỗn hợp: yields dịu là tailwind nhưng cụm nhà ở sụp + cầu mua nhà thực yếu (Purchase Index -1.1) là headwind cơ bản. **Neutral (watch 10Y về 4.30%).**\n- **XLB/XLP/XLU** — neutral, không có thematic catalyst dẫn dắt; XLB chịu rủi ro từ construction-linked demand co lại.\n\n**Mâu thuẫn cần theo dõi (data conflicting):** soft-data dovish vs hard-data hot là căng thẳng trung tâm cả tháng — **Core PCE tháng 5 (25/6) là trọng tài**. Nếu Core PCE YoY chạm/vượt 3.4%: khóa Fed ở hawkish-hold, stagflation-lite xác nhận → tiếp tục ưu tiên XLI/XLF/XLV, tránh duration (XLK/XLRE/XLU). Nếu Core PCE bất ngờ dịu + GDP hụt 1.6%: cụm nhà ở yếu chuyển từ \"rủi ro\" thành \"lý do Fed nới\" → mở cửa re-rate XLK/XLRE và duration.\n\n## Cảnh báo & catalyst sắp tới\n\n**Ngày mai (2026-06-25) — \"thác dữ liệu\" lớn nhất tuần:**\n- Core PCE Price Index (MoM tháng 5) — forecast 0.3% (previous 0.2%) — *HIGH* (chỉ số lạm phát Fed theo dõi số 1)\n- Core PCE Price Index (YoY tháng 5) — forecast 3.4% (previous 3.3%) — *HIGH*\n- PCE Price Index (MoM 0.5% / YoY 4.0%) + Personal Spending (MoM forecast 0.6%) — *HIGH/MEDIUM*\n- GDP (QoQ Q1) — forecast 1.6% (previous 2.0%) — *HIGH*\n- GDP Price Index (QoQ Q1) — forecast 3.5% — *MEDIUM*\n- Durable Goods Orders (MoM tháng 5) — forecast -5.0% (previous 8.0%) — *HIGH*; Core Durable Goods — forecast 0.5% — *MEDIUM*\n- Initial Jobless Claims — forecast 225K (previous 226K) — *HIGH*; Continuing Claims — forecast 1,800K — *MEDIUM*\n- FOMC Bowman & Williams phát biểu — *MEDIUM*; Atlanta Fed GDPNow Q2 (3.0%); Fed Balance Sheet; 7-Year Note Auction — *MEDIUM*\n\n**Tuần này (đến 2026-07-01):**\n- 26/6: Goods Trade Balance tháng 5 (forecast -85.40B); Michigan Consumer Sentiment cuối kỳ (48.9) + kỳ vọng lạm phát 1Y 4.6% / 5Y 3.4%; FOMC Williams & Kashkari phát biểu; Baker Hughes rig count + CFTC positions (nhiễu)\n- 30/6: Chicago PMI (previous 62.7, *HIGH*); CB Consumer Confidence (*HIGH*); JOLTS Job Openings tháng 5 (previous 7.618M, *HIGH*); Case-Shiller HPI-20 tháng 4\n- 1/7: ADP Employment (*HIGH*); S&P Global Manufacturing PMI (55.7, *HIGH*); ISM Manufacturing PMI (54.0) + Prices (82.1) + Employment (*HIGH*); Construction Spending tháng 5\n\n**Theo dõi đặc biệt:** Core PCE ngày mai là trọng tài quyết định cho căng thẳng \"nhà ở/growth yếu vs lạm phát dai dẳng\" của hôm nay. Nếu Core PCE YoY in-line/trên 3.4% (forecast nhích lên từ 3.3%), Fed bị khóa ở thế hawkish-hold dù nhà ở đang nguội — kịch bản stagflation nhẹ, xấu cho cả bonds lẫn cyclicals. Nếu Core PCE bất ngờ dịu cùng GDP hụt 1.6%, thị trường mới có cơ sở định giá cắt lãi suất — lúc đó cụm nhà ở yếu sẽ chuyển từ \"rủi ro\" thành \"lý do để Fed nới\". ISM Manufacturing Prices (82.1, cực cao) ngày 1/7 cũng cần theo dõi vì áp lực giá đầu vào sản xuất vẫn chưa hạ."
+    },
+    {
+      "file": "2026-06-25.md",
+      "date": "2026-06-25",
+      "schema_version": "1.1",
+      "surprise_count": "6",
+      "regime_signal": "risk-on",
+      "key_takeaway": "Cụm \"data dump\" T5/Q1 cho thấy tăng trưởng vượt mạnh (GDP Q1 2.1% beat, income/spending/CAPEX shock-above, claims thấp) trong khi Core PCE đúng kỳ vọng (0.3% MoM, 3.4% YoY) — risk-on theo growth, nhưng hard-data lạm phát VẪN nóng (Core PCE YoY 3.41%, CPI YoY 4.27%) nên chưa thể gọi dovish một chiều.",
+      "body_preview": "# Vĩ mô Mỹ — 2026-06-25",
+      "body": "# Vĩ mô Mỹ — 2026-06-25\n\n## Tóm tắt\nNgày dày đặc release với cụm dữ liệu T5 và điều chỉnh GDP/PCE Q1: tăng trưởng vượt kỳ vọng trên diện rộng — GDP Q1 revised 2.1% (vs forecast 1.6%), Personal Income +0.7%, Personal Spending +0.7%, Core Durable Goods +1.3% và Capex proxy (Goods Orders Non-Defense Ex-Air) +1.6% đều shock-above; Initial Claims 215K thấp hơn dự báo. Đây là combo growth tốt → **risk-on** theo tăng trưởng, củng cố bởi Economic Surprise Index growth 1M +9.9 (rising).\nTuy nhiên Core PCE — chỉ số Fed quan tâm nhất — chỉ đúng kỳ vọng (0.3% MoM, 3.4% YoY, nhích lên từ 3.3%), KHÔNG hạ nhiệt; cùng với `inflation_context.hard_data_hot = true` (Core PCE YoY 3.41%, CPI YoY 4.27%, Energy bùng nổ), tín hiệu cho Fed là \"giữ nguyên / không vội cắt\" hơn là dovish. Tóm lại: tăng trưởng tốt nhưng lạm phát chưa cho phép Fed nới — risk-on dẫn dắt bởi growth/cyclical, không phải bởi kỳ vọng cắt lãi suất.\n\n## Chi tiết chỉ số được công bố hôm nay\n\n### GDP Q1 2026 — BEAT\n**Headline:** Actual: 2.1% QoQ ann. | Forecast: 1.6% | Previous: 0.5% (z=6.25, shock-above)\n**Đánh giá:** Beat mạnh và tăng tốc rõ so với quý trước (0.5% → 2.1%, +1.6pp). GDP Sales (final sales) 1.9% (vs 1.5%, shock-above) và Corporate Profits QoQ +0.5% (vs forecast −0.4%, shock-above) đều xác nhận động lực thực chất, không phải tích trữ tồn kho. GDP Price Index 3.6% (vs 3.5%) — deflator vẫn cao, tức tăng trưởng danh nghĩa nóng.\n\n**Đầu tàu kéo GDP (đóng góp pp — từ `growth_context`, đã xếp hạng):**\n| Thành phần | Đóng góp (pp) | Nhận xét |\n|---|---|---|\n| Đầu tư tư nhân | +1.35 | **Đầu tàu** — bật mạnh từ +0.40pp quý trước; CAPEX/đầu tư dẫn dắt |\n| Chi tiêu chính phủ | +0.74 | Đảo chiều từ −0.99pp → +0.74pp, đóng góp dương đáng kể |\n| Tiêu dùng (PCE) | +0.37 | Suy yếu từ +1.30pp → +0.37pp — consumer Q1 thực ra yếu |\n| Xuất khẩu ròng (Net Exports) | −0.37 | **Lực cản lớn nhất** — nhập khẩu vượt xuất khẩu, kéo tăng trưởng xuống |\n\n> Đầu tàu = Đầu tư tư nhân (+1.35pp), lực cản = Xuất khẩu ròng (−0.37pp); các pp cộng lại = 2.1% headline.\n\n**Chất lượng tăng trưởng:** Pha trộn. Phần tốt là đầu tư tư nhân dẫn dắt (private-led, bền hơn). Phần đáng lưu ý: PCE chỉ đóng góp +0.37pp (giảm mạnh từ +1.30pp) và Real Consumer Spending Q1 chỉ 0.5% (vs forecast 1.4%, shock-below) — tiêu dùng quý 1 yếu hơn nhiều so với hình ảnh \"spending T5 +0.7%\" trong số tháng. Government đóng góp +0.74pp giúp đẩy headline nhưng là phần kém \"chất lượng\" hơn. Net Exports là lực cản.\n**Hàm ý thị trường:** Beat GDP + CAPEX mạnh ủng hộ cyclicals/industrials (XLI), materials (XLB). Tăng trưởng nóng + deflator cao = Fed không có lý do gấp cắt → hỗ trợ USD, yields neo cao. Tiêu dùng Q1 yếu là điểm cần theo dõi cho XLY.\n\n### Core PCE & PCE Inflation — IN-LINE (nhưng vẫn nóng)\n**Core PCE (Fed's #1 target):** MoM: 0.3% | YoY: 3.4% | Forecast: 0.3% / 3.4% (in-line, z=0.0)\n**PCE Headline:** MoM: 0.4% (vs forecast 0.5%, shock-below) | YoY: 4.1% (in-line)\n**Điều chỉnh Q1:** Core PCE Prices Q1 4.4% (in-line) | PCE Prices Q1 4.6% (vs 4.5%)\n\n**Phân tích:**\n| Metric | Giá trị | Nhận xét |\n|---|---|---|\n| Core PCE YoY | 3.4% (FRED 3.41%) | Cách Fed target 2.0% còn ~1.4pp — KHÔNG cải thiện, nhích lên từ 3.3% |\n| 3-mo annualized Core PCE | 3.52% (FRED) | Momentum gần hạn vẫn trên 3.5% — Powell's preferred gauge chưa giảm |\n| Headline PCE YoY | 4.1% (FRED 4.07%) | Tăng từ 3.8% — lạm phát toàn phần đang đi LÊN, do năng lượng |\n| Real Personal Consumption MoM | 0.3% | Chi tiêu thực dương sau khi trừ lạm phát |\n\n**Cái gì sticky, cái gì cooling (tham chiếu `inflation_context.drivers` từ CPI):** Kéo lạm phát LÊN mạnh nhất là **Energy** (MoM +3.9%, 3mo ann 104% — rất volatile, cần thận trọng diễn giải nhưng đang đẩy headline PCE/CPI lên). Shelter (+0.32% MoM, 3mo ann 4.87%) và Core Services (+0.30% MoM, 3mo ann 4.16%) vẫn sticky — đây là phần Fed lo nhất. Kéo XUỐNG là **Core Goods** (−0.11% MoM, 3mo ann 0.11%) — disinflation hàng hóa lõi tiếp diễn nhưng không đủ bù services + energy.\n**Hàm ý Fed:** Core PCE đúng kỳ vọng nghĩa là KHÔNG có cú sốc hawkish mới, nhưng cũng KHÔNG có tiến triển dovish — YoY còn nhích lên. Với `hard_data_hot = true` (Core PCE 3.41%, CPI 4.27%), Fed nhiều khả năng \"giữ nguyên, chờ thêm dữ liệu\" hơn là khởi động cắt. **Đây không phải tín hiệu xác nhận disinflation.**\n**Hàm ý thị trường:** PCE in-line + growth beat = thị trường có thể nhẹ nhõm (không nóng hơn dự báo), nhưng đường cong/USD ít có lý do nới. Equities được hỗ trợ chủ yếu bởi vế tăng trưởng, không phải vế lạm phát.\n\n### Durable Goods Orders (May) — BEAT (core mạnh)\n**Headline:** MoM: −4.5% | Forecast: −5.0% | Previous: 8.5% (shock-above vs forecast)\n\n| Thành phần | MoM% | Nhận xét |\n|---|---|---|\n| Headline Durable Goods | −4.5% | Giảm sâu nhưng ít xấu hơn dự báo; biến động do máy bay (previous +8.5%) |\n| Core (ex-Transportation) | +1.3% | vs forecast +0.5% — **shock-above**, nhu cầu lõi mạnh |\n| Ex-Defense | −4.6% | Giảm theo headline (transport/defense lumpy) |\n| Goods Orders Non-Defense Ex-Air | +1.6% | vs forecast +0.6% — **shock-above**, proxy CAPEX doanh nghiệp |\n\n**Business CAPEX signal:** Nondefense ex-Aircraft +1.6% (gấp ~2.7x forecast) là tín hiệu mạnh nhất trong nhóm — đầu tư doanh nghiệp đang tăng tốc, khớp với đầu tàu \"Đầu tư tư nhân\" trong GDP. Headline âm chỉ là nhiễu từ đơn hàng máy bay sau tháng +8.5%.\n**Hàm ý thị trường:** Tích cực cho XLI (industrials), XLK (tech capex/equipment). Củng cố luận điểm capex-led cycle.\n\n### Personal Income & Spending (May) — BEAT\n**Personal Income:** MoM: +0.7% | Forecast: +0.4% | Previous: 0.0% (shock-above, z=15)\n**Personal Spending:** MoM: +0.7% | Forecast: +0.6% | Previous: +0.4% (shock-above)\n\n| Metric | Giá trị | Nhận xét |\n|---|---|---|\n| Personal Income | +0.7% | Bật mạnh từ 0.0% — thu nhập hộ gia đình phục hồi rõ |\n| Personal Spending | +0.7% | Chi tiêu danh nghĩa tăng tốc |\n| Real Personal Consumption | +0.3% | Sức mua thực dương sau khi trừ lạm phát |\n| Income − Spending gap | 0.0pp | Income theo kịp Spending → tỷ lệ tiết kiệm ổn định, không phải đốt savings |\n\n**Phân tích chất lượng:** Đây là điểm sáng — income bắt kịp spending nghĩa là chi tiêu T5 được tài trợ bằng thu nhập tăng, không phải vay nợ/rút tiết kiệm (lành mạnh). Lưu ý đối chiếu: số tháng T5 mạnh, nhưng Real Consumer Spending Q1 (0.5%, shock-below) cho thấy nửa đầu năm tiêu dùng yếu — T5 là dấu hiệu phục hồi cần thêm tháng xác nhận.\n**Hàm ý thị trường:** Hỗ trợ XLY (discretionary), consumer-facing. Income khỏe = nền tảng cho chi tiêu nửa cuối năm.\n\n### Jobless Claims — BEAT (labor vẫn chặt)\n**Initial Claims:** 215K | Forecast: 225K | Previous: 227K (below-forecast = tốt cho labor)\n**Continuing Claims:** 1,821K | Forecast: 1,800K | Previous: 1,800K (in-line, nhích nhẹ)\n**4-Week Moving Average:** 224.25K (từ 223.50K — gần như đi ngang)\n\n**Đánh giá trend:** Initial Claims giảm 12K xuống 215K, dưới ngưỡng lo ngại 250K rất nhiều — thị trường lao động vẫn chặt, không có dấu hiệu sa thải lan rộng. Continuing Claims nhích lên 1,821K (người thất nghiệp tìm việc lâu hơn một chút) nhưng vẫn trong biên độ ổn định. 4-week avg đi ngang.\n**Hàm ý:** Labor chặt = không hỗ trợ luận điểm Fed cắt sớm (dovish bị triệt tiêu thêm). Tốt cho consumer/cyclical, nhưng kết hợp lạm phát nóng càng khiến Fed thận trọng.\n\n### Regional Fed (Chicago, Dallas)\nChicago Fed National Activity Index (May) −0.10 (từ +0.19) — hoạt động kinh tế tháng 5 dưới xu hướng, hạ nhiệt so với tháng trước (chỉ số nhiễu, không forecast). Dallas Fed PCE (May) 2.80% (từ 2.40%) — thước đo trimmed-mean của Dallas Fed nhích lên, đồng pha với hard-data lạm phát còn nóng. Hai chỉ số này hơi lệch nhau: hoạt động chậm lại nhưng áp lực giá vùng vẫn tăng.\n\n### Fed (speakers — không có số liệu)\nLịch dày Fed speakers: Bowman (08:45), Williams (15:40), Goolsbee (18:30). Không có actual data; thị trường sẽ soi tông giọng về lộ trình lãi suất sau cụm dữ liệu growth-mạnh/lạm-phát-còn-nóng hôm nay. Fed Balance Sheet đi ngang ($6,736B), Reserve Balances $2.954T (+$18B) — thanh khoản hệ thống ổn định, không tín hiệu căng.\n\n### Khác / other (nowcast & survey vùng)\nAtlanta Fed GDPNow Q2 hạ xuống 2.5% (từ 3.0%, shock-below vs forecast 3.0%) — nowcast Q2 bị cắt, đối lập với GDP Q1 beat; cần theo dõi xem Q2 có giảm tốc thật không. KC Fed Composite (Jun) +11 (từ 8) và KC Fed Manufacturing (Jun) +19 (từ 9) — khảo sát sản xuất vùng Kansas City cải thiện mạnh, ủng hộ vế tăng trưởng/cyclical.\n\n### Noise (ghi nhận nhanh)\nNatural Gas Storage +76B (vs forecast +67B — build lớn hơn, hơi bearish nat-gas); 4-Week Bill 3.610%, 8-Week Bill 3.660%, 7-Year Note Auction 4.260% (từ 4.290% — nhu cầu trái phiếu ổn). Các mục `is_noise` này không đổi bức tranh vĩ mô.\n\n## Market Pulse\n\n**Yields & Đường cong lãi suất:**\n- 10Y: 4.41% (−2bp) | 2Y: 4.11% (−1bp) | Spread 2Y-10Y (FRED T10Y2Y, 10Y−2Y): +0.31 → upward-sloping bình thường, nhích nhẹ steepen\n- Breakeven 10Y: 2.21% (+1.4%) → kỳ vọng lạm phát thị trường nhỉnh trên Fed target 2%, đồng pha với hard-data còn nóng\n\n**USD & Cross-asset:**\n- DXY (broad): 120.40 (+0.8%, dữ liệu 18/6) → USD mạnh — áp lực lên EM/commodities, hợp với growth beat + Fed không vội nới\n- VIX: 18.63 (−4.4%) → vùng risk-on (dưới 20), volatility hạ nhiệt\n- WTI: $78.9/bbl (−1.8%) → giá dầu hạ nhẹ; lưu ý CPI Energy MoM +3.9% phản ánh tháng trước, dầu spot hiện đã dịu\n\n**Credit Spreads:**\n- HY OAS: 2.76% (276bp, +5bp) | IG OAS: 0.75% (75bp, +1bp)\n- Spread vẫn rất hẹp (HY <300bp) → credit stress thấp, risk appetite còn mạnh; nhích lên 1 chút không đáng lo\n\n**Vị trí chu kỳ (từ `cycle_context`):**\n- Sahm Rule: +0.10 (an toàn, chưa kích hoạt — ngưỡng 0.50). Thất nghiệp 3mo-avg 4.3% vs đáy 12 tháng 4.2%\n- Đường cong: regime `normal` (2s10s +0.31, 10Y-3M +0.56, 116 phiên) — chưa từng đảo trong cửa sổ dữ liệu, không có tín hiệu suy thoái từ đường cong\n\n**Economic Surprise Index (từ `surprise_index.json`):**\n- Growth surprise 1M: +9.86 (beating mạnh, xu hướng rising) | Inflation surprise 1M: −9.74 (missing mạnh, tức lạm phát đến THẤP hơn kỳ vọng so với dự báo của giới phân tích)\n- Data vượt kỳ vọng tăng trưởng → risk-on tailwind. Lưu ý: inflation surprise âm nghĩa là số ra dưới forecast, NHƯNG mức tuyệt đối (Core PCE 3.41%) vẫn xa target — \"ít tệ hơn dự báo\" ≠ \"disinflation xác nhận\"\n\n**Tổng đánh giá cross-asset:** Risk-on dẫn dắt bởi tăng trưởng — VIX <20, HY spread hẹp, growth surprise rising, GDP/income/CAPEX beat. Nhưng yields neo cao, USD mạnh, breakeven nhích lên và Core PCE không hạ nhiệt → risk-on này là \"growth-led\", KHÔNG phải \"Fed-cut-led\". Cyclicals/industrials/materials được hậu thuẫn hơn là duration/rate-sensitive.\n\n## Bối cảnh xu hướng (so với 30 ngày qua)\n_(macro-trend agent sẽ điền)_\n\n## Cảnh báo & catalyst sắp tới\n\n**Ngày mai (2026-06-26):**\n- Michigan Consumer Sentiment (Jun) — forecast 48.9 (vẫn vùng yếu < 50)\n- Michigan Consumer Expectations (Jun) — forecast 49.3\n- Michigan 1-Year Inflation Expectations (Jun) — forecast 4.6%\n- Michigan 5-Year Inflation Expectations (Jun) — forecast 3.4%\n- Goods Trade Balance (May) — forecast −85.40B\n- Retail Inventories Ex Auto (May)\n- FOMC Member Williams Speaks; FOMC Member Kashkari Speaks\n- Baker Hughes Rig Count; cụm CFTC speculative net positions (noise)\n\n**Tuần này (đến 2026-07-01):**\n- 30/06: Chicago PMI (Jun) — HIGH; CB Consumer Confidence (Jun) — HIGH; JOLTS Job Openings (May) — HIGH; S&P/CS Home Price 20-city (Apr)\n- 01/07: ISM Manufacturing PMI / Prices / Employment (Jun) — HIGH; ADP Nonfarm Employment Change (Jun) — HIGH; S&P Global Mfg PMI (Jun) — HIGH; Construction Spending (May); Atlanta Fed GDPNow (Q2)\n\n**Theo dõi đặc biệt:**\nMichigan inflation expectations ngày mai (1Y 4.6%, 5Y 3.4%) là điểm soi quan trọng nhất: với hard-data lạm phát còn nóng hôm nay (Core PCE 3.41%, Energy bùng nổ), nếu kỳ vọng lạm phát hộ gia đình tiếp tục cao/de-anchor thì củng cố luận điểm Fed phải giữ nguyên — phản bác mọi kỳ vọng cắt sớm. Đầu tuần sau, cụm JOLTS + ISM Mfg + ADP (30/6–1/7) sẽ kiểm chứng xem labor chặt và capex-led growth hôm nay có bền sang Q3 không."
     }
   ],
   "monthly_reports": [
@@ -55686,11 +56838,12 @@ window.MACRO_DATA = {
     "2026-06-18",
     "2026-06-22",
     "2026-06-23",
-    "2026-06-24"
+    "2026-06-24",
+    "2026-06-25"
   ],
   "sectors": {
     "schema_version": "1.1",
-    "fetched_at": "2026-06-25T03:12:44.209436+00:00",
+    "fetched_at": "2026-06-25T07:08:56.595861+00:00",
     "benchmark": {
       "latest": 733.24,
       "latest_date": "2026-06-24",
@@ -56754,11 +57907,11 @@ window.MACRO_DATA = {
         "rs_ytd": 17.85,
         "rs_slope": -0.4,
         "money_flow": {
-          "mfi_5d": 37.2,
-          "mfi_14d": 37.9,
-          "dollar_vol_5d_bn": 12.05,
+          "mfi_5d": 37.0,
+          "mfi_14d": 37.8,
+          "dollar_vol_5d_bn": 12.13,
           "flow_signal": "OUTFLOW",
-          "mfi_vs_spy": 12.2
+          "mfi_vs_spy": 12.8
         }
       },
       "XLF": {
@@ -57805,11 +58958,11 @@ window.MACRO_DATA = {
         "rs_ytd": -8.58,
         "rs_slope": -0.01,
         "money_flow": {
-          "mfi_5d": 62.1,
-          "mfi_14d": 80.8,
-          "dollar_vol_5d_bn": 9.63,
+          "mfi_5d": 61.9,
+          "mfi_14d": 80.7,
+          "dollar_vol_5d_bn": 9.67,
           "flow_signal": "INFLOW",
-          "mfi_vs_spy": 37.1
+          "mfi_vs_spy": 37.7
         }
       },
       "XLE": {
@@ -58858,9 +60011,9 @@ window.MACRO_DATA = {
         "money_flow": {
           "mfi_5d": 36.6,
           "mfi_14d": 25.9,
-          "dollar_vol_5d_bn": 10.26,
+          "dollar_vol_5d_bn": 10.27,
           "flow_signal": "OUTFLOW",
-          "mfi_vs_spy": 11.6
+          "mfi_vs_spy": 12.4
         }
       },
       "XLV": {
@@ -59909,9 +61062,9 @@ window.MACRO_DATA = {
         "money_flow": {
           "mfi_5d": 59.1,
           "mfi_14d": 61.4,
-          "dollar_vol_5d_bn": 8.01,
+          "dollar_vol_5d_bn": 8.02,
           "flow_signal": "INFLOW",
-          "mfi_vs_spy": 34.1
+          "mfi_vs_spy": 34.9
         }
       },
       "XLY": {
@@ -60962,7 +62115,7 @@ window.MACRO_DATA = {
           "mfi_14d": 50.0,
           "dollar_vol_5d_bn": 4.95,
           "flow_signal": "OUTFLOW",
-          "mfi_vs_spy": 14.9
+          "mfi_vs_spy": 15.7
         }
       },
       "XLP": {
@@ -61334,11 +62487,11 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-10-23",
-            "value": 84.53
+            "value": 84.54
           },
           {
             "date": "2025-10-24",
-            "value": 83.57
+            "value": 83.58
           },
           {
             "date": "2025-10-27",
@@ -62009,11 +63162,11 @@ window.MACRO_DATA = {
         "rs_ytd": 2.0,
         "rs_slope": 1.0,
         "money_flow": {
-          "mfi_5d": 39.7,
+          "mfi_5d": 40.0,
           "mfi_14d": 66.3,
-          "dollar_vol_5d_bn": 5.47,
+          "dollar_vol_5d_bn": 5.5,
           "flow_signal": "OUTFLOW",
-          "mfi_vs_spy": 14.7
+          "mfi_vs_spy": 15.8
         }
       },
       "XLI": {
@@ -63064,7 +64217,7 @@ window.MACRO_DATA = {
           "mfi_14d": 69.7,
           "dollar_vol_5d_bn": 7.53,
           "flow_signal": "STRONG_INFLOW",
-          "mfi_vs_spy": 53.8
+          "mfi_vs_spy": 54.6
         }
       },
       "XLB": {
@@ -64115,7 +65268,7 @@ window.MACRO_DATA = {
           "mfi_14d": 52.0,
           "dollar_vol_5d_bn": 3.09,
           "flow_signal": "STRONG_OUTFLOW",
-          "mfi_vs_spy": -4.5
+          "mfi_vs_spy": -3.7
         }
       },
       "XLU": {
@@ -65162,11 +66315,11 @@ window.MACRO_DATA = {
         "rs_ytd": -0.94,
         "rs_slope": 3.21,
         "money_flow": {
-          "mfi_5d": 81.9,
+          "mfi_5d": 82.0,
           "mfi_14d": 79.3,
-          "dollar_vol_5d_bn": 5.45,
+          "dollar_vol_5d_bn": 5.46,
           "flow_signal": "STRONG_INFLOW",
-          "mfi_vs_spy": 56.9
+          "mfi_vs_spy": 57.8
         }
       },
       "XLRE": {
@@ -66213,11 +67366,11 @@ window.MACRO_DATA = {
         "rs_ytd": 3.75,
         "rs_slope": 1.1,
         "money_flow": {
-          "mfi_5d": 44.6,
+          "mfi_5d": 44.7,
           "mfi_14d": 56.4,
           "dollar_vol_5d_bn": 1.36,
           "flow_signal": "OUTFLOW",
-          "mfi_vs_spy": 19.6
+          "mfi_vs_spy": 20.5
         }
       },
       "XLC": {
@@ -67268,14 +68421,14 @@ window.MACRO_DATA = {
           "mfi_14d": 35.2,
           "dollar_vol_5d_bn": 4.94,
           "flow_signal": "STRONG_OUTFLOW",
-          "mfi_vs_spy": -25.0
+          "mfi_vs_spy": -24.2
         }
       }
     }
   },
   "cross_asset": {
     "schema_version": "1.1",
-    "fetched_at": "2026-06-25T03:12:44.644660+00:00",
+    "fetched_at": "2026-06-25T07:08:57.019799+00:00",
     "assets": {
       "^VIX": {
         "latest": 18.63,
@@ -68301,16 +69454,20 @@ window.MACRO_DATA = {
         "label": "VIX Volatility Index"
       },
       "^TNX": {
-        "latest": 4.4,
-        "latest_date": "2026-06-24",
-        "ret_1d": -1.1,
-        "ret_1w": -1.89,
-        "ret_1m": -3.72,
-        "ret_3m": 0.25,
-        "ret_6m": 6.05,
-        "ret_1y": 0.11,
-        "ret_ytd": 5.13,
+        "latest": 4.45,
+        "latest_date": "2026-06-18",
+        "ret_1d": -0.27,
+        "ret_1w": -0.27,
+        "ret_1m": -4.63,
+        "ret_3m": 3.97,
+        "ret_6m": 7.28,
+        "ret_1y": 1.32,
+        "ret_ytd": 6.31,
         "history": [
+          {
+            "date": "2025-06-18",
+            "value": 4.4
+          },
           {
             "date": "2025-06-20",
             "value": 4.38
@@ -69314,30 +70471,22 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-18",
             "value": 4.45
-          },
-          {
-            "date": "2026-06-24",
-            "value": 4.4
           }
         ],
         "ticker": "^TNX",
         "label": "10Y Treasury Yield (^TNX)"
       },
       "DX-Y.NYB": {
-        "latest": 101.51,
-        "latest_date": "2026-06-24",
-        "ret_1d": 0.1,
-        "ret_1w": 1.98,
-        "ret_1m": 2.21,
-        "ret_3m": 2.09,
-        "ret_6m": 2.95,
-        "ret_1y": 3.14,
-        "ret_ytd": 3.14,
+        "latest": 101.61,
+        "latest_date": "2026-06-25",
+        "ret_1d": -0.0,
+        "ret_1w": 1.52,
+        "ret_1m": 2.46,
+        "ret_3m": 2.02,
+        "ret_6m": 3.37,
+        "ret_1y": 3.83,
+        "ret_ytd": 3.24,
         "history": [
-          {
-            "date": "2025-06-24",
-            "value": 97.86
-          },
           {
             "date": "2025-06-25",
             "value": 97.68
@@ -70340,27 +71489,27 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-24",
-            "value": 101.51
+            "value": 101.61
+          },
+          {
+            "date": "2026-06-25",
+            "value": 101.61
           }
         ],
         "ticker": "DX-Y.NYB",
         "label": "DXY US Dollar Index"
       },
       "CL=F": {
-        "latest": 69.28,
-        "latest_date": "2026-06-24",
-        "ret_1d": -5.37,
-        "ret_1w": -8.9,
-        "ret_1m": -28.28,
-        "ret_3m": -24.98,
-        "ret_6m": 22.27,
-        "ret_1y": 7.63,
-        "ret_ytd": 20.87,
+        "latest": 69.65,
+        "latest_date": "2026-06-25",
+        "ret_1d": -0.98,
+        "ret_1w": -9.3,
+        "ret_1m": -25.82,
+        "ret_3m": -22.89,
+        "ret_6m": 20.07,
+        "ret_1y": 7.29,
+        "ret_ytd": 21.51,
         "history": [
-          {
-            "date": "2025-06-25",
-            "value": 64.92
-          },
           {
             "date": "2025-06-26",
             "value": 65.24
@@ -71363,27 +72512,27 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-24",
-            "value": 69.28
+            "value": 70.34
+          },
+          {
+            "date": "2026-06-25",
+            "value": 69.65
           }
         ],
         "ticker": "CL=F",
         "label": "WTI Crude Oil Futures"
       },
       "GC=F": {
-        "latest": 3999.2,
-        "latest_date": "2026-06-24",
-        "ret_1d": -3.16,
-        "ret_1w": -7.66,
-        "ret_1m": -11.54,
-        "ret_3m": -9.09,
-        "ret_6m": -8.3,
-        "ret_1y": 20.55,
-        "ret_ytd": -7.31,
+        "latest": 3993.7,
+        "latest_date": "2026-06-25",
+        "ret_1d": 0.09,
+        "ret_1w": -8.38,
+        "ret_1m": -11.26,
+        "ret_3m": -12.22,
+        "ret_6m": -10.14,
+        "ret_1y": 20.04,
+        "ret_ytd": -7.43,
         "history": [
-          {
-            "date": "2025-06-25",
-            "value": 3327.1
-          },
           {
             "date": "2025-06-26",
             "value": 3333.5
@@ -72386,27 +73535,27 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-24",
-            "value": 3999.2
+            "value": 3990.3
+          },
+          {
+            "date": "2026-06-25",
+            "value": 3993.7
           }
         ],
         "ticker": "GC=F",
         "label": "Gold Futures"
       },
       "HG=F": {
-        "latest": 5.99,
-        "latest_date": "2026-06-24",
-        "ret_1d": -2.47,
+        "latest": 5.98,
+        "latest_date": "2026-06-25",
+        "ret_1d": 0.66,
         "ret_1w": -7.7,
-        "ret_1m": -5.56,
-        "ret_3m": 10.46,
-        "ret_6m": 10.11,
-        "ret_1y": 23.06,
-        "ret_ytd": 6.2,
+        "ret_1m": -5.95,
+        "ret_3m": 8.2,
+        "ret_6m": 10.02,
+        "ret_1y": 21.77,
+        "ret_ytd": 6.07,
         "history": [
-          {
-            "date": "2025-06-25",
-            "value": 4.91
-          },
           {
             "date": "2025-06-26",
             "value": 5.07
@@ -73409,27 +74558,27 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-24",
-            "value": 5.99
+            "value": 5.94
+          },
+          {
+            "date": "2026-06-25",
+            "value": 5.98
           }
         ],
         "ticker": "HG=F",
         "label": "Copper Futures"
       },
       "BTC-USD": {
-        "latest": 60647.43,
+        "latest": 61568.06,
         "latest_date": "2026-06-25",
-        "ret_1d": -3.22,
-        "ret_1w": -4.55,
-        "ret_1m": -5.26,
-        "ret_3m": -22.45,
-        "ret_6m": -8.7,
-        "ret_1y": -45.26,
-        "ret_ytd": -31.65,
+        "ret_1d": 0.94,
+        "ret_1w": -4.16,
+        "ret_1m": -3.5,
+        "ret_3m": -21.34,
+        "ret_6m": -8.05,
+        "ret_1y": -43.09,
+        "ret_ytd": -30.61,
         "history": [
-          {
-            "date": "2025-10-16",
-            "value": 108186.04
-          },
           {
             "date": "2025-10-17",
             "value": 106467.79
@@ -74431,8 +75580,12 @@ window.MACRO_DATA = {
             "value": 62668.02
           },
           {
+            "date": "2026-06-24",
+            "value": 60995.13
+          },
+          {
             "date": "2026-06-25",
-            "value": 60647.43
+            "value": 61568.06
           }
         ],
         "ticker": "BTC-USD",
@@ -79549,7 +80702,7 @@ window.MACRO_DATA = {
     ]
   },
   "fred_history": {
-    "updated_at": "2026-06-25T03:12:17.699579+00:00",
+    "updated_at": "2026-06-26T09:22:40.674621+00:00",
     "fred_snapshot": {
       "CPIAUCSL": {
         "label": "CPI All Items",
@@ -80542,23 +81695,19 @@ window.MACRO_DATA = {
       "PCEPI": {
         "label": "PCE Price Index",
         "latest": {
-          "date": "2026-04-01",
-          "value": 130.902
+          "date": "2026-05-01",
+          "value": 131.527
         },
         "previous": {
-          "date": "2026-03-01",
-          "value": 130.381
+          "date": "2026-04-01",
+          "value": 130.938
         },
-        "change_pct": 0.4,
+        "change_pct": 0.45,
         "frequency": "monthly",
-        "mom_pct": 0.4,
-        "yoy_pct": 3.77,
-        "mo3_annualized_pct": 6.02,
+        "mom_pct": 0.45,
+        "yoy_pct": 4.07,
+        "mo3_annualized_pct": 6.28,
         "history": [
-          {
-            "date": "2016-05-01",
-            "value": 98.153
-          },
           {
             "date": "2016-06-01",
             "value": 98.325
@@ -81021,42 +82170,42 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-01-01",
-            "value": 129.002
+            "value": 129.023
           },
           {
             "date": "2026-02-01",
-            "value": 129.52
+            "value": 129.539
           },
           {
             "date": "2026-03-01",
-            "value": 130.381
+            "value": 130.403
           },
           {
             "date": "2026-04-01",
-            "value": 130.902
+            "value": 130.938
+          },
+          {
+            "date": "2026-05-01",
+            "value": 131.527
           }
         ]
       },
       "PCEPILFE": {
         "label": "Core PCE",
         "latest": {
-          "date": "2026-04-01",
-          "value": 129.63
+          "date": "2026-05-01",
+          "value": 130.082
         },
         "previous": {
-          "date": "2026-03-01",
-          "value": 129.321
+          "date": "2026-04-01",
+          "value": 129.667
         },
-        "change_pct": 0.239,
+        "change_pct": 0.32,
         "frequency": "monthly",
-        "mom_pct": 0.239,
-        "yoy_pct": 3.29,
-        "mo3_annualized_pct": 3.78,
+        "mom_pct": 0.32,
+        "yoy_pct": 3.41,
+        "mo3_annualized_pct": 3.52,
         "history": [
-          {
-            "date": "2016-05-01",
-            "value": 98.284
-          },
           {
             "date": "2016-06-01",
             "value": 98.386
@@ -81519,19 +82668,23 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-01-01",
-            "value": 128.432
+            "value": 128.455
           },
           {
             "date": "2026-02-01",
-            "value": 128.94
+            "value": 128.961
           },
           {
             "date": "2026-03-01",
-            "value": 129.321
+            "value": 129.343
           },
           {
             "date": "2026-04-01",
-            "value": 129.63
+            "value": 129.667
+          },
+          {
+            "date": "2026-05-01",
+            "value": 130.082
           }
         ]
       },
@@ -85996,21 +87149,17 @@ window.MACRO_DATA = {
       "ICSA": {
         "label": "Initial Jobless Claims",
         "latest": {
-          "date": "2026-06-13",
-          "value": 226000.0
+          "date": "2026-06-20",
+          "value": 215000.0
         },
         "previous": {
-          "date": "2026-06-06",
-          "value": 230000.0
+          "date": "2026-06-13",
+          "value": 227000.0
         },
-        "change_pct": -1.739,
+        "change_pct": -5.286,
         "frequency": "daily",
-        "mom_pct": -1.739,
+        "mom_pct": -5.286,
         "history": [
-          {
-            "date": "2024-03-02",
-            "value": 213000.0
-          },
           {
             "date": "2024-03-09",
             "value": 213000.0
@@ -86485,7 +87634,11 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-13",
-            "value": 226000.0
+            "value": 227000.0
+          },
+          {
+            "date": "2026-06-20",
+            "value": 215000.0
           }
         ]
       },
@@ -95425,16 +96578,16 @@ window.MACRO_DATA = {
         "label": "Real GDP Growth (QoQ ann.)",
         "latest": {
           "date": "2026-01-01",
-          "value": 1.6
+          "value": 2.1
         },
         "previous": {
           "date": "2025-10-01",
           "value": 0.5
         },
-        "change_pct": 220.0,
+        "change_pct": 320.0,
         "frequency": "quarterly",
-        "mom_pct": 220.0,
-        "yoy_pct": -366.67,
+        "mom_pct": 320.0,
+        "yoy_pct": -450.0,
         "history": [
           {
             "date": "1996-04-01",
@@ -95914,7 +97067,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-01-01",
-            "value": 1.6
+            "value": 2.1
           }
         ]
       },
@@ -95922,16 +97075,16 @@ window.MACRO_DATA = {
         "label": "GDP Contribution: Consumer Spending (PCE)",
         "latest": {
           "date": "2026-01-01",
-          "value": 0.95
+          "value": 0.37
         },
         "previous": {
           "date": "2025-10-01",
           "value": 1.3
         },
-        "change_pct": -26.923,
+        "change_pct": -71.538,
         "frequency": "quarterly",
-        "mom_pct": -26.923,
-        "yoy_pct": 126.19,
+        "mom_pct": -71.538,
+        "yoy_pct": -11.9,
         "history": [
           {
             "date": "1996-04-01",
@@ -96411,7 +97564,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-01-01",
-            "value": 0.95
+            "value": 0.37
           }
         ]
       },
@@ -96419,16 +97572,16 @@ window.MACRO_DATA = {
         "label": "GDP Contribution: Private Investment",
         "latest": {
           "date": "2026-01-01",
-          "value": 1.19
+          "value": 1.35
         },
         "previous": {
           "date": "2025-10-01",
           "value": 0.4
         },
-        "change_pct": 197.5,
+        "change_pct": 237.5,
         "frequency": "quarterly",
-        "mom_pct": 197.5,
-        "yoy_pct": -68.6,
+        "mom_pct": 237.5,
+        "yoy_pct": -64.38,
         "history": [
           {
             "date": "1996-04-01",
@@ -96908,7 +98061,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-01-01",
-            "value": 1.19
+            "value": 1.35
           }
         ]
       },
@@ -96916,16 +98069,16 @@ window.MACRO_DATA = {
         "label": "GDP Contribution: Net Exports",
         "latest": {
           "date": "2026-01-01",
-          "value": -1.25
+          "value": -0.37
         },
         "previous": {
           "date": "2025-10-01",
           "value": -0.22
         },
-        "change_pct": 468.182,
+        "change_pct": 68.182,
         "frequency": "quarterly",
-        "mom_pct": 468.182,
-        "yoy_pct": -73.29,
+        "mom_pct": 68.182,
+        "yoy_pct": -92.09,
         "history": [
           {
             "date": "1996-04-01",
@@ -97405,7 +98558,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-01-01",
-            "value": -1.25
+            "value": -0.37
           }
         ]
       },
@@ -97413,16 +98566,16 @@ window.MACRO_DATA = {
         "label": "GDP Contribution: Government",
         "latest": {
           "date": "2026-01-01",
-          "value": 0.73
+          "value": 0.74
         },
         "previous": {
           "date": "2025-10-01",
           "value": -0.99
         },
-        "change_pct": -173.737,
+        "change_pct": -174.747,
         "frequency": "quarterly",
-        "mom_pct": -173.737,
-        "yoy_pct": -529.41,
+        "mom_pct": -174.747,
+        "yoy_pct": -535.29,
         "history": [
           {
             "date": "1996-04-01",
@@ -97902,7 +99055,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-01-01",
-            "value": 0.73
+            "value": 0.74
           }
         ]
       },
@@ -100898,16 +102051,16 @@ window.MACRO_DATA = {
         "label": "Atlanta Fed GDPNow",
         "latest": {
           "date": "2026-04-01",
-          "value": 3.0377
+          "value": 2.5438
         },
         "previous": {
           "date": "2026-01-01",
           "value": 1.2392
         },
-        "change_pct": 145.134,
+        "change_pct": 105.278,
         "frequency": "quarterly",
-        "mom_pct": 145.134,
-        "yoy_pct": 4.68,
+        "mom_pct": 105.278,
+        "yoy_pct": -12.34,
         "history": [
           {
             "date": "2011-07-01",
@@ -101147,30 +102300,26 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-04-01",
-            "value": 3.0377
+            "value": 2.5438
           }
         ]
       },
       "DGORDER": {
         "label": "Durable Goods Orders",
         "latest": {
-          "date": "2026-04-01",
-          "value": 346182.0
+          "date": "2026-05-01",
+          "value": 332050.0
         },
         "previous": {
-          "date": "2026-03-01",
-          "value": 320485.0
+          "date": "2026-04-01",
+          "value": 347618.0
         },
-        "change_pct": 8.018,
+        "change_pct": -4.478,
         "frequency": "monthly",
-        "mom_pct": 8.018,
-        "yoy_pct": 17.26,
-        "mo3_annualized_pct": 37.01,
+        "mom_pct": -4.478,
+        "yoy_pct": -3.49,
+        "mo3_annualized_pct": 21.56,
         "history": [
-          {
-            "date": "2016-05-01",
-            "value": 223117.0
-          },
           {
             "date": "2016-06-01",
             "value": 206910.0
@@ -101645,7 +102794,11 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-04-01",
-            "value": 346182.0
+            "value": 347618.0
+          },
+          {
+            "date": "2026-05-01",
+            "value": 332050.0
           }
         ]
       },
@@ -104710,21 +105863,17 @@ window.MACRO_DATA = {
       "CCSA": {
         "label": "Continuing Jobless Claims",
         "latest": {
-          "date": "2026-06-06",
-          "value": 1810000.0
+          "date": "2026-06-13",
+          "value": 1821000.0
         },
         "previous": {
-          "date": "2026-05-30",
-          "value": 1786000.0
+          "date": "2026-06-06",
+          "value": 1800000.0
         },
-        "change_pct": 1.344,
+        "change_pct": 1.167,
         "frequency": "daily",
-        "mom_pct": 1.344,
+        "mom_pct": 1.167,
         "history": [
-          {
-            "date": "2024-02-24",
-            "value": 1788000.0
-          },
           {
             "date": "2024-03-02",
             "value": 1800000.0
@@ -105199,7 +106348,11 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-06",
-            "value": 1810000.0
+            "value": 1800000.0
+          },
+          {
+            "date": "2026-06-13",
+            "value": 1821000.0
           }
         ]
       },
@@ -107196,23 +108349,19 @@ window.MACRO_DATA = {
       "PI": {
         "label": "Personal Income",
         "latest": {
-          "date": "2026-04-01",
-          "value": 26722.5
+          "date": "2026-05-01",
+          "value": 26916.4
         },
         "previous": {
-          "date": "2026-03-01",
-          "value": 26722.5
+          "date": "2026-04-01",
+          "value": 26734.8
         },
-        "change_pct": 0.0,
+        "change_pct": 0.679,
         "frequency": "monthly",
-        "mom_pct": 0.0,
-        "yoy_pct": 2.54,
-        "mo3_annualized_pct": 1.8,
+        "mom_pct": 0.679,
+        "yoy_pct": 3.82,
+        "mo3_annualized_pct": 4.88,
         "history": [
-          {
-            "date": "2016-05-01",
-            "value": 15777.2
-          },
           {
             "date": "2016-06-01",
             "value": 15821.4
@@ -107675,42 +108824,42 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-01-01",
-            "value": 26603.4
+            "value": 26610.6
           },
           {
             "date": "2026-02-01",
-            "value": 26590.3
+            "value": 26597.7
           },
           {
             "date": "2026-03-01",
-            "value": 26722.5
+            "value": 26739.9
           },
           {
             "date": "2026-04-01",
-            "value": 26722.5
+            "value": 26734.8
+          },
+          {
+            "date": "2026-05-01",
+            "value": 26916.4
           }
         ]
       },
       "PCE": {
         "label": "Personal Spending (PCE level)",
         "latest": {
-          "date": "2026-04-01",
-          "value": 21979.4
+          "date": "2026-05-01",
+          "value": 22059.8
         },
         "previous": {
-          "date": "2026-03-01",
-          "value": 21868.3
+          "date": "2026-04-01",
+          "value": 21903.7
         },
-        "change_pct": 0.508,
+        "change_pct": 0.713,
         "frequency": "monthly",
-        "mom_pct": 0.508,
-        "yoy_pct": 5.94,
-        "mo3_annualized_pct": 9.04,
+        "mom_pct": 0.713,
+        "yoy_pct": 6.29,
+        "mo3_annualized_pct": 8.56,
         "history": [
-          {
-            "date": "2016-05-01",
-            "value": 12652.7
-          },
           {
             "date": "2016-06-01",
             "value": 12731.2
@@ -108173,19 +109322,23 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-01-01",
-            "value": 21509.1
+            "value": 21478.7
           },
           {
             "date": "2026-02-01",
-            "value": 21655.8
+            "value": 21611.4
           },
           {
             "date": "2026-03-01",
-            "value": 21868.3
+            "value": 21814.7
           },
           {
             "date": "2026-04-01",
-            "value": 21979.4
+            "value": 21903.7
+          },
+          {
+            "date": "2026-05-01",
+            "value": 22059.8
           }
         ]
       },
@@ -108193,17 +109346,17 @@ window.MACRO_DATA = {
         "label": "Total Vehicle Sales",
         "latest": {
           "date": "2026-05-01",
-          "value": 16.485
+          "value": 16.508
         },
         "previous": {
           "date": "2026-04-01",
           "value": 16.395
         },
-        "change_pct": 0.549,
+        "change_pct": 0.689,
         "frequency": "monthly",
-        "mom_pct": 0.549,
-        "yoy_pct": 2.76,
-        "mo3_annualized_pct": 16.1,
+        "mom_pct": 0.689,
+        "yoy_pct": 2.9,
+        "mo3_annualized_pct": 16.75,
         "history": [
           {
             "date": "2016-06-01",
@@ -108675,7 +109828,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-03-01",
-            "value": 16.537
+            "value": 16.536
           },
           {
             "date": "2026-04-01",
@@ -108683,7 +109836,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-05-01",
-            "value": 16.485
+            "value": 16.508
           }
         ]
       },
@@ -110184,21 +111337,17 @@ window.MACRO_DATA = {
       "DFF": {
         "label": "Fed Funds Rate",
         "latest": {
-          "date": "2026-06-23",
+          "date": "2026-06-24",
           "value": 3.63
         },
         "previous": {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "value": 3.63
         },
         "change_pct": 0.0,
         "frequency": "daily",
         "mom_pct": 0.0,
         "history": [
-          {
-            "date": "2026-02-24",
-            "value": 3.64
-          },
           {
             "date": "2026-02-25",
             "value": 3.64
@@ -110674,27 +111823,27 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-23",
             "value": 3.63
+          },
+          {
+            "date": "2026-06-24",
+            "value": 3.63
           }
         ]
       },
       "DGS10": {
         "label": "10Y Treasury Yield",
         "latest": {
+          "date": "2026-06-24",
+          "value": 4.41
+        },
+        "previous": {
           "date": "2026-06-23",
           "value": 4.5
         },
-        "previous": {
-          "date": "2026-06-22",
-          "value": 4.51
-        },
-        "change_pct": -0.222,
+        "change_pct": -2.0,
         "frequency": "daily",
-        "mom_pct": -0.222,
+        "mom_pct": -2.0,
         "history": [
-          {
-            "date": "2026-01-07",
-            "value": 4.15
-          },
           {
             "date": "2026-01-08",
             "value": 4.19
@@ -111154,27 +112303,27 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-23",
             "value": 4.5
+          },
+          {
+            "date": "2026-06-24",
+            "value": 4.41
           }
         ]
       },
       "DGS2": {
         "label": "2Y Treasury Yield",
         "latest": {
+          "date": "2026-06-24",
+          "value": 4.11
+        },
+        "previous": {
           "date": "2026-06-23",
           "value": 4.16
         },
-        "previous": {
-          "date": "2026-06-22",
-          "value": 4.24
-        },
-        "change_pct": -1.887,
+        "change_pct": -1.202,
         "frequency": "daily",
-        "mom_pct": -1.887,
+        "mom_pct": -1.202,
         "history": [
-          {
-            "date": "2026-01-07",
-            "value": 3.47
-          },
           {
             "date": "2026-01-08",
             "value": 3.49
@@ -111634,27 +112783,27 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-23",
             "value": 4.16
+          },
+          {
+            "date": "2026-06-24",
+            "value": 4.11
           }
         ]
       },
       "DGS3MO": {
         "label": "3M Treasury Yield",
         "latest": {
-          "date": "2026-06-23",
+          "date": "2026-06-24",
           "value": 3.85
         },
         "previous": {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "value": 3.85
         },
         "change_pct": 0.0,
         "frequency": "daily",
         "mom_pct": 0.0,
         "history": [
-          {
-            "date": "2026-01-07",
-            "value": 3.62
-          },
           {
             "date": "2026-01-08",
             "value": 3.62
@@ -112114,27 +113263,27 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-23",
             "value": 3.85
+          },
+          {
+            "date": "2026-06-24",
+            "value": 3.85
           }
         ]
       },
       "DGS6MO": {
         "label": "6M Treasury Yield",
         "latest": {
+          "date": "2026-06-24",
+          "value": 3.95
+        },
+        "previous": {
           "date": "2026-06-23",
           "value": 3.96
         },
-        "previous": {
-          "date": "2026-06-22",
-          "value": 3.98
-        },
-        "change_pct": -0.503,
+        "change_pct": -0.253,
         "frequency": "daily",
-        "mom_pct": -0.503,
+        "mom_pct": -0.253,
         "history": [
-          {
-            "date": "2026-01-07",
-            "value": 3.56
-          },
           {
             "date": "2026-01-08",
             "value": 3.56
@@ -112594,27 +113743,27 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-23",
             "value": 3.96
+          },
+          {
+            "date": "2026-06-24",
+            "value": 3.95
           }
         ]
       },
       "T10Y2Y": {
         "label": "10Y-2Y Spread",
         "latest": {
+          "date": "2026-06-25",
+          "value": 0.31
+        },
+        "previous": {
           "date": "2026-06-24",
           "value": 0.3
         },
-        "previous": {
-          "date": "2026-06-23",
-          "value": 0.34
-        },
-        "change_pct": -11.765,
+        "change_pct": 3.333,
         "frequency": "daily",
-        "mom_pct": -11.765,
+        "mom_pct": 3.333,
         "history": [
-          {
-            "date": "2026-01-08",
-            "value": 0.7
-          },
           {
             "date": "2026-01-09",
             "value": 0.64
@@ -113074,6 +114223,10 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-24",
             "value": 0.3
+          },
+          {
+            "date": "2026-06-25",
+            "value": 0.31
           }
         ]
       },
@@ -113564,21 +114717,17 @@ window.MACRO_DATA = {
       "VIXCLS": {
         "label": "VIX (Volatility Index)",
         "latest": {
+          "date": "2026-06-24",
+          "value": 18.63
+        },
+        "previous": {
           "date": "2026-06-23",
           "value": 19.49
         },
-        "previous": {
-          "date": "2026-06-22",
-          "value": 17.28
-        },
-        "change_pct": 12.789,
+        "change_pct": -4.413,
         "frequency": "daily",
-        "mom_pct": 12.789,
+        "mom_pct": -4.413,
         "history": [
-          {
-            "date": "2026-01-07",
-            "value": 15.38
-          },
           {
             "date": "2026-01-08",
             "value": 15.45
@@ -114050,6 +115199,10 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-23",
             "value": 19.49
+          },
+          {
+            "date": "2026-06-24",
+            "value": 18.63
           }
         ]
       },
@@ -114532,21 +115685,17 @@ window.MACRO_DATA = {
       "BAMLH0A0HYM2": {
         "label": "High-Yield Credit Spread (HY OAS)",
         "latest": {
+          "date": "2026-06-24",
+          "value": 2.76
+        },
+        "previous": {
           "date": "2026-06-23",
           "value": 2.71
         },
-        "previous": {
-          "date": "2026-06-22",
-          "value": 2.65
-        },
-        "change_pct": 2.264,
+        "change_pct": 1.845,
         "frequency": "daily",
-        "mom_pct": 2.264,
+        "mom_pct": 1.845,
         "history": [
-          {
-            "date": "2026-01-12",
-            "value": 2.74
-          },
           {
             "date": "2026-01-13",
             "value": 2.75
@@ -115022,27 +116171,27 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-23",
             "value": 2.71
+          },
+          {
+            "date": "2026-06-24",
+            "value": 2.76
           }
         ]
       },
       "BAMLC0A0CM": {
         "label": "Investment-Grade Credit Spread (IG OAS)",
         "latest": {
+          "date": "2026-06-24",
+          "value": 0.75
+        },
+        "previous": {
           "date": "2026-06-23",
           "value": 0.74
         },
-        "previous": {
-          "date": "2026-06-22",
-          "value": 0.74
-        },
-        "change_pct": 0.0,
+        "change_pct": 1.351,
         "frequency": "daily",
-        "mom_pct": 0.0,
+        "mom_pct": 1.351,
         "history": [
-          {
-            "date": "2026-01-12",
-            "value": 0.78
-          },
           {
             "date": "2026-01-13",
             "value": 0.77
@@ -115518,27 +116667,27 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-23",
             "value": 0.74
+          },
+          {
+            "date": "2026-06-24",
+            "value": 0.75
           }
         ]
       },
       "T10YIE": {
         "label": "10Y Inflation Breakeven",
         "latest": {
+          "date": "2026-06-25",
+          "value": 2.21
+        },
+        "previous": {
           "date": "2026-06-24",
           "value": 2.18
         },
-        "previous": {
-          "date": "2026-06-23",
-          "value": 2.21
-        },
-        "change_pct": -1.357,
+        "change_pct": 1.376,
         "frequency": "daily",
-        "mom_pct": -1.357,
+        "mom_pct": 1.376,
         "history": [
-          {
-            "date": "2026-01-08",
-            "value": 2.27
-          },
           {
             "date": "2026-01-09",
             "value": 2.28
@@ -115998,6 +117147,10 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-24",
             "value": 2.18
+          },
+          {
+            "date": "2026-06-25",
+            "value": 2.21
           }
         ]
       },
@@ -117494,21 +118647,17 @@ window.MACRO_DATA = {
       "WEI": {
         "label": "NY Fed Weekly Economic Index",
         "latest": {
+          "date": "2026-06-20",
+          "value": 2.5
+        },
+        "previous": {
           "date": "2026-06-13",
           "value": 3.1
         },
-        "previous": {
-          "date": "2026-06-06",
-          "value": 2.9
-        },
-        "change_pct": 6.897,
+        "change_pct": -19.355,
         "frequency": "daily",
-        "mom_pct": 6.897,
+        "mom_pct": -19.355,
         "history": [
-          {
-            "date": "2024-03-02",
-            "value": 2.18
-          },
           {
             "date": "2024-03-09",
             "value": 1.78
@@ -117779,7 +118928,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-06-21",
-            "value": 2.37
+            "value": 2.36
           },
           {
             "date": "2025-06-28",
@@ -117984,20 +119133,24 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-13",
             "value": 3.1
+          },
+          {
+            "date": "2026-06-20",
+            "value": 2.5
           }
         ]
       }
     }
   },
   "latest_daily": {
-    "file": "2026-06-24.md",
-    "date": "2026-06-24",
+    "file": "2026-06-25.md",
+    "date": "2026-06-25",
     "schema_version": "1.1",
-    "surprise_count": "3",
-    "regime_signal": "risk-off",
-    "key_takeaway": "Cụm nhà ở yếu rõ — New Home Sales sốc -7.3% MoM (580K vs 638K) và Building Permits MoM âm bất ngờ — nhưng hard-data lạm phát vẫn nóng nên đây là tín hiệu growth-scare cục bộ, KHÔNG phải cơ sở để Fed dovish trước \"thác\" PCE+GDP ngày mai.",
-    "body_preview": "# Vĩ mô Mỹ — 2026-06-24",
-    "body": "# Vĩ mô Mỹ — 2026-06-24\n\n## Tóm tắt\nNgày tiền-\"thác dữ liệu\" (PCE + GDP công bố 25/6), trọng tâm rơi vào thị trường nhà ở và bức tranh đều yếu: New Home Sales tháng 5 lao dốc -7.3% MoM xuống 580K (sốc dưới forecast 638K, z=-1.82), Building Permits MoM âm bất ngờ (-0.9% so forecast -0.7%, z=-5.71), nối tiếp cú sụp Housing Starts -15.4% MoM tuần trước. Thâm hụt cán cân vãng lai Q1 cũng rộng hơn dự báo (-226.8B vs -212.0B). Đây là tổ hợp nghiêng **risk-off/growth-scare** cho cyclicals nhạy lãi suất (homebuilders, vật liệu, tài chính).\nTuy nhiên phải đối chiếu: `hard_data_hot = true` — lạm phát thực tế VẪN nóng (Core PCE YoY 3.29%, CPI YoY 4.27%, PPI YoY 6.46%, Energy CPI 3mo annualized 104%). Nhà ở yếu là tín hiệu cầu hạ nhiệt do lãi suất cao kéo dài, KHÔNG phải bằng chứng disinflation; do đó không thể kết luận \"Fed sắp dovish hẳn\". Net: hơi risk-off cho growth, nhưng Fed vẫn bị kẹp giữa tăng trưởng chậm và lạm phát dai dẳng — chờ Core PCE tháng 5 (25/6) làm trọng tài.\n\n## Chi tiết chỉ số được công bố hôm nay\n\n### New Home Sales (tháng 5) — MISS (shock-below)\n**Headline:** New Home Sales: 580K | Forecast: 638K | Previous: 626K (z=-1.82, shock-below)\n**MoM:** -7.3% (Previous -5.7%) — tháng giảm thứ hai liên tiếp, gia tốc xuống.\n**Đánh giá:** Hụt forecast tới 58K — cú miss lớn. FRED `HSN1F` xác nhận: -7.3% MoM, -6.75% YoY, 3mo annualized -28.2% (đà bán suy yếu nhanh). Doanh số nhà mới cực nhạy với lãi suất thế chấp — MBA 30-Year hôm nay 6.59% (gần như đứng yên ở vùng cao), khiến khả năng chi trả tiếp tục bị bóp nghẹt.\n**Hàm ý thị trường:** Tiêu cực cho homebuilders (XHB) và vật liệu xây dựng (XLB liên quan); chuỗi cung ứng nhà ở (đồ gia dụng, nội thất trong XLY) chịu áp lực. Yếu tố giảm phát tiềm năng đến từ kênh nhà ở (shelter ~33% rổ CPI) nhưng độ trễ truyền dẫn dài — chưa giúp ích cho Fed ngay.\n\n### Housing — Building Permits (tháng 5) — MISS (shock-below MoM)\n**Headline:** Building Permits: 1.410M | Forecast: 1.413M | Previous: 1.423M (z=-0.04, in-line theo mức tuyệt đối)\n**MoM:** -0.9% | Forecast: -0.7% | Previous: +4.4% (z=-5.71, shock-below)\n**Đánh giá:** Mức tuyệt đối gần như đúng dự báo, nhưng MoM đảo chiều mạnh từ +4.4% sang -0.9%, sốc so kỳ vọng. FRED `PERMIT`: -0.91% MoM, -0.42% YoY, 3mo annualized -29.7% — giấy phép (chỉ báo dẫn dắt khởi công 1-2 quý tới) đang xuống dốc. Kết hợp với Housing Starts -15.4% MoM (tuần trước), pipeline nguồn cung nhà ở mới đang co lại rõ rệt.\n**Hàm ý:** Đầu tư xây dựng nhà ở — một cấu phần của đầu tư tư nhân (đầu tàu GDP Q1 +1.19pp) — có nguy cơ trở thành lực cản trong các quý tới. Tiêu cực cho construction-linked cyclicals.\n\n### Current Account & các sự kiện khác (nhóm other) — Current Account Q1 MISS (below-forecast)\n**Headline:** Current Account: -226.8B | Forecast: -212.0B | Previous: -221.1B (z=-1.40, below-forecast)\n**Đánh giá:** Thâm hụt vãng lai Q1 rộng hơn dự báo ~15B và xấu hơn quý trước. Khớp với bức tranh `growth_context`: Xuất khẩu ròng (Net Exports) là lực cản GDP lớn nhất (-1.25pp). Nhập khẩu mạnh (có thể do front-loading trước thuế quan) + xuất khẩu chững khiến cán cân ngoại mở rộng.\n**Hàm ý:** Thâm hụt vãng lai rộng về lý thuyết gây áp lực nhẹ lên USD trong dài hạn (cần dòng vốn ngoại tài trợ), nhưng ngắn hạn USD vẫn được hỗ trợ bởi lãi suất cao. Trung lập-hơi tiêu cực cho tăng trưởng.\n\n### Trade — Crude Oil Imports (EIA tuần)\nNhập khẩu dầu thô +0.094M thùng/ngày (từ -0.241M tuần trước) — biến động tuần, ý nghĩa vĩ mô hạn chế. Bối cảnh thương mại đầy đủ chờ Goods Trade Balance (26/6) và Trade Balance tháng 5 (7/7). FRED `BOPGSTB` mới nhất (tháng 4): -55.9B, thâm hụt thu hẹp nhẹ -1.2% MoM nhưng vẫn rộng so cùng kỳ (-7.4% YoY = xấu hơn). Khối `trade_detail` (Census) trống ngày này nên không có breakdown đối tác.\n\n### Fed — Cook phát biểu & Kết quả Stress Test ngân hàng\nThống đốc Fed Lisa Cook phát biểu (impact cao theo lịch) và Fed công bố kết quả Bank Stress Test 2026 — không có số định lượng surprise, nhưng đáng theo dõi: kết quả stress test định hình dư địa trả cổ tức/mua lại cổ phiếu của ngân hàng lớn (XLF), nhất là trước mùa earnings ngân hàng giữa tháng 7 (JPM/BAC/WFC ngày 14/7). Tổng thống Trump cũng có phát biểu cuối ngày (rủi ro tin tức thuế quan/chính sách).\n\n### Mortgage (MBA tuần)\nLãi suất thế chấp 30 năm 6.59% (gần đứng yên, -0.01). Đơn xin vay thế chấp +1.0% WoW (đảo từ -3.8%), nhưng cấu trúc lệch về tái cấp vốn: Refinance Index +24.0 lên 834.2, trong khi Purchase Index -1.1 xuống 169.7 (cầu mua nhà thực vẫn yếu). Xác nhận thông điệp từ New Home Sales: lãi suất cao tiếp tục đè nhu cầu mua nhà mới.\n\n## Market Pulse\n\n**Yields & Đường cong lãi suất:**\n- 10Y: 4.50% (-1bp) | 2Y: 4.16% (-8bp) | Spread (FRED T10Y2Y, 10Y−2Y): +0.30 → đường cong dốc lên bình thường, đầu ngắn giảm nhanh hơn (kỳ vọng cắt lãi suất chớm vào giá).\n- Breakeven 10Y: 2.18% (-1.4%) → kỳ vọng lạm phát thị trường vẫn trên mục tiêu Fed 2%, nhưng đang dịu nhẹ.\n\n**USD & Cross-asset:**\n- DXY (DTWEXBGS): 120.4 (+0.8%) → USD nhích lên, áp lực nhẹ lên EM và hàng hóa.\n- VIX: 19.49 (+12.8%) → vùng caution sát ngưỡng 20; risk appetite suy giảm rõ trong phiên, khớp với tín hiệu nhà ở yếu.\n- WTI: $78.94/bbl (-1.8%) → dầu hạ nhiệt, giảm áp lực chi phí năng lượng đầu vào — tích cực biên về dài cho lạm phát nhưng ngược lại với XLE.\n\n**Credit Spreads:**\n- HY OAS: 271bp (+2.3%) | IG OAS: 74bp (đi ngang)\n- Spread HY nới nhẹ — chớm dấu hiệu credit thận trọng, đồng pha VIX tăng; chưa phải stress thực sự nhưng risk appetite đã bớt.\n\n**Vị trí chu kỳ (cycle_context):**\n- Sahm Rule: +0.10 (an toàn, chưa kích hoạt — ngưỡng 0.50). Thất nghiệp 3mo-avg 4.3% vs đáy 12 tháng 4.2%.\n- Đường cong: regime **normal** (2s10s +0.30, 10Y-3M +0.65, 116 phiên) — chưa đảo ngược, không phát tín hiệu suy thoái cận kề.\n\n**Economic Surprise Index (surprise_index.json):**\n- Growth surprise 1M: +0.23 (đúng kỳ vọng, xu hướng rising) | Inflation surprise 1M: -6.74 (missing mạnh — dữ liệu lạm phát công bố gần đây thấp hơn kỳ vọng nhưng mức tuyệt đối vẫn cao).\n- Data sát kỳ vọng tổng thể → ít động lực bất ngờ, nhưng day_surprise_score growth hôm nay -4.82 (nghiêng tiêu cực do cụm nhà ở).\n\n**Tổng đánh giá cross-asset:** Risk-off nhẹ trong phiên — VIX bật +12.8% lên gần 20, HY spread nới, USD lên, cyclicals nhà ở bị bán. Tuy nhiên chu kỳ chưa báo động (Sahm an toàn, đường cong normal), nên đây là điều chỉnh thận trọng tiền-PCE chứ chưa phải đảo chiều cấu trúc.\n\n## Bối cảnh xu hướng (so với 30 ngày qua)\n\n**Cung đường vĩ mô tháng 6 — 4 chặng rõ rệt:**\n1. **Goldilocks hẹp (1-3/6):** ISM Mfg 54.0 + Prices Paid shock cool 82.1 + ISM Services 54.5 → growth tốt, lạm phát soft-data dịu. Nhưng breadth cực hẹp, **XLK độc dẫn** (1M peak +22.9%), defensives crash.\n2. **Bước ngoặt lớn nhất (4-5/6):** Tech leadership CRACK (XLK 1M de-rate ~8pp trong 4 phiên), labor cracking lúc đầu (Claims 225K breakout, Challenger spike) rồi **NFP +172-265k BEAT** đảo thành \"no-landing\" → yields jump (+9-12bp), **AVGO disappoint** + VIX spike +40%. Dòng tiền xoay từ tech sang defensives (XLV) + cyclicals (XLF/XLI).\n3. **Relief rally disinflation (10-13/6):** Core CPI MoM +0.2% (dưới 0.3%) + Core PPI YoY 4.9% (vs 5.4%) + Michigan inflation-exp rơi sâu → yields về 4.45%, VIX hạ 19.4, relief rally rộng (XLK/XLI/XLB cùng bật).\n4. **Hawkish-hold reset (16-24/6):** FOMC giữ 3.75% nhưng **dot plot dịch LÊN** (bớt kỳ vọng cắt) + Retail Sales/Pending Home Sales shock-above. Sau đó cụm nhà ở sụp (Housing Starts -15.4% → New Home Sales -7.3% → Permits âm hôm nay). Hard-data lạm phát **vẫn nóng suốt tháng** (Core PCE YoY 3.29% đứng yên).\n\n**Hàm ý tổng hợp — regime \"stagflation-lite, hard-data-gated\":** Tháng 6 hội tụ về một thế giằng co bền: soft-data (khảo sát, inflation-exp, ISM Prices) liên tục cố gọi disinflation/dovish, nhưng hard-data lạm phát KHÔNG giảm (Core PCE YoY kẹt 3.29% cả tháng, Energy CPI 3mo annualized 104%) trong khi growth bắt đầu rạn ở kênh nhạy lãi suất (nhà ở 3 báo cáo liên tiếp âm). Đường cong normal (2s10s +0.30) + Sahm an toàn (+0.10) → **chưa phải recession**, nhưng momentum đang xấu đi. Đây là môi trường \"higher-for-longer kéo dài + growth chậm cục bộ\".\n\n**Map sang sector — leadership đã chuyển dứt khoát từ duration-tech sang cyclical chất lượng + defensive chọn lọc:**\n- **XLI (Industrials)** — leader bền nhất tháng: RS 1M +6.68, 1M +5.17%, trên MA50. Capex cycle on (ISM Mfg expansion, Durable Goods), hưởng lợi \"no-landing\". **Overweight.**\n- **XLF (Financials)** — chuyển từ Avoid sang dẫn dắt: RS 1M +5.27, 1M +3.79%, trên MA50. Đầu ngắn giảm nhanh hơn đầu dài (2Y -8bp vs 10Y -1bp) đang **steepen nhẹ đường cong** → cải thiện NIM; stress test 2026 + earnings 14/7 là catalyst. **Light OW.**\n- **XLV (Healthcare)** — defensive core thắng cuộc rotation từ 4/6: RS 1M +4.23, hưởng lợi yields dịu + an toàn khi VIX bật. **Overweight.**\n- **XLK (Technology)** — đã mất ngôi độc dẫn: 1M chỉ còn +1.6% (từ peak +22.9%), breadth \"narrow\" (chỉ 33% holdings trên MA50, breadth_thrust -8.4). Disinflation soft-data là tailwind DCF nhưng hard-data nóng + valuation đè. **Neutral (giữ, không re-up OW).**\n- **XLE (Energy)** — laggard rõ rệt: RS 1M -8.01, dưới MA50, WTI sập -28% 1M. Cú crude draw đầu tháng đã faded hoàn toàn. **Underweight.**\n- **XLC (Communication)** — yếu nhất cùng cụm mega-cap: RS 1M -6.16, dưới MA50. **Underweight.**\n- **XLY (Discretionary)** — dưới MA50, RS 1M -1.87; nhà ở yếu đè chuỗi cung ứng đồ gia dụng/nội thất + Michigan sentiment <50. **Underweight/Neutral.**\n- **XLRE (Real Estate)** — tín hiệu hỗn hợp: yields dịu là tailwind nhưng cụm nhà ở sụp + cầu mua nhà thực yếu (Purchase Index -1.1) là headwind cơ bản. **Neutral (watch 10Y về 4.30%).**\n- **XLB/XLP/XLU** — neutral, không có thematic catalyst dẫn dắt; XLB chịu rủi ro từ construction-linked demand co lại.\n\n**Mâu thuẫn cần theo dõi (data conflicting):** soft-data dovish vs hard-data hot là căng thẳng trung tâm cả tháng — **Core PCE tháng 5 (25/6) là trọng tài**. Nếu Core PCE YoY chạm/vượt 3.4%: khóa Fed ở hawkish-hold, stagflation-lite xác nhận → tiếp tục ưu tiên XLI/XLF/XLV, tránh duration (XLK/XLRE/XLU). Nếu Core PCE bất ngờ dịu + GDP hụt 1.6%: cụm nhà ở yếu chuyển từ \"rủi ro\" thành \"lý do Fed nới\" → mở cửa re-rate XLK/XLRE và duration.\n\n## Cảnh báo & catalyst sắp tới\n\n**Ngày mai (2026-06-25) — \"thác dữ liệu\" lớn nhất tuần:**\n- Core PCE Price Index (MoM tháng 5) — forecast 0.3% (previous 0.2%) — *HIGH* (chỉ số lạm phát Fed theo dõi số 1)\n- Core PCE Price Index (YoY tháng 5) — forecast 3.4% (previous 3.3%) — *HIGH*\n- PCE Price Index (MoM 0.5% / YoY 4.0%) + Personal Spending (MoM forecast 0.6%) — *HIGH/MEDIUM*\n- GDP (QoQ Q1) — forecast 1.6% (previous 2.0%) — *HIGH*\n- GDP Price Index (QoQ Q1) — forecast 3.5% — *MEDIUM*\n- Durable Goods Orders (MoM tháng 5) — forecast -5.0% (previous 8.0%) — *HIGH*; Core Durable Goods — forecast 0.5% — *MEDIUM*\n- Initial Jobless Claims — forecast 225K (previous 226K) — *HIGH*; Continuing Claims — forecast 1,800K — *MEDIUM*\n- FOMC Bowman & Williams phát biểu — *MEDIUM*; Atlanta Fed GDPNow Q2 (3.0%); Fed Balance Sheet; 7-Year Note Auction — *MEDIUM*\n\n**Tuần này (đến 2026-07-01):**\n- 26/6: Goods Trade Balance tháng 5 (forecast -85.40B); Michigan Consumer Sentiment cuối kỳ (48.9) + kỳ vọng lạm phát 1Y 4.6% / 5Y 3.4%; FOMC Williams & Kashkari phát biểu; Baker Hughes rig count + CFTC positions (nhiễu)\n- 30/6: Chicago PMI (previous 62.7, *HIGH*); CB Consumer Confidence (*HIGH*); JOLTS Job Openings tháng 5 (previous 7.618M, *HIGH*); Case-Shiller HPI-20 tháng 4\n- 1/7: ADP Employment (*HIGH*); S&P Global Manufacturing PMI (55.7, *HIGH*); ISM Manufacturing PMI (54.0) + Prices (82.1) + Employment (*HIGH*); Construction Spending tháng 5\n\n**Theo dõi đặc biệt:** Core PCE ngày mai là trọng tài quyết định cho căng thẳng \"nhà ở/growth yếu vs lạm phát dai dẳng\" của hôm nay. Nếu Core PCE YoY in-line/trên 3.4% (forecast nhích lên từ 3.3%), Fed bị khóa ở thế hawkish-hold dù nhà ở đang nguội — kịch bản stagflation nhẹ, xấu cho cả bonds lẫn cyclicals. Nếu Core PCE bất ngờ dịu cùng GDP hụt 1.6%, thị trường mới có cơ sở định giá cắt lãi suất — lúc đó cụm nhà ở yếu sẽ chuyển từ \"rủi ro\" thành \"lý do để Fed nới\". ISM Manufacturing Prices (82.1, cực cao) ngày 1/7 cũng cần theo dõi vì áp lực giá đầu vào sản xuất vẫn chưa hạ."
+    "surprise_count": "6",
+    "regime_signal": "risk-on",
+    "key_takeaway": "Cụm \"data dump\" T5/Q1 cho thấy tăng trưởng vượt mạnh (GDP Q1 2.1% beat, income/spending/CAPEX shock-above, claims thấp) trong khi Core PCE đúng kỳ vọng (0.3% MoM, 3.4% YoY) — risk-on theo growth, nhưng hard-data lạm phát VẪN nóng (Core PCE YoY 3.41%, CPI YoY 4.27%) nên chưa thể gọi dovish một chiều.",
+    "body_preview": "# Vĩ mô Mỹ — 2026-06-25",
+    "body": "# Vĩ mô Mỹ — 2026-06-25\n\n## Tóm tắt\nNgày dày đặc release với cụm dữ liệu T5 và điều chỉnh GDP/PCE Q1: tăng trưởng vượt kỳ vọng trên diện rộng — GDP Q1 revised 2.1% (vs forecast 1.6%), Personal Income +0.7%, Personal Spending +0.7%, Core Durable Goods +1.3% và Capex proxy (Goods Orders Non-Defense Ex-Air) +1.6% đều shock-above; Initial Claims 215K thấp hơn dự báo. Đây là combo growth tốt → **risk-on** theo tăng trưởng, củng cố bởi Economic Surprise Index growth 1M +9.9 (rising).\nTuy nhiên Core PCE — chỉ số Fed quan tâm nhất — chỉ đúng kỳ vọng (0.3% MoM, 3.4% YoY, nhích lên từ 3.3%), KHÔNG hạ nhiệt; cùng với `inflation_context.hard_data_hot = true` (Core PCE YoY 3.41%, CPI YoY 4.27%, Energy bùng nổ), tín hiệu cho Fed là \"giữ nguyên / không vội cắt\" hơn là dovish. Tóm lại: tăng trưởng tốt nhưng lạm phát chưa cho phép Fed nới — risk-on dẫn dắt bởi growth/cyclical, không phải bởi kỳ vọng cắt lãi suất.\n\n## Chi tiết chỉ số được công bố hôm nay\n\n### GDP Q1 2026 — BEAT\n**Headline:** Actual: 2.1% QoQ ann. | Forecast: 1.6% | Previous: 0.5% (z=6.25, shock-above)\n**Đánh giá:** Beat mạnh và tăng tốc rõ so với quý trước (0.5% → 2.1%, +1.6pp). GDP Sales (final sales) 1.9% (vs 1.5%, shock-above) và Corporate Profits QoQ +0.5% (vs forecast −0.4%, shock-above) đều xác nhận động lực thực chất, không phải tích trữ tồn kho. GDP Price Index 3.6% (vs 3.5%) — deflator vẫn cao, tức tăng trưởng danh nghĩa nóng.\n\n**Đầu tàu kéo GDP (đóng góp pp — từ `growth_context`, đã xếp hạng):**\n| Thành phần | Đóng góp (pp) | Nhận xét |\n|---|---|---|\n| Đầu tư tư nhân | +1.35 | **Đầu tàu** — bật mạnh từ +0.40pp quý trước; CAPEX/đầu tư dẫn dắt |\n| Chi tiêu chính phủ | +0.74 | Đảo chiều từ −0.99pp → +0.74pp, đóng góp dương đáng kể |\n| Tiêu dùng (PCE) | +0.37 | Suy yếu từ +1.30pp → +0.37pp — consumer Q1 thực ra yếu |\n| Xuất khẩu ròng (Net Exports) | −0.37 | **Lực cản lớn nhất** — nhập khẩu vượt xuất khẩu, kéo tăng trưởng xuống |\n\n> Đầu tàu = Đầu tư tư nhân (+1.35pp), lực cản = Xuất khẩu ròng (−0.37pp); các pp cộng lại = 2.1% headline.\n\n**Chất lượng tăng trưởng:** Pha trộn. Phần tốt là đầu tư tư nhân dẫn dắt (private-led, bền hơn). Phần đáng lưu ý: PCE chỉ đóng góp +0.37pp (giảm mạnh từ +1.30pp) và Real Consumer Spending Q1 chỉ 0.5% (vs forecast 1.4%, shock-below) — tiêu dùng quý 1 yếu hơn nhiều so với hình ảnh \"spending T5 +0.7%\" trong số tháng. Government đóng góp +0.74pp giúp đẩy headline nhưng là phần kém \"chất lượng\" hơn. Net Exports là lực cản.\n**Hàm ý thị trường:** Beat GDP + CAPEX mạnh ủng hộ cyclicals/industrials (XLI), materials (XLB). Tăng trưởng nóng + deflator cao = Fed không có lý do gấp cắt → hỗ trợ USD, yields neo cao. Tiêu dùng Q1 yếu là điểm cần theo dõi cho XLY.\n\n### Core PCE & PCE Inflation — IN-LINE (nhưng vẫn nóng)\n**Core PCE (Fed's #1 target):** MoM: 0.3% | YoY: 3.4% | Forecast: 0.3% / 3.4% (in-line, z=0.0)\n**PCE Headline:** MoM: 0.4% (vs forecast 0.5%, shock-below) | YoY: 4.1% (in-line)\n**Điều chỉnh Q1:** Core PCE Prices Q1 4.4% (in-line) | PCE Prices Q1 4.6% (vs 4.5%)\n\n**Phân tích:**\n| Metric | Giá trị | Nhận xét |\n|---|---|---|\n| Core PCE YoY | 3.4% (FRED 3.41%) | Cách Fed target 2.0% còn ~1.4pp — KHÔNG cải thiện, nhích lên từ 3.3% |\n| 3-mo annualized Core PCE | 3.52% (FRED) | Momentum gần hạn vẫn trên 3.5% — Powell's preferred gauge chưa giảm |\n| Headline PCE YoY | 4.1% (FRED 4.07%) | Tăng từ 3.8% — lạm phát toàn phần đang đi LÊN, do năng lượng |\n| Real Personal Consumption MoM | 0.3% | Chi tiêu thực dương sau khi trừ lạm phát |\n\n**Cái gì sticky, cái gì cooling (tham chiếu `inflation_context.drivers` từ CPI):** Kéo lạm phát LÊN mạnh nhất là **Energy** (MoM +3.9%, 3mo ann 104% — rất volatile, cần thận trọng diễn giải nhưng đang đẩy headline PCE/CPI lên). Shelter (+0.32% MoM, 3mo ann 4.87%) và Core Services (+0.30% MoM, 3mo ann 4.16%) vẫn sticky — đây là phần Fed lo nhất. Kéo XUỐNG là **Core Goods** (−0.11% MoM, 3mo ann 0.11%) — disinflation hàng hóa lõi tiếp diễn nhưng không đủ bù services + energy.\n**Hàm ý Fed:** Core PCE đúng kỳ vọng nghĩa là KHÔNG có cú sốc hawkish mới, nhưng cũng KHÔNG có tiến triển dovish — YoY còn nhích lên. Với `hard_data_hot = true` (Core PCE 3.41%, CPI 4.27%), Fed nhiều khả năng \"giữ nguyên, chờ thêm dữ liệu\" hơn là khởi động cắt. **Đây không phải tín hiệu xác nhận disinflation.**\n**Hàm ý thị trường:** PCE in-line + growth beat = thị trường có thể nhẹ nhõm (không nóng hơn dự báo), nhưng đường cong/USD ít có lý do nới. Equities được hỗ trợ chủ yếu bởi vế tăng trưởng, không phải vế lạm phát.\n\n### Durable Goods Orders (May) — BEAT (core mạnh)\n**Headline:** MoM: −4.5% | Forecast: −5.0% | Previous: 8.5% (shock-above vs forecast)\n\n| Thành phần | MoM% | Nhận xét |\n|---|---|---|\n| Headline Durable Goods | −4.5% | Giảm sâu nhưng ít xấu hơn dự báo; biến động do máy bay (previous +8.5%) |\n| Core (ex-Transportation) | +1.3% | vs forecast +0.5% — **shock-above**, nhu cầu lõi mạnh |\n| Ex-Defense | −4.6% | Giảm theo headline (transport/defense lumpy) |\n| Goods Orders Non-Defense Ex-Air | +1.6% | vs forecast +0.6% — **shock-above**, proxy CAPEX doanh nghiệp |\n\n**Business CAPEX signal:** Nondefense ex-Aircraft +1.6% (gấp ~2.7x forecast) là tín hiệu mạnh nhất trong nhóm — đầu tư doanh nghiệp đang tăng tốc, khớp với đầu tàu \"Đầu tư tư nhân\" trong GDP. Headline âm chỉ là nhiễu từ đơn hàng máy bay sau tháng +8.5%.\n**Hàm ý thị trường:** Tích cực cho XLI (industrials), XLK (tech capex/equipment). Củng cố luận điểm capex-led cycle.\n\n### Personal Income & Spending (May) — BEAT\n**Personal Income:** MoM: +0.7% | Forecast: +0.4% | Previous: 0.0% (shock-above, z=15)\n**Personal Spending:** MoM: +0.7% | Forecast: +0.6% | Previous: +0.4% (shock-above)\n\n| Metric | Giá trị | Nhận xét |\n|---|---|---|\n| Personal Income | +0.7% | Bật mạnh từ 0.0% — thu nhập hộ gia đình phục hồi rõ |\n| Personal Spending | +0.7% | Chi tiêu danh nghĩa tăng tốc |\n| Real Personal Consumption | +0.3% | Sức mua thực dương sau khi trừ lạm phát |\n| Income − Spending gap | 0.0pp | Income theo kịp Spending → tỷ lệ tiết kiệm ổn định, không phải đốt savings |\n\n**Phân tích chất lượng:** Đây là điểm sáng — income bắt kịp spending nghĩa là chi tiêu T5 được tài trợ bằng thu nhập tăng, không phải vay nợ/rút tiết kiệm (lành mạnh). Lưu ý đối chiếu: số tháng T5 mạnh, nhưng Real Consumer Spending Q1 (0.5%, shock-below) cho thấy nửa đầu năm tiêu dùng yếu — T5 là dấu hiệu phục hồi cần thêm tháng xác nhận.\n**Hàm ý thị trường:** Hỗ trợ XLY (discretionary), consumer-facing. Income khỏe = nền tảng cho chi tiêu nửa cuối năm.\n\n### Jobless Claims — BEAT (labor vẫn chặt)\n**Initial Claims:** 215K | Forecast: 225K | Previous: 227K (below-forecast = tốt cho labor)\n**Continuing Claims:** 1,821K | Forecast: 1,800K | Previous: 1,800K (in-line, nhích nhẹ)\n**4-Week Moving Average:** 224.25K (từ 223.50K — gần như đi ngang)\n\n**Đánh giá trend:** Initial Claims giảm 12K xuống 215K, dưới ngưỡng lo ngại 250K rất nhiều — thị trường lao động vẫn chặt, không có dấu hiệu sa thải lan rộng. Continuing Claims nhích lên 1,821K (người thất nghiệp tìm việc lâu hơn một chút) nhưng vẫn trong biên độ ổn định. 4-week avg đi ngang.\n**Hàm ý:** Labor chặt = không hỗ trợ luận điểm Fed cắt sớm (dovish bị triệt tiêu thêm). Tốt cho consumer/cyclical, nhưng kết hợp lạm phát nóng càng khiến Fed thận trọng.\n\n### Regional Fed (Chicago, Dallas)\nChicago Fed National Activity Index (May) −0.10 (từ +0.19) — hoạt động kinh tế tháng 5 dưới xu hướng, hạ nhiệt so với tháng trước (chỉ số nhiễu, không forecast). Dallas Fed PCE (May) 2.80% (từ 2.40%) — thước đo trimmed-mean của Dallas Fed nhích lên, đồng pha với hard-data lạm phát còn nóng. Hai chỉ số này hơi lệch nhau: hoạt động chậm lại nhưng áp lực giá vùng vẫn tăng.\n\n### Fed (speakers — không có số liệu)\nLịch dày Fed speakers: Bowman (08:45), Williams (15:40), Goolsbee (18:30). Không có actual data; thị trường sẽ soi tông giọng về lộ trình lãi suất sau cụm dữ liệu growth-mạnh/lạm-phát-còn-nóng hôm nay. Fed Balance Sheet đi ngang ($6,736B), Reserve Balances $2.954T (+$18B) — thanh khoản hệ thống ổn định, không tín hiệu căng.\n\n### Khác / other (nowcast & survey vùng)\nAtlanta Fed GDPNow Q2 hạ xuống 2.5% (từ 3.0%, shock-below vs forecast 3.0%) — nowcast Q2 bị cắt, đối lập với GDP Q1 beat; cần theo dõi xem Q2 có giảm tốc thật không. KC Fed Composite (Jun) +11 (từ 8) và KC Fed Manufacturing (Jun) +19 (từ 9) — khảo sát sản xuất vùng Kansas City cải thiện mạnh, ủng hộ vế tăng trưởng/cyclical.\n\n### Noise (ghi nhận nhanh)\nNatural Gas Storage +76B (vs forecast +67B — build lớn hơn, hơi bearish nat-gas); 4-Week Bill 3.610%, 8-Week Bill 3.660%, 7-Year Note Auction 4.260% (từ 4.290% — nhu cầu trái phiếu ổn). Các mục `is_noise` này không đổi bức tranh vĩ mô.\n\n## Market Pulse\n\n**Yields & Đường cong lãi suất:**\n- 10Y: 4.41% (−2bp) | 2Y: 4.11% (−1bp) | Spread 2Y-10Y (FRED T10Y2Y, 10Y−2Y): +0.31 → upward-sloping bình thường, nhích nhẹ steepen\n- Breakeven 10Y: 2.21% (+1.4%) → kỳ vọng lạm phát thị trường nhỉnh trên Fed target 2%, đồng pha với hard-data còn nóng\n\n**USD & Cross-asset:**\n- DXY (broad): 120.40 (+0.8%, dữ liệu 18/6) → USD mạnh — áp lực lên EM/commodities, hợp với growth beat + Fed không vội nới\n- VIX: 18.63 (−4.4%) → vùng risk-on (dưới 20), volatility hạ nhiệt\n- WTI: $78.9/bbl (−1.8%) → giá dầu hạ nhẹ; lưu ý CPI Energy MoM +3.9% phản ánh tháng trước, dầu spot hiện đã dịu\n\n**Credit Spreads:**\n- HY OAS: 2.76% (276bp, +5bp) | IG OAS: 0.75% (75bp, +1bp)\n- Spread vẫn rất hẹp (HY <300bp) → credit stress thấp, risk appetite còn mạnh; nhích lên 1 chút không đáng lo\n\n**Vị trí chu kỳ (từ `cycle_context`):**\n- Sahm Rule: +0.10 (an toàn, chưa kích hoạt — ngưỡng 0.50). Thất nghiệp 3mo-avg 4.3% vs đáy 12 tháng 4.2%\n- Đường cong: regime `normal` (2s10s +0.31, 10Y-3M +0.56, 116 phiên) — chưa từng đảo trong cửa sổ dữ liệu, không có tín hiệu suy thoái từ đường cong\n\n**Economic Surprise Index (từ `surprise_index.json`):**\n- Growth surprise 1M: +9.86 (beating mạnh, xu hướng rising) | Inflation surprise 1M: −9.74 (missing mạnh, tức lạm phát đến THẤP hơn kỳ vọng so với dự báo của giới phân tích)\n- Data vượt kỳ vọng tăng trưởng → risk-on tailwind. Lưu ý: inflation surprise âm nghĩa là số ra dưới forecast, NHƯNG mức tuyệt đối (Core PCE 3.41%) vẫn xa target — \"ít tệ hơn dự báo\" ≠ \"disinflation xác nhận\"\n\n**Tổng đánh giá cross-asset:** Risk-on dẫn dắt bởi tăng trưởng — VIX <20, HY spread hẹp, growth surprise rising, GDP/income/CAPEX beat. Nhưng yields neo cao, USD mạnh, breakeven nhích lên và Core PCE không hạ nhiệt → risk-on này là \"growth-led\", KHÔNG phải \"Fed-cut-led\". Cyclicals/industrials/materials được hậu thuẫn hơn là duration/rate-sensitive.\n\n## Bối cảnh xu hướng (so với 30 ngày qua)\n_(macro-trend agent sẽ điền)_\n\n## Cảnh báo & catalyst sắp tới\n\n**Ngày mai (2026-06-26):**\n- Michigan Consumer Sentiment (Jun) — forecast 48.9 (vẫn vùng yếu < 50)\n- Michigan Consumer Expectations (Jun) — forecast 49.3\n- Michigan 1-Year Inflation Expectations (Jun) — forecast 4.6%\n- Michigan 5-Year Inflation Expectations (Jun) — forecast 3.4%\n- Goods Trade Balance (May) — forecast −85.40B\n- Retail Inventories Ex Auto (May)\n- FOMC Member Williams Speaks; FOMC Member Kashkari Speaks\n- Baker Hughes Rig Count; cụm CFTC speculative net positions (noise)\n\n**Tuần này (đến 2026-07-01):**\n- 30/06: Chicago PMI (Jun) — HIGH; CB Consumer Confidence (Jun) — HIGH; JOLTS Job Openings (May) — HIGH; S&P/CS Home Price 20-city (Apr)\n- 01/07: ISM Manufacturing PMI / Prices / Employment (Jun) — HIGH; ADP Nonfarm Employment Change (Jun) — HIGH; S&P Global Mfg PMI (Jun) — HIGH; Construction Spending (May); Atlanta Fed GDPNow (Q2)\n\n**Theo dõi đặc biệt:**\nMichigan inflation expectations ngày mai (1Y 4.6%, 5Y 3.4%) là điểm soi quan trọng nhất: với hard-data lạm phát còn nóng hôm nay (Core PCE 3.41%, Energy bùng nổ), nếu kỳ vọng lạm phát hộ gia đình tiếp tục cao/de-anchor thì củng cố luận điểm Fed phải giữ nguyên — phản bác mọi kỳ vọng cắt sớm. Đầu tuần sau, cụm JOLTS + ISM Mfg + ADP (30/6–1/7) sẽ kiểm chứng xem labor chặt và capex-led growth hôm nay có bền sang Q3 không."
   },
   "latest_monthly": {
     "file": "2026-05.md",
