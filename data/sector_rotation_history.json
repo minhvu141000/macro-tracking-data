@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-25T03:14:30.272615+00:00",
+  "updated_at": "2026-06-27T05:22:52.185224+00:00",
   "series": [
     {
       "date": "2026-05-26",
@@ -2098,6 +2098,111 @@
           "breadth_thrust": -8.3,
           "rs_slope": -1.46,
           "rs_1m": -6.16,
+          "above_ma200": false
+        }
+      }
+    },
+    {
+      "date": "2026-06-25",
+      "regime_summary": "Tăng trưởng vượt kỳ vọng, lạm phát nguội hơn kỳ vọng, lãi suất giảm, risk-off. Chu kỳ: đường cong normal.",
+      "sectors": {
+        "XLK": {
+          "macro_tilt_z": 1.06,
+          "price_momentum_z": -0.61,
+          "rotation_score": 0.309,
+          "breadth_thrust": -8.3,
+          "rs_slope": -0.32,
+          "rs_1m": 1.76,
+          "above_ma200": true
+        },
+        "XLF": {
+          "macro_tilt_z": -0.18,
+          "price_momentum_z": -0.9,
+          "rotation_score": -0.504,
+          "breadth_thrust": -16.7,
+          "rs_slope": -1.42,
+          "rs_1m": 5.47,
+          "above_ma200": true
+        },
+        "XLE": {
+          "macro_tilt_z": -2.4,
+          "price_momentum_z": 0.14,
+          "rotation_score": -1.257,
+          "breadth_thrust": 33.4,
+          "rs_slope": 1.25,
+          "rs_1m": -3.98,
+          "above_ma200": true
+        },
+        "XLV": {
+          "macro_tilt_z": -0.23,
+          "price_momentum_z": 1.01,
+          "rotation_score": 0.328,
+          "breadth_thrust": 25.0,
+          "rs_slope": 2.65,
+          "rs_1m": 7.32,
+          "above_ma200": true
+        },
+        "XLY": {
+          "macro_tilt_z": 1.46,
+          "price_momentum_z": -0.91,
+          "rotation_score": 0.394,
+          "breadth_thrust": -16.6,
+          "rs_slope": -0.29,
+          "rs_1m": -3.06,
+          "above_ma200": false
+        },
+        "XLP": {
+          "macro_tilt_z": -0.41,
+          "price_momentum_z": -0.04,
+          "rotation_score": -0.243,
+          "breadth_thrust": 0.0,
+          "rs_slope": 0.94,
+          "rs_1m": 3.04,
+          "above_ma200": true
+        },
+        "XLI": {
+          "macro_tilt_z": 0.28,
+          "price_momentum_z": 0.47,
+          "rotation_score": 0.366,
+          "breadth_thrust": 8.3,
+          "rs_slope": 1.53,
+          "rs_1m": 7.96,
+          "above_ma200": true
+        },
+        "XLB": {
+          "macro_tilt_z": -0.85,
+          "price_momentum_z": -0.4,
+          "rotation_score": -0.648,
+          "breadth_thrust": 0.0,
+          "rs_slope": -0.29,
+          "rs_1m": 4.04,
+          "above_ma200": true
+        },
+        "XLU": {
+          "macro_tilt_z": -0.09,
+          "price_momentum_z": 1.74,
+          "rotation_score": 0.734,
+          "breadth_thrust": 75.0,
+          "rs_slope": 3.56,
+          "rs_1m": 3.78,
+          "above_ma200": true
+        },
+        "XLRE": {
+          "macro_tilt_z": 0.65,
+          "price_momentum_z": 0.6,
+          "rotation_score": 0.628,
+          "breadth_thrust": 16.6,
+          "rs_slope": 2.35,
+          "rs_1m": 2.57,
+          "above_ma200": true
+        },
+        "XLC": {
+          "macro_tilt_z": 0.72,
+          "price_momentum_z": -1.07,
+          "rotation_score": -0.086,
+          "breadth_thrust": 0.0,
+          "rs_slope": -0.87,
+          "rs_1m": -6.6,
           "above_ma200": false
         }
       }

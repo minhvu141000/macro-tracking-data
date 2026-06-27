@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "fetched_at": "2026-06-25T03:14:20.282259+00:00",
+  "fetched_at": "2026-06-27T05:22:29.853463+00:00",
   "series": {
     "EIA_CRUDE": {
       "label": "Crude Oil Stocks (ex-SPR, EIA)",
