@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-27T05:22:17.596243+00:00",
+  "updated_at": "2026-06-29T20:15:34.267161+00:00",
   "fred_snapshot": {
     "CPIAUCSL": {
       "label": "CPI All Items",
@@ -34014,21 +34014,17 @@
     "VIXCLS": {
       "label": "VIX (Volatility Index)",
       "latest": {
+        "date": "2026-06-26",
+        "value": 18.41
+      },
+      "previous": {
         "date": "2026-06-25",
         "value": 18.89
       },
-      "previous": {
-        "date": "2026-06-24",
-        "value": 18.63
-      },
-      "change_pct": 1.396,
+      "change_pct": -2.541,
       "frequency": "daily",
-      "mom_pct": 1.396,
+      "mom_pct": -2.541,
       "history": [
-        {
-          "date": "2026-01-09",
-          "value": 14.49
-        },
         {
           "date": "2026-01-12",
           "value": 15.12
@@ -34500,6 +34496,10 @@
         {
           "date": "2026-06-25",
           "value": 18.89
+        },
+        {
+          "date": "2026-06-26",
+          "value": 18.41
         }
       ]
     },
@@ -34982,21 +34982,17 @@
     "BAMLH0A0HYM2": {
       "label": "High-Yield Credit Spread (HY OAS)",
       "latest": {
+        "date": "2026-06-26",
+        "value": 2.83
+      },
+      "previous": {
         "date": "2026-06-25",
         "value": 2.78
       },
-      "previous": {
-        "date": "2026-06-24",
-        "value": 2.76
-      },
-      "change_pct": 0.725,
+      "change_pct": 1.799,
       "frequency": "daily",
-      "mom_pct": 0.725,
+      "mom_pct": 1.799,
       "history": [
-        {
-          "date": "2026-01-14",
-          "value": 2.76
-        },
         {
           "date": "2026-01-15",
           "value": 2.71
@@ -35472,27 +35468,27 @@
         {
           "date": "2026-06-25",
           "value": 2.78
+        },
+        {
+          "date": "2026-06-26",
+          "value": 2.83
         }
       ]
     },
     "BAMLC0A0CM": {
       "label": "Investment-Grade Credit Spread (IG OAS)",
       "latest": {
+        "date": "2026-06-26",
+        "value": 0.77
+      },
+      "previous": {
         "date": "2026-06-25",
         "value": 0.76
       },
-      "previous": {
-        "date": "2026-06-24",
-        "value": 0.75
-      },
-      "change_pct": 1.333,
+      "change_pct": 1.316,
       "frequency": "daily",
-      "mom_pct": 1.333,
+      "mom_pct": 1.316,
       "history": [
-        {
-          "date": "2026-01-14",
-          "value": 0.77
-        },
         {
           "date": "2026-01-15",
           "value": 0.76
@@ -35968,6 +35964,10 @@
         {
           "date": "2026-06-25",
           "value": 0.76
+        },
+        {
+          "date": "2026-06-26",
+          "value": 0.77
         }
       ]
     },

@@ -30,7 +30,12 @@ OUT = ROOT / "data" / "scraped_history.json"
 # Hiện rỗng. Thêm chỉ số KHÔNG có trên FRED/EIA vào đây để dựng history từ scrape.
 # (Pending Home Sales đã gỡ — thay bằng Existing Home Sales EXHOSLUSM495S vốn có trên FRED.)
 # Mẫu: "PSEUDO_ID": {"label": "...", "match": r"regex tên release (parsed.actual sẽ được dùng)"}
-SCRAPED_SERIES: dict = {}
+SCRAPED_SERIES: dict = {
+    # ISM PMI — không có trên FRED (paywall); tích lũy giá trị headline thật từ scrape.
+    # Regex chỉ khớp dòng headline, KHÔNG khớp sub-component (Employment/New Orders/Prices).
+    "ISM_MFG": {"label": "ISM Manufacturing PMI", "match": r"ism manufacturing pmi"},
+    "ISM_SVC": {"label": "ISM Services PMI", "match": r"ism non[- ]?manufacturing pmi"},
+}
 
 
 def _series_for(spec: dict, raw_files: list[Path]) -> list[dict]:

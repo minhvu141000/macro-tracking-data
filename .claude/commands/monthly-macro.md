@@ -42,6 +42,17 @@ Không chặn flow nếu rotation_history chưa đủ phiên (engine vẫn chạ
 
 > **Handoff:** sau monthly, gọi agent `fundamental-stock-picker` (xem `.claude/agents/fundamental-stock-picker.md`) với input chính là `data/monthly/rotation_forecast_<tháng>.json`.
 
+## Bước 1e: Luận điểm đầu tư từ các quỹ (đối chiếu dự báo)
+```
+cd "/Users/tranquangminhvu/Vĩ mô Mỹ Tracking" && source .venv/bin/activate && \
+  python scripts/build_fund_consensus.py
+```
+Đọc `data/fund_views_latest.json` (view sector FORWARD của JPMorgan/Goldman/State Street/Morningstar) + dự báo rotation tháng tới → sinh:
+- `data/fund_consensus_latest.json` + `data/fund_views_report.md` (đồng thuận + cross-check AGREE/DIVERGE).
+- **`data/monthly/fund_thesis_<tháng tới>.md`** — section LUẬN ĐIỂM ĐẦU TƯ cho các nhóm ngành engine DỰ BÁO TĂNG TRƯỞNG, trích bull/bear từ từng quỹ. Báo cáo tháng COPY nguyên section này (xem Bước 2).
+
+> **Làm mới nguồn:** nếu script cảnh báo báo cáo cũ >100 ngày, nghiên cứu web bản mới của quỹ đó rồi sửa `data/fund_views_latest.json` (ghi đúng cái verify được, `null` nếu không nêu — KHÔNG bịa) trước khi viết báo cáo.
+
 ## Bước 2: Tổng hợp tháng
 Dùng Agent tool với `subagent_type: macro-trend`. Prompt:
 "Viết báo cáo tháng cho <YYYY-MM>.
@@ -63,6 +74,10 @@ Báo cáo tháng dùng format bảng dữ liệu (xem template trong agent defin
 - Sector table: RS 1M/3M từ sectors_lite.json (field `rs_1m`, `rs_slope`), above_ma50 field cho vs MA50 column.
 - Cross-asset: từ cross_asset_lite.json (price, ret_1m fields).
 - Scorecard row trong Cycle context: đọc từ data/monthly/scorecard.md.
+
+**LUẬN ĐIỂM ĐẦU TƯ TỪ CÁC QUỸ (bắt buộc):**
+- Sau phần sector/rotation, **COPY NGUYÊN section từ `data/monthly/fund_thesis_<tháng tới>.md`** vào báo cáo (đặt tên section: 'Luận điểm đầu tư nhóm ngành — dự báo tăng trưởng (từ các quỹ)'). File này đã tất định, KHÔNG tự viết lại/diễn giải thêm; chỉ chèn nguyên văn.
+- Nếu có dòng cảnh báo báo cáo quỹ cũ → giữ nguyên để người đọc biết cần làm mới.
 
 Output vào data/monthly/<YYYY-MM>.md theo template trong agent definition."
 

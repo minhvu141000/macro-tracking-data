@@ -393,6 +393,29 @@ window.INDICATORS = {
       why: "Distillate phản ánh sức khỏe vận tải & sản xuất — proxy hữu ích cho hoạt động kinh tế thực.",
       watch: "Đặc biệt quan trọng mùa đông (heating oil); mức thấp + lạnh = spike giá.",
     },
+    // ===== ISM PMI (không có trên FRED — paywall; dựng từ scrape, dày dần mỗi tháng) =====
+    "ISM_MFG": {
+      name: "ISM Manufacturing PMI — Chỉ số sản xuất ISM",
+      unit: "Index, 50 = không đổi",
+      freq: "Hàng tháng (ngày làm việc đầu tiên)",
+      source: "Institute for Supply Management",
+      what: "Khảo sát purchasing managers ngành sản xuất về New Orders, Production, Employment, Supplier Deliveries, Inventories. Trên 50 = mở rộng, dưới 50 = thu hẹp.",
+      high_means: "Trên 50 (đặc biệt > 53) = sản xuất mở rộng → tốt cho XLI Industrials, XLB Materials, XLE Energy; copper & WTI thường tăng theo.",
+      low_means: "Dưới 50 = thu hẹp; dưới 45 = vùng suy thoái → cyclicals chịu áp lực, dòng tiền về defensive (XLV, XLP, XLU).",
+      why: "Một trong những leading indicator được trade nhiều nhất. Component 'New Orders' (cầu sắp tới) và 'Prices Paid' (áp lực lạm phát) đặc biệt quan trọng.",
+      watch: "Trend 3 tháng quan trọng hơn 1 con số. Mốc 50 là ranh giới expansion/contraction; 42.5 ~ ranh giới suy thoái toàn nền kinh tế.",
+    },
+    "ISM_SVC": {
+      name: "ISM Services PMI — Chỉ số dịch vụ ISM (Non-Manufacturing)",
+      unit: "Index, 50 = không đổi",
+      freq: "Hàng tháng (ngày làm việc thứ 3)",
+      source: "Institute for Supply Management",
+      what: "Khảo sát purchasing managers ngành dịch vụ (~70% GDP Mỹ) về Business Activity, New Orders, Employment, Prices. Trên 50 = mở rộng.",
+      high_means: "Trên 50 = dịch vụ mở rộng → nền kinh tế khỏe; tốt cho tiêu dùng, tài chính. Nhưng quá nóng + Prices cao = lạm phát dịch vụ dai dẳng → hawkish.",
+      low_means: "Dưới 50 (hiếm) = báo động suy thoái thực sự vì dịch vụ rất resilient → bán tháo rủi ro, defensive bid.",
+      why: "Quan trọng hơn Mfg PMI về vĩ mô vì dịch vụ chiếm tỷ trọng lớn nhất GDP. Component 'Prices Paid' là tín hiệu lạm phát dịch vụ Fed theo dõi sát.",
+      watch: "Mốc 50; Prices Paid > 60 = áp lực lạm phát dịch vụ. So với ISM Mfg để đọc bức tranh cả 2 khu vực.",
+    },
     // ===== NHÀ Ở =====
     "PENDINGHOMES": {
       name: "Pending Home Sales Index — Chỉ số doanh số nhà chờ bán (NAR)",
@@ -738,22 +761,9 @@ window.INDICATORS = {
     { match: /crude oil inventories/i, useFredId: "EIA_CRUDE" },
     { match: /gasoline inventories/i, useFredId: "EIA_GASOLINE" },
     { match: /distillate/i, useFredId: "EIA_DISTILLATE" },
-    // ISM Mfg series — no direct FRED (paywall), use MANEMP as employment proxy + skip PMI level
-    {
-      match: /ism manufacturing pmi/i,
-      useFredId: "MANEMP",
-      info_override: {
-        name: "ISM Manufacturing PMI",
-        unit: "Index, 50 = không đổi",
-        freq: "Hàng tháng (ngày 1)",
-        source: "Institute for Supply Management",
-        what: "Khảo sát purchasing managers ngành sản xuất về orders, production, employment, deliveries, inventories. Trên 50 = expansion.",
-        high_means: "Trên 50 = manufacturing expansion. Tốt cho XLI Industrials, XLB Materials, XLE Energy.",
-        low_means: "Dưới 50 = contraction. Cyclicals chịu áp lực, defensive outperform.",
-        why: "ISM PMI là một trong những leading indicator được trade nhiều nhất. Component 'New Orders' và 'Prices Paid' đặc biệt quan trọng.",
-        watch: "Dưới 45 = recession territory. Trend (3-month) quan trọng hơn level. FRED không có ISM trực tiếp (paywall); MANEMP là proxy yếu cho employment component.",
-      },
-    },
+    // ISM PMI — không có trên FRED (paywall); dùng pseudo-id dựng từ scrape (giá trị PMI thật)
+    { match: /ism manufacturing pmi/i, useFredId: "ISM_MFG" },
+    { match: /ism (non[- ]?manufacturing|services) pmi/i, useFredId: "ISM_SVC" },
     {
       match: /ism manufacturing prices/i,
       useFredId: "PPIFES",

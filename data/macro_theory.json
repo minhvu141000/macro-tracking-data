@@ -1656,6 +1656,38 @@
           "primary_link": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/survey-of-professional-forecasters",
           "news_release_link": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/survey-of-professional-forecasters",
           "deep_dive_link": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/survey-of-professional-forecasters"
+        },
+        {
+          "id": "KCFEDCOMP",
+          "short_name": "KC Fed Composite",
+          "full_name": "Kansas City Fed Manufacturing Composite Index",
+          "frequency": "Hàng tháng (cuối tháng, sau Richmond/Dallas)",
+          "link": "https://www.kansascityfed.org/surveys/manufacturing-survey/",
+          "description": "Chỉ số composite của khảo sát sản xuất khu vực Kansas City Fed (10th district — Colorado, Kansas, Nebraska, Oklahoma, Wyoming + một phần Missouri/New Mexico). Là trung bình của production, new orders, employment, supplier delivery time, raw materials inventory. Nông nghiệp + energy heavy.",
+          "expectation_meaning": "0 = không đổi so tháng trước (diffusion index). > 0 = expansion, < 0 = contraction. Cùng Empire State, Philly, Richmond, Dallas tạo bộ regional Fed PMIs dự báo ISM Mfg.",
+          "good_vs_bad": "Dương + tăng = manuf khu vực mở rộng → cyclical bull confirm. Âm kéo dài = manuf recession. Vì district nặng energy/agri, nhạy với oil price + commodity cycle.",
+          "market_reaction": "Less market mover than ISM nhưng useful để set position trước ISM Mfg. Combined regional Fed PMIs âm → ISM Mfg yếu gần như chắc → XLI/XLB chịu áp lực. Vì 10th district energy-heavy, cross-check với XLE + WTI: KC Fed mạnh khi oil capex cao.",
+          "release_aliases": [
+            "kc fed composite index",
+            "kansas city fed composite index",
+            "kansas city fed manufacturing composite"
+          ]
+        },
+        {
+          "id": "KCFEDMFG",
+          "short_name": "KC Fed Mfg",
+          "full_name": "Kansas City Fed Manufacturing Activity Index",
+          "frequency": "Hàng tháng (cuối tháng)",
+          "link": "https://www.kansascityfed.org/surveys/manufacturing-survey/",
+          "description": "Chỉ số hoạt động sản xuất hiện tại (month-over-month) trong khảo sát Kansas City Fed (10th district). Đo trực tiếp tốc độ thay đổi sản xuất của các nhà máy được khảo sát so với tháng trước.",
+          "expectation_meaning": "Diffusion index quanh 0. > 0 = sản xuất tăng so tháng trước, < 0 = giảm. Volatile hơn ISM (range rộng) nên trend 3 tháng quan trọng hơn số đơn lẻ.",
+          "good_vs_bad": "Dương = nhà máy khu vực đang tăng sản lượng → leading cho Industrial Production + Manufacturing Payrolls. Âm liên tục = manuf khu vực co, cảnh báo cyclical.",
+          "market_reaction": "Niche regional read; pros gộp với Empire/Philly/Richmond/Dallas để nowcast ISM Mfg PMI. Surprise lớn (divergence với các regional khác) → XLI/XLB react nhẹ. District nặng energy nên KC Fed Mfg yếu khi oil giảm → XLE capex pullback.",
+          "release_aliases": [
+            "kc fed manufacturing index",
+            "kansas city fed manufacturing index",
+            "kansas city fed manufacturing activity"
+          ]
         }
       ]
     },
