@@ -1,82 +1,13 @@
 window.MACRO_DATA = {
-  "last_updated": "2026-06-29T20:22:16.061630+00:00",
+  "last_updated": "2026-07-01T10:53:19.937043+00:00",
   "daily_releases": {
-    "date": "2026-06-29",
-    "releases": [
-      {
-        "name": "Dallas Fed Mfg Business Index  (Jun)",
-        "time": "2026/06/29 10:30:00",
-        "importance": "bull1",
-        "actual": "0.0",
-        "forecast": null,
-        "previous": "0.4",
-        "event_url": "https://www.investing.com/economic-calendar/dallas-fed-mfg-business-index-658",
-        "source": "investing.com",
-        "parsed": {
-          "actual": 0.0,
-          "forecast": null,
-          "previous": 0.4
-        },
-        "surprise": null,
-        "vs_previous": {
-          "delta": -0.4,
-          "direction": "down"
-        },
-        "group": "regional_fed",
-        "is_noise": false
-      },
-      {
-        "name": "3-Month Bill Auction",
-        "time": "2026/06/29 11:30:00",
-        "importance": "bull1",
-        "actual": "3.740%",
-        "forecast": null,
-        "previous": "3.695%",
-        "event_url": "https://www.investing.com/economic-calendar/3-month-bill-auction-568",
-        "source": "investing.com",
-        "parsed": {
-          "actual": 3.74,
-          "forecast": null,
-          "previous": 3.695
-        },
-        "surprise": null,
-        "vs_previous": {
-          "delta": 0.045,
-          "direction": "up"
-        },
-        "group": "auctions",
-        "is_noise": true
-      },
-      {
-        "name": "6-Month Bill Auction",
-        "time": "2026/06/29 11:30:00",
-        "importance": "bull1",
-        "actual": "3.840%",
-        "forecast": null,
-        "previous": "3.840%",
-        "event_url": "https://www.investing.com/economic-calendar/6-month-bill-auction-679",
-        "source": "investing.com",
-        "parsed": {
-          "actual": 3.84,
-          "forecast": null,
-          "previous": 3.84
-        },
-        "surprise": null,
-        "vs_previous": {
-          "delta": 0.0,
-          "direction": "flat"
-        },
-        "group": "auctions",
-        "is_noise": true
-      }
-    ],
+    "date": "2026-06-30",
+    "releases": [],
     "release_summary": {
-      "signal_release_count": 1,
-      "noise_release_count": 2,
+      "signal_release_count": 0,
+      "noise_release_count": 0,
       "surprise_count": 0,
-      "groups_present": [
-        "regional_fed"
-      ],
+      "groups_present": [],
       "surprised_groups": [],
       "day_surprise_score": {
         "growth_score": 0,
@@ -10609,7 +10540,8 @@ window.MACRO_DATA = {
         "group": "auctions",
         "is_noise": true
       }
-    ]
+    ],
+    "2026-06-30": []
   },
   "history": {
     "CPIAUCSL": {
@@ -17993,19 +17925,15 @@ window.MACRO_DATA = {
     "JTSJOL": {
       "label": "Job Openings (JOLTS)",
       "latest": {
-        "date": "2026-04-01",
-        "value": 7618.0
+        "date": "2026-05-01",
+        "value": 7594.0
       },
       "previous": {
-        "date": "2026-03-01",
-        "value": 6887.0
+        "date": "2026-04-01",
+        "value": 7585.0
       },
-      "change_pct": 10.614,
+      "change_pct": 0.119,
       "history": [
-        {
-          "date": "2016-05-01",
-          "value": 5777.0
-        },
         {
           "date": "2016-06-01",
           "value": 5742.0
@@ -18480,7 +18408,11 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-04-01",
-          "value": 7618.0
+          "value": 7585.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 7594.0
         }
       ]
     },
@@ -41005,31 +40937,15 @@ window.MACRO_DATA = {
     "DFF": {
       "label": "Fed Funds Rate",
       "latest": {
-        "date": "2026-06-25",
+        "date": "2026-06-29",
         "value": 3.63
       },
       "previous": {
-        "date": "2026-06-24",
+        "date": "2026-06-28",
         "value": 3.63
       },
       "change_pct": 0.0,
       "history": [
-        {
-          "date": "2026-02-26",
-          "value": 3.64
-        },
-        {
-          "date": "2026-02-27",
-          "value": 3.64
-        },
-        {
-          "date": "2026-02-28",
-          "value": 3.64
-        },
-        {
-          "date": "2026-03-01",
-          "value": 3.64
-        },
         {
           "date": "2026-03-02",
           "value": 3.64
@@ -41493,29 +41409,37 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-25",
           "value": 3.63
+        },
+        {
+          "date": "2026-06-26",
+          "value": 3.63
+        },
+        {
+          "date": "2026-06-27",
+          "value": 3.63
+        },
+        {
+          "date": "2026-06-28",
+          "value": 3.63
+        },
+        {
+          "date": "2026-06-29",
+          "value": 3.63
         }
       ]
     },
     "DGS10": {
       "label": "10Y Treasury Yield",
       "latest": {
-        "date": "2026-06-25",
-        "value": 4.4
+        "date": "2026-06-29",
+        "value": 4.38
       },
       "previous": {
-        "date": "2026-06-24",
-        "value": 4.41
+        "date": "2026-06-26",
+        "value": 4.38
       },
-      "change_pct": -0.227,
+      "change_pct": 0.0,
       "history": [
-        {
-          "date": "2026-01-09",
-          "value": 4.18
-        },
-        {
-          "date": "2026-01-12",
-          "value": 4.19
-        },
         {
           "date": "2026-01-13",
           "value": 4.18
@@ -41971,29 +41895,29 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-25",
           "value": 4.4
+        },
+        {
+          "date": "2026-06-26",
+          "value": 4.38
+        },
+        {
+          "date": "2026-06-29",
+          "value": 4.38
         }
       ]
     },
     "DGS2": {
       "label": "2Y Treasury Yield",
       "latest": {
-        "date": "2026-06-25",
-        "value": 4.09
+        "date": "2026-06-29",
+        "value": 4.1
       },
       "previous": {
-        "date": "2026-06-24",
-        "value": 4.11
+        "date": "2026-06-26",
+        "value": 4.07
       },
-      "change_pct": -0.487,
+      "change_pct": 0.737,
       "history": [
-        {
-          "date": "2026-01-09",
-          "value": 3.54
-        },
-        {
-          "date": "2026-01-12",
-          "value": 3.54
-        },
         {
           "date": "2026-01-13",
           "value": 3.53
@@ -42449,29 +42373,29 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-25",
           "value": 4.09
+        },
+        {
+          "date": "2026-06-26",
+          "value": 4.07
+        },
+        {
+          "date": "2026-06-29",
+          "value": 4.1
         }
       ]
     },
     "DGS3MO": {
       "label": "3M Treasury Yield",
       "latest": {
-        "date": "2026-06-25",
-        "value": 3.84
+        "date": "2026-06-29",
+        "value": 3.87
       },
       "previous": {
-        "date": "2026-06-24",
-        "value": 3.85
+        "date": "2026-06-26",
+        "value": 3.83
       },
-      "change_pct": -0.26,
+      "change_pct": 1.044,
       "history": [
-        {
-          "date": "2026-01-09",
-          "value": 3.62
-        },
-        {
-          "date": "2026-01-12",
-          "value": 3.67
-        },
         {
           "date": "2026-01-13",
           "value": 3.67
@@ -42927,29 +42851,29 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-25",
           "value": 3.84
+        },
+        {
+          "date": "2026-06-26",
+          "value": 3.83
+        },
+        {
+          "date": "2026-06-29",
+          "value": 3.87
         }
       ]
     },
     "DGS6MO": {
       "label": "6M Treasury Yield",
       "latest": {
-        "date": "2026-06-25",
-        "value": 3.95
+        "date": "2026-06-29",
+        "value": 4.0
       },
       "previous": {
-        "date": "2026-06-24",
-        "value": 3.95
+        "date": "2026-06-26",
+        "value": 3.94
       },
-      "change_pct": 0.0,
+      "change_pct": 1.523,
       "history": [
-        {
-          "date": "2026-01-09",
-          "value": 3.57
-        },
-        {
-          "date": "2026-01-12",
-          "value": 3.58
-        },
         {
           "date": "2026-01-13",
           "value": 3.59
@@ -43405,29 +43329,29 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-25",
           "value": 3.95
+        },
+        {
+          "date": "2026-06-26",
+          "value": 3.94
+        },
+        {
+          "date": "2026-06-29",
+          "value": 4.0
         }
       ]
     },
     "T10Y2Y": {
       "label": "10Y-2Y Spread",
       "latest": {
-        "date": "2026-06-26",
-        "value": 0.31
+        "date": "2026-06-30",
+        "value": 0.3
       },
       "previous": {
-        "date": "2026-06-25",
-        "value": 0.31
+        "date": "2026-06-29",
+        "value": 0.28
       },
-      "change_pct": 0.0,
+      "change_pct": 7.143,
       "history": [
-        {
-          "date": "2026-01-12",
-          "value": 0.65
-        },
-        {
-          "date": "2026-01-13",
-          "value": 0.65
-        },
         {
           "date": "2026-01-14",
           "value": 0.64
@@ -43883,45 +43807,29 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-26",
           "value": 0.31
+        },
+        {
+          "date": "2026-06-29",
+          "value": 0.28
+        },
+        {
+          "date": "2026-06-30",
+          "value": 0.3
         }
       ]
     },
     "DTWEXBGS": {
       "label": "USD Index (Broad)",
       "latest": {
-        "date": "2026-06-18",
-        "value": 120.3958
+        "date": "2026-06-26",
+        "value": 120.8866
       },
       "previous": {
-        "date": "2026-06-17",
-        "value": 119.3871
+        "date": "2026-06-25",
+        "value": 121.0559
       },
-      "change_pct": 0.845,
+      "change_pct": -0.14,
       "history": [
-        {
-          "date": "2026-01-02",
-          "value": 119.6059
-        },
-        {
-          "date": "2026-01-05",
-          "value": 119.6192
-        },
-        {
-          "date": "2026-01-06",
-          "value": 119.7807
-        },
-        {
-          "date": "2026-01-07",
-          "value": 119.8719
-        },
-        {
-          "date": "2026-01-08",
-          "value": 120.0904
-        },
-        {
-          "date": "2026-01-09",
-          "value": 120.2215
-        },
         {
           "date": "2026-01-12",
           "value": 119.9958
@@ -44365,25 +44273,41 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-18",
           "value": 120.3958
+        },
+        {
+          "date": "2026-06-22",
+          "value": 120.5463
+        },
+        {
+          "date": "2026-06-23",
+          "value": 121.0552
+        },
+        {
+          "date": "2026-06-24",
+          "value": 121.412
+        },
+        {
+          "date": "2026-06-25",
+          "value": 121.0559
+        },
+        {
+          "date": "2026-06-26",
+          "value": 120.8866
         }
       ]
     },
     "VIXCLS": {
       "label": "VIX (Volatility Index)",
       "latest": {
+        "date": "2026-06-29",
+        "value": 17.65
+      },
+      "previous": {
         "date": "2026-06-26",
         "value": 18.41
       },
-      "previous": {
-        "date": "2026-06-25",
-        "value": 18.89
-      },
-      "change_pct": -2.541,
+      "change_pct": -4.128,
       "history": [
-        {
-          "date": "2026-01-12",
-          "value": 15.12
-        },
         {
           "date": "2026-01-13",
           "value": 15.98
@@ -44855,6 +44779,10 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-26",
           "value": 18.41
+        },
+        {
+          "date": "2026-06-29",
+          "value": 17.65
         }
       ]
     },
@@ -45335,19 +45263,15 @@ window.MACRO_DATA = {
     "BAMLH0A0HYM2": {
       "label": "High-Yield Credit Spread (HY OAS)",
       "latest": {
+        "date": "2026-06-29",
+        "value": 2.8
+      },
+      "previous": {
         "date": "2026-06-26",
         "value": 2.83
       },
-      "previous": {
-        "date": "2026-06-25",
-        "value": 2.78
-      },
-      "change_pct": 1.799,
+      "change_pct": -1.06,
       "history": [
-        {
-          "date": "2026-01-15",
-          "value": 2.71
-        },
         {
           "date": "2026-01-16",
           "value": 2.65
@@ -45823,25 +45747,25 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-26",
           "value": 2.83
+        },
+        {
+          "date": "2026-06-29",
+          "value": 2.8
         }
       ]
     },
     "BAMLC0A0CM": {
       "label": "Investment-Grade Credit Spread (IG OAS)",
       "latest": {
+        "date": "2026-06-29",
+        "value": 0.76
+      },
+      "previous": {
         "date": "2026-06-26",
         "value": 0.77
       },
-      "previous": {
-        "date": "2026-06-25",
-        "value": 0.76
-      },
-      "change_pct": 1.316,
+      "change_pct": -1.299,
       "history": [
-        {
-          "date": "2026-01-15",
-          "value": 0.76
-        },
         {
           "date": "2026-01-16",
           "value": 0.75
@@ -46317,29 +46241,25 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-26",
           "value": 0.77
+        },
+        {
+          "date": "2026-06-29",
+          "value": 0.76
         }
       ]
     },
     "T10YIE": {
       "label": "10Y Inflation Breakeven",
       "latest": {
-        "date": "2026-06-26",
-        "value": 2.2
+        "date": "2026-06-30",
+        "value": 2.24
       },
       "previous": {
-        "date": "2026-06-25",
-        "value": 2.21
+        "date": "2026-06-29",
+        "value": 2.22
       },
-      "change_pct": -0.452,
+      "change_pct": 0.901,
       "history": [
-        {
-          "date": "2026-01-12",
-          "value": 2.29
-        },
-        {
-          "date": "2026-01-13",
-          "value": 2.3
-        },
         {
           "date": "2026-01-14",
           "value": 2.29
@@ -46795,6 +46715,14 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-26",
           "value": 2.2
+        },
+        {
+          "date": "2026-06-29",
+          "value": 2.22
+        },
+        {
+          "date": "2026-06-30",
+          "value": 2.24
         }
       ]
     },
@@ -56702,23 +56630,24 @@ window.MACRO_DATA = {
     "2026-06-24",
     "2026-06-25",
     "2026-06-26",
-    "2026-06-29"
+    "2026-06-29",
+    "2026-06-30"
   ],
   "sectors": {
     "schema_version": "1.1",
-    "fetched_at": "2026-06-29T20:16:00.417839+00:00",
+    "fetched_at": "2026-07-01T10:02:32.413087+00:00",
     "benchmark": {
-      "latest": 741.0,
-      "latest_date": "2026-06-29",
-      "ret_1d": 1.65,
-      "ret_1w": -0.46,
-      "ret_1m": -1.55,
-      "ret_3m": 17.16,
-      "ret_6m": 7.9,
-      "ret_1y": 22.45,
-      "ret_ytd": 9.04,
-      "ma50": 733.51,
-      "ma200": 687.32,
+      "latest": 746.77,
+      "latest_date": "2026-06-30",
+      "ret_1d": 0.78,
+      "ret_1w": 1.8,
+      "ret_1m": -1.03,
+      "ret_3m": 18.47,
+      "ret_6m": 8.75,
+      "ret_1y": 22.79,
+      "ret_ytd": 9.89,
+      "ma50": 734.28,
+      "ma200": 687.8,
       "above_ma50": true,
       "above_ma200": true,
       "golden_cross": true,
@@ -56727,36 +56656,32 @@ window.MACRO_DATA = {
     },
     "sectors": {
       "XLK": {
-        "latest": 185.41,
-        "latest_date": "2026-06-29",
-        "ret_1d": 2.37,
-        "ret_1w": -3.51,
-        "ret_1m": -0.65,
-        "ret_3m": 42.88,
-        "ret_6m": 27.04,
-        "ret_1y": 48.47,
-        "ret_ytd": 28.8,
-        "ma50": 176.53,
-        "ma200": 150.52,
+        "latest": 190.52,
+        "latest_date": "2026-06-30",
+        "ret_1d": 2.76,
+        "ret_1w": 3.44,
+        "ret_1m": -0.14,
+        "ret_3m": 49.61,
+        "ret_6m": 30.34,
+        "ret_1y": 52.75,
+        "ret_ytd": 32.35,
+        "ma50": 177.26,
+        "ma200": 150.8,
         "above_ma50": true,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Technology",
         "ticker": "XLK",
         "breadth": {
-          "pct_above_ma50": 16.7,
+          "pct_above_ma50": 25.0,
           "pct_above_ma200": 50.0,
           "breadth_flag": "narrow",
           "holdings_checked": 12,
-          "holdings_above_ma50": 2,
+          "holdings_above_ma50": 3,
           "holdings_above_ma200": 6,
-          "breadth_thrust": -16.6
+          "breadth_thrust": -8.3
         },
         "rs_history": [
-          {
-            "date": "2025-06-27",
-            "value": 97.03
-          },
           {
             "date": "2025-06-30",
             "value": 97.52
@@ -57760,34 +57685,38 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-29",
             "value": 118.38
+          },
+          {
+            "date": "2026-06-30",
+            "value": 120.7
           }
         ],
-        "rs_1w": -3.07,
-        "rs_1m": 0.91,
-        "rs_3m": 21.95,
-        "rs_6m": 17.74,
-        "rs_1y": 21.25,
-        "rs_ytd": 18.12,
-        "rs_slope": -3.29,
+        "rs_1w": 1.61,
+        "rs_1m": 0.9,
+        "rs_3m": 26.28,
+        "rs_6m": 19.85,
+        "rs_1y": 24.4,
+        "rs_ytd": 20.44,
+        "rs_slope": 1.4,
         "money_flow": {
-          "mfi_5d": 37.9,
-          "mfi_14d": 45.6,
-          "dollar_vol_5d_bn": 11.92,
-          "flow_signal": "OUTFLOW",
-          "mfi_vs_spy": 20.3
+          "mfi_5d": 58.6,
+          "mfi_14d": 55.8,
+          "dollar_vol_5d_bn": 11.33,
+          "flow_signal": "INFLOW",
+          "mfi_vs_spy": 19.9
         }
       },
       "XLF": {
-        "latest": 53.72,
-        "latest_date": "2026-06-29",
-        "ret_1d": 0.28,
-        "ret_1w": 0.04,
-        "ret_1m": 5.15,
-        "ret_3m": 12.76,
-        "ret_6m": -2.77,
-        "ret_1y": 5.34,
-        "ret_ytd": -1.36,
-        "ma50": 52.02,
+        "latest": 53.61,
+        "latest_date": "2026-06-30",
+        "ret_1d": -0.2,
+        "ret_1w": -0.5,
+        "ret_1m": 4.3,
+        "ret_3m": 11.24,
+        "ret_6m": -2.78,
+        "ret_1y": 4.82,
+        "ret_ytd": -1.56,
+        "ma50": 52.05,
         "ma200": 52.13,
         "above_ma50": true,
         "above_ma200": true,
@@ -57795,19 +57724,15 @@ window.MACRO_DATA = {
         "name": "Financials",
         "ticker": "XLF",
         "breadth": {
-          "pct_above_ma50": 91.7,
-          "pct_above_ma200": 66.7,
+          "pct_above_ma50": 90.9,
+          "pct_above_ma200": 63.6,
           "breadth_flag": "broad",
-          "holdings_checked": 12,
-          "holdings_above_ma50": 11,
-          "holdings_above_ma200": 8,
-          "breadth_thrust": 0.0
+          "holdings_checked": 11,
+          "holdings_above_ma50": 10,
+          "holdings_above_ma200": 7,
+          "breadth_thrust": 9.1
         },
         "rs_history": [
-          {
-            "date": "2025-06-27",
-            "value": 112.09
-          },
           {
             "date": "2025-06-30",
             "value": 112.48
@@ -58811,54 +58736,54 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-29",
             "value": 96.63
+          },
+          {
+            "date": "2026-06-30",
+            "value": 95.68
           }
         ],
-        "rs_1w": 0.49,
-        "rs_1m": 6.8,
-        "rs_3m": -3.76,
-        "rs_6m": -9.89,
-        "rs_1y": -13.97,
-        "rs_ytd": -9.54,
-        "rs_slope": -1.13,
+        "rs_1w": -2.26,
+        "rs_1m": 5.38,
+        "rs_3m": -6.1,
+        "rs_6m": -10.6,
+        "rs_1y": -14.64,
+        "rs_ytd": -10.42,
+        "rs_slope": -3.54,
         "money_flow": {
-          "mfi_5d": 62.5,
-          "mfi_14d": 81.2,
-          "dollar_vol_5d_bn": 8.23,
-          "flow_signal": "INFLOW",
-          "mfi_vs_spy": 44.9
+          "mfi_5d": 42.7,
+          "mfi_14d": 75.1,
+          "dollar_vol_5d_bn": 7.97,
+          "flow_signal": "OUTFLOW",
+          "mfi_vs_spy": 4.0
         }
       },
       "XLE": {
-        "latest": 53.58,
-        "latest_date": "2026-06-29",
-        "ret_1d": -0.48,
-        "ret_1w": -0.89,
-        "ret_1m": -5.24,
-        "ret_3m": -13.74,
-        "ret_6m": 22.42,
-        "ret_1y": 28.86,
-        "ret_ytd": 18.99,
-        "ma50": 56.76,
-        "ma200": 50.5,
+        "latest": 53.11,
+        "latest_date": "2026-06-30",
+        "ret_1d": -0.88,
+        "ret_1w": -2.48,
+        "ret_1m": -4.97,
+        "ret_3m": -13.67,
+        "ret_6m": 21.82,
+        "ret_1y": 28.41,
+        "ret_ytd": 17.95,
+        "ma50": 56.73,
+        "ma200": 50.55,
         "above_ma50": false,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Energy",
         "ticker": "XLE",
         "breadth": {
-          "pct_above_ma50": 50.0,
-          "pct_above_ma200": 83.3,
-          "breadth_flag": "healthy",
+          "pct_above_ma50": 25.0,
+          "pct_above_ma200": 75.0,
+          "breadth_flag": "narrow",
           "holdings_checked": 12,
-          "holdings_above_ma50": 6,
-          "holdings_above_ma200": 10,
-          "breadth_thrust": 25.0
+          "holdings_above_ma50": 3,
+          "holdings_above_ma200": 9,
+          "breadth_thrust": -8.3
         },
         "rs_history": [
-          {
-            "date": "2025-06-27",
-            "value": 84.63
-          },
           {
             "date": "2025-06-30",
             "value": 83.74
@@ -59862,1085 +59787,38 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-29",
             "value": 89.98
+          },
+          {
+            "date": "2026-06-30",
+            "value": 88.5
           }
         ],
-        "rs_1w": -0.43,
-        "rs_1m": -3.75,
-        "rs_3m": -26.37,
-        "rs_6m": 13.46,
-        "rs_1y": 5.24,
-        "rs_ytd": 9.12,
-        "rs_slope": 0.46,
+        "rs_1w": -4.2,
+        "rs_1m": -3.98,
+        "rs_3m": -27.13,
+        "rs_6m": 12.01,
+        "rs_1y": 4.57,
+        "rs_ytd": 7.33,
+        "rs_slope": -3.25,
         "money_flow": {
-          "mfi_5d": 57.5,
-          "mfi_14d": 30.5,
-          "dollar_vol_5d_bn": 8.08,
-          "flow_signal": "INFLOW",
-          "mfi_vs_spy": 39.9
-        }
-      },
-      "XLV": {
-        "latest": 160.74,
-        "latest_date": "2026-06-29",
-        "ret_1d": 0.25,
-        "ret_1w": 7.12,
-        "ret_1m": 7.0,
-        "ret_3m": 12.7,
-        "ret_6m": 4.05,
-        "ret_1y": 21.85,
-        "ret_ytd": 4.25,
-        "ma50": 148.23,
-        "ma200": 148.6,
-        "above_ma50": true,
-        "above_ma200": true,
-        "golden_cross": false,
-        "name": "Healthcare",
-        "ticker": "XLV",
-        "breadth": {
-          "pct_above_ma50": 83.3,
-          "pct_above_ma200": 58.3,
-          "breadth_flag": "broad",
-          "holdings_checked": 12,
-          "holdings_above_ma50": 10,
-          "holdings_above_ma200": 7,
-          "breadth_thrust": 33.3
-        },
-        "rs_history": [
-          {
-            "date": "2025-06-27",
-            "value": 82.32
-          },
-          {
-            "date": "2025-06-30",
-            "value": 82.46
-          },
-          {
-            "date": "2025-07-01",
-            "value": 83.66
-          },
-          {
-            "date": "2025-07-02",
-            "value": 82.46
-          },
-          {
-            "date": "2025-07-03",
-            "value": 81.9
-          },
-          {
-            "date": "2025-07-07",
-            "value": 81.82
-          },
-          {
-            "date": "2025-07-08",
-            "value": 82.24
-          },
-          {
-            "date": "2025-07-09",
-            "value": 82.06
-          },
-          {
-            "date": "2025-07-10",
-            "value": 82.33
-          },
-          {
-            "date": "2025-07-11",
-            "value": 81.94
-          },
-          {
-            "date": "2025-07-14",
-            "value": 81.68
-          },
-          {
-            "date": "2025-07-15",
-            "value": 80.56
-          },
-          {
-            "date": "2025-07-16",
-            "value": 81.29
-          },
-          {
-            "date": "2025-07-17",
-            "value": 79.87
-          },
-          {
-            "date": "2025-07-18",
-            "value": 79.4
-          },
-          {
-            "date": "2025-07-21",
-            "value": 78.8
-          },
-          {
-            "date": "2025-07-22",
-            "value": 80.26
-          },
-          {
-            "date": "2025-07-23",
-            "value": 81.21
-          },
-          {
-            "date": "2025-07-24",
-            "value": 80.88
-          },
-          {
-            "date": "2025-07-25",
-            "value": 80.97
-          },
-          {
-            "date": "2025-07-28",
-            "value": 80.28
-          },
-          {
-            "date": "2025-07-29",
-            "value": 79.98
-          },
-          {
-            "date": "2025-07-30",
-            "value": 79.94
-          },
-          {
-            "date": "2025-07-31",
-            "value": 77.99
-          },
-          {
-            "date": "2025-08-01",
-            "value": 79.72
-          },
-          {
-            "date": "2025-08-04",
-            "value": 79.65
-          },
-          {
-            "date": "2025-08-05",
-            "value": 79.75
-          },
-          {
-            "date": "2025-08-06",
-            "value": 77.96
-          },
-          {
-            "date": "2025-08-07",
-            "value": 77.12
-          },
-          {
-            "date": "2025-08-08",
-            "value": 77.21
-          },
-          {
-            "date": "2025-08-11",
-            "value": 77.44
-          },
-          {
-            "date": "2025-08-12",
-            "value": 77.15
-          },
-          {
-            "date": "2025-08-13",
-            "value": 78.12
-          },
-          {
-            "date": "2025-08-14",
-            "value": 78.51
-          },
-          {
-            "date": "2025-08-15",
-            "value": 80.01
-          },
-          {
-            "date": "2025-08-18",
-            "value": 79.84
-          },
-          {
-            "date": "2025-08-19",
-            "value": 80.79
-          },
-          {
-            "date": "2025-08-20",
-            "value": 81.45
-          },
-          {
-            "date": "2025-08-21",
-            "value": 81.5
-          },
-          {
-            "date": "2025-08-22",
-            "value": 80.93
-          },
-          {
-            "date": "2025-08-25",
-            "value": 80.13
-          },
-          {
-            "date": "2025-08-26",
-            "value": 80.29
-          },
-          {
-            "date": "2025-08-27",
-            "value": 80.06
-          },
-          {
-            "date": "2025-08-28",
-            "value": 79.47
-          },
-          {
-            "date": "2025-08-29",
-            "value": 80.53
-          },
-          {
-            "date": "2025-09-02",
-            "value": 81.21
-          },
-          {
-            "date": "2025-09-03",
-            "value": 80.39
-          },
-          {
-            "date": "2025-09-04",
-            "value": 80.02
-          },
-          {
-            "date": "2025-09-05",
-            "value": 80.53
-          },
-          {
-            "date": "2025-09-08",
-            "value": 80.3
-          },
-          {
-            "date": "2025-09-09",
-            "value": 80.55
-          },
-          {
-            "date": "2025-09-10",
-            "value": 79.59
-          },
-          {
-            "date": "2025-09-11",
-            "value": 80.3
-          },
-          {
-            "date": "2025-09-12",
-            "value": 79.4
-          },
-          {
-            "date": "2025-09-15",
-            "value": 78.31
-          },
-          {
-            "date": "2025-09-16",
-            "value": 78.42
-          },
-          {
-            "date": "2025-09-17",
-            "value": 78.67
-          },
-          {
-            "date": "2025-09-18",
-            "value": 78.46
-          },
-          {
-            "date": "2025-09-19",
-            "value": 77.97
-          },
-          {
-            "date": "2025-09-22",
-            "value": 77.58
-          },
-          {
-            "date": "2025-09-23",
-            "value": 78.18
-          },
-          {
-            "date": "2025-09-24",
-            "value": 78.12
-          },
-          {
-            "date": "2025-09-25",
-            "value": 77.18
-          },
-          {
-            "date": "2025-09-26",
-            "value": 77.52
-          },
-          {
-            "date": "2025-09-29",
-            "value": 77.53
-          },
-          {
-            "date": "2025-09-30",
-            "value": 79.1
-          },
-          {
-            "date": "2025-10-01",
-            "value": 81.27
-          },
-          {
-            "date": "2025-10-02",
-            "value": 81.02
-          },
-          {
-            "date": "2025-10-03",
-            "value": 81.94
-          },
-          {
-            "date": "2025-10-06",
-            "value": 81.25
-          },
-          {
-            "date": "2025-10-07",
-            "value": 81.62
-          },
-          {
-            "date": "2025-10-08",
-            "value": 81.29
-          },
-          {
-            "date": "2025-10-09",
-            "value": 81.35
-          },
-          {
-            "date": "2025-10-10",
-            "value": 82.4
-          },
-          {
-            "date": "2025-10-13",
-            "value": 81.06
-          },
-          {
-            "date": "2025-10-14",
-            "value": 81.39
-          },
-          {
-            "date": "2025-10-15",
-            "value": 81.15
-          },
-          {
-            "date": "2025-10-16",
-            "value": 81.57
-          },
-          {
-            "date": "2025-10-17",
-            "value": 81.65
-          },
-          {
-            "date": "2025-10-20",
-            "value": 81.67
-          },
-          {
-            "date": "2025-10-21",
-            "value": 81.86
-          },
-          {
-            "date": "2025-10-22",
-            "value": 82.76
-          },
-          {
-            "date": "2025-10-23",
-            "value": 82.32
-          },
-          {
-            "date": "2025-10-24",
-            "value": 81.64
-          },
-          {
-            "date": "2025-10-27",
-            "value": 80.88
-          },
-          {
-            "date": "2025-10-28",
-            "value": 80.16
-          },
-          {
-            "date": "2025-10-29",
-            "value": 79.31
-          },
-          {
-            "date": "2025-10-30",
-            "value": 80.37
-          },
-          {
-            "date": "2025-10-31",
-            "value": 80.08
-          },
-          {
-            "date": "2025-11-03",
-            "value": 80.04
-          },
-          {
-            "date": "2025-11-04",
-            "value": 81.37
-          },
-          {
-            "date": "2025-11-05",
-            "value": 81.4
-          },
-          {
-            "date": "2025-11-06",
-            "value": 82.44
-          },
-          {
-            "date": "2025-11-07",
-            "value": 82.47
-          },
-          {
-            "date": "2025-11-10",
-            "value": 81.84
-          },
-          {
-            "date": "2025-11-11",
-            "value": 83.54
-          },
-          {
-            "date": "2025-11-12",
-            "value": 84.67
-          },
-          {
-            "date": "2025-11-13",
-            "value": 86.06
-          },
-          {
-            "date": "2025-11-14",
-            "value": 85.56
-          },
-          {
-            "date": "2025-11-17",
-            "value": 86.29
-          },
-          {
-            "date": "2025-11-18",
-            "value": 87.53
-          },
-          {
-            "date": "2025-11-19",
-            "value": 87.05
-          },
-          {
-            "date": "2025-11-20",
-            "value": 87.87
-          },
-          {
-            "date": "2025-11-21",
-            "value": 88.83
-          },
-          {
-            "date": "2025-11-24",
-            "value": 87.91
-          },
-          {
-            "date": "2025-11-25",
-            "value": 89.06
-          },
-          {
-            "date": "2025-11-26",
-            "value": 88.26
-          },
-          {
-            "date": "2025-11-28",
-            "value": 87.35
-          },
-          {
-            "date": "2025-12-01",
-            "value": 86.44
-          },
-          {
-            "date": "2025-12-02",
-            "value": 85.76
-          },
-          {
-            "date": "2025-12-03",
-            "value": 85.86
-          },
-          {
-            "date": "2025-12-04",
-            "value": 85.15
-          },
-          {
-            "date": "2025-12-05",
-            "value": 84.63
-          },
-          {
-            "date": "2025-12-08",
-            "value": 83.87
-          },
-          {
-            "date": "2025-12-09",
-            "value": 83.13
-          },
-          {
-            "date": "2025-12-10",
-            "value": 83.78
-          },
-          {
-            "date": "2025-12-11",
-            "value": 84.38
-          },
-          {
-            "date": "2025-12-12",
-            "value": 85.56
-          },
-          {
-            "date": "2025-12-15",
-            "value": 86.83
-          },
-          {
-            "date": "2025-12-16",
-            "value": 85.93
-          },
-          {
-            "date": "2025-12-17",
-            "value": 86.73
-          },
-          {
-            "date": "2025-12-18",
-            "value": 86.15
-          },
-          {
-            "date": "2025-12-19",
-            "value": 85.95
-          },
-          {
-            "date": "2025-12-22",
-            "value": 85.98
-          },
-          {
-            "date": "2025-12-23",
-            "value": 85.42
-          },
-          {
-            "date": "2025-12-24",
-            "value": 85.56
-          },
-          {
-            "date": "2025-12-26",
-            "value": 85.71
-          },
-          {
-            "date": "2025-12-29",
-            "value": 85.88
-          },
-          {
-            "date": "2025-12-30",
-            "value": 85.92
-          },
-          {
-            "date": "2025-12-31",
-            "value": 86.07
-          },
-          {
-            "date": "2026-01-02",
-            "value": 86.3
-          },
-          {
-            "date": "2026-01-05",
-            "value": 85.47
-          },
-          {
-            "date": "2026-01-06",
-            "value": 86.64
-          },
-          {
-            "date": "2026-01-07",
-            "value": 87.78
-          },
-          {
-            "date": "2026-01-08",
-            "value": 86.95
-          },
-          {
-            "date": "2026-01-09",
-            "value": 85.93
-          },
-          {
-            "date": "2026-01-12",
-            "value": 85.84
-          },
-          {
-            "date": "2026-01-13",
-            "value": 85.66
-          },
-          {
-            "date": "2026-01-14",
-            "value": 86.7
-          },
-          {
-            "date": "2026-01-15",
-            "value": 85.97
-          },
-          {
-            "date": "2026-01-16",
-            "value": 85.37
-          },
-          {
-            "date": "2026-01-20",
-            "value": 86.95
-          },
-          {
-            "date": "2026-01-21",
-            "value": 87.54
-          },
-          {
-            "date": "2026-01-22",
-            "value": 87.11
-          },
-          {
-            "date": "2026-01-23",
-            "value": 86.63
-          },
-          {
-            "date": "2026-01-26",
-            "value": 86.53
-          },
-          {
-            "date": "2026-01-27",
-            "value": 84.74
-          },
-          {
-            "date": "2026-01-28",
-            "value": 84.13
-          },
-          {
-            "date": "2026-01-29",
-            "value": 84.03
-          },
-          {
-            "date": "2026-01-30",
-            "value": 84.78
-          },
-          {
-            "date": "2026-02-02",
-            "value": 84.88
-          },
-          {
-            "date": "2026-02-03",
-            "value": 84.73
-          },
-          {
-            "date": "2026-02-04",
-            "value": 86.21
-          },
-          {
-            "date": "2026-02-05",
-            "value": 86.64
-          },
-          {
-            "date": "2026-02-06",
-            "value": 86.58
-          },
-          {
-            "date": "2026-02-09",
-            "value": 85.41
-          },
-          {
-            "date": "2026-02-10",
-            "value": 85.09
-          },
-          {
-            "date": "2026-02-11",
-            "value": 85.61
-          },
-          {
-            "date": "2026-02-12",
-            "value": 86.82
-          },
-          {
-            "date": "2026-02-13",
-            "value": 87.68
-          },
-          {
-            "date": "2026-02-17",
-            "value": 87.38
-          },
-          {
-            "date": "2026-02-18",
-            "value": 87.1
-          },
-          {
-            "date": "2026-02-19",
-            "value": 87.11
-          },
-          {
-            "date": "2026-02-20",
-            "value": 86.24
-          },
-          {
-            "date": "2026-02-23",
-            "value": 88.09
-          },
-          {
-            "date": "2026-02-24",
-            "value": 87.08
-          },
-          {
-            "date": "2026-02-25",
-            "value": 86.33
-          },
-          {
-            "date": "2026-02-26",
-            "value": 86.59
-          },
-          {
-            "date": "2026-02-27",
-            "value": 88.54
-          },
-          {
-            "date": "2026-03-02",
-            "value": 87.57
-          },
-          {
-            "date": "2026-03-03",
-            "value": 87.35
-          },
-          {
-            "date": "2026-03-04",
-            "value": 86.91
-          },
-          {
-            "date": "2026-03-05",
-            "value": 85.65
-          },
-          {
-            "date": "2026-03-06",
-            "value": 86.1
-          },
-          {
-            "date": "2026-03-09",
-            "value": 86.23
-          },
-          {
-            "date": "2026-03-10",
-            "value": 85.75
-          },
-          {
-            "date": "2026-03-11",
-            "value": 85.69
-          },
-          {
-            "date": "2026-03-12",
-            "value": 85.48
-          },
-          {
-            "date": "2026-03-13",
-            "value": 85.75
-          },
-          {
-            "date": "2026-03-16",
-            "value": 85.58
-          },
-          {
-            "date": "2026-03-17",
-            "value": 84.58
-          },
-          {
-            "date": "2026-03-18",
-            "value": 84.34
-          },
-          {
-            "date": "2026-03-19",
-            "value": 84.25
-          },
-          {
-            "date": "2026-03-20",
-            "value": 84.73
-          },
-          {
-            "date": "2026-03-23",
-            "value": 83.87
-          },
-          {
-            "date": "2026-03-24",
-            "value": 84.16
-          },
-          {
-            "date": "2026-03-25",
-            "value": 84.53
-          },
-          {
-            "date": "2026-03-26",
-            "value": 85.77
-          },
-          {
-            "date": "2026-03-27",
-            "value": 85.78
-          },
-          {
-            "date": "2026-03-30",
-            "value": 86.4
-          },
-          {
-            "date": "2026-03-31",
-            "value": 85.59
-          },
-          {
-            "date": "2026-04-01",
-            "value": 85.6
-          },
-          {
-            "date": "2026-04-02",
-            "value": 84.99
-          },
-          {
-            "date": "2026-04-06",
-            "value": 84.28
-          },
-          {
-            "date": "2026-04-07",
-            "value": 84.41
-          },
-          {
-            "date": "2026-04-08",
-            "value": 84.06
-          },
-          {
-            "date": "2026-04-09",
-            "value": 83.39
-          },
-          {
-            "date": "2026-04-10",
-            "value": 82.31
-          },
-          {
-            "date": "2026-04-13",
-            "value": 81.88
-          },
-          {
-            "date": "2026-04-14",
-            "value": 81.37
-          },
-          {
-            "date": "2026-04-15",
-            "value": 80.15
-          },
-          {
-            "date": "2026-04-16",
-            "value": 79.33
-          },
-          {
-            "date": "2026-04-17",
-            "value": 79.55
-          },
-          {
-            "date": "2026-04-20",
-            "value": 78.97
-          },
-          {
-            "date": "2026-04-21",
-            "value": 78.68
-          },
-          {
-            "date": "2026-04-22",
-            "value": 78.14
-          },
-          {
-            "date": "2026-04-23",
-            "value": 78.37
-          },
-          {
-            "date": "2026-04-24",
-            "value": 76.67
-          },
-          {
-            "date": "2026-04-27",
-            "value": 76.16
-          },
-          {
-            "date": "2026-04-28",
-            "value": 76.73
-          },
-          {
-            "date": "2026-04-29",
-            "value": 76.21
-          },
-          {
-            "date": "2026-04-30",
-            "value": 77.13
-          },
-          {
-            "date": "2026-05-01",
-            "value": 76.48
-          },
-          {
-            "date": "2026-05-04",
-            "value": 76.53
-          },
-          {
-            "date": "2026-05-05",
-            "value": 76.22
-          },
-          {
-            "date": "2026-05-06",
-            "value": 75.23
-          },
-          {
-            "date": "2026-05-07",
-            "value": 75.1
-          },
-          {
-            "date": "2026-05-08",
-            "value": 73.86
-          },
-          {
-            "date": "2026-05-11",
-            "value": 73.46
-          },
-          {
-            "date": "2026-05-12",
-            "value": 75.01
-          },
-          {
-            "date": "2026-05-13",
-            "value": 75.04
-          },
-          {
-            "date": "2026-05-14",
-            "value": 74.41
-          },
-          {
-            "date": "2026-05-15",
-            "value": 74.53
-          },
-          {
-            "date": "2026-05-18",
-            "value": 74.9
-          },
-          {
-            "date": "2026-05-19",
-            "value": 76.23
-          },
-          {
-            "date": "2026-05-20",
-            "value": 75.36
-          },
-          {
-            "date": "2026-05-21",
-            "value": 75.73
-          },
-          {
-            "date": "2026-05-22",
-            "value": 76.32
-          },
-          {
-            "date": "2026-05-26",
-            "value": 75.12
-          },
-          {
-            "date": "2026-05-27",
-            "value": 75.27
-          },
-          {
-            "date": "2026-05-28",
-            "value": 75.91
-          },
-          {
-            "date": "2026-05-29",
-            "value": 75.02
-          },
-          {
-            "date": "2026-06-01",
-            "value": 74.0
-          },
-          {
-            "date": "2026-06-02",
-            "value": 73.18
-          },
-          {
-            "date": "2026-06-03",
-            "value": 74.27
-          },
-          {
-            "date": "2026-06-04",
-            "value": 76.26
-          },
-          {
-            "date": "2026-06-05",
-            "value": 78.76
-          },
-          {
-            "date": "2026-06-08",
-            "value": 78.4
-          },
-          {
-            "date": "2026-06-09",
-            "value": 79.62
-          },
-          {
-            "date": "2026-06-10",
-            "value": 80.0
-          },
-          {
-            "date": "2026-06-11",
-            "value": 79.3
-          },
-          {
-            "date": "2026-06-12",
-            "value": 78.73
-          },
-          {
-            "date": "2026-06-15",
-            "value": 76.9
-          },
-          {
-            "date": "2026-06-16",
-            "value": 77.39
-          },
-          {
-            "date": "2026-06-17",
-            "value": 77.22
-          },
-          {
-            "date": "2026-06-18",
-            "value": 75.76
-          },
-          {
-            "date": "2026-06-22",
-            "value": 76.68
-          },
-          {
-            "date": "2026-06-23",
-            "value": 78.9
-          },
-          {
-            "date": "2026-06-24",
-            "value": 79.55
-          },
-          {
-            "date": "2026-06-25",
-            "value": 80.61
-          },
-          {
-            "date": "2026-06-26",
-            "value": 83.66
-          },
-          {
-            "date": "2026-06-29",
-            "value": 82.51
-          }
-        ],
-        "rs_1w": 7.61,
-        "rs_1m": 8.69,
-        "rs_3m": -3.81,
-        "rs_6m": -3.57,
-        "rs_1y": -0.49,
-        "rs_ytd": -4.4,
-        "rs_slope": 5.54,
-        "money_flow": {
-          "mfi_5d": 100.0,
-          "mfi_14d": 66.8,
-          "dollar_vol_5d_bn": 8.99,
-          "flow_signal": "STRONG_INFLOW",
-          "mfi_vs_spy": 82.4
+          "mfi_5d": 33.0,
+          "mfi_14d": 31.5,
+          "dollar_vol_5d_bn": 7.71,
+          "flow_signal": "STRONG_OUTFLOW",
+          "mfi_vs_spy": -5.7
         }
       },
       "XLY": {
-        "latest": 117.12,
-        "latest_date": "2026-06-29",
-        "ret_1d": 2.4,
-        "ret_1w": 1.9,
-        "ret_1m": -3.86,
-        "ret_3m": 11.05,
-        "ret_6m": -4.08,
-        "ret_1y": 9.79,
-        "ret_ytd": -0.64,
-        "ma50": 117.44,
+        "latest": 117.28,
+        "latest_date": "2026-06-30",
+        "ret_1d": 0.14,
+        "ret_1w": 3.09,
+        "ret_1m": -2.78,
+        "ret_3m": 11.22,
+        "ret_6m": -3.52,
+        "ret_1y": 8.14,
+        "ret_ytd": -0.51,
+        "ma50": 117.38,
         "ma200": 117.1,
         "above_ma50": false,
         "above_ma200": true,
@@ -60948,19 +59826,15 @@ window.MACRO_DATA = {
         "name": "Consumer Discretionary",
         "ticker": "XLY",
         "breadth": {
-          "pct_above_ma50": 50.0,
-          "pct_above_ma200": 41.7,
+          "pct_above_ma50": 41.7,
+          "pct_above_ma200": 58.3,
           "breadth_flag": "healthy",
           "holdings_checked": 12,
-          "holdings_above_ma50": 6,
-          "holdings_above_ma200": 5,
-          "breadth_thrust": 0.0
+          "holdings_above_ma50": 5,
+          "holdings_above_ma200": 7,
+          "breadth_thrust": -8.3
         },
         "rs_history": [
-          {
-            "date": "2025-06-27",
-            "value": 105.55
-          },
           {
             "date": "2025-06-30",
             "value": 104.44
@@ -61964,54 +60838,54 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-29",
             "value": 93.55
+          },
+          {
+            "date": "2026-06-30",
+            "value": 92.95
           }
         ],
-        "rs_1w": 2.36,
-        "rs_1m": -2.34,
-        "rs_3m": -5.22,
-        "rs_6m": -11.1,
-        "rs_1y": -10.34,
-        "rs_ytd": -8.88,
-        "rs_slope": 2.92,
+        "rs_1w": 1.27,
+        "rs_1m": -1.77,
+        "rs_3m": -6.12,
+        "rs_6m": -11.29,
+        "rs_1y": -11.93,
+        "rs_ytd": -9.46,
+        "rs_slope": 1.69,
         "money_flow": {
-          "mfi_5d": 62.9,
-          "mfi_14d": 59.2,
-          "dollar_vol_5d_bn": 5.01,
-          "flow_signal": "INFLOW",
-          "mfi_vs_spy": 45.3
+          "mfi_5d": 82.4,
+          "mfi_14d": 58.3,
+          "dollar_vol_5d_bn": 4.63,
+          "flow_signal": "STRONG_INFLOW",
+          "mfi_vs_spy": 43.7
         }
       },
       "XLP": {
-        "latest": 84.37,
-        "latest_date": "2026-06-29",
-        "ret_1d": -0.4,
-        "ret_1w": 2.66,
-        "ret_1m": 0.62,
-        "ret_3m": 3.88,
-        "ret_6m": 9.36,
-        "ret_1y": 8.16,
-        "ret_ytd": 9.97,
-        "ma50": 83.36,
-        "ma200": 80.59,
-        "above_ma50": true,
+        "latest": 83.07,
+        "latest_date": "2026-06-30",
+        "ret_1d": -1.54,
+        "ret_1w": -0.78,
+        "ret_1m": 0.89,
+        "ret_3m": 2.16,
+        "ret_6m": 7.53,
+        "ret_1y": 5.99,
+        "ret_ytd": 8.27,
+        "ma50": 83.39,
+        "ma200": 80.61,
+        "above_ma50": false,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Consumer Staples",
         "ticker": "XLP",
         "breadth": {
           "pct_above_ma50": 66.7,
-          "pct_above_ma200": 75.0,
+          "pct_above_ma200": 66.7,
           "breadth_flag": "broad",
           "holdings_checked": 12,
           "holdings_above_ma50": 8,
-          "holdings_above_ma200": 9,
-          "breadth_thrust": 8.4
+          "holdings_above_ma200": 8,
+          "breadth_thrust": -8.3
         },
         "rs_history": [
-          {
-            "date": "2025-06-27",
-            "value": 95.14
-          },
           {
             "date": "2025-06-30",
             "value": 95.18
@@ -62506,7 +61380,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-12-23",
-            "value": 82.57
+            "value": 82.58
           },
           {
             "date": "2025-12-24",
@@ -63015,54 +61889,54 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-29",
             "value": 84.05
+          },
+          {
+            "date": "2026-06-30",
+            "value": 82.12
           }
         ],
-        "rs_1w": 3.13,
-        "rs_1m": 2.21,
-        "rs_3m": -11.33,
-        "rs_6m": 1.35,
-        "rs_1y": -11.67,
-        "rs_ytd": 0.85,
-        "rs_slope": 2.6,
+        "rs_1w": -2.53,
+        "rs_1m": 1.94,
+        "rs_3m": -13.77,
+        "rs_6m": -1.13,
+        "rs_1y": -13.68,
+        "rs_ytd": -1.47,
+        "rs_slope": -2.99,
         "money_flow": {
-          "mfi_5d": 63.0,
-          "mfi_14d": 58.1,
-          "dollar_vol_5d_bn": 5.02,
-          "flow_signal": "INFLOW",
-          "mfi_vs_spy": 45.4
+          "mfi_5d": 39.5,
+          "mfi_14d": 50.8,
+          "dollar_vol_5d_bn": 4.86,
+          "flow_signal": "OUTFLOW",
+          "mfi_vs_spy": 0.8
         }
       },
       "XLI": {
-        "latest": 182.76,
-        "latest_date": "2026-06-29",
-        "ret_1d": 0.86,
-        "ret_1w": 0.53,
-        "ret_1m": 5.41,
-        "ret_3m": 15.08,
-        "ret_6m": 16.65,
-        "ret_1y": 27.37,
-        "ret_ytd": 16.3,
-        "ma50": 174.23,
-        "ma200": 163.16,
+        "latest": 185.23,
+        "latest_date": "2026-06-30",
+        "ret_1d": 1.35,
+        "ret_1w": 3.97,
+        "ret_1m": 7.25,
+        "ret_3m": 18.57,
+        "ret_6m": 18.45,
+        "ret_1y": 27.81,
+        "ret_ytd": 17.87,
+        "ma50": 174.47,
+        "ma200": 163.33,
         "above_ma50": true,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Industrials",
         "ticker": "XLI",
         "breadth": {
-          "pct_above_ma50": 75.0,
-          "pct_above_ma200": 66.7,
+          "pct_above_ma50": 72.7,
+          "pct_above_ma200": 63.6,
           "breadth_flag": "broad",
-          "holdings_checked": 12,
-          "holdings_above_ma50": 9,
-          "holdings_above_ma200": 8,
-          "breadth_thrust": 16.7
+          "holdings_checked": 11,
+          "holdings_above_ma50": 8,
+          "holdings_above_ma200": 7,
+          "breadth_thrust": 18.2
         },
         "rs_history": [
-          {
-            "date": "2025-06-27",
-            "value": 108.2
-          },
           {
             "date": "2025-06-30",
             "value": 108.22
@@ -64066,54 +62940,54 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-29",
             "value": 111.99
+          },
+          {
+            "date": "2026-06-30",
+            "value": 112.62
           }
         ],
-        "rs_1w": 0.99,
-        "rs_1m": 7.07,
-        "rs_3m": -1.78,
-        "rs_6m": 8.11,
-        "rs_1y": 4.02,
-        "rs_ytd": 6.65,
-        "rs_slope": -0.69,
+        "rs_1w": 2.14,
+        "rs_1m": 8.37,
+        "rs_3m": 0.08,
+        "rs_6m": 8.91,
+        "rs_1y": 4.09,
+        "rs_ytd": 7.26,
+        "rs_slope": 0.15,
         "money_flow": {
-          "mfi_5d": 55.5,
-          "mfi_14d": 74.6,
-          "dollar_vol_5d_bn": 7.2,
-          "flow_signal": "INFLOW",
-          "mfi_vs_spy": 37.9
+          "mfi_5d": 76.9,
+          "mfi_14d": 74.3,
+          "dollar_vol_5d_bn": 6.97,
+          "flow_signal": "STRONG_INFLOW",
+          "mfi_vs_spy": 38.2
         }
       },
       "XLB": {
-        "latest": 50.66,
-        "latest_date": "2026-06-29",
-        "ret_1d": -1.82,
-        "ret_1w": -1.86,
-        "ret_1m": -0.99,
-        "ret_3m": 3.97,
-        "ret_6m": 11.42,
-        "ret_1y": 17.53,
-        "ret_ytd": 10.74,
-        "ma50": 51.14,
-        "ma200": 47.85,
+        "latest": 50.83,
+        "latest_date": "2026-06-30",
+        "ret_1d": 0.34,
+        "ret_1w": -0.08,
+        "ret_1m": -0.25,
+        "ret_3m": 3.93,
+        "ret_6m": 11.14,
+        "ret_1y": 17.77,
+        "ret_ytd": 11.12,
+        "ma50": 51.12,
+        "ma200": 47.87,
         "above_ma50": false,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Materials",
         "ticker": "XLB",
         "breadth": {
-          "pct_above_ma50": 41.7,
-          "pct_above_ma200": 66.7,
+          "pct_above_ma50": 50.0,
+          "pct_above_ma200": 70.0,
           "breadth_flag": "healthy",
-          "holdings_checked": 12,
+          "holdings_checked": 10,
           "holdings_above_ma50": 5,
-          "holdings_above_ma200": 8,
-          "breadth_thrust": -33.3
+          "holdings_above_ma200": 7,
+          "breadth_thrust": -10.0
         },
         "rs_history": [
-          {
-            "date": "2025-06-27",
-            "value": 90.28
-          },
           {
             "date": "2025-06-30",
             "value": 89.77
@@ -65117,54 +63991,54 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-29",
             "value": 86.98
+          },
+          {
+            "date": "2026-06-30",
+            "value": 86.6
           }
         ],
-        "rs_1w": -1.41,
-        "rs_1m": 0.56,
-        "rs_3m": -11.26,
-        "rs_6m": 3.26,
-        "rs_1y": -4.02,
-        "rs_ytd": 1.56,
-        "rs_slope": -1.54,
+        "rs_1w": -1.84,
+        "rs_1m": 0.78,
+        "rs_3m": -12.27,
+        "rs_6m": 2.19,
+        "rs_1y": -4.08,
+        "rs_ytd": 1.12,
+        "rs_slope": -2.03,
         "money_flow": {
-          "mfi_5d": 40.9,
-          "mfi_14d": 52.4,
-          "dollar_vol_5d_bn": 2.78,
-          "flow_signal": "OUTFLOW",
-          "mfi_vs_spy": 23.3
+          "mfi_5d": 58.1,
+          "mfi_14d": 50.9,
+          "dollar_vol_5d_bn": 2.68,
+          "flow_signal": "INFLOW",
+          "mfi_vs_spy": 19.4
         }
       },
       "XLU": {
-        "latest": 46.02,
-        "latest_date": "2026-06-29",
-        "ret_1d": -0.39,
-        "ret_1w": 2.91,
-        "ret_1m": 3.77,
-        "ret_3m": 1.59,
-        "ret_6m": 8.94,
-        "ret_1y": 16.55,
-        "ret_ytd": 8.01,
-        "ma50": 44.78,
-        "ma200": 44.06,
+        "latest": 45.34,
+        "latest_date": "2026-06-30",
+        "ret_1d": -1.48,
+        "ret_1w": 0.6,
+        "ret_1m": 2.72,
+        "ret_3m": -0.63,
+        "ret_6m": 7.41,
+        "ret_1y": 14.61,
+        "ret_ytd": 6.41,
+        "ma50": 44.77,
+        "ma200": 44.08,
         "above_ma50": true,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Utilities",
         "ticker": "XLU",
         "breadth": {
-          "pct_above_ma50": 83.3,
-          "pct_above_ma200": 91.7,
+          "pct_above_ma50": 80.0,
+          "pct_above_ma200": 90.0,
           "breadth_flag": "broad",
-          "holdings_checked": 12,
-          "holdings_above_ma50": 10,
-          "holdings_above_ma200": 11,
-          "breadth_thrust": 50.0
+          "holdings_checked": 10,
+          "holdings_above_ma50": 8,
+          "holdings_above_ma200": 9,
+          "breadth_thrust": 0.0
         },
         "rs_history": [
-          {
-            "date": "2025-06-27",
-            "value": 108.37
-          },
           {
             "date": "2025-06-30",
             "value": 108.3
@@ -66168,54 +65042,54 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-29",
             "value": 103.47
+          },
+          {
+            "date": "2026-06-30",
+            "value": 101.15
           }
         ],
-        "rs_1w": 3.38,
-        "rs_1m": 5.41,
-        "rs_3m": -13.29,
-        "rs_6m": 0.96,
-        "rs_1y": -4.81,
-        "rs_ytd": -0.95,
-        "rs_slope": 2.09,
+        "rs_1w": -1.18,
+        "rs_1m": 3.79,
+        "rs_3m": -16.12,
+        "rs_6m": -1.24,
+        "rs_1y": -6.66,
+        "rs_ytd": -3.17,
+        "rs_slope": -2.08,
         "money_flow": {
-          "mfi_5d": 82.3,
-          "mfi_14d": 86.3,
-          "dollar_vol_5d_bn": 4.42,
-          "flow_signal": "STRONG_INFLOW",
-          "mfi_vs_spy": 64.7
+          "mfi_5d": 61.0,
+          "mfi_14d": 79.3,
+          "dollar_vol_5d_bn": 4.32,
+          "flow_signal": "INFLOW",
+          "mfi_vs_spy": 22.3
         }
       },
       "XLRE": {
-        "latest": 44.92,
-        "latest_date": "2026-06-29",
-        "ret_1d": -0.71,
-        "ret_1w": 2.04,
-        "ret_1m": 2.03,
-        "ret_3m": 13.26,
-        "ret_6m": 12.8,
-        "ret_1y": 13.42,
-        "ret_ytd": 12.97,
+        "latest": 44.03,
+        "latest_date": "2026-06-30",
+        "ret_1d": -1.98,
+        "ret_1w": -1.37,
+        "ret_1m": 0.97,
+        "ret_3m": 10.46,
+        "ret_6m": 10.35,
+        "ret_1y": 10.77,
+        "ret_ytd": 10.73,
         "ma50": 43.95,
-        "ma200": 41.6,
+        "ma200": 41.61,
         "above_ma50": true,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Real Estate",
         "ticker": "XLRE",
         "breadth": {
-          "pct_above_ma50": 50.0,
+          "pct_above_ma50": 41.7,
           "pct_above_ma200": 66.7,
           "breadth_flag": "healthy",
           "holdings_checked": 12,
-          "holdings_above_ma50": 6,
+          "holdings_above_ma50": 5,
           "holdings_above_ma200": 8,
-          "breadth_thrust": -8.3
+          "breadth_thrust": -16.6
         },
         "rs_history": [
-          {
-            "date": "2025-06-27",
-            "value": 97.87
-          },
           {
             "date": "2025-06-30",
             "value": 98.12
@@ -67219,54 +66093,54 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-29",
             "value": 90.78
+          },
+          {
+            "date": "2026-06-30",
+            "value": 88.29
           }
         ],
-        "rs_1w": 2.51,
-        "rs_1m": 3.64,
-        "rs_3m": -3.33,
-        "rs_6m": 4.54,
-        "rs_1y": -7.37,
-        "rs_ytd": 3.6,
-        "rs_slope": 1.64,
+        "rs_1w": -3.11,
+        "rs_1m": 2.02,
+        "rs_3m": -6.76,
+        "rs_6m": 1.47,
+        "rs_1y": -9.79,
+        "rs_ytd": 0.77,
+        "rs_slope": -3.59,
         "money_flow": {
-          "mfi_5d": 58.3,
-          "mfi_14d": 49.4,
-          "dollar_vol_5d_bn": 1.13,
-          "flow_signal": "INFLOW",
-          "mfi_vs_spy": 40.7
+          "mfi_5d": 34.9,
+          "mfi_14d": 40.1,
+          "dollar_vol_5d_bn": 1.36,
+          "flow_signal": "STRONG_OUTFLOW",
+          "mfi_vs_spy": -3.8
         }
       },
       "XLC": {
-        "latest": 107.88,
-        "latest_date": "2026-06-29",
-        "ret_1d": 1.6,
-        "ret_1w": 0.95,
-        "ret_1m": -7.29,
-        "ret_3m": 1.05,
-        "ret_6m": -8.12,
-        "ret_1y": 2.64,
-        "ret_ytd": -7.18,
-        "ma50": 113.78,
-        "ma200": 114.53,
+        "latest": 107.13,
+        "latest_date": "2026-06-30",
+        "ret_1d": -0.7,
+        "ret_1w": -0.13,
+        "ret_1m": -7.16,
+        "ret_3m": -0.51,
+        "ret_6m": -8.66,
+        "ret_1y": 0.74,
+        "ret_ytd": -7.83,
+        "ma50": 113.55,
+        "ma200": 114.49,
         "above_ma50": false,
         "above_ma200": false,
         "golden_cross": false,
         "name": "Communication Services",
         "ticker": "XLC",
         "breadth": {
-          "pct_above_ma50": 16.7,
-          "pct_above_ma200": 41.7,
+          "pct_above_ma50": 8.3,
+          "pct_above_ma200": 33.3,
           "breadth_flag": "narrow",
           "holdings_checked": 12,
-          "holdings_above_ma50": 2,
-          "holdings_above_ma200": 5,
-          "breadth_thrust": 8.4
+          "holdings_above_ma50": 1,
+          "holdings_above_ma200": 4,
+          "breadth_thrust": -8.4
         },
         "rs_history": [
-          {
-            "date": "2025-06-27",
-            "value": 111.8
-          },
           {
             "date": "2025-06-30",
             "value": 112.15
@@ -68270,48 +67144,44 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-29",
             "value": 93.09
+          },
+          {
+            "date": "2026-06-30",
+            "value": 91.73
           }
         ],
-        "rs_1w": 1.42,
-        "rs_1m": -5.83,
-        "rs_3m": -13.75,
-        "rs_6m": -14.85,
-        "rs_1y": -16.18,
-        "rs_ytd": -14.88,
-        "rs_slope": 2.81,
+        "rs_1w": -1.89,
+        "rs_1m": -6.19,
+        "rs_3m": -16.02,
+        "rs_6m": -16.01,
+        "rs_1y": -17.96,
+        "rs_ytd": -16.12,
+        "rs_slope": -0.42,
         "money_flow": {
-          "mfi_5d": 41.1,
-          "mfi_14d": 45.0,
-          "dollar_vol_5d_bn": 4.05,
-          "flow_signal": "OUTFLOW",
-          "mfi_vs_spy": 23.5
+          "mfi_5d": 45.5,
+          "mfi_14d": 39.7,
+          "dollar_vol_5d_bn": 3.75,
+          "flow_signal": "NEUTRAL",
+          "mfi_vs_spy": 6.8
         }
       }
     }
   },
   "cross_asset": {
     "schema_version": "1.1",
-    "fetched_at": "2026-06-29T20:16:00.857702+00:00",
+    "fetched_at": "2026-07-01T10:02:32.876906+00:00",
     "assets": {
       "^VIX": {
-        "latest": 17.67,
-        "latest_date": "2026-06-29",
-        "ret_1d": -4.02,
-        "ret_1w": 2.26,
-        "ret_1m": 12.26,
-        "ret_3m": -42.27,
-        "ret_6m": 29.93,
-        "ret_1y": 8.27,
-        "ret_ytd": 21.78,
+        "latest": 16.9,
+        "latest_date": "2026-07-01",
+        "ret_1d": 2.74,
+        "ret_1w": -9.29,
+        "ret_1m": 5.3,
+        "ret_3m": -31.13,
+        "ret_6m": 17.93,
+        "ret_1y": 0.42,
+        "ret_ytd": 16.47,
         "history": [
-          {
-            "date": "2025-06-30",
-            "value": 16.73
-          },
-          {
-            "date": "2025-07-01",
-            "value": 16.83
-          },
           {
             "date": "2025-07-02",
             "value": 16.64
@@ -69310,7 +68180,15 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-29",
-            "value": 17.67
+            "value": 17.65
+          },
+          {
+            "date": "2026-06-30",
+            "value": 16.45
+          },
+          {
+            "date": "2026-07-01",
+            "value": 16.9
           }
         ],
         "ticker": "^VIX",
@@ -69318,15 +68196,19 @@ window.MACRO_DATA = {
       },
       "^TNX": {
         "latest": 4.37,
-        "latest_date": "2026-06-29",
-        "ret_1d": 0.05,
-        "ret_1w": -2.99,
-        "ret_1m": -1.82,
-        "ret_3m": -1.49,
-        "ret_6m": 5.75,
-        "ret_1y": 2.85,
-        "ret_ytd": 4.47,
+        "latest_date": "2026-06-26",
+        "ret_1d": -0.46,
+        "ret_1w": -1.77,
+        "ret_1m": -2.43,
+        "ret_3m": -1.0,
+        "ret_6m": 4.87,
+        "ret_1y": 1.84,
+        "ret_ytd": 4.42,
         "history": [
+          {
+            "date": "2025-06-26",
+            "value": 4.25
+          },
           {
             "date": "2025-06-27",
             "value": 4.28
@@ -70330,34 +69212,22 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-26",
             "value": 4.37
-          },
-          {
-            "date": "2026-06-29",
-            "value": 4.37
           }
         ],
         "ticker": "^TNX",
         "label": "10Y Treasury Yield (^TNX)"
       },
       "DX-Y.NYB": {
-        "latest": 101.1,
-        "latest_date": "2026-06-29",
-        "ret_1d": -0.26,
-        "ret_1w": 0.08,
-        "ret_1m": 2.1,
-        "ret_3m": 0.95,
-        "ret_6m": 3.18,
-        "ret_1y": 4.06,
-        "ret_ytd": 2.72,
+        "latest": 101.43,
+        "latest_date": "2026-07-01",
+        "ret_1d": 0.24,
+        "ret_1w": -0.18,
+        "ret_1m": 2.25,
+        "ret_3m": 1.47,
+        "ret_6m": 3.46,
+        "ret_1y": 4.69,
+        "ret_ytd": 3.06,
         "history": [
-          {
-            "date": "2025-06-27",
-            "value": 97.4
-          },
-          {
-            "date": "2025-06-30",
-            "value": 96.88
-          },
           {
             "date": "2025-07-01",
             "value": 96.82
@@ -71356,31 +70226,31 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-29",
-            "value": 101.1
+            "value": 101.11
+          },
+          {
+            "date": "2026-06-30",
+            "value": 101.19
+          },
+          {
+            "date": "2026-07-01",
+            "value": 101.43
           }
         ],
         "ticker": "DX-Y.NYB",
         "label": "DXY US Dollar Index"
       },
       "CL=F": {
-        "latest": 70.54,
-        "latest_date": "2026-06-29",
-        "ret_1d": 1.89,
-        "ret_1w": -5.72,
-        "ret_1m": -20.65,
-        "ret_3m": -29.21,
-        "ret_6m": 20.89,
-        "ret_1y": 7.66,
-        "ret_ytd": 23.06,
+        "latest": 68.71,
+        "latest_date": "2026-07-01",
+        "ret_1d": -1.14,
+        "ret_1w": -2.32,
+        "ret_1m": -25.44,
+        "ret_3m": -32.23,
+        "ret_6m": 18.3,
+        "ret_1y": 4.98,
+        "ret_ytd": 19.87,
         "history": [
-          {
-            "date": "2025-06-30",
-            "value": 65.11
-          },
-          {
-            "date": "2025-07-01",
-            "value": 65.45
-          },
           {
             "date": "2025-07-02",
             "value": 67.45
@@ -72379,31 +71249,31 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-29",
-            "value": 70.54
+            "value": 70.75
+          },
+          {
+            "date": "2026-06-30",
+            "value": 69.5
+          },
+          {
+            "date": "2026-07-01",
+            "value": 68.71
           }
         ],
         "ticker": "CL=F",
         "label": "WTI Crude Oil Futures"
       },
       "GC=F": {
-        "latest": 4029.3,
-        "latest_date": "2026-06-29",
-        "ret_1d": -1.21,
-        "ret_1w": -3.65,
-        "ret_1m": -10.45,
-        "ret_3m": -10.3,
-        "ret_6m": -10.07,
-        "ret_1y": 23.08,
-        "ret_ytd": -6.61,
+        "latest": 3996.5,
+        "latest_date": "2026-07-01",
+        "ret_1d": -0.66,
+        "ret_1w": 0.16,
+        "ret_1m": -10.7,
+        "ret_3m": -14.01,
+        "ret_6m": -7.6,
+        "ret_1y": 19.77,
+        "ret_ytd": -7.37,
         "history": [
-          {
-            "date": "2025-06-30",
-            "value": 3294.4
-          },
-          {
-            "date": "2025-07-01",
-            "value": 3336.7
-          },
           {
             "date": "2025-07-02",
             "value": 3348.0
@@ -73402,31 +72272,31 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-29",
-            "value": 4029.3
+            "value": 4022.3
+          },
+          {
+            "date": "2026-06-30",
+            "value": 4022.9
+          },
+          {
+            "date": "2026-07-01",
+            "value": 3996.5
           }
         ],
         "ticker": "GC=F",
         "label": "Gold Futures"
       },
       "HG=F": {
-        "latest": 6.18,
-        "latest_date": "2026-06-29",
-        "ret_1d": 0.55,
-        "ret_1w": -2.86,
-        "ret_1m": -3.46,
-        "ret_3m": 12.95,
-        "ret_6m": 12.3,
-        "ret_1y": 21.83,
-        "ret_ytd": 9.49,
+        "latest": 6.13,
+        "latest_date": "2026-07-01",
+        "ret_1d": -1.03,
+        "ret_1w": 3.12,
+        "ret_1m": -6.06,
+        "ret_3m": 9.68,
+        "ret_6m": 11.62,
+        "ret_1y": 21.4,
+        "ret_ytd": 8.66,
         "history": [
-          {
-            "date": "2025-06-30",
-            "value": 5.03
-          },
-          {
-            "date": "2025-07-01",
-            "value": 5.05
-          },
           {
             "date": "2025-07-02",
             "value": 5.15
@@ -74425,31 +73295,31 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-29",
-            "value": 6.18
+            "value": 6.1
+          },
+          {
+            "date": "2026-06-30",
+            "value": 6.19
+          },
+          {
+            "date": "2026-07-01",
+            "value": 6.13
           }
         ],
         "ticker": "HG=F",
         "label": "Copper Futures"
       },
       "BTC-USD": {
-        "latest": 60321.45,
-        "latest_date": "2026-06-29",
-        "ret_1d": 1.33,
-        "ret_1w": -1.1,
-        "ret_1m": -4.39,
-        "ret_3m": -22.03,
-        "ret_6m": -6.65,
-        "ret_1y": -45.45,
-        "ret_ytd": -32.02,
+        "latest": 58810.5,
+        "latest_date": "2026-07-01",
+        "ret_1d": 0.43,
+        "ret_1w": -2.01,
+        "ret_1m": -4.29,
+        "ret_3m": -22.39,
+        "ret_6m": -13.46,
+        "ret_1y": -45.39,
+        "ret_ytd": -33.72,
         "history": [
-          {
-            "date": "2025-10-21",
-            "value": 108476.89
-          },
-          {
-            "date": "2025-10-22",
-            "value": 107688.59
-          },
           {
             "date": "2025-10-23",
             "value": 110069.73
@@ -75448,7 +74318,15 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-29",
-            "value": 60321.45
+            "value": 60138.38
+          },
+          {
+            "date": "2026-06-30",
+            "value": 58558.86
+          },
+          {
+            "date": "2026-07-01",
+            "value": 58810.5
           }
         ],
         "ticker": "BTC-USD",
@@ -80235,7 +79113,7 @@ window.MACRO_DATA = {
     ]
   },
   "fred_history": {
-    "updated_at": "2026-06-29T20:15:34.267161+00:00",
+    "updated_at": "2026-07-01T09:45:44.309226+00:00",
     "fred_snapshot": {
       "CPIAUCSL": {
         "label": "CPI All Items",
@@ -87676,23 +86554,19 @@ window.MACRO_DATA = {
       "JTSJOL": {
         "label": "Job Openings (JOLTS)",
         "latest": {
-          "date": "2026-04-01",
-          "value": 7618.0
+          "date": "2026-05-01",
+          "value": 7594.0
         },
         "previous": {
-          "date": "2026-03-01",
-          "value": 6887.0
+          "date": "2026-04-01",
+          "value": 7585.0
         },
-        "change_pct": 10.614,
+        "change_pct": 0.119,
         "frequency": "monthly",
-        "mom_pct": 10.614,
-        "yoy_pct": 7.33,
-        "mo3_annualized_pct": 22.58,
+        "mom_pct": 0.119,
+        "yoy_pct": 3.89,
+        "mo3_annualized_pct": 44.86,
         "history": [
-          {
-            "date": "2016-05-01",
-            "value": 5777.0
-          },
           {
             "date": "2016-06-01",
             "value": 5742.0
@@ -88167,7 +87041,11 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-04-01",
-            "value": 7618.0
+            "value": 7585.0
+          },
+          {
+            "date": "2026-05-01",
+            "value": 7594.0
           }
         ]
       },
@@ -110870,33 +109748,17 @@ window.MACRO_DATA = {
       "DFF": {
         "label": "Fed Funds Rate",
         "latest": {
-          "date": "2026-06-25",
+          "date": "2026-06-29",
           "value": 3.63
         },
         "previous": {
-          "date": "2026-06-24",
+          "date": "2026-06-28",
           "value": 3.63
         },
         "change_pct": 0.0,
         "frequency": "daily",
         "mom_pct": 0.0,
         "history": [
-          {
-            "date": "2026-02-26",
-            "value": 3.64
-          },
-          {
-            "date": "2026-02-27",
-            "value": 3.64
-          },
-          {
-            "date": "2026-02-28",
-            "value": 3.64
-          },
-          {
-            "date": "2026-03-01",
-            "value": 3.64
-          },
           {
             "date": "2026-03-02",
             "value": 3.64
@@ -111360,31 +110222,39 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-25",
             "value": 3.63
+          },
+          {
+            "date": "2026-06-26",
+            "value": 3.63
+          },
+          {
+            "date": "2026-06-27",
+            "value": 3.63
+          },
+          {
+            "date": "2026-06-28",
+            "value": 3.63
+          },
+          {
+            "date": "2026-06-29",
+            "value": 3.63
           }
         ]
       },
       "DGS10": {
         "label": "10Y Treasury Yield",
         "latest": {
-          "date": "2026-06-25",
-          "value": 4.4
+          "date": "2026-06-29",
+          "value": 4.38
         },
         "previous": {
-          "date": "2026-06-24",
-          "value": 4.41
+          "date": "2026-06-26",
+          "value": 4.38
         },
-        "change_pct": -0.227,
+        "change_pct": 0.0,
         "frequency": "daily",
-        "mom_pct": -0.227,
+        "mom_pct": 0.0,
         "history": [
-          {
-            "date": "2026-01-09",
-            "value": 4.18
-          },
-          {
-            "date": "2026-01-12",
-            "value": 4.19
-          },
           {
             "date": "2026-01-13",
             "value": 4.18
@@ -111840,31 +110710,31 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-25",
             "value": 4.4
+          },
+          {
+            "date": "2026-06-26",
+            "value": 4.38
+          },
+          {
+            "date": "2026-06-29",
+            "value": 4.38
           }
         ]
       },
       "DGS2": {
         "label": "2Y Treasury Yield",
         "latest": {
-          "date": "2026-06-25",
-          "value": 4.09
+          "date": "2026-06-29",
+          "value": 4.1
         },
         "previous": {
-          "date": "2026-06-24",
-          "value": 4.11
+          "date": "2026-06-26",
+          "value": 4.07
         },
-        "change_pct": -0.487,
+        "change_pct": 0.737,
         "frequency": "daily",
-        "mom_pct": -0.487,
+        "mom_pct": 0.737,
         "history": [
-          {
-            "date": "2026-01-09",
-            "value": 3.54
-          },
-          {
-            "date": "2026-01-12",
-            "value": 3.54
-          },
           {
             "date": "2026-01-13",
             "value": 3.53
@@ -112320,31 +111190,31 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-25",
             "value": 4.09
+          },
+          {
+            "date": "2026-06-26",
+            "value": 4.07
+          },
+          {
+            "date": "2026-06-29",
+            "value": 4.1
           }
         ]
       },
       "DGS3MO": {
         "label": "3M Treasury Yield",
         "latest": {
-          "date": "2026-06-25",
-          "value": 3.84
+          "date": "2026-06-29",
+          "value": 3.87
         },
         "previous": {
-          "date": "2026-06-24",
-          "value": 3.85
+          "date": "2026-06-26",
+          "value": 3.83
         },
-        "change_pct": -0.26,
+        "change_pct": 1.044,
         "frequency": "daily",
-        "mom_pct": -0.26,
+        "mom_pct": 1.044,
         "history": [
-          {
-            "date": "2026-01-09",
-            "value": 3.62
-          },
-          {
-            "date": "2026-01-12",
-            "value": 3.67
-          },
           {
             "date": "2026-01-13",
             "value": 3.67
@@ -112800,31 +111670,31 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-25",
             "value": 3.84
+          },
+          {
+            "date": "2026-06-26",
+            "value": 3.83
+          },
+          {
+            "date": "2026-06-29",
+            "value": 3.87
           }
         ]
       },
       "DGS6MO": {
         "label": "6M Treasury Yield",
         "latest": {
-          "date": "2026-06-25",
-          "value": 3.95
+          "date": "2026-06-29",
+          "value": 4.0
         },
         "previous": {
-          "date": "2026-06-24",
-          "value": 3.95
+          "date": "2026-06-26",
+          "value": 3.94
         },
-        "change_pct": 0.0,
+        "change_pct": 1.523,
         "frequency": "daily",
-        "mom_pct": 0.0,
+        "mom_pct": 1.523,
         "history": [
-          {
-            "date": "2026-01-09",
-            "value": 3.57
-          },
-          {
-            "date": "2026-01-12",
-            "value": 3.58
-          },
           {
             "date": "2026-01-13",
             "value": 3.59
@@ -113280,31 +112150,31 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-25",
             "value": 3.95
+          },
+          {
+            "date": "2026-06-26",
+            "value": 3.94
+          },
+          {
+            "date": "2026-06-29",
+            "value": 4.0
           }
         ]
       },
       "T10Y2Y": {
         "label": "10Y-2Y Spread",
         "latest": {
-          "date": "2026-06-26",
-          "value": 0.31
+          "date": "2026-06-30",
+          "value": 0.3
         },
         "previous": {
-          "date": "2026-06-25",
-          "value": 0.31
+          "date": "2026-06-29",
+          "value": 0.28
         },
-        "change_pct": 0.0,
+        "change_pct": 7.143,
         "frequency": "daily",
-        "mom_pct": 0.0,
+        "mom_pct": 7.143,
         "history": [
-          {
-            "date": "2026-01-12",
-            "value": 0.65
-          },
-          {
-            "date": "2026-01-13",
-            "value": 0.65
-          },
           {
             "date": "2026-01-14",
             "value": 0.64
@@ -113760,47 +112630,31 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-26",
             "value": 0.31
+          },
+          {
+            "date": "2026-06-29",
+            "value": 0.28
+          },
+          {
+            "date": "2026-06-30",
+            "value": 0.3
           }
         ]
       },
       "DTWEXBGS": {
         "label": "USD Index (Broad)",
         "latest": {
-          "date": "2026-06-18",
-          "value": 120.3958
+          "date": "2026-06-26",
+          "value": 120.8866
         },
         "previous": {
-          "date": "2026-06-17",
-          "value": 119.3871
+          "date": "2026-06-25",
+          "value": 121.0559
         },
-        "change_pct": 0.845,
+        "change_pct": -0.14,
         "frequency": "daily",
-        "mom_pct": 0.845,
+        "mom_pct": -0.14,
         "history": [
-          {
-            "date": "2026-01-02",
-            "value": 119.6059
-          },
-          {
-            "date": "2026-01-05",
-            "value": 119.6192
-          },
-          {
-            "date": "2026-01-06",
-            "value": 119.7807
-          },
-          {
-            "date": "2026-01-07",
-            "value": 119.8719
-          },
-          {
-            "date": "2026-01-08",
-            "value": 120.0904
-          },
-          {
-            "date": "2026-01-09",
-            "value": 120.2215
-          },
           {
             "date": "2026-01-12",
             "value": 119.9958
@@ -114244,27 +113098,43 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-18",
             "value": 120.3958
+          },
+          {
+            "date": "2026-06-22",
+            "value": 120.5463
+          },
+          {
+            "date": "2026-06-23",
+            "value": 121.0552
+          },
+          {
+            "date": "2026-06-24",
+            "value": 121.412
+          },
+          {
+            "date": "2026-06-25",
+            "value": 121.0559
+          },
+          {
+            "date": "2026-06-26",
+            "value": 120.8866
           }
         ]
       },
       "VIXCLS": {
         "label": "VIX (Volatility Index)",
         "latest": {
+          "date": "2026-06-29",
+          "value": 17.65
+        },
+        "previous": {
           "date": "2026-06-26",
           "value": 18.41
         },
-        "previous": {
-          "date": "2026-06-25",
-          "value": 18.89
-        },
-        "change_pct": -2.541,
+        "change_pct": -4.128,
         "frequency": "daily",
-        "mom_pct": -2.541,
+        "mom_pct": -4.128,
         "history": [
-          {
-            "date": "2026-01-12",
-            "value": 15.12
-          },
           {
             "date": "2026-01-13",
             "value": 15.98
@@ -114736,6 +113606,10 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-26",
             "value": 18.41
+          },
+          {
+            "date": "2026-06-29",
+            "value": 17.65
           }
         ]
       },
@@ -115218,21 +114092,17 @@ window.MACRO_DATA = {
       "BAMLH0A0HYM2": {
         "label": "High-Yield Credit Spread (HY OAS)",
         "latest": {
+          "date": "2026-06-29",
+          "value": 2.8
+        },
+        "previous": {
           "date": "2026-06-26",
           "value": 2.83
         },
-        "previous": {
-          "date": "2026-06-25",
-          "value": 2.78
-        },
-        "change_pct": 1.799,
+        "change_pct": -1.06,
         "frequency": "daily",
-        "mom_pct": 1.799,
+        "mom_pct": -1.06,
         "history": [
-          {
-            "date": "2026-01-15",
-            "value": 2.71
-          },
           {
             "date": "2026-01-16",
             "value": 2.65
@@ -115708,27 +114578,27 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-26",
             "value": 2.83
+          },
+          {
+            "date": "2026-06-29",
+            "value": 2.8
           }
         ]
       },
       "BAMLC0A0CM": {
         "label": "Investment-Grade Credit Spread (IG OAS)",
         "latest": {
+          "date": "2026-06-29",
+          "value": 0.76
+        },
+        "previous": {
           "date": "2026-06-26",
           "value": 0.77
         },
-        "previous": {
-          "date": "2026-06-25",
-          "value": 0.76
-        },
-        "change_pct": 1.316,
+        "change_pct": -1.299,
         "frequency": "daily",
-        "mom_pct": 1.316,
+        "mom_pct": -1.299,
         "history": [
-          {
-            "date": "2026-01-15",
-            "value": 0.76
-          },
           {
             "date": "2026-01-16",
             "value": 0.75
@@ -116204,31 +115074,27 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-26",
             "value": 0.77
+          },
+          {
+            "date": "2026-06-29",
+            "value": 0.76
           }
         ]
       },
       "T10YIE": {
         "label": "10Y Inflation Breakeven",
         "latest": {
-          "date": "2026-06-26",
-          "value": 2.2
+          "date": "2026-06-30",
+          "value": 2.24
         },
         "previous": {
-          "date": "2026-06-25",
-          "value": 2.21
+          "date": "2026-06-29",
+          "value": 2.22
         },
-        "change_pct": -0.452,
+        "change_pct": 0.901,
         "frequency": "daily",
-        "mom_pct": -0.452,
+        "mom_pct": 0.901,
         "history": [
-          {
-            "date": "2026-01-12",
-            "value": 2.29
-          },
-          {
-            "date": "2026-01-13",
-            "value": 2.3
-          },
           {
             "date": "2026-01-14",
             "value": 2.29
@@ -116684,6 +115550,14 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-26",
             "value": 2.2
+          },
+          {
+            "date": "2026-06-29",
+            "value": 2.22
+          },
+          {
+            "date": "2026-06-30",
+            "value": 2.24
           }
         ]
       },
