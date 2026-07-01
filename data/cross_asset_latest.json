@@ -1,17 +1,17 @@
 {
   "schema_version": "1.1",
-  "fetched_at": "2026-07-01T10:02:32.876906+00:00",
+  "fetched_at": "2026-07-01T18:45:48.054163+00:00",
   "assets": {
     "^VIX": {
-      "latest": 16.9,
+      "latest": 16.45,
       "latest_date": "2026-07-01",
-      "ret_1d": 2.74,
-      "ret_1w": -9.29,
-      "ret_1m": 5.3,
-      "ret_3m": -31.13,
-      "ret_6m": 17.93,
-      "ret_1y": 0.42,
-      "ret_ytd": 16.47,
+      "ret_1d": 0.0,
+      "ret_1w": -11.7,
+      "ret_1m": 2.49,
+      "ret_3m": -32.97,
+      "ret_6m": 14.79,
+      "ret_1y": -2.26,
+      "ret_ytd": 13.37,
       "history": [
         {
           "date": "2025-07-02",
@@ -1019,27 +1019,23 @@
         },
         {
           "date": "2026-07-01",
-          "value": 16.9
+          "value": 16.45
         }
       ],
       "ticker": "^VIX",
       "label": "VIX Volatility Index"
     },
     "^TNX": {
-      "latest": 4.37,
-      "latest_date": "2026-06-26",
-      "ret_1d": -0.46,
-      "ret_1w": -1.77,
-      "ret_1m": -2.43,
-      "ret_3m": -1.0,
-      "ret_6m": 4.87,
-      "ret_1y": 1.84,
-      "ret_ytd": 4.42,
+      "latest": 4.47,
+      "latest_date": "2026-07-01",
+      "ret_1d": 2.31,
+      "ret_1w": -0.8,
+      "ret_1m": 0.4,
+      "ret_3m": 0.74,
+      "ret_6m": 8.15,
+      "ret_1y": 5.17,
+      "ret_ytd": 6.83,
       "history": [
-        {
-          "date": "2025-06-26",
-          "value": 4.25
-        },
         {
           "date": "2025-06-27",
           "value": 4.28
@@ -2043,21 +2039,25 @@
         {
           "date": "2026-06-26",
           "value": 4.37
+        },
+        {
+          "date": "2026-07-01",
+          "value": 4.47
         }
       ],
       "ticker": "^TNX",
       "label": "10Y Treasury Yield (^TNX)"
     },
     "DX-Y.NYB": {
-      "latest": 101.43,
+      "latest": 101.41,
       "latest_date": "2026-07-01",
-      "ret_1d": 0.24,
-      "ret_1w": -0.18,
-      "ret_1m": 2.25,
-      "ret_3m": 1.47,
-      "ret_6m": 3.46,
-      "ret_1y": 4.69,
-      "ret_ytd": 3.06,
+      "ret_1d": 0.22,
+      "ret_1w": -0.2,
+      "ret_1m": 2.23,
+      "ret_3m": 1.45,
+      "ret_6m": 3.44,
+      "ret_1y": 4.67,
+      "ret_ytd": 3.04,
       "history": [
         {
           "date": "2025-07-01",
@@ -3065,22 +3065,22 @@
         },
         {
           "date": "2026-07-01",
-          "value": 101.43
+          "value": 101.41
         }
       ],
       "ticker": "DX-Y.NYB",
       "label": "DXY US Dollar Index"
     },
     "CL=F": {
-      "latest": 68.71,
+      "latest": 68.55,
       "latest_date": "2026-07-01",
-      "ret_1d": -1.14,
-      "ret_1w": -2.32,
-      "ret_1m": -25.44,
-      "ret_3m": -32.23,
-      "ret_6m": 18.3,
-      "ret_1y": 4.98,
-      "ret_ytd": 19.87,
+      "ret_1d": -1.37,
+      "ret_1w": -2.54,
+      "ret_1m": -25.62,
+      "ret_3m": -32.38,
+      "ret_6m": 18.03,
+      "ret_1y": 4.74,
+      "ret_ytd": 19.59,
       "history": [
         {
           "date": "2025-07-02",
@@ -4088,22 +4088,22 @@
         },
         {
           "date": "2026-07-01",
-          "value": 68.71
+          "value": 68.55
         }
       ],
       "ticker": "CL=F",
       "label": "WTI Crude Oil Futures"
     },
     "GC=F": {
-      "latest": 3996.5,
+      "latest": 4078.7,
       "latest_date": "2026-07-01",
-      "ret_1d": -0.66,
-      "ret_1w": 0.16,
-      "ret_1m": -10.7,
-      "ret_3m": -14.01,
-      "ret_6m": -7.6,
-      "ret_1y": 19.77,
-      "ret_ytd": -7.37,
+      "ret_1d": 1.39,
+      "ret_1w": 2.22,
+      "ret_1m": -8.86,
+      "ret_3m": -12.24,
+      "ret_6m": -5.7,
+      "ret_1y": 22.24,
+      "ret_ytd": -5.46,
       "history": [
         {
           "date": "2025-07-02",
@@ -5111,22 +5111,22 @@
         },
         {
           "date": "2026-07-01",
-          "value": 3996.5
+          "value": 4078.7
         }
       ],
       "ticker": "GC=F",
       "label": "Gold Futures"
     },
     "HG=F": {
-      "latest": 6.13,
+      "latest": 6.17,
       "latest_date": "2026-07-01",
-      "ret_1d": -1.03,
-      "ret_1w": 3.12,
-      "ret_1m": -6.06,
-      "ret_3m": 9.68,
-      "ret_6m": 11.62,
-      "ret_1y": 21.4,
-      "ret_ytd": 8.66,
+      "ret_1d": -0.35,
+      "ret_1w": 3.84,
+      "ret_1m": -5.41,
+      "ret_3m": 10.44,
+      "ret_6m": 12.39,
+      "ret_1y": 22.25,
+      "ret_ytd": 9.41,
       "history": [
         {
           "date": "2025-07-02",
@@ -6134,22 +6134,22 @@
         },
         {
           "date": "2026-07-01",
-          "value": 6.13
+          "value": 6.17
         }
       ],
       "ticker": "HG=F",
       "label": "Copper Futures"
     },
     "BTC-USD": {
-      "latest": 58810.5,
+      "latest": 60136.69,
       "latest_date": "2026-07-01",
-      "ret_1d": 0.43,
-      "ret_1w": -2.01,
-      "ret_1m": -4.29,
-      "ret_3m": -22.39,
-      "ret_6m": -13.46,
-      "ret_1y": -45.39,
-      "ret_ytd": -33.72,
+      "ret_1d": 2.69,
+      "ret_1w": 0.2,
+      "ret_1m": -2.14,
+      "ret_3m": -20.64,
+      "ret_6m": -11.51,
+      "ret_1y": -44.16,
+      "ret_ytd": -32.23,
       "history": [
         {
           "date": "2025-10-23",
@@ -7157,7 +7157,7 @@
         },
         {
           "date": "2026-07-01",
-          "value": 58810.5
+          "value": 60136.69
         }
       ],
       "ticker": "BTC-USD",

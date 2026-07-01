@@ -1,24 +1,29 @@
 {
-  "date": "2026-06-30",
-  "collected_at": "2026-07-01T18:43:25.833688+00:00",
+  "date": "2026-07-01",
+  "collected_at": "2026-07-01T18:45:17.802788+00:00",
   "release_summary": {
-    "signal_release_count": 11,
-    "noise_release_count": 2,
-    "surprise_count": 3,
+    "signal_release_count": 19,
+    "noise_release_count": 9,
+    "surprise_count": 4,
     "groups_present": [
-      "confidence",
-      "home_prices",
-      "jolts",
+      "adp",
+      "challenger",
+      "construction",
+      "fed",
+      "ism_manufacturing",
+      "mortgage",
       "other",
-      "regional_fed"
+      "spglobal_pmi",
+      "trade"
     ],
     "surprised_groups": [
-      "confidence",
-      "home_prices",
-      "jolts"
+      "adp",
+      "ism_manufacturing",
+      "other",
+      "spglobal_pmi"
     ],
     "day_surprise_score": {
-      "growth_score": 0.54,
+      "growth_score": -4.86,
       "inflation_score": 0,
       "n_growth": 3,
       "n_inflation": 0
@@ -125,314 +130,647 @@
   "trade_detail": {},
   "releases": [
     {
-      "name": "Redbook (YoY)",
-      "time": "2026/06/30 08:55:00",
+      "name": "Challenger Job Cuts  (Jun)",
+      "time": "2026/07/01 05:30:00",
       "importance": "bull1",
-      "actual": "10.5%",
+      "actual": "45.849K",
       "forecast": null,
-      "previous": "10.0%",
-      "event_url": "https://www.investing.com/economic-calendar/redbook-911",
+      "previous": "97.006K",
+      "event_url": "https://www.investing.com/economic-calendar/challenger-job-cuts-888",
       "source": "investing.com",
       "parsed": {
-        "actual": 10.5,
+        "actual": 45.849,
         "forecast": null,
-        "previous": 10.0
+        "previous": 97.006
       },
       "surprise": null,
       "vs_previous": {
-        "delta": 0.5,
-        "direction": "up"
-      },
-      "group": "fed_plumbing",
-      "is_noise": true
-    },
-    {
-      "name": "House Price Index (MoM)  (Apr)",
-      "time": "2026/06/30 09:00:00",
-      "importance": "bull1",
-      "actual": "-0.1%",
-      "forecast": "0.2%",
-      "previous": "0.2%",
-      "event_url": "https://www.investing.com/economic-calendar/house-price-index-327",
-      "source": "investing.com",
-      "parsed": {
-        "actual": -0.1,
-        "forecast": 0.2,
-        "previous": 0.2
-      },
-      "surprise": {
-        "deviation": -0.3,
-        "z_score": -30.0,
-        "label": "shock-below"
-      },
-      "vs_previous": {
-        "delta": -0.3,
+        "delta": -51.157,
         "direction": "down"
       },
-      "group": "home_prices",
+      "group": "challenger",
       "is_noise": false
     },
     {
-      "name": "House Price Index (YoY)  (Apr)",
-      "time": "2026/06/30 09:00:00",
+      "name": "Challenger Job Cuts (YoY)",
+      "time": "2026/07/01 05:30:00",
       "importance": "bull1",
-      "actual": "2.0%",
+      "actual": "-4.5%",
       "forecast": null,
-      "previous": "1.8%",
-      "event_url": "https://www.investing.com/economic-calendar/house-price-index-897",
+      "previous": "3.4%",
+      "event_url": "https://www.investing.com/economic-calendar/challenger-job-cuts-333",
       "source": "investing.com",
       "parsed": {
-        "actual": 2.0,
+        "actual": -4.5,
         "forecast": null,
-        "previous": 1.8
+        "previous": 3.4
       },
       "surprise": null,
       "vs_previous": {
-        "delta": 0.2,
-        "direction": "up"
-      },
-      "group": "home_prices",
-      "is_noise": false
-    },
-    {
-      "name": "House Price Index  (Apr)",
-      "time": "2026/06/30 09:00:00",
-      "importance": "bull1",
-      "actual": "441.4",
-      "forecast": null,
-      "previous": "441.8",
-      "event_url": "https://www.investing.com/economic-calendar/monthly-home-price-index-1287",
-      "source": "investing.com",
-      "parsed": {
-        "actual": 441.4,
-        "forecast": null,
-        "previous": 441.8
-      },
-      "surprise": null,
-      "vs_previous": {
-        "delta": -0.4,
+        "delta": -7.9,
         "direction": "down"
       },
-      "group": "home_prices",
+      "group": "challenger",
       "is_noise": false
     },
     {
-      "name": "S&P/CS HPI Composite - 20 s.a. (MoM)  (Apr)",
-      "time": "2026/06/30 09:00:00",
+      "name": "MBA 30-Year Mortgage Rate",
+      "time": "2026/07/01 07:00:00",
+      "importance": "bull1",
+      "actual": "6.57%",
+      "forecast": null,
+      "previous": "6.59%",
+      "event_url": "https://www.investing.com/economic-calendar/mba-30-year-mortgage-rate-1042",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 6.57,
+        "forecast": null,
+        "previous": 6.59
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.02,
+        "direction": "down"
+      },
+      "group": "mortgage",
+      "is_noise": false
+    },
+    {
+      "name": "MBA Mortgage Applications (WoW)",
+      "time": "2026/07/01 07:00:00",
       "importance": "bull1",
       "actual": "0.0%",
       "forecast": null,
-      "previous": "-0.2%",
-      "event_url": "https://www.investing.com/economic-calendar/s-p-cs-hpi-composite---20-s.a.-1334",
+      "previous": "1.0%",
+      "event_url": "https://www.investing.com/economic-calendar/mba-mortgage-applications-380",
       "source": "investing.com",
       "parsed": {
         "actual": 0.0,
         "forecast": null,
-        "previous": -0.2
+        "previous": 1.0
       },
       "surprise": null,
       "vs_previous": {
-        "delta": 0.2,
-        "direction": "up"
+        "delta": -1.0,
+        "direction": "down"
       },
-      "group": "home_prices",
+      "group": "mortgage",
       "is_noise": false
     },
     {
-      "name": "S&P/CS HPI Composite - 20 n.s.a. (YoY)  (Apr)",
-      "time": "2026/06/30 09:00:00",
-      "importance": "bull2",
-      "actual": "1.1%",
-      "forecast": "0.9%",
-      "previous": "0.9%",
-      "event_url": "https://www.investing.com/economic-calendar/s-p-cs-hpi-composite-20-n.s.a.-329",
-      "source": "investing.com",
-      "parsed": {
-        "actual": 1.1,
-        "forecast": 0.9,
-        "previous": 0.9
-      },
-      "surprise": {
-        "deviation": 0.2,
-        "z_score": 4.44,
-        "label": "shock-above"
-      },
-      "vs_previous": {
-        "delta": 0.2,
-        "direction": "up"
-      },
-      "group": "home_prices",
-      "is_noise": false
-    },
-    {
-      "name": "S&P/CS HPI Composite - 20 n.s.a. (MoM)  (Apr)",
-      "time": "2026/06/30 09:00:00",
-      "importance": "bull2",
-      "actual": "1.0%",
+      "name": "MBA Purchase Index",
+      "time": "2026/07/01 07:00:00",
+      "importance": "bull1",
+      "actual": "170.6",
       "forecast": null,
-      "previous": "1.1%",
-      "event_url": "https://www.investing.com/economic-calendar/s-p-cs-hpi-composite-20-n.s.a.-913",
+      "previous": "169.7",
+      "event_url": "https://www.investing.com/economic-calendar/mba-purchase-index-1494",
       "source": "investing.com",
       "parsed": {
-        "actual": 1.0,
+        "actual": 170.6,
         "forecast": null,
-        "previous": 1.1
+        "previous": 169.7
       },
       "surprise": null,
       "vs_previous": {
-        "delta": -0.1,
-        "direction": "down"
+        "delta": 0.9,
+        "direction": "up"
       },
-      "group": "home_prices",
+      "group": "mortgage",
       "is_noise": false
     },
     {
-      "name": "Chicago PMI  (Jun)",
-      "time": "2026/06/30 09:45:00",
-      "importance": "bull3",
-      "actual": "56.7",
-      "forecast": "55.7",
-      "previous": "62.7",
-      "event_url": "https://www.investing.com/economic-calendar/chicago-pmi-38",
+      "name": "Mortgage Market Index",
+      "time": "2026/07/01 07:00:00",
+      "importance": "bull1",
+      "actual": "272.2",
+      "forecast": null,
+      "previous": "272.1",
+      "event_url": "https://www.investing.com/economic-calendar/mortgage-market-index-1427",
       "source": "investing.com",
       "parsed": {
-        "actual": 56.7,
-        "forecast": 55.7,
-        "previous": 62.7
+        "actual": 272.2,
+        "forecast": null,
+        "previous": 272.1
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.1,
+        "direction": "up"
+      },
+      "group": "mortgage",
+      "is_noise": false
+    },
+    {
+      "name": "Mortgage Refinance Index",
+      "time": "2026/07/01 07:00:00",
+      "importance": "bull1",
+      "actual": "828.7",
+      "forecast": null,
+      "previous": "834.2",
+      "event_url": "https://www.investing.com/economic-calendar/mortgage-refinance-index-1428",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 828.7,
+        "forecast": null,
+        "previous": 834.2
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -5.5,
+        "direction": "down"
+      },
+      "group": "mortgage",
+      "is_noise": false
+    },
+    {
+      "name": "FOMC Member Daly Speaks",
+      "time": "2026/07/01 07:45:00",
+      "importance": "bull2",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "event_url": "https://www.investing.com/economic-calendar/fomc-member-daly-speaks-1802",
+      "source": "investing.com",
+      "parsed": {
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
+    },
+    {
+      "name": "ADP Nonfarm Employment Change  (Jun)",
+      "time": "2026/07/01 08:15:00",
+      "importance": "bull3",
+      "actual": "98K",
+      "forecast": "118K",
+      "previous": "122K",
+      "event_url": "https://www.investing.com/economic-calendar/adp-nonfarm-employment-change-1",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 98.0,
+        "forecast": 118.0,
+        "previous": 122.0
       },
       "surprise": {
-        "deviation": 1.0,
-        "z_score": 0.36,
-        "label": "in-line"
+        "deviation": -20.0,
+        "z_score": -3.39,
+        "label": "shock-below"
       },
       "vs_previous": {
-        "delta": -6.0,
+        "delta": -24.0,
         "direction": "down"
       },
-      "group": "regional_fed",
+      "group": "adp",
       "is_noise": false
     },
     {
-      "name": "CB Consumer Confidence  (Jun)",
-      "time": "2026/06/30 10:00:00",
-      "importance": "bull3",
-      "actual": "91.2",
-      "forecast": "94.4",
-      "previous": "90.6",
-      "event_url": "https://www.investing.com/economic-calendar/cb-consumer-confidence-48",
+      "name": "Fed Governor Warsh Speaks",
+      "time": "2026/07/01 09:00:00",
+      "importance": "bull2",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "event_url": "https://www.investing.com/economic-calendar/fed-governor-warsh-speaks-105",
       "source": "investing.com",
       "parsed": {
-        "actual": 91.2,
-        "forecast": 94.4,
-        "previous": 90.6
+        "actual": null,
+        "forecast": null,
+        "previous": null
+      },
+      "surprise": null,
+      "vs_previous": null,
+      "group": "fed",
+      "is_noise": false
+    },
+    {
+      "name": "S&P Global Manufacturing PMI  (Jun)",
+      "time": "2026/07/01 09:45:00",
+      "importance": "bull3",
+      "actual": "53.9",
+      "forecast": "55.7",
+      "previous": "55.1",
+      "event_url": "https://www.investing.com/economic-calendar/manufacturing-pmi-829",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 53.9,
+        "forecast": 55.7,
+        "previous": 55.1
       },
       "surprise": {
-        "deviation": -3.2,
-        "z_score": -0.68,
+        "deviation": -1.8,
+        "z_score": -0.65,
         "label": "below-forecast"
       },
       "vs_previous": {
-        "delta": 0.6,
-        "direction": "up"
+        "delta": -1.2,
+        "direction": "down"
       },
-      "group": "confidence",
+      "group": "spglobal_pmi",
       "is_noise": false
     },
     {
-      "name": "JOLTS Job Openings  (May)",
-      "time": "2026/06/30 10:00:00",
-      "importance": "bull3",
-      "actual": "7.594M",
-      "forecast": "7.280M",
-      "previous": "7.585M",
-      "event_url": "https://www.investing.com/economic-calendar/jolts-job-openings-1057",
+      "name": "Construction Spending (MoM)  (May)",
+      "time": "2026/07/01 10:00:00",
+      "importance": "bull2",
+      "actual": "0.1%",
+      "forecast": "0.1%",
+      "previous": "0.3%",
+      "event_url": "https://www.investing.com/economic-calendar/construction-spending-45",
       "source": "investing.com",
       "parsed": {
-        "actual": 7.594,
-        "forecast": 7.28,
-        "previous": 7.585
+        "actual": 0.1,
+        "forecast": 0.1,
+        "previous": 0.3
       },
       "surprise": {
-        "deviation": 0.314,
-        "z_score": 0.86,
-        "label": "above-forecast"
+        "deviation": 0.0,
+        "z_score": 0.0,
+        "label": "in-line"
       },
       "vs_previous": {
-        "delta": 0.009,
-        "direction": "up"
+        "delta": -0.2,
+        "direction": "down"
       },
-      "group": "jolts",
+      "group": "construction",
       "is_noise": false
     },
     {
-      "name": "Dallas Fed Services Revenues  (Jun)",
-      "time": "2026/06/30 10:30:00",
-      "importance": "bull1",
-      "actual": "9.8",
+      "name": "ISM Manufacturing Employment  (Jun)",
+      "time": "2026/07/01 10:00:00",
+      "importance": "bull2",
+      "actual": "49.7",
       "forecast": null,
-      "previous": "5.0",
-      "event_url": "https://www.investing.com/economic-calendar/dallas-fed-services-revenues-1444",
+      "previous": "48.6",
+      "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-employment-1046",
       "source": "investing.com",
       "parsed": {
-        "actual": 9.8,
+        "actual": 49.7,
         "forecast": null,
-        "previous": 5.0
+        "previous": 48.6
       },
       "surprise": null,
       "vs_previous": {
-        "delta": 4.8,
+        "delta": 1.1,
         "direction": "up"
       },
-      "group": "regional_fed",
+      "group": "ism_manufacturing",
       "is_noise": false
     },
     {
-      "name": "Texas Services Sector Outlook  (Jun)",
-      "time": "2026/06/30 10:30:00",
+      "name": "ISM Manufacturing New Orders Index  (Jun)",
+      "time": "2026/07/01 10:00:00",
       "importance": "bull1",
-      "actual": "2.9",
+      "actual": "56.0",
       "forecast": null,
-      "previous": "-7.7",
-      "event_url": "https://www.investing.com/economic-calendar/texas-services-sector-outlook-1519",
+      "previous": "56.8",
+      "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-new-orders-index-1483",
       "source": "investing.com",
       "parsed": {
-        "actual": 2.9,
+        "actual": 56.0,
         "forecast": null,
-        "previous": -7.7
+        "previous": 56.8
       },
       "surprise": null,
       "vs_previous": {
-        "delta": 10.6,
+        "delta": -0.8,
+        "direction": "down"
+      },
+      "group": "ism_manufacturing",
+      "is_noise": false
+    },
+    {
+      "name": "ISM Manufacturing PMI  (Jun)",
+      "time": "2026/07/01 10:00:00",
+      "importance": "bull3",
+      "actual": "53.3",
+      "forecast": "53.8",
+      "previous": "54.0",
+      "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-pmi-173",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 53.3,
+        "forecast": 53.8,
+        "previous": 54.0
+      },
+      "surprise": {
+        "deviation": -0.5,
+        "z_score": -0.19,
+        "label": "in-line"
+      },
+      "vs_previous": {
+        "delta": -0.7,
+        "direction": "down"
+      },
+      "group": "ism_manufacturing",
+      "is_noise": false
+    },
+    {
+      "name": "ISM Manufacturing Prices  (Jun)",
+      "time": "2026/07/01 10:00:00",
+      "importance": "bull3",
+      "actual": "73.0",
+      "forecast": "77.7",
+      "previous": "82.1",
+      "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-prices-174",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 73.0,
+        "forecast": 77.7,
+        "previous": 82.1
+      },
+      "surprise": {
+        "deviation": -4.7,
+        "z_score": -1.21,
+        "label": "below-forecast"
+      },
+      "vs_previous": {
+        "delta": -9.1,
+        "direction": "down"
+      },
+      "group": "ism_manufacturing",
+      "is_noise": false
+    },
+    {
+      "name": "Crude Oil Inventories",
+      "time": "2026/07/01 10:30:00",
+      "importance": "bull3",
+      "actual": "-3.775M",
+      "forecast": "-2.900M",
+      "previous": "-6.088M",
+      "event_url": "https://www.investing.com/economic-calendar/eia-crude-oil-inventories-75",
+      "source": "investing.com",
+      "parsed": {
+        "actual": -3.775,
+        "forecast": -2.9,
+        "previous": -6.088
+      },
+      "surprise": {
+        "deviation": -0.875,
+        "z_score": -6.03,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": 2.313,
         "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
+    },
+    {
+      "name": "EIA Refinery Crude Runs  (WoW)",
+      "time": "2026/07/01 10:30:00",
+      "importance": "bull1",
+      "actual": "0.085M",
+      "forecast": null,
+      "previous": "-0.081M",
+      "event_url": "https://www.investing.com/economic-calendar/eia-refinery-crude-runs-1960",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.085,
+        "forecast": null,
+        "previous": -0.081
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.166,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
+    },
+    {
+      "name": "Crude Oil Imports",
+      "time": "2026/07/01 10:30:00",
+      "importance": "bull1",
+      "actual": "0.370M",
+      "forecast": null,
+      "previous": "0.094M",
+      "event_url": "https://www.investing.com/economic-calendar/eia-weekly-crude-imports-1658",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.37,
+        "forecast": null,
+        "previous": 0.094
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 0.276,
+        "direction": "up"
+      },
+      "group": "trade",
+      "is_noise": false
+    },
+    {
+      "name": "Cushing Crude Oil Inventories",
+      "time": "2026/07/01 10:30:00",
+      "importance": "bull2",
+      "actual": "0.709M",
+      "forecast": null,
+      "previous": "-1.077M",
+      "event_url": "https://www.investing.com/economic-calendar/eia-weekly-cushing-oil-inventories-1657",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.709,
+        "forecast": null,
+        "previous": -1.077
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 1.786,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
+    },
+    {
+      "name": "Distillate Fuel Production",
+      "time": "2026/07/01 10:30:00",
+      "importance": "bull1",
+      "actual": "-0.042M",
+      "forecast": null,
+      "previous": "0.055M",
+      "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillate-fuel-production-1660",
+      "source": "investing.com",
+      "parsed": {
+        "actual": -0.042,
+        "forecast": null,
+        "previous": 0.055
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -0.097,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
+    },
+    {
+      "name": "EIA Weekly Distillates Stocks",
+      "time": "2026/07/01 10:30:00",
+      "importance": "bull1",
+      "actual": "2.483M",
+      "forecast": "-0.700M",
+      "previous": "3.064M",
+      "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillates-stocks-917",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 2.483,
+        "forecast": -0.7,
+        "previous": 3.064
+      },
+      "surprise": {
+        "deviation": 3.183,
+        "z_score": 90.94,
+        "label": "shock-above"
+      },
+      "vs_previous": {
+        "delta": -0.581,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
+    },
+    {
+      "name": "Gasoline Production",
+      "time": "2026/07/01 10:30:00",
+      "importance": "bull1",
+      "actual": "0.481M",
+      "forecast": null,
+      "previous": "-0.588M",
+      "event_url": "https://www.investing.com/economic-calendar/eia-weekly-gasoline-production-1661",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.481,
+        "forecast": null,
+        "previous": -0.588
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 1.069,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
+    },
+    {
+      "name": "Heating Oil Stockpiles",
+      "time": "2026/07/01 10:30:00",
+      "importance": "bull1",
+      "actual": "-0.310M",
+      "forecast": null,
+      "previous": "0.722M",
+      "event_url": "https://www.investing.com/economic-calendar/eia-weekly-heatoil-stock-1659",
+      "source": "investing.com",
+      "parsed": {
+        "actual": -0.31,
+        "forecast": null,
+        "previous": 0.722
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": -1.032,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
+    },
+    {
+      "name": "EIA Weekly Refinery Utilization Rates (WoW)",
+      "time": "2026/07/01 10:30:00",
+      "importance": "bull1",
+      "actual": "0.5%",
+      "forecast": null,
+      "previous": "-0.6%",
+      "event_url": "https://www.investing.com/economic-calendar/eia-weekly-refinery-utilization-rates-1961",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 0.5,
+        "forecast": null,
+        "previous": -0.6
+      },
+      "surprise": null,
+      "vs_previous": {
+        "delta": 1.1,
+        "direction": "up"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
+    },
+    {
+      "name": "Gasoline Inventories",
+      "time": "2026/07/01 10:30:00",
+      "importance": "bull1",
+      "actual": "-2.333M",
+      "forecast": "-0.950M",
+      "previous": "2.064M",
+      "event_url": "https://www.investing.com/economic-calendar/gasoline-inventories-485",
+      "source": "investing.com",
+      "parsed": {
+        "actual": -2.333,
+        "forecast": -0.95,
+        "previous": 2.064
+      },
+      "surprise": {
+        "deviation": -1.383,
+        "z_score": -29.12,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -4.397,
+        "direction": "down"
+      },
+      "group": "energy_inventory",
+      "is_noise": true
+    },
+    {
+      "name": "Atlanta Fed GDPNow  (Q2)",
+      "time": "2026/07/01 12:30:00",
+      "importance": "bull2",
+      "actual": "1.2%",
+      "forecast": "2.5%",
+      "previous": "2.5%",
+      "event_url": "https://www.investing.com/economic-calendar/atlanta-fed-gdpnow-2260",
+      "source": "investing.com",
+      "parsed": {
+        "actual": 1.2,
+        "forecast": 2.5,
+        "previous": 2.5
+      },
+      "surprise": {
+        "deviation": -1.3,
+        "z_score": -10.4,
+        "label": "shock-below"
+      },
+      "vs_previous": {
+        "delta": -1.3,
+        "direction": "down"
       },
       "group": "other",
       "is_noise": false
     },
     {
-      "name": "API Weekly Crude Oil Stock",
-      "time": "2026/06/30 16:30:00",
-      "importance": "bull2",
-      "actual": "-6.072M",
-      "forecast": "-4.100M",
-      "previous": "-0.765M",
-      "event_url": "https://www.investing.com/economic-calendar/api-weekly-crude-stock-656",
+      "name": "U.S. President Trump Speaks",
+      "time": "2026/07/01 15:15:00",
+      "importance": "bull3",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "event_url": "https://www.investing.com/economic-calendar/u.s.-president-trump-speaks-1694",
       "source": "investing.com",
       "parsed": {
-        "actual": -6.072,
-        "forecast": -4.1,
-        "previous": -0.765
+        "actual": null,
+        "forecast": null,
+        "previous": null
       },
-      "surprise": {
-        "deviation": -1.972,
-        "z_score": -9.62,
-        "label": "shock-below"
-      },
-      "vs_previous": {
-        "delta": -5.307,
-        "direction": "down"
-      },
-      "group": "energy_inventory",
-      "is_noise": true
+      "surprise": null,
+      "vs_previous": null,
+      "group": "other",
+      "is_noise": false
     }
   ],
   "fred_snapshot": {

@@ -1,18 +1,677 @@
 window.MACRO_DATA = {
-  "last_updated": "2026-07-01T10:53:19.937043+00:00",
+  "last_updated": "2026-07-01T20:10:16.348513+00:00",
   "daily_releases": {
-    "date": "2026-06-30",
-    "releases": [],
+    "date": "2026-07-01",
+    "releases": [
+      {
+        "name": "Challenger Job Cuts  (Jun)",
+        "time": "2026/07/01 05:30:00",
+        "importance": "bull1",
+        "actual": "45.849K",
+        "forecast": null,
+        "previous": "97.006K",
+        "event_url": "https://www.investing.com/economic-calendar/challenger-job-cuts-888",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 45.849,
+          "forecast": null,
+          "previous": 97.006
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -51.157,
+          "direction": "down"
+        },
+        "group": "challenger",
+        "is_noise": false
+      },
+      {
+        "name": "Challenger Job Cuts (YoY)",
+        "time": "2026/07/01 05:30:00",
+        "importance": "bull1",
+        "actual": "-4.5%",
+        "forecast": null,
+        "previous": "3.4%",
+        "event_url": "https://www.investing.com/economic-calendar/challenger-job-cuts-333",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -4.5,
+          "forecast": null,
+          "previous": 3.4
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -7.9,
+          "direction": "down"
+        },
+        "group": "challenger",
+        "is_noise": false
+      },
+      {
+        "name": "MBA 30-Year Mortgage Rate",
+        "time": "2026/07/01 07:00:00",
+        "importance": "bull1",
+        "actual": "6.57%",
+        "forecast": null,
+        "previous": "6.59%",
+        "event_url": "https://www.investing.com/economic-calendar/mba-30-year-mortgage-rate-1042",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 6.57,
+          "forecast": null,
+          "previous": 6.59
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.02,
+          "direction": "down"
+        },
+        "group": "mortgage",
+        "is_noise": false
+      },
+      {
+        "name": "MBA Mortgage Applications (WoW)",
+        "time": "2026/07/01 07:00:00",
+        "importance": "bull1",
+        "actual": "0.0%",
+        "forecast": null,
+        "previous": "1.0%",
+        "event_url": "https://www.investing.com/economic-calendar/mba-mortgage-applications-380",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.0,
+          "forecast": null,
+          "previous": 1.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -1.0,
+          "direction": "down"
+        },
+        "group": "mortgage",
+        "is_noise": false
+      },
+      {
+        "name": "MBA Purchase Index",
+        "time": "2026/07/01 07:00:00",
+        "importance": "bull1",
+        "actual": "170.6",
+        "forecast": null,
+        "previous": "169.7",
+        "event_url": "https://www.investing.com/economic-calendar/mba-purchase-index-1494",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 170.6,
+          "forecast": null,
+          "previous": 169.7
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.9,
+          "direction": "up"
+        },
+        "group": "mortgage",
+        "is_noise": false
+      },
+      {
+        "name": "Mortgage Market Index",
+        "time": "2026/07/01 07:00:00",
+        "importance": "bull1",
+        "actual": "272.2",
+        "forecast": null,
+        "previous": "272.1",
+        "event_url": "https://www.investing.com/economic-calendar/mortgage-market-index-1427",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 272.2,
+          "forecast": null,
+          "previous": 272.1
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.1,
+          "direction": "up"
+        },
+        "group": "mortgage",
+        "is_noise": false
+      },
+      {
+        "name": "Mortgage Refinance Index",
+        "time": "2026/07/01 07:00:00",
+        "importance": "bull1",
+        "actual": "828.7",
+        "forecast": null,
+        "previous": "834.2",
+        "event_url": "https://www.investing.com/economic-calendar/mortgage-refinance-index-1428",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 828.7,
+          "forecast": null,
+          "previous": 834.2
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -5.5,
+          "direction": "down"
+        },
+        "group": "mortgage",
+        "is_noise": false
+      },
+      {
+        "name": "FOMC Member Daly Speaks",
+        "time": "2026/07/01 07:45:00",
+        "importance": "bull2",
+        "actual": null,
+        "forecast": null,
+        "previous": null,
+        "event_url": "https://www.investing.com/economic-calendar/fomc-member-daly-speaks-1802",
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
+      },
+      {
+        "name": "ADP Nonfarm Employment Change  (Jun)",
+        "time": "2026/07/01 08:15:00",
+        "importance": "bull3",
+        "actual": "98K",
+        "forecast": "118K",
+        "previous": "122K",
+        "event_url": "https://www.investing.com/economic-calendar/adp-nonfarm-employment-change-1",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 98.0,
+          "forecast": 118.0,
+          "previous": 122.0
+        },
+        "surprise": {
+          "deviation": -20.0,
+          "z_score": -3.39,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -24.0,
+          "direction": "down"
+        },
+        "group": "adp",
+        "is_noise": false
+      },
+      {
+        "name": "Fed Governor Warsh Speaks",
+        "time": "2026/07/01 09:00:00",
+        "importance": "bull2",
+        "actual": null,
+        "forecast": null,
+        "previous": null,
+        "event_url": "https://www.investing.com/economic-calendar/fed-governor-warsh-speaks-105",
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
+      },
+      {
+        "name": "S&P Global Manufacturing PMI  (Jun)",
+        "time": "2026/07/01 09:45:00",
+        "importance": "bull3",
+        "actual": "53.9",
+        "forecast": "55.7",
+        "previous": "55.1",
+        "event_url": "https://www.investing.com/economic-calendar/manufacturing-pmi-829",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 53.9,
+          "forecast": 55.7,
+          "previous": 55.1
+        },
+        "surprise": {
+          "deviation": -1.8,
+          "z_score": -0.65,
+          "label": "below-forecast"
+        },
+        "vs_previous": {
+          "delta": -1.2,
+          "direction": "down"
+        },
+        "group": "spglobal_pmi",
+        "is_noise": false
+      },
+      {
+        "name": "Construction Spending (MoM)  (May)",
+        "time": "2026/07/01 10:00:00",
+        "importance": "bull2",
+        "actual": "0.1%",
+        "forecast": "0.1%",
+        "previous": "0.3%",
+        "event_url": "https://www.investing.com/economic-calendar/construction-spending-45",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.1,
+          "forecast": 0.1,
+          "previous": 0.3
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": -0.2,
+          "direction": "down"
+        },
+        "group": "construction",
+        "is_noise": false
+      },
+      {
+        "name": "ISM Manufacturing Employment  (Jun)",
+        "time": "2026/07/01 10:00:00",
+        "importance": "bull2",
+        "actual": "49.7",
+        "forecast": null,
+        "previous": "48.6",
+        "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-employment-1046",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 49.7,
+          "forecast": null,
+          "previous": 48.6
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 1.1,
+          "direction": "up"
+        },
+        "group": "ism_manufacturing",
+        "is_noise": false
+      },
+      {
+        "name": "ISM Manufacturing New Orders Index  (Jun)",
+        "time": "2026/07/01 10:00:00",
+        "importance": "bull1",
+        "actual": "56.0",
+        "forecast": null,
+        "previous": "56.8",
+        "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-new-orders-index-1483",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 56.0,
+          "forecast": null,
+          "previous": 56.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.8,
+          "direction": "down"
+        },
+        "group": "ism_manufacturing",
+        "is_noise": false
+      },
+      {
+        "name": "ISM Manufacturing PMI  (Jun)",
+        "time": "2026/07/01 10:00:00",
+        "importance": "bull3",
+        "actual": "53.3",
+        "forecast": "53.8",
+        "previous": "54.0",
+        "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-pmi-173",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 53.3,
+          "forecast": 53.8,
+          "previous": 54.0
+        },
+        "surprise": {
+          "deviation": -0.5,
+          "z_score": -0.19,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": -0.7,
+          "direction": "down"
+        },
+        "group": "ism_manufacturing",
+        "is_noise": false
+      },
+      {
+        "name": "ISM Manufacturing Prices  (Jun)",
+        "time": "2026/07/01 10:00:00",
+        "importance": "bull3",
+        "actual": "73.0",
+        "forecast": "77.7",
+        "previous": "82.1",
+        "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-prices-174",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 73.0,
+          "forecast": 77.7,
+          "previous": 82.1
+        },
+        "surprise": {
+          "deviation": -4.7,
+          "z_score": -1.21,
+          "label": "below-forecast"
+        },
+        "vs_previous": {
+          "delta": -9.1,
+          "direction": "down"
+        },
+        "group": "ism_manufacturing",
+        "is_noise": false
+      },
+      {
+        "name": "Crude Oil Inventories",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull3",
+        "actual": "-3.775M",
+        "forecast": "-2.900M",
+        "previous": "-6.088M",
+        "event_url": "https://www.investing.com/economic-calendar/eia-crude-oil-inventories-75",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -3.775,
+          "forecast": -2.9,
+          "previous": -6.088
+        },
+        "surprise": {
+          "deviation": -0.875,
+          "z_score": -6.03,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": 2.313,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "EIA Refinery Crude Runs  (WoW)",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull1",
+        "actual": "0.085M",
+        "forecast": null,
+        "previous": "-0.081M",
+        "event_url": "https://www.investing.com/economic-calendar/eia-refinery-crude-runs-1960",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.085,
+          "forecast": null,
+          "previous": -0.081
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.166,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "Crude Oil Imports",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull1",
+        "actual": "0.370M",
+        "forecast": null,
+        "previous": "0.094M",
+        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-crude-imports-1658",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.37,
+          "forecast": null,
+          "previous": 0.094
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.276,
+          "direction": "up"
+        },
+        "group": "trade",
+        "is_noise": false
+      },
+      {
+        "name": "Cushing Crude Oil Inventories",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull2",
+        "actual": "0.709M",
+        "forecast": null,
+        "previous": "-1.077M",
+        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-cushing-oil-inventories-1657",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.709,
+          "forecast": null,
+          "previous": -1.077
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 1.786,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "Distillate Fuel Production",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull1",
+        "actual": "-0.042M",
+        "forecast": null,
+        "previous": "0.055M",
+        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillate-fuel-production-1660",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -0.042,
+          "forecast": null,
+          "previous": 0.055
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.097,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "EIA Weekly Distillates Stocks",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull1",
+        "actual": "2.483M",
+        "forecast": "-0.700M",
+        "previous": "3.064M",
+        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillates-stocks-917",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.483,
+          "forecast": -0.7,
+          "previous": 3.064
+        },
+        "surprise": {
+          "deviation": 3.183,
+          "z_score": 90.94,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": -0.581,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "Gasoline Production",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull1",
+        "actual": "0.481M",
+        "forecast": null,
+        "previous": "-0.588M",
+        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-gasoline-production-1661",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.481,
+          "forecast": null,
+          "previous": -0.588
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 1.069,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "Heating Oil Stockpiles",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull1",
+        "actual": "-0.310M",
+        "forecast": null,
+        "previous": "0.722M",
+        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-heatoil-stock-1659",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -0.31,
+          "forecast": null,
+          "previous": 0.722
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -1.032,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "EIA Weekly Refinery Utilization Rates (WoW)",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull1",
+        "actual": "0.5%",
+        "forecast": null,
+        "previous": "-0.6%",
+        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-refinery-utilization-rates-1961",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.5,
+          "forecast": null,
+          "previous": -0.6
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 1.1,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "Gasoline Inventories",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull1",
+        "actual": "-2.333M",
+        "forecast": "-0.950M",
+        "previous": "2.064M",
+        "event_url": "https://www.investing.com/economic-calendar/gasoline-inventories-485",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -2.333,
+          "forecast": -0.95,
+          "previous": 2.064
+        },
+        "surprise": {
+          "deviation": -1.383,
+          "z_score": -29.12,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -4.397,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "Atlanta Fed GDPNow  (Q2)",
+        "time": "2026/07/01 12:30:00",
+        "importance": "bull2",
+        "actual": "1.2%",
+        "forecast": "2.5%",
+        "previous": "2.5%",
+        "event_url": "https://www.investing.com/economic-calendar/atlanta-fed-gdpnow-2260",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.2,
+          "forecast": 2.5,
+          "previous": 2.5
+        },
+        "surprise": {
+          "deviation": -1.3,
+          "z_score": -10.4,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -1.3,
+          "direction": "down"
+        },
+        "group": "other",
+        "is_noise": false
+      },
+      {
+        "name": "U.S. President Trump Speaks",
+        "time": "2026/07/01 15:15:00",
+        "importance": "bull3",
+        "actual": null,
+        "forecast": null,
+        "previous": null,
+        "event_url": "https://www.investing.com/economic-calendar/u.s.-president-trump-speaks-1694",
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "other",
+        "is_noise": false
+      }
+    ],
     "release_summary": {
-      "signal_release_count": 0,
-      "noise_release_count": 0,
-      "surprise_count": 0,
-      "groups_present": [],
-      "surprised_groups": [],
+      "signal_release_count": 19,
+      "noise_release_count": 9,
+      "surprise_count": 4,
+      "groups_present": [
+        "adp",
+        "challenger",
+        "construction",
+        "fed",
+        "ism_manufacturing",
+        "mortgage",
+        "other",
+        "spglobal_pmi",
+        "trade"
+      ],
+      "surprised_groups": [
+        "adp",
+        "ism_manufacturing",
+        "other",
+        "spglobal_pmi"
+      ],
       "day_surprise_score": {
-        "growth_score": 0,
+        "growth_score": -4.86,
         "inflation_score": 0,
-        "n_growth": 0,
+        "n_growth": 3,
         "n_inflation": 0
       }
     },
@@ -10541,7 +11200,963 @@ window.MACRO_DATA = {
         "is_noise": true
       }
     ],
-    "2026-06-30": []
+    "2026-06-30": [
+      {
+        "name": "Redbook (YoY)",
+        "time": "2026/06/30 08:55:00",
+        "importance": "bull1",
+        "actual": "10.5%",
+        "forecast": null,
+        "previous": "10.0%",
+        "event_url": "https://www.investing.com/economic-calendar/redbook-911",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 10.5,
+          "forecast": null,
+          "previous": 10.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.5,
+          "direction": "up"
+        },
+        "group": "fed_plumbing",
+        "is_noise": true
+      },
+      {
+        "name": "House Price Index (MoM)  (Apr)",
+        "time": "2026/06/30 09:00:00",
+        "importance": "bull1",
+        "actual": "-0.1%",
+        "forecast": "0.2%",
+        "previous": "0.2%",
+        "event_url": "https://www.investing.com/economic-calendar/house-price-index-327",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -0.1,
+          "forecast": 0.2,
+          "previous": 0.2
+        },
+        "surprise": {
+          "deviation": -0.3,
+          "z_score": -30.0,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -0.3,
+          "direction": "down"
+        },
+        "group": "home_prices",
+        "is_noise": false
+      },
+      {
+        "name": "House Price Index (YoY)  (Apr)",
+        "time": "2026/06/30 09:00:00",
+        "importance": "bull1",
+        "actual": "2.0%",
+        "forecast": null,
+        "previous": "1.8%",
+        "event_url": "https://www.investing.com/economic-calendar/house-price-index-897",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.0,
+          "forecast": null,
+          "previous": 1.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.2,
+          "direction": "up"
+        },
+        "group": "home_prices",
+        "is_noise": false
+      },
+      {
+        "name": "House Price Index  (Apr)",
+        "time": "2026/06/30 09:00:00",
+        "importance": "bull1",
+        "actual": "441.4",
+        "forecast": null,
+        "previous": "441.8",
+        "event_url": "https://www.investing.com/economic-calendar/monthly-home-price-index-1287",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 441.4,
+          "forecast": null,
+          "previous": 441.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.4,
+          "direction": "down"
+        },
+        "group": "home_prices",
+        "is_noise": false
+      },
+      {
+        "name": "S&P/CS HPI Composite - 20 s.a. (MoM)  (Apr)",
+        "time": "2026/06/30 09:00:00",
+        "importance": "bull1",
+        "actual": "0.0%",
+        "forecast": null,
+        "previous": "-0.2%",
+        "event_url": "https://www.investing.com/economic-calendar/s-p-cs-hpi-composite---20-s.a.-1334",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.0,
+          "forecast": null,
+          "previous": -0.2
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.2,
+          "direction": "up"
+        },
+        "group": "home_prices",
+        "is_noise": false
+      },
+      {
+        "name": "S&P/CS HPI Composite - 20 n.s.a. (YoY)  (Apr)",
+        "time": "2026/06/30 09:00:00",
+        "importance": "bull2",
+        "actual": "1.1%",
+        "forecast": "0.9%",
+        "previous": "0.9%",
+        "event_url": "https://www.investing.com/economic-calendar/s-p-cs-hpi-composite-20-n.s.a.-329",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.1,
+          "forecast": 0.9,
+          "previous": 0.9
+        },
+        "surprise": {
+          "deviation": 0.2,
+          "z_score": 4.44,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": 0.2,
+          "direction": "up"
+        },
+        "group": "home_prices",
+        "is_noise": false
+      },
+      {
+        "name": "S&P/CS HPI Composite - 20 n.s.a. (MoM)  (Apr)",
+        "time": "2026/06/30 09:00:00",
+        "importance": "bull2",
+        "actual": "1.0%",
+        "forecast": null,
+        "previous": "1.1%",
+        "event_url": "https://www.investing.com/economic-calendar/s-p-cs-hpi-composite-20-n.s.a.-913",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.0,
+          "forecast": null,
+          "previous": 1.1
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.1,
+          "direction": "down"
+        },
+        "group": "home_prices",
+        "is_noise": false
+      },
+      {
+        "name": "Chicago PMI  (Jun)",
+        "time": "2026/06/30 09:45:00",
+        "importance": "bull3",
+        "actual": "56.7",
+        "forecast": "55.7",
+        "previous": "62.7",
+        "event_url": "https://www.investing.com/economic-calendar/chicago-pmi-38",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 56.7,
+          "forecast": 55.7,
+          "previous": 62.7
+        },
+        "surprise": {
+          "deviation": 1.0,
+          "z_score": 0.36,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": -6.0,
+          "direction": "down"
+        },
+        "group": "regional_fed",
+        "is_noise": false
+      },
+      {
+        "name": "CB Consumer Confidence  (Jun)",
+        "time": "2026/06/30 10:00:00",
+        "importance": "bull3",
+        "actual": "91.2",
+        "forecast": "94.4",
+        "previous": "90.6",
+        "event_url": "https://www.investing.com/economic-calendar/cb-consumer-confidence-48",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 91.2,
+          "forecast": 94.4,
+          "previous": 90.6
+        },
+        "surprise": {
+          "deviation": -3.2,
+          "z_score": -0.68,
+          "label": "below-forecast"
+        },
+        "vs_previous": {
+          "delta": 0.6,
+          "direction": "up"
+        },
+        "group": "confidence",
+        "is_noise": false
+      },
+      {
+        "name": "JOLTS Job Openings  (May)",
+        "time": "2026/06/30 10:00:00",
+        "importance": "bull3",
+        "actual": "7.594M",
+        "forecast": "7.280M",
+        "previous": "7.585M",
+        "event_url": "https://www.investing.com/economic-calendar/jolts-job-openings-1057",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 7.594,
+          "forecast": 7.28,
+          "previous": 7.585
+        },
+        "surprise": {
+          "deviation": 0.314,
+          "z_score": 0.86,
+          "label": "above-forecast"
+        },
+        "vs_previous": {
+          "delta": 0.009,
+          "direction": "up"
+        },
+        "group": "jolts",
+        "is_noise": false
+      },
+      {
+        "name": "Dallas Fed Services Revenues  (Jun)",
+        "time": "2026/06/30 10:30:00",
+        "importance": "bull1",
+        "actual": "9.8",
+        "forecast": null,
+        "previous": "5.0",
+        "event_url": "https://www.investing.com/economic-calendar/dallas-fed-services-revenues-1444",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 9.8,
+          "forecast": null,
+          "previous": 5.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 4.8,
+          "direction": "up"
+        },
+        "group": "regional_fed",
+        "is_noise": false
+      },
+      {
+        "name": "Texas Services Sector Outlook  (Jun)",
+        "time": "2026/06/30 10:30:00",
+        "importance": "bull1",
+        "actual": "2.9",
+        "forecast": null,
+        "previous": "-7.7",
+        "event_url": "https://www.investing.com/economic-calendar/texas-services-sector-outlook-1519",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.9,
+          "forecast": null,
+          "previous": -7.7
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 10.6,
+          "direction": "up"
+        },
+        "group": "other",
+        "is_noise": false
+      },
+      {
+        "name": "API Weekly Crude Oil Stock",
+        "time": "2026/06/30 16:30:00",
+        "importance": "bull2",
+        "actual": "-6.072M",
+        "forecast": "-4.100M",
+        "previous": "-0.765M",
+        "event_url": "https://www.investing.com/economic-calendar/api-weekly-crude-stock-656",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -6.072,
+          "forecast": -4.1,
+          "previous": -0.765
+        },
+        "surprise": {
+          "deviation": -1.972,
+          "z_score": -9.62,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -5.307,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      }
+    ],
+    "2026-07-01": [
+      {
+        "name": "Challenger Job Cuts  (Jun)",
+        "time": "2026/07/01 05:30:00",
+        "importance": "bull1",
+        "actual": "45.849K",
+        "forecast": null,
+        "previous": "97.006K",
+        "event_url": "https://www.investing.com/economic-calendar/challenger-job-cuts-888",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 45.849,
+          "forecast": null,
+          "previous": 97.006
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -51.157,
+          "direction": "down"
+        },
+        "group": "challenger",
+        "is_noise": false
+      },
+      {
+        "name": "Challenger Job Cuts (YoY)",
+        "time": "2026/07/01 05:30:00",
+        "importance": "bull1",
+        "actual": "-4.5%",
+        "forecast": null,
+        "previous": "3.4%",
+        "event_url": "https://www.investing.com/economic-calendar/challenger-job-cuts-333",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -4.5,
+          "forecast": null,
+          "previous": 3.4
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -7.9,
+          "direction": "down"
+        },
+        "group": "challenger",
+        "is_noise": false
+      },
+      {
+        "name": "MBA 30-Year Mortgage Rate",
+        "time": "2026/07/01 07:00:00",
+        "importance": "bull1",
+        "actual": "6.57%",
+        "forecast": null,
+        "previous": "6.59%",
+        "event_url": "https://www.investing.com/economic-calendar/mba-30-year-mortgage-rate-1042",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 6.57,
+          "forecast": null,
+          "previous": 6.59
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.02,
+          "direction": "down"
+        },
+        "group": "mortgage",
+        "is_noise": false
+      },
+      {
+        "name": "MBA Mortgage Applications (WoW)",
+        "time": "2026/07/01 07:00:00",
+        "importance": "bull1",
+        "actual": "0.0%",
+        "forecast": null,
+        "previous": "1.0%",
+        "event_url": "https://www.investing.com/economic-calendar/mba-mortgage-applications-380",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.0,
+          "forecast": null,
+          "previous": 1.0
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -1.0,
+          "direction": "down"
+        },
+        "group": "mortgage",
+        "is_noise": false
+      },
+      {
+        "name": "MBA Purchase Index",
+        "time": "2026/07/01 07:00:00",
+        "importance": "bull1",
+        "actual": "170.6",
+        "forecast": null,
+        "previous": "169.7",
+        "event_url": "https://www.investing.com/economic-calendar/mba-purchase-index-1494",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 170.6,
+          "forecast": null,
+          "previous": 169.7
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.9,
+          "direction": "up"
+        },
+        "group": "mortgage",
+        "is_noise": false
+      },
+      {
+        "name": "Mortgage Market Index",
+        "time": "2026/07/01 07:00:00",
+        "importance": "bull1",
+        "actual": "272.2",
+        "forecast": null,
+        "previous": "272.1",
+        "event_url": "https://www.investing.com/economic-calendar/mortgage-market-index-1427",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 272.2,
+          "forecast": null,
+          "previous": 272.1
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.1,
+          "direction": "up"
+        },
+        "group": "mortgage",
+        "is_noise": false
+      },
+      {
+        "name": "Mortgage Refinance Index",
+        "time": "2026/07/01 07:00:00",
+        "importance": "bull1",
+        "actual": "828.7",
+        "forecast": null,
+        "previous": "834.2",
+        "event_url": "https://www.investing.com/economic-calendar/mortgage-refinance-index-1428",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 828.7,
+          "forecast": null,
+          "previous": 834.2
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -5.5,
+          "direction": "down"
+        },
+        "group": "mortgage",
+        "is_noise": false
+      },
+      {
+        "name": "FOMC Member Daly Speaks",
+        "time": "2026/07/01 07:45:00",
+        "importance": "bull2",
+        "actual": null,
+        "forecast": null,
+        "previous": null,
+        "event_url": "https://www.investing.com/economic-calendar/fomc-member-daly-speaks-1802",
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
+      },
+      {
+        "name": "ADP Nonfarm Employment Change  (Jun)",
+        "time": "2026/07/01 08:15:00",
+        "importance": "bull3",
+        "actual": "98K",
+        "forecast": "118K",
+        "previous": "122K",
+        "event_url": "https://www.investing.com/economic-calendar/adp-nonfarm-employment-change-1",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 98.0,
+          "forecast": 118.0,
+          "previous": 122.0
+        },
+        "surprise": {
+          "deviation": -20.0,
+          "z_score": -3.39,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -24.0,
+          "direction": "down"
+        },
+        "group": "adp",
+        "is_noise": false
+      },
+      {
+        "name": "Fed Governor Warsh Speaks",
+        "time": "2026/07/01 09:00:00",
+        "importance": "bull2",
+        "actual": null,
+        "forecast": null,
+        "previous": null,
+        "event_url": "https://www.investing.com/economic-calendar/fed-governor-warsh-speaks-105",
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "fed",
+        "is_noise": false
+      },
+      {
+        "name": "S&P Global Manufacturing PMI  (Jun)",
+        "time": "2026/07/01 09:45:00",
+        "importance": "bull3",
+        "actual": "53.9",
+        "forecast": "55.7",
+        "previous": "55.1",
+        "event_url": "https://www.investing.com/economic-calendar/manufacturing-pmi-829",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 53.9,
+          "forecast": 55.7,
+          "previous": 55.1
+        },
+        "surprise": {
+          "deviation": -1.8,
+          "z_score": -0.65,
+          "label": "below-forecast"
+        },
+        "vs_previous": {
+          "delta": -1.2,
+          "direction": "down"
+        },
+        "group": "spglobal_pmi",
+        "is_noise": false
+      },
+      {
+        "name": "Construction Spending (MoM)  (May)",
+        "time": "2026/07/01 10:00:00",
+        "importance": "bull2",
+        "actual": "0.1%",
+        "forecast": "0.1%",
+        "previous": "0.3%",
+        "event_url": "https://www.investing.com/economic-calendar/construction-spending-45",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.1,
+          "forecast": 0.1,
+          "previous": 0.3
+        },
+        "surprise": {
+          "deviation": 0.0,
+          "z_score": 0.0,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": -0.2,
+          "direction": "down"
+        },
+        "group": "construction",
+        "is_noise": false
+      },
+      {
+        "name": "ISM Manufacturing Employment  (Jun)",
+        "time": "2026/07/01 10:00:00",
+        "importance": "bull2",
+        "actual": "49.7",
+        "forecast": null,
+        "previous": "48.6",
+        "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-employment-1046",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 49.7,
+          "forecast": null,
+          "previous": 48.6
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 1.1,
+          "direction": "up"
+        },
+        "group": "ism_manufacturing",
+        "is_noise": false
+      },
+      {
+        "name": "ISM Manufacturing New Orders Index  (Jun)",
+        "time": "2026/07/01 10:00:00",
+        "importance": "bull1",
+        "actual": "56.0",
+        "forecast": null,
+        "previous": "56.8",
+        "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-new-orders-index-1483",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 56.0,
+          "forecast": null,
+          "previous": 56.8
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.8,
+          "direction": "down"
+        },
+        "group": "ism_manufacturing",
+        "is_noise": false
+      },
+      {
+        "name": "ISM Manufacturing PMI  (Jun)",
+        "time": "2026/07/01 10:00:00",
+        "importance": "bull3",
+        "actual": "53.3",
+        "forecast": "53.8",
+        "previous": "54.0",
+        "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-pmi-173",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 53.3,
+          "forecast": 53.8,
+          "previous": 54.0
+        },
+        "surprise": {
+          "deviation": -0.5,
+          "z_score": -0.19,
+          "label": "in-line"
+        },
+        "vs_previous": {
+          "delta": -0.7,
+          "direction": "down"
+        },
+        "group": "ism_manufacturing",
+        "is_noise": false
+      },
+      {
+        "name": "ISM Manufacturing Prices  (Jun)",
+        "time": "2026/07/01 10:00:00",
+        "importance": "bull3",
+        "actual": "73.0",
+        "forecast": "77.7",
+        "previous": "82.1",
+        "event_url": "https://www.investing.com/economic-calendar/ism-manufacturing-prices-174",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 73.0,
+          "forecast": 77.7,
+          "previous": 82.1
+        },
+        "surprise": {
+          "deviation": -4.7,
+          "z_score": -1.21,
+          "label": "below-forecast"
+        },
+        "vs_previous": {
+          "delta": -9.1,
+          "direction": "down"
+        },
+        "group": "ism_manufacturing",
+        "is_noise": false
+      },
+      {
+        "name": "Crude Oil Inventories",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull3",
+        "actual": "-3.775M",
+        "forecast": "-2.900M",
+        "previous": "-6.088M",
+        "event_url": "https://www.investing.com/economic-calendar/eia-crude-oil-inventories-75",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -3.775,
+          "forecast": -2.9,
+          "previous": -6.088
+        },
+        "surprise": {
+          "deviation": -0.875,
+          "z_score": -6.03,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": 2.313,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "EIA Refinery Crude Runs  (WoW)",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull1",
+        "actual": "0.085M",
+        "forecast": null,
+        "previous": "-0.081M",
+        "event_url": "https://www.investing.com/economic-calendar/eia-refinery-crude-runs-1960",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.085,
+          "forecast": null,
+          "previous": -0.081
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.166,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "Crude Oil Imports",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull1",
+        "actual": "0.370M",
+        "forecast": null,
+        "previous": "0.094M",
+        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-crude-imports-1658",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.37,
+          "forecast": null,
+          "previous": 0.094
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 0.276,
+          "direction": "up"
+        },
+        "group": "trade",
+        "is_noise": false
+      },
+      {
+        "name": "Cushing Crude Oil Inventories",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull2",
+        "actual": "0.709M",
+        "forecast": null,
+        "previous": "-1.077M",
+        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-cushing-oil-inventories-1657",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.709,
+          "forecast": null,
+          "previous": -1.077
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 1.786,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "Distillate Fuel Production",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull1",
+        "actual": "-0.042M",
+        "forecast": null,
+        "previous": "0.055M",
+        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillate-fuel-production-1660",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -0.042,
+          "forecast": null,
+          "previous": 0.055
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -0.097,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "EIA Weekly Distillates Stocks",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull1",
+        "actual": "2.483M",
+        "forecast": "-0.700M",
+        "previous": "3.064M",
+        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-distillates-stocks-917",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 2.483,
+          "forecast": -0.7,
+          "previous": 3.064
+        },
+        "surprise": {
+          "deviation": 3.183,
+          "z_score": 90.94,
+          "label": "shock-above"
+        },
+        "vs_previous": {
+          "delta": -0.581,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "Gasoline Production",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull1",
+        "actual": "0.481M",
+        "forecast": null,
+        "previous": "-0.588M",
+        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-gasoline-production-1661",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.481,
+          "forecast": null,
+          "previous": -0.588
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 1.069,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "Heating Oil Stockpiles",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull1",
+        "actual": "-0.310M",
+        "forecast": null,
+        "previous": "0.722M",
+        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-heatoil-stock-1659",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -0.31,
+          "forecast": null,
+          "previous": 0.722
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": -1.032,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "EIA Weekly Refinery Utilization Rates (WoW)",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull1",
+        "actual": "0.5%",
+        "forecast": null,
+        "previous": "-0.6%",
+        "event_url": "https://www.investing.com/economic-calendar/eia-weekly-refinery-utilization-rates-1961",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 0.5,
+          "forecast": null,
+          "previous": -0.6
+        },
+        "surprise": null,
+        "vs_previous": {
+          "delta": 1.1,
+          "direction": "up"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "Gasoline Inventories",
+        "time": "2026/07/01 10:30:00",
+        "importance": "bull1",
+        "actual": "-2.333M",
+        "forecast": "-0.950M",
+        "previous": "2.064M",
+        "event_url": "https://www.investing.com/economic-calendar/gasoline-inventories-485",
+        "source": "investing.com",
+        "parsed": {
+          "actual": -2.333,
+          "forecast": -0.95,
+          "previous": 2.064
+        },
+        "surprise": {
+          "deviation": -1.383,
+          "z_score": -29.12,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -4.397,
+          "direction": "down"
+        },
+        "group": "energy_inventory",
+        "is_noise": true
+      },
+      {
+        "name": "Atlanta Fed GDPNow  (Q2)",
+        "time": "2026/07/01 12:30:00",
+        "importance": "bull2",
+        "actual": "1.2%",
+        "forecast": "2.5%",
+        "previous": "2.5%",
+        "event_url": "https://www.investing.com/economic-calendar/atlanta-fed-gdpnow-2260",
+        "source": "investing.com",
+        "parsed": {
+          "actual": 1.2,
+          "forecast": 2.5,
+          "previous": 2.5
+        },
+        "surprise": {
+          "deviation": -1.3,
+          "z_score": -10.4,
+          "label": "shock-below"
+        },
+        "vs_previous": {
+          "delta": -1.3,
+          "direction": "down"
+        },
+        "group": "other",
+        "is_noise": false
+      },
+      {
+        "name": "U.S. President Trump Speaks",
+        "time": "2026/07/01 15:15:00",
+        "importance": "bull3",
+        "actual": null,
+        "forecast": null,
+        "previous": null,
+        "event_url": "https://www.investing.com/economic-calendar/u.s.-president-trump-speaks-1694",
+        "source": "investing.com",
+        "parsed": {
+          "actual": null,
+          "forecast": null,
+          "previous": null
+        },
+        "surprise": null,
+        "vs_previous": null,
+        "group": "other",
+        "is_noise": false
+      }
+    ]
   },
   "history": {
     "CPIAUCSL": {
@@ -31231,19 +32846,15 @@ window.MACRO_DATA = {
     "TTLCONS": {
       "label": "Total Construction Spending",
       "latest": {
-        "date": "2026-04-01",
-        "value": 2172397.0
+        "date": "2026-05-01",
+        "value": 2210214.0
       },
       "previous": {
-        "date": "2026-03-01",
-        "value": 2164474.0
+        "date": "2026-04-01",
+        "value": 2207051.0
       },
-      "change_pct": 0.366,
+      "change_pct": 0.143,
       "history": [
-        {
-          "date": "2016-05-01",
-          "value": 1190685.0
-        },
         {
           "date": "2016-06-01",
           "value": 1217604.0
@@ -31370,355 +32981,359 @@ window.MACRO_DATA = {
         },
         {
           "date": "2019-01-01",
-          "value": 1295341.0
+          "value": 1295457.0
         },
         {
           "date": "2019-02-01",
-          "value": 1310297.0
+          "value": 1310064.0
         },
         {
           "date": "2019-03-01",
-          "value": 1319912.0
+          "value": 1319470.0
         },
         {
           "date": "2019-04-01",
-          "value": 1352871.0
+          "value": 1352874.0
         },
         {
           "date": "2019-05-01",
-          "value": 1364812.0
+          "value": 1364585.0
         },
         {
           "date": "2019-06-01",
-          "value": 1381444.0
+          "value": 1381377.0
         },
         {
           "date": "2019-07-01",
-          "value": 1412986.0
+          "value": 1413022.0
         },
         {
           "date": "2019-08-01",
-          "value": 1425690.0
+          "value": 1425986.0
         },
         {
           "date": "2019-09-01",
-          "value": 1438309.0
+          "value": 1438191.0
         },
         {
           "date": "2019-10-01",
-          "value": 1445024.0
+          "value": 1445140.0
         },
         {
           "date": "2019-11-01",
-          "value": 1464447.0
+          "value": 1464880.0
         },
         {
           "date": "2019-12-01",
-          "value": 1469119.0
+          "value": 1469334.0
         },
         {
           "date": "2020-01-01",
-          "value": 1491029.0
+          "value": 1491169.0
         },
         {
           "date": "2020-02-01",
-          "value": 1498750.0
+          "value": 1498377.0
         },
         {
           "date": "2020-03-01",
-          "value": 1502330.0
+          "value": 1501676.0
         },
         {
           "date": "2020-04-01",
-          "value": 1459363.0
+          "value": 1458956.0
         },
         {
           "date": "2020-05-01",
-          "value": 1449765.0
+          "value": 1448816.0
         },
         {
           "date": "2020-06-01",
-          "value": 1460368.0
+          "value": 1461054.0
         },
         {
           "date": "2020-07-01",
-          "value": 1474508.0
+          "value": 1474614.0
         },
         {
           "date": "2020-08-01",
-          "value": 1489581.0
+          "value": 1490027.0
         },
         {
           "date": "2020-09-01",
-          "value": 1512309.0
+          "value": 1512535.0
         },
         {
           "date": "2020-10-01",
-          "value": 1538356.0
+          "value": 1538282.0
         },
         {
           "date": "2020-11-01",
-          "value": 1552503.0
+          "value": 1552457.0
         },
         {
           "date": "2020-12-01",
-          "value": 1577213.0
+          "value": 1577505.0
         },
         {
           "date": "2021-01-01",
-          "value": 1599028.0
+          "value": 1598697.0
         },
         {
           "date": "2021-02-01",
-          "value": 1575321.0
+          "value": 1574677.0
         },
         {
           "date": "2021-03-01",
-          "value": 1610208.0
+          "value": 1609846.0
         },
         {
           "date": "2021-04-01",
-          "value": 1614849.0
+          "value": 1614358.0
         },
         {
           "date": "2021-05-01",
-          "value": 1627889.0
+          "value": 1626557.0
         },
         {
           "date": "2021-06-01",
-          "value": 1639031.0
+          "value": 1640276.0
         },
         {
           "date": "2021-07-01",
-          "value": 1661485.0
+          "value": 1661524.0
         },
         {
           "date": "2021-08-01",
-          "value": 1664988.0
+          "value": 1665413.0
         },
         {
           "date": "2021-09-01",
-          "value": 1673006.0
+          "value": 1673533.0
         },
         {
           "date": "2021-10-01",
-          "value": 1689011.0
+          "value": 1688747.0
         },
         {
           "date": "2021-11-01",
-          "value": 1731866.0
+          "value": 1731869.0
         },
         {
           "date": "2021-12-01",
-          "value": 1763060.0
+          "value": 1762351.0
         },
         {
           "date": "2022-01-01",
-          "value": 1808519.0
+          "value": 1807763.0
         },
         {
           "date": "2022-02-01",
-          "value": 1844343.0
+          "value": 1842072.0
         },
         {
           "date": "2022-03-01",
-          "value": 1876116.0
+          "value": 1877402.0
         },
         {
           "date": "2022-04-01",
-          "value": 1911323.0
+          "value": 1913147.0
         },
         {
           "date": "2022-05-01",
-          "value": 1925882.0
+          "value": 1923964.0
         },
         {
           "date": "2022-06-01",
-          "value": 1917963.0
+          "value": 1920269.0
         },
         {
           "date": "2022-07-01",
-          "value": 1924328.0
+          "value": 1923856.0
         },
         {
           "date": "2022-08-01",
-          "value": 1917606.0
+          "value": 1918061.0
         },
         {
           "date": "2022-09-01",
-          "value": 1919931.0
+          "value": 1917890.0
         },
         {
           "date": "2022-10-01",
-          "value": 1916369.0
+          "value": 1914367.0
         },
         {
           "date": "2022-11-01",
-          "value": 1918913.0
+          "value": 1919538.0
         },
         {
           "date": "2022-12-01",
-          "value": 1928393.0
+          "value": 1926876.0
         },
         {
           "date": "2023-01-01",
-          "value": 1957962.0
+          "value": 1957618.0
         },
         {
           "date": "2023-02-01",
-          "value": 1976696.0
+          "value": 1971178.0
         },
         {
           "date": "2023-03-01",
-          "value": 1996401.0
+          "value": 2000432.0
         },
         {
           "date": "2023-04-01",
-          "value": 2023621.0
+          "value": 2028917.0
         },
         {
           "date": "2023-05-01",
-          "value": 2054535.0
+          "value": 2053902.0
         },
         {
           "date": "2023-06-01",
-          "value": 2071559.0
+          "value": 2074232.0
         },
         {
           "date": "2023-07-01",
-          "value": 2085773.0
+          "value": 2083615.0
         },
         {
           "date": "2023-08-01",
-          "value": 2108277.0
+          "value": 2108452.0
         },
         {
           "date": "2023-09-01",
-          "value": 2123480.0
+          "value": 2117176.0
         },
         {
           "date": "2023-10-01",
-          "value": 2142735.0
+          "value": 2139594.0
         },
         {
           "date": "2023-11-01",
-          "value": 2167301.0
+          "value": 2170325.0
         },
         {
           "date": "2023-12-01",
-          "value": 2176796.0
+          "value": 2174846.0
         },
         {
           "date": "2024-01-01",
-          "value": 2161405.0
+          "value": 2191633.0
         },
         {
           "date": "2024-02-01",
-          "value": 2184616.0
+          "value": 2220925.0
         },
         {
           "date": "2024-03-01",
-          "value": 2174863.0
+          "value": 2214113.0
         },
         {
           "date": "2024-04-01",
-          "value": 2206494.0
+          "value": 2220689.0
         },
         {
           "date": "2024-05-01",
-          "value": 2215350.0
+          "value": 2232845.0
         },
         {
           "date": "2024-06-01",
-          "value": 2199846.0
+          "value": 2238643.0
         },
         {
           "date": "2024-07-01",
-          "value": 2200746.0
+          "value": 2240441.0
         },
         {
           "date": "2024-08-01",
-          "value": 2205322.0
+          "value": 2245978.0
         },
         {
           "date": "2024-09-01",
-          "value": 2197940.0
+          "value": 2263103.0
         },
         {
           "date": "2024-10-01",
-          "value": 2197116.0
+          "value": 2263823.0
         },
         {
           "date": "2024-11-01",
-          "value": 2192932.0
+          "value": 2262637.0
         },
         {
           "date": "2024-12-01",
-          "value": 2176642.0
+          "value": 2258822.0
         },
         {
           "date": "2025-01-01",
-          "value": 2169595.0
+          "value": 2261053.0
         },
         {
           "date": "2025-02-01",
-          "value": 2165431.0
+          "value": 2265811.0
         },
         {
           "date": "2025-03-01",
-          "value": 2150847.0
+          "value": 2256260.0
         },
         {
           "date": "2025-04-01",
-          "value": 2153440.0
+          "value": 2263809.0
         },
         {
           "date": "2025-05-01",
-          "value": 2149124.0
+          "value": 2244426.0
         },
         {
           "date": "2025-06-01",
-          "value": 2160743.0
+          "value": 2237719.0
         },
         {
           "date": "2025-07-01",
-          "value": 2168482.0
+          "value": 2242633.0
         },
         {
           "date": "2025-08-01",
-          "value": 2177240.0
+          "value": 2242024.0
         },
         {
           "date": "2025-09-01",
-          "value": 2169503.0
+          "value": 2245799.0
         },
         {
           "date": "2025-10-01",
-          "value": 2167944.0
+          "value": 2241141.0
         },
         {
           "date": "2025-11-01",
-          "value": 2181160.0
+          "value": 2220726.0
         },
         {
           "date": "2025-12-01",
-          "value": 2219926.0
+          "value": 2215955.0
         },
         {
           "date": "2026-01-01",
-          "value": 2178092.0
+          "value": 2195636.0
         },
         {
           "date": "2026-02-01",
-          "value": 2160663.0
+          "value": 2189683.0
         },
         {
           "date": "2026-03-01",
-          "value": 2164474.0
+          "value": 2199399.0
         },
         {
           "date": "2026-04-01",
-          "value": 2172397.0
+          "value": 2207051.0
+        },
+        {
+          "date": "2026-05-01",
+          "value": 2210214.0
         }
       ]
     },
@@ -31726,13 +33341,13 @@ window.MACRO_DATA = {
       "label": "Atlanta Fed GDPNow",
       "latest": {
         "date": "2026-04-01",
-        "value": 2.5438
+        "value": 1.1889
       },
       "previous": {
         "date": "2026-01-01",
         "value": 1.2392
       },
-      "change_pct": 105.278,
+      "change_pct": -4.059,
       "history": [
         {
           "date": "2011-07-01",
@@ -31972,7 +33587,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-04-01",
-          "value": 2.5438
+          "value": 1.1889
         }
       ]
     },
@@ -44299,19 +45914,15 @@ window.MACRO_DATA = {
     "VIXCLS": {
       "label": "VIX (Volatility Index)",
       "latest": {
+        "date": "2026-06-30",
+        "value": 16.45
+      },
+      "previous": {
         "date": "2026-06-29",
         "value": 17.65
       },
-      "previous": {
-        "date": "2026-06-26",
-        "value": 18.41
-      },
-      "change_pct": -4.128,
+      "change_pct": -6.799,
       "history": [
-        {
-          "date": "2026-01-13",
-          "value": 15.98
-        },
         {
           "date": "2026-01-14",
           "value": 16.75
@@ -44783,41 +46394,25 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-29",
           "value": 17.65
+        },
+        {
+          "date": "2026-06-30",
+          "value": 16.45
         }
       ]
     },
     "DCOILWTICO": {
       "label": "WTI Crude Oil",
       "latest": {
-        "date": "2026-06-22",
-        "value": 78.94
+        "date": "2026-06-29",
+        "value": 71.87
       },
       "previous": {
-        "date": "2026-06-18",
-        "value": 80.35
+        "date": "2026-06-26",
+        "value": 70.3
       },
-      "change_pct": -1.755,
+      "change_pct": 2.233,
       "history": [
-        {
-          "date": "2026-01-06",
-          "value": 56.97
-        },
-        {
-          "date": "2026-01-07",
-          "value": 56.01
-        },
-        {
-          "date": "2026-01-08",
-          "value": 57.74
-        },
-        {
-          "date": "2026-01-09",
-          "value": 58.96
-        },
-        {
-          "date": "2026-01-12",
-          "value": 59.39
-        },
         {
           "date": "2026-01-13",
           "value": 60.85
@@ -45257,25 +46852,41 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-22",
           "value": 78.94
+        },
+        {
+          "date": "2026-06-23",
+          "value": 74.62
+        },
+        {
+          "date": "2026-06-24",
+          "value": 71.42
+        },
+        {
+          "date": "2026-06-25",
+          "value": 72.67
+        },
+        {
+          "date": "2026-06-26",
+          "value": 70.3
+        },
+        {
+          "date": "2026-06-29",
+          "value": 71.87
         }
       ]
     },
     "BAMLH0A0HYM2": {
       "label": "High-Yield Credit Spread (HY OAS)",
       "latest": {
+        "date": "2026-06-30",
+        "value": 2.75
+      },
+      "previous": {
         "date": "2026-06-29",
         "value": 2.8
       },
-      "previous": {
-        "date": "2026-06-26",
-        "value": 2.83
-      },
-      "change_pct": -1.06,
+      "change_pct": -1.786,
       "history": [
-        {
-          "date": "2026-01-16",
-          "value": 2.65
-        },
         {
           "date": "2026-01-19",
           "value": 2.65
@@ -45751,25 +47362,25 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-29",
           "value": 2.8
+        },
+        {
+          "date": "2026-06-30",
+          "value": 2.75
         }
       ]
     },
     "BAMLC0A0CM": {
       "label": "Investment-Grade Credit Spread (IG OAS)",
       "latest": {
-        "date": "2026-06-29",
+        "date": "2026-06-30",
         "value": 0.76
       },
       "previous": {
-        "date": "2026-06-26",
-        "value": 0.77
+        "date": "2026-06-29",
+        "value": 0.76
       },
-      "change_pct": -1.299,
+      "change_pct": 0.0,
       "history": [
-        {
-          "date": "2026-01-16",
-          "value": 0.75
-        },
         {
           "date": "2026-01-19",
           "value": 0.75
@@ -46244,6 +47855,10 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-06-29",
+          "value": 0.76
+        },
+        {
+          "date": "2026-06-30",
           "value": 0.76
         }
       ]
@@ -47223,19 +48838,15 @@ window.MACRO_DATA = {
     "NFCI": {
       "label": "Chicago Fed Financial Conditions (NFCI)",
       "latest": {
-        "date": "2026-06-19",
-        "value": -0.516
+        "date": "2026-06-26",
+        "value": -0.504
       },
       "previous": {
-        "date": "2026-06-12",
-        "value": -0.513
+        "date": "2026-06-19",
+        "value": -0.503
       },
-      "change_pct": 0.585,
+      "change_pct": 0.199,
       "history": [
-        {
-          "date": "2024-03-08",
-          "value": -0.437
-        },
         {
           "date": "2024-03-15",
           "value": -0.439
@@ -47270,7 +48881,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2024-05-10",
-          "value": -0.413
+          "value": -0.414
         },
         {
           "date": "2024-05-17",
@@ -47354,7 +48965,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2024-10-04",
-          "value": -0.433
+          "value": -0.432
         },
         {
           "date": "2024-10-11",
@@ -47486,11 +49097,11 @@ window.MACRO_DATA = {
         },
         {
           "date": "2025-05-23",
-          "value": -0.454
+          "value": -0.455
         },
         {
           "date": "2025-05-30",
-          "value": -0.466
+          "value": -0.467
         },
         {
           "date": "2025-06-06",
@@ -47626,7 +49237,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-01-23",
-          "value": -0.566
+          "value": -0.567
         },
         {
           "date": "2026-01-30",
@@ -47634,11 +49245,11 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-02-06",
-          "value": -0.554
+          "value": -0.555
         },
         {
           "date": "2026-02-13",
-          "value": -0.541
+          "value": -0.542
         },
         {
           "date": "2026-02-20",
@@ -47646,7 +49257,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-02-27",
-          "value": -0.507
+          "value": -0.506
         },
         {
           "date": "2026-03-06",
@@ -47654,7 +49265,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-03-13",
-          "value": -0.472
+          "value": -0.471
         },
         {
           "date": "2026-03-20",
@@ -47678,11 +49289,11 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-04-24",
-          "value": -0.49
+          "value": -0.491
         },
         {
           "date": "2026-05-01",
-          "value": -0.498
+          "value": -0.499
         },
         {
           "date": "2026-05-08",
@@ -47694,89 +49305,89 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-05-22",
-          "value": -0.507
+          "value": -0.505
         },
         {
           "date": "2026-05-29",
-          "value": -0.508
+          "value": -0.504
         },
         {
           "date": "2026-06-05",
-          "value": -0.511
+          "value": -0.504
         },
         {
           "date": "2026-06-12",
-          "value": -0.513
+          "value": -0.503
         },
         {
           "date": "2026-06-19",
-          "value": -0.516
+          "value": -0.503
+        },
+        {
+          "date": "2026-06-26",
+          "value": -0.504
         }
       ]
     },
     "ANFCI": {
       "label": "Chicago Fed Adjusted Financial Conditions",
       "latest": {
-        "date": "2026-06-19",
-        "value": -0.477
+        "date": "2026-06-26",
+        "value": -0.486
       },
       "previous": {
-        "date": "2026-06-12",
-        "value": -0.473
+        "date": "2026-06-19",
+        "value": -0.486
       },
-      "change_pct": 0.846,
+      "change_pct": -0.0,
       "history": [
-        {
-          "date": "2024-03-08",
-          "value": -0.475
-        },
         {
           "date": "2024-03-15",
           "value": -0.485
         },
         {
           "date": "2024-03-22",
-          "value": -0.489
+          "value": -0.488
         },
         {
           "date": "2024-03-29",
-          "value": -0.485
+          "value": -0.484
         },
         {
           "date": "2024-04-05",
-          "value": -0.476
+          "value": -0.474
         },
         {
           "date": "2024-04-12",
-          "value": -0.465
+          "value": -0.463
         },
         {
           "date": "2024-04-19",
-          "value": -0.457
+          "value": -0.455
         },
         {
           "date": "2024-04-26",
-          "value": -0.456
+          "value": -0.454
         },
         {
           "date": "2024-05-03",
-          "value": -0.459
+          "value": -0.458
         },
         {
           "date": "2024-05-10",
-          "value": -0.464
+          "value": -0.463
         },
         {
           "date": "2024-05-17",
-          "value": -0.466
+          "value": -0.465
         },
         {
           "date": "2024-05-24",
-          "value": -0.462
+          "value": -0.461
         },
         {
           "date": "2024-05-31",
-          "value": -0.449
+          "value": -0.448
         },
         {
           "date": "2024-06-07",
@@ -47784,51 +49395,51 @@ window.MACRO_DATA = {
         },
         {
           "date": "2024-06-14",
-          "value": -0.414
+          "value": -0.415
         },
         {
           "date": "2024-06-21",
-          "value": -0.401
+          "value": -0.402
         },
         {
           "date": "2024-06-28",
-          "value": -0.392
+          "value": -0.394
         },
         {
           "date": "2024-07-05",
-          "value": -0.388
+          "value": -0.39
         },
         {
           "date": "2024-07-12",
-          "value": -0.382
+          "value": -0.385
         },
         {
           "date": "2024-07-19",
-          "value": -0.375
+          "value": -0.378
         },
         {
           "date": "2024-07-26",
-          "value": -0.369
+          "value": -0.371
         },
         {
           "date": "2024-08-02",
-          "value": -0.366
+          "value": -0.368
         },
         {
           "date": "2024-08-09",
-          "value": -0.369
+          "value": -0.372
         },
         {
           "date": "2024-08-16",
-          "value": -0.384
+          "value": -0.387
         },
         {
           "date": "2024-08-23",
-          "value": -0.404
+          "value": -0.406
         },
         {
           "date": "2024-08-30",
-          "value": -0.426
+          "value": -0.427
         },
         {
           "date": "2024-09-06",
@@ -47836,7 +49447,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2024-09-13",
-          "value": -0.462
+          "value": -0.463
         },
         {
           "date": "2024-09-20",
@@ -47852,7 +49463,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2024-10-11",
-          "value": -0.501
+          "value": -0.5
         },
         {
           "date": "2024-10-18",
@@ -47860,7 +49471,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2024-10-25",
-          "value": -0.519
+          "value": -0.518
         },
         {
           "date": "2024-11-01",
@@ -47884,35 +49495,35 @@ window.MACRO_DATA = {
         },
         {
           "date": "2024-12-06",
-          "value": -0.538
+          "value": -0.539
         },
         {
           "date": "2024-12-13",
-          "value": -0.53
+          "value": -0.531
         },
         {
           "date": "2024-12-20",
-          "value": -0.523
+          "value": -0.524
         },
         {
           "date": "2024-12-27",
-          "value": -0.523
+          "value": -0.524
         },
         {
           "date": "2025-01-03",
-          "value": -0.526
+          "value": -0.527
         },
         {
           "date": "2025-01-10",
-          "value": -0.532
+          "value": -0.533
         },
         {
           "date": "2025-01-17",
-          "value": -0.535
+          "value": -0.536
         },
         {
           "date": "2025-01-24",
-          "value": -0.533
+          "value": -0.534
         },
         {
           "date": "2025-01-31",
@@ -47952,55 +49563,55 @@ window.MACRO_DATA = {
         },
         {
           "date": "2025-04-04",
-          "value": -0.403
+          "value": -0.404
         },
         {
           "date": "2025-04-11",
-          "value": -0.391
-        },
-        {
-          "date": "2025-04-18",
           "value": -0.392
         },
         {
+          "date": "2025-04-18",
+          "value": -0.394
+        },
+        {
           "date": "2025-04-25",
-          "value": -0.403
+          "value": -0.406
         },
         {
           "date": "2025-05-02",
-          "value": -0.426
+          "value": -0.428
         },
         {
           "date": "2025-05-09",
-          "value": -0.452
+          "value": -0.454
         },
         {
           "date": "2025-05-16",
-          "value": -0.474
+          "value": -0.476
         },
         {
           "date": "2025-05-23",
-          "value": -0.487
+          "value": -0.489
         },
         {
           "date": "2025-05-30",
-          "value": -0.493
-        },
-        {
-          "date": "2025-06-06",
           "value": -0.495
         },
         {
+          "date": "2025-06-06",
+          "value": -0.497
+        },
+        {
           "date": "2025-06-13",
-          "value": -0.499
+          "value": -0.5
         },
         {
           "date": "2025-06-20",
-          "value": -0.505
+          "value": -0.507
         },
         {
           "date": "2025-06-27",
-          "value": -0.515
+          "value": -0.516
         },
         {
           "date": "2025-07-04",
@@ -48020,27 +49631,27 @@ window.MACRO_DATA = {
         },
         {
           "date": "2025-08-01",
-          "value": -0.547
+          "value": -0.548
         },
         {
           "date": "2025-08-08",
-          "value": -0.551
+          "value": -0.552
         },
         {
           "date": "2025-08-15",
-          "value": -0.556
+          "value": -0.557
         },
         {
           "date": "2025-08-22",
-          "value": -0.556
+          "value": -0.558
         },
         {
           "date": "2025-08-29",
-          "value": -0.556
+          "value": -0.557
         },
         {
           "date": "2025-09-05",
-          "value": -0.554
+          "value": -0.555
         },
         {
           "date": "2025-09-12",
@@ -48048,7 +49659,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2025-09-19",
-          "value": -0.557
+          "value": -0.558
         },
         {
           "date": "2025-09-26",
@@ -48060,11 +49671,11 @@ window.MACRO_DATA = {
         },
         {
           "date": "2025-10-10",
-          "value": -0.568
+          "value": -0.569
         },
         {
           "date": "2025-10-17",
-          "value": -0.565
+          "value": -0.566
         },
         {
           "date": "2025-10-24",
@@ -48076,7 +49687,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2025-11-07",
-          "value": -0.55
+          "value": -0.549
         },
         {
           "date": "2025-11-14",
@@ -48096,79 +49707,79 @@ window.MACRO_DATA = {
         },
         {
           "date": "2025-12-12",
-          "value": -0.522
-        },
-        {
-          "date": "2025-12-19",
           "value": -0.523
         },
         {
+          "date": "2025-12-19",
+          "value": -0.524
+        },
+        {
           "date": "2025-12-26",
-          "value": -0.531
+          "value": -0.533
         },
         {
           "date": "2026-01-02",
-          "value": -0.54
+          "value": -0.543
         },
         {
           "date": "2026-01-09",
-          "value": -0.549
-        },
-        {
-          "date": "2026-01-16",
           "value": -0.553
         },
         {
+          "date": "2026-01-16",
+          "value": -0.557
+        },
+        {
           "date": "2026-01-23",
-          "value": -0.551
+          "value": -0.555
         },
         {
           "date": "2026-01-30",
-          "value": -0.542
+          "value": -0.546
         },
         {
           "date": "2026-02-06",
-          "value": -0.529
+          "value": -0.533
         },
         {
           "date": "2026-02-13",
-          "value": -0.514
+          "value": -0.518
         },
         {
           "date": "2026-02-20",
-          "value": -0.495
+          "value": -0.499
         },
         {
           "date": "2026-02-27",
-          "value": -0.473
+          "value": -0.477
         },
         {
           "date": "2026-03-06",
-          "value": -0.447
+          "value": -0.451
         },
         {
           "date": "2026-03-13",
-          "value": -0.424
+          "value": -0.427
         },
         {
           "date": "2026-03-20",
-          "value": -0.41
+          "value": -0.412
         },
         {
           "date": "2026-03-27",
-          "value": -0.406
+          "value": -0.408
         },
         {
           "date": "2026-04-03",
-          "value": -0.416
+          "value": -0.417
         },
         {
           "date": "2026-04-10",
-          "value": -0.434
+          "value": -0.435
         },
         {
           "date": "2026-04-17",
-          "value": -0.452
+          "value": -0.453
         },
         {
           "date": "2026-04-24",
@@ -48176,7 +49787,7 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-05-01",
-          "value": -0.466
+          "value": -0.465
         },
         {
           "date": "2026-05-08",
@@ -48184,27 +49795,31 @@ window.MACRO_DATA = {
         },
         {
           "date": "2026-05-15",
-          "value": -0.458
+          "value": -0.457
         },
         {
           "date": "2026-05-22",
-          "value": -0.456
+          "value": -0.458
         },
         {
           "date": "2026-05-29",
-          "value": -0.46
+          "value": -0.464
         },
         {
           "date": "2026-06-05",
-          "value": -0.467
+          "value": -0.475
         },
         {
           "date": "2026-06-12",
-          "value": -0.473
+          "value": -0.483
         },
         {
           "date": "2026-06-19",
-          "value": -0.477
+          "value": -0.486
+        },
+        {
+          "date": "2026-06-26",
+          "value": -0.486
         }
       ]
     },
@@ -48705,15 +50320,22 @@ window.MACRO_DATA = {
     "ISM_MFG": {
       "label": "ISM Manufacturing PMI",
       "latest": {
+        "date": "2026-07-01",
+        "value": 53.3
+      },
+      "previous": {
         "date": "2026-06-01",
         "value": 54.0
       },
-      "previous": null,
-      "change_pct": null,
+      "change_pct": -1.296,
       "history": [
         {
           "date": "2026-06-01",
           "value": 54.0
+        },
+        {
+          "date": "2026-07-01",
+          "value": 53.3
         }
       ],
       "source": "scraped"
@@ -48737,19 +50359,15 @@ window.MACRO_DATA = {
     "EIA_CRUDE": {
       "label": "Crude Oil Stocks (ex-SPR, EIA)",
       "latest": {
+        "date": "2026-06-26",
+        "value": 408359.0
+      },
+      "previous": {
         "date": "2026-06-19",
         "value": 412134.0
       },
-      "previous": {
-        "date": "2026-06-12",
-        "value": 418222.0
-      },
-      "change_pct": -1.456,
+      "change_pct": -0.916,
       "history": [
-        {
-          "date": "2020-09-25",
-          "value": 492426.0
-        },
         {
           "date": "2020-10-02",
           "value": 492927.0
@@ -49945,6 +51563,10 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-19",
           "value": 412134.0
+        },
+        {
+          "date": "2026-06-26",
+          "value": 408359.0
         }
       ],
       "source": "eia"
@@ -49952,19 +51574,15 @@ window.MACRO_DATA = {
     "EIA_GASOLINE": {
       "label": "Total Gasoline Stocks (EIA)",
       "latest": {
+        "date": "2026-06-26",
+        "value": 213966.0
+      },
+      "previous": {
         "date": "2026-06-19",
         "value": 216299.0
       },
-      "previous": {
-        "date": "2026-06-12",
-        "value": 214235.0
-      },
-      "change_pct": 0.963,
+      "change_pct": -1.079,
       "history": [
-        {
-          "date": "2020-09-25",
-          "value": 228182.0
-        },
         {
           "date": "2020-10-02",
           "value": 226747.0
@@ -51160,6 +52778,10 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-19",
           "value": 216299.0
+        },
+        {
+          "date": "2026-06-26",
+          "value": 213966.0
         }
       ],
       "source": "eia"
@@ -51167,19 +52789,15 @@ window.MACRO_DATA = {
     "EIA_DISTILLATE": {
       "label": "Distillate Fuel Stocks (EIA)",
       "latest": {
+        "date": "2026-06-26",
+        "value": 108599.0
+      },
+      "previous": {
         "date": "2026-06-19",
         "value": 106116.0
       },
-      "previous": {
-        "date": "2026-06-12",
-        "value": 103052.0
-      },
-      "change_pct": 2.973,
+      "change_pct": 2.34,
       "history": [
-        {
-          "date": "2020-09-25",
-          "value": 172758.0
-        },
         {
           "date": "2020-10-02",
           "value": 171796.0
@@ -52375,6 +53993,10 @@ window.MACRO_DATA = {
         {
           "date": "2026-06-19",
           "value": 106116.0
+        },
+        {
+          "date": "2026-06-26",
+          "value": 108599.0
         }
       ],
       "source": "eia"
@@ -56533,6 +58155,26 @@ window.MACRO_DATA = {
       "date": "2026-06-29",
       "body_preview": "## Bối cảnh xu hướng (so với 30 ngày qua)\n\n### 1. Cung trình regime 30 ngày — 4 chặng rõ rệt\n\n| Giai đoạn | Regime | Driver chính | Sector winner | Sector loser |\n|---|---|---|---|---|\n| **22–31/5** | risk-on hẹp | XLK độc dẫn (+20% 1M), goldilocks (ISM beat + Prices cool) | XLK | XLE, defensives |\n| **02–04/6** | rotation-confirmed | Labor crack (Claims 225K breakout, Challenger spike) + AVGO disappoint → tech leadership CRACK | XLV, XLF, XLRE, XLI | XLK (1M de-rate 21%→8.5%) |\n| **10–13/6** | ",
       "body": "## Bối cảnh xu hướng (so với 30 ngày qua)\n\n### 1. Cung trình regime 30 ngày — 4 chặng rõ rệt\n\n| Giai đoạn | Regime | Driver chính | Sector winner | Sector loser |\n|---|---|---|---|---|\n| **22–31/5** | risk-on hẹp | XLK độc dẫn (+20% 1M), goldilocks (ISM beat + Prices cool) | XLK | XLE, defensives |\n| **02–04/6** | rotation-confirmed | Labor crack (Claims 225K breakout, Challenger spike) + AVGO disappoint → tech leadership CRACK | XLV, XLF, XLRE, XLI | XLK (1M de-rate 21%→8.5%) |\n| **10–13/6** | bounce-relief | CPI/PPI miss (Core PPI 4.9% vs 5.4%) → relief rally, disinflation hy vọng | XLK, XLI, XLB | XLE, XLU |\n| **16–29/6** | hawkish hold → neutral | FOMC giữ 3.75% + dot plot dịch LÊN; growth hard-data nóng (GDP Q1 2.1%, Retail +0.9%) nhưng lạm phát chưa hạ | XLI/cyclicals (growth) | XLRE/XLU (higher-for-longer) |\n\n**Đặc trưng xuyên suốt:** Đây KHÔNG phải xu hướng một chiều mà là chuỗi xoay vòng quanh hai trục đối kháng — *disinflation hy vọng (soft-data) vs lạm phát hard-data dai dẳng*. Mỗi lần soft-data dovish (Michigan, claims) đẩy XLK/duration lên thì hard-data nóng (Core PCE, Import Prices, FOMC dot plot) lại kéo về. Kết quả: không sector nào thiết lập được leadership bền >2 tuần ngoài XLV (defensive core, dẫn 1M phần lớn tháng).\n\n### 2. Trend các nhóm chỉ số (derived metrics, FRED snapshot 29/6)\n\n| Nhóm | Trend | Số liệu chốt | Hướng |\n|---|---|---|---|\n| **Lạm phát** | 🔴 STICKY-NÓNG | Core PCE YoY 3.41% (3mo ann 3.52%), CPI YoY 4.27% (3mo ann 8.2% do energy), PPI FD YoY 6.46% (3mo ann 13.2%) | → đi ngang ở mức cao, chưa hạ |\n| **Lao động** | 🟡 COOLING nhẹ | NFP +172K (5/6 beat), UNRATE 4.3% phẳng, Sahm +0.10 (xa ngưỡng 0.50), Claims 215K thấp | → vững nhưng momentum chậm lại |\n| **Tăng trưởng** | 🟢→🟡 vững-mất-đà | GDP Q1 rev 2.1% beat, Retail +0.9%, nhưng Dallas Fed 0.0, Housing Starts −15.4%, New Home −7.3% | → cyclical còn khỏe, nhà ở + survey vùng nguội |\n| **Niềm tin** | 🟡 HỖN HỢP | Michigan 44.8→49.5 hồi nhưng <50 (vùng yếu); soft hồi / hard (Retail) mạnh — mismatch | ↑ hồi từ đáy nhưng tuyệt đối thấp |\n| **Nhà ở** | 🔴 NGUỘI | Housing Starts −15.4% MoM, Building Permits âm, New Home Sales 580K (−7.3%) | ↓ phản ứng rõ với rates cao kéo dài |\n| **Fed & Lãi suất** | 🟡 NEUTRAL-hawkish | DFF 3.63%/giữ 3.75%, dot plot dịch LÊN, 10Y 4.40% (−nhẹ tháng), 2s10s +0.31 normal | → \"higher-for-longer\", chưa cut |\n\n### 3. Map xu hướng → sector implications\n\n**Bối cảnh chủ đạo cuối tháng = \"tăng trưởng-chững + lạm phát-dai\" (tiền-stagflation nhẹ) trong khi đường cong vẫn normal và Sahm chưa kích hoạt.** Theo cheat sheet macro→sector:\n\n- **Lạm phát sticky + Fed hawkish-hold (rates higher-for-longer):** thuận **Financials (NIM)/Energy**, nghịch **REITs/Utilities/Tech (duration)**. Đây chính là lý do XLRE/XLU bị punish suốt nửa sau tháng (yields jump sau NFP + FOMC). Tuy nhiên XLF chưa bứt phá vì 2s10s vẫn flat (+0.31) — NIM chưa thực sự cải thiện, nên XLF giữ ở Neutral chứ chưa OW bền.\n- **Growth hard-data còn khỏe (GDP/Retail beat) + Sahm an toàn + curve normal (116 phiên không đảo):** vẫn nghiêng **cyclicals (XLI/XLB)** hơn defensives thuần. XLI là sector có conviction tăng dần ổn định nhất (Light OW) nhờ Durable Goods +8%, ISM Mfg >50, GDPNow Q2 ~2.8%.\n- **Defensive core XLV** là leader 1M bền nhất tháng — kết hợp được cả \"growth weakening hedge\" lẫn duration-friendly khi yields dịu. Giữ Overweight.\n- **XLK:** đã mất vị thế độc dẫn sau cú crack 4/6 + AVGO. Mỗi nhịp disinflation-hy vọng (10/6, 11/6) kéo XLK bật mạnh (+3.7%) nhưng không giữ được vì hard-data lạm phát chặn DCF re-rate. Stalking/Neutral — chỉ re-up OW nếu Core PCE thực sự break <0.2% MoM.\n- **XLE:** WTI lao từ ~$112 (25/5) về ~$79 (29/6) — momentum năng lượng tắt; mọi nhịp upgrade (crude draw 3/6) đều fade. Neutral, không bottom-fish. Dầu hạ là tin TỐT cho disinflation forward nhưng xấu cho XLE.\n\n### 4. Tín hiệu cần theo dõi để xác nhận/đảo chiều trend\n\n- **Đảo sang disinflation thật:** cần Core PCE MoM về <0.2% (hiện 0.32%) + 3mo annualized phá xuống <3%. Khi đó: re-up **XLK/XLRE/XLY**, hạ **XLF/XLE**.\n- **Đảo sang growth-scare/recession:** Sahm vượt 0.50 (hiện 0.10) hoặc Claims breakout >250K + NFP <50K. Khi đó: xoay mạnh sang **XLV/XLP/XLU** defensive, cắt **XLI/XLF/XLY**.\n- **Catalyst ngay tuần tới:** ISM Mfg (1/7, f:53.7 — Dallas 0.0 cảnh báo hụt) và **NFP (2/7, f:114K giảm từ 172K)**. ISM Mfg Prices f:79.0 (rất cao) là then chốt: lao động nguội + giá vẫn nóng sẽ giữ nguyên thế kẹt hawkish, KHÔNG cho phép xoay dovish dù NFP yếu.\n"
+    },
+    {
+      "file": "2026-06-30.md",
+      "date": "2026-06-30",
+      "schema_version": "1.1",
+      "surprise_count": "3",
+      "regime_signal": "neutral",
+      "key_takeaway": "Lao động vẫn chặt (JOLTS 7.59M beat mạnh) và giá nhà nhích lên, nhưng niềm tin tiêu dùng hụt dự báo — soft-data hỗn hợp trong khi hard-data lạm phát còn nóng, chưa đủ để dovish một chiều.",
+      "body_preview": "# Vĩ mô Mỹ — 2026-06-30",
+      "body": "# Vĩ mô Mỹ — 2026-06-30\n\n## Tóm tắt\nNgày cuối tháng 6 mang tín hiệu HỖN HỢP, không đủ để nghiêng hẳn về một phía. Cầu lao động vẫn chặt bất ngờ (JOLTS Job Openings 7.594M vượt xa dự báo 7.28M) và giá nhà quay đầu tăng nhẹ (S&P/CS Composite-20 YoY 1.1% beat), củng cố góc nhìn \"không hạ cánh cứng\". Ngược lại, CB Consumer Confidence 91.2 hụt dự báo 94.4 và Chicago PMI rơi mạnh về 56.7 từ 62.7 cho thấy động lượng đang chậm lại. Quan trọng: hard-data lạm phát VẪN NÓNG (Core PCE YoY 3.41%, CPI YoY 4.27%) nên dù JOLTS/nhà ở \"risk-on\", đây chưa phải tín hiệu dovish — Fed vẫn bị kẹp giữa lạm phát dai dẳng và lao động chặt.\n\n## Chi tiết chỉ số được công bố hôm nay\n\n### JOLTS Job Openings — BEAT (above-forecast)\n**Headline:** 7.594M | Forecast: 7.280M | Previous: 7.585M (z = +0.86)\n\n| Thành phần | Giá trị | Nhận xét |\n|---|---|---|\n| Job Openings (May) | 7.594M | Vượt dự báo 314K; gần như đi ngang so tháng trước (+9K) |\n| YoY (`JTSJOL`) | +3.89% | Cầu lao động cao hơn cùng kỳ — thị trường việc làm chưa lỏng |\n\n**Đánh giá:** Cầu tuyển dụng CHẶT hơn hẳn kỳ vọng thị trường. Số openings vẫn quanh 7.6M, phù hợp với bức tranh sa thải thấp (Initial Claims 215K, `ICSA` giảm -5.3% tuần) dù tuyển mới đã chậm lại. Đây là bằng chứng thị trường lao động hạ nhiệt có trật tự, không sụp đổ — Sahm Rule mới +0.10, chưa kích hoạt.\n\n**Hàm ý Fed:** Cầu lao động còn chặt cộng với lạm phát dai dẳng (Core PCE 3.41%) làm Fed KHÓ vội cắt — số này nghiêng hawkish nhẹ. Cần đối chiếu với NFP (2/7) và AHE để xác nhận.\n**Hàm ý thị trường:** Trung tính-tích cực cho consumer/discretionary (thu nhập ổn định), nhưng hạn chế kỳ vọng cắt lãi suất → hạn chế đà cho tech/duration-sensitive.\n\n### Home Prices — HỖN HỢP (một shock-below, một shock-above)\n**FHFA House Price Index (Apr):** MoM -0.1% | Forecast +0.2% | Previous +0.2% (shock-below, z = -30) — YoY vẫn +2.0%\n**S&P/CS Composite-20 (Apr):** YoY (nsa) 1.1% | Forecast 0.9% (shock-above, z = +4.44) | MoM (sa) 0.0% vs prev -0.2%\n\n| Thước đo | Giá trị | Nhận xét |\n|---|---|---|\n| FHFA HPI MoM | -0.1% | Lần đầu âm; áp lực giá nhà đang dịu ở phân khúc conforming |\n| FHFA HPI YoY | +2.0% | Vẫn dương, nhích lên từ 1.8% — chưa giảm giá diện rộng |\n| S&P/CS 20-city YoY (nsa) | +1.1% | Beat nhẹ dự báo, tăng tốc từ 0.9% |\n| S&P/CS 20-city MoM (sa) | 0.0% | Ổn định lại sau tháng -0.2%, hết giảm |\n\n**Đánh giá:** Hai thước đo lệch chiều nhưng cùng kể một câu chuyện: giá nhà đang **đi ngang/nguội** chứ không sụp. FHFA MoM âm lần đầu là dấu hiệu cầu nhà yếu đi (đồng pha Housing Starts `HOUST` -15.4%, New Home Sales `HSN1F` -7.3%), trong khi Case-Shiller vẫn nhích do nguồn cung sẵn có hạn chế.\n\n**Hàm ý:** Shelter chiếm ~1/3 rổ CPI và vẫn sticky (Shelter YoY 3.62%, 3mo ann 4.87%); giá nhà nguội là điều kiện CẦN để shelter-CPI hạ tiếp, nhưng độ trễ dài. Trung tính cho Fed ở thời điểm này.\n**Hàm ý thị trường:** Áp lực lên homebuilders và XLRE nếu cầu tiếp tục yếu; lãi suất 30Y neo cao (10Y `DGS10` 4.38%) là lực cản chính.\n\n### CB Consumer Confidence — MISS (below-forecast)\n**Headline:** 91.2 | Forecast: 94.4 | Previous: 90.6 (z = -0.68)\n\n**Đánh giá:** Chỉ số nhích nhẹ so tháng trước (+0.6) NHƯNG hụt rõ dự báo — niềm tin tiêu dùng vẫn ở vùng YẾU. Đồng pha với Michigan Sentiment (`UMCSENT`) đã sụp về 44.8 từ 49.8 (thấp hiếm thấy trong lịch sử). Người tiêu dùng bi quan bất chấp lao động còn chặt — điểm mấu chốt là lạm phát ăn mòn kỳ vọng thực.\n\n**Đối chiếu soft-data vs hard-data (BẮT BUỘC):** Khảo sát niềm tin yếu KHÔNG có nghĩa lạm phát đã hạ. Ngược lại — hard-data còn NÓNG: CPI YoY 4.27% (3mo ann 8.2%), Core PCE YoY 3.41% (3mo ann 3.52%), năng lượng bùng (CPI Energy YoY +22.1%). Niềm tin thấp phần lớn phản ánh chính người dân đang chịu lạm phát cao, không phải tín hiệu disinflation. Vì vậy KHÔNG kết luận \"dovish/risk-on bền\" từ số niềm tin yếu này.\n**Hàm ý thị trường:** Cảnh báo cho discretionary (XLY) nếu tâm lý kéo dài; nghiêng phòng thủ (XLP, XLU) nếu chi tiêu chững lại. Nhưng lưu ý: chi tiêu thực (`RSAFS` MoM +0.88%) vẫn tốt — khoảng cách giữa \"nói\" và \"làm\" của người tiêu dùng còn lớn.\n\n### Fed vùng — Chicago PMI & Dallas Services\n**Chicago PMI (Jun):** 56.7 | Forecast: 55.7 | Previous: 62.7 (in-line, z = +0.36)\n**Dallas Fed Services Revenues (Jun):** 9.8 | Previous: 5.0\n**Texas Services Sector Outlook (Jun):** 2.9 | Previous: -7.7 (nhóm \"other\")\n\n| Chỉ số | Giá trị | Nhận xét |\n|---|---|---|\n| Chicago PMI | 56.7 | Vẫn >50 (mở rộng) và nhỉnh dự báo, NHƯNG lao dốc -6.0 điểm từ 62.7 → động lượng chậm rõ |\n| Dallas Services Revenues | 9.8 | Bật mạnh từ 5.0 — dịch vụ vùng Texas tăng tốc |\n| Texas Services Outlook | 2.9 | Đảo chiều từ -7.7 sang dương — kỳ vọng cải thiện |\n\n**Đánh giá:** Bức tranh Fed vùng LỆCH chiều. Chicago PMI tuy beat nhưng cú rơi 6 điểm cho thấy đà sản xuất khu vực Trung Tây yếu đi. Ngược lại, dịch vụ Texas (Dallas) bật mạnh cả doanh thu lẫn triển vọng — dịch vụ (80% GDP) còn khỏe hơn sản xuất. Tổng thể: hoạt động vẫn mở rộng nhưng không đồng đều.\n**Hàm ý thị trường:** Trung tính. Sản xuất chững (thận trọng XLI/XLB), dịch vụ nâng đỡ (hỗ trợ tăng trưởng chung). Khớp với Economic Surprise Index growth +7.9 (beating, rising).\n\n## Market Pulse\n\n**Yields & Đường cong lãi suất:**\n- 10Y: 4.38% (0 bp) | 2Y: 4.10% (+3 bp) | Spread 2Y-10Y (`T10Y2Y`): +0.30 → dương, steepening nhẹ (10Y đứng, 2Y nhích do JOLTS chặt đẩy kỳ vọng Fed giữ lâu hơn)\n- Breakeven 10Y (`T10YIE`): 2.24% (+2 bp) → kỳ vọng lạm phát nhích lên, vẫn trên Fed target 2%\n\n**USD & Cross-asset:**\n- DXY (`DTWEXBGS`): 120.9 (-0.14%) → USD gần như đi ngang, hơi yếu — trung tính cho EM/commodities\n- VIX: 16.45 (-6.8%) → risk-on (<20); thị trường bình tĩnh trước bão dữ liệu lao động đầu tháng 7\n- WTI: $71.87/bbl (+2.2%) → dầu nhích; cần theo dõi vì CPI Energy đã bùng (YoY +22.1%) — rủi ro lạm phát năng lượng còn treo\n\n**Credit Spreads:**\n- HY OAS (`BAMLH0A0HYM2`): 275 bp (-5 bp) | IG OAS (`BAMLC0A0CM`): 76 bp (0 bp)\n- Spreads thu hẹp/ổn định → không có stress tín dụng; khẩu vị rủi ro lành mạnh\n\n**Vị trí chu kỳ (từ `cycle_context`):**\n- Sahm Rule: +0.10 (an toàn) — thất nghiệp 3mo-avg 4.3% vs đáy 12 tháng 4.2%; chưa gần ngưỡng suy thoái 0.50\n- Đường cong: normal (2s10s +0.30, 10Y-3M +0.51), 116 phiên không đảo — không có tín hiệu suy thoái từ đường cong\n\n**Economic Surprise Index (từ `surprise_index.json`):**\n- Growth surprise 1M: +7.92 (beating mạnh, xu hướng rising) | Inflation surprise 1M: -7.33 (missing — số lạm phát công bố gần đây thấp hơn kỳ vọng dù mức tuyệt đối vẫn cao)\n- Data vượt kỳ vọng tăng trưởng → risk-on tailwind; nhưng lưu ý inflation surprise âm là so với FORECAST, không phải mức lạm phát đã về 2%\n\n**Tổng đánh giá cross-asset:** Risk-on nhẹ — VIX thấp, spreads thu hẹp, growth surprise dương, đường cong bình thường. Nhưng bị kìm bởi lạm phát hard-data còn nóng và dầu nhích, nên chưa phải \"risk-on bền vững một chiều\".\n\n## Bối cảnh xu hướng (so với 30 ngày qua)\n\n**Regime 30 ngày:** Sau cú \"hawkish hold\" của FOMC giữa tháng 6 (giữ 3.75%, dot plot dịch lên), thị trường vĩ mô chuyển từ kỳ vọng disinflation một chiều sang trạng thái **neutral có tính giằng co**: hard-data lạm phát dai dẳng (Core PCE 3.41%, CPI 4.27%) đối kháng với soft-data giảm tốc. Economic Surprise Index vẫn dương (growth 1M ~+8) cho thấy data tổng thể còn vượt kỳ vọng — nền risk-on, VIX quanh 16–18.\n\n**Ngày 30/6 khớp vào đâu:** Đây là phiên \"hỗn hợp điển hình\" của regime hiện tại — JOLTS 7.59M beat mạnh xác nhận cầu lao động chưa gãy (chống lại lo ngại hạ cánh cứng), nhưng CB Consumer Confidence hụt (91.2 vs 94.4) và Chicago PMI rơi về 56.7 báo hiệu động lượng người tiêu dùng đang mềm. Không đổi hướng regime, chỉ củng cố thế cân bằng \"lao động chặt + tăng trưởng chậm dần + lạm phát sticky\".\n\n**Map macro→sector (từ rotation engine):** Trạng thái tăng trưởng-còn-khỏe + lạm phát-sticky nghiêng về **cyclicals value**: XLF (RS 1M +8.4), XLI (RS +8.2) đang LEADING, XLY dẫn đầu điểm rotation. XLV (RS +9.6) vẫn mạnh nhưng là defensive core. Nhóm nhạy lãi suất/định giá cao chịu áp lực: XLU và XLK hạ nhiệt; XLE yếu nhất (WTI về ~$70, RS âm). Đường cong normal (2s10s +0.30), Sahm +0.10 — chưa có tín hiệu suy thoái cận kề.\n\n## Cảnh báo & catalyst sắp tới\n\n**Ngày mai (2026-07-02):**\n- Nonfarm Payrolls (Jun) — forecast +114K, previous +172K (HIGH)\n- Unemployment Rate (Jun) — forecast 4.3%, previous 4.3% (HIGH)\n- Average Hourly Earnings MoM (Jun) — forecast 0.3%, previous 0.3% (HIGH); YoY forecast 3.5%, previous 3.4% (MEDIUM)\n- Initial Jobless Claims — forecast 219K, previous 215K (HIGH)\n- Private Nonfarm Payrolls (Jun) — forecast +115K (MEDIUM) | Participation Rate prev 61.8% | U6 prev 8.1%\n- Continuing Jobless Claims — previous 1,821K (MEDIUM)\n- Factory Orders MoM (May) — forecast -1.7%, previous +4.8% (MEDIUM)\n- Baker Hughes Rig Counts, Fed's Balance Sheet (MEDIUM)\n\n**Tuần này (đến 2026-07-08):**\n- 01/07: ADP Nonfarm Employment (Jun) forecast +118K (HIGH); ISM Manufacturing PMI forecast 53.8 (HIGH); ISM Mfg Prices forecast 77.7, prev 82.1 (HIGH); S&P Global Mfg PMI (HIGH); Crude Oil Inventories (HIGH); Trump Speaks (HIGH); FOMC Daly & Warsh (MEDIUM); Construction Spending; Atlanta Fed GDPNow 2.5%\n- 02/07: Jobs Report (NFP + Unemployment + AHE) + Jobless Claims (xem \"Ngày mai\")\n- 06/07: ISM Non-Manufacturing PMI (HIGH); ISM Svc Prices prev 71.3 (HIGH); S&P Global Services PMI (HIGH)\n- 07/07: Trade Balance/Exports/Imports (May); NY Fed 1Y Inflation Expectations prev 3.5%; 3Y Note Auction\n- 08/07: FOMC Meeting Minutes (HIGH); 10Y Note Auction (HIGH); Consumer Credit (May)\n\n**Theo dõi đặc biệt:**\nTrọng tâm tuần là **Jobs Report (NFP) ngày mai** và **ISM Manufacturing Prices (01/07)**. JOLTS chặt hôm nay nâng kỳ vọng NFP không quá yếu, nhưng forecast +114K đã hạ mạnh từ +172K — nếu NFP hụt sâu sẽ đảo chiều narrative sang \"labor cracking\". Quan trọng ngang là ISM Mfg Prices: prev 82.1 rất nóng, nếu vẫn cao cùng với CPI Energy đã bùng (+22.1% YoY) sẽ ghim chặt kịch bản lạm phát dai dẳng, hạn chế dư địa dovish của Fed. FOMC Minutes (08/07) sẽ cho biết mức độ lo ngại của Fed về mảng giá này."
+    },
+    {
+      "file": "2026-07-01.md",
+      "date": "2026-07-01",
+      "schema_version": "1.1",
+      "surprise_count": "4",
+      "regime_signal": "dovish",
+      "key_takeaway": "Cụm dữ liệu tăng trưởng đầu tháng 7 đồng loạt hụt (ADP +98K, GDPNow Q2 rớt còn 1.2%, ISM Prices lao dốc) — nghiêng dovish, nhưng hard-data lạm phát vẫn nóng nên chưa xác nhận disinflation.",
+      "body_preview": "# Vĩ mô Mỹ — 2026-07-01",
+      "body": "# Vĩ mô Mỹ — 2026-07-01\n\n## Tóm tắt\nNgày mở màn tháng 7 mang tính \"growth scare nhẹ\": ADP chỉ +98K (shock dưới dự báo 118K), Atlanta Fed GDPNow Q2 bị hạ mạnh từ 2.5% xuống 1.2%, và ISM Manufacturing Prices Paid lao từ 82.1 xuống 73.0 — tín hiệu áp lực giá đầu vào hạ nhiệt. Tổng thể nghiêng **dovish** cho Fed (day_surprise_score growth = −4.86), nhưng cần lưu ý ISM/S&P Global PMI vẫn ở vùng mở rộng (>50) nên đây là *giảm tốc*, không phải *co hẹp*. Quan trọng: hard-data lạm phát vẫn nóng (Core PCE YoY 3.41%, CPI YoY 4.27%) → chưa được tuyên bố disinflation đã xác nhận; đây là tín hiệu dovish nhẹ, cần bảng lương NFP (ngày mai) và CPI tháng 6 (14/7) xác nhận.\n\n## Chi tiết chỉ số được công bố hôm nay\n\n### ADP Nonfarm Employment Change (Jun) — MISS (shock-below)\n**Headline:** ADP: +98K | Forecast: +118K | Previous: +122K\n**Đánh giá:** Lệch −20K so với dự báo, z-score −3.39 (shock-below) — cú hụt mạnh nhất trong cụm dữ liệu hôm nay. Việc làm khu vực tư (theo thước đo ADP) giảm tốc rõ so với 122K tháng trước.\n\n**Bối cảnh lao động (FRED, tháng 5 gần nhất):**\n| Thành phần | Giá trị | Nhận xét |\n|---|---|---|\n| NFP MoM (PAYEMS) | +172K (T5) | tăng trưởng việc làm chậm dần, YoY chỉ +0.32% |\n| Initial Claims (ICSA) | 215K (20/6) | vẫn thấp, chưa có tín hiệu sa thải lan rộng |\n| Continuing Claims (CCSA) | 1.821M (13/6) | nhích lên 3 tuần liên tiếp — người mất việc khó tìm việc mới hơn |\n| AHE YoY (CES0500000003) | 3.45% | lương hạ nhiệt về gần vùng phù hợp mục tiêu Fed |\n\n**Đối chiếu:** ADP là proxy nhiễu cho NFP (thường lệch hướng). Continuing Claims tăng đều + ADP hụt = tín hiệu cầu lao động đang mềm đi ở rìa, nhưng Initial Claims 215K vẫn xa ngưỡng lo ngại 250K. Chưa đủ để kết luận thị trường lao động \"gãy\".\n**Hàm ý Fed:** Ủng hộ hướng nới lỏng — thị trường sẽ tăng đặt cược cắt lãi suất nếu NFP ngày mai (dự báo +114K) cũng yếu.\n**Hàm ý thị trường:** Dovish → hỗ trợ tech/growth (XLK), REITs (XLRE); rủi ro NIM cho financials (XLF) nếu lộ trình cắt nhanh hơn.\n\n---\n\n### S&P Global Manufacturing PMI (Jun) — MISS (below-forecast)\n**Headline:** 53.9 | Forecast: 55.7 | Previous: 55.1 (>50 = mở rộng)\n**Đánh giá:** Lệch −1.8 (z −0.65), giảm 1.2 điểm so với tháng trước nhưng **vẫn ở vùng mở rộng chắc chắn**. Đây là hụt kỳ vọng, không phải co hẹp. Kết hợp với ISM PMI 53.3 → hai thước đo sản xuất đồng thuận: mở rộng nhưng đang giảm tốc.\n**Hàm ý thị trường:** Trung tính-nhẹ tiêu cực cho XLI/XLB; cần theo dõi New Orders để xác nhận đà.\n\n---\n\n### ISM Manufacturing (Jun) — IN-LINE headline, Prices hạ nhiệt mạnh\n**Headline PMI:** 53.3 | Forecast: 53.8 | Previous: 54.0 (in-line, z −0.19)\n\n**Phân tích sub-components (investing.com):**\n| Component | Giá trị | Signal |\n|---|---|---|\n| New Orders | 56.0 | leading tốt — cầu vẫn mở rộng, dù giảm nhẹ từ 56.8 |\n| Employment | 49.7 | dưới 50 nhưng cải thiện từ 48.6 — tuyển dụng ngành sản xuất còn dè dặt |\n| Prices Paid | 73.0 | **lao dốc từ 82.1** (−9.1), hụt dự báo 77.7 (z −1.21) — áp lực chi phí đầu vào giảm mạnh |\n\n**Tổng đánh giá:** Cấu trúc lành mạnh — New Orders (56.0) > Employment (49.7), cầu dẫn dắt mở rộng. Điểm nổi bật là Prices Paid hạ nhiệt: dù còn cao (>70 = vẫn tăng giá), tốc độ giảm nhanh cho thấy áp lực pipeline lạm phát hàng hoá đang nới. Điều này khớp với Core Goods CPI đang kéo lạm phát XUỐNG (xem đối chiếu bên dưới).\n**Hàm ý thị trường:** Prices Paid giảm = tín hiệu disinflation hàng hoá tích cực cho biên lợi nhuận doanh nghiệp sản xuất (XLI); nhưng Employment <50 hàm ý Mfg Payrolls yếu.\n\n---\n\n### Challenger Job Cuts (Jun)\n**Headline:** 45.849K sa thải công bố | Previous: 97.006K | YoY: −4.5% (từ +3.4%)\nSố vụ sa thải công bố giảm mạnh một nửa so với tháng trước và chuyển âm YoY — tín hiệu doanh nghiệp *bớt* cắt giảm nhân sự. Đây là điểm sáng ngược chiều với ADP hụt: cầu lao động mềm đi nhưng làn sóng sa thải chủ động chưa lan rộng. Không có forecast nên không tính vào surprise_count.\n\n---\n\n### Construction Spending (May) — IN-LINE\n**Headline:** MoM +0.1% | Forecast: +0.1% | Previous: +0.3%\nĐúng dự báo nhưng giảm tốc so với +0.3% tháng trước. FRED (TTLCONS) xác nhận YoY −1.52% — xây dựng vẫn yếu dưới áp lực lãi suất vay cao. Nhất quán với Housing Starts sụp −15.4% MoM (FRED) và New Home Sales −7.3%. Trung tính, hàm ý áp lực lên nhóm vật liệu/xây dựng nhạy lãi suất.\n\n---\n\n### Atlanta Fed GDPNow (Q2) — MISS (shock-below) [nhóm other]\n**Headline:** 1.2% | Forecast/Previous: 2.5%\n**Đánh giá:** Cắt mạnh −1.3pp (z −10.4), hạ nowcast tăng trưởng Q2 xuống chỉ còn 1.2% QoQ ann. Đây là điều chỉnh nowcast phản ánh loạt dữ liệu yếu gần đây (Durable Goods −4.5% MoM, Housing sụp). Không phải số chính thức nhưng là tín hiệu cảnh báo đà tăng trưởng Q2 đang mất lực so với Q1 (2.1% chính thức).\n**Hàm ý:** Củng cố thông điệp dovish của ngày — tăng trưởng chậm hơn kỳ vọng + lạm phát hàng hoá hạ nhiệt = dư địa nới lỏng, nhưng đối chiếu với hard-data lạm phát nóng bên dưới.\n\n---\n\n### MBA Mortgage & Fed Speakers (noise/context)\n- **MBA:** Lãi suất 30 năm 6.57% (giảm nhẹ từ 6.59%); đơn xin vay bất động 0.0% WoW; Purchase Index 170.6 (+0.9). Thị trường thế chấp đi ngang — lãi suất cao vẫn ghìm nhu cầu nhà ở.\n- **Fed speakers:** Daly (impact medium) và Warsh phát biểu; Tổng thống Trump phát biểu 15:15. Không có dữ liệu định lượng — theo dõi giọng điệu về lộ trình lãi suất trước NFP ngày mai.\n- **EIA (noise):** Tồn kho dầu thô −3.775M (giảm mạnh hơn dự báo −2.9M); tồn xăng −2.333M. Hỗ trợ giá dầu ngắn hạn nhưng là nhiễu tuần.\n\n---\n\n### Đối chiếu soft-data vs hard-data lạm phát (bắt buộc — hard_data_hot = true)\nCụm dữ liệu hôm nay nghiêng dovish (ADP hụt, GDPNow rớt, ISM Prices hạ nhiệt). **NHƯNG hard-data lạm phát thực tế vẫn nóng:** Core PCE YoY **3.41%** (3mo ann 3.52%), CPI YoY **4.27%** (3mo ann tới 8.2%). Không được tuyên bố \"disinflation đã xác nhận\" hay \"Fed dovish hẳn\".\n\n**Nhóm kéo lạm phát LÊN / XUỐNG (từ `inflation_context.drivers`, xếp theo momentum 3mo ann):**\n| Thành phần | MoM% | YoY% | 3mo ann. | Nhận xét |\n|---|---|---|---|---|\n| Energy (Năng lượng) | 3.88% | 22.1% | 104.4% | **Kéo lên mạnh nhất** — giá năng lượng bùng, rất volatile, cần bối cảnh |\n| Shelter (Nhà ở) | 0.32% | 3.62% | 4.87% | ~33% rổ CPI — vẫn sticky |\n| Core Services (Dịch vụ lõi) | 0.30% | 3.56% | 4.16% | Fed lo nhất — chưa hạ về mục tiêu |\n| Food (Thực phẩm) | 0.16% | 3.38% | 2.65% | ổn định |\n| Core Goods (Hàng hoá lõi) | −0.11% | 1.03% | 0.11% | **Kéo xuống** — disinflation hàng hoá, khớp ISM Prices giảm |\n\n> Đang kéo lạm phát LÊN = **Energy**; kéo XUỐNG = **Core Goods**. Lưu ý Energy 3mo ann 104% là con số volatile (giá dầu bật) — không nên hốt hoảng, nhưng nó giữ headline CPI YoY ở mức 4.27% cao. Core Services + Shelter còn sticky là lý do Fed chưa thể dovish một chiều dù soft-data hôm nay yếu.\n\n**Kết luận đối chiếu:** Tín hiệu hôm nay là **dovish nhẹ, cần xác nhận** — soft-data tăng trưởng mềm + áp lực giá hàng hoá hạ nhiệt (ISM Prices, Core Goods), nhưng dịch vụ lõi và năng lượng còn giữ lạm phát tổng ở vùng cao. NFP (2/7) và CPI tháng 6 (14/7) là mảnh ghép quyết định.\n\n## Market Pulse\n\n**Yields & Đường cong lãi suất:**\n- 10Y: 4.38% (đi ngang) | 2Y: 4.10% (+3 bp) | 3M: 3.87% (+4 bp) | Spread 10Y-2Y: +30 bp (T10Y2Y, nới nhẹ từ +28) → đường cong dốc lên bình thường, chưa đảo.\n- Breakeven 10Y (T10YIE): 2.24% (+2 bp) → kỳ vọng lạm phát thị trường nhỉnh trên mục tiêu Fed 2%, nhất quán với hard-data còn nóng.\n\n**USD & Cross-asset:**\n- USD Broad (DTWEXBGS): 120.89 (−0.14%) → USD mềm nhẹ, hỗ trợ nhẹ EM/commodities.\n- VIX: 16.45 (−6.8%) → risk-on (<20), thị trường \"shrug off\" growth scare, tin vào kịch bản Fed nới.\n- WTI: $71.87/bbl (+2.2%) → dầu bật nhờ tồn kho giảm — lưu ý đây là mạch truyền áp lực Energy CPI lên (đang kéo lạm phát lên).\n\n**Credit Spreads:**\n- HY OAS: 275 bp (−5 bp) | IG OAS: 76 bp (đi ngang)\n- Spread HY thu hẹp = credit stress giảm, khẩu vị rủi ro vững — không có dấu hiệu căng thẳng tín dụng dù dữ liệu tăng trưởng yếu.\n\n**Vị trí chu kỳ (từ `cycle_context`):**\n- Sahm Rule: +0.10pp (an toàn) — thất nghiệp 3mo-avg 4.3% vs đáy 12 tháng 4.2%, chưa kích hoạt (ngưỡng 0.50).\n- Đường cong: **normal** (2s10s +0.30, 10Y-3M +0.51) — dương bình thường 116 phiên, chưa từng đảo trong cửa sổ dữ liệu → chưa có tín hiệu suy thoái cận kề.\n\n**Economic Surprise Index (từ `surprise_index.json`):**\n- Growth surprise 1M: +7.92 (beating mạnh, xu hướng rising) | Inflation surprise 1M: −7.33 (missing — lạm phát về mặt *surprise* thấp hơn dự báo).\n- Lưu ý: chỉ số này rolling — cú hụt hôm nay (growth −4.86) sẽ kéo đường này xuống ở lần cập nhật tới. Hiện tại vẫn cho thấy data tổng thể vượt kỳ vọng → risk-on tailwind, nhưng động lượng đang chậm lại.\n\n**Tổng đánh giá cross-asset:** Risk-on nhẹ nhưng thận trọng — VIX giảm + HY spread thu hẹp + USD mềm cho thấy thị trường đọc growth scare hôm nay là \"cắt lãi suất tới gần hơn\" chứ không phải \"suy thoái\". Rủi ro là dầu bật + lạm phát dịch vụ sticky có thể ghìm Fed dovish chậm hơn kỳ vọng.\n\n## Bối cảnh xu hướng (so với 30 ngày qua)\n\n**Regime 30 ngày:** Regime kể từ FOMC \"hawkish hold\" giữa tháng 6 là **neutral giằng co** — hard-data lạm phát nóng (Core PCE 3.41%, CPI 4.27%) đối kháng soft-data giảm tốc, trên nền risk-on (VIX <18, HY spread thu hẹp). Chuỗi phiên gần đây (JOLTS beat 30/6 → ADP/GDPNow hụt 1/7) cho thấy hai mặt của cùng một đồng xu: lao động chưa gãy nhưng đà tăng trưởng đang mất lực.\n\n**Ngày 01/7 khớp/đổi hướng ra sao:** Đây là phiên **\"growth scare\" đầu tiên rõ nét** của tháng 7 — ADP chỉ +98K (shock dưới 118K), Atlanta Fed GDPNow Q2 bị cắt mạnh từ 2.5% xuống 1.2%, ISM Prices Paid lao từ 82.1 về 73.0. Bộ ba này nghiêng dovish và sẽ kéo Economic Surprise Index (growth) xuống ở lần cập nhật tới (day_surprise growth −4.86). Tuy vậy CHƯA đổi hẳn regime: ISM/S&P Global PMI vẫn >50 (giảm tốc, không co hẹp) và hard-data lạm phát vẫn nóng → tín hiệu là \"dovish nhẹ, chờ xác nhận\" chứ không phải bước ngoặt. NFP (2/7) và CPI tháng 6 (14/7) là mảnh ghép quyết định.\n\n**Map macro→sector (từ rotation engine):** Rotation vẫn thiên **cyclicals** nhưng có dấu hiệu chuyển: XLY/XLI/XLF đang LEADING (XLF RS 1M +8.4, XLI +8.2), XLC/XLK ở phase EARLY (dòng tiền đang vào lại tech sau khi de-rate). Ngược lại XLV và XLU chuyển sang FADING — defensive bị rút tiền khi khẩu vị risk-on giữ vững. XLE yếu nhất (WTI ~$70, RS âm), Materials/Staples dưới trung bình. Nếu growth scare tiếp diễn và NFP yếu, kỳ vọng dòng tiền quay lại nhóm nhạy lãi suất (XLK/XLRE); nếu NFP mạnh, cyclicals value (XLF/XLI) giữ leadership. Đường cong normal (2s10s +0.30), Sahm +0.10 — chưa cảnh báo suy thoái.\n\n## Cảnh báo & catalyst sắp tới\n\n**Ngày mai (2026-07-02):**\n- Nonfarm Payrolls (Jun) — HIGH — forecast +114K, previous +172K\n- Unemployment Rate (Jun) — HIGH — forecast 4.3%, previous 4.3%\n- Average Hourly Earnings MoM (Jun) — HIGH — forecast 0.3%, previous 0.3%\n- Average Hourly Earnings YoY (Jun) — MEDIUM — forecast 3.5%, previous 3.4%\n- Initial Jobless Claims — HIGH — forecast 219K, previous 215K\n- Private Nonfarm Payrolls (Jun) — MEDIUM — forecast +115K, previous +120K\n- Continuing Jobless Claims — MEDIUM — previous 1,821K\n- Participation Rate / U6 Unemployment Rate (Jun) — MEDIUM\n- Factory Orders MoM (May) — MEDIUM — forecast −1.7%, previous +4.8%\n- Fed's Balance Sheet, Baker Hughes Rig Counts — MEDIUM\n\n**Tuần này (đến 2026-07-08):**\n- 03/07: CFTC net positions (Crude/Gold/Nasdaq/S&P) — MEDIUM (noise)\n- 06/07: S&P Global Services PMI (Jun) — HIGH (forecast 51.3); ISM Non-Manufacturing PMI & Prices (Jun) — HIGH; S&P Global Composite PMI — MEDIUM\n- 07/07: Trade Balance / Exports / Imports (May) — MEDIUM; NY Fed 1-Year Inflation Expectations — MEDIUM; 3-Year Note Auction — MEDIUM\n- 08/07: FOMC Meeting Minutes — HIGH; 10-Year Note Auction — HIGH; Consumer Credit (May) — MEDIUM\n\n**Theo dõi đặc biệt:**\nNFP ngày mai là mảnh ghép quyết định cho luận điểm \"dovish nhẹ\" hôm nay: ADP hụt (+98K) và GDPNow rớt đã đặt kỳ vọng thấp (+114K). NFP dưới 100K + AHE YoY hạ nhiệt sẽ củng cố đặt cược cắt lãi suất; ngược lại NFP mạnh sẽ làm thị trường phải điều chỉnh lại (tăng trưởng chưa gãy). Song song, ISM Services Prices (6/7) và FOMC Minutes (8/7) sẽ cho biết dịch vụ lõi — nguồn lạm phát sticky nhất — có tiếp tục hạ nhiệt hay không, yếu tố then chốt vì hard-data lạm phát vẫn nóng."
     }
   ],
   "monthly_reports": [
@@ -56631,23 +58273,24 @@ window.MACRO_DATA = {
     "2026-06-25",
     "2026-06-26",
     "2026-06-29",
-    "2026-06-30"
+    "2026-06-30",
+    "2026-07-01"
   ],
   "sectors": {
     "schema_version": "1.1",
-    "fetched_at": "2026-07-01T10:02:32.413087+00:00",
+    "fetched_at": "2026-07-01T18:45:47.613291+00:00",
     "benchmark": {
-      "latest": 746.77,
-      "latest_date": "2026-06-30",
-      "ret_1d": 0.78,
-      "ret_1w": 1.8,
-      "ret_1m": -1.03,
-      "ret_3m": 18.47,
-      "ret_6m": 8.75,
-      "ret_1y": 22.79,
-      "ret_ytd": 9.89,
-      "ma50": 734.28,
-      "ma200": 687.8,
+      "latest": 747.16,
+      "latest_date": "2026-07-01",
+      "ret_1d": 0.05,
+      "ret_1w": 1.9,
+      "ret_1m": -1.25,
+      "ret_3m": 15.18,
+      "ret_6m": 9.2,
+      "ret_1y": 22.27,
+      "ret_ytd": 9.95,
+      "ma50": 735.09,
+      "ma200": 688.29,
       "above_ma50": true,
       "above_ma200": true,
       "golden_cross": true,
@@ -56656,36 +58299,32 @@ window.MACRO_DATA = {
     },
     "sectors": {
       "XLK": {
-        "latest": 190.52,
-        "latest_date": "2026-06-30",
-        "ret_1d": 2.76,
-        "ret_1w": 3.44,
-        "ret_1m": -0.14,
-        "ret_3m": 49.61,
-        "ret_6m": 30.34,
-        "ret_1y": 52.75,
-        "ret_ytd": 32.35,
-        "ma50": 177.26,
-        "ma200": 150.8,
+        "latest": 185.97,
+        "latest_date": "2026-07-01",
+        "ret_1d": -2.39,
+        "ret_1w": 1.6,
+        "ret_1m": -4.89,
+        "ret_3m": 40.1,
+        "ret_6m": 27.8,
+        "ret_1y": 47.65,
+        "ret_ytd": 29.19,
+        "ma50": 177.89,
+        "ma200": 151.06,
         "above_ma50": true,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Technology",
         "ticker": "XLK",
         "breadth": {
-          "pct_above_ma50": 25.0,
+          "pct_above_ma50": 33.3,
           "pct_above_ma200": 50.0,
           "breadth_flag": "narrow",
           "holdings_checked": 12,
-          "holdings_above_ma50": 3,
+          "holdings_above_ma50": 4,
           "holdings_above_ma200": 6,
-          "breadth_thrust": -8.3
+          "breadth_thrust": 0.0
         },
         "rs_history": [
-          {
-            "date": "2025-06-30",
-            "value": 97.52
-          },
           {
             "date": "2025-07-01",
             "value": 96.68
@@ -57689,54 +59328,54 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-30",
             "value": 120.7
+          },
+          {
+            "date": "2026-07-01",
+            "value": 117.76
           }
         ],
-        "rs_1w": 1.61,
-        "rs_1m": 0.9,
-        "rs_3m": 26.28,
-        "rs_6m": 19.85,
-        "rs_1y": 24.4,
-        "rs_ytd": 20.44,
-        "rs_slope": 1.4,
+        "rs_1w": -0.3,
+        "rs_1m": -3.69,
+        "rs_3m": 21.63,
+        "rs_6m": 17.03,
+        "rs_1y": 20.76,
+        "rs_ytd": 17.5,
+        "rs_slope": 0.58,
         "money_flow": {
-          "mfi_5d": 58.6,
-          "mfi_14d": 55.8,
-          "dollar_vol_5d_bn": 11.33,
+          "mfi_5d": 64.6,
+          "mfi_14d": 59.9,
+          "dollar_vol_5d_bn": 10.27,
           "flow_signal": "INFLOW",
-          "mfi_vs_spy": 19.9
+          "mfi_vs_spy": 11.4
         }
       },
       "XLF": {
-        "latest": 53.61,
-        "latest_date": "2026-06-30",
-        "ret_1d": -0.2,
-        "ret_1w": -0.5,
-        "ret_1m": 4.3,
-        "ret_3m": 11.24,
-        "ret_6m": -2.78,
-        "ret_1y": 4.82,
-        "ret_ytd": -1.56,
-        "ma50": 52.05,
-        "ma200": 52.13,
+        "latest": 54.86,
+        "latest_date": "2026-07-01",
+        "ret_1d": 2.34,
+        "ret_1w": 2.13,
+        "ret_1m": 7.05,
+        "ret_3m": 11.52,
+        "ret_6m": 0.04,
+        "ret_1y": 6.39,
+        "ret_ytd": 0.75,
+        "ma50": 52.1,
+        "ma200": 52.14,
         "above_ma50": true,
         "above_ma200": true,
         "golden_cross": false,
         "name": "Financials",
         "ticker": "XLF",
         "breadth": {
-          "pct_above_ma50": 90.9,
-          "pct_above_ma200": 63.6,
+          "pct_above_ma50": 91.7,
+          "pct_above_ma200": 83.3,
           "breadth_flag": "broad",
-          "holdings_checked": 11,
-          "holdings_above_ma50": 10,
-          "holdings_above_ma200": 7,
-          "breadth_thrust": 9.1
+          "holdings_checked": 12,
+          "holdings_above_ma50": 11,
+          "holdings_above_ma200": 10,
+          "breadth_thrust": 8.4
         },
         "rs_history": [
-          {
-            "date": "2025-06-30",
-            "value": 112.48
-          },
           {
             "date": "2025-07-01",
             "value": 113.14
@@ -58740,54 +60379,54 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-30",
             "value": 95.68
+          },
+          {
+            "date": "2026-07-01",
+            "value": 97.87
           }
         ],
-        "rs_1w": -2.26,
-        "rs_1m": 5.38,
-        "rs_3m": -6.1,
-        "rs_6m": -10.6,
-        "rs_1y": -14.64,
-        "rs_ytd": -10.42,
-        "rs_slope": -3.54,
+        "rs_1w": 0.23,
+        "rs_1m": 8.4,
+        "rs_3m": -3.18,
+        "rs_6m": -8.39,
+        "rs_1y": -12.99,
+        "rs_ytd": -8.37,
+        "rs_slope": -1.77,
         "money_flow": {
-          "mfi_5d": 42.7,
+          "mfi_5d": 63.1,
           "mfi_14d": 75.1,
-          "dollar_vol_5d_bn": 7.97,
-          "flow_signal": "OUTFLOW",
-          "mfi_vs_spy": 4.0
+          "dollar_vol_5d_bn": 7.89,
+          "flow_signal": "INFLOW",
+          "mfi_vs_spy": 9.9
         }
       },
       "XLE": {
-        "latest": 53.11,
-        "latest_date": "2026-06-30",
-        "ret_1d": -0.88,
-        "ret_1w": -2.48,
-        "ret_1m": -4.97,
-        "ret_3m": -13.67,
-        "ret_6m": 21.82,
-        "ret_1y": 28.41,
-        "ret_ytd": 17.95,
-        "ma50": 56.73,
-        "ma200": 50.55,
+        "latest": 52.93,
+        "latest_date": "2026-07-01",
+        "ret_1d": -0.34,
+        "ret_1w": -1.19,
+        "ret_1m": -6.96,
+        "ret_3m": -12.97,
+        "ret_6m": 20.26,
+        "ret_1y": 28.71,
+        "ret_ytd": 17.55,
+        "ma50": 56.69,
+        "ma200": 50.6,
         "above_ma50": false,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Energy",
         "ticker": "XLE",
         "breadth": {
-          "pct_above_ma50": 25.0,
+          "pct_above_ma50": 16.7,
           "pct_above_ma200": 75.0,
           "breadth_flag": "narrow",
           "holdings_checked": 12,
-          "holdings_above_ma50": 3,
+          "holdings_above_ma50": 2,
           "holdings_above_ma200": 9,
           "breadth_thrust": -8.3
         },
         "rs_history": [
-          {
-            "date": "2025-06-30",
-            "value": 83.74
-          },
           {
             "date": "2025-07-01",
             "value": 84.41
@@ -59791,54 +61430,1105 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-30",
             "value": 88.5
+          },
+          {
+            "date": "2026-07-01",
+            "value": 88.16
           }
         ],
-        "rs_1w": -4.2,
-        "rs_1m": -3.98,
-        "rs_3m": -27.13,
-        "rs_6m": 12.01,
-        "rs_1y": 4.57,
-        "rs_ytd": 7.33,
-        "rs_slope": -3.25,
+        "rs_1w": -3.03,
+        "rs_1m": -5.79,
+        "rs_3m": -24.45,
+        "rs_6m": 10.13,
+        "rs_1y": 5.27,
+        "rs_ytd": 6.91,
+        "rs_slope": -1.65,
         "money_flow": {
-          "mfi_5d": 33.0,
-          "mfi_14d": 31.5,
-          "dollar_vol_5d_bn": 7.71,
-          "flow_signal": "STRONG_OUTFLOW",
-          "mfi_vs_spy": -5.7
+          "mfi_5d": 39.0,
+          "mfi_14d": 24.5,
+          "dollar_vol_5d_bn": 6.52,
+          "flow_signal": "OUTFLOW",
+          "mfi_vs_spy": -14.2
+        }
+      },
+      "XLV": {
+        "latest": 159.32,
+        "latest_date": "2026-07-01",
+        "ret_1d": 0.42,
+        "ret_1w": 3.9,
+        "ret_1m": 8.24,
+        "ret_3m": 9.15,
+        "ret_6m": 3.13,
+        "ret_1y": 20.27,
+        "ret_ytd": 3.33,
+        "ma50": 148.69,
+        "ma200": 148.83,
+        "above_ma50": true,
+        "above_ma200": true,
+        "golden_cross": false,
+        "name": "Healthcare",
+        "ticker": "XLV",
+        "breadth": {
+          "pct_above_ma50": 75.0,
+          "pct_above_ma200": 58.3,
+          "breadth_flag": "broad",
+          "holdings_checked": 12,
+          "holdings_above_ma50": 9,
+          "holdings_above_ma200": 7,
+          "breadth_thrust": 0.0
+        },
+        "rs_history": [
+          {
+            "date": "2025-07-01",
+            "value": 83.66
+          },
+          {
+            "date": "2025-07-02",
+            "value": 82.46
+          },
+          {
+            "date": "2025-07-03",
+            "value": 81.9
+          },
+          {
+            "date": "2025-07-07",
+            "value": 81.82
+          },
+          {
+            "date": "2025-07-08",
+            "value": 82.24
+          },
+          {
+            "date": "2025-07-09",
+            "value": 82.06
+          },
+          {
+            "date": "2025-07-10",
+            "value": 82.33
+          },
+          {
+            "date": "2025-07-11",
+            "value": 81.94
+          },
+          {
+            "date": "2025-07-14",
+            "value": 81.68
+          },
+          {
+            "date": "2025-07-15",
+            "value": 80.56
+          },
+          {
+            "date": "2025-07-16",
+            "value": 81.29
+          },
+          {
+            "date": "2025-07-17",
+            "value": 79.87
+          },
+          {
+            "date": "2025-07-18",
+            "value": 79.4
+          },
+          {
+            "date": "2025-07-21",
+            "value": 78.8
+          },
+          {
+            "date": "2025-07-22",
+            "value": 80.26
+          },
+          {
+            "date": "2025-07-23",
+            "value": 81.21
+          },
+          {
+            "date": "2025-07-24",
+            "value": 80.88
+          },
+          {
+            "date": "2025-07-25",
+            "value": 80.97
+          },
+          {
+            "date": "2025-07-28",
+            "value": 80.28
+          },
+          {
+            "date": "2025-07-29",
+            "value": 79.98
+          },
+          {
+            "date": "2025-07-30",
+            "value": 79.94
+          },
+          {
+            "date": "2025-07-31",
+            "value": 77.99
+          },
+          {
+            "date": "2025-08-01",
+            "value": 79.72
+          },
+          {
+            "date": "2025-08-04",
+            "value": 79.65
+          },
+          {
+            "date": "2025-08-05",
+            "value": 79.75
+          },
+          {
+            "date": "2025-08-06",
+            "value": 77.96
+          },
+          {
+            "date": "2025-08-07",
+            "value": 77.12
+          },
+          {
+            "date": "2025-08-08",
+            "value": 77.21
+          },
+          {
+            "date": "2025-08-11",
+            "value": 77.44
+          },
+          {
+            "date": "2025-08-12",
+            "value": 77.15
+          },
+          {
+            "date": "2025-08-13",
+            "value": 78.12
+          },
+          {
+            "date": "2025-08-14",
+            "value": 78.51
+          },
+          {
+            "date": "2025-08-15",
+            "value": 80.01
+          },
+          {
+            "date": "2025-08-18",
+            "value": 79.84
+          },
+          {
+            "date": "2025-08-19",
+            "value": 80.79
+          },
+          {
+            "date": "2025-08-20",
+            "value": 81.45
+          },
+          {
+            "date": "2025-08-21",
+            "value": 81.5
+          },
+          {
+            "date": "2025-08-22",
+            "value": 80.93
+          },
+          {
+            "date": "2025-08-25",
+            "value": 80.13
+          },
+          {
+            "date": "2025-08-26",
+            "value": 80.29
+          },
+          {
+            "date": "2025-08-27",
+            "value": 80.06
+          },
+          {
+            "date": "2025-08-28",
+            "value": 79.47
+          },
+          {
+            "date": "2025-08-29",
+            "value": 80.53
+          },
+          {
+            "date": "2025-09-02",
+            "value": 81.21
+          },
+          {
+            "date": "2025-09-03",
+            "value": 80.39
+          },
+          {
+            "date": "2025-09-04",
+            "value": 80.02
+          },
+          {
+            "date": "2025-09-05",
+            "value": 80.53
+          },
+          {
+            "date": "2025-09-08",
+            "value": 80.3
+          },
+          {
+            "date": "2025-09-09",
+            "value": 80.55
+          },
+          {
+            "date": "2025-09-10",
+            "value": 79.59
+          },
+          {
+            "date": "2025-09-11",
+            "value": 80.3
+          },
+          {
+            "date": "2025-09-12",
+            "value": 79.4
+          },
+          {
+            "date": "2025-09-15",
+            "value": 78.31
+          },
+          {
+            "date": "2025-09-16",
+            "value": 78.42
+          },
+          {
+            "date": "2025-09-17",
+            "value": 78.67
+          },
+          {
+            "date": "2025-09-18",
+            "value": 78.46
+          },
+          {
+            "date": "2025-09-19",
+            "value": 77.97
+          },
+          {
+            "date": "2025-09-22",
+            "value": 77.58
+          },
+          {
+            "date": "2025-09-23",
+            "value": 78.18
+          },
+          {
+            "date": "2025-09-24",
+            "value": 78.12
+          },
+          {
+            "date": "2025-09-25",
+            "value": 77.18
+          },
+          {
+            "date": "2025-09-26",
+            "value": 77.52
+          },
+          {
+            "date": "2025-09-29",
+            "value": 77.53
+          },
+          {
+            "date": "2025-09-30",
+            "value": 79.1
+          },
+          {
+            "date": "2025-10-01",
+            "value": 81.27
+          },
+          {
+            "date": "2025-10-02",
+            "value": 81.02
+          },
+          {
+            "date": "2025-10-03",
+            "value": 81.94
+          },
+          {
+            "date": "2025-10-06",
+            "value": 81.25
+          },
+          {
+            "date": "2025-10-07",
+            "value": 81.62
+          },
+          {
+            "date": "2025-10-08",
+            "value": 81.29
+          },
+          {
+            "date": "2025-10-09",
+            "value": 81.35
+          },
+          {
+            "date": "2025-10-10",
+            "value": 82.4
+          },
+          {
+            "date": "2025-10-13",
+            "value": 81.06
+          },
+          {
+            "date": "2025-10-14",
+            "value": 81.39
+          },
+          {
+            "date": "2025-10-15",
+            "value": 81.15
+          },
+          {
+            "date": "2025-10-16",
+            "value": 81.57
+          },
+          {
+            "date": "2025-10-17",
+            "value": 81.65
+          },
+          {
+            "date": "2025-10-20",
+            "value": 81.67
+          },
+          {
+            "date": "2025-10-21",
+            "value": 81.86
+          },
+          {
+            "date": "2025-10-22",
+            "value": 82.76
+          },
+          {
+            "date": "2025-10-23",
+            "value": 82.32
+          },
+          {
+            "date": "2025-10-24",
+            "value": 81.64
+          },
+          {
+            "date": "2025-10-27",
+            "value": 80.88
+          },
+          {
+            "date": "2025-10-28",
+            "value": 80.16
+          },
+          {
+            "date": "2025-10-29",
+            "value": 79.31
+          },
+          {
+            "date": "2025-10-30",
+            "value": 80.37
+          },
+          {
+            "date": "2025-10-31",
+            "value": 80.08
+          },
+          {
+            "date": "2025-11-03",
+            "value": 80.04
+          },
+          {
+            "date": "2025-11-04",
+            "value": 81.37
+          },
+          {
+            "date": "2025-11-05",
+            "value": 81.4
+          },
+          {
+            "date": "2025-11-06",
+            "value": 82.44
+          },
+          {
+            "date": "2025-11-07",
+            "value": 82.47
+          },
+          {
+            "date": "2025-11-10",
+            "value": 81.84
+          },
+          {
+            "date": "2025-11-11",
+            "value": 83.54
+          },
+          {
+            "date": "2025-11-12",
+            "value": 84.67
+          },
+          {
+            "date": "2025-11-13",
+            "value": 86.06
+          },
+          {
+            "date": "2025-11-14",
+            "value": 85.56
+          },
+          {
+            "date": "2025-11-17",
+            "value": 86.29
+          },
+          {
+            "date": "2025-11-18",
+            "value": 87.53
+          },
+          {
+            "date": "2025-11-19",
+            "value": 87.05
+          },
+          {
+            "date": "2025-11-20",
+            "value": 87.87
+          },
+          {
+            "date": "2025-11-21",
+            "value": 88.83
+          },
+          {
+            "date": "2025-11-24",
+            "value": 87.91
+          },
+          {
+            "date": "2025-11-25",
+            "value": 89.06
+          },
+          {
+            "date": "2025-11-26",
+            "value": 88.26
+          },
+          {
+            "date": "2025-11-28",
+            "value": 87.35
+          },
+          {
+            "date": "2025-12-01",
+            "value": 86.44
+          },
+          {
+            "date": "2025-12-02",
+            "value": 85.76
+          },
+          {
+            "date": "2025-12-03",
+            "value": 85.86
+          },
+          {
+            "date": "2025-12-04",
+            "value": 85.15
+          },
+          {
+            "date": "2025-12-05",
+            "value": 84.63
+          },
+          {
+            "date": "2025-12-08",
+            "value": 83.87
+          },
+          {
+            "date": "2025-12-09",
+            "value": 83.13
+          },
+          {
+            "date": "2025-12-10",
+            "value": 83.78
+          },
+          {
+            "date": "2025-12-11",
+            "value": 84.38
+          },
+          {
+            "date": "2025-12-12",
+            "value": 85.56
+          },
+          {
+            "date": "2025-12-15",
+            "value": 86.83
+          },
+          {
+            "date": "2025-12-16",
+            "value": 85.93
+          },
+          {
+            "date": "2025-12-17",
+            "value": 86.73
+          },
+          {
+            "date": "2025-12-18",
+            "value": 86.15
+          },
+          {
+            "date": "2025-12-19",
+            "value": 85.95
+          },
+          {
+            "date": "2025-12-22",
+            "value": 85.98
+          },
+          {
+            "date": "2025-12-23",
+            "value": 85.42
+          },
+          {
+            "date": "2025-12-24",
+            "value": 85.56
+          },
+          {
+            "date": "2025-12-26",
+            "value": 85.71
+          },
+          {
+            "date": "2025-12-29",
+            "value": 85.88
+          },
+          {
+            "date": "2025-12-30",
+            "value": 85.92
+          },
+          {
+            "date": "2025-12-31",
+            "value": 86.07
+          },
+          {
+            "date": "2026-01-02",
+            "value": 86.3
+          },
+          {
+            "date": "2026-01-05",
+            "value": 85.47
+          },
+          {
+            "date": "2026-01-06",
+            "value": 86.64
+          },
+          {
+            "date": "2026-01-07",
+            "value": 87.78
+          },
+          {
+            "date": "2026-01-08",
+            "value": 86.95
+          },
+          {
+            "date": "2026-01-09",
+            "value": 85.93
+          },
+          {
+            "date": "2026-01-12",
+            "value": 85.84
+          },
+          {
+            "date": "2026-01-13",
+            "value": 85.66
+          },
+          {
+            "date": "2026-01-14",
+            "value": 86.7
+          },
+          {
+            "date": "2026-01-15",
+            "value": 85.97
+          },
+          {
+            "date": "2026-01-16",
+            "value": 85.37
+          },
+          {
+            "date": "2026-01-20",
+            "value": 86.95
+          },
+          {
+            "date": "2026-01-21",
+            "value": 87.54
+          },
+          {
+            "date": "2026-01-22",
+            "value": 87.11
+          },
+          {
+            "date": "2026-01-23",
+            "value": 86.63
+          },
+          {
+            "date": "2026-01-26",
+            "value": 86.53
+          },
+          {
+            "date": "2026-01-27",
+            "value": 84.74
+          },
+          {
+            "date": "2026-01-28",
+            "value": 84.13
+          },
+          {
+            "date": "2026-01-29",
+            "value": 84.03
+          },
+          {
+            "date": "2026-01-30",
+            "value": 84.78
+          },
+          {
+            "date": "2026-02-02",
+            "value": 84.88
+          },
+          {
+            "date": "2026-02-03",
+            "value": 84.73
+          },
+          {
+            "date": "2026-02-04",
+            "value": 86.21
+          },
+          {
+            "date": "2026-02-05",
+            "value": 86.64
+          },
+          {
+            "date": "2026-02-06",
+            "value": 86.58
+          },
+          {
+            "date": "2026-02-09",
+            "value": 85.41
+          },
+          {
+            "date": "2026-02-10",
+            "value": 85.09
+          },
+          {
+            "date": "2026-02-11",
+            "value": 85.61
+          },
+          {
+            "date": "2026-02-12",
+            "value": 86.82
+          },
+          {
+            "date": "2026-02-13",
+            "value": 87.68
+          },
+          {
+            "date": "2026-02-17",
+            "value": 87.38
+          },
+          {
+            "date": "2026-02-18",
+            "value": 87.1
+          },
+          {
+            "date": "2026-02-19",
+            "value": 87.11
+          },
+          {
+            "date": "2026-02-20",
+            "value": 86.24
+          },
+          {
+            "date": "2026-02-23",
+            "value": 88.09
+          },
+          {
+            "date": "2026-02-24",
+            "value": 87.08
+          },
+          {
+            "date": "2026-02-25",
+            "value": 86.33
+          },
+          {
+            "date": "2026-02-26",
+            "value": 86.59
+          },
+          {
+            "date": "2026-02-27",
+            "value": 88.54
+          },
+          {
+            "date": "2026-03-02",
+            "value": 87.57
+          },
+          {
+            "date": "2026-03-03",
+            "value": 87.35
+          },
+          {
+            "date": "2026-03-04",
+            "value": 86.91
+          },
+          {
+            "date": "2026-03-05",
+            "value": 85.65
+          },
+          {
+            "date": "2026-03-06",
+            "value": 86.1
+          },
+          {
+            "date": "2026-03-09",
+            "value": 86.23
+          },
+          {
+            "date": "2026-03-10",
+            "value": 85.75
+          },
+          {
+            "date": "2026-03-11",
+            "value": 85.69
+          },
+          {
+            "date": "2026-03-12",
+            "value": 85.48
+          },
+          {
+            "date": "2026-03-13",
+            "value": 85.75
+          },
+          {
+            "date": "2026-03-16",
+            "value": 85.58
+          },
+          {
+            "date": "2026-03-17",
+            "value": 84.58
+          },
+          {
+            "date": "2026-03-18",
+            "value": 84.34
+          },
+          {
+            "date": "2026-03-19",
+            "value": 84.25
+          },
+          {
+            "date": "2026-03-20",
+            "value": 84.73
+          },
+          {
+            "date": "2026-03-23",
+            "value": 83.87
+          },
+          {
+            "date": "2026-03-24",
+            "value": 84.16
+          },
+          {
+            "date": "2026-03-25",
+            "value": 84.53
+          },
+          {
+            "date": "2026-03-26",
+            "value": 85.77
+          },
+          {
+            "date": "2026-03-27",
+            "value": 85.78
+          },
+          {
+            "date": "2026-03-30",
+            "value": 86.4
+          },
+          {
+            "date": "2026-03-31",
+            "value": 85.59
+          },
+          {
+            "date": "2026-04-01",
+            "value": 85.6
+          },
+          {
+            "date": "2026-04-02",
+            "value": 84.99
+          },
+          {
+            "date": "2026-04-06",
+            "value": 84.28
+          },
+          {
+            "date": "2026-04-07",
+            "value": 84.41
+          },
+          {
+            "date": "2026-04-08",
+            "value": 84.06
+          },
+          {
+            "date": "2026-04-09",
+            "value": 83.39
+          },
+          {
+            "date": "2026-04-10",
+            "value": 82.31
+          },
+          {
+            "date": "2026-04-13",
+            "value": 81.88
+          },
+          {
+            "date": "2026-04-14",
+            "value": 81.37
+          },
+          {
+            "date": "2026-04-15",
+            "value": 80.15
+          },
+          {
+            "date": "2026-04-16",
+            "value": 79.33
+          },
+          {
+            "date": "2026-04-17",
+            "value": 79.55
+          },
+          {
+            "date": "2026-04-20",
+            "value": 78.97
+          },
+          {
+            "date": "2026-04-21",
+            "value": 78.68
+          },
+          {
+            "date": "2026-04-22",
+            "value": 78.14
+          },
+          {
+            "date": "2026-04-23",
+            "value": 78.37
+          },
+          {
+            "date": "2026-04-24",
+            "value": 76.67
+          },
+          {
+            "date": "2026-04-27",
+            "value": 76.16
+          },
+          {
+            "date": "2026-04-28",
+            "value": 76.73
+          },
+          {
+            "date": "2026-04-29",
+            "value": 76.21
+          },
+          {
+            "date": "2026-04-30",
+            "value": 77.13
+          },
+          {
+            "date": "2026-05-01",
+            "value": 76.48
+          },
+          {
+            "date": "2026-05-04",
+            "value": 76.53
+          },
+          {
+            "date": "2026-05-05",
+            "value": 76.22
+          },
+          {
+            "date": "2026-05-06",
+            "value": 75.23
+          },
+          {
+            "date": "2026-05-07",
+            "value": 75.1
+          },
+          {
+            "date": "2026-05-08",
+            "value": 73.86
+          },
+          {
+            "date": "2026-05-11",
+            "value": 73.46
+          },
+          {
+            "date": "2026-05-12",
+            "value": 75.01
+          },
+          {
+            "date": "2026-05-13",
+            "value": 75.04
+          },
+          {
+            "date": "2026-05-14",
+            "value": 74.41
+          },
+          {
+            "date": "2026-05-15",
+            "value": 74.53
+          },
+          {
+            "date": "2026-05-18",
+            "value": 74.9
+          },
+          {
+            "date": "2026-05-19",
+            "value": 76.23
+          },
+          {
+            "date": "2026-05-20",
+            "value": 75.36
+          },
+          {
+            "date": "2026-05-21",
+            "value": 75.73
+          },
+          {
+            "date": "2026-05-22",
+            "value": 76.32
+          },
+          {
+            "date": "2026-05-26",
+            "value": 75.12
+          },
+          {
+            "date": "2026-05-27",
+            "value": 75.27
+          },
+          {
+            "date": "2026-05-28",
+            "value": 75.91
+          },
+          {
+            "date": "2026-05-29",
+            "value": 75.02
+          },
+          {
+            "date": "2026-06-01",
+            "value": 74.0
+          },
+          {
+            "date": "2026-06-02",
+            "value": 73.18
+          },
+          {
+            "date": "2026-06-03",
+            "value": 74.27
+          },
+          {
+            "date": "2026-06-04",
+            "value": 76.26
+          },
+          {
+            "date": "2026-06-05",
+            "value": 78.76
+          },
+          {
+            "date": "2026-06-08",
+            "value": 78.4
+          },
+          {
+            "date": "2026-06-09",
+            "value": 79.62
+          },
+          {
+            "date": "2026-06-10",
+            "value": 80.0
+          },
+          {
+            "date": "2026-06-11",
+            "value": 79.3
+          },
+          {
+            "date": "2026-06-12",
+            "value": 78.73
+          },
+          {
+            "date": "2026-06-15",
+            "value": 76.9
+          },
+          {
+            "date": "2026-06-16",
+            "value": 77.39
+          },
+          {
+            "date": "2026-06-17",
+            "value": 77.22
+          },
+          {
+            "date": "2026-06-18",
+            "value": 75.76
+          },
+          {
+            "date": "2026-06-22",
+            "value": 76.68
+          },
+          {
+            "date": "2026-06-23",
+            "value": 78.9
+          },
+          {
+            "date": "2026-06-24",
+            "value": 79.55
+          },
+          {
+            "date": "2026-06-25",
+            "value": 80.61
+          },
+          {
+            "date": "2026-06-26",
+            "value": 83.66
+          },
+          {
+            "date": "2026-06-29",
+            "value": 82.51
+          },
+          {
+            "date": "2026-06-30",
+            "value": 80.81
+          },
+          {
+            "date": "2026-07-01",
+            "value": 81.11
+          }
+        ],
+        "rs_1w": 1.96,
+        "rs_1m": 9.61,
+        "rs_3m": -5.24,
+        "rs_6m": -5.56,
+        "rs_1y": -1.64,
+        "rs_ytd": -6.02,
+        "rs_slope": -0.33,
+        "money_flow": {
+          "mfi_5d": 67.4,
+          "mfi_14d": 60.7,
+          "dollar_vol_5d_bn": 9.16,
+          "flow_signal": "STRONG_INFLOW",
+          "mfi_vs_spy": 14.2
         }
       },
       "XLY": {
-        "latest": 117.28,
-        "latest_date": "2026-06-30",
-        "ret_1d": 0.14,
-        "ret_1w": 3.09,
-        "ret_1m": -2.78,
-        "ret_3m": 11.22,
-        "ret_6m": -3.52,
-        "ret_1y": 8.14,
-        "ret_ytd": -0.51,
-        "ma50": 117.38,
+        "latest": 118.64,
+        "latest_date": "2026-07-01",
+        "ret_1d": 1.16,
+        "ret_1w": 3.1,
+        "ret_1m": 0.58,
+        "ret_3m": 9.08,
+        "ret_6m": -1.44,
+        "ret_1y": 10.02,
+        "ret_ytd": 0.64,
+        "ma50": 117.36,
         "ma200": 117.1,
-        "above_ma50": false,
+        "above_ma50": true,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Consumer Discretionary",
         "ticker": "XLY",
         "breadth": {
-          "pct_above_ma50": 41.7,
+          "pct_above_ma50": 50.0,
           "pct_above_ma200": 58.3,
           "breadth_flag": "healthy",
           "holdings_checked": 12,
-          "holdings_above_ma50": 5,
+          "holdings_above_ma50": 6,
           "holdings_above_ma200": 7,
-          "breadth_thrust": -8.3
+          "breadth_thrust": 0.0
         },
         "rs_history": [
-          {
-            "date": "2025-06-30",
-            "value": 104.44
-          },
           {
             "date": "2025-07-01",
             "value": 104.92
@@ -60842,35 +63532,39 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-30",
             "value": 92.95
+          },
+          {
+            "date": "2026-07-01",
+            "value": 93.98
           }
         ],
-        "rs_1w": 1.27,
-        "rs_1m": -1.77,
-        "rs_3m": -6.12,
-        "rs_6m": -11.29,
-        "rs_1y": -11.93,
-        "rs_ytd": -9.46,
-        "rs_slope": 1.69,
+        "rs_1w": 1.18,
+        "rs_1m": 1.85,
+        "rs_3m": -5.3,
+        "rs_6m": -9.74,
+        "rs_1y": -10.01,
+        "rs_ytd": -8.46,
+        "rs_slope": 0.74,
         "money_flow": {
-          "mfi_5d": 82.4,
-          "mfi_14d": 58.3,
-          "dollar_vol_5d_bn": 4.63,
+          "mfi_5d": 81.5,
+          "mfi_14d": 64.6,
+          "dollar_vol_5d_bn": 4.4,
           "flow_signal": "STRONG_INFLOW",
-          "mfi_vs_spy": 43.7
+          "mfi_vs_spy": 28.3
         }
       },
       "XLP": {
-        "latest": 83.07,
-        "latest_date": "2026-06-30",
-        "ret_1d": -1.54,
-        "ret_1w": -0.78,
-        "ret_1m": 0.89,
-        "ret_3m": 2.16,
-        "ret_6m": 7.53,
-        "ret_1y": 5.99,
-        "ret_ytd": 8.27,
-        "ma50": 83.39,
-        "ma200": 80.61,
+        "latest": 83.23,
+        "latest_date": "2026-07-01",
+        "ret_1d": 0.19,
+        "ret_1w": -1.43,
+        "ret_1m": 2.17,
+        "ret_3m": 2.23,
+        "ret_6m": 7.66,
+        "ret_1y": 5.64,
+        "ret_ytd": 8.48,
+        "ma50": 83.42,
+        "ma200": 80.64,
         "above_ma50": false,
         "above_ma200": true,
         "golden_cross": true,
@@ -60886,10 +63580,6 @@ window.MACRO_DATA = {
           "breadth_thrust": -8.3
         },
         "rs_history": [
-          {
-            "date": "2025-06-30",
-            "value": 95.18
-          },
           {
             "date": "2025-07-01",
             "value": 96.4
@@ -61893,54 +64583,54 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-30",
             "value": 82.12
+          },
+          {
+            "date": "2026-07-01",
+            "value": 82.24
           }
         ],
-        "rs_1w": -2.53,
-        "rs_1m": 1.94,
-        "rs_3m": -13.77,
-        "rs_6m": -1.13,
-        "rs_1y": -13.68,
-        "rs_ytd": -1.47,
-        "rs_slope": -2.99,
+        "rs_1w": -3.27,
+        "rs_1m": 3.46,
+        "rs_3m": -11.25,
+        "rs_6m": -1.41,
+        "rs_1y": -13.6,
+        "rs_ytd": -1.33,
+        "rs_slope": -4.09,
         "money_flow": {
-          "mfi_5d": 39.5,
-          "mfi_14d": 50.8,
-          "dollar_vol_5d_bn": 4.86,
-          "flow_signal": "OUTFLOW",
-          "mfi_vs_spy": 0.8
+          "mfi_5d": 21.2,
+          "mfi_14d": 44.6,
+          "dollar_vol_5d_bn": 4.55,
+          "flow_signal": "STRONG_OUTFLOW",
+          "mfi_vs_spy": -32.0
         }
       },
       "XLI": {
-        "latest": 185.23,
-        "latest_date": "2026-06-30",
-        "ret_1d": 1.35,
-        "ret_1w": 3.97,
-        "ret_1m": 7.25,
-        "ret_3m": 18.57,
-        "ret_6m": 18.45,
-        "ret_1y": 27.81,
-        "ret_ytd": 17.87,
-        "ma50": 174.47,
-        "ma200": 163.33,
+        "latest": 183.67,
+        "latest_date": "2026-07-01",
+        "ret_1d": -0.84,
+        "ret_1w": 1.92,
+        "ret_1m": 6.8,
+        "ret_3m": 13.85,
+        "ret_6m": 17.7,
+        "ret_1y": 26.11,
+        "ret_ytd": 16.88,
+        "ma50": 174.68,
+        "ma200": 163.5,
         "above_ma50": true,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Industrials",
         "ticker": "XLI",
         "breadth": {
-          "pct_above_ma50": 72.7,
-          "pct_above_ma200": 63.6,
+          "pct_above_ma50": 91.7,
+          "pct_above_ma200": 75.0,
           "breadth_flag": "broad",
-          "holdings_checked": 11,
-          "holdings_above_ma50": 8,
-          "holdings_above_ma200": 7,
-          "breadth_thrust": 18.2
+          "holdings_checked": 12,
+          "holdings_above_ma50": 11,
+          "holdings_above_ma200": 9,
+          "breadth_thrust": 25.0
         },
         "rs_history": [
-          {
-            "date": "2025-06-30",
-            "value": 108.22
-          },
           {
             "date": "2025-07-01",
             "value": 108.61
@@ -62379,7 +65069,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-12-04",
-            "value": 102.8
+            "value": 102.79
           },
           {
             "date": "2025-12-05",
@@ -62944,35 +65634,39 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-30",
             "value": 112.62
+          },
+          {
+            "date": "2026-07-01",
+            "value": 111.62
           }
         ],
-        "rs_1w": 2.14,
-        "rs_1m": 8.37,
-        "rs_3m": 0.08,
-        "rs_6m": 8.91,
-        "rs_1y": 4.09,
-        "rs_ytd": 7.26,
-        "rs_slope": 0.15,
+        "rs_1w": 0.02,
+        "rs_1m": 8.15,
+        "rs_3m": -1.16,
+        "rs_6m": 7.79,
+        "rs_1y": 3.14,
+        "rs_ytd": 6.3,
+        "rs_slope": -1.92,
         "money_flow": {
-          "mfi_5d": 76.9,
-          "mfi_14d": 74.3,
-          "dollar_vol_5d_bn": 6.97,
-          "flow_signal": "STRONG_INFLOW",
-          "mfi_vs_spy": 38.2
+          "mfi_5d": 60.5,
+          "mfi_14d": 79.1,
+          "dollar_vol_5d_bn": 6.76,
+          "flow_signal": "INFLOW",
+          "mfi_vs_spy": 7.3
         }
       },
       "XLB": {
-        "latest": 50.83,
-        "latest_date": "2026-06-30",
-        "ret_1d": 0.34,
-        "ret_1w": -0.08,
-        "ret_1m": -0.25,
-        "ret_3m": 3.93,
-        "ret_6m": 11.14,
-        "ret_1y": 17.77,
-        "ret_ytd": 11.12,
-        "ma50": 51.12,
-        "ma200": 47.87,
+        "latest": 51.08,
+        "latest_date": "2026-07-01",
+        "ret_1d": 0.48,
+        "ret_1w": -0.17,
+        "ret_1m": 0.68,
+        "ret_3m": 2.59,
+        "ret_6m": 12.58,
+        "ret_1y": 18.45,
+        "ret_ytd": 11.65,
+        "ma50": 51.1,
+        "ma200": 47.9,
         "above_ma50": false,
         "above_ma200": true,
         "golden_cross": true,
@@ -62980,18 +65674,14 @@ window.MACRO_DATA = {
         "ticker": "XLB",
         "breadth": {
           "pct_above_ma50": 50.0,
-          "pct_above_ma200": 70.0,
+          "pct_above_ma200": 75.0,
           "breadth_flag": "healthy",
-          "holdings_checked": 10,
-          "holdings_above_ma50": 5,
-          "holdings_above_ma200": 7,
-          "breadth_thrust": -10.0
+          "holdings_checked": 12,
+          "holdings_above_ma50": 6,
+          "holdings_above_ma200": 9,
+          "breadth_thrust": -8.3
         },
         "rs_history": [
-          {
-            "date": "2025-06-30",
-            "value": 89.77
-          },
           {
             "date": "2025-07-01",
             "value": 92.12
@@ -63995,54 +66685,54 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-30",
             "value": 86.6
+          },
+          {
+            "date": "2026-07-01",
+            "value": 86.97
           }
         ],
-        "rs_1w": -1.84,
-        "rs_1m": 0.78,
-        "rs_3m": -12.27,
-        "rs_6m": 2.19,
-        "rs_1y": -4.08,
-        "rs_ytd": 1.12,
-        "rs_slope": -2.03,
+        "rs_1w": -2.03,
+        "rs_1m": 1.95,
+        "rs_3m": -10.93,
+        "rs_6m": 3.1,
+        "rs_1y": -3.12,
+        "rs_ytd": 1.55,
+        "rs_slope": -2.49,
         "money_flow": {
-          "mfi_5d": 58.1,
-          "mfi_14d": 50.9,
-          "dollar_vol_5d_bn": 2.68,
-          "flow_signal": "INFLOW",
-          "mfi_vs_spy": 19.4
+          "mfi_5d": 54.8,
+          "mfi_14d": 56.5,
+          "dollar_vol_5d_bn": 2.49,
+          "flow_signal": "NEUTRAL",
+          "mfi_vs_spy": 1.6
         }
       },
       "XLU": {
-        "latest": 45.34,
-        "latest_date": "2026-06-30",
-        "ret_1d": -1.48,
-        "ret_1w": 0.6,
-        "ret_1m": 2.72,
-        "ret_3m": -0.63,
-        "ret_6m": 7.41,
-        "ret_1y": 14.61,
-        "ret_ytd": 6.41,
-        "ma50": 44.77,
-        "ma200": 44.08,
+        "latest": 44.79,
+        "latest_date": "2026-07-01",
+        "ret_1d": -1.2,
+        "ret_1w": -1.64,
+        "ret_1m": 4.6,
+        "ret_3m": -1.76,
+        "ret_6m": 5.92,
+        "ret_1y": 12.77,
+        "ret_ytd": 5.13,
+        "ma50": 44.76,
+        "ma200": 44.1,
         "above_ma50": true,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Utilities",
         "ticker": "XLU",
         "breadth": {
-          "pct_above_ma50": 80.0,
-          "pct_above_ma200": 90.0,
+          "pct_above_ma50": 83.3,
+          "pct_above_ma200": 91.7,
           "breadth_flag": "broad",
-          "holdings_checked": 10,
-          "holdings_above_ma50": 8,
-          "holdings_above_ma200": 9,
+          "holdings_checked": 12,
+          "holdings_above_ma50": 10,
+          "holdings_above_ma200": 11,
           "breadth_thrust": 0.0
         },
         "rs_history": [
-          {
-            "date": "2025-06-30",
-            "value": 108.3
-          },
           {
             "date": "2025-07-01",
             "value": 108.7
@@ -65046,54 +67736,54 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-30",
             "value": 101.15
+          },
+          {
+            "date": "2026-07-01",
+            "value": 99.88
           }
         ],
-        "rs_1w": -1.18,
-        "rs_1m": 3.79,
-        "rs_3m": -16.12,
-        "rs_6m": -1.24,
-        "rs_1y": -6.66,
-        "rs_ytd": -3.17,
-        "rs_slope": -2.08,
+        "rs_1w": -3.47,
+        "rs_1m": 5.92,
+        "rs_3m": -14.71,
+        "rs_6m": -3.01,
+        "rs_1y": -7.77,
+        "rs_ytd": -4.38,
+        "rs_slope": -4.88,
         "money_flow": {
-          "mfi_5d": 61.0,
-          "mfi_14d": 79.3,
-          "dollar_vol_5d_bn": 4.32,
-          "flow_signal": "INFLOW",
-          "mfi_vs_spy": 22.3
+          "mfi_5d": 41.6,
+          "mfi_14d": 73.0,
+          "dollar_vol_5d_bn": 4.28,
+          "flow_signal": "OUTFLOW",
+          "mfi_vs_spy": -11.6
         }
       },
       "XLRE": {
-        "latest": 44.03,
-        "latest_date": "2026-06-30",
-        "ret_1d": -1.98,
-        "ret_1w": -1.37,
-        "ret_1m": 0.97,
-        "ret_3m": 10.46,
-        "ret_6m": 10.35,
-        "ret_1y": 10.77,
-        "ret_ytd": 10.73,
+        "latest": 44.31,
+        "latest_date": "2026-07-01",
+        "ret_1d": 0.62,
+        "ret_1w": -0.46,
+        "ret_1m": 3.29,
+        "ret_3m": 9.46,
+        "ret_6m": 10.74,
+        "ret_1y": 10.65,
+        "ret_ytd": 11.43,
         "ma50": 43.95,
-        "ma200": 41.61,
+        "ma200": 41.63,
         "above_ma50": true,
         "above_ma200": true,
         "golden_cross": true,
         "name": "Real Estate",
         "ticker": "XLRE",
         "breadth": {
-          "pct_above_ma50": 41.7,
+          "pct_above_ma50": 50.0,
           "pct_above_ma200": 66.7,
           "breadth_flag": "healthy",
           "holdings_checked": 12,
-          "holdings_above_ma50": 5,
+          "holdings_above_ma50": 6,
           "holdings_above_ma200": 8,
-          "breadth_thrust": -16.6
+          "breadth_thrust": 0.0
         },
         "rs_history": [
-          {
-            "date": "2025-06-30",
-            "value": 98.12
-          },
           {
             "date": "2025-07-01",
             "value": 98.81
@@ -66097,54 +68787,54 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-30",
             "value": 88.29
+          },
+          {
+            "date": "2026-07-01",
+            "value": 88.8
           }
         ],
-        "rs_1w": -3.11,
-        "rs_1m": 2.02,
-        "rs_3m": -6.76,
-        "rs_6m": 1.47,
-        "rs_1y": -9.79,
-        "rs_ytd": 0.77,
-        "rs_slope": -3.59,
+        "rs_1w": -2.31,
+        "rs_1m": 4.59,
+        "rs_3m": -4.97,
+        "rs_6m": 1.41,
+        "rs_1y": -9.5,
+        "rs_ytd": 1.34,
+        "rs_slope": -3.4,
         "money_flow": {
-          "mfi_5d": 34.9,
-          "mfi_14d": 40.1,
-          "dollar_vol_5d_bn": 1.36,
-          "flow_signal": "STRONG_OUTFLOW",
-          "mfi_vs_spy": -3.8
+          "mfi_5d": 36.5,
+          "mfi_14d": 41.1,
+          "dollar_vol_5d_bn": 1.39,
+          "flow_signal": "OUTFLOW",
+          "mfi_vs_spy": -16.7
         }
       },
       "XLC": {
-        "latest": 107.13,
-        "latest_date": "2026-06-30",
-        "ret_1d": -0.7,
-        "ret_1w": -0.13,
-        "ret_1m": -7.16,
+        "latest": 110.0,
+        "latest_date": "2026-07-01",
+        "ret_1d": 2.68,
+        "ret_1w": 3.25,
+        "ret_1m": -4.6,
         "ret_3m": -0.51,
-        "ret_6m": -8.66,
-        "ret_1y": 0.74,
-        "ret_ytd": -7.83,
-        "ma50": 113.55,
-        "ma200": 114.49,
+        "ret_6m": -6.15,
+        "ret_1y": 2.63,
+        "ret_ytd": -5.35,
+        "ma50": 113.38,
+        "ma200": 114.46,
         "above_ma50": false,
         "above_ma200": false,
         "golden_cross": false,
         "name": "Communication Services",
         "ticker": "XLC",
         "breadth": {
-          "pct_above_ma50": 8.3,
+          "pct_above_ma50": 16.7,
           "pct_above_ma200": 33.3,
           "breadth_flag": "narrow",
           "holdings_checked": 12,
-          "holdings_above_ma50": 1,
+          "holdings_above_ma50": 2,
           "holdings_above_ma200": 4,
-          "breadth_thrust": -8.4
+          "breadth_thrust": 0.0
         },
         "rs_history": [
-          {
-            "date": "2025-06-30",
-            "value": 112.15
-          },
           {
             "date": "2025-07-01",
             "value": 111.39
@@ -67148,39 +69838,43 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-30",
             "value": 91.73
+          },
+          {
+            "date": "2026-07-01",
+            "value": 94.14
           }
         ],
-        "rs_1w": -1.89,
-        "rs_1m": -6.19,
-        "rs_3m": -16.02,
-        "rs_6m": -16.01,
-        "rs_1y": -17.96,
-        "rs_ytd": -16.12,
-        "rs_slope": -0.42,
+        "rs_1w": 1.33,
+        "rs_1m": -3.4,
+        "rs_3m": -13.63,
+        "rs_6m": -14.05,
+        "rs_1y": -16.06,
+        "rs_ytd": -13.92,
+        "rs_slope": 2.14,
         "money_flow": {
-          "mfi_5d": 45.5,
-          "mfi_14d": 39.7,
-          "dollar_vol_5d_bn": 3.75,
-          "flow_signal": "NEUTRAL",
-          "mfi_vs_spy": 6.8
+          "mfi_5d": 70.7,
+          "mfi_14d": 41.1,
+          "dollar_vol_5d_bn": 3.66,
+          "flow_signal": "STRONG_INFLOW",
+          "mfi_vs_spy": 17.5
         }
       }
     }
   },
   "cross_asset": {
     "schema_version": "1.1",
-    "fetched_at": "2026-07-01T10:02:32.876906+00:00",
+    "fetched_at": "2026-07-01T18:45:48.054163+00:00",
     "assets": {
       "^VIX": {
-        "latest": 16.9,
+        "latest": 16.45,
         "latest_date": "2026-07-01",
-        "ret_1d": 2.74,
-        "ret_1w": -9.29,
-        "ret_1m": 5.3,
-        "ret_3m": -31.13,
-        "ret_6m": 17.93,
-        "ret_1y": 0.42,
-        "ret_ytd": 16.47,
+        "ret_1d": 0.0,
+        "ret_1w": -11.7,
+        "ret_1m": 2.49,
+        "ret_3m": -32.97,
+        "ret_6m": 14.79,
+        "ret_1y": -2.26,
+        "ret_ytd": 13.37,
         "history": [
           {
             "date": "2025-07-02",
@@ -68188,27 +70882,23 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-07-01",
-            "value": 16.9
+            "value": 16.45
           }
         ],
         "ticker": "^VIX",
         "label": "VIX Volatility Index"
       },
       "^TNX": {
-        "latest": 4.37,
-        "latest_date": "2026-06-26",
-        "ret_1d": -0.46,
-        "ret_1w": -1.77,
-        "ret_1m": -2.43,
-        "ret_3m": -1.0,
-        "ret_6m": 4.87,
-        "ret_1y": 1.84,
-        "ret_ytd": 4.42,
+        "latest": 4.47,
+        "latest_date": "2026-07-01",
+        "ret_1d": 2.31,
+        "ret_1w": -0.8,
+        "ret_1m": 0.4,
+        "ret_3m": 0.74,
+        "ret_6m": 8.15,
+        "ret_1y": 5.17,
+        "ret_ytd": 6.83,
         "history": [
-          {
-            "date": "2025-06-26",
-            "value": 4.25
-          },
           {
             "date": "2025-06-27",
             "value": 4.28
@@ -69212,21 +71902,25 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-26",
             "value": 4.37
+          },
+          {
+            "date": "2026-07-01",
+            "value": 4.47
           }
         ],
         "ticker": "^TNX",
         "label": "10Y Treasury Yield (^TNX)"
       },
       "DX-Y.NYB": {
-        "latest": 101.43,
+        "latest": 101.41,
         "latest_date": "2026-07-01",
-        "ret_1d": 0.24,
-        "ret_1w": -0.18,
-        "ret_1m": 2.25,
-        "ret_3m": 1.47,
-        "ret_6m": 3.46,
-        "ret_1y": 4.69,
-        "ret_ytd": 3.06,
+        "ret_1d": 0.22,
+        "ret_1w": -0.2,
+        "ret_1m": 2.23,
+        "ret_3m": 1.45,
+        "ret_6m": 3.44,
+        "ret_1y": 4.67,
+        "ret_ytd": 3.04,
         "history": [
           {
             "date": "2025-07-01",
@@ -70234,22 +72928,22 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-07-01",
-            "value": 101.43
+            "value": 101.41
           }
         ],
         "ticker": "DX-Y.NYB",
         "label": "DXY US Dollar Index"
       },
       "CL=F": {
-        "latest": 68.71,
+        "latest": 68.55,
         "latest_date": "2026-07-01",
-        "ret_1d": -1.14,
-        "ret_1w": -2.32,
-        "ret_1m": -25.44,
-        "ret_3m": -32.23,
-        "ret_6m": 18.3,
-        "ret_1y": 4.98,
-        "ret_ytd": 19.87,
+        "ret_1d": -1.37,
+        "ret_1w": -2.54,
+        "ret_1m": -25.62,
+        "ret_3m": -32.38,
+        "ret_6m": 18.03,
+        "ret_1y": 4.74,
+        "ret_ytd": 19.59,
         "history": [
           {
             "date": "2025-07-02",
@@ -71257,22 +73951,22 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-07-01",
-            "value": 68.71
+            "value": 68.55
           }
         ],
         "ticker": "CL=F",
         "label": "WTI Crude Oil Futures"
       },
       "GC=F": {
-        "latest": 3996.5,
+        "latest": 4078.7,
         "latest_date": "2026-07-01",
-        "ret_1d": -0.66,
-        "ret_1w": 0.16,
-        "ret_1m": -10.7,
-        "ret_3m": -14.01,
-        "ret_6m": -7.6,
-        "ret_1y": 19.77,
-        "ret_ytd": -7.37,
+        "ret_1d": 1.39,
+        "ret_1w": 2.22,
+        "ret_1m": -8.86,
+        "ret_3m": -12.24,
+        "ret_6m": -5.7,
+        "ret_1y": 22.24,
+        "ret_ytd": -5.46,
         "history": [
           {
             "date": "2025-07-02",
@@ -72280,22 +74974,22 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-07-01",
-            "value": 3996.5
+            "value": 4078.7
           }
         ],
         "ticker": "GC=F",
         "label": "Gold Futures"
       },
       "HG=F": {
-        "latest": 6.13,
+        "latest": 6.17,
         "latest_date": "2026-07-01",
-        "ret_1d": -1.03,
-        "ret_1w": 3.12,
-        "ret_1m": -6.06,
-        "ret_3m": 9.68,
-        "ret_6m": 11.62,
-        "ret_1y": 21.4,
-        "ret_ytd": 8.66,
+        "ret_1d": -0.35,
+        "ret_1w": 3.84,
+        "ret_1m": -5.41,
+        "ret_3m": 10.44,
+        "ret_6m": 12.39,
+        "ret_1y": 22.25,
+        "ret_ytd": 9.41,
         "history": [
           {
             "date": "2025-07-02",
@@ -73303,22 +75997,22 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-07-01",
-            "value": 6.13
+            "value": 6.17
           }
         ],
         "ticker": "HG=F",
         "label": "Copper Futures"
       },
       "BTC-USD": {
-        "latest": 58810.5,
+        "latest": 60136.69,
         "latest_date": "2026-07-01",
-        "ret_1d": 0.43,
-        "ret_1w": -2.01,
-        "ret_1m": -4.29,
-        "ret_3m": -22.39,
-        "ret_6m": -13.46,
-        "ret_1y": -45.39,
-        "ret_ytd": -33.72,
+        "ret_1d": 2.69,
+        "ret_1w": 0.2,
+        "ret_1m": -2.14,
+        "ret_3m": -20.64,
+        "ret_6m": -11.51,
+        "ret_1y": -44.16,
+        "ret_ytd": -32.23,
         "history": [
           {
             "date": "2025-10-23",
@@ -74326,7 +77020,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-07-01",
-            "value": 58810.5
+            "value": 60136.69
           }
         ],
         "ticker": "BTC-USD",
@@ -74336,72 +77030,17 @@ window.MACRO_DATA = {
   },
   "calendar": {
     "schema_version": "1.1",
-    "fetched_at": "2026-06-29T20:17:21.945395+00:00",
-    "window_start": "2026-06-29",
-    "window_end": "2026-07-20",
+    "fetched_at": "2026-07-01T18:47:08.636344+00:00",
+    "window_start": "2026-07-01",
+    "window_end": "2026-07-22",
     "macro": [
       {
-        "date": "2026-06-30",
-        "name": "S&P/CS HPI Composite - 20 n.s.a. (MoM)  (Apr)",
+        "date": "2026-07-01",
+        "name": "FOMC Member Daly Speaks",
         "type": "macro",
         "impact": "MEDIUM",
         "forecast": null,
-        "previous": "1.0%",
-        "confirmed": true,
-        "estimated": false,
-        "source": "investing.com"
-      },
-      {
-        "date": "2026-06-30",
-        "name": "S&P/CS HPI Composite - 20 n.s.a. (YoY)  (Apr)",
-        "type": "macro",
-        "impact": "MEDIUM",
-        "forecast": null,
-        "previous": "0.8%",
-        "confirmed": true,
-        "estimated": false,
-        "source": "investing.com"
-      },
-      {
-        "date": "2026-06-30",
-        "name": "Chicago PMI  (Jun)",
-        "type": "macro",
-        "impact": "HIGH",
-        "forecast": "60.0",
-        "previous": "62.7",
-        "confirmed": true,
-        "estimated": false,
-        "source": "investing.com"
-      },
-      {
-        "date": "2026-06-30",
-        "name": "CB Consumer Confidence  (Jun)",
-        "type": "macro",
-        "impact": "HIGH",
-        "forecast": "94.2",
-        "previous": "93.1",
-        "confirmed": true,
-        "estimated": false,
-        "source": "investing.com"
-      },
-      {
-        "date": "2026-06-30",
-        "name": "JOLTS Job Openings  (May)",
-        "type": "macro",
-        "impact": "HIGH",
-        "forecast": "7.280M",
-        "previous": "7.618M",
-        "confirmed": true,
-        "estimated": false,
-        "source": "investing.com"
-      },
-      {
-        "date": "2026-06-30",
-        "name": "API Weekly Crude Oil Stock",
-        "type": "macro",
-        "impact": "MEDIUM",
-        "forecast": null,
-        "previous": "-0.765M",
+        "previous": null,
         "confirmed": true,
         "estimated": false,
         "source": "investing.com"
@@ -74434,7 +77073,7 @@ window.MACRO_DATA = {
         "type": "macro",
         "impact": "HIGH",
         "forecast": "55.7",
-        "previous": "55.7",
+        "previous": "55.1",
         "confirmed": true,
         "estimated": false,
         "source": "investing.com"
@@ -74444,8 +77083,8 @@ window.MACRO_DATA = {
         "name": "Construction Spending (MoM)  (May)",
         "type": "macro",
         "impact": "MEDIUM",
-        "forecast": "0.3%",
-        "previous": "0.4%",
+        "forecast": "0.1%",
+        "previous": "0.3%",
         "confirmed": true,
         "estimated": false,
         "source": "investing.com"
@@ -74466,7 +77105,7 @@ window.MACRO_DATA = {
         "name": "ISM Manufacturing PMI  (Jun)",
         "type": "macro",
         "impact": "HIGH",
-        "forecast": "53.7",
+        "forecast": "53.8",
         "previous": "54.0",
         "confirmed": true,
         "estimated": false,
@@ -74477,7 +77116,7 @@ window.MACRO_DATA = {
         "name": "ISM Manufacturing Prices  (Jun)",
         "type": "macro",
         "impact": "HIGH",
-        "forecast": "79.0",
+        "forecast": "77.7",
         "previous": "82.1",
         "confirmed": true,
         "estimated": false,
@@ -74488,7 +77127,7 @@ window.MACRO_DATA = {
         "name": "Crude Oil Inventories",
         "type": "macro",
         "impact": "HIGH",
-        "forecast": null,
+        "forecast": "-2.900M",
         "previous": "-6.088M",
         "confirmed": true,
         "estimated": false,
@@ -74517,6 +77156,17 @@ window.MACRO_DATA = {
         "source": "investing.com"
       },
       {
+        "date": "2026-07-01",
+        "name": "U.S. President Trump Speaks",
+        "type": "macro",
+        "impact": "HIGH",
+        "forecast": null,
+        "previous": null,
+        "confirmed": true,
+        "estimated": false,
+        "source": "investing.com"
+      },
+      {
         "date": "2026-07-02",
         "name": "Average Hourly Earnings (MoM)  (Jun)",
         "type": "macro",
@@ -74532,7 +77182,7 @@ window.MACRO_DATA = {
         "name": "Average Hourly Earnings (YoY) (YoY)  (Jun)",
         "type": "macro",
         "impact": "MEDIUM",
-        "forecast": null,
+        "forecast": "3.5%",
         "previous": "3.4%",
         "confirmed": true,
         "estimated": false,
@@ -74554,7 +77204,7 @@ window.MACRO_DATA = {
         "name": "Initial Jobless Claims",
         "type": "macro",
         "impact": "HIGH",
-        "forecast": "220K",
+        "forecast": "219K",
         "previous": "215K",
         "confirmed": true,
         "estimated": false,
@@ -74587,7 +77237,7 @@ window.MACRO_DATA = {
         "name": "Private Nonfarm Payrolls  (Jun)",
         "type": "macro",
         "impact": "MEDIUM",
-        "forecast": null,
+        "forecast": "115K",
         "previous": "120K",
         "confirmed": true,
         "estimated": false,
@@ -74620,7 +77270,7 @@ window.MACRO_DATA = {
         "name": "Factory Orders (MoM)  (May)",
         "type": "macro",
         "impact": "MEDIUM",
-        "forecast": "2.1%",
+        "forecast": "-1.7%",
         "previous": "4.8%",
         "confirmed": true,
         "estimated": false,
@@ -74632,7 +77282,7 @@ window.MACRO_DATA = {
         "type": "macro",
         "impact": "MEDIUM",
         "forecast": null,
-        "previous": null,
+        "previous": "440",
         "confirmed": true,
         "estimated": false,
         "source": "investing.com"
@@ -74643,7 +77293,7 @@ window.MACRO_DATA = {
         "type": "macro",
         "impact": "MEDIUM",
         "forecast": null,
-        "previous": null,
+        "previous": "573",
         "confirmed": true,
         "estimated": false,
         "source": "investing.com"
@@ -74708,8 +77358,8 @@ window.MACRO_DATA = {
         "name": "S&P Global Composite PMI  (Jun)",
         "type": "macro",
         "impact": "MEDIUM",
-        "forecast": null,
-        "previous": "52.2",
+        "forecast": "52.2",
+        "previous": "51.5",
         "confirmed": true,
         "estimated": false,
         "source": "investing.com"
@@ -74719,8 +77369,8 @@ window.MACRO_DATA = {
         "name": "S&P Global Services PMI  (Jun)",
         "type": "macro",
         "impact": "HIGH",
-        "forecast": null,
-        "previous": "51.3",
+        "forecast": "51.3",
+        "previous": "50.7",
         "confirmed": true,
         "estimated": false,
         "source": "investing.com"
@@ -74760,11 +77410,55 @@ window.MACRO_DATA = {
       },
       {
         "date": "2026-07-07",
+        "name": "ADP Employment Change Weekly",
+        "type": "macro",
+        "impact": "MEDIUM",
+        "forecast": null,
+        "previous": "30.75K",
+        "confirmed": true,
+        "estimated": false,
+        "source": "investing.com"
+      },
+      {
+        "date": "2026-07-07",
+        "name": "Exports  (May)",
+        "type": "macro",
+        "impact": "MEDIUM",
+        "forecast": null,
+        "previous": "327.10B",
+        "confirmed": true,
+        "estimated": false,
+        "source": "investing.com"
+      },
+      {
+        "date": "2026-07-07",
+        "name": "Imports  (May)",
+        "type": "macro",
+        "impact": "MEDIUM",
+        "forecast": null,
+        "previous": "383.00B",
+        "confirmed": true,
+        "estimated": false,
+        "source": "investing.com"
+      },
+      {
+        "date": "2026-07-07",
         "name": "Trade Balance  (May)",
         "type": "macro",
         "impact": "MEDIUM",
         "forecast": null,
         "previous": "-55.90B",
+        "confirmed": true,
+        "estimated": false,
+        "source": "investing.com"
+      },
+      {
+        "date": "2026-07-07",
+        "name": "NY Fed 1-Year Consumer Inflation Expectations  (Jun)",
+        "type": "macro",
+        "impact": "MEDIUM",
+        "forecast": null,
+        "previous": "3.5%",
         "confirmed": true,
         "estimated": false,
         "source": "investing.com"
@@ -74781,10 +77475,54 @@ window.MACRO_DATA = {
         "source": "investing.com"
       },
       {
+        "date": "2026-07-07",
+        "name": "3-Year Note Auction",
+        "type": "macro",
+        "impact": "MEDIUM",
+        "forecast": null,
+        "previous": "4.192%",
+        "confirmed": true,
+        "estimated": false,
+        "source": "investing.com"
+      },
+      {
+        "date": "2026-07-07",
+        "name": "API Weekly Crude Oil Stock",
+        "type": "macro",
+        "impact": "MEDIUM",
+        "forecast": null,
+        "previous": "-6.072M",
+        "confirmed": true,
+        "estimated": false,
+        "source": "investing.com"
+      },
+      {
         "date": "2026-07-08",
         "name": "Atlanta Fed GDPNow  (Q2)",
         "type": "macro",
         "impact": "MEDIUM",
+        "forecast": null,
+        "previous": null,
+        "confirmed": true,
+        "estimated": false,
+        "source": "investing.com"
+      },
+      {
+        "date": "2026-07-08",
+        "name": "10-Year Note Auction",
+        "type": "macro",
+        "impact": "HIGH",
+        "forecast": null,
+        "previous": "4.538%",
+        "confirmed": true,
+        "estimated": false,
+        "source": "investing.com"
+      },
+      {
+        "date": "2026-07-08",
+        "name": "FOMC Meeting Minutes",
+        "type": "macro",
+        "impact": "HIGH",
         "forecast": null,
         "previous": null,
         "confirmed": true,
@@ -74798,6 +77536,39 @@ window.MACRO_DATA = {
         "impact": "MEDIUM",
         "forecast": null,
         "previous": "20.73B",
+        "confirmed": true,
+        "estimated": false,
+        "source": "investing.com"
+      },
+      {
+        "date": "2026-07-09",
+        "name": "Continuing Jobless Claims",
+        "type": "macro",
+        "impact": "MEDIUM",
+        "forecast": null,
+        "previous": null,
+        "confirmed": true,
+        "estimated": false,
+        "source": "investing.com"
+      },
+      {
+        "date": "2026-07-09",
+        "name": "Initial Jobless Claims",
+        "type": "macro",
+        "impact": "HIGH",
+        "forecast": null,
+        "previous": null,
+        "confirmed": true,
+        "estimated": false,
+        "source": "investing.com"
+      },
+      {
+        "date": "2026-07-09",
+        "name": "FOMC Member Williams Speaks",
+        "type": "macro",
+        "impact": "MEDIUM",
+        "forecast": null,
+        "previous": null,
         "confirmed": true,
         "estimated": false,
         "source": "investing.com"
@@ -74820,6 +77591,50 @@ window.MACRO_DATA = {
         "impact": "MEDIUM",
         "forecast": null,
         "previous": "3.2%",
+        "confirmed": true,
+        "estimated": false,
+        "source": "investing.com"
+      },
+      {
+        "date": "2026-07-10",
+        "name": "IEA Monthly Report",
+        "type": "macro",
+        "impact": "MEDIUM",
+        "forecast": null,
+        "previous": null,
+        "confirmed": true,
+        "estimated": false,
+        "source": "investing.com"
+      },
+      {
+        "date": "2026-07-10",
+        "name": "WASDE Report",
+        "type": "macro",
+        "impact": "MEDIUM",
+        "forecast": null,
+        "previous": null,
+        "confirmed": true,
+        "estimated": false,
+        "source": "investing.com"
+      },
+      {
+        "date": "2026-07-10",
+        "name": "U.S. Baker Hughes Oil Rig Count",
+        "type": "macro",
+        "impact": "MEDIUM",
+        "forecast": null,
+        "previous": null,
+        "confirmed": true,
+        "estimated": false,
+        "source": "investing.com"
+      },
+      {
+        "date": "2026-07-10",
+        "name": "U.S. Baker Hughes Total Rig Count",
+        "type": "macro",
+        "impact": "MEDIUM",
+        "forecast": null,
+        "previous": null,
         "confirmed": true,
         "estimated": false,
         "source": "investing.com"
@@ -74859,22 +77674,22 @@ window.MACRO_DATA = {
       },
       {
         "date": "2026-07-14",
-        "name": "CPI (MoM)  (Jun)",
+        "name": "CPI (YoY)  (Jun)",
         "type": "macro",
         "impact": "HIGH",
         "forecast": null,
-        "previous": "0.5%",
+        "previous": "4.2%",
         "confirmed": true,
         "estimated": false,
         "source": "investing.com"
       },
       {
         "date": "2026-07-14",
-        "name": "CPI (YoY)  (Jun)",
+        "name": "CPI (MoM)  (Jun)",
         "type": "macro",
         "impact": "HIGH",
         "forecast": null,
-        "previous": "4.2%",
+        "previous": "0.5%",
         "confirmed": true,
         "estimated": false,
         "source": "investing.com"
@@ -75168,17 +77983,6 @@ window.MACRO_DATA = {
     ],
     "earnings": [
       {
-        "date": "2026-06-30",
-        "ticker": "NKE",
-        "name": "Nike",
-        "sector_etf": "XLY",
-        "time": "AMC",
-        "eps_estimate": 0.13,
-        "revenue_estimate_b": null,
-        "importance": "medium",
-        "type": "earnings"
-      },
-      {
         "date": "2026-07-09",
         "ticker": "PEP",
         "name": "PepsiCo",
@@ -75195,7 +77999,7 @@ window.MACRO_DATA = {
         "name": "JPMorgan",
         "sector_etf": "XLF",
         "time": "BMO",
-        "eps_estimate": 5.51,
+        "eps_estimate": 5.59,
         "revenue_estimate_b": null,
         "importance": "high",
         "type": "earnings"
@@ -75206,7 +78010,7 @@ window.MACRO_DATA = {
         "name": "Bank of America",
         "sector_etf": "XLF",
         "time": "BMO",
-        "eps_estimate": 1.1,
+        "eps_estimate": 1.11,
         "revenue_estimate_b": null,
         "importance": "high",
         "type": "earnings"
@@ -75217,7 +78021,7 @@ window.MACRO_DATA = {
         "name": "Wells Fargo",
         "sector_etf": "XLF",
         "time": "BMO",
-        "eps_estimate": 1.7,
+        "eps_estimate": 1.71,
         "revenue_estimate_b": null,
         "importance": "high",
         "type": "earnings"
@@ -75228,7 +78032,7 @@ window.MACRO_DATA = {
         "name": "Goldman Sachs",
         "sector_etf": "XLF",
         "time": "BMO",
-        "eps_estimate": 13.95,
+        "eps_estimate": 14.12,
         "revenue_estimate_b": null,
         "importance": "medium",
         "type": "earnings"
@@ -75239,7 +78043,7 @@ window.MACRO_DATA = {
         "name": "Citigroup",
         "sector_etf": "XLF",
         "time": "BMO",
-        "eps_estimate": 2.64,
+        "eps_estimate": 2.68,
         "revenue_estimate_b": null,
         "importance": "medium",
         "type": "earnings"
@@ -75250,7 +78054,7 @@ window.MACRO_DATA = {
         "name": "Morgan Stanley",
         "sector_etf": "XLF",
         "time": "BMO",
-        "eps_estimate": 2.8,
+        "eps_estimate": 2.81,
         "revenue_estimate_b": null,
         "importance": "medium",
         "type": "earnings"
@@ -75261,7 +78065,7 @@ window.MACRO_DATA = {
         "name": "BlackRock",
         "sector_etf": "XLF",
         "time": "BMO",
-        "eps_estimate": 12.56,
+        "eps_estimate": 12.55,
         "revenue_estimate_b": null,
         "importance": "medium",
         "type": "earnings"
@@ -75342,262 +78146,133 @@ window.MACRO_DATA = {
         "revenue_estimate_b": null,
         "importance": "high",
         "type": "earnings"
+      },
+      {
+        "date": "2026-07-21",
+        "ticker": "SCHW",
+        "name": "Charles Schwab",
+        "sector_etf": "XLF",
+        "time": "BMO",
+        "eps_estimate": 1.51,
+        "revenue_estimate_b": null,
+        "importance": "medium",
+        "type": "earnings"
+      },
+      {
+        "date": "2026-07-22",
+        "ticker": "TXN",
+        "name": "Texas Instruments",
+        "sector_etf": "XLK",
+        "time": "AMC",
+        "eps_estimate": 1.92,
+        "revenue_estimate_b": null,
+        "importance": "medium",
+        "type": "earnings"
+      },
+      {
+        "date": "2026-07-22",
+        "ticker": "TSLA",
+        "name": "Tesla",
+        "sector_etf": "XLY",
+        "time": "AMC",
+        "eps_estimate": 0.46,
+        "revenue_estimate_b": null,
+        "importance": "high",
+        "type": "earnings"
+      },
+      {
+        "date": "2026-07-22",
+        "ticker": "PM",
+        "name": "Philip Morris",
+        "sector_etf": "XLP",
+        "time": "BMO",
+        "eps_estimate": 2.06,
+        "revenue_estimate_b": null,
+        "importance": "medium",
+        "type": "earnings"
+      },
+      {
+        "date": "2026-07-22",
+        "ticker": "FCX",
+        "name": "Freeport-McMoRan",
+        "sector_etf": "XLB",
+        "time": "BMO",
+        "eps_estimate": 0.6,
+        "revenue_estimate_b": null,
+        "importance": "medium",
+        "type": "earnings"
+      },
+      {
+        "date": "2026-07-22",
+        "ticker": "NEE",
+        "name": "NextEra",
+        "sector_etf": "XLU",
+        "time": "BMO",
+        "eps_estimate": 1.08,
+        "revenue_estimate_b": null,
+        "importance": "medium",
+        "type": "earnings"
+      },
+      {
+        "date": "2026-07-22",
+        "ticker": "CCI",
+        "name": "Crown Castle",
+        "sector_etf": "XLRE",
+        "time": "AMC",
+        "eps_estimate": 0.48,
+        "revenue_estimate_b": null,
+        "importance": "medium",
+        "type": "earnings"
+      },
+      {
+        "date": "2026-07-22",
+        "ticker": "T",
+        "name": "AT&T",
+        "sector_etf": "XLC",
+        "time": "BMO",
+        "eps_estimate": 0.59,
+        "revenue_estimate_b": null,
+        "importance": "medium",
+        "type": "earnings"
       }
     ],
-    "fed_speakers": [],
+    "fed_speakers": [
+      {
+        "date": "2026-07-01",
+        "time": "07:45",
+        "speaker": "Daly",
+        "topic": "FOMC Member Daly Speaks",
+        "venue": "",
+        "impact": "medium",
+        "source": "investing.com (historical)",
+        "event_url": "https://www.investing.com/economic-calendar/fomc-member-daly-speaks-1802"
+      },
+      {
+        "date": "2026-07-01",
+        "time": "09:00",
+        "speaker": "Warsh",
+        "topic": "Fed Governor Warsh Speaks",
+        "venue": "",
+        "impact": "low",
+        "source": "investing.com (historical)",
+        "event_url": "https://www.investing.com/economic-calendar/fed-governor-warsh-speaks-105"
+      },
+      {
+        "date": "2026-07-01",
+        "time": "15:15",
+        "speaker": "Unknown",
+        "topic": "U.S. President Trump Speaks",
+        "venue": "",
+        "impact": "low",
+        "source": "investing.com (historical)",
+        "event_url": "https://www.investing.com/economic-calendar/u.s.-president-trump-speaks-1694"
+      }
+    ],
     "lookahead": {
-      "tomorrow_date": "2026-06-30",
-      "week_end_date": "2026-07-06",
+      "tomorrow_date": "2026-07-02",
+      "week_end_date": "2026-07-08",
       "tomorrow": {
         "macro": [
-          {
-            "date": "2026-06-30",
-            "name": "S&P/CS HPI Composite - 20 n.s.a. (MoM)  (Apr)",
-            "type": "macro",
-            "impact": "MEDIUM",
-            "forecast": null,
-            "previous": "1.0%",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-06-30",
-            "name": "S&P/CS HPI Composite - 20 n.s.a. (YoY)  (Apr)",
-            "type": "macro",
-            "impact": "MEDIUM",
-            "forecast": null,
-            "previous": "0.8%",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-06-30",
-            "name": "Chicago PMI  (Jun)",
-            "type": "macro",
-            "impact": "HIGH",
-            "forecast": "60.0",
-            "previous": "62.7",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-06-30",
-            "name": "CB Consumer Confidence  (Jun)",
-            "type": "macro",
-            "impact": "HIGH",
-            "forecast": "94.2",
-            "previous": "93.1",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-06-30",
-            "name": "JOLTS Job Openings  (May)",
-            "type": "macro",
-            "impact": "HIGH",
-            "forecast": "7.280M",
-            "previous": "7.618M",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-06-30",
-            "name": "API Weekly Crude Oil Stock",
-            "type": "macro",
-            "impact": "MEDIUM",
-            "forecast": null,
-            "previous": "-0.765M",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          }
-        ],
-        "earnings": [],
-        "fed_speakers": []
-      },
-      "this_week": {
-        "macro": [
-          {
-            "date": "2026-06-30",
-            "name": "S&P/CS HPI Composite - 20 n.s.a. (MoM)  (Apr)",
-            "type": "macro",
-            "impact": "MEDIUM",
-            "forecast": null,
-            "previous": "1.0%",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-06-30",
-            "name": "S&P/CS HPI Composite - 20 n.s.a. (YoY)  (Apr)",
-            "type": "macro",
-            "impact": "MEDIUM",
-            "forecast": null,
-            "previous": "0.8%",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-06-30",
-            "name": "Chicago PMI  (Jun)",
-            "type": "macro",
-            "impact": "HIGH",
-            "forecast": "60.0",
-            "previous": "62.7",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-06-30",
-            "name": "CB Consumer Confidence  (Jun)",
-            "type": "macro",
-            "impact": "HIGH",
-            "forecast": "94.2",
-            "previous": "93.1",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-06-30",
-            "name": "JOLTS Job Openings  (May)",
-            "type": "macro",
-            "impact": "HIGH",
-            "forecast": "7.280M",
-            "previous": "7.618M",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-06-30",
-            "name": "API Weekly Crude Oil Stock",
-            "type": "macro",
-            "impact": "MEDIUM",
-            "forecast": null,
-            "previous": "-0.765M",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-07-01",
-            "name": "ADP Nonfarm Employment Change  (Jun)",
-            "type": "macro",
-            "impact": "HIGH",
-            "forecast": "118K",
-            "previous": "122K",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-07-01",
-            "name": "Fed Governor Warsh Speaks",
-            "type": "macro",
-            "impact": "MEDIUM",
-            "forecast": null,
-            "previous": null,
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-07-01",
-            "name": "S&P Global Manufacturing PMI  (Jun)",
-            "type": "macro",
-            "impact": "HIGH",
-            "forecast": "55.7",
-            "previous": "55.7",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-07-01",
-            "name": "Construction Spending (MoM)  (May)",
-            "type": "macro",
-            "impact": "MEDIUM",
-            "forecast": "0.3%",
-            "previous": "0.4%",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-07-01",
-            "name": "ISM Manufacturing Employment  (Jun)",
-            "type": "macro",
-            "impact": "MEDIUM",
-            "forecast": null,
-            "previous": "48.6",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-07-01",
-            "name": "ISM Manufacturing PMI  (Jun)",
-            "type": "macro",
-            "impact": "HIGH",
-            "forecast": "53.7",
-            "previous": "54.0",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-07-01",
-            "name": "ISM Manufacturing Prices  (Jun)",
-            "type": "macro",
-            "impact": "HIGH",
-            "forecast": "79.0",
-            "previous": "82.1",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-07-01",
-            "name": "Crude Oil Inventories",
-            "type": "macro",
-            "impact": "HIGH",
-            "forecast": null,
-            "previous": "-6.088M",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-07-01",
-            "name": "Cushing Crude Oil Inventories",
-            "type": "macro",
-            "impact": "MEDIUM",
-            "forecast": null,
-            "previous": "-1.077M",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
-          {
-            "date": "2026-07-01",
-            "name": "Atlanta Fed GDPNow  (Q2)",
-            "type": "macro",
-            "impact": "MEDIUM",
-            "forecast": "2.5%",
-            "previous": "2.5%",
-            "confirmed": true,
-            "estimated": false,
-            "source": "investing.com"
-          },
           {
             "date": "2026-07-02",
             "name": "Average Hourly Earnings (MoM)  (Jun)",
@@ -75614,7 +78289,7 @@ window.MACRO_DATA = {
             "name": "Average Hourly Earnings (YoY) (YoY)  (Jun)",
             "type": "macro",
             "impact": "MEDIUM",
-            "forecast": null,
+            "forecast": "3.5%",
             "previous": "3.4%",
             "confirmed": true,
             "estimated": false,
@@ -75636,7 +78311,7 @@ window.MACRO_DATA = {
             "name": "Initial Jobless Claims",
             "type": "macro",
             "impact": "HIGH",
-            "forecast": "220K",
+            "forecast": "219K",
             "previous": "215K",
             "confirmed": true,
             "estimated": false,
@@ -75669,7 +78344,7 @@ window.MACRO_DATA = {
             "name": "Private Nonfarm Payrolls  (Jun)",
             "type": "macro",
             "impact": "MEDIUM",
-            "forecast": null,
+            "forecast": "115K",
             "previous": "120K",
             "confirmed": true,
             "estimated": false,
@@ -75702,7 +78377,7 @@ window.MACRO_DATA = {
             "name": "Factory Orders (MoM)  (May)",
             "type": "macro",
             "impact": "MEDIUM",
-            "forecast": "2.1%",
+            "forecast": "-1.7%",
             "previous": "4.8%",
             "confirmed": true,
             "estimated": false,
@@ -75714,7 +78389,7 @@ window.MACRO_DATA = {
             "type": "macro",
             "impact": "MEDIUM",
             "forecast": null,
-            "previous": null,
+            "previous": "440",
             "confirmed": true,
             "estimated": false,
             "source": "investing.com"
@@ -75725,7 +78400,288 @@ window.MACRO_DATA = {
             "type": "macro",
             "impact": "MEDIUM",
             "forecast": null,
+            "previous": "573",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-02",
+            "name": "Fed's Balance Sheet",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": "6,736B",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          }
+        ],
+        "earnings": [],
+        "fed_speakers": []
+      },
+      "this_week": {
+        "macro": [
+          {
+            "date": "2026-07-01",
+            "name": "FOMC Member Daly Speaks",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
             "previous": null,
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-01",
+            "name": "ADP Nonfarm Employment Change  (Jun)",
+            "type": "macro",
+            "impact": "HIGH",
+            "forecast": "118K",
+            "previous": "122K",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-01",
+            "name": "Fed Governor Warsh Speaks",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": null,
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-01",
+            "name": "S&P Global Manufacturing PMI  (Jun)",
+            "type": "macro",
+            "impact": "HIGH",
+            "forecast": "55.7",
+            "previous": "55.1",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-01",
+            "name": "Construction Spending (MoM)  (May)",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": "0.1%",
+            "previous": "0.3%",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-01",
+            "name": "ISM Manufacturing Employment  (Jun)",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": "48.6",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-01",
+            "name": "ISM Manufacturing PMI  (Jun)",
+            "type": "macro",
+            "impact": "HIGH",
+            "forecast": "53.8",
+            "previous": "54.0",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-01",
+            "name": "ISM Manufacturing Prices  (Jun)",
+            "type": "macro",
+            "impact": "HIGH",
+            "forecast": "77.7",
+            "previous": "82.1",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-01",
+            "name": "Crude Oil Inventories",
+            "type": "macro",
+            "impact": "HIGH",
+            "forecast": "-2.900M",
+            "previous": "-6.088M",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-01",
+            "name": "Cushing Crude Oil Inventories",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": "-1.077M",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-01",
+            "name": "Atlanta Fed GDPNow  (Q2)",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": "2.5%",
+            "previous": "2.5%",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-01",
+            "name": "U.S. President Trump Speaks",
+            "type": "macro",
+            "impact": "HIGH",
+            "forecast": null,
+            "previous": null,
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-02",
+            "name": "Average Hourly Earnings (MoM)  (Jun)",
+            "type": "macro",
+            "impact": "HIGH",
+            "forecast": "0.3%",
+            "previous": "0.3%",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-02",
+            "name": "Average Hourly Earnings (YoY) (YoY)  (Jun)",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": "3.5%",
+            "previous": "3.4%",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-02",
+            "name": "Continuing Jobless Claims",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": "1,821K",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-02",
+            "name": "Initial Jobless Claims",
+            "type": "macro",
+            "impact": "HIGH",
+            "forecast": "219K",
+            "previous": "215K",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-02",
+            "name": "Nonfarm Payrolls  (Jun)",
+            "type": "macro",
+            "impact": "HIGH",
+            "forecast": "114K",
+            "previous": "172K",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-02",
+            "name": "Participation Rate  (Jun)",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": "61.8%",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-02",
+            "name": "Private Nonfarm Payrolls  (Jun)",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": "115K",
+            "previous": "120K",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-02",
+            "name": "U6 Unemployment Rate  (Jun)",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": "8.1%",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-02",
+            "name": "Unemployment Rate  (Jun)",
+            "type": "macro",
+            "impact": "HIGH",
+            "forecast": "4.3%",
+            "previous": "4.3%",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-02",
+            "name": "Factory Orders (MoM)  (May)",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": "-1.7%",
+            "previous": "4.8%",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-02",
+            "name": "U.S. Baker Hughes Oil Rig Count",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": "440",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-02",
+            "name": "U.S. Baker Hughes Total Rig Count",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": "573",
             "confirmed": true,
             "estimated": false,
             "source": "investing.com"
@@ -75790,8 +78746,8 @@ window.MACRO_DATA = {
             "name": "S&P Global Composite PMI  (Jun)",
             "type": "macro",
             "impact": "MEDIUM",
-            "forecast": null,
-            "previous": "52.2",
+            "forecast": "52.2",
+            "previous": "51.5",
             "confirmed": true,
             "estimated": false,
             "source": "investing.com"
@@ -75801,8 +78757,8 @@ window.MACRO_DATA = {
             "name": "S&P Global Services PMI  (Jun)",
             "type": "macro",
             "impact": "HIGH",
-            "forecast": null,
-            "previous": "51.3",
+            "forecast": "51.3",
+            "previous": "50.7",
             "confirmed": true,
             "estimated": false,
             "source": "investing.com"
@@ -75839,10 +78795,153 @@ window.MACRO_DATA = {
             "confirmed": true,
             "estimated": false,
             "source": "investing.com"
+          },
+          {
+            "date": "2026-07-07",
+            "name": "ADP Employment Change Weekly",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": "30.75K",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-07",
+            "name": "Exports  (May)",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": "327.10B",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-07",
+            "name": "Imports  (May)",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": "383.00B",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-07",
+            "name": "Trade Balance  (May)",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": "-55.90B",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-07",
+            "name": "NY Fed 1-Year Consumer Inflation Expectations  (Jun)",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": "3.5%",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-07",
+            "name": "Atlanta Fed GDPNow  (Q2)",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": null,
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-07",
+            "name": "3-Year Note Auction",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": "4.192%",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-07",
+            "name": "API Weekly Crude Oil Stock",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": "-6.072M",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-08",
+            "name": "Atlanta Fed GDPNow  (Q2)",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": null,
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-08",
+            "name": "10-Year Note Auction",
+            "type": "macro",
+            "impact": "HIGH",
+            "forecast": null,
+            "previous": "4.538%",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-08",
+            "name": "FOMC Meeting Minutes",
+            "type": "macro",
+            "impact": "HIGH",
+            "forecast": null,
+            "previous": null,
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
+          },
+          {
+            "date": "2026-07-08",
+            "name": "Consumer Credit  (May)",
+            "type": "macro",
+            "impact": "MEDIUM",
+            "forecast": null,
+            "previous": "20.73B",
+            "confirmed": true,
+            "estimated": false,
+            "source": "investing.com"
           }
         ],
         "earnings": [],
-        "fed_speakers": []
+        "fed_speakers": [
+          {
+            "date": "2026-07-01",
+            "time": "07:45",
+            "speaker": "Daly",
+            "topic": "FOMC Member Daly Speaks",
+            "venue": "",
+            "impact": "medium",
+            "source": "investing.com (historical)",
+            "event_url": "https://www.investing.com/economic-calendar/fomc-member-daly-speaks-1802"
+          }
+        ]
       }
     }
   },
@@ -79113,7 +82212,7 @@ window.MACRO_DATA = {
     ]
   },
   "fred_history": {
-    "updated_at": "2026-07-01T09:45:44.309226+00:00",
+    "updated_at": "2026-07-01T18:45:17.812281+00:00",
     "fred_snapshot": {
       "CPIAUCSL": {
         "label": "CPI All Items",
@@ -99963,23 +103062,19 @@ window.MACRO_DATA = {
       "TTLCONS": {
         "label": "Total Construction Spending",
         "latest": {
-          "date": "2026-04-01",
-          "value": 2172397.0
+          "date": "2026-05-01",
+          "value": 2210214.0
         },
         "previous": {
-          "date": "2026-03-01",
-          "value": 2164474.0
+          "date": "2026-04-01",
+          "value": 2207051.0
         },
-        "change_pct": 0.366,
+        "change_pct": 0.143,
         "frequency": "monthly",
-        "mom_pct": 0.366,
-        "yoy_pct": 0.88,
-        "mo3_annualized_pct": -1.04,
+        "mom_pct": 0.143,
+        "yoy_pct": -1.52,
+        "mo3_annualized_pct": 3.8,
         "history": [
-          {
-            "date": "2016-05-01",
-            "value": 1190685.0
-          },
           {
             "date": "2016-06-01",
             "value": 1217604.0
@@ -100106,355 +103201,359 @@ window.MACRO_DATA = {
           },
           {
             "date": "2019-01-01",
-            "value": 1295341.0
+            "value": 1295457.0
           },
           {
             "date": "2019-02-01",
-            "value": 1310297.0
+            "value": 1310064.0
           },
           {
             "date": "2019-03-01",
-            "value": 1319912.0
+            "value": 1319470.0
           },
           {
             "date": "2019-04-01",
-            "value": 1352871.0
+            "value": 1352874.0
           },
           {
             "date": "2019-05-01",
-            "value": 1364812.0
+            "value": 1364585.0
           },
           {
             "date": "2019-06-01",
-            "value": 1381444.0
+            "value": 1381377.0
           },
           {
             "date": "2019-07-01",
-            "value": 1412986.0
+            "value": 1413022.0
           },
           {
             "date": "2019-08-01",
-            "value": 1425690.0
+            "value": 1425986.0
           },
           {
             "date": "2019-09-01",
-            "value": 1438309.0
+            "value": 1438191.0
           },
           {
             "date": "2019-10-01",
-            "value": 1445024.0
+            "value": 1445140.0
           },
           {
             "date": "2019-11-01",
-            "value": 1464447.0
+            "value": 1464880.0
           },
           {
             "date": "2019-12-01",
-            "value": 1469119.0
+            "value": 1469334.0
           },
           {
             "date": "2020-01-01",
-            "value": 1491029.0
+            "value": 1491169.0
           },
           {
             "date": "2020-02-01",
-            "value": 1498750.0
+            "value": 1498377.0
           },
           {
             "date": "2020-03-01",
-            "value": 1502330.0
+            "value": 1501676.0
           },
           {
             "date": "2020-04-01",
-            "value": 1459363.0
+            "value": 1458956.0
           },
           {
             "date": "2020-05-01",
-            "value": 1449765.0
+            "value": 1448816.0
           },
           {
             "date": "2020-06-01",
-            "value": 1460368.0
+            "value": 1461054.0
           },
           {
             "date": "2020-07-01",
-            "value": 1474508.0
+            "value": 1474614.0
           },
           {
             "date": "2020-08-01",
-            "value": 1489581.0
+            "value": 1490027.0
           },
           {
             "date": "2020-09-01",
-            "value": 1512309.0
+            "value": 1512535.0
           },
           {
             "date": "2020-10-01",
-            "value": 1538356.0
+            "value": 1538282.0
           },
           {
             "date": "2020-11-01",
-            "value": 1552503.0
+            "value": 1552457.0
           },
           {
             "date": "2020-12-01",
-            "value": 1577213.0
+            "value": 1577505.0
           },
           {
             "date": "2021-01-01",
-            "value": 1599028.0
+            "value": 1598697.0
           },
           {
             "date": "2021-02-01",
-            "value": 1575321.0
+            "value": 1574677.0
           },
           {
             "date": "2021-03-01",
-            "value": 1610208.0
+            "value": 1609846.0
           },
           {
             "date": "2021-04-01",
-            "value": 1614849.0
+            "value": 1614358.0
           },
           {
             "date": "2021-05-01",
-            "value": 1627889.0
+            "value": 1626557.0
           },
           {
             "date": "2021-06-01",
-            "value": 1639031.0
+            "value": 1640276.0
           },
           {
             "date": "2021-07-01",
-            "value": 1661485.0
+            "value": 1661524.0
           },
           {
             "date": "2021-08-01",
-            "value": 1664988.0
+            "value": 1665413.0
           },
           {
             "date": "2021-09-01",
-            "value": 1673006.0
+            "value": 1673533.0
           },
           {
             "date": "2021-10-01",
-            "value": 1689011.0
+            "value": 1688747.0
           },
           {
             "date": "2021-11-01",
-            "value": 1731866.0
+            "value": 1731869.0
           },
           {
             "date": "2021-12-01",
-            "value": 1763060.0
+            "value": 1762351.0
           },
           {
             "date": "2022-01-01",
-            "value": 1808519.0
+            "value": 1807763.0
           },
           {
             "date": "2022-02-01",
-            "value": 1844343.0
+            "value": 1842072.0
           },
           {
             "date": "2022-03-01",
-            "value": 1876116.0
+            "value": 1877402.0
           },
           {
             "date": "2022-04-01",
-            "value": 1911323.0
+            "value": 1913147.0
           },
           {
             "date": "2022-05-01",
-            "value": 1925882.0
+            "value": 1923964.0
           },
           {
             "date": "2022-06-01",
-            "value": 1917963.0
+            "value": 1920269.0
           },
           {
             "date": "2022-07-01",
-            "value": 1924328.0
+            "value": 1923856.0
           },
           {
             "date": "2022-08-01",
-            "value": 1917606.0
+            "value": 1918061.0
           },
           {
             "date": "2022-09-01",
-            "value": 1919931.0
+            "value": 1917890.0
           },
           {
             "date": "2022-10-01",
-            "value": 1916369.0
+            "value": 1914367.0
           },
           {
             "date": "2022-11-01",
-            "value": 1918913.0
+            "value": 1919538.0
           },
           {
             "date": "2022-12-01",
-            "value": 1928393.0
+            "value": 1926876.0
           },
           {
             "date": "2023-01-01",
-            "value": 1957962.0
+            "value": 1957618.0
           },
           {
             "date": "2023-02-01",
-            "value": 1976696.0
+            "value": 1971178.0
           },
           {
             "date": "2023-03-01",
-            "value": 1996401.0
+            "value": 2000432.0
           },
           {
             "date": "2023-04-01",
-            "value": 2023621.0
+            "value": 2028917.0
           },
           {
             "date": "2023-05-01",
-            "value": 2054535.0
+            "value": 2053902.0
           },
           {
             "date": "2023-06-01",
-            "value": 2071559.0
+            "value": 2074232.0
           },
           {
             "date": "2023-07-01",
-            "value": 2085773.0
+            "value": 2083615.0
           },
           {
             "date": "2023-08-01",
-            "value": 2108277.0
+            "value": 2108452.0
           },
           {
             "date": "2023-09-01",
-            "value": 2123480.0
+            "value": 2117176.0
           },
           {
             "date": "2023-10-01",
-            "value": 2142735.0
+            "value": 2139594.0
           },
           {
             "date": "2023-11-01",
-            "value": 2167301.0
+            "value": 2170325.0
           },
           {
             "date": "2023-12-01",
-            "value": 2176796.0
+            "value": 2174846.0
           },
           {
             "date": "2024-01-01",
-            "value": 2161405.0
+            "value": 2191633.0
           },
           {
             "date": "2024-02-01",
-            "value": 2184616.0
+            "value": 2220925.0
           },
           {
             "date": "2024-03-01",
-            "value": 2174863.0
+            "value": 2214113.0
           },
           {
             "date": "2024-04-01",
-            "value": 2206494.0
+            "value": 2220689.0
           },
           {
             "date": "2024-05-01",
-            "value": 2215350.0
+            "value": 2232845.0
           },
           {
             "date": "2024-06-01",
-            "value": 2199846.0
+            "value": 2238643.0
           },
           {
             "date": "2024-07-01",
-            "value": 2200746.0
+            "value": 2240441.0
           },
           {
             "date": "2024-08-01",
-            "value": 2205322.0
+            "value": 2245978.0
           },
           {
             "date": "2024-09-01",
-            "value": 2197940.0
+            "value": 2263103.0
           },
           {
             "date": "2024-10-01",
-            "value": 2197116.0
+            "value": 2263823.0
           },
           {
             "date": "2024-11-01",
-            "value": 2192932.0
+            "value": 2262637.0
           },
           {
             "date": "2024-12-01",
-            "value": 2176642.0
+            "value": 2258822.0
           },
           {
             "date": "2025-01-01",
-            "value": 2169595.0
+            "value": 2261053.0
           },
           {
             "date": "2025-02-01",
-            "value": 2165431.0
+            "value": 2265811.0
           },
           {
             "date": "2025-03-01",
-            "value": 2150847.0
+            "value": 2256260.0
           },
           {
             "date": "2025-04-01",
-            "value": 2153440.0
+            "value": 2263809.0
           },
           {
             "date": "2025-05-01",
-            "value": 2149124.0
+            "value": 2244426.0
           },
           {
             "date": "2025-06-01",
-            "value": 2160743.0
+            "value": 2237719.0
           },
           {
             "date": "2025-07-01",
-            "value": 2168482.0
+            "value": 2242633.0
           },
           {
             "date": "2025-08-01",
-            "value": 2177240.0
+            "value": 2242024.0
           },
           {
             "date": "2025-09-01",
-            "value": 2169503.0
+            "value": 2245799.0
           },
           {
             "date": "2025-10-01",
-            "value": 2167944.0
+            "value": 2241141.0
           },
           {
             "date": "2025-11-01",
-            "value": 2181160.0
+            "value": 2220726.0
           },
           {
             "date": "2025-12-01",
-            "value": 2219926.0
+            "value": 2215955.0
           },
           {
             "date": "2026-01-01",
-            "value": 2178092.0
+            "value": 2195636.0
           },
           {
             "date": "2026-02-01",
-            "value": 2160663.0
+            "value": 2189683.0
           },
           {
             "date": "2026-03-01",
-            "value": 2164474.0
+            "value": 2199399.0
           },
           {
             "date": "2026-04-01",
-            "value": 2172397.0
+            "value": 2207051.0
+          },
+          {
+            "date": "2026-05-01",
+            "value": 2210214.0
           }
         ]
       },
@@ -100462,16 +103561,16 @@ window.MACRO_DATA = {
         "label": "Atlanta Fed GDPNow",
         "latest": {
           "date": "2026-04-01",
-          "value": 2.5438
+          "value": 1.1889
         },
         "previous": {
           "date": "2026-01-01",
           "value": 1.2392
         },
-        "change_pct": 105.278,
+        "change_pct": -4.059,
         "frequency": "quarterly",
-        "mom_pct": 105.278,
-        "yoy_pct": -12.34,
+        "mom_pct": -4.059,
+        "yoy_pct": -59.03,
         "history": [
           {
             "date": "2011-07-01",
@@ -100711,7 +103810,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-04-01",
-            "value": 2.5438
+            "value": 1.1889
           }
         ]
       },
@@ -113124,21 +116223,17 @@ window.MACRO_DATA = {
       "VIXCLS": {
         "label": "VIX (Volatility Index)",
         "latest": {
+          "date": "2026-06-30",
+          "value": 16.45
+        },
+        "previous": {
           "date": "2026-06-29",
           "value": 17.65
         },
-        "previous": {
-          "date": "2026-06-26",
-          "value": 18.41
-        },
-        "change_pct": -4.128,
+        "change_pct": -6.799,
         "frequency": "daily",
-        "mom_pct": -4.128,
+        "mom_pct": -6.799,
         "history": [
-          {
-            "date": "2026-01-13",
-            "value": 15.98
-          },
           {
             "date": "2026-01-14",
             "value": 16.75
@@ -113610,43 +116705,27 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-29",
             "value": 17.65
+          },
+          {
+            "date": "2026-06-30",
+            "value": 16.45
           }
         ]
       },
       "DCOILWTICO": {
         "label": "WTI Crude Oil",
         "latest": {
-          "date": "2026-06-22",
-          "value": 78.94
+          "date": "2026-06-29",
+          "value": 71.87
         },
         "previous": {
-          "date": "2026-06-18",
-          "value": 80.35
+          "date": "2026-06-26",
+          "value": 70.3
         },
-        "change_pct": -1.755,
+        "change_pct": 2.233,
         "frequency": "daily",
-        "mom_pct": -1.755,
+        "mom_pct": 2.233,
         "history": [
-          {
-            "date": "2026-01-06",
-            "value": 56.97
-          },
-          {
-            "date": "2026-01-07",
-            "value": 56.01
-          },
-          {
-            "date": "2026-01-08",
-            "value": 57.74
-          },
-          {
-            "date": "2026-01-09",
-            "value": 58.96
-          },
-          {
-            "date": "2026-01-12",
-            "value": 59.39
-          },
           {
             "date": "2026-01-13",
             "value": 60.85
@@ -114086,27 +117165,43 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-22",
             "value": 78.94
+          },
+          {
+            "date": "2026-06-23",
+            "value": 74.62
+          },
+          {
+            "date": "2026-06-24",
+            "value": 71.42
+          },
+          {
+            "date": "2026-06-25",
+            "value": 72.67
+          },
+          {
+            "date": "2026-06-26",
+            "value": 70.3
+          },
+          {
+            "date": "2026-06-29",
+            "value": 71.87
           }
         ]
       },
       "BAMLH0A0HYM2": {
         "label": "High-Yield Credit Spread (HY OAS)",
         "latest": {
+          "date": "2026-06-30",
+          "value": 2.75
+        },
+        "previous": {
           "date": "2026-06-29",
           "value": 2.8
         },
-        "previous": {
-          "date": "2026-06-26",
-          "value": 2.83
-        },
-        "change_pct": -1.06,
+        "change_pct": -1.786,
         "frequency": "daily",
-        "mom_pct": -1.06,
+        "mom_pct": -1.786,
         "history": [
-          {
-            "date": "2026-01-16",
-            "value": 2.65
-          },
           {
             "date": "2026-01-19",
             "value": 2.65
@@ -114582,27 +117677,27 @@ window.MACRO_DATA = {
           {
             "date": "2026-06-29",
             "value": 2.8
+          },
+          {
+            "date": "2026-06-30",
+            "value": 2.75
           }
         ]
       },
       "BAMLC0A0CM": {
         "label": "Investment-Grade Credit Spread (IG OAS)",
         "latest": {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "value": 0.76
         },
         "previous": {
-          "date": "2026-06-26",
-          "value": 0.77
+          "date": "2026-06-29",
+          "value": 0.76
         },
-        "change_pct": -1.299,
+        "change_pct": 0.0,
         "frequency": "daily",
-        "mom_pct": -1.299,
+        "mom_pct": 0.0,
         "history": [
-          {
-            "date": "2026-01-16",
-            "value": 0.75
-          },
           {
             "date": "2026-01-19",
             "value": 0.75
@@ -115077,6 +118172,10 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-06-29",
+            "value": 0.76
+          },
+          {
+            "date": "2026-06-30",
             "value": 0.76
           }
         ]
@@ -116062,21 +119161,17 @@ window.MACRO_DATA = {
       "NFCI": {
         "label": "Chicago Fed Financial Conditions (NFCI)",
         "latest": {
-          "date": "2026-06-19",
-          "value": -0.516
+          "date": "2026-06-26",
+          "value": -0.504
         },
         "previous": {
-          "date": "2026-06-12",
-          "value": -0.513
+          "date": "2026-06-19",
+          "value": -0.503
         },
-        "change_pct": 0.585,
+        "change_pct": 0.199,
         "frequency": "daily",
-        "mom_pct": 0.585,
+        "mom_pct": 0.199,
         "history": [
-          {
-            "date": "2024-03-08",
-            "value": -0.437
-          },
           {
             "date": "2024-03-15",
             "value": -0.439
@@ -116111,7 +119206,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2024-05-10",
-            "value": -0.413
+            "value": -0.414
           },
           {
             "date": "2024-05-17",
@@ -116195,7 +119290,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2024-10-04",
-            "value": -0.433
+            "value": -0.432
           },
           {
             "date": "2024-10-11",
@@ -116327,11 +119422,11 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-05-23",
-            "value": -0.454
+            "value": -0.455
           },
           {
             "date": "2025-05-30",
-            "value": -0.466
+            "value": -0.467
           },
           {
             "date": "2025-06-06",
@@ -116467,7 +119562,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-01-23",
-            "value": -0.566
+            "value": -0.567
           },
           {
             "date": "2026-01-30",
@@ -116475,11 +119570,11 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-02-06",
-            "value": -0.554
+            "value": -0.555
           },
           {
             "date": "2026-02-13",
-            "value": -0.541
+            "value": -0.542
           },
           {
             "date": "2026-02-20",
@@ -116487,7 +119582,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-02-27",
-            "value": -0.507
+            "value": -0.506
           },
           {
             "date": "2026-03-06",
@@ -116495,7 +119590,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-03-13",
-            "value": -0.472
+            "value": -0.471
           },
           {
             "date": "2026-03-20",
@@ -116519,11 +119614,11 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-04-24",
-            "value": -0.49
+            "value": -0.491
           },
           {
             "date": "2026-05-01",
-            "value": -0.498
+            "value": -0.499
           },
           {
             "date": "2026-05-08",
@@ -116535,91 +119630,91 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-05-22",
-            "value": -0.507
+            "value": -0.505
           },
           {
             "date": "2026-05-29",
-            "value": -0.508
+            "value": -0.504
           },
           {
             "date": "2026-06-05",
-            "value": -0.511
+            "value": -0.504
           },
           {
             "date": "2026-06-12",
-            "value": -0.513
+            "value": -0.503
           },
           {
             "date": "2026-06-19",
-            "value": -0.516
+            "value": -0.503
+          },
+          {
+            "date": "2026-06-26",
+            "value": -0.504
           }
         ]
       },
       "ANFCI": {
         "label": "Chicago Fed Adjusted Financial Conditions",
         "latest": {
-          "date": "2026-06-19",
-          "value": -0.477
+          "date": "2026-06-26",
+          "value": -0.486
         },
         "previous": {
-          "date": "2026-06-12",
-          "value": -0.473
+          "date": "2026-06-19",
+          "value": -0.486
         },
-        "change_pct": 0.846,
+        "change_pct": -0.0,
         "frequency": "daily",
-        "mom_pct": 0.846,
+        "mom_pct": -0.0,
         "history": [
-          {
-            "date": "2024-03-08",
-            "value": -0.475
-          },
           {
             "date": "2024-03-15",
             "value": -0.485
           },
           {
             "date": "2024-03-22",
-            "value": -0.489
+            "value": -0.488
           },
           {
             "date": "2024-03-29",
-            "value": -0.485
+            "value": -0.484
           },
           {
             "date": "2024-04-05",
-            "value": -0.476
+            "value": -0.474
           },
           {
             "date": "2024-04-12",
-            "value": -0.465
+            "value": -0.463
           },
           {
             "date": "2024-04-19",
-            "value": -0.457
+            "value": -0.455
           },
           {
             "date": "2024-04-26",
-            "value": -0.456
+            "value": -0.454
           },
           {
             "date": "2024-05-03",
-            "value": -0.459
+            "value": -0.458
           },
           {
             "date": "2024-05-10",
-            "value": -0.464
+            "value": -0.463
           },
           {
             "date": "2024-05-17",
-            "value": -0.466
+            "value": -0.465
           },
           {
             "date": "2024-05-24",
-            "value": -0.462
+            "value": -0.461
           },
           {
             "date": "2024-05-31",
-            "value": -0.449
+            "value": -0.448
           },
           {
             "date": "2024-06-07",
@@ -116627,51 +119722,51 @@ window.MACRO_DATA = {
           },
           {
             "date": "2024-06-14",
-            "value": -0.414
+            "value": -0.415
           },
           {
             "date": "2024-06-21",
-            "value": -0.401
+            "value": -0.402
           },
           {
             "date": "2024-06-28",
-            "value": -0.392
+            "value": -0.394
           },
           {
             "date": "2024-07-05",
-            "value": -0.388
+            "value": -0.39
           },
           {
             "date": "2024-07-12",
-            "value": -0.382
+            "value": -0.385
           },
           {
             "date": "2024-07-19",
-            "value": -0.375
+            "value": -0.378
           },
           {
             "date": "2024-07-26",
-            "value": -0.369
+            "value": -0.371
           },
           {
             "date": "2024-08-02",
-            "value": -0.366
+            "value": -0.368
           },
           {
             "date": "2024-08-09",
-            "value": -0.369
+            "value": -0.372
           },
           {
             "date": "2024-08-16",
-            "value": -0.384
+            "value": -0.387
           },
           {
             "date": "2024-08-23",
-            "value": -0.404
+            "value": -0.406
           },
           {
             "date": "2024-08-30",
-            "value": -0.426
+            "value": -0.427
           },
           {
             "date": "2024-09-06",
@@ -116679,7 +119774,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2024-09-13",
-            "value": -0.462
+            "value": -0.463
           },
           {
             "date": "2024-09-20",
@@ -116695,7 +119790,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2024-10-11",
-            "value": -0.501
+            "value": -0.5
           },
           {
             "date": "2024-10-18",
@@ -116703,7 +119798,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2024-10-25",
-            "value": -0.519
+            "value": -0.518
           },
           {
             "date": "2024-11-01",
@@ -116727,35 +119822,35 @@ window.MACRO_DATA = {
           },
           {
             "date": "2024-12-06",
-            "value": -0.538
+            "value": -0.539
           },
           {
             "date": "2024-12-13",
-            "value": -0.53
+            "value": -0.531
           },
           {
             "date": "2024-12-20",
-            "value": -0.523
+            "value": -0.524
           },
           {
             "date": "2024-12-27",
-            "value": -0.523
+            "value": -0.524
           },
           {
             "date": "2025-01-03",
-            "value": -0.526
+            "value": -0.527
           },
           {
             "date": "2025-01-10",
-            "value": -0.532
+            "value": -0.533
           },
           {
             "date": "2025-01-17",
-            "value": -0.535
+            "value": -0.536
           },
           {
             "date": "2025-01-24",
-            "value": -0.533
+            "value": -0.534
           },
           {
             "date": "2025-01-31",
@@ -116795,55 +119890,55 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-04-04",
-            "value": -0.403
+            "value": -0.404
           },
           {
             "date": "2025-04-11",
-            "value": -0.391
-          },
-          {
-            "date": "2025-04-18",
             "value": -0.392
           },
           {
+            "date": "2025-04-18",
+            "value": -0.394
+          },
+          {
             "date": "2025-04-25",
-            "value": -0.403
+            "value": -0.406
           },
           {
             "date": "2025-05-02",
-            "value": -0.426
+            "value": -0.428
           },
           {
             "date": "2025-05-09",
-            "value": -0.452
+            "value": -0.454
           },
           {
             "date": "2025-05-16",
-            "value": -0.474
+            "value": -0.476
           },
           {
             "date": "2025-05-23",
-            "value": -0.487
+            "value": -0.489
           },
           {
             "date": "2025-05-30",
-            "value": -0.493
-          },
-          {
-            "date": "2025-06-06",
             "value": -0.495
           },
           {
+            "date": "2025-06-06",
+            "value": -0.497
+          },
+          {
             "date": "2025-06-13",
-            "value": -0.499
+            "value": -0.5
           },
           {
             "date": "2025-06-20",
-            "value": -0.505
+            "value": -0.507
           },
           {
             "date": "2025-06-27",
-            "value": -0.515
+            "value": -0.516
           },
           {
             "date": "2025-07-04",
@@ -116863,27 +119958,27 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-08-01",
-            "value": -0.547
+            "value": -0.548
           },
           {
             "date": "2025-08-08",
-            "value": -0.551
+            "value": -0.552
           },
           {
             "date": "2025-08-15",
-            "value": -0.556
+            "value": -0.557
           },
           {
             "date": "2025-08-22",
-            "value": -0.556
+            "value": -0.558
           },
           {
             "date": "2025-08-29",
-            "value": -0.556
+            "value": -0.557
           },
           {
             "date": "2025-09-05",
-            "value": -0.554
+            "value": -0.555
           },
           {
             "date": "2025-09-12",
@@ -116891,7 +119986,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-09-19",
-            "value": -0.557
+            "value": -0.558
           },
           {
             "date": "2025-09-26",
@@ -116903,11 +119998,11 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-10-10",
-            "value": -0.568
+            "value": -0.569
           },
           {
             "date": "2025-10-17",
-            "value": -0.565
+            "value": -0.566
           },
           {
             "date": "2025-10-24",
@@ -116919,7 +120014,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-11-07",
-            "value": -0.55
+            "value": -0.549
           },
           {
             "date": "2025-11-14",
@@ -116939,79 +120034,79 @@ window.MACRO_DATA = {
           },
           {
             "date": "2025-12-12",
-            "value": -0.522
-          },
-          {
-            "date": "2025-12-19",
             "value": -0.523
           },
           {
+            "date": "2025-12-19",
+            "value": -0.524
+          },
+          {
             "date": "2025-12-26",
-            "value": -0.531
+            "value": -0.533
           },
           {
             "date": "2026-01-02",
-            "value": -0.54
+            "value": -0.543
           },
           {
             "date": "2026-01-09",
-            "value": -0.549
-          },
-          {
-            "date": "2026-01-16",
             "value": -0.553
           },
           {
+            "date": "2026-01-16",
+            "value": -0.557
+          },
+          {
             "date": "2026-01-23",
-            "value": -0.551
+            "value": -0.555
           },
           {
             "date": "2026-01-30",
-            "value": -0.542
+            "value": -0.546
           },
           {
             "date": "2026-02-06",
-            "value": -0.529
+            "value": -0.533
           },
           {
             "date": "2026-02-13",
-            "value": -0.514
+            "value": -0.518
           },
           {
             "date": "2026-02-20",
-            "value": -0.495
+            "value": -0.499
           },
           {
             "date": "2026-02-27",
-            "value": -0.473
+            "value": -0.477
           },
           {
             "date": "2026-03-06",
-            "value": -0.447
+            "value": -0.451
           },
           {
             "date": "2026-03-13",
-            "value": -0.424
+            "value": -0.427
           },
           {
             "date": "2026-03-20",
-            "value": -0.41
+            "value": -0.412
           },
           {
             "date": "2026-03-27",
-            "value": -0.406
+            "value": -0.408
           },
           {
             "date": "2026-04-03",
-            "value": -0.416
+            "value": -0.417
           },
           {
             "date": "2026-04-10",
-            "value": -0.434
+            "value": -0.435
           },
           {
             "date": "2026-04-17",
-            "value": -0.452
+            "value": -0.453
           },
           {
             "date": "2026-04-24",
@@ -117019,7 +120114,7 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-05-01",
-            "value": -0.466
+            "value": -0.465
           },
           {
             "date": "2026-05-08",
@@ -117027,27 +120122,31 @@ window.MACRO_DATA = {
           },
           {
             "date": "2026-05-15",
-            "value": -0.458
+            "value": -0.457
           },
           {
             "date": "2026-05-22",
-            "value": -0.456
+            "value": -0.458
           },
           {
             "date": "2026-05-29",
-            "value": -0.46
+            "value": -0.464
           },
           {
             "date": "2026-06-05",
-            "value": -0.467
+            "value": -0.475
           },
           {
             "date": "2026-06-12",
-            "value": -0.473
+            "value": -0.483
           },
           {
             "date": "2026-06-19",
-            "value": -0.477
+            "value": -0.486
+          },
+          {
+            "date": "2026-06-26",
+            "value": -0.486
           }
         ]
       },
@@ -117550,10 +120649,14 @@ window.MACRO_DATA = {
     }
   },
   "latest_daily": {
-    "file": "2026-06-29.md",
-    "date": "2026-06-29",
-    "body_preview": "## Bối cảnh xu hướng (so với 30 ngày qua)\n\n### 1. Cung trình regime 30 ngày — 4 chặng rõ rệt\n\n| Giai đoạn | Regime | Driver chính | Sector winner | Sector loser |\n|---|---|---|---|---|\n| **22–31/5** | risk-on hẹp | XLK độc dẫn (+20% 1M), goldilocks (ISM beat + Prices cool) | XLK | XLE, defensives |\n| **02–04/6** | rotation-confirmed | Labor crack (Claims 225K breakout, Challenger spike) + AVGO disappoint → tech leadership CRACK | XLV, XLF, XLRE, XLI | XLK (1M de-rate 21%→8.5%) |\n| **10–13/6** | ",
-    "body": "## Bối cảnh xu hướng (so với 30 ngày qua)\n\n### 1. Cung trình regime 30 ngày — 4 chặng rõ rệt\n\n| Giai đoạn | Regime | Driver chính | Sector winner | Sector loser |\n|---|---|---|---|---|\n| **22–31/5** | risk-on hẹp | XLK độc dẫn (+20% 1M), goldilocks (ISM beat + Prices cool) | XLK | XLE, defensives |\n| **02–04/6** | rotation-confirmed | Labor crack (Claims 225K breakout, Challenger spike) + AVGO disappoint → tech leadership CRACK | XLV, XLF, XLRE, XLI | XLK (1M de-rate 21%→8.5%) |\n| **10–13/6** | bounce-relief | CPI/PPI miss (Core PPI 4.9% vs 5.4%) → relief rally, disinflation hy vọng | XLK, XLI, XLB | XLE, XLU |\n| **16–29/6** | hawkish hold → neutral | FOMC giữ 3.75% + dot plot dịch LÊN; growth hard-data nóng (GDP Q1 2.1%, Retail +0.9%) nhưng lạm phát chưa hạ | XLI/cyclicals (growth) | XLRE/XLU (higher-for-longer) |\n\n**Đặc trưng xuyên suốt:** Đây KHÔNG phải xu hướng một chiều mà là chuỗi xoay vòng quanh hai trục đối kháng — *disinflation hy vọng (soft-data) vs lạm phát hard-data dai dẳng*. Mỗi lần soft-data dovish (Michigan, claims) đẩy XLK/duration lên thì hard-data nóng (Core PCE, Import Prices, FOMC dot plot) lại kéo về. Kết quả: không sector nào thiết lập được leadership bền >2 tuần ngoài XLV (defensive core, dẫn 1M phần lớn tháng).\n\n### 2. Trend các nhóm chỉ số (derived metrics, FRED snapshot 29/6)\n\n| Nhóm | Trend | Số liệu chốt | Hướng |\n|---|---|---|---|\n| **Lạm phát** | 🔴 STICKY-NÓNG | Core PCE YoY 3.41% (3mo ann 3.52%), CPI YoY 4.27% (3mo ann 8.2% do energy), PPI FD YoY 6.46% (3mo ann 13.2%) | → đi ngang ở mức cao, chưa hạ |\n| **Lao động** | 🟡 COOLING nhẹ | NFP +172K (5/6 beat), UNRATE 4.3% phẳng, Sahm +0.10 (xa ngưỡng 0.50), Claims 215K thấp | → vững nhưng momentum chậm lại |\n| **Tăng trưởng** | 🟢→🟡 vững-mất-đà | GDP Q1 rev 2.1% beat, Retail +0.9%, nhưng Dallas Fed 0.0, Housing Starts −15.4%, New Home −7.3% | → cyclical còn khỏe, nhà ở + survey vùng nguội |\n| **Niềm tin** | 🟡 HỖN HỢP | Michigan 44.8→49.5 hồi nhưng <50 (vùng yếu); soft hồi / hard (Retail) mạnh — mismatch | ↑ hồi từ đáy nhưng tuyệt đối thấp |\n| **Nhà ở** | 🔴 NGUỘI | Housing Starts −15.4% MoM, Building Permits âm, New Home Sales 580K (−7.3%) | ↓ phản ứng rõ với rates cao kéo dài |\n| **Fed & Lãi suất** | 🟡 NEUTRAL-hawkish | DFF 3.63%/giữ 3.75%, dot plot dịch LÊN, 10Y 4.40% (−nhẹ tháng), 2s10s +0.31 normal | → \"higher-for-longer\", chưa cut |\n\n### 3. Map xu hướng → sector implications\n\n**Bối cảnh chủ đạo cuối tháng = \"tăng trưởng-chững + lạm phát-dai\" (tiền-stagflation nhẹ) trong khi đường cong vẫn normal và Sahm chưa kích hoạt.** Theo cheat sheet macro→sector:\n\n- **Lạm phát sticky + Fed hawkish-hold (rates higher-for-longer):** thuận **Financials (NIM)/Energy**, nghịch **REITs/Utilities/Tech (duration)**. Đây chính là lý do XLRE/XLU bị punish suốt nửa sau tháng (yields jump sau NFP + FOMC). Tuy nhiên XLF chưa bứt phá vì 2s10s vẫn flat (+0.31) — NIM chưa thực sự cải thiện, nên XLF giữ ở Neutral chứ chưa OW bền.\n- **Growth hard-data còn khỏe (GDP/Retail beat) + Sahm an toàn + curve normal (116 phiên không đảo):** vẫn nghiêng **cyclicals (XLI/XLB)** hơn defensives thuần. XLI là sector có conviction tăng dần ổn định nhất (Light OW) nhờ Durable Goods +8%, ISM Mfg >50, GDPNow Q2 ~2.8%.\n- **Defensive core XLV** là leader 1M bền nhất tháng — kết hợp được cả \"growth weakening hedge\" lẫn duration-friendly khi yields dịu. Giữ Overweight.\n- **XLK:** đã mất vị thế độc dẫn sau cú crack 4/6 + AVGO. Mỗi nhịp disinflation-hy vọng (10/6, 11/6) kéo XLK bật mạnh (+3.7%) nhưng không giữ được vì hard-data lạm phát chặn DCF re-rate. Stalking/Neutral — chỉ re-up OW nếu Core PCE thực sự break <0.2% MoM.\n- **XLE:** WTI lao từ ~$112 (25/5) về ~$79 (29/6) — momentum năng lượng tắt; mọi nhịp upgrade (crude draw 3/6) đều fade. Neutral, không bottom-fish. Dầu hạ là tin TỐT cho disinflation forward nhưng xấu cho XLE.\n\n### 4. Tín hiệu cần theo dõi để xác nhận/đảo chiều trend\n\n- **Đảo sang disinflation thật:** cần Core PCE MoM về <0.2% (hiện 0.32%) + 3mo annualized phá xuống <3%. Khi đó: re-up **XLK/XLRE/XLY**, hạ **XLF/XLE**.\n- **Đảo sang growth-scare/recession:** Sahm vượt 0.50 (hiện 0.10) hoặc Claims breakout >250K + NFP <50K. Khi đó: xoay mạnh sang **XLV/XLP/XLU** defensive, cắt **XLI/XLF/XLY**.\n- **Catalyst ngay tuần tới:** ISM Mfg (1/7, f:53.7 — Dallas 0.0 cảnh báo hụt) và **NFP (2/7, f:114K giảm từ 172K)**. ISM Mfg Prices f:79.0 (rất cao) là then chốt: lao động nguội + giá vẫn nóng sẽ giữ nguyên thế kẹt hawkish, KHÔNG cho phép xoay dovish dù NFP yếu.\n"
+    "file": "2026-07-01.md",
+    "date": "2026-07-01",
+    "schema_version": "1.1",
+    "surprise_count": "4",
+    "regime_signal": "dovish",
+    "key_takeaway": "Cụm dữ liệu tăng trưởng đầu tháng 7 đồng loạt hụt (ADP +98K, GDPNow Q2 rớt còn 1.2%, ISM Prices lao dốc) — nghiêng dovish, nhưng hard-data lạm phát vẫn nóng nên chưa xác nhận disinflation.",
+    "body_preview": "# Vĩ mô Mỹ — 2026-07-01",
+    "body": "# Vĩ mô Mỹ — 2026-07-01\n\n## Tóm tắt\nNgày mở màn tháng 7 mang tính \"growth scare nhẹ\": ADP chỉ +98K (shock dưới dự báo 118K), Atlanta Fed GDPNow Q2 bị hạ mạnh từ 2.5% xuống 1.2%, và ISM Manufacturing Prices Paid lao từ 82.1 xuống 73.0 — tín hiệu áp lực giá đầu vào hạ nhiệt. Tổng thể nghiêng **dovish** cho Fed (day_surprise_score growth = −4.86), nhưng cần lưu ý ISM/S&P Global PMI vẫn ở vùng mở rộng (>50) nên đây là *giảm tốc*, không phải *co hẹp*. Quan trọng: hard-data lạm phát vẫn nóng (Core PCE YoY 3.41%, CPI YoY 4.27%) → chưa được tuyên bố disinflation đã xác nhận; đây là tín hiệu dovish nhẹ, cần bảng lương NFP (ngày mai) và CPI tháng 6 (14/7) xác nhận.\n\n## Chi tiết chỉ số được công bố hôm nay\n\n### ADP Nonfarm Employment Change (Jun) — MISS (shock-below)\n**Headline:** ADP: +98K | Forecast: +118K | Previous: +122K\n**Đánh giá:** Lệch −20K so với dự báo, z-score −3.39 (shock-below) — cú hụt mạnh nhất trong cụm dữ liệu hôm nay. Việc làm khu vực tư (theo thước đo ADP) giảm tốc rõ so với 122K tháng trước.\n\n**Bối cảnh lao động (FRED, tháng 5 gần nhất):**\n| Thành phần | Giá trị | Nhận xét |\n|---|---|---|\n| NFP MoM (PAYEMS) | +172K (T5) | tăng trưởng việc làm chậm dần, YoY chỉ +0.32% |\n| Initial Claims (ICSA) | 215K (20/6) | vẫn thấp, chưa có tín hiệu sa thải lan rộng |\n| Continuing Claims (CCSA) | 1.821M (13/6) | nhích lên 3 tuần liên tiếp — người mất việc khó tìm việc mới hơn |\n| AHE YoY (CES0500000003) | 3.45% | lương hạ nhiệt về gần vùng phù hợp mục tiêu Fed |\n\n**Đối chiếu:** ADP là proxy nhiễu cho NFP (thường lệch hướng). Continuing Claims tăng đều + ADP hụt = tín hiệu cầu lao động đang mềm đi ở rìa, nhưng Initial Claims 215K vẫn xa ngưỡng lo ngại 250K. Chưa đủ để kết luận thị trường lao động \"gãy\".\n**Hàm ý Fed:** Ủng hộ hướng nới lỏng — thị trường sẽ tăng đặt cược cắt lãi suất nếu NFP ngày mai (dự báo +114K) cũng yếu.\n**Hàm ý thị trường:** Dovish → hỗ trợ tech/growth (XLK), REITs (XLRE); rủi ro NIM cho financials (XLF) nếu lộ trình cắt nhanh hơn.\n\n---\n\n### S&P Global Manufacturing PMI (Jun) — MISS (below-forecast)\n**Headline:** 53.9 | Forecast: 55.7 | Previous: 55.1 (>50 = mở rộng)\n**Đánh giá:** Lệch −1.8 (z −0.65), giảm 1.2 điểm so với tháng trước nhưng **vẫn ở vùng mở rộng chắc chắn**. Đây là hụt kỳ vọng, không phải co hẹp. Kết hợp với ISM PMI 53.3 → hai thước đo sản xuất đồng thuận: mở rộng nhưng đang giảm tốc.\n**Hàm ý thị trường:** Trung tính-nhẹ tiêu cực cho XLI/XLB; cần theo dõi New Orders để xác nhận đà.\n\n---\n\n### ISM Manufacturing (Jun) — IN-LINE headline, Prices hạ nhiệt mạnh\n**Headline PMI:** 53.3 | Forecast: 53.8 | Previous: 54.0 (in-line, z −0.19)\n\n**Phân tích sub-components (investing.com):**\n| Component | Giá trị | Signal |\n|---|---|---|\n| New Orders | 56.0 | leading tốt — cầu vẫn mở rộng, dù giảm nhẹ từ 56.8 |\n| Employment | 49.7 | dưới 50 nhưng cải thiện từ 48.6 — tuyển dụng ngành sản xuất còn dè dặt |\n| Prices Paid | 73.0 | **lao dốc từ 82.1** (−9.1), hụt dự báo 77.7 (z −1.21) — áp lực chi phí đầu vào giảm mạnh |\n\n**Tổng đánh giá:** Cấu trúc lành mạnh — New Orders (56.0) > Employment (49.7), cầu dẫn dắt mở rộng. Điểm nổi bật là Prices Paid hạ nhiệt: dù còn cao (>70 = vẫn tăng giá), tốc độ giảm nhanh cho thấy áp lực pipeline lạm phát hàng hoá đang nới. Điều này khớp với Core Goods CPI đang kéo lạm phát XUỐNG (xem đối chiếu bên dưới).\n**Hàm ý thị trường:** Prices Paid giảm = tín hiệu disinflation hàng hoá tích cực cho biên lợi nhuận doanh nghiệp sản xuất (XLI); nhưng Employment <50 hàm ý Mfg Payrolls yếu.\n\n---\n\n### Challenger Job Cuts (Jun)\n**Headline:** 45.849K sa thải công bố | Previous: 97.006K | YoY: −4.5% (từ +3.4%)\nSố vụ sa thải công bố giảm mạnh một nửa so với tháng trước và chuyển âm YoY — tín hiệu doanh nghiệp *bớt* cắt giảm nhân sự. Đây là điểm sáng ngược chiều với ADP hụt: cầu lao động mềm đi nhưng làn sóng sa thải chủ động chưa lan rộng. Không có forecast nên không tính vào surprise_count.\n\n---\n\n### Construction Spending (May) — IN-LINE\n**Headline:** MoM +0.1% | Forecast: +0.1% | Previous: +0.3%\nĐúng dự báo nhưng giảm tốc so với +0.3% tháng trước. FRED (TTLCONS) xác nhận YoY −1.52% — xây dựng vẫn yếu dưới áp lực lãi suất vay cao. Nhất quán với Housing Starts sụp −15.4% MoM (FRED) và New Home Sales −7.3%. Trung tính, hàm ý áp lực lên nhóm vật liệu/xây dựng nhạy lãi suất.\n\n---\n\n### Atlanta Fed GDPNow (Q2) — MISS (shock-below) [nhóm other]\n**Headline:** 1.2% | Forecast/Previous: 2.5%\n**Đánh giá:** Cắt mạnh −1.3pp (z −10.4), hạ nowcast tăng trưởng Q2 xuống chỉ còn 1.2% QoQ ann. Đây là điều chỉnh nowcast phản ánh loạt dữ liệu yếu gần đây (Durable Goods −4.5% MoM, Housing sụp). Không phải số chính thức nhưng là tín hiệu cảnh báo đà tăng trưởng Q2 đang mất lực so với Q1 (2.1% chính thức).\n**Hàm ý:** Củng cố thông điệp dovish của ngày — tăng trưởng chậm hơn kỳ vọng + lạm phát hàng hoá hạ nhiệt = dư địa nới lỏng, nhưng đối chiếu với hard-data lạm phát nóng bên dưới.\n\n---\n\n### MBA Mortgage & Fed Speakers (noise/context)\n- **MBA:** Lãi suất 30 năm 6.57% (giảm nhẹ từ 6.59%); đơn xin vay bất động 0.0% WoW; Purchase Index 170.6 (+0.9). Thị trường thế chấp đi ngang — lãi suất cao vẫn ghìm nhu cầu nhà ở.\n- **Fed speakers:** Daly (impact medium) và Warsh phát biểu; Tổng thống Trump phát biểu 15:15. Không có dữ liệu định lượng — theo dõi giọng điệu về lộ trình lãi suất trước NFP ngày mai.\n- **EIA (noise):** Tồn kho dầu thô −3.775M (giảm mạnh hơn dự báo −2.9M); tồn xăng −2.333M. Hỗ trợ giá dầu ngắn hạn nhưng là nhiễu tuần.\n\n---\n\n### Đối chiếu soft-data vs hard-data lạm phát (bắt buộc — hard_data_hot = true)\nCụm dữ liệu hôm nay nghiêng dovish (ADP hụt, GDPNow rớt, ISM Prices hạ nhiệt). **NHƯNG hard-data lạm phát thực tế vẫn nóng:** Core PCE YoY **3.41%** (3mo ann 3.52%), CPI YoY **4.27%** (3mo ann tới 8.2%). Không được tuyên bố \"disinflation đã xác nhận\" hay \"Fed dovish hẳn\".\n\n**Nhóm kéo lạm phát LÊN / XUỐNG (từ `inflation_context.drivers`, xếp theo momentum 3mo ann):**\n| Thành phần | MoM% | YoY% | 3mo ann. | Nhận xét |\n|---|---|---|---|---|\n| Energy (Năng lượng) | 3.88% | 22.1% | 104.4% | **Kéo lên mạnh nhất** — giá năng lượng bùng, rất volatile, cần bối cảnh |\n| Shelter (Nhà ở) | 0.32% | 3.62% | 4.87% | ~33% rổ CPI — vẫn sticky |\n| Core Services (Dịch vụ lõi) | 0.30% | 3.56% | 4.16% | Fed lo nhất — chưa hạ về mục tiêu |\n| Food (Thực phẩm) | 0.16% | 3.38% | 2.65% | ổn định |\n| Core Goods (Hàng hoá lõi) | −0.11% | 1.03% | 0.11% | **Kéo xuống** — disinflation hàng hoá, khớp ISM Prices giảm |\n\n> Đang kéo lạm phát LÊN = **Energy**; kéo XUỐNG = **Core Goods**. Lưu ý Energy 3mo ann 104% là con số volatile (giá dầu bật) — không nên hốt hoảng, nhưng nó giữ headline CPI YoY ở mức 4.27% cao. Core Services + Shelter còn sticky là lý do Fed chưa thể dovish một chiều dù soft-data hôm nay yếu.\n\n**Kết luận đối chiếu:** Tín hiệu hôm nay là **dovish nhẹ, cần xác nhận** — soft-data tăng trưởng mềm + áp lực giá hàng hoá hạ nhiệt (ISM Prices, Core Goods), nhưng dịch vụ lõi và năng lượng còn giữ lạm phát tổng ở vùng cao. NFP (2/7) và CPI tháng 6 (14/7) là mảnh ghép quyết định.\n\n## Market Pulse\n\n**Yields & Đường cong lãi suất:**\n- 10Y: 4.38% (đi ngang) | 2Y: 4.10% (+3 bp) | 3M: 3.87% (+4 bp) | Spread 10Y-2Y: +30 bp (T10Y2Y, nới nhẹ từ +28) → đường cong dốc lên bình thường, chưa đảo.\n- Breakeven 10Y (T10YIE): 2.24% (+2 bp) → kỳ vọng lạm phát thị trường nhỉnh trên mục tiêu Fed 2%, nhất quán với hard-data còn nóng.\n\n**USD & Cross-asset:**\n- USD Broad (DTWEXBGS): 120.89 (−0.14%) → USD mềm nhẹ, hỗ trợ nhẹ EM/commodities.\n- VIX: 16.45 (−6.8%) → risk-on (<20), thị trường \"shrug off\" growth scare, tin vào kịch bản Fed nới.\n- WTI: $71.87/bbl (+2.2%) → dầu bật nhờ tồn kho giảm — lưu ý đây là mạch truyền áp lực Energy CPI lên (đang kéo lạm phát lên).\n\n**Credit Spreads:**\n- HY OAS: 275 bp (−5 bp) | IG OAS: 76 bp (đi ngang)\n- Spread HY thu hẹp = credit stress giảm, khẩu vị rủi ro vững — không có dấu hiệu căng thẳng tín dụng dù dữ liệu tăng trưởng yếu.\n\n**Vị trí chu kỳ (từ `cycle_context`):**\n- Sahm Rule: +0.10pp (an toàn) — thất nghiệp 3mo-avg 4.3% vs đáy 12 tháng 4.2%, chưa kích hoạt (ngưỡng 0.50).\n- Đường cong: **normal** (2s10s +0.30, 10Y-3M +0.51) — dương bình thường 116 phiên, chưa từng đảo trong cửa sổ dữ liệu → chưa có tín hiệu suy thoái cận kề.\n\n**Economic Surprise Index (từ `surprise_index.json`):**\n- Growth surprise 1M: +7.92 (beating mạnh, xu hướng rising) | Inflation surprise 1M: −7.33 (missing — lạm phát về mặt *surprise* thấp hơn dự báo).\n- Lưu ý: chỉ số này rolling — cú hụt hôm nay (growth −4.86) sẽ kéo đường này xuống ở lần cập nhật tới. Hiện tại vẫn cho thấy data tổng thể vượt kỳ vọng → risk-on tailwind, nhưng động lượng đang chậm lại.\n\n**Tổng đánh giá cross-asset:** Risk-on nhẹ nhưng thận trọng — VIX giảm + HY spread thu hẹp + USD mềm cho thấy thị trường đọc growth scare hôm nay là \"cắt lãi suất tới gần hơn\" chứ không phải \"suy thoái\". Rủi ro là dầu bật + lạm phát dịch vụ sticky có thể ghìm Fed dovish chậm hơn kỳ vọng.\n\n## Bối cảnh xu hướng (so với 30 ngày qua)\n\n**Regime 30 ngày:** Regime kể từ FOMC \"hawkish hold\" giữa tháng 6 là **neutral giằng co** — hard-data lạm phát nóng (Core PCE 3.41%, CPI 4.27%) đối kháng soft-data giảm tốc, trên nền risk-on (VIX <18, HY spread thu hẹp). Chuỗi phiên gần đây (JOLTS beat 30/6 → ADP/GDPNow hụt 1/7) cho thấy hai mặt của cùng một đồng xu: lao động chưa gãy nhưng đà tăng trưởng đang mất lực.\n\n**Ngày 01/7 khớp/đổi hướng ra sao:** Đây là phiên **\"growth scare\" đầu tiên rõ nét** của tháng 7 — ADP chỉ +98K (shock dưới 118K), Atlanta Fed GDPNow Q2 bị cắt mạnh từ 2.5% xuống 1.2%, ISM Prices Paid lao từ 82.1 về 73.0. Bộ ba này nghiêng dovish và sẽ kéo Economic Surprise Index (growth) xuống ở lần cập nhật tới (day_surprise growth −4.86). Tuy vậy CHƯA đổi hẳn regime: ISM/S&P Global PMI vẫn >50 (giảm tốc, không co hẹp) và hard-data lạm phát vẫn nóng → tín hiệu là \"dovish nhẹ, chờ xác nhận\" chứ không phải bước ngoặt. NFP (2/7) và CPI tháng 6 (14/7) là mảnh ghép quyết định.\n\n**Map macro→sector (từ rotation engine):** Rotation vẫn thiên **cyclicals** nhưng có dấu hiệu chuyển: XLY/XLI/XLF đang LEADING (XLF RS 1M +8.4, XLI +8.2), XLC/XLK ở phase EARLY (dòng tiền đang vào lại tech sau khi de-rate). Ngược lại XLV và XLU chuyển sang FADING — defensive bị rút tiền khi khẩu vị risk-on giữ vững. XLE yếu nhất (WTI ~$70, RS âm), Materials/Staples dưới trung bình. Nếu growth scare tiếp diễn và NFP yếu, kỳ vọng dòng tiền quay lại nhóm nhạy lãi suất (XLK/XLRE); nếu NFP mạnh, cyclicals value (XLF/XLI) giữ leadership. Đường cong normal (2s10s +0.30), Sahm +0.10 — chưa cảnh báo suy thoái.\n\n## Cảnh báo & catalyst sắp tới\n\n**Ngày mai (2026-07-02):**\n- Nonfarm Payrolls (Jun) — HIGH — forecast +114K, previous +172K\n- Unemployment Rate (Jun) — HIGH — forecast 4.3%, previous 4.3%\n- Average Hourly Earnings MoM (Jun) — HIGH — forecast 0.3%, previous 0.3%\n- Average Hourly Earnings YoY (Jun) — MEDIUM — forecast 3.5%, previous 3.4%\n- Initial Jobless Claims — HIGH — forecast 219K, previous 215K\n- Private Nonfarm Payrolls (Jun) — MEDIUM — forecast +115K, previous +120K\n- Continuing Jobless Claims — MEDIUM — previous 1,821K\n- Participation Rate / U6 Unemployment Rate (Jun) — MEDIUM\n- Factory Orders MoM (May) — MEDIUM — forecast −1.7%, previous +4.8%\n- Fed's Balance Sheet, Baker Hughes Rig Counts — MEDIUM\n\n**Tuần này (đến 2026-07-08):**\n- 03/07: CFTC net positions (Crude/Gold/Nasdaq/S&P) — MEDIUM (noise)\n- 06/07: S&P Global Services PMI (Jun) — HIGH (forecast 51.3); ISM Non-Manufacturing PMI & Prices (Jun) — HIGH; S&P Global Composite PMI — MEDIUM\n- 07/07: Trade Balance / Exports / Imports (May) — MEDIUM; NY Fed 1-Year Inflation Expectations — MEDIUM; 3-Year Note Auction — MEDIUM\n- 08/07: FOMC Meeting Minutes — HIGH; 10-Year Note Auction — HIGH; Consumer Credit (May) — MEDIUM\n\n**Theo dõi đặc biệt:**\nNFP ngày mai là mảnh ghép quyết định cho luận điểm \"dovish nhẹ\" hôm nay: ADP hụt (+98K) và GDPNow rớt đã đặt kỳ vọng thấp (+114K). NFP dưới 100K + AHE YoY hạ nhiệt sẽ củng cố đặt cược cắt lãi suất; ngược lại NFP mạnh sẽ làm thị trường phải điều chỉnh lại (tăng trưởng chưa gãy). Song song, ISM Services Prices (6/7) và FOMC Minutes (8/7) sẽ cho biết dịch vụ lõi — nguồn lạm phát sticky nhất — có tiếp tục hạ nhiệt hay không, yếu tố then chốt vì hard-data lạm phát vẫn nóng."
   },
   "latest_monthly": {
     "file": "2026-05.md",
